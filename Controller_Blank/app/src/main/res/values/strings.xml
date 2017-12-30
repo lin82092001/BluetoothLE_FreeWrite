@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">BluetoothLE</string>
+    <string name="Button_Scan">Scan</string>
+    <string name="Button_Stop">Stop</string>
+    <string name="Button_Clear">Clear</string>
+    <string name="Button_Conc">Connect</string>
+    <string name="Button_Disc">Disconnect</string>
+    <string name="Button_Test">Start</string>
+    <string name="Button_Close">Close</string>
+</resources>
