@@ -1,6 +1,5 @@
 package com.serverpit.wolf.controller;
 
-import android.Manifest;
 import android.app.Activity;
 import android.bluetooth.BluetoothAdapter;
 import android.bluetooth.BluetoothDevice;
@@ -12,7 +11,6 @@ import android.bluetooth.le.ScanResult;
 import android.bluetooth.le.ScanSettings;
 import android.content.Intent;
 import android.content.pm.PackageManager;
-import android.os.Build;
 import android.os.Handler;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -21,6 +19,7 @@ import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.ListView;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import java.util.ArrayList;
@@ -31,12 +30,13 @@ public class MainActivity extends AppCompatActivity {
     private int REQUEST_ENABLE_BT = 1;
     private Handler mHandler;
     private static final long SCAN_PERIOD = 15000;  // Stops scanning after 10 seconds.
-    private BluetoothLeScanner mLEScanner;  //finding BLE devices
-    private ScanSettings settings;
-    private List<ScanFilter> filters;
+//    private BluetoothLeScanner mLEScanner;  //finding BLE devices
+//    private ScanSettings settings;
+//    private List<ScanFilter> filters;
     private ListView DevicesList;           //宣告ListView物件
     private ArrayAdapter<String> listAdapter;   //搭配ListView將Item放入陣列中
     private ArrayList<BluetoothDevice> DeviceArray;
+    private TextView deviceName;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -45,8 +45,8 @@ public class MainActivity extends AppCompatActivity {
         DevicesList = (ListView)this.findViewById(R.id.DevicesList);
         DeviceArray = new ArrayList<>();
         listAdapter = new ArrayAdapter<>(this, android.R.layout.simple_list_item_1);
-        DevicesList.setAdapter(listAdapter);
         mHandler = new Handler();
+        deviceName=(TextView)this.findViewById(R.id.textView);
 
         /*使用此檢查來確定設備上是否支持BLE。
          否則利用finish()關閉程式。
@@ -72,18 +72,23 @@ public class MainActivity extends AppCompatActivity {
         }
 
         //點擊ListView的Item選擇要連線的裝置
-        DevicesList.setOnItemClickListener(new AdapterView.OnItemClickListener() {
-            @Override
-            public void onItemClick(AdapterView<?> adapterView, View view, int index, long l) {
-                connectToDevice(DeviceArray.get(index));
-            }
-        });
+//        runOnUiThread(new Runnable() {
+//            @Override
+//            public void run() {
+//                DevicesList.setAdapter(listAdapter);
+//            }
+//        });
     }
 
-//    @Override
-//    protected void onResume() {
-//        super.onResume();
-//
+    @Override
+    protected void onResume() {
+        super.onResume();
+//        DevicesList.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+//            @Override
+//            public void onItemClick(AdapterView<?> adapterView, View view, int index, long l) {
+//                connectToDevice(DeviceArray.get(index));
+//            }
+//        });
 //        else {
 //
 //            if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP) {
@@ -95,7 +100,7 @@ public class MainActivity extends AppCompatActivity {
 //            }
 //            scanLeDevice(true); //使用ScanFunction(true) 開啟BLE搜尋功能
 //        }
-//    }
+    }
 
 //    @Override
 //    protected void onPause() {
@@ -119,8 +124,7 @@ public class MainActivity extends AppCompatActivity {
     @Override
     protected void onActivityResult(int requestCode, int resultCode, Intent data) {
         if (requestCode == REQUEST_ENABLE_BT && requestCode==Activity.RESULT_CANCELED) {
-                //Bluetooth not enabled.
-                finish();
+                finish();//Bluetooth not enabled.
                 return;
         }
         super.onActivityResult(requestCode, resultCode, data);
@@ -137,9 +141,14 @@ public class MainActivity extends AppCompatActivity {
     }
     public void OnButton_Clear_Click(View arg0)
     {
-        listAdapter.clear();
-        listAdapter.notifyDataSetChanged();
-        DeviceArray.clear();
+//        runOnUiThread(new Runnable() {
+//            @Override
+//            public void run() {
+//                listAdapter.clear();
+//                listAdapter.notifyDataSetChanged();
+//                DeviceArray.clear();
+//            }
+//        });
     }
 
     /*As soon as you find the desired device, stop scanning.
@@ -161,7 +170,7 @@ public class MainActivity extends AppCompatActivity {
 //                    }
                     mBluetoothAdapter.stopLeScan(mLeScanCallback);
                     //mLEScanner.stopScan(mScanCallback);
-                    Log.d("scanLeDevice()","After "+SCAN_PERIOD/1000 +"s Stop Scan");
+                    //Log.d("scanLeDevice()","After "+SCAN_PERIOD/1000 +"s Stop Scan");
                 }
             }, SCAN_PERIOD);//SCAN_PERIOD為幾秒後要執行此Runnable
 
@@ -183,55 +192,55 @@ public class MainActivity extends AppCompatActivity {
                 public void onLeScan(final BluetoothDevice device, final int rssi,
                                      byte[] scanRecord) {
                     //runOnUiThread(new Runnable() {
-                        //@Override
+                        //Override
                         //public void run() {
                             Log.i("onLeScan", device.getName()+":"+rssi);
-                            DeviceArray.add(device);
-                            //deviceName.add(device.getName()+" rssi:"+rssi+"\r\n" + device.getAddress());
-                            listAdapter.add(device.getName() + ":" + device.getAddress()+", RSSI:"+rssi);
-                            listAdapter.notifyDataSetChanged();
+//                            DeviceArray.add(device);
+//                            listAdapter.add(device.getName() + ":" + device.getAddress()+", RSSI:"+rssi);
+//                            listAdapter.notifyDataSetChanged();
+                            //deviceName.setText(device.getName());
                         //}
                     //});
                 }
             };
 
-    private ScanCallback mScanCallback = new ScanCallback() {
-        @Override
-        public void onScanResult(int callbackType, ScanResult result) {
-            String data;
-            BluetoothDevice btDevice = result.getDevice();
-            data = "BT:" + btDevice.getName() + ":" + btDevice.getAddress();
-            if(!DeviceArray.contains(btDevice)) {
-                listAdapter.add(data+","+result.getRssi());
-                DeviceArray.add(btDevice);
-            }
-            else
-            {
-                for(int i=0;i<listAdapter.getCount();i++)
-                {
-                    if(listAdapter.getItem(i).startsWith(data))
-                    {
-                        listAdapter.remove(listAdapter.getItem(i));
-                        listAdapter.insert(data+","+result.getRssi(),i);
-                        break;
-                    }
-                }
-            }
-            listAdapter.notifyDataSetChanged();
-        }
-
-        @Override
-        public void onBatchScanResults(List<ScanResult> results) {
-            for (ScanResult sr : results) {
-                Log.i("ScanResult - Results", sr.toString());
-            }
-        }
-
-        @Override
-        public void onScanFailed(int errorCode) {
-            Log.e("Scan Failed", "Error Code: " + errorCode);
-        }
-    };
+//    private ScanCallback mScanCallback = new ScanCallback() {
+//        @Override
+//        public void onScanResult(int callbackType, ScanResult result) {
+//            String data;
+//            BluetoothDevice btDevice = result.getDevice();
+//            data = "BT:" + btDevice.getName() + ":" + btDevice.getAddress();
+//            if(!DeviceArray.contains(btDevice)) {
+//                listAdapter.add(data+","+result.getRssi());
+//                DeviceArray.add(btDevice);
+//            }
+//            else
+//            {
+//                for(int i=0;i<listAdapter.getCount();i++)
+//                {
+//                    if(listAdapter.getItem(i).startsWith(data))
+//                    {
+//                        listAdapter.remove(listAdapter.getItem(i));
+//                        listAdapter.insert(data+","+result.getRssi(),i);
+//                        break;
+//                    }
+//                }
+//            }
+//            listAdapter.notifyDataSetChanged();
+//        }
+//
+//        @Override
+//        public void onBatchScanResults(List<ScanResult> results) {
+//            for (ScanResult sr : results) {
+//                Log.i("ScanResult - Results", sr.toString());
+//            }
+//        }
+//
+//        @Override
+//        public void onScanFailed(int errorCode) {
+//            Log.e("Scan Failed", "Error Code: " + errorCode);
+//        }
+//    };
 
     public void connectToDevice(BluetoothDevice device) {
         //建立一個Intent，將從此Activity進到ControlActivity中

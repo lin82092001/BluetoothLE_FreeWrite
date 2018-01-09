@@ -19,12 +19,12 @@
         android:onClick="OnButton_Scan_Click" />
 
     <ListView
+        android:id="@+id/DevicesList"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/DevicesList"
-        android:layout_alignParentTop="true"
+        android:layout_above="@+id/button_scan"
         android:layout_alignParentStart="true"
-        android:layout_above="@+id/button_scan" />
+        android:layout_marginBottom="57dp" />
 
     <Button
         style="?android:attr/buttonStyleSmall"
@@ -44,4 +44,13 @@
         android:layout_below="@+id/DevicesList"
         android:layout_toEndOf="@+id/button_stop"
         android:onClick="OnButton_Clear_Click" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/button"
+        android:layout_marginBottom="17dp"
+        android:layout_toEndOf="@+id/button"
+        android:text="TextView" />
 </RelativeLayout>
