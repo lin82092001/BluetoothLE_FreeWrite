@@ -10,9 +10,14 @@
 
     <uses-permission android:name="android.permission.BLUETOOTH" />
     <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
-    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
-    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
-
+    <!--
+       In order to use BluetoothLeScanner without a filter,
+       you must request the user's permission by declaring either
+       the ACCESS_COARSE_LOCATION or ACCESS_FINE_LOCATION permission in your app's manifest file.
+       Without these permissions, scans won't return any results
+    -->
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" /> <!-- Allows an app to access approximate location -->
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" /> <!-- Allows an app to access precise location -->
     <uses-feature
         android:name="android.hardware.bluetooth_le"
         android:required="true" />

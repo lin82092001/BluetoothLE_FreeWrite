@@ -408,7 +408,10 @@
     <integer name="abc_config_activityShortDur">150</integer>
     <integer name="cancel_button_image_alpha">127</integer>
     <integer name="status_bar_notification_info_maxnum">999</integer>
+    <string name="NOTsame">You can not select the same device.</string>
     <string name="NOTsup">BLE Not Support</string>
+    <string name="NOdevice">No select the device.</string>
+    <string name="OK">OK</string>
     <string name="abc_action_bar_home_description">Navigate home</string>
     <string name="abc_action_bar_home_description_format">%1$s, %2$s</string>
     <string name="abc_action_bar_home_subtitle_description_format">%1$s, %2$s, %3$s</string>
@@ -444,8 +447,10 @@
     <string name="clear">Clear</string>
     <string name="scan">Scan</string>
     <string name="search_menu_title">Search</string>
+    <string name="startScan">Scanning...</string>
     <string name="status_bar_notification_info_overflow">999+</string>
     <string name="stop">Stop</string>
+    <string name="warning">Warning</string>
     <style name="AlertDialog.AppCompat" parent="Base.AlertDialog.AppCompat"/>
     <style name="AlertDialog.AppCompat.Light" parent="Base.AlertDialog.AppCompat.Light"/>
     <style name="Animation.AppCompat.Dialog" parent="Base.Animation.AppCompat.Dialog"/>

@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">Bfluucektyooouth</string>
+    <string name="scan">Scan</string>
+    <string name="stop">Stop</string>
+    <string name="clear">Clear</string>
+    <string name="NOTsup">BLE Not Support</string>
+    <string name="startScan">Scanning...</string>
+    <string name="warning">Warning</string>
+    <string name="NOdevice">No select the device.</string>
+    <string name="NOTsame">You can not select the same device.</string>
+    <string name="OK">OK</string>
+</resources>

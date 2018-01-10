@@ -16,12 +16,12 @@
         "source": "C:\\Users\\林北94狂\\.android\\build-cache\\2da9684c0f8ccdcaff442cef6181d640ac756db9\\output\\res\\drawable\\abc_textfield_search_material.xml"
     },
     {
-        "merged": "D:\\Downloads\\BleDemo-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_item_background_holo_dark.xml",
-        "source": "C:\\Users\\林北94狂\\.android\\build-cache\\2da9684c0f8ccdcaff442cef6181d640ac756db9\\output\\res\\drawable\\abc_item_background_holo_dark.xml"
-    },
-    {
         "merged": "D:\\Downloads\\BleDemo-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_text_cursor_material.xml",
         "source": "C:\\Users\\林北94狂\\.android\\build-cache\\2da9684c0f8ccdcaff442cef6181d640ac756db9\\output\\res\\drawable\\abc_text_cursor_material.xml"
+    },
+    {
+        "merged": "D:\\Downloads\\BleDemo-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_item_background_holo_dark.xml",
+        "source": "C:\\Users\\林北94狂\\.android\\build-cache\\2da9684c0f8ccdcaff442cef6181d640ac756db9\\output\\res\\drawable\\abc_item_background_holo_dark.xml"
     },
     {
         "merged": "D:\\Downloads\\BleDemo-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_seekbar_track_material.xml",
