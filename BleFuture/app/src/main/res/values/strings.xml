@@ -1,8 +1,9 @@
 <resources>
-    <string name="app_name">Bfluucektyooouth</string>
+    <string name="app_name">BfluuLcektyoEoouth</string>
     <string name="scan">Scan</string>
     <string name="stop">Stop</string>
     <string name="clear">Clear</string>
+    <string name="connect">Connect</string>
     <string name="NOTsup">BLE Not Support</string>
     <string name="startScan">Scanning...</string>
     <string name="warning">Warning</string>

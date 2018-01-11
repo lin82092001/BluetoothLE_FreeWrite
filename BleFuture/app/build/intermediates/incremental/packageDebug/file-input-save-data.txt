@@ -1,5 +1,5 @@
 #Internal package file, do not edit.
-#Tue Jan 09 17:39:14 CST 2018
+#Wed Jan 10 20:30:24 CST 2018
 14.set=ANDROID_RESOURCE
 180.file=D\:\\Downloads\\BleDemo-master\\app\\build\\intermediates\\res\\resources-debug.ap_\\res\\layout\\abc_search_dropdown_item_icons_2line.xml
 118.set=ANDROID_RESOURCE

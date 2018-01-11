@@ -38,6 +38,13 @@
             android:layout_marginStart="14dp"
             android:onClick="Clear"
             android:text="@string/clear" />
+        <Button
+            android:id="@+id/Connect"
+            android:text="@string/connect"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="14dp"
+            android:onClick="Connect"/>
     </LinearLayout>
 
     <LinearLayout

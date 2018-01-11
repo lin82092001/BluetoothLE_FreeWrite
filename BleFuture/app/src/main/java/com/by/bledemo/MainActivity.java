@@ -17,6 +17,7 @@ import android.util.Log;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
+import android.widget.Button;
 import android.widget.ListView;
 import android.widget.TextView;
 import android.widget.Toast;
@@ -32,6 +33,7 @@ public class MainActivity extends AppCompatActivity {
     private static final long SCAN_PERIOD=10000;    // Stops scanning after 10 seconds.
     private String LeftAddress="";
     private String RightAddress="";
+    private Button Connect;
     private TextView scanState;
     private TextView LeftHand;
     private TextView RightHand;
@@ -44,6 +46,7 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+        Connect=(Button)this.findViewById(R.id.Connect);
         LeftHand=(TextView)this.findViewById(R.id.LeftHand);
         RightHand=(TextView)this.findViewById(R.id.RightHand);
         scanState=(TextView)this.findViewById(R.id.scanState);
@@ -94,7 +97,7 @@ public class MainActivity extends AppCompatActivity {
                     public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
                         BluetoothDevice device=DeviceArray.get(position);
                         LeftAddress=device.getAddress();
-                        LeftHand.setText(device.getAddress());
+                        LeftHand.setText(LeftAddress);
                     }
                 });
                 RightDeviceList.setOnItemClickListener(new AdapterView.OnItemClickListener() {
@@ -102,36 +105,16 @@ public class MainActivity extends AppCompatActivity {
                     public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
                         BluetoothDevice device=DeviceArray.get(position);
                         RightAddress=device.getAddress();
-                        RightHand.setText(device.getAddress());
+                        RightHand.setText(RightAddress);
                     }
                 });
-
-//               switch (state){
-//                   case SELECT_DEVICE:
-//                       if (LeftAddress == "" || RightAddress == "") {
-//                           new AlertDialog.Builder(MainActivity.this).setTitle(R.string.warning).setMessage(R.string.NOdevice).setPositiveButton(R.string.OK, new DialogInterface.OnClickListener() {
-//                               @Override
-//                               public void onClick(DialogInterface dialog, int which) {
-//                               }
-//                           }).show();
-//                           break;
-//                       }
-//                       if (LeftAddress.equals(RightAddress)) {
-//                           new AlertDialog.Builder(MainActivity.this).setTitle(R.string.warning).setMessage(R.string.NOTsame).setPositiveButton(R.string.OK, new DialogInterface.OnClickListener() {
-//                               @Override
-//                               public void onClick(DialogInterface dialog, int which) {
-//                               }
-//                           }).show();
-//                           break;
-//                       }
-//                       break;
-//               }
             }
         });
+
     }
 
     public enum BluetoothState{
-        SELECT_DEVICE
+        SELECT_DEVICE,CONNECTING
     }
 
     @Override
@@ -162,11 +145,40 @@ public class MainActivity extends AppCompatActivity {
         runOnUiThread(new Runnable() {
             @Override
             public void run() {
+                LeftAddress="";
+                RightAddress="";
+                LeftHand.setText("Left");
+                RightHand.setText("Right");
                 listAdapter.clear();
                 listAdapter.notifyDataSetChanged();
                 DeviceArray.clear();
             }
         });
+    }
+
+    public void Connect(View view){
+        switch (state){
+            case SELECT_DEVICE:
+                if (LeftAddress=="" && RightAddress=="") {
+                    new AlertDialog.Builder(MainActivity.this).setTitle(R.string.warning).setMessage(R.string.NOdevice).setPositiveButton(R.string.OK, new DialogInterface.OnClickListener() {
+                        @Override
+                        public void onClick(DialogInterface dialog, int which) {
+                        }
+                    }).show();
+                    break;
+                }
+                if (LeftAddress.equals(RightAddress)) {
+                    new AlertDialog.Builder(MainActivity.this).setTitle(R.string.warning).setMessage(R.string.NOTsame).setPositiveButton(R.string.OK, new DialogInterface.OnClickListener() {
+                        @Override
+                        public void onClick(DialogInterface dialog, int which) {
+                        }
+                    }).show();
+                    break;
+                }
+                break;
+            case CONNECTING:
+                break;
+        }
     }
 
     /*Here is an implementation of the BluetoothAdapter.LeScanCallback,
