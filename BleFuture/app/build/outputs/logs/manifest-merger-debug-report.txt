@@ -1,6 +1,6 @@
 -- Merging decision tree log ---
 manifest
-ADDED from D:\Downloads\BleDemo-master\app\src\main\AndroidManifest.xml:2:1-32:12
+ADDED from D:\Downloads\BleDemo-master\app\src\main\AndroidManifest.xml:2:1-35:12
 	package
 		ADDED from D:\Downloads\BleDemo-master\app\src\main\AndroidManifest.xml:3:5-29
 		INJECTED from D:\Downloads\BleDemo-master\app\src\main\AndroidManifest.xml
@@ -36,7 +36,7 @@ ADDED from D:\Downloads\BleDemo-master\app\src\main\AndroidManifest.xml:15:5-90
 	android:name
 		ADDED from D:\Downloads\BleDemo-master\app\src\main\AndroidManifest.xml:15:19-63
 application
-ADDED from D:\Downloads\BleDemo-master\app\src\main\AndroidManifest.xml:17:5-30:19
+ADDED from D:\Downloads\BleDemo-master\app\src\main\AndroidManifest.xml:17:5-33:19
 MERGED from [com.android.support:appcompat-v7:25.3.1] C:\Users\林北94狂\.android\build-cache\2da9684c0f8ccdcaff442cef6181d640ac756db9\output\AndroidManifest.xml:29:5-20
 MERGED from [com.android.support:support-v4:25.3.1] C:\Users\林北94狂\.android\build-cache\20b9147897549fbc883fcdaf4c708faf3c6f8c1e\output\AndroidManifest.xml:29:5-20
 MERGED from [com.android.support:support-fragment:25.3.1] C:\Users\林北94狂\.android\build-cache\475911e58957160dcd03c3f6ddce6c103edd55b5\output\AndroidManifest.xml:29:5-20
@@ -71,6 +71,10 @@ category#android.intent.category.LAUNCHER
 ADDED from D:\Downloads\BleDemo-master\app\src\main\AndroidManifest.xml:27:17-77
 	android:name
 		ADDED from D:\Downloads\BleDemo-master\app\src\main\AndroidManifest.xml:27:27-74
+activity#com.by.bledemo.Controller.ConnectedActivity
+ADDED from D:\Downloads\BleDemo-master\app\src\main\AndroidManifest.xml:30:9-32:20
+	android:name
+		ADDED from D:\Downloads\BleDemo-master\app\src\main\AndroidManifest.xml:30:19-63
 uses-sdk
 INJECTED from D:\Downloads\BleDemo-master\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
 MERGED from [com.android.support:appcompat-v7:25.3.1] C:\Users\林北94狂\.android\build-cache\2da9684c0f8ccdcaff442cef6181d640ac756db9\output\AndroidManifest.xml:21:5-23:78

@@ -56,6 +56,10 @@
         "source": "C:\\Users\\林北94狂\\.android\\build-cache\\2da9684c0f8ccdcaff442cef6181d640ac756db9\\output\\res\\layout\\abc_action_mode_bar.xml"
     },
     {
+        "merged": "D:\\Downloads\\BleDemo-master\\app\\build\\intermediates\\res\\merged\\debug\\layout\\connected.xml",
+        "source": "D:\\Downloads\\BleDemo-master\\app\\src\\main\\res\\layout\\connected.xml"
+    },
+    {
         "merged": "D:\\Downloads\\BleDemo-master\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_action_bar_up_container.xml",
         "source": "C:\\Users\\林北94狂\\.android\\build-cache\\2da9684c0f8ccdcaff442cef6181d640ac756db9\\output\\res\\layout\\abc_action_bar_up_container.xml"
     },

@@ -22,6 +22,8 @@ import android.widget.ListView;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.by.bledemo.Controller.ConnectedActivity;
+
 import java.util.ArrayList;
 
 public class MainActivity extends AppCompatActivity {
@@ -41,6 +43,9 @@ public class MainActivity extends AppCompatActivity {
     private ListView RightDeviceList;
     private ArrayAdapter<String> listAdapter;   //搭配ListView將Item放入陣列中
     private ArrayList<BluetoothDevice> DeviceArray;
+    public enum BluetoothState{
+        SELECT_DEVICE,CONNECTING
+    }
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -108,13 +113,39 @@ public class MainActivity extends AppCompatActivity {
                         RightHand.setText(RightAddress);
                     }
                 });
+                Connect.setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View v) {
+                        switch (state){
+                            case SELECT_DEVICE:
+                                if (LeftAddress=="" && RightAddress=="") {
+                                    new AlertDialog.Builder(MainActivity.this).setTitle(R.string.warning).setMessage(R.string.NOdevice).setPositiveButton(R.string.OK, new DialogInterface.OnClickListener() {
+                                        @Override
+                                        public void onClick(DialogInterface dialog, int which) {
+                                        }
+                                    }).show();
+                                    break;
+                                }
+                                if (LeftAddress.equals(RightAddress)) {
+                                    new AlertDialog.Builder(MainActivity.this).setTitle(R.string.warning).setMessage(R.string.NOTsame).setPositiveButton(R.string.OK, new DialogInterface.OnClickListener() {
+                                        @Override
+                                        public void onClick(DialogInterface dialog, int which) {
+                                        }
+                                    }).show();
+                                    break;
+                                }
+                                state=BluetoothState.CONNECTING;
+                                break;
+                            case CONNECTING:
+                                connectToDevice(LeftAddress,RightAddress);
+                                state=BluetoothState.SELECT_DEVICE;
+                                break;
+                        }
+                    }
+                });
             }
         });
 
-    }
-
-    public enum BluetoothState{
-        SELECT_DEVICE,CONNECTING
     }
 
     @Override
@@ -149,36 +180,12 @@ public class MainActivity extends AppCompatActivity {
                 RightAddress="";
                 LeftHand.setText("Left");
                 RightHand.setText("Right");
+                state=BluetoothState.SELECT_DEVICE;
                 listAdapter.clear();
                 listAdapter.notifyDataSetChanged();
                 DeviceArray.clear();
             }
         });
-    }
-
-    public void Connect(View view){
-        switch (state){
-            case SELECT_DEVICE:
-                if (LeftAddress=="" && RightAddress=="") {
-                    new AlertDialog.Builder(MainActivity.this).setTitle(R.string.warning).setMessage(R.string.NOdevice).setPositiveButton(R.string.OK, new DialogInterface.OnClickListener() {
-                        @Override
-                        public void onClick(DialogInterface dialog, int which) {
-                        }
-                    }).show();
-                    break;
-                }
-                if (LeftAddress.equals(RightAddress)) {
-                    new AlertDialog.Builder(MainActivity.this).setTitle(R.string.warning).setMessage(R.string.NOTsame).setPositiveButton(R.string.OK, new DialogInterface.OnClickListener() {
-                        @Override
-                        public void onClick(DialogInterface dialog, int which) {
-                        }
-                    }).show();
-                    break;
-                }
-                break;
-            case CONNECTING:
-                break;
-        }
     }
 
     /*Here is an implementation of the BluetoothAdapter.LeScanCallback,
@@ -234,6 +241,15 @@ public class MainActivity extends AppCompatActivity {
                 mBluetoothAdapter.stopLeScan(mLeScanCallback);
             }
         }
+    }
+
+    public void connectToDevice(String LDevice,String RDevice){
+        Intent intent=new Intent();
+        intent.setClass(MainActivity.this, ConnectedActivity.class);
+        intent.putExtra("LeftAddress",LDevice);
+        intent.putExtra("RightAddress",RDevice);
+        scanLeDevice(false);
+        startActivity(intent);
     }
 
 }

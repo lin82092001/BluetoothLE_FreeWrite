@@ -43,8 +43,7 @@
             android:text="@string/connect"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="14dp"
-            android:onClick="Connect"/>
+            android:layout_marginLeft="14dp"/>
     </LinearLayout>
 
     <LinearLayout
@@ -62,7 +61,7 @@
                 android:id="@+id/LeftHand"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="left"
+                android:text="Left"
                 android:textSize="10pt"/>
             <ListView
                 android:id="@+id/LeftDeviceList"
@@ -79,7 +78,7 @@
                 android:id="@+id/RightHand"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="right"
+                android:text="Right"
                 android:textSize="10pt"/>
             <ListView
                 android:id="@+id/RightDeviceList"
