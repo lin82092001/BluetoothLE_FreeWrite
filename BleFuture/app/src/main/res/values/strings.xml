@@ -13,4 +13,6 @@
     <string name="Test">Test</string>
     <string name="Disc">Disconnect</string>
     <string name="Close">Close</string>
+    <string name="Left">Left</string>
+    <string name="Right">Right</string>
 </resources>

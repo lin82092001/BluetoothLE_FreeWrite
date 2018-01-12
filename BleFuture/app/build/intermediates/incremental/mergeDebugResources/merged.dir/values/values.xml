@@ -408,10 +408,15 @@
     <integer name="abc_config_activityShortDur">150</integer>
     <integer name="cancel_button_image_alpha">127</integer>
     <integer name="status_bar_notification_info_maxnum">999</integer>
+    <string name="Close">Close</string>
+    <string name="Disc">Disconnect</string>
+    <string name="Left">Left</string>
     <string name="NOTsame">You can not select the same device.</string>
     <string name="NOTsup">BLE Not Support</string>
     <string name="NOdevice">No select the device.</string>
     <string name="OK">OK</string>
+    <string name="Right">Right</string>
+    <string name="Test">Test</string>
     <string name="abc_action_bar_home_description">Navigate home</string>
     <string name="abc_action_bar_home_description_format">%1$s, %2$s</string>
     <string name="abc_action_bar_home_subtitle_description_format">%1$s, %2$s, %3$s</string>
@@ -443,8 +448,9 @@
     <string name="abc_shareactionprovider_share_with">Share with</string>
     <string name="abc_shareactionprovider_share_with_application">Share with %s</string>
     <string name="abc_toolbar_collapse_description">Collapse</string>
-    <string name="app_name">Bfluucektyooouth</string>
+    <string name="app_name">BfluuLcektyoEoouth</string>
     <string name="clear">Clear</string>
+    <string name="connect">Connect</string>
     <string name="scan">Scan</string>
     <string name="search_menu_title">Search</string>
     <string name="startScan">Scanning...</string>

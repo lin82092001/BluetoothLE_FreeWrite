@@ -1,7 +1,7 @@
 #Internal package file, do not edit.
-#Thu Jan 11 17:56:04 CST 2018
+#Fri Jan 12 14:39:42 CST 2018
 14.set=ANDROID_RESOURCE
-180.file=D\:\\Downloads\\BleDemo-master\\app\\build\\intermediates\\res\\resources-debug.ap_\\res\\layout\\abc_search_dropdown_item_icons_2line.xml
+180.file=D\:\\Downloads\\BleDemo-master\\app\\build\\intermediates\\res\\resources-debug.ap_\\res\\mipmap-hdpi-v4\\ic_launcher.png
 118.set=ANDROID_RESOURCE
 60.set=ANDROID_RESOURCE
 2.set=ANDROID_RESOURCE
@@ -48,7 +48,7 @@
 21.base=D\:\\Downloads\\BleDemo-master\\app\\build\\intermediates\\res\\resources-debug.ap_
 17.set=ANDROID_RESOURCE
 73.base=D\:\\Downloads\\BleDemo-master\\app\\build\\intermediates\\res\\resources-debug.ap_
-127.file=D\:\\Downloads\\BleDemo-master\\app\\build\\intermediates\\res\\resources-debug.ap_\\res\\color\\abc_tint_edittext.xml
+127.file=D\:\\Downloads\\BleDemo-master\\app\\build\\intermediates\\res\\resources-debug.ap_\\res\\layout\\abc_alert_dialog_title_material.xml
 63.set=ANDROID_RESOURCE
 6.base=D\:\\Downloads\\BleDemo-master\\app\\build\\intermediates\\res\\resources-debug.ap_
 5.set=ANDROID_RESOURCE
@@ -57,7 +57,7 @@
 154.file=D\:\\Downloads\\BleDemo-master\\app\\build\\intermediates\\res\\resources-debug.ap_\\res\\drawable-ldrtl-xhdpi-v17\\abc_spinner_mtrl_am_alpha.9.png
 167.set=ANDROID_RESOURCE
 24.set=ANDROID_RESOURCE
-181.file=D\:\\Downloads\\BleDemo-master\\app\\build\\intermediates\\res\\resources-debug.ap_\\res\\mipmap-hdpi-v4\\ic_launcher.png
+181.file=D\:\\Downloads\\BleDemo-master\\app\\build\\intermediates\\res\\resources-debug.ap_\\res\\layout\\abc_search_dropdown_item_icons_2line.xml
 128.set=ANDROID_RESOURCE
 70.set=ANDROID_RESOURCE
 27.file=D\:\\Downloads\\BleDemo-master\\app\\build\\intermediates\\res\\resources-debug.ap_\\res\\mipmap-xxxhdpi-v4\\ic_launcher_round.png
@@ -101,7 +101,7 @@
 22.base=D\:\\Downloads\\BleDemo-master\\app\\build\\intermediates\\res\\resources-debug.ap_
 27.set=ANDROID_RESOURCE
 74.base=D\:\\Downloads\\BleDemo-master\\app\\build\\intermediates\\res\\resources-debug.ap_
-128.file=D\:\\Downloads\\BleDemo-master\\app\\build\\intermediates\\res\\resources-debug.ap_\\res\\layout\\abc_alert_dialog_title_material.xml
+128.file=D\:\\Downloads\\BleDemo-master\\app\\build\\intermediates\\res\\resources-debug.ap_\\res\\color\\abc_tint_edittext.xml
 73.set=ANDROID_RESOURCE
 7.base=D\:\\Downloads\\BleDemo-master\\app\\build\\intermediates\\res\\resources-debug.ap_
 103.file=D\:\\Downloads\\BleDemo-master\\app\\build\\intermediates\\res\\resources-debug.ap_\\res\\layout-v11\\notification_template_big_media_custom.xml
@@ -180,7 +180,7 @@
 0.set=ANDROID_RESOURCE
 195.file=D\:\\Downloads\\BleDemo-master\\app\\build\\intermediates\\res\\resources-debug.ap_\\res\\drawable\\abc_list_selector_background_transition_holo_dark.xml
 191.base=D\:\\Downloads\\BleDemo-master\\app\\build\\intermediates\\res\\resources-debug.ap_
-170.file=D\:\\Downloads\\BleDemo-master\\app\\build\\intermediates\\res\\resources-debug.ap_\\res\\color\\abc_hint_foreground_material_dark.xml
+170.file=D\:\\Downloads\\BleDemo-master\\app\\build\\intermediates\\res\\resources-debug.ap_\\res\\drawable-xhdpi-v4\\abc_scrubber_control_off_mtrl_alpha.png
 162.set=ANDROID_RESOURCE
 37.base=D\:\\Downloads\\BleDemo-master\\app\\build\\intermediates\\res\\resources-debug.ap_
 123.set=ANDROID_RESOURCE
@@ -233,7 +233,7 @@
 126.set=ANDROID_RESOURCE
 140.base=D\:\\Downloads\\BleDemo-master\\app\\build\\intermediates\\res\\resources-debug.ap_
 196.file=D\:\\Downloads\\BleDemo-master\\app\\build\\intermediates\\res\\resources-debug.ap_\\res\\drawable\\abc_item_background_holo_dark.xml
-171.file=D\:\\Downloads\\BleDemo-master\\app\\build\\intermediates\\res\\resources-debug.ap_\\res\\drawable-xhdpi-v4\\abc_scrubber_control_off_mtrl_alpha.png
+171.file=D\:\\Downloads\\BleDemo-master\\app\\build\\intermediates\\res\\resources-debug.ap_\\res\\color\\abc_hint_foreground_material_dark.xml
 38.base=D\:\\Downloads\\BleDemo-master\\app\\build\\intermediates\\res\\resources-debug.ap_
 133.set=ANDROID_RESOURCE
 17.file=D\:\\Downloads\\BleDemo-master\\app\\build\\intermediates\\res\\resources-debug.ap_\\res\\layout\\select_dialog_item_material.xml
@@ -324,7 +324,7 @@
 139.set=ANDROID_RESOURCE
 81.set=ANDROID_RESOURCE
 59.file=D\:\\Downloads\\BleDemo-master\\app\\build\\intermediates\\res\\resources-debug.ap_\\res\\drawable-xhdpi-v4\\abc_ic_menu_selectall_mtrl_alpha.png
-34.file=D\:\\Downloads\\BleDemo-master\\app\\build\\intermediates\\res\\resources-debug.ap_\\res\\color\\abc_btn_colored_text_material.xml
+34.file=D\:\\Downloads\\BleDemo-master\\app\\build\\intermediates\\res\\resources-debug.ap_\\res\\layout\\abc_screen_content_include.xml
 65.base=D\:\\Downloads\\BleDemo-master\\app\\build\\intermediates\\res\\resources-debug.ap_
 86.file=D\:\\Downloads\\BleDemo-master\\app\\build\\intermediates\\res\\resources-debug.ap_\\res\\drawable\\abc_switch_thumb_material.xml
 40.base=D\:\\Downloads\\BleDemo-master\\app\\build\\intermediates\\res\\resources-debug.ap_
@@ -376,7 +376,7 @@ count=200
 45.set=ANDROID_RESOURCE
 149.set=ANDROID_RESOURCE
 91.set=ANDROID_RESOURCE
-35.file=D\:\\Downloads\\BleDemo-master\\app\\build\\intermediates\\res\\resources-debug.ap_\\res\\layout\\abc_screen_content_include.xml
+35.file=D\:\\Downloads\\BleDemo-master\\app\\build\\intermediates\\res\\resources-debug.ap_\\AndroidManifest.xml
 66.base=D\:\\Downloads\\BleDemo-master\\app\\build\\intermediates\\res\\resources-debug.ap_
 87.file=D\:\\Downloads\\BleDemo-master\\app\\build\\intermediates\\res\\resources-debug.ap_\\res\\mipmap-xxhdpi-v4\\ic_launcher.png
 10.file=D\:\\Downloads\\BleDemo-master\\app\\build\\intermediates\\res\\resources-debug.ap_\\res\\drawable\\abc_spinner_textfield_background_material.xml
@@ -389,7 +389,7 @@ count=200
 147.file=D\:\\Downloads\\BleDemo-master\\app\\build\\intermediates\\res\\resources-debug.ap_\\res\\layout\\abc_action_bar_title_item.xml
 143.base=D\:\\Downloads\\BleDemo-master\\app\\build\\intermediates\\res\\resources-debug.ap_
 199.file=D\:\\Downloads\\BleDemo-master\\app\\build\\intermediates\\res\\resources-debug.ap_\\res\\layout\\connected.xml
-122.file=D\:\\Downloads\\BleDemo-master\\app\\build\\intermediates\\res\\resources-debug.ap_\\res\\layout\\notification_template_media.xml
+122.file=D\:\\Downloads\\BleDemo-master\\app\\build\\intermediates\\res\\resources-debug.ap_\\res\\color\\abc_secondary_text_material_light.xml
 13.set=ANDROID_RESOURCE
 1.base=D\:\\Downloads\\BleDemo-master\\app\\build\\intermediates\\res\\resources-debug.ap_
 174.file=D\:\\Downloads\\BleDemo-master\\app\\build\\intermediates\\res\\resources-debug.ap_\\res\\color\\switch_thumb_material_light.xml
@@ -430,7 +430,7 @@ count=200
 190.file=D\:\\Downloads\\BleDemo-master\\app\\build\\intermediates\\res\\resources-debug.ap_\\res\\drawable-xhdpi-v4\\abc_cab_background_top_mtrl_alpha.9.png
 159.set=ANDROID_RESOURCE
 16.set=DEX
-36.file=D\:\\Downloads\\BleDemo-master\\app\\build\\intermediates\\res\\resources-debug.ap_\\AndroidManifest.xml
+36.file=D\:\\Downloads\\BleDemo-master\\app\\build\\intermediates\\res\\resources-debug.ap_\\res\\color\\abc_btn_colored_text_material.xml
 67.base=D\:\\Downloads\\BleDemo-master\\app\\build\\intermediates\\res\\resources-debug.ap_
 88.file=D\:\\Downloads\\BleDemo-master\\app\\build\\intermediates\\res\\resources-debug.ap_\\res\\drawable-xhdpi-v4\\abc_ic_star_half_black_16dp.png
 11.file=D\:\\Downloads\\BleDemo-master\\app\\build\\intermediates\\res\\resources-debug.ap_\\res\\drawable-xhdpi-v4\\abc_list_focused_holo.9.png
@@ -443,7 +443,7 @@ count=200
 166.set=ANDROID_RESOURCE
 148.file=D\:\\Downloads\\BleDemo-master\\app\\build\\intermediates\\res\\resources-debug.ap_\\res\\layout\\abc_action_menu_item_layout.xml
 144.base=D\:\\Downloads\\BleDemo-master\\app\\build\\intermediates\\res\\resources-debug.ap_
-123.file=D\:\\Downloads\\BleDemo-master\\app\\build\\intermediates\\res\\resources-debug.ap_\\res\\color\\abc_secondary_text_material_light.xml
+123.file=D\:\\Downloads\\BleDemo-master\\app\\build\\intermediates\\res\\resources-debug.ap_\\res\\layout\\notification_template_media.xml
 23.set=ANDROID_RESOURCE
 2.base=D\:\\Downloads\\BleDemo-master\\app\\build\\intermediates\\res\\resources-debug.ap_
 175.file=D\:\\Downloads\\BleDemo-master\\app\\build\\intermediates\\res\\resources-debug.ap_\\res\\color\\abc_hint_foreground_material_light.xml

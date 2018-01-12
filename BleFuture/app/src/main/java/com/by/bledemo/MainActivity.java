@@ -27,11 +27,14 @@ import com.by.bledemo.Controller.ConnectedActivity;
 import java.util.ArrayList;
 
 public class MainActivity extends AppCompatActivity {
+    public enum BluetoothState{
+        SELECT_DEVICE,CONNECTING
+    }
     private BluetoothAdapter mBluetoothAdapter;
+    private BluetoothState state=BluetoothState.SELECT_DEVICE;
     private Handler mHandler = new Handler();
     private int REQUEST_ENABLE=1;
     private boolean mScanning;
-    private BluetoothState state=BluetoothState.SELECT_DEVICE;
     private static final long SCAN_PERIOD=10000;    // Stops scanning after 10 seconds.
     private String LeftAddress="";
     private String RightAddress="";
@@ -43,9 +46,7 @@ public class MainActivity extends AppCompatActivity {
     private ListView RightDeviceList;
     private ArrayAdapter<String> listAdapter;   //搭配ListView將Item放入陣列中
     private ArrayList<BluetoothDevice> DeviceArray;
-    public enum BluetoothState{
-        SELECT_DEVICE,CONNECTING
-    }
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -178,8 +179,8 @@ public class MainActivity extends AppCompatActivity {
             public void run() {
                 LeftAddress="";
                 RightAddress="";
-                LeftHand.setText("Left");
-                RightHand.setText("Right");
+                LeftHand.setText(R.string.Left);
+                RightHand.setText(R.string.Right);
                 state=BluetoothState.SELECT_DEVICE;
                 listAdapter.clear();
                 listAdapter.notifyDataSetChanged();
@@ -188,6 +189,31 @@ public class MainActivity extends AppCompatActivity {
         });
     }
 
+    /*As soon as you find the desired device, stop scanning.
+       Never scan on a loop, and set a time limit on your scan.
+       A device that was previously available may have moved out of range, and continuing to scan drains the battery.*/
+    private void scanLeDevice(final boolean enable) {
+        if(enable) {
+            // Stops scanning after a pre-defined scan period.
+            //啟動一個Handler，並使用postDelayed在SCAN_PERIOD秒後自動執行此Runnable()
+            mHandler.postDelayed(new Runnable() {
+                @Override
+                public void run() {
+                    mScanning = false;
+                    mBluetoothAdapter.stopLeScan(mLeScanCallback);
+                    scanState.setText("After "+SCAN_PERIOD/1000+"s stop scan.");
+                }
+            }, SCAN_PERIOD);//SCAN_PERIOD為幾秒後要執行此Runnable
+            scanState.setText(R.string.startScan);
+            mScanning = true;
+            mBluetoothAdapter.startLeScan(mLeScanCallback);
+        }else {
+            if(mBluetoothAdapter!=null){
+                mScanning=false;
+                mBluetoothAdapter.stopLeScan(mLeScanCallback);
+            }
+        }
+    }
     /*Here is an implementation of the BluetoothAdapter.LeScanCallback,
         which is the interface used to deliver BLE scan results*/
     private final BluetoothAdapter.LeScanCallback mLeScanCallback = new BluetoothAdapter.LeScanCallback() {
@@ -217,38 +243,13 @@ public class MainActivity extends AppCompatActivity {
         }
     };
 
-    /*As soon as you find the desired device, stop scanning.
-       Never scan on a loop, and set a time limit on your scan.
-       A device that was previously available may have moved out of range, and continuing to scan drains the battery.*/
-    private void scanLeDevice(final boolean enable) {
-        if(enable) {
-            // Stops scanning after a pre-defined scan period.
-            //啟動一個Handler，並使用postDelayed在SCAN_PERIOD秒後自動執行此Runnable()
-            mHandler.postDelayed(new Runnable() {
-                @Override
-                public void run() {
-                    mScanning = false;
-                    mBluetoothAdapter.stopLeScan(mLeScanCallback);
-                    scanState.setText("After "+SCAN_PERIOD/1000+"s stop scan.");
-                }
-            }, SCAN_PERIOD);//SCAN_PERIOD為幾秒後要執行此Runnable
-            scanState.setText(R.string.startScan);
-            mScanning = true;
-            mBluetoothAdapter.startLeScan(mLeScanCallback);
-        }else {
-            if(mBluetoothAdapter!=null){
-                mScanning=false;
-                mBluetoothAdapter.stopLeScan(mLeScanCallback);
-            }
-        }
-    }
-
     public void connectToDevice(String LDevice,String RDevice){
-        Intent intent=new Intent();
-        intent.setClass(MainActivity.this, ConnectedActivity.class);
+        //建立一個Intent，將從此Activity進到ConnectedActivity中在ConnectedActivity中將與BLE Device連線，並互相溝通
+        Intent intent=new Intent(MainActivity.this, ConnectedActivity.class);
+        //將兩個device address存到ConnectedActivity，以供ConnectedActivity使用
         intent.putExtra("LeftAddress",LDevice);
         intent.putExtra("RightAddress",RDevice);
-        scanLeDevice(false);
+        scanLeDevice(false);// will stop after first device detection
         startActivity(intent);
     }
 
