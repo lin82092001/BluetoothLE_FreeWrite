@@ -62,15 +62,6 @@ public class MainActivity extends AppCompatActivity {
         final BluetoothManager bluetoothManager = (BluetoothManager) getSystemService(BLUETOOTH_SERVICE);
         mBluetoothAdapter = bluetoothManager.getAdapter();
 
-        /*Ensures Bluetooth is available on the device and it is enabled. If not,
-          displays a dialog requesting user permission to enable Bluetooth.*/
-        /*一般來說，只要使用到mBluetoothAdapter.isEnabled()就可以將BL開啟了，但此部分添加一個Result Intent
-           跳出詢問視窗是否開啟BL，因此該Intenr為BluetoothAdapter.ACTION.REQUEST_ENABLE*/
-        if (mBluetoothAdapter == null || !mBluetoothAdapter.isEnabled()) {
-            Intent enableBtIntent = new Intent(BluetoothAdapter.ACTION_REQUEST_ENABLE);
-            startActivityForResult(enableBtIntent, REQUEST_ENABLE_BT);  //再利用startActivityForResult啟動該Intent
-        }
-
         //點擊ListView的Item選擇要連線的裝置
         DevicesList.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
@@ -80,39 +71,46 @@ public class MainActivity extends AppCompatActivity {
         });
     }
 
-//    @Override
-//    protected void onResume() {
-//        super.onResume();
-//
-//        else {
-//
-//            if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP) {
-//            mLEScanner = mBluetoothAdapter.getBluetoothLeScanner();
-//                filters = new ArrayList<>();
-//                settings = new ScanSettings.Builder()
-//                        .setScanMode(ScanSettings.SCAN_MODE_LOW_POWER)
-//                        .build();
-//            }
-//            scanLeDevice(true); //使用ScanFunction(true) 開啟BLE搜尋功能
-//        }
-//    }
+    @Override
+    protected void onResume() {
+        super.onResume();
+        /*Ensures Bluetooth is available on the device and it is enabled. If not,
+          displays a dialog requesting user permission to enable Bluetooth.*/
+        /*一般來說，只要使用到mBluetoothAdapter.isEnabled()就可以將BL開啟了，但此部分添加一個Result Intent
+           跳出詢問視窗是否開啟BL，因此該Intenr為BluetoothAdapter.ACTION.REQUEST_ENABLE*/
+        if(mBluetoothAdapter==null || !mBluetoothAdapter.isEnabled()){
+            Intent enableBtIntent=new Intent(BluetoothAdapter.ACTION_REQUEST_ENABLE);
+            startActivityForResult(enableBtIntent,REQUEST_ENABLE_BT);
+        }
+        else {
 
-//    @Override
-//    protected void onPause() {
-//        super.onPause();
-//        if (mBluetoothAdapter != null && mBluetoothAdapter.isEnabled()) {
-//            scanLeDevice(false);
-//            mBluetoothAdapter.stopLeScan(mLeScanCallback);
-//        }
-//    }
-//    @Override
-//    protected void onStop() {
-//        super.onStop();
-//    }
-//    @Override
-//    protected void onDestroy() {
-//        super.onDestroy();
-//    }
+            if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP) {
+            mLEScanner = mBluetoothAdapter.getBluetoothLeScanner();
+                filters = new ArrayList<>();
+                settings = new ScanSettings.Builder()
+                        .setScanMode(ScanSettings.SCAN_MODE_LOW_POWER)
+                        .build();
+            }
+            scanLeDevice(true); //使用ScanFunction(true) 開啟BLE搜尋功能
+        }
+    }
+
+    @Override
+    protected void onPause() {
+        super.onPause();
+        if (mBluetoothAdapter != null && mBluetoothAdapter.isEnabled()) {
+            scanLeDevice(false);
+            mBluetoothAdapter.stopLeScan(mLeScanCallback);
+        }
+    }
+    @Override
+    protected void onStop() {
+        super.onStop();
+    }
+    @Override
+    protected void onDestroy() {
+        super.onDestroy();
+    }
 
     /*這個Override Function是因為在onResume中使用了ActivityForResult，當使用者按了取消或確定鍵時，結果會
     返回到此onActivvityResult中，在判別requestCode判別是否==RESULT_CANCELED，如果是則finish()程式*/
@@ -152,28 +150,25 @@ public class MainActivity extends AppCompatActivity {
             mHandler.postDelayed(new Runnable() {
                 @Override
                 public void run() {
-//                    if (Build.VERSION.SDK_INT < Build.VERSION_CODES.LOLLIPOP) { //如果compileSdkVersion低於21則不做掃描
-//                        if (mBluetoothAdapter != null && mBluetoothAdapter.isEnabled())
-//                            mBluetoothAdapter.stopLeScan(mLeScanCallback);
-//                    } else {
-//                        if (mBluetoothAdapter != null && mBluetoothAdapter.isEnabled()){}
-//                            mLEScanner.stopScan(mScanCallback);
-//                    }
+                    if (Build.VERSION.SDK_INT < Build.VERSION_CODES.LOLLIPOP) { //如果compileSdkVersion低於21則不做掃描
+                        if (mBluetoothAdapter != null && mBluetoothAdapter.isEnabled())
+                            mBluetoothAdapter.stopLeScan(mLeScanCallback);
+                    } else {
+                        if (mBluetoothAdapter != null && mBluetoothAdapter.isEnabled()){}
+                            mLEScanner.stopScan(mScanCallback);
+                    }
                     mBluetoothAdapter.stopLeScan(mLeScanCallback);
-                    //mLEScanner.stopScan(mScanCallback);
-                    Log.d("scanLeDevice()","After "+SCAN_PERIOD/1000 +"s Stop Scan");
+                    mLEScanner.stopScan(mScanCallback);
                 }
             }, SCAN_PERIOD);//SCAN_PERIOD為幾秒後要執行此Runnable
 
             mBluetoothAdapter.startLeScan(mLeScanCallback);
-            //mLEScanner.startScan(filters, settings, mScanCallback);
-            Log.d("scanLeDevice()","Start Scan");
-        } /*else {
-            //if(mLEScanner!=null && mBluetoothAdapter!=null)
+            mLEScanner.startScan(filters, settings, mScanCallback);
+        } else {
+            if(mLEScanner!=null && mBluetoothAdapter!=null)
                 mBluetoothAdapter.stopLeScan(mLeScanCallback);
                 mLEScanner.stopScan(mScanCallback);
-                Log.d("scanLeDevice()","Stop Scan");
-        }*/
+        }
     }
 
     /*Here is an implementation of the BluetoothAdapter.LeScanCallback,
@@ -182,16 +177,15 @@ public class MainActivity extends AppCompatActivity {
                 @Override
                 public void onLeScan(final BluetoothDevice device, final int rssi,
                                      byte[] scanRecord) {
-                    //runOnUiThread(new Runnable() {
-                        //@Override
-                        //public void run() {
+                    runOnUiThread(new Runnable() {
+                        @Override
+                        public void run() {
                             Log.i("onLeScan", device.getName()+":"+rssi);
                             DeviceArray.add(device);
-                            //deviceName.add(device.getName()+" rssi:"+rssi+"\r\n" + device.getAddress());
                             listAdapter.add(device.getName() + ":" + device.getAddress()+", RSSI:"+rssi);
                             listAdapter.notifyDataSetChanged();
-                        //}
-                    //});
+                        }
+                    });
                 }
             };
 
