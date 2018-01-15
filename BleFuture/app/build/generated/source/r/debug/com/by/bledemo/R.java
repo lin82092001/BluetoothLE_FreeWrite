@@ -2270,18 +2270,19 @@ containing a value of this type.
         public static final int abc_textfield_search_default_mtrl_alpha=0x7f020050;
         public static final int abc_textfield_search_material=0x7f020051;
         public static final int abc_vector_test=0x7f020052;
-        public static final int notification_action_background=0x7f020053;
-        public static final int notification_bg=0x7f020054;
-        public static final int notification_bg_low=0x7f020055;
-        public static final int notification_bg_low_normal=0x7f020056;
-        public static final int notification_bg_low_pressed=0x7f020057;
-        public static final int notification_bg_normal=0x7f020058;
-        public static final int notification_bg_normal_pressed=0x7f020059;
-        public static final int notification_icon_background=0x7f02005a;
-        public static final int notification_template_icon_bg=0x7f02005d;
-        public static final int notification_template_icon_low_bg=0x7f02005e;
-        public static final int notification_tile_bg=0x7f02005b;
-        public static final int notify_panel_notification_icon_bg=0x7f02005c;
+        public static final int bluetooth=0x7f020053;
+        public static final int notification_action_background=0x7f020054;
+        public static final int notification_bg=0x7f020055;
+        public static final int notification_bg_low=0x7f020056;
+        public static final int notification_bg_low_normal=0x7f020057;
+        public static final int notification_bg_low_pressed=0x7f020058;
+        public static final int notification_bg_normal=0x7f020059;
+        public static final int notification_bg_normal_pressed=0x7f02005a;
+        public static final int notification_icon_background=0x7f02005b;
+        public static final int notification_template_icon_bg=0x7f02005e;
+        public static final int notification_template_icon_low_bg=0x7f02005f;
+        public static final int notification_tile_bg=0x7f02005c;
+        public static final int notify_panel_notification_icon_bg=0x7f02005d;
     }
     public static final class id {
         public static final int ClearButton=0x7f0b0060;
@@ -2290,10 +2291,10 @@ containing a value of this type.
         public static final int Disconnect=0x7f0b0069;
         public static final int LeftDeviceList=0x7f0b0063;
         public static final int LeftHand=0x7f0b0062;
-        public static final int LeftService=0x7f0b0066;
+        public static final int LeftServices=0x7f0b0066;
         public static final int RightDeviceList=0x7f0b0065;
         public static final int RightHand=0x7f0b0064;
-        public static final int RightService=0x7f0b0067;
+        public static final int RightServices=0x7f0b0067;
         public static final int ScanButton=0x7f0b005f;
         public static final int Test=0x7f0b0068;
         public static final int action0=0x7f0b006e;

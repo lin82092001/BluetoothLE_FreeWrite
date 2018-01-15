@@ -16,6 +16,10 @@
         "source": "C:\\Users\\林北94狂\\.android\\build-cache\\2da9684c0f8ccdcaff442cef6181d640ac756db9\\output\\res\\drawable\\abc_textfield_search_material.xml"
     },
     {
+        "merged": "D:\\Downloads\\BleDemo-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\bluetooth.png",
+        "source": "D:\\Downloads\\BleDemo-master\\app\\src\\main\\res\\drawable\\bluetooth.png"
+    },
+    {
         "merged": "D:\\Downloads\\BleDemo-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_item_background_holo_dark.xml",
         "source": "C:\\Users\\林北94狂\\.android\\build-cache\\2da9684c0f8ccdcaff442cef6181d640ac756db9\\output\\res\\drawable\\abc_item_background_holo_dark.xml"
     },

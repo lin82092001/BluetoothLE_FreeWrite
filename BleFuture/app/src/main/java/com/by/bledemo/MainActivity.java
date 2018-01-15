@@ -27,7 +27,8 @@ import com.by.bledemo.Controller.ConnectedActivity;
 import java.util.ArrayList;
 
 public class MainActivity extends AppCompatActivity {
-    public enum BluetoothState{
+    public enum BluetoothState
+    {
         SELECT_DEVICE,CONNECTING
     }
     private BluetoothAdapter mBluetoothAdapter;
@@ -74,7 +75,8 @@ public class MainActivity extends AppCompatActivity {
          /*使用此檢查來確定設備上是否支持BLE。
             否則利用finish()關閉程式。
             然後，您可以選擇性地禁用BLE相關功能。*/
-        if(!getPackageManager().hasSystemFeature(PackageManager.FEATURE_BLUETOOTH_LE)){
+        if(!getPackageManager().hasSystemFeature(PackageManager.FEATURE_BLUETOOTH_LE))
+        {
             Toast.makeText(this,R.string.NOTsup,Toast.LENGTH_SHORT).show();
             finish();
         }
@@ -90,7 +92,8 @@ public class MainActivity extends AppCompatActivity {
           displays a dialog requesting user permission to enable Bluetooth.*/
         /*一般來說，只要使用到mBluetoothAdapter.isEnabled()就可以將BL開啟了，但此部分添加一個Result Intent
            跳出詢問視窗是否開啟BL，因此該Intenr為BluetoothAdapter.ACTION.REQUEST_ENABLE*/
-        if (mBluetoothAdapter == null || !mBluetoothAdapter.isEnabled()) {
+        if (mBluetoothAdapter == null || !mBluetoothAdapter.isEnabled())
+        {
             Intent enableBtIntent = new Intent(BluetoothAdapter.ACTION_REQUEST_ENABLE);
             startActivityForResult(enableBtIntent, REQUEST_ENABLE); //再利用startActivityForResult啟動該Intent
         }
@@ -100,7 +103,8 @@ public class MainActivity extends AppCompatActivity {
             public void run() {
                 LeftDeviceList.setOnItemClickListener(new AdapterView.OnItemClickListener() {
                     @Override
-                    public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
+                    public void onItemClick(AdapterView<?> parent, View view, int position, long id)
+                    {
                         BluetoothDevice device=DeviceArray.get(position);
                         LeftAddress=device.getAddress();
                         LeftHand.setText(LeftAddress);
@@ -108,7 +112,8 @@ public class MainActivity extends AppCompatActivity {
                 });
                 RightDeviceList.setOnItemClickListener(new AdapterView.OnItemClickListener() {
                     @Override
-                    public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
+                    public void onItemClick(AdapterView<?> parent, View view, int position, long id)
+                    {
                         BluetoothDevice device=DeviceArray.get(position);
                         RightAddress=device.getAddress();
                         RightHand.setText(RightAddress);
@@ -117,9 +122,11 @@ public class MainActivity extends AppCompatActivity {
                 Connect.setOnClickListener(new View.OnClickListener() {
                     @Override
                     public void onClick(View v) {
-                        switch (state){
+                        switch (state)
+                        {
                             case SELECT_DEVICE:
-                                if (LeftAddress=="" && RightAddress=="") {
+                                if (LeftAddress=="" && RightAddress=="")
+                                {
                                     new AlertDialog.Builder(MainActivity.this).setTitle(R.string.warning).setMessage(R.string.NOdevice).setPositiveButton(R.string.OK, new DialogInterface.OnClickListener() {
                                         @Override
                                         public void onClick(DialogInterface dialog, int which) {
@@ -127,7 +134,8 @@ public class MainActivity extends AppCompatActivity {
                                     }).show();
                                     break;
                                 }
-                                if (LeftAddress.equals(RightAddress)) {
+                                if (LeftAddress.equals(RightAddress))
+                                {
                                     new AlertDialog.Builder(MainActivity.this).setTitle(R.string.warning).setMessage(R.string.NOTsame).setPositiveButton(R.string.OK, new DialogInterface.OnClickListener() {
                                         @Override
                                         public void onClick(DialogInterface dialog, int which) {
@@ -150,14 +158,16 @@ public class MainActivity extends AppCompatActivity {
     }
 
     @Override
-    public void onRequestPermissionsResult(int requestCode, @NonNull String[] permissions, @NonNull int[] grantResults) {
+    public void onRequestPermissionsResult(int requestCode, @NonNull String[] permissions, @NonNull int[] grantResults)
+    {
         super.onRequestPermissionsResult(requestCode, permissions, grantResults);
     }
 
     /*這個Override Function是因為在onResume中使用了ActivityForResult，當使用者按了取消或確定鍵時，結果會
     返回到此onActivvityResult中，在判別requestCode判別是否==RESULT_CANCELED，如果是則finish()程式*/
     @Override
-    protected void onActivityResult(int requestCode, int resultCode, Intent data) {
+    protected void onActivityResult(int requestCode, int resultCode, Intent data)
+    {
         if (requestCode == REQUEST_ENABLE && resultCode == Activity.RESULT_CANCELED) {
             finish();
             return;
@@ -166,14 +176,16 @@ public class MainActivity extends AppCompatActivity {
     }
 
     //從UI自定義OnClick事件函數
-    public void startScan(View view) {
+    public void startScan(View view)
+    {
         if (mScanning) {
             mBluetoothAdapter.stopLeScan(mLeScanCallback);
         }
         scanLeDevice(true);
     }
 
-    public void Clear(View view){
+    public void Clear(View view)
+    {
         runOnUiThread(new Runnable() {
             @Override
             public void run() {
@@ -192,13 +204,16 @@ public class MainActivity extends AppCompatActivity {
     /*As soon as you find the desired device, stop scanning.
        Never scan on a loop, and set a time limit on your scan.
        A device that was previously available may have moved out of range, and continuing to scan drains the battery.*/
-    private void scanLeDevice(final boolean enable) {
-        if(enable) {
+    private void scanLeDevice(final boolean enable)
+    {
+        if(enable)
+        {
             // Stops scanning after a pre-defined scan period.
             //啟動一個Handler，並使用postDelayed在SCAN_PERIOD秒後自動執行此Runnable()
             mHandler.postDelayed(new Runnable() {
                 @Override
-                public void run() {
+                public void run()
+                {
                     mScanning = false;
                     mBluetoothAdapter.stopLeScan(mLeScanCallback);
                     scanState.setText("After "+SCAN_PERIOD/1000+"s stop scan.");
@@ -207,8 +222,11 @@ public class MainActivity extends AppCompatActivity {
             scanState.setText(R.string.startScan);
             mScanning = true;
             mBluetoothAdapter.startLeScan(mLeScanCallback);
-        }else {
-            if(mBluetoothAdapter!=null){
+        }
+        else
+        {
+            if(mBluetoothAdapter!=null)
+            {
                 mScanning=false;
                 mBluetoothAdapter.stopLeScan(mLeScanCallback);
             }
@@ -220,16 +238,22 @@ public class MainActivity extends AppCompatActivity {
         @Override
         public void onLeScan(final BluetoothDevice device, final int rssi, byte[] scanRecord) {
             final String data=device.getName()+"\n"+device.getAddress()+"\n"+rssi;
-            runOnUiThread(new Runnable() {
+            runOnUiThread(new Runnable()
+            {
                     @Override
-                    public void run() {
-                        if(!DeviceArray.contains(device)){
+                    public void run()
+                    {
+                        if(!DeviceArray.contains(device))
+                        {
                             DeviceArray.add(device);
                             listAdapter.add(device.getName()+"\n"+device.getAddress()+"\n"+rssi);
                         }
-                        else {
-                            for(int i=0;i<listAdapter.getCount();i++){
-                                if(listAdapter.getItem(i).startsWith(data)){
+                        else
+                        {
+                            for(int i=0;i<listAdapter.getCount();i++)
+                            {
+                                if(listAdapter.getItem(i).startsWith(data))
+                                {
                                     listAdapter.remove(listAdapter.getItem(i));
                                     listAdapter.insert(data,i);
                                     break;
@@ -243,12 +267,13 @@ public class MainActivity extends AppCompatActivity {
         }
     };
 
-    public void connectToDevice(String LDevice,String RDevice){
+    public void connectToDevice(String LAddress,String RAddress)
+    {
         //建立一個Intent，將從此Activity進到ConnectedActivity中在ConnectedActivity中將與BLE Device連線，並互相溝通
         Intent intent=new Intent(MainActivity.this, ConnectedActivity.class);
         //將兩個device address存到ConnectedActivity，以供ConnectedActivity使用
-        intent.putExtra("LeftAddress",LDevice);
-        intent.putExtra("RightAddress",RDevice);
+        intent.putExtra("LeftAddress",LAddress);
+        intent.putExtra("RightAddress",RAddress);
         scanLeDevice(false);// will stop after first device detection
         startActivity(intent);
     }
