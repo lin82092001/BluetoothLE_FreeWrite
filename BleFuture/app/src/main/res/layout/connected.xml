@@ -10,15 +10,16 @@
         android:layout_height="wrap_content"
         android:orientation="horizontal"
         android:scrollbars="vertical"
-        android:layout_marginTop="70dp">
+        android:layout_marginTop="50dp">
         <LinearLayout
             android:layout_width="190dp"
             android:layout_height="wrap_content"
             android:orientation="vertical">
             <TextView
+                android:id="@+id/LAdd"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Left"
+                android:text=""
                 android:textSize="10pt"/>
             <ListView
                 android:id="@+id/LeftServices"
@@ -31,9 +32,10 @@
             android:layout_height="wrap_content"
             android:orientation="vertical">
             <TextView
+                android:id="@+id/RAdd"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Right"
+                android:text=""
                 android:textSize="10pt"/>
             <ListView
                 android:id="@+id/RightServices"

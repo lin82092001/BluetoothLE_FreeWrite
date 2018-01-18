@@ -388,6 +388,118 @@ public class DeviceManager {
         @Override
         public void onConnectionStateChange(BluetoothGatt gatt, int status, int newState) {
             super.onConnectionStateChange(gatt, status, newState);
+            if(status==BluetoothGatt.GATT_SUCCESS)
+            {
+                switch (newState)
+                {
+                    case BluetoothGatt.STATE_CONNECTED:
+                        gatt.discoverServices();    //Discovers services offered by a remote device as well as their characteristics and descriptors.
+                        break;
+                    case BluetoothGatt.STATE_DISCONNECTED:
+                        mGatt.close();
+                        Connected=false;
+                        if(listener!=null)
+                        {
+                            listener.Disconnect();
+                            listener.onError("Service disconnected.");
+                        }
+                        break;
+                    default:
+                        break;
+                }
+            }
+            else
+            {
+                mGatt.close();
+                Connected=false;
+                if(listener!=null)
+                    listener.ConfigError(status);
+            }
+        }
+        @Override
+        public void onServicesDiscovered(BluetoothGatt gatt, int status) {
+            Log.i("onServicesDiscovered",gatt.getServices().size()+"");
+            for(int i=0;i<gatt.getServices().size();i++)
+                Log.i("Service UUID",gatt.getServices().get(i).getUuid().toString());
+            Connected=true;
+            if(RSSI_Enable)
+                gatt.readRemoteRssi();
+            if(listener!=null)
+                listener.Configured();
+        }
+        @Override
+        public void onCharacteristicRead(BluetoothGatt gatt, BluetoothGattCharacteristic characteristic, int status) {
+            byte[] value=characteristic.getValue();
+            for(BaseService ser:Services)
+            {
+                if(ser.Characteristics.contains(characteristic))
+                {
+                    if(ser.listener!=null)
+                    {
+                        if(status == BluetoothGatt.GATT_SUCCESS)
+                            ser.listener.ReadValue(ser.Name(), value);
+                        else
+                            ser.listener.onError(ser.Name(),"ERROR");
+                    }
+                    break;
+                }
+            }
+            if(Reading)
+            {
+                Reading = false;
+                Read();
+            }
+        }
+        @Override
+        public void onCharacteristicWrite(BluetoothGatt gatt, BluetoothGattCharacteristic characteristic, int status) {
+            handler.post(new Runnable() {
+                @Override
+                public void run()
+                {
+                    if(Writing)
+                    {
+                        Writing=false;
+                        Write();
+                    }
+                }
+            });
+        }
+        @Override
+        public void onDescriptorWrite(BluetoothGatt gatt, BluetoothGattDescriptor descriptor, int status) {
+            handler.post(new Runnable() {
+                @Override
+                public void run()
+                {
+                    if(Writing)
+                    {
+                        Writing=false;
+                        Write();
+                    }
+                }
+            });
+        }
+        @Override
+        public void onCharacteristicChanged(BluetoothGatt gatt, BluetoothGattCharacteristic characteristic) {
+            byte[] value=characteristic.getValue();
+            BaseService Target=null;
+            synchronized (Services)
+            {
+                for (BaseService ser:Services)
+                {
+                    if(ser.Characteristics.contains(characteristic))
+                    {
+                        Target=ser;
+                        break;
+                    }
+                }
+            }
+            if(Target!=null)
+                Target.listener.GotNotification(Target.Name(),characteristic.getUuid(),value);
+        }
+        @Override
+        public void onReadRemoteRssi(BluetoothGatt gatt, int rssi, int status) {
+            RSSI=rssi;
+            RSSI_Waitting=false;
         }
     };
 }

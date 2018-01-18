@@ -411,6 +411,7 @@
     <string name="Close">Close</string>
     <string name="Disc">Disconnect</string>
     <string name="Left">Left</string>
+    <string name="NOGPS">The app needs to be turned on GPS location.</string>
     <string name="NOTsame">You can not select the same device.</string>
     <string name="NOTsup">BLE Not Support</string>
     <string name="NOdevice">No select the device.</string>

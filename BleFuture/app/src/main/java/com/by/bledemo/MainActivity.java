@@ -1,5 +1,6 @@
 package com.by.bledemo;
 
+import android.Manifest;
 import android.app.Activity;
 import android.app.AlertDialog;
 import android.bluetooth.BluetoothAdapter;
@@ -9,8 +10,11 @@ import android.content.Context;
 import android.content.DialogInterface;
 import android.content.Intent;
 import android.content.pm.PackageManager;
+import android.location.LocationManager;
+import android.os.Build;
 import android.os.Bundle;
 import android.os.Handler;
+import android.provider.Settings;
 import android.support.annotation.NonNull;
 import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
@@ -34,7 +38,9 @@ public class MainActivity extends AppCompatActivity {
     private BluetoothAdapter mBluetoothAdapter;
     private BluetoothState state=BluetoothState.SELECT_DEVICE;
     private Handler mHandler = new Handler();
-    private int REQUEST_ENABLE=1;
+    private int REQUEST_ENABLE_BT=1;
+    private static final int REQUEST_ENABLE_ACCESS_COARSE = 2;
+    private static final int REQUEST_ENABLE_ACCESS_FINE = 3;
     private boolean mScanning;
     private static final long SCAN_PERIOD=10000;    // Stops scanning after 10 seconds.
     private String LeftAddress="";
@@ -64,14 +70,14 @@ public class MainActivity extends AppCompatActivity {
         LeftDeviceList.setAdapter(listAdapter);
         RightDeviceList.setAdapter(listAdapter);
 
-//        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.M) {
-//            if (this.checkSelfPermission(Manifest.permission.ACCESS_COARSE_LOCATION) != PackageManager.PERMISSION_GRANTED) {
-//                requestPermissions(new String[]{Manifest.permission.ACCESS_COARSE_LOCATION}, REQUEST_ENABLE);
-//            }
-//            if (this.checkSelfPermission(Manifest.permission.ACCESS_FINE_LOCATION) != PackageManager.PERMISSION_GRANTED) {
-//                requestPermissions(new String[]{Manifest.permission.ACCESS_FINE_LOCATION}, REQUEST_ENABLE);
-//            }
-//        }
+        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.M) {   //提供應用程式存取定位權限
+            if (this.checkSelfPermission(Manifest.permission.ACCESS_COARSE_LOCATION) != PackageManager.PERMISSION_GRANTED) {
+                requestPermissions(new String[]{Manifest.permission.ACCESS_COARSE_LOCATION}, REQUEST_ENABLE_ACCESS_COARSE);
+            }
+            if (this.checkSelfPermission(Manifest.permission.ACCESS_FINE_LOCATION) != PackageManager.PERMISSION_GRANTED) {
+                requestPermissions(new String[]{Manifest.permission.ACCESS_FINE_LOCATION}, REQUEST_ENABLE_ACCESS_FINE);
+            }
+        }
          /*使用此檢查來確定設備上是否支持BLE。
             否則利用finish()關閉程式。
             然後，您可以選擇性地禁用BLE相關功能。*/
@@ -87,7 +93,6 @@ public class MainActivity extends AppCompatActivity {
         final BluetoothManager bluetoothManager =
                 (BluetoothManager) getSystemService(Context.BLUETOOTH_SERVICE);
         mBluetoothAdapter = bluetoothManager.getAdapter();
-
         /*Ensures Bluetooth is available on the device and it is enabled. If not,
           displays a dialog requesting user permission to enable Bluetooth.*/
         /*一般來說，只要使用到mBluetoothAdapter.isEnabled()就可以將BL開啟了，但此部分添加一個Result Intent
@@ -95,12 +100,27 @@ public class MainActivity extends AppCompatActivity {
         if (mBluetoothAdapter == null || !mBluetoothAdapter.isEnabled())
         {
             Intent enableBtIntent = new Intent(BluetoothAdapter.ACTION_REQUEST_ENABLE);
-            startActivityForResult(enableBtIntent, REQUEST_ENABLE); //再利用startActivityForResult啟動該Intent
+            startActivityForResult(enableBtIntent, REQUEST_ENABLE_BT); //再利用startActivityForResult啟動該Intent
+        }
+
+        //若沒開啟定位，請求使用者開啟
+        final LocationManager locationManager=
+                (LocationManager)this.getSystemService(Context.LOCATION_SERVICE);
+        if (!locationManager.isProviderEnabled(LocationManager.GPS_PROVIDER))
+        {
+            new AlertDialog.Builder(MainActivity.this).setTitle(R.string.warning).setMessage(R.string.NOGPS).setPositiveButton(R.string.OK, new DialogInterface.OnClickListener() {
+                @Override
+                public void onClick(DialogInterface dialog, int which) {
+                    Intent enableLocation=new Intent(Settings.ACTION_LOCATION_SOURCE_SETTINGS);
+                    startActivity(enableLocation);
+                }
+            }).show();
         }
 
         runOnUiThread(new Runnable() {
             @Override
-            public void run() {
+            public void run()
+            {
                 LeftDeviceList.setOnItemClickListener(new AdapterView.OnItemClickListener() {
                     @Override
                     public void onItemClick(AdapterView<?> parent, View view, int position, long id)
@@ -168,11 +188,11 @@ public class MainActivity extends AppCompatActivity {
     @Override
     protected void onActivityResult(int requestCode, int resultCode, Intent data)
     {
-        if (requestCode == REQUEST_ENABLE && resultCode == Activity.RESULT_CANCELED) {
+        super.onActivityResult(requestCode, resultCode, data);
+        if (requestCode == REQUEST_ENABLE_BT && resultCode == Activity.RESULT_CANCELED) {
             finish();
             return;
         }
-        super.onActivityResult(requestCode, resultCode, data);
     }
 
     //從UI自定義OnClick事件函數
