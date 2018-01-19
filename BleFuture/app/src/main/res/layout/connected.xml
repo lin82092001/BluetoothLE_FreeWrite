@@ -54,22 +54,21 @@
             android:text="@string/Test"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:enabled="false"
             android:onClick="Test"/>
-        <Button
-            android:id="@+id/Disconnect"
-            android:text="@string/Disc"
-            android:onClick="Disconnect"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="80dp"/>
+        <!--<Button-->
+            <!--android:id="@+id/Disconnect"-->
+            <!--android:text="@string/Disc"-->
+            <!--android:onClick="Disconnect"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_marginLeft="80dp"/>-->
         <Button
             android:id="@+id/Close"
             android:text="@string/Close"
             android:onClick="Close"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="5dp"/>
+            android:layout_marginLeft="180dp"/>
     </LinearLayout>
 
 
