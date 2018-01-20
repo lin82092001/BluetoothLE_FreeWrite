@@ -393,7 +393,7 @@ public class Controller {
             }
             else if(Name.equals(RecService.Name()))
             {
-                if(CharUUID == Services.Rec[0])//Speed
+                if(CharUUID == Services.Rec[Services.DATA])//Speed
                 {
                     Speed[0] = ByteBuffer.wrap(data, 0, 4).order(ByteOrder.LITTLE_ENDIAN).getFloat();
                     Speed[1] = ByteBuffer.wrap(data, 4, 4).order(ByteOrder.LITTLE_ENDIAN).getFloat();

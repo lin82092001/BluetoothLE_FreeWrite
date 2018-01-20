@@ -68,7 +68,7 @@ public class ConnectedActivity extends AppCompatActivity {
         Button test=(Button)this.findViewById(R.id.Test);
         test.setEnabled(false);
     }
-//    public void Disconnect(View view)
+    //    public void Disconnect(View view)
 //    {
 //        if(CtrlThread.LDevice.Connected() /*&& CtrlThread.RDevice.Connected()*/)
 //        {

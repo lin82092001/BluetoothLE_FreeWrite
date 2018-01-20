@@ -3,84 +3,30 @@
 
     <item
         is-multidex="false"
-        jar="C:\Users\BoMing\.android\build-cache\812ced7fec9deabc843aeee6ef1f459edeaeb8e6\output\jars\classes.jar"
+        jar="C:\Users\林北94狂\.android\build-cache\f9ff612bb57697b8515fcab83da1907fcb7b264a\output\jars\classes.jar"
         jumboMode="false"
         optimize="true"
         revision="25.0.3"
         sha1="6ef31f1555bb4cc513ec8d52711365a8b89f3600">
-        <dex dex="D:\BluetoothLE_FreeWrite-2018-1-18\BleFuture\app\build\intermediates\pre-dexed\debug\classes_a626a25c03822e53a28bc5ae1b9c796856c6bd29.jar" />
+        <dex dex="D:\Downloads\BleDemo-master\app\build\intermediates\pre-dexed\debug\classes_285b8c67d81f07a7456f5cd938163bc0b901e471.jar" />
     </item>
     <item
         is-multidex="false"
-        jar="D:\Android\Sdk\extras\m2repository\com\android\support\constraint\constraint-layout-solver\1.0.2\constraint-layout-solver-1.0.2.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="25.0.3"
-        sha1="b9cd8fc6bd15cb915735d34535db30ece0c44603">
-        <dex dex="D:\BluetoothLE_FreeWrite-2018-1-18\BleFuture\app\build\intermediates\pre-dexed\debug\constraint-layout-solver-1.0.2_d23c4391907db85dcc92736ee567a118d68bcf2b.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="C:\Users\BoMing\.android\build-cache\675677522398f6840373a1302601bf5686609bbb\output\jars\classes.jar"
+        jar="C:\Users\林北94狂\.android\build-cache\48d36bf21b30cf614f4c76750d1b5bde452ea751\output\jars\classes.jar"
         jumboMode="false"
         optimize="true"
         revision="25.0.3"
         sha1="45f697922e6f072daa12f8a2995dc77ab03c11da">
-        <dex dex="D:\BluetoothLE_FreeWrite-2018-1-18\BleFuture\app\build\intermediates\pre-dexed\debug\classes_d1fb68c8b3fe7ec9382aa0cc1970df6399421597.jar" />
+        <dex dex="D:\Downloads\BleDemo-master\app\build\intermediates\pre-dexed\debug\classes_cd8667fd4439e2526a3d9049cb8a0babd8ae2d51.jar" />
     </item>
     <item
         is-multidex="false"
-        jar="C:\Users\BoMing\.android\build-cache\f4c7c8aafadd5195f0cebbd91384f79a65046995\output\jars\classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="25.0.3"
-        sha1="da27a32db6af8954ee8061537c7d476fcb1df46f">
-        <dex dex="D:\BluetoothLE_FreeWrite-2018-1-18\BleFuture\app\build\intermediates\pre-dexed\debug\classes_600e947e4118762cd3d66dbf8face82840f19347.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="C:\Users\BoMing\.android\build-cache\af012ac4f8978c0ccf25a4cf6add56db62b44748\output\jars\classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="25.0.3"
-        sha1="47635644d0d5c103c1dd8360549eb9ba3225c7d3">
-        <dex dex="D:\BluetoothLE_FreeWrite-2018-1-18\BleFuture\app\build\intermediates\pre-dexed\debug\classes_41c5f2283eed860f0da040e93f43532d12246371.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="C:\Users\BoMing\.android\build-cache\20bd11c40a6a92441bb12fc3b8c5645636aebe1d\output\jars\classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="25.0.3"
-        sha1="150252b33b00274cc868578ade018fda0d43a3eb">
-        <dex dex="D:\BluetoothLE_FreeWrite-2018-1-18\BleFuture\app\build\intermediates\pre-dexed\debug\classes_8e8cc6db34fe01dd271997b0691b042692c87890.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="C:\Users\BoMing\.android\build-cache\7a698f670ebe40ad16d3a881b5683e9f3929fa18\output\jars\classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="25.0.3"
-        sha1="052f5f840f21174a3ecf6544130194e2652cbb73">
-        <dex dex="D:\BluetoothLE_FreeWrite-2018-1-18\BleFuture\app\build\intermediates\pre-dexed\debug\classes_ab9fb6cb470825a6da9a11859a83fa65f56e97a3.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="C:\Users\BoMing\.android\build-cache\73158619a39155908453a3a6ec9159245241ef23\output\jars\classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="25.0.3"
-        sha1="efb8cb62d47d157c29d1521daac7eefd4cb881ee">
-        <dex dex="D:\BluetoothLE_FreeWrite-2018-1-18\BleFuture\app\build\intermediates\pre-dexed\debug\classes_b98fe5ef100fd6a980e036a2ead77af28407134f.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="C:\Users\BoMing\.android\build-cache\f13dbc970bb433dccffea320a5855ca3c6f2d198\output\jars\classes.jar"
+        jar="C:\Users\林北94狂\.android\build-cache\20b9147897549fbc883fcdaf4c708faf3c6f8c1e\output\jars\classes.jar"
         jumboMode="false"
         optimize="true"
         revision="25.0.3"
         sha1="d7c42c80f6509b9ea4db28ca7859ffae08ec5741">
-        <dex dex="D:\BluetoothLE_FreeWrite-2018-1-18\BleFuture\app\build\intermediates\pre-dexed\debug\classes_a4d8e80e7c34fd17d6d78e885df9f4f1573993a0.jar" />
+        <dex dex="D:\Downloads\BleDemo-master\app\build\intermediates\pre-dexed\debug\classes_f6d7f11522b7a15e4eebacd2cb15b015597676f0.jar" />
     </item>
     <item
         is-multidex="false"
@@ -89,25 +35,79 @@
         optimize="true"
         revision="25.0.3"
         sha1="bf8841d29fa39e077730e7a91222c2ce269fa7c9">
-        <dex dex="D:\BluetoothLE_FreeWrite-2018-1-18\BleFuture\app\build\intermediates\pre-dexed\debug\support-annotations-25.3.1_2e1c771cc155ae1021ab00bd594e0e8088530657.jar" />
+        <dex dex="D:\Downloads\BleDemo-master\app\build\intermediates\pre-dexed\debug\support-annotations-25.3.1_2e1c771cc155ae1021ab00bd594e0e8088530657.jar" />
     </item>
     <item
         is-multidex="false"
-        jar="C:\Users\BoMing\.android\build-cache\46ac41604174ebff4bade2fb776a0c9aad036a49\output\jars\classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="25.0.3"
-        sha1="4a26a1154d053ab11aaf4c3967c42a4d66390991">
-        <dex dex="D:\BluetoothLE_FreeWrite-2018-1-18\BleFuture\app\build\intermediates\pre-dexed\debug\classes_739caec1cf775cbc7f1d488bb975fde057ba4a6f.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="C:\Users\BoMing\.android\build-cache\b815fff2f4bd07cd9f39403e63bd520a0f76b521\output\jars\classes.jar"
+        jar="C:\Users\林北94狂\.android\build-cache\086f9fc664bc04faa8fc2e671d1450a56d53eb42\output\jars\classes.jar"
         jumboMode="false"
         optimize="true"
         revision="25.0.3"
         sha1="44ee06abb66da30f5855e6bf54574e64cdcd982a">
-        <dex dex="D:\BluetoothLE_FreeWrite-2018-1-18\BleFuture\app\build\intermediates\pre-dexed\debug\classes_65da02a78eb8c4e799f61332b8d080dfdd24e038.jar" />
+        <dex dex="D:\Downloads\BleDemo-master\app\build\intermediates\pre-dexed\debug\classes_f765b2632aba5f12229501b6f10a04cf96ca1c0f.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="D:\Android\Sdk\extras\m2repository\com\android\support\constraint\constraint-layout-solver\1.0.2\constraint-layout-solver-1.0.2.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.3"
+        sha1="b9cd8fc6bd15cb915735d34535db30ece0c44603">
+        <dex dex="D:\Downloads\BleDemo-master\app\build\intermediates\pre-dexed\debug\constraint-layout-solver-1.0.2_d23c4391907db85dcc92736ee567a118d68bcf2b.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\林北94狂\.android\build-cache\475911e58957160dcd03c3f6ddce6c103edd55b5\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.3"
+        sha1="4a26a1154d053ab11aaf4c3967c42a4d66390991">
+        <dex dex="D:\Downloads\BleDemo-master\app\build\intermediates\pre-dexed\debug\classes_da844a8ba7f8e838042774db707d00b6cb40859b.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\林北94狂\.android\build-cache\cf76807bb488de0af9b6004abe6c5dbf6b9667f4\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.3"
+        sha1="efb8cb62d47d157c29d1521daac7eefd4cb881ee">
+        <dex dex="D:\Downloads\BleDemo-master\app\build\intermediates\pre-dexed\debug\classes_a2e58fabf3b3657910f9d04459c7ac1c96fdc9ee.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\林北94狂\.android\build-cache\08e4808d6b25f4a8aad4c3e4bb63fa38870d31d6\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.3"
+        sha1="da27a32db6af8954ee8061537c7d476fcb1df46f">
+        <dex dex="D:\Downloads\BleDemo-master\app\build\intermediates\pre-dexed\debug\classes_239fcd844cd9e2f1aeac9cf9e2652a9aa1cc4a80.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\林北94狂\.android\build-cache\2da9684c0f8ccdcaff442cef6181d640ac756db9\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.3"
+        sha1="150252b33b00274cc868578ade018fda0d43a3eb">
+        <dex dex="D:\Downloads\BleDemo-master\app\build\intermediates\pre-dexed\debug\classes_806f16d58abbfdd91efec436f4aea204e91948b3.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\林北94狂\.android\build-cache\e900e535516918eb1cb255be1fbed2b168980908\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.3"
+        sha1="052f5f840f21174a3ecf6544130194e2652cbb73">
+        <dex dex="D:\Downloads\BleDemo-master\app\build\intermediates\pre-dexed\debug\classes_1c60376bb19a42444c068f2f4067f4dfe513bab6.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\林北94狂\.android\build-cache\8244b86219200957537fcaa088b9b578b7187e07\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.3"
+        sha1="47635644d0d5c103c1dd8360549eb9ba3225c7d3">
+        <dex dex="D:\Downloads\BleDemo-master\app\build\intermediates\pre-dexed\debug\classes_1994e66c6e3fb7cab9d4228219ce7bc5580586ad.jar" />
     </item>
 
 </items>
