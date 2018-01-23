@@ -145,24 +145,24 @@ public class MainActivity extends AppCompatActivity {
                         switch (state)
                         {
                             case SELECT_DEVICE:
-                                if (LeftAddress=="" && RightAddress=="")
-                                {
-                                    new AlertDialog.Builder(MainActivity.this).setTitle(R.string.warning).setMessage(R.string.NOdevice).setPositiveButton(R.string.OK, new DialogInterface.OnClickListener() {
-                                        @Override
-                                        public void onClick(DialogInterface dialog, int which) {
-                                        }
-                                    }).show();
-                                    break;
-                                }
-                                if (LeftAddress.equals(RightAddress))
-                                {
-                                    new AlertDialog.Builder(MainActivity.this).setTitle(R.string.warning).setMessage(R.string.NOTsame).setPositiveButton(R.string.OK, new DialogInterface.OnClickListener() {
-                                        @Override
-                                        public void onClick(DialogInterface dialog, int which) {
-                                        }
-                                    }).show();
-                                    break;
-                                }
+//                                if (LeftAddress=="" && RightAddress=="")
+//                                {
+//                                    new AlertDialog.Builder(MainActivity.this).setTitle(R.string.warning).setMessage(R.string.NOdevice).setPositiveButton(R.string.OK, new DialogInterface.OnClickListener() {
+//                                        @Override
+//                                        public void onClick(DialogInterface dialog, int which) {
+//                                        }
+//                                    }).show();
+//                                    break;
+//                                }
+//                                if (LeftAddress.equals(RightAddress))
+//                                {
+//                                    new AlertDialog.Builder(MainActivity.this).setTitle(R.string.warning).setMessage(R.string.NOTsame).setPositiveButton(R.string.OK, new DialogInterface.OnClickListener() {
+//                                        @Override
+//                                        public void onClick(DialogInterface dialog, int which) {
+//                                        }
+//                                    }).show();
+//                                    break;
+//                                }
                                 state=BluetoothState.CONNECTING;
                                 break;
                             case CONNECTING:

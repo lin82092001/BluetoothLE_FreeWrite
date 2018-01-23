@@ -362,7 +362,7 @@ public class Controller {
                     }
                 });
             }
-            else if(Name.equals(FingersService.Name()))
+            if(Name.equals(FingersService.Name()))
             {
                 final int KEY = (data[10] & 0xff | (data[11] << 8))&0xffff;
                 for (int i = 0; i < 5; i++)
@@ -391,7 +391,7 @@ public class Controller {
                     }
                 });
             }
-            else if(Name.equals(RecService.Name()))
+            if(Name.equals(RecService.Name()))
             {
                 if(CharUUID == Services.Rec[Services.DATA])//Speed
                 {
