@@ -182,6 +182,7 @@ public class Controller {
                 {
                     CurrentStatus = Status.DeviceServiceError;
                     deviceManager.Close();
+                    Log.e("Fig :","Fig Error!");
                     return false;
                 }
                 FingersConnected = true;
@@ -290,7 +291,7 @@ public class Controller {
                 @Override
                 public void run()
                 {
-                    if(CurrentStatus==Status.DeviceNotFound && UserCB!=null)
+                    if(CurrentStatus==Status.DeviceConfigured && UserCB!=null)
                     {
                         UserCB.DeviceValid();
                     }

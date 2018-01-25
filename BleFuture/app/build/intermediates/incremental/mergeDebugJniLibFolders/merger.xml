@@ -1,2 +1,2 @@
 <?xml version="1.0" encoding="utf-8"?>
-<merger version="3"><dataSet config="main"><source path="D:\Downloads\BleDemo-master\app\src\main\jniLibs"/></dataSet><dataSet config="debug"><source path="D:\Downloads\BleDemo-master\app\src\debug\jniLibs"/></dataSet></merger>
+<merger version="3"><dataSet config="main"><source path="D:\BluetoothLE_FreeWrite\BleFuture\app\src\main\jniLibs"/></dataSet><dataSet config="debug"><source path="D:\BluetoothLE_FreeWrite\BleFuture\app\src\debug\jniLibs"/></dataSet></merger>

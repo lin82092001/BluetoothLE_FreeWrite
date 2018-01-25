@@ -1,7 +1,15 @@
 [
     {
+        "merged": "D:\\BluetoothLE_FreeWrite\\BleFuture\\app\\build\\intermediates\\res\\merged\\debug\\color-v11\\abc_background_cache_hint_selector_material_light.xml",
+        "source": "C:\\Users\\LinLin\\.android\\build-cache\\0eccbead5e7954eca9e9f10e8cee538049f0798e\\output\\res\\color-v11\\abc_background_cache_hint_selector_material_light.xml"
+    },
+    {
         "merged": "D:\\Downloads\\BleDemo-master\\app\\build\\intermediates\\res\\merged\\debug\\color-v11\\abc_background_cache_hint_selector_material_light.xml",
         "source": "C:\\Users\\林北94狂\\.android\\build-cache\\2da9684c0f8ccdcaff442cef6181d640ac756db9\\output\\res\\color-v11\\abc_background_cache_hint_selector_material_light.xml"
+    },
+    {
+        "merged": "D:\\BluetoothLE_FreeWrite\\BleFuture\\app\\build\\intermediates\\res\\merged\\debug\\color-v11\\abc_background_cache_hint_selector_material_dark.xml",
+        "source": "C:\\Users\\LinLin\\.android\\build-cache\\0eccbead5e7954eca9e9f10e8cee538049f0798e\\output\\res\\color-v11\\abc_background_cache_hint_selector_material_dark.xml"
     },
     {
         "merged": "D:\\Downloads\\BleDemo-master\\app\\build\\intermediates\\res\\merged\\debug\\color-v11\\abc_background_cache_hint_selector_material_dark.xml",

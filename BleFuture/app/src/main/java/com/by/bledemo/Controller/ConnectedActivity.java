@@ -98,7 +98,7 @@ public class ConnectedActivity extends AppCompatActivity {
             LDevice.Close();
             //RDevice.Close();
         }
-        CtrlThread.interrupt();
+        //CtrlThread.interrupt();
         this.finish();
     }
 
@@ -123,7 +123,6 @@ public class ConnectedActivity extends AppCompatActivity {
             //RDevice.Close();
             Paused=true;
         }
-        CtrlThread.interrupt();
         super.onPause();
     }
     @Override
@@ -134,7 +133,6 @@ public class ConnectedActivity extends AppCompatActivity {
             LDevice.Close();
             //RDevice.Close();
         }
-        CtrlThread.interrupt();
         super.onDestroy();
     }
 

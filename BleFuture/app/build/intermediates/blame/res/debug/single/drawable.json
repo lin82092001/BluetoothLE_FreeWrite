@@ -4,32 +4,12 @@
         "source": "C:\\Users\\林北94狂\\.android\\build-cache\\2da9684c0f8ccdcaff442cef6181d640ac756db9\\output\\res\\drawable\\abc_seekbar_tick_mark_material.xml"
     },
     {
-        "merged": "D:\\Downloads\\BleDemo-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_list_selector_background_transition_holo_dark.xml",
-        "source": "C:\\Users\\林北94狂\\.android\\build-cache\\2da9684c0f8ccdcaff442cef6181d640ac756db9\\output\\res\\drawable\\abc_list_selector_background_transition_holo_dark.xml"
+        "merged": "D:\\BluetoothLE_FreeWrite\\BleFuture\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\bluetooth.png",
+        "source": "D:\\BluetoothLE_FreeWrite\\BleFuture\\app\\src\\main\\res\\drawable\\bluetooth.png"
     },
     {
         "merged": "D:\\Downloads\\BleDemo-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_vector_test.xml",
         "source": "C:\\Users\\林北94狂\\.android\\build-cache\\2da9684c0f8ccdcaff442cef6181d640ac756db9\\output\\res\\drawable\\abc_vector_test.xml"
-    },
-    {
-        "merged": "D:\\Downloads\\BleDemo-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_textfield_search_material.xml",
-        "source": "C:\\Users\\林北94狂\\.android\\build-cache\\2da9684c0f8ccdcaff442cef6181d640ac756db9\\output\\res\\drawable\\abc_textfield_search_material.xml"
-    },
-    {
-        "merged": "D:\\Downloads\\BleDemo-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_text_cursor_material.xml",
-        "source": "C:\\Users\\林北94狂\\.android\\build-cache\\2da9684c0f8ccdcaff442cef6181d640ac756db9\\output\\res\\drawable\\abc_text_cursor_material.xml"
-    },
-    {
-        "merged": "D:\\Downloads\\BleDemo-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_item_background_holo_dark.xml",
-        "source": "C:\\Users\\林北94狂\\.android\\build-cache\\2da9684c0f8ccdcaff442cef6181d640ac756db9\\output\\res\\drawable\\abc_item_background_holo_dark.xml"
-    },
-    {
-        "merged": "D:\\Downloads\\BleDemo-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\bluetooth.png",
-        "source": "D:\\Downloads\\BleDemo-master\\app\\src\\main\\res\\drawable\\bluetooth.png"
-    },
-    {
-        "merged": "D:\\Downloads\\BleDemo-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_seekbar_track_material.xml",
-        "source": "C:\\Users\\林北94狂\\.android\\build-cache\\2da9684c0f8ccdcaff442cef6181d640ac756db9\\output\\res\\drawable\\abc_seekbar_track_material.xml"
     },
     {
         "merged": "D:\\Downloads\\BleDemo-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_cab_background_top_material.xml",
@@ -40,6 +20,14 @@
         "source": "C:\\Users\\林北94狂\\.android\\build-cache\\2da9684c0f8ccdcaff442cef6181d640ac756db9\\output\\res\\drawable\\abc_cab_background_internal_bg.xml"
     },
     {
+        "merged": "D:\\BluetoothLE_FreeWrite\\BleFuture\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_ratingbar_small_material.xml",
+        "source": "C:\\Users\\LinLin\\.android\\build-cache\\0eccbead5e7954eca9e9f10e8cee538049f0798e\\output\\res\\drawable\\abc_ratingbar_small_material.xml"
+    },
+    {
+        "merged": "D:\\BluetoothLE_FreeWrite\\BleFuture\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_text_cursor_material.xml",
+        "source": "C:\\Users\\LinLin\\.android\\build-cache\\0eccbead5e7954eca9e9f10e8cee538049f0798e\\output\\res\\drawable\\abc_text_cursor_material.xml"
+    },
+    {
         "merged": "D:\\Downloads\\BleDemo-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\notification_tile_bg.xml",
         "source": "C:\\Users\\林北94狂\\.android\\build-cache\\2da9684c0f8ccdcaff442cef6181d640ac756db9\\output\\res\\drawable\\notification_tile_bg.xml"
     },
@@ -48,8 +36,20 @@
         "source": "C:\\Users\\林北94狂\\.android\\build-cache\\2da9684c0f8ccdcaff442cef6181d640ac756db9\\output\\res\\drawable\\abc_seekbar_thumb_material.xml"
     },
     {
-        "merged": "D:\\Downloads\\BleDemo-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_ic_go_search_api_material.xml",
-        "source": "C:\\Users\\林北94狂\\.android\\build-cache\\2da9684c0f8ccdcaff442cef6181d640ac756db9\\output\\res\\drawable\\abc_ic_go_search_api_material.xml"
+        "merged": "D:\\BluetoothLE_FreeWrite\\BleFuture\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_cab_background_top_material.xml",
+        "source": "C:\\Users\\LinLin\\.android\\build-cache\\0eccbead5e7954eca9e9f10e8cee538049f0798e\\output\\res\\drawable\\abc_cab_background_top_material.xml"
+    },
+    {
+        "merged": "D:\\BluetoothLE_FreeWrite\\BleFuture\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\notification_bg_low.xml",
+        "source": "C:\\Users\\LinLin\\.android\\build-cache\\0eccbead5e7954eca9e9f10e8cee538049f0798e\\output\\res\\drawable\\notification_bg_low.xml"
+    },
+    {
+        "merged": "D:\\BluetoothLE_FreeWrite\\BleFuture\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_item_background_holo_light.xml",
+        "source": "C:\\Users\\LinLin\\.android\\build-cache\\0eccbead5e7954eca9e9f10e8cee538049f0798e\\output\\res\\drawable\\abc_item_background_holo_light.xml"
+    },
+    {
+        "merged": "D:\\BluetoothLE_FreeWrite\\BleFuture\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_seekbar_thumb_material.xml",
+        "source": "C:\\Users\\LinLin\\.android\\build-cache\\0eccbead5e7954eca9e9f10e8cee538049f0798e\\output\\res\\drawable\\abc_seekbar_thumb_material.xml"
     },
     {
         "merged": "D:\\Downloads\\BleDemo-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\notification_bg_low.xml",
@@ -60,12 +60,16 @@
         "source": "C:\\Users\\林北94狂\\.android\\build-cache\\2da9684c0f8ccdcaff442cef6181d640ac756db9\\output\\res\\drawable\\abc_ic_search_api_material.xml"
     },
     {
-        "merged": "D:\\Downloads\\BleDemo-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\notification_icon_background.xml",
-        "source": "C:\\Users\\林北94狂\\.android\\build-cache\\2da9684c0f8ccdcaff442cef6181d640ac756db9\\output\\res\\drawable\\notification_icon_background.xml"
+        "merged": "D:\\BluetoothLE_FreeWrite\\BleFuture\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_btn_borderless_material.xml",
+        "source": "C:\\Users\\LinLin\\.android\\build-cache\\0eccbead5e7954eca9e9f10e8cee538049f0798e\\output\\res\\drawable\\abc_btn_borderless_material.xml"
     },
     {
         "merged": "D:\\Downloads\\BleDemo-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_ic_arrow_drop_right_black_24dp.xml",
         "source": "C:\\Users\\林北94狂\\.android\\build-cache\\2da9684c0f8ccdcaff442cef6181d640ac756db9\\output\\res\\drawable\\abc_ic_arrow_drop_right_black_24dp.xml"
+    },
+    {
+        "merged": "D:\\BluetoothLE_FreeWrite\\BleFuture\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_btn_check_material.xml",
+        "source": "C:\\Users\\LinLin\\.android\\build-cache\\0eccbead5e7954eca9e9f10e8cee538049f0798e\\output\\res\\drawable\\abc_btn_check_material.xml"
     },
     {
         "merged": "D:\\Downloads\\BleDemo-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_switch_thumb_material.xml",
@@ -76,6 +80,134 @@
         "source": "C:\\Users\\林北94狂\\.android\\build-cache\\2da9684c0f8ccdcaff442cef6181d640ac756db9\\output\\res\\drawable\\abc_dialog_material_background.xml"
     },
     {
+        "merged": "D:\\BluetoothLE_FreeWrite\\BleFuture\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_dialog_material_background.xml",
+        "source": "C:\\Users\\LinLin\\.android\\build-cache\\0eccbead5e7954eca9e9f10e8cee538049f0798e\\output\\res\\drawable\\abc_dialog_material_background.xml"
+    },
+    {
+        "merged": "D:\\Downloads\\BleDemo-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_spinner_textfield_background_material.xml",
+        "source": "C:\\Users\\林北94狂\\.android\\build-cache\\2da9684c0f8ccdcaff442cef6181d640ac756db9\\output\\res\\drawable\\abc_spinner_textfield_background_material.xml"
+    },
+    {
+        "merged": "D:\\BluetoothLE_FreeWrite\\BleFuture\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_ic_voice_search_api_material.xml",
+        "source": "C:\\Users\\LinLin\\.android\\build-cache\\0eccbead5e7954eca9e9f10e8cee538049f0798e\\output\\res\\drawable\\abc_ic_voice_search_api_material.xml"
+    },
+    {
+        "merged": "D:\\Downloads\\BleDemo-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_ic_voice_search_api_material.xml",
+        "source": "C:\\Users\\林北94狂\\.android\\build-cache\\2da9684c0f8ccdcaff442cef6181d640ac756db9\\output\\res\\drawable\\abc_ic_voice_search_api_material.xml"
+    },
+    {
+        "merged": "D:\\BluetoothLE_FreeWrite\\BleFuture\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_btn_default_mtrl_shape.xml",
+        "source": "C:\\Users\\LinLin\\.android\\build-cache\\0eccbead5e7954eca9e9f10e8cee538049f0798e\\output\\res\\drawable\\abc_btn_default_mtrl_shape.xml"
+    },
+    {
+        "merged": "D:\\BluetoothLE_FreeWrite\\BleFuture\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_spinner_textfield_background_material.xml",
+        "source": "C:\\Users\\LinLin\\.android\\build-cache\\0eccbead5e7954eca9e9f10e8cee538049f0798e\\output\\res\\drawable\\abc_spinner_textfield_background_material.xml"
+    },
+    {
+        "merged": "D:\\Downloads\\BleDemo-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\notification_bg.xml",
+        "source": "C:\\Users\\林北94狂\\.android\\build-cache\\2da9684c0f8ccdcaff442cef6181d640ac756db9\\output\\res\\drawable\\notification_bg.xml"
+    },
+    {
+        "merged": "D:\\BluetoothLE_FreeWrite\\BleFuture\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\notification_bg.xml",
+        "source": "C:\\Users\\LinLin\\.android\\build-cache\\0eccbead5e7954eca9e9f10e8cee538049f0798e\\output\\res\\drawable\\notification_bg.xml"
+    },
+    {
+        "merged": "D:\\BluetoothLE_FreeWrite\\BleFuture\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_ic_menu_overflow_material.xml",
+        "source": "C:\\Users\\LinLin\\.android\\build-cache\\0eccbead5e7954eca9e9f10e8cee538049f0798e\\output\\res\\drawable\\abc_ic_menu_overflow_material.xml"
+    },
+    {
+        "merged": "D:\\BluetoothLE_FreeWrite\\BleFuture\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\notification_icon_background.xml",
+        "source": "C:\\Users\\LinLin\\.android\\build-cache\\0eccbead5e7954eca9e9f10e8cee538049f0798e\\output\\res\\drawable\\notification_icon_background.xml"
+    },
+    {
+        "merged": "D:\\Downloads\\BleDemo-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_btn_borderless_material.xml",
+        "source": "C:\\Users\\林北94狂\\.android\\build-cache\\2da9684c0f8ccdcaff442cef6181d640ac756db9\\output\\res\\drawable\\abc_btn_borderless_material.xml"
+    },
+    {
+        "merged": "D:\\Downloads\\BleDemo-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_list_selector_background_transition_holo_light.xml",
+        "source": "C:\\Users\\林北94狂\\.android\\build-cache\\2da9684c0f8ccdcaff442cef6181d640ac756db9\\output\\res\\drawable\\abc_list_selector_background_transition_holo_light.xml"
+    },
+    {
+        "merged": "D:\\BluetoothLE_FreeWrite\\BleFuture\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_vector_test.xml",
+        "source": "C:\\Users\\LinLin\\.android\\build-cache\\0eccbead5e7954eca9e9f10e8cee538049f0798e\\output\\res\\drawable\\abc_vector_test.xml"
+    },
+    {
+        "merged": "D:\\Downloads\\BleDemo-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_tab_indicator_material.xml",
+        "source": "C:\\Users\\林北94狂\\.android\\build-cache\\2da9684c0f8ccdcaff442cef6181d640ac756db9\\output\\res\\drawable\\abc_tab_indicator_material.xml"
+    },
+    {
+        "merged": "D:\\BluetoothLE_FreeWrite\\BleFuture\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_ic_go_search_api_material.xml",
+        "source": "C:\\Users\\LinLin\\.android\\build-cache\\0eccbead5e7954eca9e9f10e8cee538049f0798e\\output\\res\\drawable\\abc_ic_go_search_api_material.xml"
+    },
+    {
+        "merged": "D:\\BluetoothLE_FreeWrite\\BleFuture\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_item_background_holo_dark.xml",
+        "source": "C:\\Users\\LinLin\\.android\\build-cache\\0eccbead5e7954eca9e9f10e8cee538049f0798e\\output\\res\\drawable\\abc_item_background_holo_dark.xml"
+    },
+    {
+        "merged": "D:\\BluetoothLE_FreeWrite\\BleFuture\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_btn_radio_material.xml",
+        "source": "C:\\Users\\LinLin\\.android\\build-cache\\0eccbead5e7954eca9e9f10e8cee538049f0798e\\output\\res\\drawable\\abc_btn_radio_material.xml"
+    },
+    {
+        "merged": "D:\\BluetoothLE_FreeWrite\\BleFuture\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_ratingbar_material.xml",
+        "source": "C:\\Users\\LinLin\\.android\\build-cache\\0eccbead5e7954eca9e9f10e8cee538049f0798e\\output\\res\\drawable\\abc_ratingbar_material.xml"
+    },
+    {
+        "merged": "D:\\Downloads\\BleDemo-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_list_selector_background_transition_holo_dark.xml",
+        "source": "C:\\Users\\林北94狂\\.android\\build-cache\\2da9684c0f8ccdcaff442cef6181d640ac756db9\\output\\res\\drawable\\abc_list_selector_background_transition_holo_dark.xml"
+    },
+    {
+        "merged": "D:\\Downloads\\BleDemo-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_textfield_search_material.xml",
+        "source": "C:\\Users\\林北94狂\\.android\\build-cache\\2da9684c0f8ccdcaff442cef6181d640ac756db9\\output\\res\\drawable\\abc_textfield_search_material.xml"
+    },
+    {
+        "merged": "D:\\Downloads\\BleDemo-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\bluetooth.png",
+        "source": "D:\\Downloads\\BleDemo-master\\app\\src\\main\\res\\drawable\\bluetooth.png"
+    },
+    {
+        "merged": "D:\\Downloads\\BleDemo-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_item_background_holo_dark.xml",
+        "source": "C:\\Users\\林北94狂\\.android\\build-cache\\2da9684c0f8ccdcaff442cef6181d640ac756db9\\output\\res\\drawable\\abc_item_background_holo_dark.xml"
+    },
+    {
+        "merged": "D:\\Downloads\\BleDemo-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_text_cursor_material.xml",
+        "source": "C:\\Users\\林北94狂\\.android\\build-cache\\2da9684c0f8ccdcaff442cef6181d640ac756db9\\output\\res\\drawable\\abc_text_cursor_material.xml"
+    },
+    {
+        "merged": "D:\\Downloads\\BleDemo-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_seekbar_track_material.xml",
+        "source": "C:\\Users\\林北94狂\\.android\\build-cache\\2da9684c0f8ccdcaff442cef6181d640ac756db9\\output\\res\\drawable\\abc_seekbar_track_material.xml"
+    },
+    {
+        "merged": "D:\\BluetoothLE_FreeWrite\\BleFuture\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_textfield_search_material.xml",
+        "source": "C:\\Users\\LinLin\\.android\\build-cache\\0eccbead5e7954eca9e9f10e8cee538049f0798e\\output\\res\\drawable\\abc_textfield_search_material.xml"
+    },
+    {
+        "merged": "D:\\BluetoothLE_FreeWrite\\BleFuture\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_tab_indicator_material.xml",
+        "source": "C:\\Users\\LinLin\\.android\\build-cache\\0eccbead5e7954eca9e9f10e8cee538049f0798e\\output\\res\\drawable\\abc_tab_indicator_material.xml"
+    },
+    {
+        "merged": "D:\\BluetoothLE_FreeWrite\\BleFuture\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_ic_search_api_material.xml",
+        "source": "C:\\Users\\LinLin\\.android\\build-cache\\0eccbead5e7954eca9e9f10e8cee538049f0798e\\output\\res\\drawable\\abc_ic_search_api_material.xml"
+    },
+    {
+        "merged": "D:\\Downloads\\BleDemo-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_ic_go_search_api_material.xml",
+        "source": "C:\\Users\\林北94狂\\.android\\build-cache\\2da9684c0f8ccdcaff442cef6181d640ac756db9\\output\\res\\drawable\\abc_ic_go_search_api_material.xml"
+    },
+    {
+        "merged": "D:\\BluetoothLE_FreeWrite\\BleFuture\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_ratingbar_indicator_material.xml",
+        "source": "C:\\Users\\LinLin\\.android\\build-cache\\0eccbead5e7954eca9e9f10e8cee538049f0798e\\output\\res\\drawable\\abc_ratingbar_indicator_material.xml"
+    },
+    {
+        "merged": "D:\\BluetoothLE_FreeWrite\\BleFuture\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_list_selector_background_transition_holo_light.xml",
+        "source": "C:\\Users\\LinLin\\.android\\build-cache\\0eccbead5e7954eca9e9f10e8cee538049f0798e\\output\\res\\drawable\\abc_list_selector_background_transition_holo_light.xml"
+    },
+    {
+        "merged": "D:\\Downloads\\BleDemo-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\notification_icon_background.xml",
+        "source": "C:\\Users\\林北94狂\\.android\\build-cache\\2da9684c0f8ccdcaff442cef6181d640ac756db9\\output\\res\\drawable\\notification_icon_background.xml"
+    },
+    {
+        "merged": "D:\\BluetoothLE_FreeWrite\\BleFuture\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_ic_ab_back_material.xml",
+        "source": "C:\\Users\\LinLin\\.android\\build-cache\\0eccbead5e7954eca9e9f10e8cee538049f0798e\\output\\res\\drawable\\abc_ic_ab_back_material.xml"
+    },
+    {
         "merged": "D:\\Downloads\\BleDemo-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_btn_default_mtrl_shape.xml",
         "source": "C:\\Users\\林北94狂\\.android\\build-cache\\2da9684c0f8ccdcaff442cef6181d640ac756db9\\output\\res\\drawable\\abc_btn_default_mtrl_shape.xml"
     },
@@ -84,8 +216,16 @@
         "source": "C:\\Users\\林北94狂\\.android\\build-cache\\2da9684c0f8ccdcaff442cef6181d640ac756db9\\output\\res\\drawable\\abc_btn_check_material.xml"
     },
     {
-        "merged": "D:\\Downloads\\BleDemo-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_spinner_textfield_background_material.xml",
-        "source": "C:\\Users\\林北94狂\\.android\\build-cache\\2da9684c0f8ccdcaff442cef6181d640ac756db9\\output\\res\\drawable\\abc_spinner_textfield_background_material.xml"
+        "merged": "D:\\BluetoothLE_FreeWrite\\BleFuture\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_list_selector_holo_dark.xml",
+        "source": "C:\\Users\\LinLin\\.android\\build-cache\\0eccbead5e7954eca9e9f10e8cee538049f0798e\\output\\res\\drawable\\abc_list_selector_holo_dark.xml"
+    },
+    {
+        "merged": "D:\\BluetoothLE_FreeWrite\\BleFuture\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_cab_background_internal_bg.xml",
+        "source": "C:\\Users\\LinLin\\.android\\build-cache\\0eccbead5e7954eca9e9f10e8cee538049f0798e\\output\\res\\drawable\\abc_cab_background_internal_bg.xml"
+    },
+    {
+        "merged": "D:\\BluetoothLE_FreeWrite\\BleFuture\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\notification_tile_bg.xml",
+        "source": "C:\\Users\\LinLin\\.android\\build-cache\\0eccbead5e7954eca9e9f10e8cee538049f0798e\\output\\res\\drawable\\notification_tile_bg.xml"
     },
     {
         "merged": "D:\\Downloads\\BleDemo-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_ic_ab_back_material.xml",
@@ -96,16 +236,16 @@
         "source": "C:\\Users\\林北94狂\\.android\\build-cache\\2da9684c0f8ccdcaff442cef6181d640ac756db9\\output\\res\\drawable\\abc_list_selector_holo_light.xml"
     },
     {
-        "merged": "D:\\Downloads\\BleDemo-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_ic_voice_search_api_material.xml",
-        "source": "C:\\Users\\林北94狂\\.android\\build-cache\\2da9684c0f8ccdcaff442cef6181d640ac756db9\\output\\res\\drawable\\abc_ic_voice_search_api_material.xml"
-    },
-    {
         "merged": "D:\\Downloads\\BleDemo-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_ic_menu_overflow_material.xml",
         "source": "C:\\Users\\林北94狂\\.android\\build-cache\\2da9684c0f8ccdcaff442cef6181d640ac756db9\\output\\res\\drawable\\abc_ic_menu_overflow_material.xml"
     },
     {
-        "merged": "D:\\Downloads\\BleDemo-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\notification_bg.xml",
-        "source": "C:\\Users\\林北94狂\\.android\\build-cache\\2da9684c0f8ccdcaff442cef6181d640ac756db9\\output\\res\\drawable\\notification_bg.xml"
+        "merged": "D:\\BluetoothLE_FreeWrite\\BleFuture\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_ic_clear_material.xml",
+        "source": "C:\\Users\\LinLin\\.android\\build-cache\\0eccbead5e7954eca9e9f10e8cee538049f0798e\\output\\res\\drawable\\abc_ic_clear_material.xml"
+    },
+    {
+        "merged": "D:\\BluetoothLE_FreeWrite\\BleFuture\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_list_selector_holo_light.xml",
+        "source": "C:\\Users\\LinLin\\.android\\build-cache\\0eccbead5e7954eca9e9f10e8cee538049f0798e\\output\\res\\drawable\\abc_list_selector_holo_light.xml"
     },
     {
         "merged": "D:\\Downloads\\BleDemo-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_ratingbar_indicator_material.xml",
@@ -120,14 +260,6 @@
         "source": "C:\\Users\\林北94狂\\.android\\build-cache\\2da9684c0f8ccdcaff442cef6181d640ac756db9\\output\\res\\drawable\\abc_ratingbar_small_material.xml"
     },
     {
-        "merged": "D:\\Downloads\\BleDemo-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_btn_borderless_material.xml",
-        "source": "C:\\Users\\林北94狂\\.android\\build-cache\\2da9684c0f8ccdcaff442cef6181d640ac756db9\\output\\res\\drawable\\abc_btn_borderless_material.xml"
-    },
-    {
-        "merged": "D:\\Downloads\\BleDemo-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_list_selector_background_transition_holo_light.xml",
-        "source": "C:\\Users\\林北94狂\\.android\\build-cache\\2da9684c0f8ccdcaff442cef6181d640ac756db9\\output\\res\\drawable\\abc_list_selector_background_transition_holo_light.xml"
-    },
-    {
         "merged": "D:\\Downloads\\BleDemo-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_list_selector_holo_dark.xml",
         "source": "C:\\Users\\林北94狂\\.android\\build-cache\\2da9684c0f8ccdcaff442cef6181d640ac756db9\\output\\res\\drawable\\abc_list_selector_holo_dark.xml"
     },
@@ -136,12 +268,28 @@
         "source": "C:\\Users\\林北94狂\\.android\\build-cache\\2da9684c0f8ccdcaff442cef6181d640ac756db9\\output\\res\\drawable\\abc_ic_clear_material.xml"
     },
     {
+        "merged": "D:\\BluetoothLE_FreeWrite\\BleFuture\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_ic_arrow_drop_right_black_24dp.xml",
+        "source": "C:\\Users\\LinLin\\.android\\build-cache\\0eccbead5e7954eca9e9f10e8cee538049f0798e\\output\\res\\drawable\\abc_ic_arrow_drop_right_black_24dp.xml"
+    },
+    {
         "merged": "D:\\Downloads\\BleDemo-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_ratingbar_material.xml",
         "source": "C:\\Users\\林北94狂\\.android\\build-cache\\2da9684c0f8ccdcaff442cef6181d640ac756db9\\output\\res\\drawable\\abc_ratingbar_material.xml"
     },
     {
-        "merged": "D:\\Downloads\\BleDemo-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_tab_indicator_material.xml",
-        "source": "C:\\Users\\林北94狂\\.android\\build-cache\\2da9684c0f8ccdcaff442cef6181d640ac756db9\\output\\res\\drawable\\abc_tab_indicator_material.xml"
+        "merged": "D:\\BluetoothLE_FreeWrite\\BleFuture\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_seekbar_tick_mark_material.xml",
+        "source": "C:\\Users\\LinLin\\.android\\build-cache\\0eccbead5e7954eca9e9f10e8cee538049f0798e\\output\\res\\drawable\\abc_seekbar_tick_mark_material.xml"
+    },
+    {
+        "merged": "D:\\BluetoothLE_FreeWrite\\BleFuture\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_seekbar_track_material.xml",
+        "source": "C:\\Users\\LinLin\\.android\\build-cache\\0eccbead5e7954eca9e9f10e8cee538049f0798e\\output\\res\\drawable\\abc_seekbar_track_material.xml"
+    },
+    {
+        "merged": "D:\\BluetoothLE_FreeWrite\\BleFuture\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_switch_thumb_material.xml",
+        "source": "C:\\Users\\LinLin\\.android\\build-cache\\0eccbead5e7954eca9e9f10e8cee538049f0798e\\output\\res\\drawable\\abc_switch_thumb_material.xml"
+    },
+    {
+        "merged": "D:\\BluetoothLE_FreeWrite\\BleFuture\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_list_selector_background_transition_holo_dark.xml",
+        "source": "C:\\Users\\LinLin\\.android\\build-cache\\0eccbead5e7954eca9e9f10e8cee538049f0798e\\output\\res\\drawable\\abc_list_selector_background_transition_holo_dark.xml"
     },
     {
         "merged": "D:\\Downloads\\BleDemo-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_btn_radio_material.xml",
