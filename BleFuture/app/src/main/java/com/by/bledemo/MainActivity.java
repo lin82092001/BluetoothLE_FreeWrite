@@ -174,7 +174,6 @@ public class MainActivity extends AppCompatActivity {
                 });
             }
         });
-
     }
 
     @Override
@@ -198,7 +197,8 @@ public class MainActivity extends AppCompatActivity {
     //從UI自定義OnClick事件函數
     public void startScan(View view)
     {
-        if (mScanning) {
+        if (mScanning)
+        {
             mBluetoothAdapter.stopLeScan(mLeScanCallback);
         }
         scanLeDevice(true);

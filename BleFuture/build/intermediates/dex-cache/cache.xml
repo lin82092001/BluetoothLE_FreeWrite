@@ -3,6 +3,24 @@
 
     <item
         is-multidex="true"
+        jar="C:\Users\LinLin\.android\build-cache\0eccbead5e7954eca9e9f10e8cee538049f0798e\output\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.3"
+        sha1="150252b33b00274cc868578ade018fda0d43a3eb">
+        <dex dex="D:\BluetoothLE_FreeWrite\BleFuture\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_fce38d0573cb75ed8014131a74e6f6caa217f72f\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="D:\BluetoothLE_FreeWrite\BleFuture\app\build\intermediates\incremental-classes\debug\instant-run-bootstrap.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.3"
+        sha1="ae407bdb921d742313980f91d788df24f1dea711">
+        <dex dex="D:\BluetoothLE_FreeWrite\BleFuture\app\build\intermediates\transforms\dex\debug\folders\1000\10000\instant-run-bootstrap_963836ba2920e4f03a9a6dffac6d6af699c587a8\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
         jar="C:\Users\LinLin\.android\build-cache\899e5d450f8fbc2cd68174e654d54e64456594d0\output\jars\classes.jar"
         jumboMode="true"
         optimize="true"
@@ -36,6 +54,15 @@
         revision="25.0.3"
         sha1="efb8cb62d47d157c29d1521daac7eefd4cb881ee">
         <dex dex="D:\BluetoothLE_FreeWrite\BleFuture\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_b61352d67e45b1e90164406c8ac84cbfa2828c85\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\LinLin\.android\build-cache\c594125b3c061f9c0c666bf2f00fc48416adc600\output\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.3"
+        sha1="6ef31f1555bb4cc513ec8d52711365a8b89f3600">
+        <dex dex="D:\BluetoothLE_FreeWrite\BleFuture\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_cda53981cbd39acc82a4194db047da7f63266c73\classes.dex" />
     </item>
     <item
         is-multidex="true"
@@ -90,33 +117,6 @@
         revision="25.0.3"
         sha1="45f697922e6f072daa12f8a2995dc77ab03c11da">
         <dex dex="D:\BluetoothLE_FreeWrite\BleFuture\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_2d5b3c5e6f18a9a3f710d742eea96537f89c8601\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="C:\Users\LinLin\.android\build-cache\0eccbead5e7954eca9e9f10e8cee538049f0798e\output\jars\classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.3"
-        sha1="150252b33b00274cc868578ade018fda0d43a3eb">
-        <dex dex="D:\BluetoothLE_FreeWrite\BleFuture\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_fce38d0573cb75ed8014131a74e6f6caa217f72f\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="D:\BluetoothLE_FreeWrite\BleFuture\app\build\intermediates\incremental-classes\debug\instant-run-bootstrap.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.3"
-        sha1="7f0ffc4ca94b91a7c4b379253058e6aeebc081eb">
-        <dex dex="D:\BluetoothLE_FreeWrite\BleFuture\app\build\intermediates\transforms\dex\debug\folders\1000\10000\instant-run-bootstrap_963836ba2920e4f03a9a6dffac6d6af699c587a8\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="C:\Users\LinLin\.android\build-cache\c594125b3c061f9c0c666bf2f00fc48416adc600\output\jars\classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.3"
-        sha1="6ef31f1555bb4cc513ec8d52711365a8b89f3600">
-        <dex dex="D:\BluetoothLE_FreeWrite\BleFuture\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_cda53981cbd39acc82a4194db047da7f63266c73\classes.dex" />
     </item>
     <item
         is-multidex="true"

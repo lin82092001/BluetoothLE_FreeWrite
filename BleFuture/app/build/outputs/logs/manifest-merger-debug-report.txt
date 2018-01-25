@@ -54,7 +54,7 @@ MERGED from [com.android.support.constraint:constraint-layout:1.0.2] C:\Users\Li
 	android:allowBackup
 		ADDED from D:\BluetoothLE_FreeWrite\BleFuture\app\src\main\AndroidManifest.xml:18:9-35
 	android:icon
-		ADDED from D:\BluetoothLE_FreeWrite\BleFuture\app\src\main\AndroidManifest.xml:19:9-43
+		ADDED from D:\BluetoothLE_FreeWrite\BleFuture\app\src\main\AndroidManifest.xml:19:9-38
 	android:theme
 		ADDED from D:\BluetoothLE_FreeWrite\BleFuture\app\src\main\AndroidManifest.xml:22:9-40
 activity#com.by.bledemo.MainActivity

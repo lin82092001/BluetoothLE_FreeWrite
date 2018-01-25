@@ -1,4 +1,4 @@
-#Wed Jan 24 17:02:02 GMT-08:00 2018
+#Thu Jan 25 01:33:17 GMT-08:00 2018
 base.0=D\:\\BluetoothLE_FreeWrite\\BleFuture\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10000\\instant-run-bootstrap_963836ba2920e4f03a9a6dffac6d6af699c587a8
 renamed.1=classes2.dex
 renamed.0=classes.dex

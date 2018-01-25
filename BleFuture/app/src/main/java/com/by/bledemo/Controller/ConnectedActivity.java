@@ -50,7 +50,7 @@ public class ConnectedActivity extends AppCompatActivity {
         Intent inteData=this.getIntent();
         LAddress=inteData.getStringExtra("LeftAddress");    //Get device address from MainActivity
         //RAddress=inteData.getStringExtra("RightAddress");
-        runOnUiThread(new Runnable() {
+        me.runOnUiThread(new Runnable() {
             @Override
             public void run()
             {
@@ -70,11 +70,11 @@ public class ConnectedActivity extends AppCompatActivity {
     {
         if((LDevice.GetCurrentStatus()==Controller.Status.DeviceConfigured) /*&& (RDevice.GetCurrentStatus()==Controller.Status.DeviceConfigured)*/)
         {
-            LDevice.Open(true,false);
+            LDevice.Open(true,true);
             //ROp=RDevice.Open(true,false);
 //            if(LOp /*&& ROp*/)
 //            {
-//                //CtrlThread.start();
+//                CtrlThread.start();
 //            }
         }
         Button test=(Button)this.findViewById(R.id.Test);
@@ -146,7 +146,7 @@ public class ConnectedActivity extends AppCompatActivity {
         @Override
         public void run()
         {
-            //LDevice.RegisterCallback(Listener);
+            LDevice.RegisterCallback(Listener);
             //RDevice.RegisterCallback(Listener);
         }
     }
@@ -155,33 +155,67 @@ public class ConnectedActivity extends AppCompatActivity {
         @Override
         public void ControllerStatusCallback(int Status, int CMD, float Roll, float Pitch, float Yaw, float DisX, float DisY, float DisZ)
         {
-            int i;
+
             final String ListTitle="Position :";
             final String DataValue=String.format("(%d,0x%02x)Roll:%1.4f,\tPitch:%1.4f,\tYaw:%1.4f,\tDisX:%3.2f,\tDisY:%3.2f,\tDisZ:%3.2f", Status, CMD, Roll, Pitch,Yaw,DisX, DisY, DisZ);
             synchronized (LlistAdapter)
             {
-                for (i = 0; i < LlistAdapter.getCount(); i++)
-                {
-                    if (LlistAdapter.getItem(i).startsWith(ListTitle))
-                        break;
-                }
-                if (i < LlistAdapter.getCount())
-                {
-                    LlistAdapter.remove(LlistAdapter.getItem(i));
-                    LlistAdapter.insert(ListTitle + DataValue, i);
-                }
-                else
-                {
-                    LlistAdapter.add(ListTitle + DataValue);
-                }
-                LlistAdapter.notifyDataSetChanged();
+                runOnUiThread(new Runnable() {
+                    @Override
+                    public void run()
+                    {
+                        int i;
+                        for (i = 0; i < LlistAdapter.getCount(); i++)
+                        {
+                            if (LlistAdapter.getItem(i).startsWith(ListTitle))
+                                break;
+                        }
+                        if (i < LlistAdapter.getCount())
+                        {
+                            LlistAdapter.remove(LlistAdapter.getItem(i));
+                            LlistAdapter.insert(ListTitle + DataValue, i);
+                        }
+                        else
+                        {
+                            LlistAdapter.add(ListTitle + DataValue);
+                        }
+                        LlistAdapter.notifyDataSetChanged();
+                    }
+                });
+
             }
         }
 
         @Override
         public void ControllerOtherCallback(float SpeedX, float SpeedY, float SpeedZ, float AccX, float AccY, float AccZ)
         {
-
+            final String ListTitle="Record :";
+            final String DataValue=String.format("SpeedX:%f,\tSpeedY:%f,\tSpeedZ:%f,\tAccX:%1.4f,\tAccY:%1.4f,\tAccZ:%1.4f",SpeedX,SpeedY,SpeedZ,AccX,AccY,AccZ);
+            synchronized (LlistAdapter)
+            {
+                runOnUiThread(new Runnable() {
+                    @Override
+                    public void run()
+                    {
+                        int i;
+                        for (i = 0; i < LlistAdapter.getCount(); i++)
+                        {
+                            if (LlistAdapter.getItem(i).startsWith(ListTitle))
+                                break;
+                        }
+                        if (i < LlistAdapter.getCount())
+                        {
+                            LlistAdapter.remove(LlistAdapter.getItem(i));
+                            LlistAdapter.insert(ListTitle + DataValue, i);
+                        }
+                        else
+                        {
+                            LlistAdapter.add(ListTitle + DataValue);
+                        }
+                        LlistAdapter.notifyDataSetChanged();
+                    }
+                });
+            }
         }
 
         @Override
@@ -207,47 +241,60 @@ public class ConnectedActivity extends AppCompatActivity {
             final String DateValue = Data;
             synchronized (LlistAdapter)
             {
-                for (i = 0; i < LlistAdapter.getCount(); i++)
-                {
-                    if (LlistAdapter.getItem(i).startsWith(ListTitle))
-                        break;
-                }
-                if (i < LlistAdapter.getCount())
-                {
-                    LlistAdapter.remove(LlistAdapter.getItem(i));
-                    LlistAdapter.insert(ListTitle + DateValue, i);
-                }
-                else
-                {
-                    LlistAdapter.add(ListTitle + DateValue);
-                }
-                LlistAdapter.notifyDataSetChanged();
+                runOnUiThread(new Runnable() {
+                    @Override
+                    public void run()
+                    {
+                        int i;
+                        for (i = 0; i < LlistAdapter.getCount(); i++)
+                        {
+                            if (LlistAdapter.getItem(i).startsWith(ListTitle))
+                                break;
+                        }
+                        if (i < LlistAdapter.getCount())
+                        {
+                            LlistAdapter.remove(LlistAdapter.getItem(i));
+                            LlistAdapter.insert(ListTitle + DateValue, i);
+                        }
+                        else
+                        {
+                            LlistAdapter.add(ListTitle + DateValue);
+                        }
+                        LlistAdapter.notifyDataSetChanged();
+                    }
+                });
             }
         }
 
         @Override
         public void ControllerKeysCallback(int Keys)
         {
-            int i;
             final String ListTitle = "Key :";
             final String DateValue = String.format("%d", Keys);
             synchronized (LlistAdapter)
             {
-                for (i = 0; i < LlistAdapter.getCount(); i++)
-                {
-                    if (LlistAdapter.getItem(i).startsWith(ListTitle))
-                        break;
-                }
-                if (i < LlistAdapter.getCount())
-                {
-                    LlistAdapter.remove(LlistAdapter.getItem(i));
-                    LlistAdapter.insert(ListTitle + DateValue, i);
-                }
-                else
-                {
-                    LlistAdapter.add(ListTitle + DateValue);
-                }
-                LlistAdapter.notifyDataSetChanged();
+                runOnUiThread(new Runnable() {
+                    @Override
+                    public void run()
+                    {
+                        int i;
+                        for (i = 0; i < LlistAdapter.getCount(); i++)
+                        {
+                            if (LlistAdapter.getItem(i).startsWith(ListTitle))
+                                break;
+                        }
+                        if (i < LlistAdapter.getCount())
+                        {
+                            LlistAdapter.remove(LlistAdapter.getItem(i));
+                            LlistAdapter.insert(ListTitle + DateValue, i);
+                        }
+                        else
+                        {
+                            LlistAdapter.add(ListTitle + DateValue);
+                        }
+                        LlistAdapter.notifyDataSetChanged();
+                    }
+                });
             }
         }
 

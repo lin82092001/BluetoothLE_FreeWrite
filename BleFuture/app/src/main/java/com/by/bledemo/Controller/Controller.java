@@ -210,6 +210,7 @@ public class Controller {
             }
             if(RecordEnable)
             {
+                deviceManager.SetCharacteristic(RecService, Services.Rec[Services.DATA], new byte[]{Services.ST_CFG_SENSOR_ENABLE});//Enable
                 deviceManager.SetCharacteristic(RecService, Services.Rec[Services.CONF], new byte[]{Services.ST_CFG_SENSOR_ENABLE});//Enable
             }
         }

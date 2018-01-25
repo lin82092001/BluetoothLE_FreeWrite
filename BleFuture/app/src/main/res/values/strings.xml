@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">BfluuLcektyoEoouth</string>
+    <string name="app_name">FreeTalk</string>
     <string name="scan">Scan</string>
     <string name="stop">Stop</string>
     <string name="clear">Clear</string>
@@ -10,7 +10,7 @@
     <string name="NOdevice">No select the device.</string>
     <string name="NOTsame">You can not select the same device.</string>
     <string name="OK">OK</string>
-    <string name="Test">Test</string>
+    <string name="Test">Data</string>
     <string name="Disc">Disconnect</string>
     <string name="Close">Close</string>
     <string name="Left">Left</string>
