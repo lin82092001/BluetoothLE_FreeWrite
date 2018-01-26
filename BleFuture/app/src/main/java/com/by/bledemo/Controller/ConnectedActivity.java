@@ -222,7 +222,7 @@ public class ConnectedActivity extends AppCompatActivity {
         public void ControllerFingersCallback(Controller.FingersStatus Figs)
         {
             int i, j;
-            final String ListTitle = "Fig :";
+            final String ListTitle = "Fingers :";
             String Data = "";
             for(i = 0; i < 5; i++)
             {

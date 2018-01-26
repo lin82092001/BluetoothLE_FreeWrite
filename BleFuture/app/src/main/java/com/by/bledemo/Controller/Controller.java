@@ -210,7 +210,7 @@ public class Controller {
             }
             if(RecordEnable)
             {
-                deviceManager.SetCharacteristic(RecService, Services.Rec[Services.DATA], new byte[]{Services.ST_CFG_SENSOR_ENABLE});//Enable
+                //deviceManager.SetCharacteristic(RecService, Services.Rec[Services.DATA], new byte[]{Services.ST_CFG_SENSOR_ENABLE});//Enable
                 deviceManager.SetCharacteristic(RecService, Services.Rec[Services.CONF], new byte[]{Services.ST_CFG_SENSOR_ENABLE});//Enable
             }
         }
@@ -395,6 +395,10 @@ public class Controller {
             }
             if(Name.equals(RecService.Name()))
             {
+                //Modifies this buffer's byte order.
+                /*Constant denoting little-endian byte order.
+                In this order, the bytes of a multibyte value are ordered from least significant to most significant.
+                Relative get method for reading a float value.*/
                 if(CharUUID == Services.Rec[Services.DATA])//Speed
                 {
                     Speed[0] = ByteBuffer.wrap(data, 0, 4).order(ByteOrder.LITTLE_ENDIAN).getFloat();
