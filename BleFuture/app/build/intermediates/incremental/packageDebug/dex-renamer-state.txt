@@ -1,7 +1,4 @@
-#Thu Jan 25 01:33:17 GMT-08:00 2018
-base.0=D\:\\BluetoothLE_FreeWrite\\BleFuture\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10000\\instant-run-bootstrap_963836ba2920e4f03a9a6dffac6d6af699c587a8
-renamed.1=classes2.dex
+#Sun Jan 28 21:37:37 CST 2018
+base.0=D\:\\BluetoothLE_FreeWrite-2018-1-26\\BleFuture\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\1f\\main
 renamed.0=classes.dex
-file.1=D\:\\BluetoothLE_FreeWrite\\BleFuture\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10000\\instant-run_80ff0c26949324cb02c4900bbb461f329e73e709\\classes.dex
-base.1=D\:\\BluetoothLE_FreeWrite\\BleFuture\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10000\\instant-run_80ff0c26949324cb02c4900bbb461f329e73e709
-file.0=D\:\\BluetoothLE_FreeWrite\\BleFuture\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10000\\instant-run-bootstrap_963836ba2920e4f03a9a6dffac6d6af699c587a8\\classes.dex
+file.0=D\:\\BluetoothLE_FreeWrite-2018-1-26\\BleFuture\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\1f\\main\\classes.dex
