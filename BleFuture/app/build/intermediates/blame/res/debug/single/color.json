@@ -16,12 +16,12 @@
         "source": "C:\\Users\\LinLin\\.android\\build-cache\\0eccbead5e7954eca9e9f10e8cee538049f0798e\\output\\res\\color\\abc_hint_foreground_material_dark.xml"
     },
     {
-        "merged": "D:\\BluetoothLE_FreeWrite\\BleFuture\\app\\build\\intermediates\\res\\merged\\debug\\color\\abc_search_url_text.xml",
-        "source": "C:\\Users\\LinLin\\.android\\build-cache\\0eccbead5e7954eca9e9f10e8cee538049f0798e\\output\\res\\color\\abc_search_url_text.xml"
-    },
-    {
         "merged": "D:\\BluetoothLE_FreeWrite\\BleFuture\\app\\build\\intermediates\\res\\merged\\debug\\color\\abc_hint_foreground_material_light.xml",
         "source": "C:\\Users\\LinLin\\.android\\build-cache\\0eccbead5e7954eca9e9f10e8cee538049f0798e\\output\\res\\color\\abc_hint_foreground_material_light.xml"
+    },
+    {
+        "merged": "D:\\BluetoothLE_FreeWrite\\BleFuture\\app\\build\\intermediates\\res\\merged\\debug\\color\\abc_search_url_text.xml",
+        "source": "C:\\Users\\LinLin\\.android\\build-cache\\0eccbead5e7954eca9e9f10e8cee538049f0798e\\output\\res\\color\\abc_search_url_text.xml"
     },
     {
         "merged": "D:\\Downloads\\BleDemo-master\\app\\build\\intermediates\\res\\merged\\debug\\color\\abc_hint_foreground_material_light.xml",

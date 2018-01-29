@@ -42,7 +42,7 @@ public class MainActivity extends AppCompatActivity {
     private static final int REQUEST_ENABLE_ACCESS_COARSE = 2;
     private static final int REQUEST_ENABLE_ACCESS_FINE = 3;
     private boolean mScanning;
-    private static final long SCAN_PERIOD=10000;    // Stops scanning after 10 seconds.
+    private static final long SCAN_PERIOD=3000;    // Stops scanning after 10 seconds.
     private String LeftAddress="";
     private String RightAddress="";
     private Button Connect;

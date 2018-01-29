@@ -50,30 +50,59 @@
       <file leaf-file-name="MainActivity.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/src/main/java/com/by/bledemo/MainActivity.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="3404">
-              <caret line="176" column="4" lean-forward="false" selection-start-line="176" selection-start-column="4" selection-end-line="176" selection-end-column="4" />
+            <state relative-caret-position="46">
+              <caret line="44" column="43" lean-forward="false" selection-start-line="44" selection-start-column="43" selection-end-line="44" selection-end-column="43" />
               <folding>
-                <element signature="imports" expanded="false" />
+                <element signature="imports" expanded="true" />
+                <element signature="e#3545#3560#0" expanded="true" />
+                <element signature="e#4958#4974#0" expanded="true" />
+                <element signature="e#4987#5001#0" expanded="true" />
+                <element signature="e#5021#5032#0" expanded="true" />
+                <element signature="e#5034#5351#0" expanded="true" />
+                <element signature="e#5350#5351#0" expanded="true" />
+                <element signature="e#5394#8404#0" expanded="true" />
+                <element signature="e#5531#5949#0" expanded="true" />
+                <element signature="e#5948#5949#0" expanded="true" />
+                <element signature="e#6007#6428#0" expanded="true" />
+                <element signature="e#6427#6428#0" expanded="true" />
+                <element signature="e#6474#8378#0" expanded="true" />
+                <element signature="e#8377#8378#0" expanded="true" />
+                <element signature="e#8403#8404#0" expanded="true" />
+                <element signature="e#9379#9816#0" expanded="true" />
+                <element signature="e#9548#9561#0" expanded="true" />
+                <element signature="e#9598#9612#0" expanded="true" />
+                <element signature="e#9815#9816#0" expanded="true" />
+                <element signature="e#10324#10637#0" expanded="true" />
+                <element signature="e#10636#10637#0" expanded="true" />
+                <element signature="e#10712#10730#0" expanded="true" />
+                <element signature="e#11242#12647#0" expanded="true" />
+                <element signature="e#11505#12629#0" expanded="true" />
+                <element signature="e#12628#12629#0" expanded="true" />
+                <element signature="e#12646#12647#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ConnectedActivity.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="ConnectedActivity.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/src/main/java/com/by/bledemo/Controller/ConnectedActivity.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1933">
-              <caret line="185" column="47" lean-forward="true" selection-start-line="185" selection-start-column="47" selection-end-line="185" selection-end-column="47" />
-              <folding />
+            <state relative-caret-position="90">
+              <caret line="26" column="27" lean-forward="false" selection-start-line="26" selection-start-column="4" selection-end-line="26" selection-end-column="27" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#2127#2234#0" expanded="false" />
+                <element signature="e#2233#2234#0" expanded="false" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Controller.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="Controller.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/src/main/java/com/by/bledemo/Controller/Controller.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="6946">
-              <caret line="419" column="0" lean-forward="false" selection-start-line="419" selection-start-column="0" selection-end-line="419" selection-end-column="0" />
+            <state relative-caret-position="4862">
+              <caret line="243" column="27" lean-forward="false" selection-start-line="243" selection-start-column="22" selection-end-line="243" selection-end-column="27" />
               <folding />
             </state>
           </provider>
@@ -82,9 +111,12 @@
       <file leaf-file-name="DeviceManager.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/src/main/java/com/by/bledemo/BLE/DeviceManager.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="115">
+            <state relative-caret-position="1318">
               <caret line="181" column="13" lean-forward="false" selection-start-line="181" selection-start-column="13" selection-end-line="181" selection-end-column="13" />
-              <folding />
+              <folding>
+                <element signature="e#5929#5930#0" expanded="true" />
+                <element signature="e#5969#5970#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -92,9 +124,13 @@
       <file leaf-file-name="BaseService.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/src/main/java/com/by/bledemo/BLE/BaseService.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="46">
+            <state relative-caret-position="184">
               <caret line="14" column="44" lean-forward="false" selection-start-line="14" selection-start-column="44" selection-end-line="14" selection-end-column="44" />
-              <folding />
+              <folding>
+                <element signature="imports" expanded="false" />
+                <element signature="e#1438#1439#0" expanded="false" />
+                <element signature="e#1465#1466#0" expanded="false" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -128,12 +164,14 @@
       <find>GotNotification</find>
       <find>LocalKeys</find>
       <find>LlistAdapter</find>
+      <find>DeviceAddress</find>
+      <find>ControllerOtherCallback</find>
     </findStrings>
   </component>
   <component name="GradleLocalSettings">
     <option name="myGradleHomes">
       <map>
-        <entry key="$PROJECT_DIR$" value="C:\Users\BoMing\.gradle\wrapper\dists\gradle-3.3-all\55gk2rcmfc6p2dg9u9ohc3hw9\gradle-3.3" />
+        <entry key="$PROJECT_DIR$" value="C:\Users\LinLin\.gradle\wrapper\dists\gradle-3.3-all\55gk2rcmfc6p2dg9u9ohc3hw9\gradle-3.3" />
       </map>
     </option>
     <option name="myGradleVersions">
@@ -1963,11 +2001,11 @@
         <option value="$PROJECT_DIR$/app/src/main/java/com/by/bledemo/BLE/DeviceListener.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/by/bledemo/BLE/Listener.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/by/bledemo/BLE/BaseService.java" />
-        <option value="$PROJECT_DIR$/app/build.gradle" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/by/bledemo/BLE/DeviceManager.java" />
         <option value="$PROJECT_DIR$/app/src/main/res/layout/connected.xml" />
         <option value="$PROJECT_DIR$/app/src/main/res/values/strings.xml" />
         <option value="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" />
+        <option value="$PROJECT_DIR$/app/build.gradle" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/by/bledemo/MainActivity.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/by/bledemo/Controller/Controller.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/by/bledemo/Controller/ConnectedActivity.java" />
@@ -1977,8 +2015,8 @@
   <component name="ProjectFrameBounds">
     <option name="x" value="-8" />
     <option name="y" value="-8" />
-    <option name="width" value="1616" />
-    <option name="height" value="876" />
+    <option name="width" value="1936" />
+    <option name="height" value="1056" />
   </component>
   <component name="ProjectView">
     <navigator currentView="AndroidView" proportions="" version="1">
@@ -1995,11 +2033,18 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
-      <pane id="Scratches" />
-      <pane id="ProjectPane" />
       <pane id="AndroidView">
         <subPane>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="BleFuture" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Gradle Scripts" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.android.AndroidBuildScriptsGroupNode" />
+            </PATH_ELEMENT>
+          </PATH>
           <PATH>
             <PATH_ELEMENT>
               <option name="myItemId" value="BleFuture" />
@@ -2041,10 +2086,6 @@
               <option name="myItemId" value="app" />
               <option name="myItemType" value="com.android.tools.idea.navigator.nodes.android.AndroidModuleNode" />
             </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.android.AndroidSourceTypeNode" />
-            </PATH_ELEMENT>
           </PATH>
           <PATH>
             <PATH_ELEMENT>
@@ -2055,16 +2096,24 @@
               <option name="myItemId" value="app" />
               <option name="myItemType" value="com.android.tools.idea.navigator.nodes.android.AndroidModuleNode" />
             </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="manifests" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.android.AndroidManifestsGroupNode" />
+            </PATH_ELEMENT>
           </PATH>
         </subPane>
       </pane>
       <pane id="PackagesPane" />
+      <pane id="Scratches" />
+      <pane id="ProjectPane" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="sync.plugin.last.upgrade.timestamp" value="1517052689443" />
+    <property name="sync.plugin.last.upgrade.timestamp" value="1517205098670" />
     <property name="device.picker.selection" value="H9AXB77239706FD" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="settings.editor.selected.configurable" value="project.kotlinCompiler" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -2149,7 +2198,7 @@
       <option name="ACTIVITY_CLASS" value="" />
       <method>
         <option name="Android.Gradle.BeforeRunTask" enabled="true" />
-        <option name="com.android.instantApps.provision.BeforeRunTask" enabled="true" clearCache="false" clearProvisionedDevices="false" myTimestamp="1517146736455" />
+        <option name="com.android.instantApps.provision.BeforeRunTask" enabled="true" clearCache="false" clearProvisionedDevices="false" myTimestamp="1517220926991" />
       </method>
     </configuration>
     <configuration default="true" type="AndroidTestRunConfigurationType" factoryName="Android Instrumented Tests">
@@ -2197,7 +2246,7 @@
       </Profilers>
       <method>
         <option name="Android.Gradle.BeforeRunTask" enabled="true" />
-        <option name="com.android.instantApps.provision.BeforeRunTask" enabled="true" clearCache="false" clearProvisionedDevices="false" myTimestamp="1517146736455" />
+        <option name="com.android.instantApps.provision.BeforeRunTask" enabled="true" clearCache="false" clearProvisionedDevices="false" myTimestamp="1517220926991" />
       </method>
     </configuration>
     <configuration default="true" type="Application" factoryName="Application">
@@ -2229,6 +2278,27 @@
         </option>
         <option name="vmOptions" />
       </ExternalSystemSettings>
+      <method />
+    </configuration>
+    <configuration default="true" type="JUnit" factoryName="JUnit">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <module name="" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="METHOD_NAME" />
+      <option name="TEST_OBJECT" value="class" />
+      <option name="VM_PARAMETERS" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <envs />
+      <patterns />
       <method />
     </configuration>
     <configuration default="true" type="JarApplication" factoryName="JAR Application">
@@ -2359,7 +2429,7 @@
       <option name="ACTIVITY_CLASS" value="" />
       <method>
         <option name="Android.Gradle.BeforeRunTask" enabled="true" />
-        <option name="com.android.instantApps.provision.BeforeRunTask" enabled="true" clearCache="false" clearProvisionedDevices="false" myTimestamp="1517146736456" />
+        <option name="com.android.instantApps.provision.BeforeRunTask" enabled="true" clearCache="false" clearProvisionedDevices="false" myTimestamp="1517220926992" />
       </method>
     </configuration>
     <list size="1">
@@ -2398,32 +2468,31 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1616" height="876" extended-state="6" />
-    <editor active="true" />
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="1" />
     <layout>
       <window_info id="Android Profiler" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.15725806" sideWeight="0.5" order="13" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.15692641" sideWeight="0.5" order="13" side_tool="false" content_ui="tabs" />
       <window_info id="Build Variants" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="true" content_ui="tabs" />
-      <window_info id="Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2937018" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.29317698" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.19955407" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
-      <window_info id="Logcat" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24865592" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Logcat" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.33982685" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Captures" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Gradle Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="12" side_tool="true" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.13753213" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.13752665" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Gradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3299298" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Device File Explorer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -2444,10 +2513,191 @@
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/by/bledemo/MainActivity.java">
       <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#3545#3560#0" expanded="true" />
+            <element signature="e#4958#4974#0" expanded="true" />
+            <element signature="e#4987#5001#0" expanded="true" />
+            <element signature="e#5021#5032#0" expanded="true" />
+            <element signature="e#5034#5351#0" expanded="true" />
+            <element signature="e#5350#5351#0" expanded="true" />
+            <element signature="e#5394#8404#0" expanded="true" />
+            <element signature="e#5531#5949#0" expanded="true" />
+            <element signature="e#5948#5949#0" expanded="true" />
+            <element signature="e#6007#6428#0" expanded="true" />
+            <element signature="e#6427#6428#0" expanded="true" />
+            <element signature="e#6474#8378#0" expanded="true" />
+            <element signature="e#8377#8378#0" expanded="true" />
+            <element signature="e#8403#8404#0" expanded="true" />
+            <element signature="e#9379#9816#0" expanded="true" />
+            <element signature="e#9548#9561#0" expanded="true" />
+            <element signature="e#9598#9612#0" expanded="true" />
+            <element signature="e#9815#9816#0" expanded="true" />
+            <element signature="e#10324#10637#0" expanded="true" />
+            <element signature="e#10636#10637#0" expanded="true" />
+            <element signature="e#10712#10730#0" expanded="true" />
+            <element signature="e#11242#12647#0" expanded="true" />
+            <element signature="e#11505#12629#0" expanded="true" />
+            <element signature="e#12628#12629#0" expanded="true" />
+            <element signature="e#12646#12647#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/by/bledemo/Controller/ConnectedActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="276">
+          <caret line="12" column="29" lean-forward="false" selection-start-line="12" selection-start-column="29" selection-end-line="12" selection-end-column="29" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#2127#2234#0" expanded="false" />
+            <element signature="e#2233#2234#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/by/bledemo/Controller/Controller.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="9200">
+          <caret line="419" column="0" lean-forward="false" selection-start-line="419" selection-start-column="0" selection-end-line="419" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/by/bledemo/BLE/DeviceManager.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3772">
+          <caret line="181" column="13" lean-forward="false" selection-start-line="181" selection-start-column="13" selection-end-line="181" selection-end-column="13" />
+          <folding>
+            <element signature="e#5929#5930#0" expanded="true" />
+            <element signature="e#5969#5970#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/by/bledemo/BLE/BaseService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="184">
+          <caret line="14" column="44" lean-forward="false" selection-start-line="14" selection-start-column="44" selection-end-line="14" selection-end-column="44" />
+          <folding>
+            <element signature="imports" expanded="false" />
+            <element signature="e#1438#1439#0" expanded="false" />
+            <element signature="e#1465#1466#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/by/bledemo/MainActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="3404">
           <caret line="176" column="4" lean-forward="false" selection-start-line="176" selection-start-column="4" selection-end-line="176" selection-end-column="4" />
           <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#3545#3560#0" expanded="true" />
+            <element signature="e#4958#4974#0" expanded="true" />
+            <element signature="e#4987#5001#0" expanded="true" />
+            <element signature="e#5021#5032#0" expanded="true" />
+            <element signature="e#5034#5351#0" expanded="true" />
+            <element signature="e#5350#5351#0" expanded="true" />
+            <element signature="e#5394#8404#0" expanded="true" />
+            <element signature="e#5531#5949#0" expanded="true" />
+            <element signature="e#5948#5949#0" expanded="true" />
+            <element signature="e#6007#6428#0" expanded="true" />
+            <element signature="e#6427#6428#0" expanded="true" />
+            <element signature="e#6474#8378#0" expanded="true" />
+            <element signature="e#8377#8378#0" expanded="true" />
+            <element signature="e#8403#8404#0" expanded="true" />
+            <element signature="e#9379#9816#0" expanded="true" />
+            <element signature="e#9548#9561#0" expanded="true" />
+            <element signature="e#9598#9612#0" expanded="true" />
+            <element signature="e#9815#9816#0" expanded="true" />
+            <element signature="e#10324#10637#0" expanded="true" />
+            <element signature="e#10636#10637#0" expanded="true" />
+            <element signature="e#10712#10730#0" expanded="true" />
+            <element signature="e#11242#12647#0" expanded="true" />
+            <element signature="e#11505#12629#0" expanded="true" />
+            <element signature="e#12628#12629#0" expanded="true" />
+            <element signature="e#12646#12647#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/by/bledemo/Controller/Controller.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="9200">
+          <caret line="419" column="0" lean-forward="false" selection-start-line="419" selection-start-column="0" selection-end-line="419" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/by/bledemo/BLE/DeviceManager.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3772">
+          <caret line="181" column="13" lean-forward="false" selection-start-line="181" selection-start-column="13" selection-end-line="181" selection-end-column="13" />
+          <folding>
+            <element signature="e#5929#5930#0" expanded="true" />
+            <element signature="e#5969#5970#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/by/bledemo/BLE/BaseService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="184">
+          <caret line="14" column="44" lean-forward="false" selection-start-line="14" selection-start-column="44" selection-end-line="14" selection-end-column="44" />
+          <folding>
             <element signature="imports" expanded="false" />
+            <element signature="e#1438#1439#0" expanded="false" />
+            <element signature="e#1465#1466#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/by/bledemo/Controller/ConnectedActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3887">
+          <caret line="185" column="13" lean-forward="true" selection-start-line="185" selection-start-column="13" selection-end-line="185" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#2127#2234#0" expanded="false" />
+            <element signature="e#2233#2234#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/by/bledemo/MainActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3404">
+          <caret line="176" column="4" lean-forward="false" selection-start-line="176" selection-start-column="4" selection-end-line="176" selection-end-column="4" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#3545#3560#0" expanded="true" />
+            <element signature="e#4958#4974#0" expanded="true" />
+            <element signature="e#4987#5001#0" expanded="true" />
+            <element signature="e#5021#5032#0" expanded="true" />
+            <element signature="e#5034#5351#0" expanded="true" />
+            <element signature="e#5350#5351#0" expanded="true" />
+            <element signature="e#5394#8404#0" expanded="true" />
+            <element signature="e#5531#5949#0" expanded="true" />
+            <element signature="e#5948#5949#0" expanded="true" />
+            <element signature="e#6007#6428#0" expanded="true" />
+            <element signature="e#6427#6428#0" expanded="true" />
+            <element signature="e#6474#8378#0" expanded="true" />
+            <element signature="e#8377#8378#0" expanded="true" />
+            <element signature="e#8403#8404#0" expanded="true" />
+            <element signature="e#9379#9816#0" expanded="true" />
+            <element signature="e#9548#9561#0" expanded="true" />
+            <element signature="e#9598#9612#0" expanded="true" />
+            <element signature="e#9815#9816#0" expanded="true" />
+            <element signature="e#10324#10637#0" expanded="true" />
+            <element signature="e#10636#10637#0" expanded="true" />
+            <element signature="e#10712#10730#0" expanded="true" />
+            <element signature="e#11242#12647#0" expanded="true" />
+            <element signature="e#11505#12629#0" expanded="true" />
+            <element signature="e#12628#12629#0" expanded="true" />
+            <element signature="e#12646#12647#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -2456,19 +2706,25 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="3243">
           <caret line="141" column="43" lean-forward="false" selection-start-line="141" selection-start-column="42" selection-end-line="141" selection-end-column="48" />
-          <folding />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#2127#2234#0" expanded="false" />
+            <element signature="e#2233#2234#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/connected.xml">
+      <provider editor-type-id="android-designer2">
+        <state />
+      </provider>
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="920">
           <caret line="40" column="46" lean-forward="false" selection-start-line="40" selection-start-column="33" selection-end-line="40" selection-end-column="46" />
-          <folding />
+          <folding>
+            <element signature="e#1955#1969#0" expanded="true" />
+          </folding>
         </state>
-      </provider>
-      <provider editor-type-id="android-designer2">
-        <state />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/by/bledemo/Controller/Controller.java">
@@ -2483,7 +2739,10 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="7797">
           <caret line="360" column="42" lean-forward="false" selection-start-line="360" selection-start-column="42" selection-end-line="360" selection-end-column="42" />
-          <folding />
+          <folding>
+            <element signature="e#5929#5930#0" expanded="true" />
+            <element signature="e#5969#5970#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -2491,24 +2750,46 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="184">
           <caret line="14" column="44" lean-forward="false" selection-start-line="14" selection-start-column="44" selection-end-line="14" selection-end-column="44" />
-          <folding />
+          <folding>
+            <element signature="imports" expanded="false" />
+            <element signature="e#1438#1439#0" expanded="false" />
+            <element signature="e#1465#1466#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://D:/Android/Sdk/sources/android-25/java/lang/Thread.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3266">
-          <caret line="142" column="6" lean-forward="false" selection-start-line="142" selection-start-column="6" selection-end-line="142" selection-end-column="6" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://D:/Android/Sdk/sources/android-25/java/lang/Thread.java" />
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/by/bledemo/MainActivity.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="3404">
           <caret line="176" column="4" lean-forward="false" selection-start-line="176" selection-start-column="4" selection-end-line="176" selection-end-column="4" />
           <folding>
-            <element signature="imports" expanded="false" />
+            <element signature="imports" expanded="true" />
+            <element signature="e#3545#3560#0" expanded="true" />
+            <element signature="e#4958#4974#0" expanded="true" />
+            <element signature="e#4987#5001#0" expanded="true" />
+            <element signature="e#5021#5032#0" expanded="true" />
+            <element signature="e#5034#5351#0" expanded="true" />
+            <element signature="e#5350#5351#0" expanded="true" />
+            <element signature="e#5394#8404#0" expanded="true" />
+            <element signature="e#5531#5949#0" expanded="true" />
+            <element signature="e#5948#5949#0" expanded="true" />
+            <element signature="e#6007#6428#0" expanded="true" />
+            <element signature="e#6427#6428#0" expanded="true" />
+            <element signature="e#6474#8378#0" expanded="true" />
+            <element signature="e#8377#8378#0" expanded="true" />
+            <element signature="e#8403#8404#0" expanded="true" />
+            <element signature="e#9379#9816#0" expanded="true" />
+            <element signature="e#9548#9561#0" expanded="true" />
+            <element signature="e#9598#9612#0" expanded="true" />
+            <element signature="e#9815#9816#0" expanded="true" />
+            <element signature="e#10324#10637#0" expanded="true" />
+            <element signature="e#10636#10637#0" expanded="true" />
+            <element signature="e#10712#10730#0" expanded="true" />
+            <element signature="e#11242#12647#0" expanded="true" />
+            <element signature="e#11505#12629#0" expanded="true" />
+            <element signature="e#12628#12629#0" expanded="true" />
+            <element signature="e#12646#12647#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -2525,7 +2806,10 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="7797">
           <caret line="360" column="42" lean-forward="false" selection-start-line="360" selection-start-column="42" selection-end-line="360" selection-end-column="42" />
-          <folding />
+          <folding>
+            <element signature="e#5929#5930#0" expanded="true" />
+            <element signature="e#5969#5970#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -2533,7 +2817,11 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="184">
           <caret line="14" column="44" lean-forward="false" selection-start-line="14" selection-start-column="44" selection-end-line="14" selection-end-column="44" />
-          <folding />
+          <folding>
+            <element signature="imports" expanded="false" />
+            <element signature="e#1438#1439#0" expanded="false" />
+            <element signature="e#1465#1466#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -2541,7 +2829,11 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="966">
           <caret line="42" column="80" lean-forward="false" selection-start-line="42" selection-start-column="80" selection-end-line="42" selection-end-column="80" />
-          <folding />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#2127#2234#0" expanded="false" />
+            <element signature="e#2233#2234#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -2550,7 +2842,32 @@
         <state relative-caret-position="3404">
           <caret line="176" column="4" lean-forward="false" selection-start-line="176" selection-start-column="4" selection-end-line="176" selection-end-column="4" />
           <folding>
-            <element signature="imports" expanded="false" />
+            <element signature="imports" expanded="true" />
+            <element signature="e#3545#3560#0" expanded="true" />
+            <element signature="e#4958#4974#0" expanded="true" />
+            <element signature="e#4987#5001#0" expanded="true" />
+            <element signature="e#5021#5032#0" expanded="true" />
+            <element signature="e#5034#5351#0" expanded="true" />
+            <element signature="e#5350#5351#0" expanded="true" />
+            <element signature="e#5394#8404#0" expanded="true" />
+            <element signature="e#5531#5949#0" expanded="true" />
+            <element signature="e#5948#5949#0" expanded="true" />
+            <element signature="e#6007#6428#0" expanded="true" />
+            <element signature="e#6427#6428#0" expanded="true" />
+            <element signature="e#6474#8378#0" expanded="true" />
+            <element signature="e#8377#8378#0" expanded="true" />
+            <element signature="e#8403#8404#0" expanded="true" />
+            <element signature="e#9379#9816#0" expanded="true" />
+            <element signature="e#9548#9561#0" expanded="true" />
+            <element signature="e#9598#9612#0" expanded="true" />
+            <element signature="e#9815#9816#0" expanded="true" />
+            <element signature="e#10324#10637#0" expanded="true" />
+            <element signature="e#10636#10637#0" expanded="true" />
+            <element signature="e#10712#10730#0" expanded="true" />
+            <element signature="e#11242#12647#0" expanded="true" />
+            <element signature="e#11505#12629#0" expanded="true" />
+            <element signature="e#12628#12629#0" expanded="true" />
+            <element signature="e#12646#12647#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -2559,7 +2876,11 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="5980">
           <caret line="276" column="29" lean-forward="false" selection-start-line="276" selection-start-column="29" selection-end-line="276" selection-end-column="29" />
-          <folding />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#2127#2234#0" expanded="false" />
+            <element signature="e#2233#2234#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -2567,7 +2888,10 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="5957">
           <caret line="280" column="21" lean-forward="false" selection-start-line="280" selection-start-column="21" selection-end-line="280" selection-end-column="21" />
-          <folding />
+          <folding>
+            <element signature="e#5929#5930#0" expanded="true" />
+            <element signature="e#5969#5970#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -2575,7 +2899,11 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="184">
           <caret line="14" column="44" lean-forward="false" selection-start-line="14" selection-start-column="44" selection-end-line="14" selection-end-column="44" />
-          <folding />
+          <folding>
+            <element signature="imports" expanded="false" />
+            <element signature="e#1438#1439#0" expanded="false" />
+            <element signature="e#1465#1466#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -2592,7 +2920,32 @@
         <state relative-caret-position="1725">
           <caret line="103" column="9" lean-forward="false" selection-start-line="103" selection-start-column="9" selection-end-line="103" selection-end-column="9" />
           <folding>
-            <element signature="imports" expanded="false" />
+            <element signature="imports" expanded="true" />
+            <element signature="e#3545#3560#0" expanded="true" />
+            <element signature="e#4958#4974#0" expanded="true" />
+            <element signature="e#4987#5001#0" expanded="true" />
+            <element signature="e#5021#5032#0" expanded="true" />
+            <element signature="e#5034#5351#0" expanded="true" />
+            <element signature="e#5350#5351#0" expanded="true" />
+            <element signature="e#5394#8404#0" expanded="true" />
+            <element signature="e#5531#5949#0" expanded="true" />
+            <element signature="e#5948#5949#0" expanded="true" />
+            <element signature="e#6007#6428#0" expanded="true" />
+            <element signature="e#6427#6428#0" expanded="true" />
+            <element signature="e#6474#8378#0" expanded="true" />
+            <element signature="e#8377#8378#0" expanded="true" />
+            <element signature="e#8403#8404#0" expanded="true" />
+            <element signature="e#9379#9816#0" expanded="true" />
+            <element signature="e#9548#9561#0" expanded="true" />
+            <element signature="e#9598#9612#0" expanded="true" />
+            <element signature="e#9815#9816#0" expanded="true" />
+            <element signature="e#10324#10637#0" expanded="true" />
+            <element signature="e#10636#10637#0" expanded="true" />
+            <element signature="e#10712#10730#0" expanded="true" />
+            <element signature="e#11242#12647#0" expanded="true" />
+            <element signature="e#11505#12629#0" expanded="true" />
+            <element signature="e#12628#12629#0" expanded="true" />
+            <element signature="e#12646#12647#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -2609,7 +2962,10 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="10603">
           <caret line="482" column="43" lean-forward="false" selection-start-line="482" selection-start-column="40" selection-end-line="482" selection-end-column="48" />
-          <folding />
+          <folding>
+            <element signature="e#5929#5930#0" expanded="true" />
+            <element signature="e#5969#5970#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -2617,7 +2973,11 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="184">
           <caret line="14" column="44" lean-forward="false" selection-start-line="14" selection-start-column="44" selection-end-line="14" selection-end-column="44" />
-          <folding />
+          <folding>
+            <element signature="imports" expanded="false" />
+            <element signature="e#1438#1439#0" expanded="false" />
+            <element signature="e#1465#1466#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -2625,7 +2985,11 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="2852">
           <caret line="124" column="9" lean-forward="true" selection-start-line="124" selection-start-column="9" selection-end-line="124" selection-end-column="9" />
-          <folding />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#2127#2234#0" expanded="false" />
+            <element signature="e#2233#2234#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -2639,82 +3003,131 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/AndroidManifest.xml">
+      <provider editor-type-id="android-manifest">
+        <state />
+      </provider>
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="414">
           <caret line="18" column="36" lean-forward="false" selection-start-line="18" selection-start-column="36" selection-end-line="18" selection-end-column="36" />
           <folding />
         </state>
       </provider>
-      <provider editor-type-id="android-manifest">
-        <state />
-      </provider>
     </entry>
     <entry file="file://D:/Program Files/Android/Sdk/sources/android-25/android/bluetooth/BluetoothGattDescriptor.java" />
     <entry file="file://D:/Program Files/Android/Sdk/sources/android-25/java/nio/ByteBuffer.java" />
-    <entry file="file://D:/Android/Sdk/sources/android-25/android/app/Activity.java">
+    <entry file="file://D:/Android/Sdk/sources/android-25/android/app/Activity.java" />
+    <entry file="file://D:/Android/Sdk/sources/android-25/java/lang/Thread.java" />
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/by/bledemo/BLE/BaseService.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="360">
-          <caret line="5945" column="0" lean-forward="false" selection-start-line="5945" selection-start-column="0" selection-end-line="5945" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/by/bledemo/MainActivity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3404">
-          <caret line="176" column="4" lean-forward="false" selection-start-line="176" selection-start-column="4" selection-end-line="176" selection-end-column="4" />
+        <state relative-caret-position="184">
+          <caret line="14" column="44" lean-forward="false" selection-start-line="14" selection-start-column="44" selection-end-line="14" selection-end-column="44" />
           <folding>
             <element signature="imports" expanded="false" />
+            <element signature="e#1438#1439#0" expanded="false" />
+            <element signature="e#1465#1466#0" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://D:/Android/Sdk/sources/android-25/java/lang/Thread.java">
+    <entry file="file://$PROJECT_DIR$/build.gradle">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="230">
-          <caret line="151" column="0" lean-forward="true" selection-start-line="151" selection-start-column="0" selection-end-line="151" selection-end-column="0" />
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/build.gradle">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="69">
+          <caret line="3" column="24" lean-forward="true" selection-start-line="3" selection-start-column="24" selection-end-line="3" selection-end-column="24" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://D:/Program Files/Android/Sdk/sources/android-25/android/os/Handler.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="299">
+          <caret line="290" column="59" lean-forward="false" selection-start-line="290" selection-start-column="49" selection-end-line="290" selection-end-column="59" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/connected.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="23">
-          <caret line="40" column="46" lean-forward="false" selection-start-line="40" selection-start-column="33" selection-end-line="40" selection-end-column="46" />
-          <folding />
-        </state>
-      </provider>
       <provider editor-type-id="android-designer2">
         <state />
       </provider>
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="218">
+          <caret line="23" column="12" lean-forward="false" selection-start-line="23" selection-start-column="12" selection-end-line="23" selection-end-column="12" />
+          <folding>
+            <element signature="e#1955#1969#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/by/bledemo/BLE/BaseService.java">
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/by/bledemo/MainActivity.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="46">
-          <caret line="14" column="44" lean-forward="false" selection-start-line="14" selection-start-column="44" selection-end-line="14" selection-end-column="44" />
-          <folding />
+          <caret line="44" column="43" lean-forward="false" selection-start-line="44" selection-start-column="43" selection-end-line="44" selection-end-column="43" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#3545#3560#0" expanded="true" />
+            <element signature="e#4958#4974#0" expanded="true" />
+            <element signature="e#4987#5001#0" expanded="true" />
+            <element signature="e#5021#5032#0" expanded="true" />
+            <element signature="e#5034#5351#0" expanded="true" />
+            <element signature="e#5350#5351#0" expanded="true" />
+            <element signature="e#5394#8404#0" expanded="true" />
+            <element signature="e#5531#5949#0" expanded="true" />
+            <element signature="e#5948#5949#0" expanded="true" />
+            <element signature="e#6007#6428#0" expanded="true" />
+            <element signature="e#6427#6428#0" expanded="true" />
+            <element signature="e#6474#8378#0" expanded="true" />
+            <element signature="e#8377#8378#0" expanded="true" />
+            <element signature="e#8403#8404#0" expanded="true" />
+            <element signature="e#9379#9816#0" expanded="true" />
+            <element signature="e#9548#9561#0" expanded="true" />
+            <element signature="e#9598#9612#0" expanded="true" />
+            <element signature="e#9815#9816#0" expanded="true" />
+            <element signature="e#10324#10637#0" expanded="true" />
+            <element signature="e#10636#10637#0" expanded="true" />
+            <element signature="e#10712#10730#0" expanded="true" />
+            <element signature="e#11242#12647#0" expanded="true" />
+            <element signature="e#11505#12629#0" expanded="true" />
+            <element signature="e#12628#12629#0" expanded="true" />
+            <element signature="e#12646#12647#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/by/bledemo/BLE/DeviceManager.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="115">
+        <state relative-caret-position="1318">
           <caret line="181" column="13" lean-forward="false" selection-start-line="181" selection-start-column="13" selection-end-line="181" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/by/bledemo/Controller/Controller.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="6946">
-          <caret line="419" column="0" lean-forward="false" selection-start-line="419" selection-start-column="0" selection-end-line="419" selection-end-column="0" />
-          <folding />
+          <folding>
+            <element signature="e#5929#5930#0" expanded="true" />
+            <element signature="e#5969#5970#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/by/bledemo/Controller/ConnectedActivity.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1933">
-          <caret line="185" column="47" lean-forward="true" selection-start-line="185" selection-start-column="47" selection-end-line="185" selection-end-column="47" />
+        <state relative-caret-position="90">
+          <caret line="26" column="27" lean-forward="false" selection-start-line="26" selection-start-column="4" selection-end-line="26" selection-end-column="27" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#2127#2234#0" expanded="false" />
+            <element signature="e#2233#2234#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/by/bledemo/Controller/Controller.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="4862">
+          <caret line="243" column="27" lean-forward="false" selection-start-line="243" selection-start-column="22" selection-end-line="243" selection-end-column="27" />
           <folding />
         </state>
       </provider>

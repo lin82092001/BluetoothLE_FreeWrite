@@ -24,7 +24,7 @@ public class Controller {
         void ControllerFingersCallback(FingersStatus Figs);
         void ControllerKeysCallback(int Keys);
         void LostConnection();
-        void DeviceValid();
+        void DeviceValid(String DeviceAddress);
     }
 
     private ControllerCallback UserCB;
@@ -247,6 +247,8 @@ public class Controller {
     {
         if (cb!=null)
             UserCB=cb;
+        else
+            UserCB=null;
     }
 
     private Listener listener=new Listener() {
@@ -294,7 +296,7 @@ public class Controller {
                 {
                     if(CurrentStatus==Status.DeviceConfigured && UserCB!=null)
                     {
-                        UserCB.DeviceValid();
+                        UserCB.DeviceValid(DeviceAddress);
                     }
                 }
             });
@@ -353,16 +355,16 @@ public class Controller {
                 DisY = ByteBuffer.wrap(data, 10, 4).order(ByteOrder.LITTLE_ENDIAN).getFloat();
                 DisZ = ByteBuffer.wrap(data, 14, 4).order(ByteOrder.LITTLE_ENDIAN).getFloat();
 
-                Parent.runOnUiThread(new Runnable() {
-                    @Override
-                    public void run()
-                    {
+                //Parent.runOnUiThread(new Runnable() {
+                    //@Override
+                    //public void run()
+                    //{
                         if(UserCB != null)
                         {
                             UserCB.ControllerStatusCallback(Status, CMD, Roll * De2Ra, Pitch  * De2Ra, Yaw * De2Ra, DisX, DisY, DisZ);
                         }
-                    }
-                });
+                    //}
+                //});
             }
             if(Name.equals(FingersService.Name()))
             {
@@ -377,10 +379,10 @@ public class Controller {
                     if (!FigStatus.Enable[i][1] && (FigStatus.Degree[i][1] != 0))
                         FigStatus.Enable[i][1] = true;
                 }
-                Parent.runOnUiThread(new Runnable() {
-                    @Override
-                    public void run()
-                    {
+                //Parent.runOnUiThread(new Runnable() {
+                    //@Override
+                    //public void run()
+                    //{
                         if(UserCB != null)
                         {
                             if(LocalKeys != KEY)
@@ -390,8 +392,8 @@ public class Controller {
                             }
                             UserCB.ControllerFingersCallback(FigStatus);
                         }
-                    }
-                });
+                    //}
+                //});
             }
             if(Name.equals(RecService.Name()))
             {
@@ -411,16 +413,16 @@ public class Controller {
                     Acc[1] = ByteBuffer.wrap(data, 4, 4).order(ByteOrder.LITTLE_ENDIAN).getFloat();
                     Acc[2] = ByteBuffer.wrap(data, 8, 4).order(ByteOrder.LITTLE_ENDIAN).getFloat();
                 }
-                Parent.runOnUiThread(new Runnable() {
-                    @Override
-                    public void run()
-                    {
+                //Parent.runOnUiThread(new Runnable() {
+                    //@Override
+                    //public void run()
+                    //{
                         if(UserCB != null)
                         {
                             UserCB.ControllerOtherCallback(Speed[0], Speed[1], Speed[2], Acc[0], Acc[1], Acc[2]);
                         }
-                    }
-                });
+                    //}
+                //});
             }
         }
 
