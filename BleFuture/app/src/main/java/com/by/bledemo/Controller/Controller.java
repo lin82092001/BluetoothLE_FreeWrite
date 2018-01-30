@@ -19,12 +19,12 @@ import java.util.UUID;
 public class Controller {
     public interface ControllerCallback
     {
-        void ControllerStatusCallback(int Status,int CMD,float Roll,float Pitch,float Yaw,float DisX,float DisY,float DisZ);
-        void ControllerOtherCallback(float SpeedX,float SpeedY,float SpeedZ,float AccX,float AccY,float AccZ);
-        void ControllerFingersCallback(FingersStatus Figs);
-        void ControllerKeysCallback(int Keys);
+        void ControllerStatusCallback(int Status,int CMD,float Roll,float Pitch,float Yaw,float DisX,float DisY,float DisZ,String Address);
+        void ControllerOtherCallback(float SpeedX,float SpeedY,float SpeedZ,float AccX,float AccY,float AccZ,String Address);
+        void ControllerFingersCallback(FingersStatus Figs,String Address);
+        void ControllerKeysCallback(int Keys,String Address);
         void LostConnection();
-        void DeviceValid(String DeviceAddress);
+        void DeviceValid();
     }
 
     private ControllerCallback UserCB;
@@ -250,6 +250,10 @@ public class Controller {
         else
             UserCB=null;
     }
+    public void DataProcessing(String Name,byte[] data)
+    {
+
+    }
 
     private Listener listener=new Listener() {
         @Override
@@ -296,7 +300,7 @@ public class Controller {
                 {
                     if(CurrentStatus==Status.DeviceConfigured && UserCB!=null)
                     {
-                        UserCB.DeviceValid(DeviceAddress);
+                        UserCB.DeviceValid();
                     }
                 }
             });
@@ -355,16 +359,16 @@ public class Controller {
                 DisY = ByteBuffer.wrap(data, 10, 4).order(ByteOrder.LITTLE_ENDIAN).getFloat();
                 DisZ = ByteBuffer.wrap(data, 14, 4).order(ByteOrder.LITTLE_ENDIAN).getFloat();
 
-                //Parent.runOnUiThread(new Runnable() {
-                    //@Override
-                    //public void run()
-                    //{
+                Parent.runOnUiThread(new Runnable() {
+                    @Override
+                    public void run()
+                    {
                         if(UserCB != null)
                         {
-                            UserCB.ControllerStatusCallback(Status, CMD, Roll * De2Ra, Pitch  * De2Ra, Yaw * De2Ra, DisX, DisY, DisZ);
+                            UserCB.ControllerStatusCallback(Status, CMD, Roll * De2Ra, Pitch  * De2Ra, Yaw * De2Ra, DisX, DisY, DisZ,DeviceAddress);
                         }
-                    //}
-                //});
+                    }
+                });
             }
             if(Name.equals(FingersService.Name()))
             {
@@ -379,21 +383,21 @@ public class Controller {
                     if (!FigStatus.Enable[i][1] && (FigStatus.Degree[i][1] != 0))
                         FigStatus.Enable[i][1] = true;
                 }
-                //Parent.runOnUiThread(new Runnable() {
-                    //@Override
-                    //public void run()
-                    //{
+                Parent.runOnUiThread(new Runnable() {
+                    @Override
+                    public void run()
+                    {
                         if(UserCB != null)
                         {
                             if(LocalKeys != KEY)
                             {
                                 LocalKeys = KEY;
-                                UserCB.ControllerKeysCallback(KEY);
+                                UserCB.ControllerKeysCallback(KEY,DeviceAddress);
                             }
-                            UserCB.ControllerFingersCallback(FigStatus);
+                            UserCB.ControllerFingersCallback(FigStatus,DeviceAddress);
                         }
-                    //}
-                //});
+                    }
+                });
             }
             if(Name.equals(RecService.Name()))
             {
@@ -413,23 +417,23 @@ public class Controller {
                     Acc[1] = ByteBuffer.wrap(data, 4, 4).order(ByteOrder.LITTLE_ENDIAN).getFloat();
                     Acc[2] = ByteBuffer.wrap(data, 8, 4).order(ByteOrder.LITTLE_ENDIAN).getFloat();
                 }
-                //Parent.runOnUiThread(new Runnable() {
-                    //@Override
-                    //public void run()
-                    //{
+                Parent.runOnUiThread(new Runnable() {
+                    @Override
+                    public void run()
+                    {
                         if(UserCB != null)
                         {
-                            UserCB.ControllerOtherCallback(Speed[0], Speed[1], Speed[2], Acc[0], Acc[1], Acc[2]);
+                            UserCB.ControllerOtherCallback(Speed[0], Speed[1], Speed[2], Acc[0], Acc[1], Acc[2],DeviceAddress);
                         }
-                    //}
-                //});
+                    }
+                });
             }
         }
 
         @Override
         public void ReadValue(String Name, byte[] data)
         {
-
+            DataProcessing(Name,data);
         }
 
         @Override

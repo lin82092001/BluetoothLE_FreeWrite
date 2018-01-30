@@ -9,6 +9,7 @@ import android.os.Bundle;
 import android.os.Handler;
 import android.os.Message;
 import android.support.v7.app.AppCompatActivity;
+import android.util.Log;
 import android.view.View;
 import android.widget.ArrayAdapter;
 import android.widget.Button;
@@ -17,6 +18,9 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import com.by.bledemo.R;
+
+import java.lang.reflect.ParameterizedType;
+
 /**
  * Created by 林北94狂 on 2018/1/10.
  */
@@ -24,7 +28,6 @@ import com.by.bledemo.R;
 public class ConnectedActivity extends AppCompatActivity {
     private Activity me=this;
     private String LAddress,RAddress;
-    private String Position="ABC",RecordData,Fingers,Key;
     private String word="";
     private TextView LAdd;
     private TextView RAdd;
@@ -33,7 +36,10 @@ public class ConnectedActivity extends AppCompatActivity {
     private ArrayAdapter<String> LlistAdapter;
     private ArrayAdapter<String> RlistAdapter;
     private Controller LDevice,RDevice;
-    private boolean Paused;
+    private boolean Paused,LOp,ROp;
+    private float Roll_left,Roll_right;
+    private float Pitch_left,Pitch_right;
+    private float Yaw_left,Yaw_right;
 
     @Override
     protected void onCreate(Bundle saveInstanceState){
@@ -55,29 +61,20 @@ public class ConnectedActivity extends AppCompatActivity {
         Intent inteData=this.getIntent();
         LAddress=inteData.getStringExtra("LeftAddress");    //Get device address from MainActivity
         RAddress=inteData.getStringExtra("RightAddress");
-        me.runOnUiThread(new Runnable() {
-            @Override
-            public void run()
-            {
 
-            }
-        });
         LDevice=new Controller(ConnectedActivity.this,LAddress,bluetoothManager);
         RDevice=new Controller(ConnectedActivity.this,RAddress,bluetoothManager);
         LDevice.RegisterCallback(EventListener);
         RDevice.RegisterCallback(EventListener);
-
     }
 
     public void Test(View view) //Start receiving data
     {
-//        if((LDevice.GetCurrentStatus()==Controller.Status.DeviceConfigured) && (RDevice.GetCurrentStatus()==Controller.Status.DeviceConfigured))
-//        {
-//            LDevice.Open(true,true);
-//            RDevice.Open(true,true);
-//        }
-        Button test=(Button)this.findViewById(R.id.Test);
-        test.setEnabled(false);
+        if(LOp && ROp)
+        {
+            Log.i("LLLLL",""+Roll_left);
+            Log.i("RRRRR",""+Roll_right);
+        }
     }
 
     public void Close(View view)
@@ -97,11 +94,11 @@ public class ConnectedActivity extends AppCompatActivity {
     {
         if(Paused)
         {
-            Button bt = (Button) me.findViewById(R.id.Close);
-            bt.setEnabled(true);
-            LDevice.SetControllerAddress(LAddress);
-            RDevice.SetControllerAddress(RAddress);
-            Paused = false;
+//            Button bt = (Button) me.findViewById(R.id.Close);
+//            bt.setEnabled(true);
+//            LDevice.SetControllerAddress(LAddress);
+//            RDevice.SetControllerAddress(RAddress);
+//            Paused = false;
         }
         super.onResume();
     }
@@ -143,51 +140,207 @@ public class ConnectedActivity extends AppCompatActivity {
 
     private Controller.ControllerCallback EventListener=new Controller.ControllerCallback() {   //資料回傳函數
         @Override
-        public void ControllerStatusCallback(int Status, int CMD, float Roll, float Pitch, float Yaw, float DisX, float DisY, float DisZ)
+        public void ControllerStatusCallback(int Status, int CMD, float Roll, float Pitch, float Yaw, float DisX, float DisY, float DisZ,String Address)
         {
-            final String ListTitle="Position :";
-            final String DataValue=String.format("(%d,0x%02x)Roll:%1.4f,\tPitch:%1.4f,\tYaw:%1.4f,\tDisX:%3.2f,\tDisY:%3.2f,\tDisZ:%3.2f", Status, CMD, Roll, Pitch,Yaw,DisX, DisY, DisZ);
-            //Position=ListTitle+DataValue;
-        }
-
-        @Override
-        public void ControllerOtherCallback(float SpeedX, float SpeedY, float SpeedZ, float AccX, float AccY, float AccZ)
-        {
-            final String ListTitle="Record :";
-            final String DataValue=String.format("SpeedX:%f,\tSpeedY:%f,\tSpeedZ:%f,\tAccX:%1.4f,\tAccY:%1.4f,\tAccZ:%1.4f",SpeedX,SpeedY,SpeedZ,AccX,AccY,AccZ);
-            RecordData=ListTitle+DataValue;
-        }
-
-        @Override
-        public void ControllerFingersCallback(Controller.FingersStatus Figs)
-        {
-            int i, j;
-            final String ListTitle = "Fingers :";
-            String Data = "";
-            for(i = 0; i < 5; i++)
+            if(LAddress==Address)
             {
-                if(Figs.Enable[i][0])
+                final String ListTitle="Position :";
+                final String DataValue=String.format("(%d,0x%02x)Roll:%1.4f,\tPitch:%1.4f,\tYaw:%1.4f,\tDisX:%3.2f,\tDisY:%3.2f,\tDisZ:%3.2f", Status, CMD, Roll, Pitch,Yaw,DisX, DisY, DisZ);
+                final String data=ListTitle+DataValue;
+                synchronized (LlistAdapter)
                 {
-                    if(Data.length()>0)
-                        Data = String.format("%s,Fig[%d]:%3d ", Data, i, Figs.Degree[i][0]);
-                    else
-                        Data = String.format("Fig[%d]:%3d ", i, Figs.Degree[i][0]);
-                    if(Figs.Enable[i][1])
+                    int i;
+                    for (i = 0; i < LlistAdapter.getCount(); i++)
                     {
-                        Data = String.format("%s,Fig[%d-1]:%3d ", Data, i, Figs.Degree[i][1]);
+                        if (LlistAdapter.getItem(i).startsWith(ListTitle))
+                            break;
                     }
+                    if (i < LlistAdapter.getCount())
+                    {
+                        LlistAdapter.remove(LlistAdapter.getItem(i));
+                        LlistAdapter.insert(data, i);
+                    }
+                    else
+                    {
+                        LlistAdapter.add(data);
+                    }
+                    LlistAdapter.notifyDataSetChanged();
+                }
+                setLeftPosition(Roll,Pitch,Yaw);
+            }
+            if(RAddress==Address)
+            {
+                final String ListTitle="Position :";
+                final String DataValue=String.format("(%d,0x%02x)Roll:%1.4f,\tPitch:%1.4f,\tYaw:%1.4f,\tDisX:%3.2f,\tDisY:%3.2f,\tDisZ:%3.2f", Status, CMD, Roll, Pitch,Yaw,DisX, DisY, DisZ);
+                final String data=ListTitle+DataValue;
+                synchronized (RlistAdapter)
+                {
+                    int i;
+                    for (i = 0; i < RlistAdapter.getCount(); i++)
+                    {
+                        if (RlistAdapter.getItem(i).startsWith(ListTitle))
+                            break;
+                    }
+                    if (i < RlistAdapter.getCount())
+                    {
+                        RlistAdapter.remove(RlistAdapter.getItem(i));
+                        RlistAdapter.insert(data, i);
+                    }
+                    else
+                    {
+                        RlistAdapter.add(data);
+                    }
+                    RlistAdapter.notifyDataSetChanged();
+                }
+                setRightPosition(Roll,Pitch,Yaw);
+            }
+        }
+
+        @Override
+        public void ControllerOtherCallback(float SpeedX, float SpeedY, float SpeedZ, float AccX, float AccY, float AccZ,String Address)
+        {
+            if(LAddress==Address)
+            {
+                final String ListTitle="Record :";
+                final String DataValue=String.format("SpeedX:%f,\tSpeedY:%f,\tSpeedZ:%f,\tAccX:%1.4f,\tAccY:%1.4f,\tAccZ:%1.4f",SpeedX,SpeedY,SpeedZ,AccX,AccY,AccZ);
+                final String data=ListTitle+DataValue;
+                synchronized (LlistAdapter)
+                {
+                    int i;
+                    for (i = 0; i < LlistAdapter.getCount(); i++)
+                    {
+                        if (LlistAdapter.getItem(i).startsWith(ListTitle))
+                            break;
+                    }
+                    if (i < LlistAdapter.getCount())
+                    {
+                        LlistAdapter.remove(LlistAdapter.getItem(i));
+                        LlistAdapter.insert(data, i);
+                    }
+                    else
+                    {
+                        LlistAdapter.add(data);
+                    }
+                    LlistAdapter.notifyDataSetChanged();
                 }
             }
-            final String DateValue = Data;
-            Fingers=ListTitle + DateValue;
+            if(RAddress==Address)
+            {
+                final String ListTitle="Record :";
+                final String DataValue=String.format("SpeedX:%f,\tSpeedY:%f,\tSpeedZ:%f,\tAccX:%1.4f,\tAccY:%1.4f,\tAccZ:%1.4f",SpeedX,SpeedY,SpeedZ,AccX,AccY,AccZ);
+                final String data=ListTitle+DataValue;
+                synchronized (RlistAdapter)
+                {
+                    int i;
+                    for (i = 0; i < RlistAdapter.getCount(); i++)
+                    {
+                        if (RlistAdapter.getItem(i).startsWith(ListTitle))
+                            break;
+                    }
+                    if (i < RlistAdapter.getCount())
+                    {
+                        RlistAdapter.remove(RlistAdapter.getItem(i));
+                        RlistAdapter.insert(data, i);
+                    }
+                    else
+                    {
+                        RlistAdapter.add(data);
+                    }
+                    RlistAdapter.notifyDataSetChanged();
+                }
+            }
         }
 
         @Override
-        public void ControllerKeysCallback(int Keys)
+        public void ControllerFingersCallback(Controller.FingersStatus Figs,String Address)
+        {
+            if(LAddress==Address)
+            {
+                int i, j;
+                final String ListTitle = "Fingers :";
+                String Data = "";
+                for(i = 0; i < 5; i++)
+                {
+                    if(Figs.Enable[i][0])
+                    {
+                        if(Data.length()>0)
+                            Data = String.format("%s,Fig[%d]:%3d ", Data, i, Figs.Degree[i][0]);
+                        else
+                            Data = String.format("Fig[%d]:%3d ", i, Figs.Degree[i][0]);
+                        if(Figs.Enable[i][1])
+                        {
+                            Data = String.format("%s,Fig[%d-1]:%3d ", Data, i, Figs.Degree[i][1]);
+                        }
+                    }
+                }
+                final String DateValue = Data;
+                final String data=ListTitle + DateValue;
+                synchronized (LlistAdapter)
+                {
+                    for (i = 0; i < LlistAdapter.getCount(); i++)
+                    {
+                        if (LlistAdapter.getItem(i).startsWith(ListTitle))
+                            break;
+                    }
+                    if (i < LlistAdapter.getCount())
+                    {
+                        LlistAdapter.remove(LlistAdapter.getItem(i));
+                        LlistAdapter.insert(data, i);
+                    }
+                    else
+                    {
+                        LlistAdapter.add(data);
+                    }
+                    LlistAdapter.notifyDataSetChanged();
+                }
+            }
+            if(RAddress==Address)
+            {
+                int i, j;
+                final String ListTitle = "Fingers :";
+                String Data = "";
+                for(i = 0; i < 5; i++)
+                {
+                    if(Figs.Enable[i][0])
+                    {
+                        if(Data.length()>0)
+                            Data = String.format("%s,Fig[%d]:%3d ", Data, i, Figs.Degree[i][0]);
+                        else
+                            Data = String.format("Fig[%d]:%3d ", i, Figs.Degree[i][0]);
+                        if(Figs.Enable[i][1])
+                        {
+                            Data = String.format("%s,Fig[%d-1]:%3d ", Data, i, Figs.Degree[i][1]);
+                        }
+                    }
+                }
+                final String DateValue = Data;
+                final String data=ListTitle + DateValue;
+                synchronized (RlistAdapter)
+                {
+                    for (i = 0; i < RlistAdapter.getCount(); i++)
+                    {
+                        if (RlistAdapter.getItem(i).startsWith(ListTitle))
+                            break;
+                    }
+                    if (i < RlistAdapter.getCount())
+                    {
+                        RlistAdapter.remove(RlistAdapter.getItem(i));
+                        RlistAdapter.insert(data, i);
+                    }
+                    else
+                    {
+                        RlistAdapter.add(data);
+                    }
+                    RlistAdapter.notifyDataSetChanged();
+                }
+            }
+        }
+
+        @Override
+        public void ControllerKeysCallback(int Keys,String Address)
         {
             final String ListTitle = "Key :";
             final String DateValue = String.format("%d", Keys);
-            Key=ListTitle + DateValue;
         }
 
         @Override
@@ -201,55 +354,32 @@ public class ConnectedActivity extends AppCompatActivity {
         }
 
         @Override
-        public void DeviceValid(String DAd)
+        public void DeviceValid()
         {
-            //Toast.makeText(me, "Device ready.",Toast.LENGTH_SHORT).show();
-            //Button bt = (Button)me.findViewById(R.id.Test);
-            //bt.setEnabled(true);
-            if(DAd==LAddress && LDevice.GetCurrentStatus()==Controller.Status.DeviceConfigured)
+            Toast.makeText(me, "Device ready.",Toast.LENGTH_SHORT).show();
+            Button bt = (Button)me.findViewById(R.id.Test);
+            bt.setEnabled(true);
+            if(LDevice.GetCurrentStatus()==Controller.Status.DeviceConfigured)
             {
-                LAdd.setText(LAddress);
-                LDevice.Open(true,true);
-                Toast.makeText(me,Position,Toast.LENGTH_SHORT);
-//                int i;
-//                for (i = 0; i < LlistAdapter.getCount(); i++)
-//                {
-//                    if (LlistAdapter.getItem(i).startsWith(i+"→"))
-//                        break;
-//                }
-//                if (i < LlistAdapter.getCount())
-//                {
-//                    LlistAdapter.remove(LlistAdapter.getItem(i));
-//                    LlistAdapter.insert(Position, i);
-//                }
-//                else
-//                {
-//                    LlistAdapter.add(Position);
-//                }
-//                LlistAdapter.notifyDataSetChanged();
+                LOp=LDevice.Open(true,true);
             }
-            else if(DAd==RAddress && RDevice.GetCurrentStatus()==Controller.Status.DeviceConfigured)
+            if(RDevice.GetCurrentStatus()==Controller.Status.DeviceConfigured)
             {
-                RAdd.setText(RAddress);
-                RDevice.Open(true,true);
-                Toast.makeText(getApplicationContext(),Position,Toast.LENGTH_SHORT);
-//                int i;
-//                for (i = 0; i < RlistAdapter.getCount(); i++)
-//                {
-//                    if (RlistAdapter.getItem(i).startsWith(i+"→"))
-//                        break;
-//                }
-//                if (i < RlistAdapter.getCount())
-//                {
-//                    RlistAdapter.remove(RlistAdapter.getItem(i));
-//                    RlistAdapter.insert(Position, i);
-//                }
-//                else
-//                {
-//                    RlistAdapter.add(Position);
-//                }
-//                RlistAdapter.notifyDataSetChanged();
+                ROp=RDevice.Open(true,true);
             }
         }
     };
+
+    public void setLeftPosition(float Roll, float Pitch, float Yaw)
+    {
+        Roll_left=Roll;
+        Pitch_left=Pitch;
+        Yaw_left=Yaw;
+    }
+    public void setRightPosition(float Roll, float Pitch, float Yaw)
+    {
+        Roll_right=Roll;
+        Pitch_right=Pitch;
+        Yaw_right=Yaw;
+    }
 }
