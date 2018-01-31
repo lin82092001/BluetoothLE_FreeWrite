@@ -250,10 +250,6 @@ public class Controller {
         else
             UserCB=null;
     }
-    public void DataProcessing(String Name,byte[] data)
-    {
-
-    }
 
     private Listener listener=new Listener() {
         @Override
@@ -433,7 +429,7 @@ public class Controller {
         @Override
         public void ReadValue(String Name, byte[] data)
         {
-            DataProcessing(Name,data);
+
         }
 
         @Override

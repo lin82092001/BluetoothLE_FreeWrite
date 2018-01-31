@@ -18,8 +18,7 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import com.by.bledemo.R;
-
-import java.lang.reflect.ParameterizedType;
+import com.by.bledemo.SensorData;
 
 /**
  * Created by 林北94狂 on 2018/1/10.
@@ -37,9 +36,7 @@ public class ConnectedActivity extends AppCompatActivity {
     private ArrayAdapter<String> RlistAdapter;
     private Controller LDevice,RDevice;
     private boolean Paused,LOp,ROp;
-    private float Roll_left,Roll_right;
-    private float Pitch_left,Pitch_right;
-    private float Yaw_left,Yaw_right;
+    SensorData sensorData;
 
     @Override
     protected void onCreate(Bundle saveInstanceState){
@@ -66,14 +63,15 @@ public class ConnectedActivity extends AppCompatActivity {
         RDevice=new Controller(ConnectedActivity.this,RAddress,bluetoothManager);
         LDevice.RegisterCallback(EventListener);
         RDevice.RegisterCallback(EventListener);
+        sensorData=new SensorData(0,0,0,0,0,0);
     }
 
     public void Test(View view) //Start receiving data
     {
         if(LOp && ROp)
         {
-            Log.i("LLLLL",""+Roll_left);
-            Log.i("RRRRR",""+Roll_right);
+            Log.i("LLLLL",sensorData.getAccXL()+"\t"+sensorData.getAccYL()+"\t"+sensorData.getAccZL());
+            Log.i("RRRRR",sensorData.getAccXR()+"\t"+sensorData.getAccYR()+"\t"+sensorData.getAccZR());
         }
     }
 
@@ -166,7 +164,6 @@ public class ConnectedActivity extends AppCompatActivity {
                     }
                     LlistAdapter.notifyDataSetChanged();
                 }
-                setLeftPosition(Roll,Pitch,Yaw);
             }
             if(RAddress==Address)
             {
@@ -192,7 +189,6 @@ public class ConnectedActivity extends AppCompatActivity {
                     }
                     RlistAdapter.notifyDataSetChanged();
                 }
-                setRightPosition(Roll,Pitch,Yaw);
             }
         }
 
@@ -223,6 +219,9 @@ public class ConnectedActivity extends AppCompatActivity {
                     }
                     LlistAdapter.notifyDataSetChanged();
                 }
+                sensorData.setAccXL(AccX);
+                sensorData.setAccYL(AccY);
+                sensorData.setAccZL(AccZ);
             }
             if(RAddress==Address)
             {
@@ -248,6 +247,9 @@ public class ConnectedActivity extends AppCompatActivity {
                     }
                     RlistAdapter.notifyDataSetChanged();
                 }
+                sensorData.setAccXR(AccX);
+                sensorData.setAccYR(AccY);
+                sensorData.setAccZR(AccZ);
             }
         }
 
@@ -361,25 +363,14 @@ public class ConnectedActivity extends AppCompatActivity {
             bt.setEnabled(true);
             if(LDevice.GetCurrentStatus()==Controller.Status.DeviceConfigured)
             {
+                LAdd.setText(LDevice.DeviceName());
                 LOp=LDevice.Open(true,true);
             }
             if(RDevice.GetCurrentStatus()==Controller.Status.DeviceConfigured)
             {
+                RAdd.setText(RDevice.DeviceName());
                 ROp=RDevice.Open(true,true);
             }
         }
     };
-
-    public void setLeftPosition(float Roll, float Pitch, float Yaw)
-    {
-        Roll_left=Roll;
-        Pitch_left=Pitch;
-        Yaw_left=Yaw;
-    }
-    public void setRightPosition(float Roll, float Pitch, float Yaw)
-    {
-        Roll_right=Roll;
-        Pitch_right=Pitch;
-        Yaw_right=Yaw;
-    }
 }
