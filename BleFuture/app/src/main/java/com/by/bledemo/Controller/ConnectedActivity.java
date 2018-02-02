@@ -4,10 +4,7 @@ import android.app.Activity;
 import android.bluetooth.BluetoothManager;
 import android.content.Context;
 import android.content.Intent;
-import android.location.Address;
 import android.os.Bundle;
-import android.os.Handler;
-import android.os.Message;
 import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
 import android.view.View;
@@ -37,6 +34,7 @@ public class ConnectedActivity extends AppCompatActivity {
     private Controller LDevice,RDevice;
     private boolean Paused,LOp,ROp;
     SensorData sensorData;
+    ControllerThread th;
 
     @Override
     protected void onCreate(Bundle saveInstanceState){
@@ -64,14 +62,16 @@ public class ConnectedActivity extends AppCompatActivity {
         LDevice.RegisterCallback(EventListener);
         RDevice.RegisterCallback(EventListener);
         sensorData=new SensorData(0,0,0,0,0,0);
+        th=new ControllerThread();
     }
 
     public void Test(View view) //Start receiving data
     {
         if(LOp && ROp)
         {
-            Log.i("LLLLL",sensorData.getAccXL()+"\t"+sensorData.getAccYL()+"\t"+sensorData.getAccZL());
-            Log.i("RRRRR",sensorData.getAccXR()+"\t"+sensorData.getAccYR()+"\t"+sensorData.getAccZR());
+            //Log.i("LLLLL",sensorData.getAccXL()+"\t"+sensorData.getAccYL()+"\t"+sensorData.getAccZL());
+            //Log.i("RRRRR",sensorData.getAccXR()+"\t"+sensorData.getAccYR()+"\t"+sensorData.getAccZR());
+            th.start();
         }
     }
 
@@ -132,7 +132,7 @@ public class ConnectedActivity extends AppCompatActivity {
         @Override
         public void run()
         {
-
+            Log.i("LLLLL",""+sensorData.getAccX());
         }
     }
 
@@ -219,9 +219,7 @@ public class ConnectedActivity extends AppCompatActivity {
                     }
                     LlistAdapter.notifyDataSetChanged();
                 }
-                sensorData.setAccXL(AccX);
-                sensorData.setAccYL(AccY);
-                sensorData.setAccZL(AccZ);
+                sensorData.setAcc(AccX,AccY,AccZ);
             }
             if(RAddress==Address)
             {
@@ -247,9 +245,6 @@ public class ConnectedActivity extends AppCompatActivity {
                     }
                     RlistAdapter.notifyDataSetChanged();
                 }
-                sensorData.setAccXR(AccX);
-                sensorData.setAccYR(AccY);
-                sensorData.setAccZR(AccZ);
             }
         }
 
