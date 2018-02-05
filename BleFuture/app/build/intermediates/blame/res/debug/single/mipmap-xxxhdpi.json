@@ -8,6 +8,14 @@
         "source": "D:\\Downloads\\BleDemo-master\\app\\src\\main\\res\\mipmap-xxxhdpi\\ic_launcher.png"
     },
     {
+        "merged": "D:\\BluetoothLE_FreeWrite-2018-2-2\\BleFuture\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxxhdpi\\ic_launcher_round.png",
+        "source": "D:\\BluetoothLE_FreeWrite-2018-2-2\\BleFuture\\app\\src\\main\\res\\mipmap-xxxhdpi\\ic_launcher_round.png"
+    },
+    {
+        "merged": "D:\\BluetoothLE_FreeWrite-2018-2-2\\BleFuture\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxxhdpi\\ic_launcher.png",
+        "source": "D:\\BluetoothLE_FreeWrite-2018-2-2\\BleFuture\\app\\src\\main\\res\\mipmap-xxxhdpi\\ic_launcher.png"
+    },
+    {
         "merged": "D:\\BluetoothLE_FreeWrite-2018-1-26\\BleFuture\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxxhdpi\\ic_launcher_round.png",
         "source": "D:\\BluetoothLE_FreeWrite-2018-1-26\\BleFuture\\app\\src\\main\\res\\mipmap-xxxhdpi\\ic_launcher_round.png"
     },

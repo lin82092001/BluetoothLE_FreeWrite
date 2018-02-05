@@ -8,28 +8,36 @@
         "source": "C:\\Users\\BoMing\\.android\\build-cache\\20bd11c40a6a92441bb12fc3b8c5645636aebe1d\\output\\res\\color-v23\\abc_tint_switch_track.xml"
     },
     {
-        "merged": "D:\\BluetoothLE_FreeWrite-2018-1-26\\BleFuture\\app\\build\\intermediates\\res\\merged\\debug\\color-v23\\abc_tint_switch_thumb.xml",
-        "source": "C:\\Users\\BoMing\\.android\\build-cache\\20bd11c40a6a92441bb12fc3b8c5645636aebe1d\\output\\res\\color-v23\\abc_tint_switch_thumb.xml"
-    },
-    {
         "merged": "D:\\BluetoothLE_FreeWrite-2018-1-26\\BleFuture\\app\\build\\intermediates\\res\\merged\\debug\\color-v23\\abc_tint_btn_checkable.xml",
         "source": "C:\\Users\\BoMing\\.android\\build-cache\\20bd11c40a6a92441bb12fc3b8c5645636aebe1d\\output\\res\\color-v23\\abc_tint_btn_checkable.xml"
+    },
+    {
+        "merged": "D:\\BluetoothLE_FreeWrite-2018-1-26\\BleFuture\\app\\build\\intermediates\\res\\merged\\debug\\color-v23\\abc_tint_switch_thumb.xml",
+        "source": "C:\\Users\\BoMing\\.android\\build-cache\\20bd11c40a6a92441bb12fc3b8c5645636aebe1d\\output\\res\\color-v23\\abc_tint_switch_thumb.xml"
     },
     {
         "merged": "D:\\Downloads\\BleDemo-master\\app\\build\\intermediates\\res\\merged\\debug\\color-v23\\abc_tint_switch_track.xml",
         "source": "C:\\Users\\林北94狂\\.android\\build-cache\\2da9684c0f8ccdcaff442cef6181d640ac756db9\\output\\res\\color-v23\\abc_tint_switch_track.xml"
     },
     {
-        "merged": "D:\\BluetoothLE_FreeWrite-2018-1-26\\BleFuture\\app\\build\\intermediates\\res\\merged\\debug\\color-v23\\abc_tint_edittext.xml",
-        "source": "C:\\Users\\BoMing\\.android\\build-cache\\20bd11c40a6a92441bb12fc3b8c5645636aebe1d\\output\\res\\color-v23\\abc_tint_edittext.xml"
-    },
-    {
         "merged": "D:\\BluetoothLE_FreeWrite\\BleFuture\\app\\build\\intermediates\\res\\merged\\debug\\color-v23\\abc_tint_btn_checkable.xml",
         "source": "C:\\Users\\LinLin\\.android\\build-cache\\0eccbead5e7954eca9e9f10e8cee538049f0798e\\output\\res\\color-v23\\abc_tint_btn_checkable.xml"
     },
     {
+        "merged": "D:\\BluetoothLE_FreeWrite-2018-1-26\\BleFuture\\app\\build\\intermediates\\res\\merged\\debug\\color-v23\\abc_tint_edittext.xml",
+        "source": "C:\\Users\\BoMing\\.android\\build-cache\\20bd11c40a6a92441bb12fc3b8c5645636aebe1d\\output\\res\\color-v23\\abc_tint_edittext.xml"
+    },
+    {
         "merged": "D:\\BluetoothLE_FreeWrite\\BleFuture\\app\\build\\intermediates\\res\\merged\\debug\\color-v23\\abc_btn_colored_borderless_text_material.xml",
         "source": "C:\\Users\\LinLin\\.android\\build-cache\\0eccbead5e7954eca9e9f10e8cee538049f0798e\\output\\res\\color-v23\\abc_btn_colored_borderless_text_material.xml"
+    },
+    {
+        "merged": "D:\\BluetoothLE_FreeWrite-2018-2-2\\BleFuture\\app\\build\\intermediates\\res\\merged\\debug\\color-v23\\abc_btn_colored_borderless_text_material.xml",
+        "source": "C:\\Users\\BoMing\\.android\\build-cache\\20bd11c40a6a92441bb12fc3b8c5645636aebe1d\\output\\res\\color-v23\\abc_btn_colored_borderless_text_material.xml"
+    },
+    {
+        "merged": "D:\\BluetoothLE_FreeWrite-2018-2-2\\BleFuture\\app\\build\\intermediates\\res\\merged\\debug\\color-v23\\abc_tint_switch_track.xml",
+        "source": "C:\\Users\\BoMing\\.android\\build-cache\\20bd11c40a6a92441bb12fc3b8c5645636aebe1d\\output\\res\\color-v23\\abc_tint_switch_track.xml"
     },
     {
         "merged": "D:\\Downloads\\BleDemo-master\\app\\build\\intermediates\\res\\merged\\debug\\color-v23\\abc_tint_btn_checkable.xml",
@@ -44,8 +52,20 @@
         "source": "C:\\Users\\BoMing\\.android\\build-cache\\20bd11c40a6a92441bb12fc3b8c5645636aebe1d\\output\\res\\color-v23\\abc_tint_seek_thumb.xml"
     },
     {
+        "merged": "D:\\BluetoothLE_FreeWrite-2018-2-2\\BleFuture\\app\\build\\intermediates\\res\\merged\\debug\\color-v23\\abc_tint_edittext.xml",
+        "source": "C:\\Users\\BoMing\\.android\\build-cache\\20bd11c40a6a92441bb12fc3b8c5645636aebe1d\\output\\res\\color-v23\\abc_tint_edittext.xml"
+    },
+    {
         "merged": "D:\\Downloads\\BleDemo-master\\app\\build\\intermediates\\res\\merged\\debug\\color-v23\\abc_tint_switch_thumb.xml",
         "source": "C:\\Users\\林北94狂\\.android\\build-cache\\2da9684c0f8ccdcaff442cef6181d640ac756db9\\output\\res\\color-v23\\abc_tint_switch_thumb.xml"
+    },
+    {
+        "merged": "D:\\BluetoothLE_FreeWrite-2018-2-2\\BleFuture\\app\\build\\intermediates\\res\\merged\\debug\\color-v23\\abc_tint_btn_checkable.xml",
+        "source": "C:\\Users\\BoMing\\.android\\build-cache\\20bd11c40a6a92441bb12fc3b8c5645636aebe1d\\output\\res\\color-v23\\abc_tint_btn_checkable.xml"
+    },
+    {
+        "merged": "D:\\BluetoothLE_FreeWrite-2018-2-2\\BleFuture\\app\\build\\intermediates\\res\\merged\\debug\\color-v23\\abc_tint_switch_thumb.xml",
+        "source": "C:\\Users\\BoMing\\.android\\build-cache\\20bd11c40a6a92441bb12fc3b8c5645636aebe1d\\output\\res\\color-v23\\abc_tint_switch_thumb.xml"
     },
     {
         "merged": "D:\\BluetoothLE_FreeWrite\\BleFuture\\app\\build\\intermediates\\res\\merged\\debug\\color-v23\\abc_tint_switch_thumb.xml",
@@ -64,6 +84,10 @@
         "source": "C:\\Users\\BoMing\\.android\\build-cache\\20bd11c40a6a92441bb12fc3b8c5645636aebe1d\\output\\res\\color-v23\\abc_tint_default.xml"
     },
     {
+        "merged": "D:\\BluetoothLE_FreeWrite-2018-2-2\\BleFuture\\app\\build\\intermediates\\res\\merged\\debug\\color-v23\\abc_tint_default.xml",
+        "source": "C:\\Users\\BoMing\\.android\\build-cache\\20bd11c40a6a92441bb12fc3b8c5645636aebe1d\\output\\res\\color-v23\\abc_tint_default.xml"
+    },
+    {
         "merged": "D:\\Downloads\\BleDemo-master\\app\\build\\intermediates\\res\\merged\\debug\\color-v23\\abc_tint_spinner.xml",
         "source": "C:\\Users\\林北94狂\\.android\\build-cache\\2da9684c0f8ccdcaff442cef6181d640ac756db9\\output\\res\\color-v23\\abc_tint_spinner.xml"
     },
@@ -76,8 +100,16 @@
         "source": "C:\\Users\\LinLin\\.android\\build-cache\\0eccbead5e7954eca9e9f10e8cee538049f0798e\\output\\res\\color-v23\\abc_tint_default.xml"
     },
     {
+        "merged": "D:\\BluetoothLE_FreeWrite-2018-2-2\\BleFuture\\app\\build\\intermediates\\res\\merged\\debug\\color-v23\\abc_btn_colored_text_material.xml",
+        "source": "C:\\Users\\BoMing\\.android\\build-cache\\20bd11c40a6a92441bb12fc3b8c5645636aebe1d\\output\\res\\color-v23\\abc_btn_colored_text_material.xml"
+    },
+    {
         "merged": "D:\\Downloads\\BleDemo-master\\app\\build\\intermediates\\res\\merged\\debug\\color-v23\\abc_btn_colored_text_material.xml",
         "source": "C:\\Users\\林北94狂\\.android\\build-cache\\2da9684c0f8ccdcaff442cef6181d640ac756db9\\output\\res\\color-v23\\abc_btn_colored_text_material.xml"
+    },
+    {
+        "merged": "D:\\BluetoothLE_FreeWrite-2018-2-2\\BleFuture\\app\\build\\intermediates\\res\\merged\\debug\\color-v23\\abc_color_highlight_material.xml",
+        "source": "C:\\Users\\BoMing\\.android\\build-cache\\20bd11c40a6a92441bb12fc3b8c5645636aebe1d\\output\\res\\color-v23\\abc_color_highlight_material.xml"
     },
     {
         "merged": "D:\\BluetoothLE_FreeWrite\\BleFuture\\app\\build\\intermediates\\res\\merged\\debug\\color-v23\\abc_tint_switch_track.xml",
@@ -86,6 +118,10 @@
     {
         "merged": "D:\\BluetoothLE_FreeWrite-2018-1-26\\BleFuture\\app\\build\\intermediates\\res\\merged\\debug\\color-v23\\abc_btn_colored_text_material.xml",
         "source": "C:\\Users\\BoMing\\.android\\build-cache\\20bd11c40a6a92441bb12fc3b8c5645636aebe1d\\output\\res\\color-v23\\abc_btn_colored_text_material.xml"
+    },
+    {
+        "merged": "D:\\BluetoothLE_FreeWrite-2018-2-2\\BleFuture\\app\\build\\intermediates\\res\\merged\\debug\\color-v23\\abc_tint_seek_thumb.xml",
+        "source": "C:\\Users\\BoMing\\.android\\build-cache\\20bd11c40a6a92441bb12fc3b8c5645636aebe1d\\output\\res\\color-v23\\abc_tint_seek_thumb.xml"
     },
     {
         "merged": "D:\\Downloads\\BleDemo-master\\app\\build\\intermediates\\res\\merged\\debug\\color-v23\\abc_btn_colored_borderless_text_material.xml",
@@ -110,6 +146,10 @@
     {
         "merged": "D:\\BluetoothLE_FreeWrite-2018-1-26\\BleFuture\\app\\build\\intermediates\\res\\merged\\debug\\color-v23\\abc_btn_colored_borderless_text_material.xml",
         "source": "C:\\Users\\BoMing\\.android\\build-cache\\20bd11c40a6a92441bb12fc3b8c5645636aebe1d\\output\\res\\color-v23\\abc_btn_colored_borderless_text_material.xml"
+    },
+    {
+        "merged": "D:\\BluetoothLE_FreeWrite-2018-2-2\\BleFuture\\app\\build\\intermediates\\res\\merged\\debug\\color-v23\\abc_tint_spinner.xml",
+        "source": "C:\\Users\\BoMing\\.android\\build-cache\\20bd11c40a6a92441bb12fc3b8c5645636aebe1d\\output\\res\\color-v23\\abc_tint_spinner.xml"
     },
     {
         "merged": "D:\\BluetoothLE_FreeWrite-2018-1-26\\BleFuture\\app\\build\\intermediates\\res\\merged\\debug\\color-v23\\abc_tint_spinner.xml",

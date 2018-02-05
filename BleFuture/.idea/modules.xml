@@ -3,6 +3,7 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/BleFuture.iml" filepath="$PROJECT_DIR$/BleFuture.iml" />
+      <module fileurl="file://D:\BluetoothLE_FreeWrite-2018-2-2\BleFuture\BleFuture.iml" filepath="D:\BluetoothLE_FreeWrite-2018-2-2\BleFuture\BleFuture.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
     </modules>
   </component>

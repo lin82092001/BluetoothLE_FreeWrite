@@ -11,8 +11,9 @@ public class SensorData {
     private float AccX;
     private float AccY;
     private float AccZ;
+    private String Address;
 
-    public SensorData(float Roll, float Pitch, float Yaw,float AccX, float AccY, float AccZ)
+    public SensorData(float Roll, float Pitch, float Yaw,float AccX, float AccY, float AccZ, String Address)
     {
         this.Roll=Roll;
         this.Pitch=Pitch;
@@ -20,6 +21,7 @@ public class SensorData {
         this.AccX=AccX;
         this.AccY=AccY;
         this.AccZ=AccZ;
+        this.Address=Address;
     }
 
     public void setEuler(float Roll, float Pitch, float Yaw)
@@ -28,11 +30,12 @@ public class SensorData {
         this.Pitch=Pitch;
         this.Yaw=Yaw;
     }
-    public void setAcc(float inputX,float inputY,float inputZ)
+    public void setAcc(float inputX,float inputY,float inputZ, String inputAdd)
     {
         AccX=inputX;
         AccY=inputY;
         AccZ=inputZ;
+        Address=inputAdd;
     }
     public float getAccX()
     {
@@ -57,5 +60,9 @@ public class SensorData {
     public float getYaw()
     {
         return Yaw;
+    }
+    public String getAddress()
+    {
+        return Address;
     }
 }

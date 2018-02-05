@@ -130,9 +130,9 @@ public class Controller {
     }
     public void SetControllerAddress(String Address)
     {
-        deviceManager.Close();
         DeviceAddress=Address;
         deviceManager=new DeviceManager(Parent,mBluetoothAdapter,DeviceAddress);
+        deviceManager.Close();
         deviceManager.SetListener(listener);
     }
     public boolean Connected()
@@ -361,7 +361,7 @@ public class Controller {
                     {
                         if(UserCB != null)
                         {
-                            UserCB.ControllerStatusCallback(Status, CMD, Roll * De2Ra, Pitch  * De2Ra, Yaw * De2Ra, DisX, DisY, DisZ,DeviceAddress);
+                            UserCB.ControllerStatusCallback(Status, CMD, Roll , Pitch , Yaw , DisX, DisY, DisZ,DeviceAddress);
                         }
                     }
                 });
