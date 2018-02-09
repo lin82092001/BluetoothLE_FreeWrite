@@ -130,9 +130,9 @@ public class Controller {
     }
     public void SetControllerAddress(String Address)
     {
-        deviceManager.Close();
         DeviceAddress=Address;
         deviceManager=new DeviceManager(Parent,mBluetoothAdapter,DeviceAddress);
+        deviceManager.Close();
         deviceManager.SetListener(listener);
     }
     public boolean Connected()
@@ -210,7 +210,6 @@ public class Controller {
             }
             if(RecordEnable)
             {
-                //deviceManager.SetCharacteristic(RecService, Services.Rec[Services.DATA], new byte[]{Services.ST_CFG_SENSOR_ENABLE});//Enable
                 deviceManager.SetCharacteristic(RecService, Services.Rec[Services.CONF], new byte[]{Services.ST_CFG_SENSOR_ENABLE});//Enable
             }
         }
@@ -236,7 +235,7 @@ public class Controller {
                 }
                 if(PosConnected)
                 {
-                    deviceManager.SetCharacteristic(PosService, Services.Pos[Services.CONF], new byte[]{Services.ST_CFG_SENSOR_DISABLE});//Enable
+                    deviceManager.SetCharacteristic(PosService, Services.Pos[Services.CONF], new byte[]{Services.ST_CFG_SENSOR_DISABLE});
                     PosConnected = false;
                 }
             }
@@ -361,7 +360,7 @@ public class Controller {
                     {
                         if(UserCB != null)
                         {
-                            UserCB.ControllerStatusCallback(Status, CMD, Roll * De2Ra, Pitch  * De2Ra, Yaw * De2Ra, DisX, DisY, DisZ,DeviceAddress);
+                            UserCB.ControllerStatusCallback(Status, CMD, Roll , Pitch , Yaw , DisX, DisY, DisZ,DeviceAddress);
                         }
                     }
                 });
