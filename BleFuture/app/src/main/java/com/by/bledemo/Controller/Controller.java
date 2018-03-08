@@ -23,6 +23,10 @@ public class Controller {
         void ControllerOtherCallback(float SpeedX,float SpeedY,float SpeedZ,float AccX,float AccY,float AccZ,String Address);
         void ControllerFingersCallback(FingersStatus Figs,String Address);
         void ControllerKeysCallback(int Keys,String Address);
+        void ControllerSignCallback(int Status,int CMD,
+                                   float Roll,float Pitch,float Yaw,
+                                   float AccX,float AccY,float AccZ,
+                                   FingersStatus Figs,String Address);
         void LostConnection();
         void DeviceValid();
     }
@@ -326,103 +330,68 @@ public class Controller {
         @Override
         public void GotNotification(String Name, UUID CharUUID, byte[] data)
         {
-            if(Name.equals(PosService.Name()))
+            int Converter;
+            final int Status, CMD;
+            final float Roll, Pitch, Yaw;
+            Status = ((int) data[18]) & 0xff;
+            CMD = ((int) data[19]) & 0xff;
+
+            Converter = (data[0] & 0xff | (data[1] << 8) & 0xff00) & 0xffff;
+            if ((Converter & 0x8000) != 0)
+                Converter |= 0xffff0000;
+            Yaw = (float) ((Converter / 100.0));
+
+            Converter = (data[2] & 0xff | (data[3] << 8) & 0xff00) & 0xffff;
+            if ((Converter & 0x8000) != 0)
+                Converter |= 0xffff0000;
+            Pitch = (float) ((Converter / 100.0));
+
+            Converter = (data[4] & 0xff | (data[5] << 8) & 0xff00) & 0xffff;
+            if ((Converter & 0x8000) != 0)
+                Converter |= 0xffff0000;
+            Roll = (float) ((Converter / 100.0));
+            //PosService
+
+            final int KEY = (data[10] & 0xff | (data[11] << 8))&0xffff;
+            for (int i = 0; i < 5; i++)
             {
-                final float De2Ra = (float)(Math.PI / 180.0);
-                int Converter;
-                final int Status, CMD;
-                final float Roll, Pitch, Yaw, DisX, DisY, DisZ;
-                Status = ((int)data[18])&0xff;
-                CMD = ((int)data[19])&0xff;
+                FigStatus.Degree[i][0] = (data[i * 2] & 0xff);
+                FigStatus.Degree[i][1] = (data[i * 2 + 1] & 0xff);
+                if (!FigStatus.Enable[i][0] && (FigStatus.Degree[i][0] != 0))
+                       FigStatus.Enable[i][0] = true;
 
-                Converter = (data[0] & 0xff | (data[1] << 8) & 0xff00)&0xffff;
-                if((Converter & 0x8000) != 0)
-                    Converter |= 0xffff0000;
-                Yaw = (float)((Converter / 100.0));
-
-                Converter = (data[2] & 0xff | (data[3] << 8) & 0xff00)&0xffff;
-                if((Converter & 0x8000) != 0)
-                    Converter |= 0xffff0000;
-                Pitch = (float)((Converter / 100.0) );
-
-                Converter = (data[4] & 0xff | (data[5] << 8) & 0xff00)&0xffff;
-                if((Converter & 0x8000) != 0)
-                    Converter |= 0xffff0000;
-                Roll = (float)((Converter / 100.0) );
-
-                DisX = ByteBuffer.wrap(data, 6, 4).order(ByteOrder.LITTLE_ENDIAN).getFloat();
-                DisY = ByteBuffer.wrap(data, 10, 4).order(ByteOrder.LITTLE_ENDIAN).getFloat();
-                DisZ = ByteBuffer.wrap(data, 14, 4).order(ByteOrder.LITTLE_ENDIAN).getFloat();
-
-                Parent.runOnUiThread(new Runnable() {
-                    @Override
-                    public void run()
-                    {
-                        if(UserCB != null)
-                        {
-                            UserCB.ControllerStatusCallback(Status, CMD, Roll , Pitch , Yaw , DisX, DisY, DisZ,DeviceAddress);
-                        }
-                    }
-                });
+                if (!FigStatus.Enable[i][1] && (FigStatus.Degree[i][1] != 0))
+                    FigStatus.Enable[i][1] = true;
             }
-            if(Name.equals(FingersService.Name()))
+            //FingersService
+
+            if(CharUUID==Services.Rec[Services.DATA])
             {
-                final int KEY = (data[10] & 0xff | (data[11] << 8))&0xffff;
-                for (int i = 0; i < 5; i++)
-                {
-                    FigStatus.Degree[i][0] = (data[i * 2] & 0xff);
-                    FigStatus.Degree[i][1] = (data[i * 2 + 1] & 0xff);
-                    if (!FigStatus.Enable[i][0] && (FigStatus.Degree[i][0] != 0))
-                        FigStatus.Enable[i][0] = true;
-
-                    if (!FigStatus.Enable[i][1] && (FigStatus.Degree[i][1] != 0))
-                        FigStatus.Enable[i][1] = true;
-                }
-                Parent.runOnUiThread(new Runnable() {
-                    @Override
-                    public void run()
-                    {
-                        if(UserCB != null)
-                        {
-                            if(LocalKeys != KEY)
-                            {
-                                LocalKeys = KEY;
-                                UserCB.ControllerKeysCallback(KEY,DeviceAddress);
-                            }
-                            UserCB.ControllerFingersCallback(FigStatus,DeviceAddress);
-                        }
-                    }
-                });
+                Speed[0] = ByteBuffer.wrap(data, 0, 4).order(ByteOrder.LITTLE_ENDIAN).getFloat();
+                Speed[1] = ByteBuffer.wrap(data, 4, 4).order(ByteOrder.LITTLE_ENDIAN).getFloat();
+                Speed[2] = ByteBuffer.wrap(data, 8, 4).order(ByteOrder.LITTLE_ENDIAN).getFloat();
             }
-            if(Name.equals(RecService.Name()))
+            else
             {
-                //Modifies this buffer's byte order.
-                /*Constant denoting little-endian byte order.
-                In this order, the bytes of a multibyte value are ordered from least significant to most significant.
-                Relative get method for reading a float value.*/
-                if(CharUUID == Services.Rec[Services.DATA])//Speed
-                {
-                    Speed[0] = ByteBuffer.wrap(data, 0, 4).order(ByteOrder.LITTLE_ENDIAN).getFloat();
-                    Speed[1] = ByteBuffer.wrap(data, 4, 4).order(ByteOrder.LITTLE_ENDIAN).getFloat();
-                    Speed[2] = ByteBuffer.wrap(data, 8, 4).order(ByteOrder.LITTLE_ENDIAN).getFloat();
-                }
-                else//Acc
-                {
-                    Acc[0] = ByteBuffer.wrap(data, 0, 4).order(ByteOrder.LITTLE_ENDIAN).getFloat();
-                    Acc[1] = ByteBuffer.wrap(data, 4, 4).order(ByteOrder.LITTLE_ENDIAN).getFloat();
-                    Acc[2] = ByteBuffer.wrap(data, 8, 4).order(ByteOrder.LITTLE_ENDIAN).getFloat();
-                }
-                Parent.runOnUiThread(new Runnable() {
-                    @Override
-                    public void run()
-                    {
-                        if(UserCB != null)
-                        {
-                            UserCB.ControllerOtherCallback(Speed[0], Speed[1], Speed[2], Acc[0], Acc[1], Acc[2],DeviceAddress);
-                        }
-                    }
-                });
+                Acc[0] = ByteBuffer.wrap(data, 0, 4).order(ByteOrder.LITTLE_ENDIAN).getFloat();
+                Acc[1] = ByteBuffer.wrap(data, 4, 4).order(ByteOrder.LITTLE_ENDIAN).getFloat();
+                Acc[2] = ByteBuffer.wrap(data, 8, 4).order(ByteOrder.LITTLE_ENDIAN).getFloat();
             }
+            //RecService
+
+            Parent.runOnUiThread(new Runnable() {
+                @Override
+                public void run()
+                {
+                    if (UserCB != null) {
+                        if (LocalKeys != KEY) {
+                            LocalKeys = KEY;
+                            UserCB.ControllerKeysCallback(KEY, DeviceAddress);
+                        }
+                        UserCB.ControllerSignCallback(Status, CMD, Roll, Pitch, Yaw, Acc[0], Acc[1], Acc[2], FigStatus, DeviceAddress);
+                    }
+                }
+            });
         }
 
         @Override

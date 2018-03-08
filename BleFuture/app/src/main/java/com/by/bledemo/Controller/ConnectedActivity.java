@@ -6,16 +6,14 @@ import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
-import android.util.Log;
 import android.view.View;
 import android.widget.ArrayAdapter;
 import android.widget.Button;
-import android.widget.ListView;
 import android.widget.TextView;
 import android.widget.Toast;
 
 import com.by.bledemo.R;
-import com.by.bledemo.SensorData;
+import com.by.bledemo.DataProcess.SensorData;
 
 /**
  * Created by 林北94狂 on 2018/1/10.
@@ -28,25 +26,18 @@ public class ConnectedActivity extends AppCompatActivity {
     private TextView RAdd;
     private TextView LeftServices;
     private TextView RightServices;
-    private ArrayAdapter<String> LlistAdapter;
-    private ArrayAdapter<String> RlistAdapter;
     private Controller LDevice,RDevice;
     private boolean Paused,LOp,ROp;
     SensorData sensorData;
-    ControllerThread left,right;
 
     @Override
     protected void onCreate(Bundle saveInstanceState){
         super.onCreate(saveInstanceState);
         setContentView(R.layout.connected);
-        LAdd=(TextView)this.findViewById(R.id.LAdd);
-        RAdd=(TextView)this.findViewById(R.id.RAdd);
-        LeftServices=(TextView)this.findViewById(R.id.LeftServices);
-        RightServices=(TextView)this.findViewById(R.id.RightServices);
-        LlistAdapter=new ArrayAdapter<>(this,android.R.layout.simple_list_item_1);
-        RlistAdapter=new ArrayAdapter<>(this,android.R.layout.simple_list_item_1);
-//        LeftServices.setAdapter(LlistAdapter);
-//        RightServices.setAdapter(RlistAdapter);
+        LAdd=this.findViewById(R.id.LAdd);
+        RAdd=this.findViewById(R.id.RAdd);
+        LeftServices=this.findViewById(R.id.LeftServices);
+        RightServices=this.findViewById(R.id.RightServices);
         Paused=false;
 
         final BluetoothManager bluetoothManager=
@@ -61,16 +52,13 @@ public class ConnectedActivity extends AppCompatActivity {
         LDevice.RegisterCallback(EventListener);
         RDevice.RegisterCallback(EventListener);
         sensorData=new SensorData(0,0,0,0,0,0,null,"");
-        left=new ControllerThread();
-        //right=new ControllerThread(RAddress);
     }
 
     public void Test(View view) //Start receiving data
     {
         if(LOp && ROp)
         {
-            left.start();
-            //right.start();
+
         }
     }
 
@@ -78,17 +66,8 @@ public class ConnectedActivity extends AppCompatActivity {
     {
         if(LDevice.Connected() && RDevice.Connected())
         {
-            LDevice.RegisterCallback(null);
-            RDevice.RegisterCallback(null);
-            LDevice.Open(false,false);
-            RDevice.Open(false,false);
             LDevice.Close();
             RDevice.Close();
-
-            left.interrupt();
-            left=null;
-            //right.interrupt();
-            //right=null;
         }
         this.finish();
     }
@@ -101,11 +80,6 @@ public class ConnectedActivity extends AppCompatActivity {
             //LDevice.SetControllerAddress(LAddress);
             //RDevice.SetControllerAddress(RAddress);
             Paused = false;
-
-            left.interrupt();
-            left=null;
-            //right.interrupt();
-            //right=null;
         }
         super.onResume();
     }
@@ -117,11 +91,6 @@ public class ConnectedActivity extends AppCompatActivity {
             LDevice.Close();
             RDevice.Close();
             Paused=true;
-
-            left.interrupt();
-            left=null;
-            //right.interrupt();
-            //right=null;
         }
         super.onPause();
     }
@@ -133,54 +102,52 @@ public class ConnectedActivity extends AppCompatActivity {
             LDevice.Close();
             RDevice.Close();
             Paused=true;
-
-            left.interrupt();
-            left=null;
-            //right.interrupt();
-            //right=null;
         }
         super.onDestroy();
     }
 
     public class ControllerThread extends Thread
     {
-        public ControllerThread(/*String Address*/)
+        public ControllerThread()
         {
-            //this.Address=Address;
+
         }
 
         @Override
         public void run()
         {
-            while (LOp&&ROp)
-            {
-                if (sensorData.getAddress().equals(LAddress))
-                {
-                    final String data="AccX:"+sensorData.getAccX()+"\nAccY:"+sensorData.getAccY()+"\nAccZ:"+sensorData.getAccZ()
-                            +"\nRoll:"+sensorData.getRoll()+"\nPitch:"+sensorData.getPitch()+"\nYaw:"+sensorData.getYaw();
-                    runOnUiThread(new Runnable() {
-                        @Override
-                        public void run() {
-                            LeftServices.setText(data);
-                        }
-                    });
-                }
-                if(sensorData.getAddress().equals(RAddress))
-                {
-                    final String data="AccX:"+sensorData.getAccX()+"\nAccY:"+sensorData.getAccY()+"\nAccZ:"+sensorData.getAccZ()
-                            +"\nRoll:"+sensorData.getRoll()+"\nPitch:"+sensorData.getPitch()+"\nYaw:"+sensorData.getYaw();
-                    runOnUiThread(new Runnable() {
-                        @Override
-                        public void run() {
-                            RightServices.setText(data);
-                        }
-                    });
-                }
-            }
+
         }
     }
 
     private Controller.ControllerCallback EventListener=new Controller.ControllerCallback() {   //資料回傳函數
+        @Override
+        public void ControllerSignCallback(int Status, int CMD, float Roll, float Pitch, float Yaw,float AccX, float AccY, float AccZ,Controller.FingersStatus Figs,String Address)
+        {
+            if(LAddress==Address)
+            {
+                final String PosDataValue=String.format("(%d,0x%02x)\nRoll:%1.4f,\nPitch:%1.4f,\nYaw:%1.4f", Status, CMD, Roll, Pitch,Yaw);
+                final String RecDataValue=String.format("AccX:%1.4f,\nAccY:%1.4f,\nAccZ:%1.4f",AccX,AccY,AccZ);
+                runOnUiThread(new Runnable() {
+                    @Override
+                    public void run() {
+                        LeftServices.setText(PosDataValue+"\n"+RecDataValue);
+                    }
+                });
+            }
+            if(RAddress==Address)
+            {
+                final String PosDataValue=String.format("(%d,0x%02x)\nRoll:%1.4f,\nPitch:%1.4f,\nYaw:%1.4f", Status, CMD, Roll, Pitch,Yaw);
+                final String RecDataValue=String.format("AccX:%1.4f,\nAccY:%1.4f,\nAccZ:%1.4f",AccX,AccY,AccZ);
+                runOnUiThread(new Runnable() {
+                    @Override
+                    public void run() {
+                        RightServices.setText(PosDataValue+"\n"+RecDataValue);
+                    }
+                });
+            }
+        }
+
         @Override
         public void ControllerStatusCallback(int Status, int CMD, float Roll, float Pitch, float Yaw, float DisX, float DisY, float DisZ,String Address)
         {
@@ -189,52 +156,12 @@ public class ConnectedActivity extends AppCompatActivity {
                 final String ListTitle="Position :";
                 final String DataValue=String.format("(%d,0x%02x)Roll:%1.4f,\tPitch:%1.4f,\tYaw:%1.4f,\tDisX:%3.2f,\tDisY:%3.2f,\tDisZ:%3.2f", Status, CMD, Roll, Pitch,Yaw,DisX, DisY, DisZ);
                 final String data=ListTitle+DataValue;
-//                synchronized (LlistAdapter)
-//                {
-//                    int i;
-//                    for (i = 0; i < LlistAdapter.getCount(); i++)
-//                    {
-//                        if (LlistAdapter.getItem(i).startsWith(ListTitle))
-//                            break;
-//                    }
-//                    if (i < LlistAdapter.getCount())
-//                    {
-//                        LlistAdapter.remove(LlistAdapter.getItem(i));
-//                        LlistAdapter.insert(data, i);
-//                    }
-//                    else
-//                    {
-//                        LlistAdapter.add(data);
-//                    }
-//                    LlistAdapter.notifyDataSetChanged();
-//                }
-                sensorData.setEuler(Roll,Pitch,Yaw,Address);
             }
             if(RAddress==Address)
             {
                 final String ListTitle="Position :";
                 final String DataValue=String.format("(%d,0x%02x)Roll:%1.4f,\tPitch:%1.4f,\tYaw:%1.4f,\tDisX:%3.2f,\tDisY:%3.2f,\tDisZ:%3.2f", Status, CMD, Roll, Pitch,Yaw,DisX, DisY, DisZ);
                 final String data=ListTitle+DataValue;
-//                synchronized (RlistAdapter)
-//                {
-//                    int i;
-//                    for (i = 0; i < RlistAdapter.getCount(); i++)
-//                    {
-//                        if (RlistAdapter.getItem(i).startsWith(ListTitle))
-//                            break;
-//                    }
-//                    if (i < RlistAdapter.getCount())
-//                    {
-//                        RlistAdapter.remove(RlistAdapter.getItem(i));
-//                        RlistAdapter.insert(data, i);
-//                    }
-//                    else
-//                    {
-//                        RlistAdapter.add(data);
-//                    }
-//                    RlistAdapter.notifyDataSetChanged();
-//                }
-                sensorData.setEuler(Roll,Pitch,Yaw,Address);
             }
         }
 
@@ -246,52 +173,12 @@ public class ConnectedActivity extends AppCompatActivity {
                 final String ListTitle="Record :";
                 final String DataValue=String.format("SpeedX:%f,\tSpeedY:%f,\tSpeedZ:%f,\tAccX:%1.4f,\tAccY:%1.4f,\tAccZ:%1.4f",SpeedX,SpeedY,SpeedZ,AccX,AccY,AccZ);
                 final String data=ListTitle+DataValue;
-//                synchronized (LlistAdapter)
-//                {
-//                    int i;
-//                    for (i = 0; i < LlistAdapter.getCount(); i++)
-//                    {
-//                        if (LlistAdapter.getItem(i).startsWith(ListTitle))
-//                            break;
-//                    }
-//                    if (i < LlistAdapter.getCount())
-//                    {
-//                        LlistAdapter.remove(LlistAdapter.getItem(i));
-//                        LlistAdapter.insert(data, i);
-//                    }
-//                    else
-//                    {
-//                        LlistAdapter.add(data);
-//                    }
-//                    LlistAdapter.notifyDataSetChanged();
-//                }
-                sensorData.setAcc(AccX,AccY,AccZ,Address);
             }
             if(RAddress==Address)
             {
                 final String ListTitle="Record :";
                 final String DataValue=String.format("SpeedX:%f,\tSpeedY:%f,\tSpeedZ:%f,\tAccX:%1.4f,\tAccY:%1.4f,\tAccZ:%1.4f",SpeedX,SpeedY,SpeedZ,AccX,AccY,AccZ);
                 final String data=ListTitle+DataValue;
-//                synchronized (RlistAdapter)
-//                {
-//                    int i;
-//                    for (i = 0; i < RlistAdapter.getCount(); i++)
-//                    {
-//                        if (RlistAdapter.getItem(i).startsWith(ListTitle))
-//                            break;
-//                    }
-//                    if (i < RlistAdapter.getCount())
-//                    {
-//                        RlistAdapter.remove(RlistAdapter.getItem(i));
-//                        RlistAdapter.insert(data, i);
-//                    }
-//                    else
-//                    {
-//                        RlistAdapter.add(data);
-//                    }
-//                    RlistAdapter.notifyDataSetChanged();
-//                }
-                sensorData.setAcc(AccX,AccY,AccZ,Address);
             }
         }
 
@@ -319,24 +206,6 @@ public class ConnectedActivity extends AppCompatActivity {
                 }
                 final String DateValue = Data;
                 final String data=ListTitle + DateValue;
-//                synchronized (LlistAdapter)
-//                {
-//                    for (i = 0; i < LlistAdapter.getCount(); i++)
-//                    {
-//                        if (LlistAdapter.getItem(i).startsWith(ListTitle))
-//                            break;
-//                    }
-//                    if (i < LlistAdapter.getCount())
-//                    {
-//                        LlistAdapter.remove(LlistAdapter.getItem(i));
-//                        LlistAdapter.insert(data, i);
-//                    }
-//                    else
-//                    {
-//                        LlistAdapter.add(data);
-//                    }
-//                    LlistAdapter.notifyDataSetChanged();
-//                }
             }
             if(RAddress==Address)
             {
@@ -359,24 +228,6 @@ public class ConnectedActivity extends AppCompatActivity {
                 }
                 final String DateValue = Data;
                 final String data=ListTitle + DateValue;
-//                synchronized (RlistAdapter)
-//                {
-//                    for (i = 0; i < RlistAdapter.getCount(); i++)
-//                    {
-//                        if (RlistAdapter.getItem(i).startsWith(ListTitle))
-//                            break;
-//                    }
-//                    if (i < RlistAdapter.getCount())
-//                    {
-//                        RlistAdapter.remove(RlistAdapter.getItem(i));
-//                        RlistAdapter.insert(data, i);
-//                    }
-//                    else
-//                    {
-//                        RlistAdapter.add(data);
-//                    }
-//                    RlistAdapter.notifyDataSetChanged();
-//                }
             }
         }
 
@@ -391,9 +242,9 @@ public class ConnectedActivity extends AppCompatActivity {
         public void LostConnection()
         {
             Toast.makeText(me, "Device lost connection.",Toast.LENGTH_SHORT).show();
-            Button bt = (Button)me.findViewById(R.id.Test);
+            Button bt = me.findViewById(R.id.Test);
             bt.setEnabled(false);
-            bt = (Button)me.findViewById(R.id.Close);
+            bt = me.findViewById(R.id.Close);
             bt.setEnabled(false);
         }
 
@@ -401,7 +252,7 @@ public class ConnectedActivity extends AppCompatActivity {
         public void DeviceValid()
         {
             Toast.makeText(me, "Device ready.",Toast.LENGTH_SHORT).show();
-            Button bt = (Button)me.findViewById(R.id.Test);
+            Button bt = me.findViewById(R.id.Test);
             bt.setEnabled(true);
             if(LDevice.GetCurrentStatus()==Controller.Status.DeviceConfigured)
             {

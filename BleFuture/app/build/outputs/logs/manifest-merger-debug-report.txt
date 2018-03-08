@@ -1,18 +1,36 @@
 -- Merging decision tree log ---
 manifest
 ADDED from D:\Downloads\BluetoothLE_FreeWrite-2018-2-5\BleFuture\app\src\main\AndroidManifest.xml:2:1-35:12
+INJECTED from D:\Downloads\BluetoothLE_FreeWrite-2018-2-5\BleFuture\app\src\main\AndroidManifest.xml:2:1-35:12
+INJECTED from D:\Downloads\BluetoothLE_FreeWrite-2018-2-5\BleFuture\app\src\main\AndroidManifest.xml:2:1-35:12
+INJECTED from D:\Downloads\BluetoothLE_FreeWrite-2018-2-5\BleFuture\app\src\main\AndroidManifest.xml:2:1-35:12
+MERGED from [com.android.support:appcompat-v7:26.0.0] C:\Users\LinLin\.gradle\caches\transforms-1\files-1.1\appcompat-v7-26.0.0.aar\651ed0bd13dd5c68d710d6b653307767\AndroidManifest.xml:17:1-31:12
+MERGED from [com.android.support.constraint:constraint-layout:1.0.2] C:\Users\LinLin\.gradle\caches\transforms-1\files-1.1\constraint-layout-1.0.2.aar\333a8c71872977176edfb71aaacfa43e\AndroidManifest.xml:2:1-11:12
+MERGED from [com.android.support:animated-vector-drawable:26.0.0] C:\Users\LinLin\.gradle\caches\transforms-1\files-1.1\animated-vector-drawable-26.0.0.aar\92ba196c2d14de9f7f51dfdaec68a180\AndroidManifest.xml:17:1-28:12
+MERGED from [com.android.support:support-vector-drawable:26.0.0] C:\Users\LinLin\.gradle\caches\transforms-1\files-1.1\support-vector-drawable-26.0.0.aar\5a9901d66043bfc2a0520c653d97e90f\AndroidManifest.xml:17:1-28:12
+MERGED from [com.android.support:support-v4:26.0.0] C:\Users\LinLin\.gradle\caches\transforms-1\files-1.1\support-v4-26.0.0.aar\a2b2615f11ed57167a5f344a9b0f8957\AndroidManifest.xml:17:1-31:12
+MERGED from [com.android.support:support-media-compat:26.0.0] C:\Users\LinLin\.gradle\caches\transforms-1\files-1.1\support-media-compat-26.0.0.aar\3ccb83d0365418f6b2d0ad818ad8010f\AndroidManifest.xml:17:1-31:12
+MERGED from [com.android.support:support-fragment:26.0.0] C:\Users\LinLin\.gradle\caches\transforms-1\files-1.1\support-fragment-26.0.0.aar\ff59fd87db66832d5786bad39d648dea\AndroidManifest.xml:17:1-31:12
+MERGED from [com.android.support:support-core-utils:26.0.0] C:\Users\LinLin\.gradle\caches\transforms-1\files-1.1\support-core-utils-26.0.0.aar\9373a3783caded3691fcd72b27cd55d0\AndroidManifest.xml:17:1-31:12
+MERGED from [com.android.support:support-core-ui:26.0.0] C:\Users\LinLin\.gradle\caches\transforms-1\files-1.1\support-core-ui-26.0.0.aar\d9bfebc75a7ad7e6b50e878d2aebb011\AndroidManifest.xml:17:1-31:12
+MERGED from [com.android.support:support-compat:26.0.0] C:\Users\LinLin\.gradle\caches\transforms-1\files-1.1\support-compat-26.0.0.aar\ff56f618cf1c6ab9b0e0117339b5f4ec\AndroidManifest.xml:17:1-31:12
+INJECTED from D:\Downloads\BluetoothLE_FreeWrite-2018-2-5\BleFuture\app\src\main\AndroidManifest.xml:2:1-35:12
+INJECTED from D:\Downloads\BluetoothLE_FreeWrite-2018-2-5\BleFuture\app\src\main\AndroidManifest.xml:2:1-35:12
+INJECTED from D:\Downloads\BluetoothLE_FreeWrite-2018-2-5\BleFuture\app\src\main\AndroidManifest.xml:2:1-35:12
 	package
 		ADDED from D:\Downloads\BluetoothLE_FreeWrite-2018-2-5\BleFuture\app\src\main\AndroidManifest.xml:3:5-29
 		INJECTED from D:\Downloads\BluetoothLE_FreeWrite-2018-2-5\BleFuture\app\src\main\AndroidManifest.xml
 		INJECTED from D:\Downloads\BluetoothLE_FreeWrite-2018-2-5\BleFuture\app\src\main\AndroidManifest.xml
 	android:versionName
 		INJECTED from D:\Downloads\BluetoothLE_FreeWrite-2018-2-5\BleFuture\app\src\main\AndroidManifest.xml
+		ADDED from D:\Downloads\BluetoothLE_FreeWrite-2018-2-5\BleFuture\app\src\main\AndroidManifest.xml:2:1-35:12
+		INJECTED from D:\Downloads\BluetoothLE_FreeWrite-2018-2-5\BleFuture\app\src\main\AndroidManifest.xml
+	android:versionCode
+		INJECTED from D:\Downloads\BluetoothLE_FreeWrite-2018-2-5\BleFuture\app\src\main\AndroidManifest.xml
+		ADDED from D:\Downloads\BluetoothLE_FreeWrite-2018-2-5\BleFuture\app\src\main\AndroidManifest.xml:2:1-35:12
 		INJECTED from D:\Downloads\BluetoothLE_FreeWrite-2018-2-5\BleFuture\app\src\main\AndroidManifest.xml
 	xmlns:android
 		ADDED from D:\Downloads\BluetoothLE_FreeWrite-2018-2-5\BleFuture\app\src\main\AndroidManifest.xml:2:11-69
-	android:versionCode
-		INJECTED from D:\Downloads\BluetoothLE_FreeWrite-2018-2-5\BleFuture\app\src\main\AndroidManifest.xml
-		INJECTED from D:\Downloads\BluetoothLE_FreeWrite-2018-2-5\BleFuture\app\src\main\AndroidManifest.xml
 uses-permission#android.permission.BLUETOOTH
 ADDED from D:\Downloads\BluetoothLE_FreeWrite-2018-2-5\BleFuture\app\src\main\AndroidManifest.xml:5:5-67
 	android:name
@@ -37,24 +55,34 @@ ADDED from D:\Downloads\BluetoothLE_FreeWrite-2018-2-5\BleFuture\app\src\main\An
 		ADDED from D:\Downloads\BluetoothLE_FreeWrite-2018-2-5\BleFuture\app\src\main\AndroidManifest.xml:15:19-63
 application
 ADDED from D:\Downloads\BluetoothLE_FreeWrite-2018-2-5\BleFuture\app\src\main\AndroidManifest.xml:17:5-33:19
-MERGED from [com.android.support:appcompat-v7:25.3.1] C:\Users\LinLin\.android\build-cache\0eccbead5e7954eca9e9f10e8cee538049f0798e\output\AndroidManifest.xml:29:5-20
-MERGED from [com.android.support:support-v4:25.3.1] C:\Users\LinLin\.android\build-cache\e57da17a56e36cd9ed23e907eb95bcce9faf5aba\output\AndroidManifest.xml:29:5-20
-MERGED from [com.android.support:support-fragment:25.3.1] C:\Users\LinLin\.android\build-cache\899e5d450f8fbc2cd68174e654d54e64456594d0\output\AndroidManifest.xml:29:5-20
-MERGED from [com.android.support:support-media-compat:25.3.1] C:\Users\LinLin\.android\build-cache\ba7b054a0547dfbca3c6f96528421e2c86f95a99\output\AndroidManifest.xml:29:5-20
-MERGED from [com.android.support:support-core-ui:25.3.1] C:\Users\LinLin\.android\build-cache\95372b17cf813b2b0dcb65d24c79bdfe135f51ea\output\AndroidManifest.xml:29:5-20
-MERGED from [com.android.support:support-core-utils:25.3.1] C:\Users\LinLin\.android\build-cache\c594125b3c061f9c0c666bf2f00fc48416adc600\output\AndroidManifest.xml:29:5-20
-MERGED from [com.android.support:animated-vector-drawable:25.3.1] C:\Users\LinLin\.android\build-cache\04395576411cf299b0385ca9915addf9d052da3a\output\AndroidManifest.xml:26:5-20
-MERGED from [com.android.support:support-vector-drawable:25.3.1] C:\Users\LinLin\.android\build-cache\2c6ae4176ce5461b0f24ba8448469b5e235cb342\output\AndroidManifest.xml:26:5-20
-MERGED from [com.android.support:support-compat:25.3.1] C:\Users\LinLin\.android\build-cache\5414b442221a4cc00b009c8ab014f5cddb56e95f\output\AndroidManifest.xml:29:5-20
-MERGED from [com.android.support.constraint:constraint-layout:1.0.2] C:\Users\LinLin\.android\build-cache\43d0d041e240f55f21c397f96b03d562f70f2404\output\AndroidManifest.xml:9:5-20
-	android:label
-		ADDED from D:\Downloads\BluetoothLE_FreeWrite-2018-2-5\BleFuture\app\src\main\AndroidManifest.xml:20:9-41
+MERGED from [com.android.support:appcompat-v7:26.0.0] C:\Users\LinLin\.gradle\caches\transforms-1\files-1.1\appcompat-v7-26.0.0.aar\651ed0bd13dd5c68d710d6b653307767\AndroidManifest.xml:25:5-29:19
+MERGED from [com.android.support:appcompat-v7:26.0.0] C:\Users\LinLin\.gradle\caches\transforms-1\files-1.1\appcompat-v7-26.0.0.aar\651ed0bd13dd5c68d710d6b653307767\AndroidManifest.xml:25:5-29:19
+MERGED from [com.android.support.constraint:constraint-layout:1.0.2] C:\Users\LinLin\.gradle\caches\transforms-1\files-1.1\constraint-layout-1.0.2.aar\333a8c71872977176edfb71aaacfa43e\AndroidManifest.xml:9:5-20
+MERGED from [com.android.support.constraint:constraint-layout:1.0.2] C:\Users\LinLin\.gradle\caches\transforms-1\files-1.1\constraint-layout-1.0.2.aar\333a8c71872977176edfb71aaacfa43e\AndroidManifest.xml:9:5-20
+MERGED from [com.android.support:animated-vector-drawable:26.0.0] C:\Users\LinLin\.gradle\caches\transforms-1\files-1.1\animated-vector-drawable-26.0.0.aar\92ba196c2d14de9f7f51dfdaec68a180\AndroidManifest.xml:22:5-26:19
+MERGED from [com.android.support:animated-vector-drawable:26.0.0] C:\Users\LinLin\.gradle\caches\transforms-1\files-1.1\animated-vector-drawable-26.0.0.aar\92ba196c2d14de9f7f51dfdaec68a180\AndroidManifest.xml:22:5-26:19
+MERGED from [com.android.support:support-vector-drawable:26.0.0] C:\Users\LinLin\.gradle\caches\transforms-1\files-1.1\support-vector-drawable-26.0.0.aar\5a9901d66043bfc2a0520c653d97e90f\AndroidManifest.xml:22:5-26:19
+MERGED from [com.android.support:support-vector-drawable:26.0.0] C:\Users\LinLin\.gradle\caches\transforms-1\files-1.1\support-vector-drawable-26.0.0.aar\5a9901d66043bfc2a0520c653d97e90f\AndroidManifest.xml:22:5-26:19
+MERGED from [com.android.support:support-v4:26.0.0] C:\Users\LinLin\.gradle\caches\transforms-1\files-1.1\support-v4-26.0.0.aar\a2b2615f11ed57167a5f344a9b0f8957\AndroidManifest.xml:25:5-29:19
+MERGED from [com.android.support:support-v4:26.0.0] C:\Users\LinLin\.gradle\caches\transforms-1\files-1.1\support-v4-26.0.0.aar\a2b2615f11ed57167a5f344a9b0f8957\AndroidManifest.xml:25:5-29:19
+MERGED from [com.android.support:support-media-compat:26.0.0] C:\Users\LinLin\.gradle\caches\transforms-1\files-1.1\support-media-compat-26.0.0.aar\3ccb83d0365418f6b2d0ad818ad8010f\AndroidManifest.xml:25:5-29:19
+MERGED from [com.android.support:support-media-compat:26.0.0] C:\Users\LinLin\.gradle\caches\transforms-1\files-1.1\support-media-compat-26.0.0.aar\3ccb83d0365418f6b2d0ad818ad8010f\AndroidManifest.xml:25:5-29:19
+MERGED from [com.android.support:support-fragment:26.0.0] C:\Users\LinLin\.gradle\caches\transforms-1\files-1.1\support-fragment-26.0.0.aar\ff59fd87db66832d5786bad39d648dea\AndroidManifest.xml:25:5-29:19
+MERGED from [com.android.support:support-fragment:26.0.0] C:\Users\LinLin\.gradle\caches\transforms-1\files-1.1\support-fragment-26.0.0.aar\ff59fd87db66832d5786bad39d648dea\AndroidManifest.xml:25:5-29:19
+MERGED from [com.android.support:support-core-utils:26.0.0] C:\Users\LinLin\.gradle\caches\transforms-1\files-1.1\support-core-utils-26.0.0.aar\9373a3783caded3691fcd72b27cd55d0\AndroidManifest.xml:25:5-29:19
+MERGED from [com.android.support:support-core-utils:26.0.0] C:\Users\LinLin\.gradle\caches\transforms-1\files-1.1\support-core-utils-26.0.0.aar\9373a3783caded3691fcd72b27cd55d0\AndroidManifest.xml:25:5-29:19
+MERGED from [com.android.support:support-core-ui:26.0.0] C:\Users\LinLin\.gradle\caches\transforms-1\files-1.1\support-core-ui-26.0.0.aar\d9bfebc75a7ad7e6b50e878d2aebb011\AndroidManifest.xml:25:5-29:19
+MERGED from [com.android.support:support-core-ui:26.0.0] C:\Users\LinLin\.gradle\caches\transforms-1\files-1.1\support-core-ui-26.0.0.aar\d9bfebc75a7ad7e6b50e878d2aebb011\AndroidManifest.xml:25:5-29:19
+MERGED from [com.android.support:support-compat:26.0.0] C:\Users\LinLin\.gradle\caches\transforms-1\files-1.1\support-compat-26.0.0.aar\ff56f618cf1c6ab9b0e0117339b5f4ec\AndroidManifest.xml:25:5-29:19
+MERGED from [com.android.support:support-compat:26.0.0] C:\Users\LinLin\.gradle\caches\transforms-1\files-1.1\support-compat-26.0.0.aar\ff56f618cf1c6ab9b0e0117339b5f4ec\AndroidManifest.xml:25:5-29:19
 	android:supportsRtl
 		ADDED from D:\Downloads\BluetoothLE_FreeWrite-2018-2-5\BleFuture\app\src\main\AndroidManifest.xml:21:9-35
-	android:allowBackup
-		ADDED from D:\Downloads\BluetoothLE_FreeWrite-2018-2-5\BleFuture\app\src\main\AndroidManifest.xml:18:9-35
+	android:label
+		ADDED from D:\Downloads\BluetoothLE_FreeWrite-2018-2-5\BleFuture\app\src\main\AndroidManifest.xml:20:9-41
 	android:icon
 		ADDED from D:\Downloads\BluetoothLE_FreeWrite-2018-2-5\BleFuture\app\src\main\AndroidManifest.xml:19:9-38
+	android:allowBackup
+		ADDED from D:\Downloads\BluetoothLE_FreeWrite-2018-2-5\BleFuture\app\src\main\AndroidManifest.xml:18:9-35
 	android:theme
 		ADDED from D:\Downloads\BluetoothLE_FreeWrite-2018-2-5\BleFuture\app\src\main\AndroidManifest.xml:22:9-40
 activity#com.by.bledemo.MainActivity
@@ -77,35 +105,59 @@ ADDED from D:\Downloads\BluetoothLE_FreeWrite-2018-2-5\BleFuture\app\src\main\An
 		ADDED from D:\Downloads\BluetoothLE_FreeWrite-2018-2-5\BleFuture\app\src\main\AndroidManifest.xml:30:19-63
 uses-sdk
 INJECTED from D:\Downloads\BluetoothLE_FreeWrite-2018-2-5\BleFuture\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
-MERGED from [com.android.support:appcompat-v7:25.3.1] C:\Users\LinLin\.android\build-cache\0eccbead5e7954eca9e9f10e8cee538049f0798e\output\AndroidManifest.xml:21:5-23:78
-MERGED from [com.android.support:support-v4:25.3.1] C:\Users\LinLin\.android\build-cache\e57da17a56e36cd9ed23e907eb95bcce9faf5aba\output\AndroidManifest.xml:21:5-23:54
-MERGED from [com.android.support:support-fragment:25.3.1] C:\Users\LinLin\.android\build-cache\899e5d450f8fbc2cd68174e654d54e64456594d0\output\AndroidManifest.xml:21:5-23:60
-MERGED from [com.android.support:support-media-compat:25.3.1] C:\Users\LinLin\.android\build-cache\ba7b054a0547dfbca3c6f96528421e2c86f95a99\output\AndroidManifest.xml:21:5-23:63
-MERGED from [com.android.support:support-core-ui:25.3.1] C:\Users\LinLin\.android\build-cache\95372b17cf813b2b0dcb65d24c79bdfe135f51ea\output\AndroidManifest.xml:21:5-23:58
-MERGED from [com.android.support:support-core-utils:25.3.1] C:\Users\LinLin\.android\build-cache\c594125b3c061f9c0c666bf2f00fc48416adc600\output\AndroidManifest.xml:21:5-23:61
-MERGED from [com.android.support:animated-vector-drawable:25.3.1] C:\Users\LinLin\.android\build-cache\04395576411cf299b0385ca9915addf9d052da3a\output\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-vector-drawable:25.3.1] C:\Users\LinLin\.android\build-cache\2c6ae4176ce5461b0f24ba8448469b5e235cb342\output\AndroidManifest.xml:20:5-43
-MERGED from [com.android.support:support-compat:25.3.1] C:\Users\LinLin\.android\build-cache\5414b442221a4cc00b009c8ab014f5cddb56e95f\output\AndroidManifest.xml:21:5-23:58
-MERGED from [com.android.support.constraint:constraint-layout:1.0.2] C:\Users\LinLin\.android\build-cache\43d0d041e240f55f21c397f96b03d562f70f2404\output\AndroidManifest.xml:5:5-7:41
+INJECTED from D:\Downloads\BluetoothLE_FreeWrite-2018-2-5\BleFuture\app\src\main\AndroidManifest.xml
+INJECTED from D:\Downloads\BluetoothLE_FreeWrite-2018-2-5\BleFuture\app\src\main\AndroidManifest.xml
+MERGED from [com.android.support:appcompat-v7:26.0.0] C:\Users\LinLin\.gradle\caches\transforms-1\files-1.1\appcompat-v7-26.0.0.aar\651ed0bd13dd5c68d710d6b653307767\AndroidManifest.xml:21:5-23:78
+MERGED from [com.android.support:appcompat-v7:26.0.0] C:\Users\LinLin\.gradle\caches\transforms-1\files-1.1\appcompat-v7-26.0.0.aar\651ed0bd13dd5c68d710d6b653307767\AndroidManifest.xml:21:5-23:78
+MERGED from [com.android.support.constraint:constraint-layout:1.0.2] C:\Users\LinLin\.gradle\caches\transforms-1\files-1.1\constraint-layout-1.0.2.aar\333a8c71872977176edfb71aaacfa43e\AndroidManifest.xml:5:5-7:41
+MERGED from [com.android.support.constraint:constraint-layout:1.0.2] C:\Users\LinLin\.gradle\caches\transforms-1\files-1.1\constraint-layout-1.0.2.aar\333a8c71872977176edfb71aaacfa43e\AndroidManifest.xml:5:5-7:41
+MERGED from [com.android.support:animated-vector-drawable:26.0.0] C:\Users\LinLin\.gradle\caches\transforms-1\files-1.1\animated-vector-drawable-26.0.0.aar\92ba196c2d14de9f7f51dfdaec68a180\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:animated-vector-drawable:26.0.0] C:\Users\LinLin\.gradle\caches\transforms-1\files-1.1\animated-vector-drawable-26.0.0.aar\92ba196c2d14de9f7f51dfdaec68a180\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-vector-drawable:26.0.0] C:\Users\LinLin\.gradle\caches\transforms-1\files-1.1\support-vector-drawable-26.0.0.aar\5a9901d66043bfc2a0520c653d97e90f\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-vector-drawable:26.0.0] C:\Users\LinLin\.gradle\caches\transforms-1\files-1.1\support-vector-drawable-26.0.0.aar\5a9901d66043bfc2a0520c653d97e90f\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-v4:26.0.0] C:\Users\LinLin\.gradle\caches\transforms-1\files-1.1\support-v4-26.0.0.aar\a2b2615f11ed57167a5f344a9b0f8957\AndroidManifest.xml:21:5-23:54
+MERGED from [com.android.support:support-v4:26.0.0] C:\Users\LinLin\.gradle\caches\transforms-1\files-1.1\support-v4-26.0.0.aar\a2b2615f11ed57167a5f344a9b0f8957\AndroidManifest.xml:21:5-23:54
+MERGED from [com.android.support:support-media-compat:26.0.0] C:\Users\LinLin\.gradle\caches\transforms-1\files-1.1\support-media-compat-26.0.0.aar\3ccb83d0365418f6b2d0ad818ad8010f\AndroidManifest.xml:21:5-23:63
+MERGED from [com.android.support:support-media-compat:26.0.0] C:\Users\LinLin\.gradle\caches\transforms-1\files-1.1\support-media-compat-26.0.0.aar\3ccb83d0365418f6b2d0ad818ad8010f\AndroidManifest.xml:21:5-23:63
+MERGED from [com.android.support:support-fragment:26.0.0] C:\Users\LinLin\.gradle\caches\transforms-1\files-1.1\support-fragment-26.0.0.aar\ff59fd87db66832d5786bad39d648dea\AndroidManifest.xml:21:5-23:60
+MERGED from [com.android.support:support-fragment:26.0.0] C:\Users\LinLin\.gradle\caches\transforms-1\files-1.1\support-fragment-26.0.0.aar\ff59fd87db66832d5786bad39d648dea\AndroidManifest.xml:21:5-23:60
+MERGED from [com.android.support:support-core-utils:26.0.0] C:\Users\LinLin\.gradle\caches\transforms-1\files-1.1\support-core-utils-26.0.0.aar\9373a3783caded3691fcd72b27cd55d0\AndroidManifest.xml:21:5-23:61
+MERGED from [com.android.support:support-core-utils:26.0.0] C:\Users\LinLin\.gradle\caches\transforms-1\files-1.1\support-core-utils-26.0.0.aar\9373a3783caded3691fcd72b27cd55d0\AndroidManifest.xml:21:5-23:61
+MERGED from [com.android.support:support-core-ui:26.0.0] C:\Users\LinLin\.gradle\caches\transforms-1\files-1.1\support-core-ui-26.0.0.aar\d9bfebc75a7ad7e6b50e878d2aebb011\AndroidManifest.xml:21:5-23:58
+MERGED from [com.android.support:support-core-ui:26.0.0] C:\Users\LinLin\.gradle\caches\transforms-1\files-1.1\support-core-ui-26.0.0.aar\d9bfebc75a7ad7e6b50e878d2aebb011\AndroidManifest.xml:21:5-23:58
+MERGED from [com.android.support:support-compat:26.0.0] C:\Users\LinLin\.gradle\caches\transforms-1\files-1.1\support-compat-26.0.0.aar\ff56f618cf1c6ab9b0e0117339b5f4ec\AndroidManifest.xml:21:5-23:58
+MERGED from [com.android.support:support-compat:26.0.0] C:\Users\LinLin\.gradle\caches\transforms-1\files-1.1\support-compat-26.0.0.aar\ff56f618cf1c6ab9b0e0117339b5f4ec\AndroidManifest.xml:21:5-23:58
+INJECTED from D:\Downloads\BluetoothLE_FreeWrite-2018-2-5\BleFuture\app\src\main\AndroidManifest.xml
+INJECTED from D:\Downloads\BluetoothLE_FreeWrite-2018-2-5\BleFuture\app\src\main\AndroidManifest.xml
 	tools:overrideLibrary
-		ADDED from [com.android.support:appcompat-v7:25.3.1] C:\Users\LinLin\.android\build-cache\0eccbead5e7954eca9e9f10e8cee538049f0798e\output\AndroidManifest.xml:23:9-75
+		ADDED from [com.android.support:appcompat-v7:26.0.0] C:\Users\LinLin\.gradle\caches\transforms-1\files-1.1\appcompat-v7-26.0.0.aar\651ed0bd13dd5c68d710d6b653307767\AndroidManifest.xml:23:9-75
 	android:targetSdkVersion
 		INJECTED from D:\Downloads\BluetoothLE_FreeWrite-2018-2-5\BleFuture\app\src\main\AndroidManifest.xml
+		ADDED from D:\Downloads\BluetoothLE_FreeWrite-2018-2-5\BleFuture\app\src\main\AndroidManifest.xml
 		INJECTED from D:\Downloads\BluetoothLE_FreeWrite-2018-2-5\BleFuture\app\src\main\AndroidManifest.xml
 	android:minSdkVersion
 		INJECTED from D:\Downloads\BluetoothLE_FreeWrite-2018-2-5\BleFuture\app\src\main\AndroidManifest.xml
+		ADDED from D:\Downloads\BluetoothLE_FreeWrite-2018-2-5\BleFuture\app\src\main\AndroidManifest.xml
 		INJECTED from D:\Downloads\BluetoothLE_FreeWrite-2018-2-5\BleFuture\app\src\main\AndroidManifest.xml
 meta-data#android.support.VERSION
-ADDED from [com.android.support:appcompat-v7:25.3.1] C:\Users\LinLin\.android\build-cache\0eccbead5e7954eca9e9f10e8cee538049f0798e\output\AndroidManifest.xml:25:5-27:34
-MERGED from [com.android.support:support-v4:25.3.1] C:\Users\LinLin\.android\build-cache\e57da17a56e36cd9ed23e907eb95bcce9faf5aba\output\AndroidManifest.xml:25:5-27:34
-MERGED from [com.android.support:support-fragment:25.3.1] C:\Users\LinLin\.android\build-cache\899e5d450f8fbc2cd68174e654d54e64456594d0\output\AndroidManifest.xml:25:5-27:34
-MERGED from [com.android.support:support-media-compat:25.3.1] C:\Users\LinLin\.android\build-cache\ba7b054a0547dfbca3c6f96528421e2c86f95a99\output\AndroidManifest.xml:25:5-27:34
-MERGED from [com.android.support:support-core-ui:25.3.1] C:\Users\LinLin\.android\build-cache\95372b17cf813b2b0dcb65d24c79bdfe135f51ea\output\AndroidManifest.xml:25:5-27:34
-MERGED from [com.android.support:support-core-utils:25.3.1] C:\Users\LinLin\.android\build-cache\c594125b3c061f9c0c666bf2f00fc48416adc600\output\AndroidManifest.xml:25:5-27:34
-MERGED from [com.android.support:animated-vector-drawable:25.3.1] C:\Users\LinLin\.android\build-cache\04395576411cf299b0385ca9915addf9d052da3a\output\AndroidManifest.xml:22:5-24:34
-MERGED from [com.android.support:support-vector-drawable:25.3.1] C:\Users\LinLin\.android\build-cache\2c6ae4176ce5461b0f24ba8448469b5e235cb342\output\AndroidManifest.xml:22:5-24:34
-MERGED from [com.android.support:support-compat:25.3.1] C:\Users\LinLin\.android\build-cache\5414b442221a4cc00b009c8ab014f5cddb56e95f\output\AndroidManifest.xml:25:5-27:34
+ADDED from [com.android.support:appcompat-v7:26.0.0] C:\Users\LinLin\.gradle\caches\transforms-1\files-1.1\appcompat-v7-26.0.0.aar\651ed0bd13dd5c68d710d6b653307767\AndroidManifest.xml:26:9-28:38
+MERGED from [com.android.support:animated-vector-drawable:26.0.0] C:\Users\LinLin\.gradle\caches\transforms-1\files-1.1\animated-vector-drawable-26.0.0.aar\92ba196c2d14de9f7f51dfdaec68a180\AndroidManifest.xml:23:9-25:38
+MERGED from [com.android.support:animated-vector-drawable:26.0.0] C:\Users\LinLin\.gradle\caches\transforms-1\files-1.1\animated-vector-drawable-26.0.0.aar\92ba196c2d14de9f7f51dfdaec68a180\AndroidManifest.xml:23:9-25:38
+MERGED from [com.android.support:support-vector-drawable:26.0.0] C:\Users\LinLin\.gradle\caches\transforms-1\files-1.1\support-vector-drawable-26.0.0.aar\5a9901d66043bfc2a0520c653d97e90f\AndroidManifest.xml:23:9-25:38
+MERGED from [com.android.support:support-vector-drawable:26.0.0] C:\Users\LinLin\.gradle\caches\transforms-1\files-1.1\support-vector-drawable-26.0.0.aar\5a9901d66043bfc2a0520c653d97e90f\AndroidManifest.xml:23:9-25:38
+MERGED from [com.android.support:support-v4:26.0.0] C:\Users\LinLin\.gradle\caches\transforms-1\files-1.1\support-v4-26.0.0.aar\a2b2615f11ed57167a5f344a9b0f8957\AndroidManifest.xml:26:9-28:38
+MERGED from [com.android.support:support-v4:26.0.0] C:\Users\LinLin\.gradle\caches\transforms-1\files-1.1\support-v4-26.0.0.aar\a2b2615f11ed57167a5f344a9b0f8957\AndroidManifest.xml:26:9-28:38
+MERGED from [com.android.support:support-media-compat:26.0.0] C:\Users\LinLin\.gradle\caches\transforms-1\files-1.1\support-media-compat-26.0.0.aar\3ccb83d0365418f6b2d0ad818ad8010f\AndroidManifest.xml:26:9-28:38
+MERGED from [com.android.support:support-media-compat:26.0.0] C:\Users\LinLin\.gradle\caches\transforms-1\files-1.1\support-media-compat-26.0.0.aar\3ccb83d0365418f6b2d0ad818ad8010f\AndroidManifest.xml:26:9-28:38
+MERGED from [com.android.support:support-fragment:26.0.0] C:\Users\LinLin\.gradle\caches\transforms-1\files-1.1\support-fragment-26.0.0.aar\ff59fd87db66832d5786bad39d648dea\AndroidManifest.xml:26:9-28:38
+MERGED from [com.android.support:support-fragment:26.0.0] C:\Users\LinLin\.gradle\caches\transforms-1\files-1.1\support-fragment-26.0.0.aar\ff59fd87db66832d5786bad39d648dea\AndroidManifest.xml:26:9-28:38
+MERGED from [com.android.support:support-core-utils:26.0.0] C:\Users\LinLin\.gradle\caches\transforms-1\files-1.1\support-core-utils-26.0.0.aar\9373a3783caded3691fcd72b27cd55d0\AndroidManifest.xml:26:9-28:38
+MERGED from [com.android.support:support-core-utils:26.0.0] C:\Users\LinLin\.gradle\caches\transforms-1\files-1.1\support-core-utils-26.0.0.aar\9373a3783caded3691fcd72b27cd55d0\AndroidManifest.xml:26:9-28:38
+MERGED from [com.android.support:support-core-ui:26.0.0] C:\Users\LinLin\.gradle\caches\transforms-1\files-1.1\support-core-ui-26.0.0.aar\d9bfebc75a7ad7e6b50e878d2aebb011\AndroidManifest.xml:26:9-28:38
+MERGED from [com.android.support:support-core-ui:26.0.0] C:\Users\LinLin\.gradle\caches\transforms-1\files-1.1\support-core-ui-26.0.0.aar\d9bfebc75a7ad7e6b50e878d2aebb011\AndroidManifest.xml:26:9-28:38
+MERGED from [com.android.support:support-compat:26.0.0] C:\Users\LinLin\.gradle\caches\transforms-1\files-1.1\support-compat-26.0.0.aar\ff56f618cf1c6ab9b0e0117339b5f4ec\AndroidManifest.xml:26:9-28:38
+MERGED from [com.android.support:support-compat:26.0.0] C:\Users\LinLin\.gradle\caches\transforms-1\files-1.1\support-compat-26.0.0.aar\ff56f618cf1c6ab9b0e0117339b5f4ec\AndroidManifest.xml:26:9-28:38
 	android:value
-		ADDED from [com.android.support:appcompat-v7:25.3.1] C:\Users\LinLin\.android\build-cache\0eccbead5e7954eca9e9f10e8cee538049f0798e\output\AndroidManifest.xml:27:9-31
+		ADDED from [com.android.support:appcompat-v7:26.0.0] C:\Users\LinLin\.gradle\caches\transforms-1\files-1.1\appcompat-v7-26.0.0.aar\651ed0bd13dd5c68d710d6b653307767\AndroidManifest.xml:28:13-35
 	android:name
-		ADDED from [com.android.support:appcompat-v7:25.3.1] C:\Users\LinLin\.android\build-cache\0eccbead5e7954eca9e9f10e8cee538049f0798e\output\AndroidManifest.xml:26:9-47
+		ADDED from [com.android.support:appcompat-v7:26.0.0] C:\Users\LinLin\.gradle\caches\transforms-1\files-1.1\appcompat-v7-26.0.0.aar\651ed0bd13dd5c68d710d6b653307767\AndroidManifest.xml:27:13-51
