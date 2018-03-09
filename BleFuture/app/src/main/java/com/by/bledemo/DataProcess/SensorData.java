@@ -1,5 +1,7 @@
 package com.by.bledemo.DataProcess;
 
+import com.by.bledemo.Controller.Controller;
+
 /**
  * Created by LinLin on 2018/1/31.
  */
@@ -11,23 +13,30 @@ public class SensorData {
     private float AccX;
     private float AccY;
     private float AccZ;
+    private int Status;
+    private int CMD;
     private String Address;
-    private int[][] Fingers;
+    private Controller.FingersStatus Fingers;
 
-    public SensorData(float Roll, float Pitch, float Yaw,float AccX, float AccY, float AccZ, int[][] Fingers, String Address)
+    public SensorData(int Status,int CMD,float Roll, float Pitch, float Yaw,float AccX, float AccY, float AccZ, Controller.FingersStatus Fingers, String Address)
     {
+        this.Status=Status;
+        this.CMD=CMD;
         this.Roll=Roll;
         this.Pitch=Pitch;
         this.Yaw=Yaw;
         this.AccX=AccX;
         this.AccY=AccY;
         this.AccZ=AccZ;
-        this.Address=Address;
         this.Fingers=Fingers;
+        this.Address=Address;
     }
 
-    public void setEuler(float Roll, float Pitch, float Yaw, String inputAdd)
+    //Setter
+    public void setEuler(int Status,int CMD,float Roll, float Pitch, float Yaw, String inputAdd)
     {
+        this.Status=Status;
+        this.CMD=CMD;
         this.Roll=Roll;
         this.Pitch=Pitch;
         this.Yaw=Yaw;
@@ -35,26 +44,25 @@ public class SensorData {
     }
     public void setAcc(float inputX,float inputY,float inputZ, String inputAdd)
     {
-        AccX=inputX;
-        AccY=inputY;
-        AccZ=inputZ;
-        Address=inputAdd;
+        this.AccX=inputX;
+        this.AccY=inputY;
+        this.AccZ=inputZ;
+        this.Address=inputAdd;
     }
-    public void setFigs(int[][] inputFigs)
+    public void setFigs(Controller.FingersStatus inputFigs, String inputAdd)
     {
-        Fingers=inputFigs;
+        this.Fingers=inputFigs;
+        this.Address=inputAdd;
     }
-    public float getAccX()
+
+    //Getter
+    public int getStatus()
     {
-        return AccX;
+        return Status;
     }
-    public float getAccY()
+    public int getCMD()
     {
-        return AccY;
-    }
-    public float getAccZ()
-    {
-        return AccZ;
+        return CMD;
     }
     public float getRoll()
     {
@@ -68,8 +76,20 @@ public class SensorData {
     {
         return Yaw;
     }
-    public String getAddress()
+    public float getAccX()
     {
-        return Address;
+        return AccX;
+    }
+    public float getAccY()
+    {
+        return AccY;
+    }
+    public float getAccZ()
+    {
+        return AccZ;
+    }
+    public Controller.FingersStatus getFingers()
+    {
+        return Fingers;
     }
 }
