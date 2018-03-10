@@ -187,8 +187,7 @@ public class ConnectedActivity extends AppCompatActivity {
         @Override
         public void ControllerKeysCallback(int Keys,String Address)
         {
-            final String ListTitle = "Key :";
-            final String DateValue = String.format("%d", Keys);
+
         }
 
         @Override
