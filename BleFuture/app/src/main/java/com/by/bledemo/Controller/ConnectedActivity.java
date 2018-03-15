@@ -131,7 +131,7 @@ public class ConnectedActivity extends AppCompatActivity {
                 runOnUiThread(new Runnable() {
                     @Override
                     public void run() {
-                        LeftServices.setText(PosDataValue+"\n"+RecDataValue+"\n"+FigsDateValue);
+                        LeftServices.setText(FigsDateValue);
                     }
                 });
             }
@@ -160,7 +160,7 @@ public class ConnectedActivity extends AppCompatActivity {
                 runOnUiThread(new Runnable() {
                     @Override
                     public void run() {
-                        RightServices.setText(PosDataValue+"\n"+RecDataValue+"\n"+FigsDateValue);
+                        RightServices.setText(FigsDateValue);
                     }
                 });
             }
