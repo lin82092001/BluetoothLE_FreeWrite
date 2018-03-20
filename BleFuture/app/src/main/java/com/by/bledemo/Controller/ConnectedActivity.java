@@ -6,6 +6,7 @@ import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
+import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
@@ -110,28 +111,45 @@ public class ConnectedActivity extends AppCompatActivity {
             {
                 final String PosDataValue=String.format("(%d,0x%02x)\nRoll:%1.4f,\nPitch:%1.4f,\nYaw:%1.4f", Status, CMD, Roll, Pitch,Yaw);
                 final String RecDataValue=String.format("AccX:%f,\nAccY:%f,\nAccZ:%f",AccX,AccY,AccZ);
-                int i;
+                int i,j;
+                int[] De0={0,0,0,0,0},De1={0,0,0,0,0};
                 String Data = "";
+                String Data2 = "";
                 for(i = 0; i < 5; i++)
                 {
                     if(Figs.Enable[i][0])
                     {
                         if(Data.length()>0)
+                        {
                             Data = String.format("%s\nFig[%d]:%3d", Data, i, Figs.Degree[i][0]);
+                            De0[i]=Figs.Degree[i][0];
+                        }
                         else
+                        {
                             Data = String.format("Fig[%d]:%3d", i, Figs.Degree[i][0]);
+                            De0[i]=Figs.Degree[i][0];
+                        }
                         if(Figs.Enable[i][1])
                         {
                             Data = String.format("%s\nFig[%d-1]:%3d\n", Data, i, Figs.Degree[i][1]);
+                            De1[i]=Figs.Degree[i][1];
                         }
                     }
                 }
+                for(j=0;j<5;j++)
+                {
+                    if(Data2.length()>0)
+                        Data2=String.format("\n%sDiff[%d]:%3d\n",Data2,j,De0[j]-De1[j]);
+                    else
+                        Data2=String.format("\nDiff[%d]:%3d\n",j,De0[j]-De1[j]);
+                }
                 final String FigsDateValue = Data;
+                final String FigsDiff = Data2;
 
                 runOnUiThread(new Runnable() {
                     @Override
                     public void run() {
-                        LeftServices.setText(FigsDateValue);
+                        LeftServices.setText(FigsDateValue+FigsDiff);
                     }
                 });
             }
@@ -139,28 +157,45 @@ public class ConnectedActivity extends AppCompatActivity {
             {
                 final String PosDataValue=String.format("(%d,0x%02x)\nRoll:%1.4f,\nPitch:%1.4f,\nYaw:%1.4f", Status, CMD, Roll, Pitch,Yaw);
                 final String RecDataValue=String.format("AccX:%f,\nAccY:%f,\nAccZ:%f",AccX,AccY,AccZ);
-                int i;
+                int i,j;
+                int[] De0={0,0,0,0,0},De1={0,0,0,0,0};
                 String Data = "";
+                String Data2 = "";
                 for(i = 0; i < 5; i++)
                 {
                     if(Figs.Enable[i][0])
                     {
                         if(Data.length()>0)
+                        {
                             Data = String.format("%s\nFig[%d]:%3d", Data, i, Figs.Degree[i][0]);
+                            De0[i]=Figs.Degree[i][0];
+                        }
                         else
+                        {
                             Data = String.format("Fig[%d]:%3d", i, Figs.Degree[i][0]);
+                            De0[i]=Figs.Degree[i][0];
+                        }
                         if(Figs.Enable[i][1])
                         {
                             Data = String.format("%s\nFig[%d-1]:%3d\n", Data, i, Figs.Degree[i][1]);
+                            De1[i]=Figs.Degree[i][1];
                         }
                     }
                 }
+                for(j=0;j<5;j++)
+                {
+                    if(Data2.length()>0)
+                        Data2=String.format("\n%sDiff[%d]:%3d\n",Data2,j,De0[j]-De1[j]);
+                    else
+                        Data2=String.format("\nDiff[%d]:%3d\n",j,De0[j]-De1[j]);
+                }
                 final String FigsDateValue = Data;
+                final String FigsDiff = Data2;
 
                 runOnUiThread(new Runnable() {
                     @Override
                     public void run() {
-                        RightServices.setText(FigsDateValue);
+                        RightServices.setText(FigsDateValue+FigsDiff);
                     }
                 });
             }

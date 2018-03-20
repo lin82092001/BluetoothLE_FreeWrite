@@ -50,11 +50,25 @@
       <file leaf-file-name="ConnectedActivity.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/src/main/java/com/by/bledemo/Controller/ConnectedActivity.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="23">
-              <caret line="145" column="41" lean-forward="false" selection-start-line="145" selection-start-column="41" selection-end-line="145" selection-end-column="41" />
+            <state relative-caret-position="679">
+              <caret line="74" column="18" lean-forward="true" selection-start-line="74" selection-start-column="18" selection-end-line="74" selection-end-column="18" />
               <folding>
                 <element signature="imports" expanded="true" />
+                <element signature="e#4892#5088#0" expanded="true" />
+                <element signature="e#5087#5088#0" expanded="true" />
+                <element signature="e#6862#7059#0" expanded="true" />
+                <element signature="e#7058#7059#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Controller.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/by/bledemo/Controller/Controller.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-7958">
+              <caret line="19" column="13" lean-forward="false" selection-start-line="332" selection-start-column="20" selection-end-line="332" selection-end-column="35" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -62,8 +76,8 @@
       <file leaf-file-name="BasicGesture.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/src/main/java/com/by/bledemo/Gesture/BasicGesture.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1449">
-              <caret line="63" column="1" lean-forward="false" selection-start-line="63" selection-start-column="1" selection-end-line="63" selection-end-column="1" />
+            <state relative-caret-position="299">
+              <caret line="13" column="39" lean-forward="false" selection-start-line="13" selection-start-column="39" selection-end-line="13" selection-end-column="41" />
               <folding />
             </state>
           </provider>
@@ -2007,7 +2021,7 @@
       <option name="ACTIVITY_CLASS" value="" />
       <method>
         <option name="Android.Gradle.BeforeRunTask" enabled="true" />
-        <option name="com.android.instantApps.provision.BeforeRunTask" enabled="true" clearCache="false" clearProvisionedDevices="false" myTimestamp="1521097236151" />
+        <option name="com.android.instantApps.provision.BeforeRunTask" enabled="true" clearCache="false" clearProvisionedDevices="false" myTimestamp="1521539596974" />
       </method>
     </configuration>
     <configuration default="true" type="AndroidTestRunConfigurationType" factoryName="Android Instrumented Tests">
@@ -2055,7 +2069,7 @@
       </Profilers>
       <method>
         <option name="Android.Gradle.BeforeRunTask" enabled="true" />
-        <option name="com.android.instantApps.provision.BeforeRunTask" enabled="true" clearCache="false" clearProvisionedDevices="false" myTimestamp="1521097236151" />
+        <option name="com.android.instantApps.provision.BeforeRunTask" enabled="true" clearCache="false" clearProvisionedDevices="false" myTimestamp="1521539596974" />
       </method>
     </configuration>
     <configuration default="true" type="Application" factoryName="Application">
@@ -2087,6 +2101,27 @@
         </option>
         <option name="vmOptions" />
       </ExternalSystemSettings>
+      <method />
+    </configuration>
+    <configuration default="true" type="JUnit" factoryName="JUnit">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <module name="" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="METHOD_NAME" />
+      <option name="TEST_OBJECT" value="class" />
+      <option name="VM_PARAMETERS" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <envs />
+      <patterns />
       <method />
     </configuration>
     <configuration default="true" type="JarApplication" factoryName="JAR Application">
@@ -2217,7 +2252,7 @@
       <option name="ACTIVITY_CLASS" value="" />
       <method>
         <option name="Android.Gradle.BeforeRunTask" enabled="true" />
-        <option name="com.android.instantApps.provision.BeforeRunTask" enabled="true" clearCache="false" clearProvisionedDevices="false" myTimestamp="1521097236152" />
+        <option name="com.android.instantApps.provision.BeforeRunTask" enabled="true" clearCache="false" clearProvisionedDevices="false" myTimestamp="1521539596975" />
       </method>
     </configuration>
     <list size="1">
@@ -2256,9 +2291,10 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1056" extended-state="1" />
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="7" />
+    <editor active="true" />
     <layout>
-      <window_info id="Android Profiler" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Android Profiler" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25324675" sideWeight="0.5" order="13" side_tool="false" content_ui="tabs" />
       <window_info id="Build Variants" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
@@ -2274,7 +2310,7 @@
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Gradle Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="12" side_tool="true" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.1684435" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.1684435" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Gradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3299298" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Device File Explorer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="true" content_ui="tabs" />
@@ -2303,14 +2339,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="9200">
           <caret line="419" column="0" lean-forward="false" selection-start-line="419" selection-start-column="0" selection-end-line="419" selection-end-column="0" />
-          <folding>
-            <element signature="e#13645#14110#0" expanded="true" />
-            <element signature="e#14109#14110#0" expanded="true" />
-            <element signature="e#14798#15439#0" expanded="true" />
-            <element signature="e#15438#15439#0" expanded="true" />
-            <element signature="e#16623#17077#0" expanded="true" />
-            <element signature="e#17076#17077#0" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -2318,6 +2347,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="3772">
           <caret line="181" column="13" lean-forward="false" selection-start-line="181" selection-start-column="13" selection-end-line="181" selection-end-column="13" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -2325,6 +2355,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="184">
           <caret line="14" column="44" lean-forward="false" selection-start-line="14" selection-start-column="44" selection-end-line="14" selection-end-column="44" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -2334,6 +2365,10 @@
           <caret line="185" column="13" lean-forward="true" selection-start-line="185" selection-start-column="13" selection-end-line="185" selection-end-column="13" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="e#4892#5088#0" expanded="true" />
+            <element signature="e#5087#5088#0" expanded="true" />
+            <element signature="e#6862#7059#0" expanded="true" />
+            <element signature="e#7058#7059#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -2351,6 +2386,10 @@
           <caret line="141" column="43" lean-forward="false" selection-start-line="141" selection-start-column="42" selection-end-line="141" selection-end-column="48" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="e#4892#5088#0" expanded="true" />
+            <element signature="e#5087#5088#0" expanded="true" />
+            <element signature="e#6862#7059#0" expanded="true" />
+            <element signature="e#7058#7059#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -2369,14 +2408,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="9200">
           <caret line="419" column="0" lean-forward="false" selection-start-line="419" selection-start-column="0" selection-end-line="419" selection-end-column="0" />
-          <folding>
-            <element signature="e#13645#14110#0" expanded="true" />
-            <element signature="e#14109#14110#0" expanded="true" />
-            <element signature="e#14798#15439#0" expanded="true" />
-            <element signature="e#15438#15439#0" expanded="true" />
-            <element signature="e#16623#17077#0" expanded="true" />
-            <element signature="e#17076#17077#0" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -2384,6 +2416,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="7797">
           <caret line="360" column="42" lean-forward="false" selection-start-line="360" selection-start-column="42" selection-end-line="360" selection-end-column="42" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -2391,6 +2424,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="184">
           <caret line="14" column="44" lean-forward="false" selection-start-line="14" selection-start-column="44" selection-end-line="14" selection-end-column="44" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -2406,14 +2440,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="9637">
           <caret line="419" column="0" lean-forward="false" selection-start-line="419" selection-start-column="0" selection-end-line="419" selection-end-column="0" />
-          <folding>
-            <element signature="e#13645#14110#0" expanded="true" />
-            <element signature="e#14109#14110#0" expanded="true" />
-            <element signature="e#14798#15439#0" expanded="true" />
-            <element signature="e#15438#15439#0" expanded="true" />
-            <element signature="e#16623#17077#0" expanded="true" />
-            <element signature="e#17076#17077#0" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -2421,6 +2448,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="7797">
           <caret line="360" column="42" lean-forward="false" selection-start-line="360" selection-start-column="42" selection-end-line="360" selection-end-column="42" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -2428,6 +2456,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="184">
           <caret line="14" column="44" lean-forward="false" selection-start-line="14" selection-start-column="44" selection-end-line="14" selection-end-column="44" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -2437,6 +2466,10 @@
           <caret line="42" column="80" lean-forward="false" selection-start-line="42" selection-start-column="80" selection-end-line="42" selection-end-column="80" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="e#4892#5088#0" expanded="true" />
+            <element signature="e#5087#5088#0" expanded="true" />
+            <element signature="e#6862#7059#0" expanded="true" />
+            <element signature="e#7058#7059#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -2454,6 +2487,10 @@
           <caret line="276" column="29" lean-forward="false" selection-start-line="276" selection-start-column="29" selection-end-line="276" selection-end-column="29" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="e#4892#5088#0" expanded="true" />
+            <element signature="e#5087#5088#0" expanded="true" />
+            <element signature="e#6862#7059#0" expanded="true" />
+            <element signature="e#7058#7059#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -2462,6 +2499,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="5957">
           <caret line="280" column="21" lean-forward="false" selection-start-line="280" selection-start-column="21" selection-end-line="280" selection-end-column="21" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -2469,6 +2507,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="184">
           <caret line="14" column="44" lean-forward="false" selection-start-line="14" selection-start-column="44" selection-end-line="14" selection-end-column="44" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -2476,14 +2515,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="828">
           <caret line="46" column="76" lean-forward="true" selection-start-line="46" selection-start-column="76" selection-end-line="46" selection-end-column="76" />
-          <folding>
-            <element signature="e#13645#14110#0" expanded="true" />
-            <element signature="e#14109#14110#0" expanded="true" />
-            <element signature="e#14798#15439#0" expanded="true" />
-            <element signature="e#15438#15439#0" expanded="true" />
-            <element signature="e#16623#17077#0" expanded="true" />
-            <element signature="e#17076#17077#0" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -2498,14 +2530,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1150">
           <caret line="60" column="42" lean-forward="true" selection-start-line="60" selection-start-column="42" selection-end-line="60" selection-end-column="42" />
-          <folding>
-            <element signature="e#13645#14110#0" expanded="true" />
-            <element signature="e#14109#14110#0" expanded="true" />
-            <element signature="e#14798#15439#0" expanded="true" />
-            <element signature="e#15438#15439#0" expanded="true" />
-            <element signature="e#16623#17077#0" expanded="true" />
-            <element signature="e#17076#17077#0" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -2513,6 +2538,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="10603">
           <caret line="482" column="43" lean-forward="false" selection-start-line="482" selection-start-column="40" selection-end-line="482" selection-end-column="48" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -2520,6 +2546,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="184">
           <caret line="14" column="44" lean-forward="false" selection-start-line="14" selection-start-column="44" selection-end-line="14" selection-end-column="44" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -2529,6 +2556,10 @@
           <caret line="124" column="9" lean-forward="true" selection-start-line="124" selection-start-column="9" selection-end-line="124" selection-end-column="9" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="e#4892#5088#0" expanded="true" />
+            <element signature="e#5087#5088#0" expanded="true" />
+            <element signature="e#6862#7059#0" expanded="true" />
+            <element signature="e#7058#7059#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -2600,6 +2631,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="460">
           <caret line="26" column="0" lean-forward="false" selection-start-line="26" selection-start-column="0" selection-end-line="26" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -2607,6 +2639,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="277">
           <caret line="280" column="29" lean-forward="true" selection-start-line="280" selection-start-column="29" selection-end-line="280" selection-end-column="29" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -2614,6 +2647,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="460">
           <caret line="493" column="17" lean-forward="false" selection-start-line="493" selection-start-column="17" selection-end-line="493" selection-end-column="17" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -2636,42 +2670,59 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/by/bledemo/Controller/Controller.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-8969">
-          <caret line="0" column="0" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="e#13645#14110#0" expanded="true" />
-            <element signature="e#14109#14110#0" expanded="true" />
-            <element signature="e#14798#15439#0" expanded="true" />
-            <element signature="e#15438#15439#0" expanded="true" />
-            <element signature="e#16623#17077#0" expanded="true" />
-            <element signature="e#17076#17077#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/by/bledemo/DataProcess/SensorData.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-1181">
           <caret line="12" column="23" lean-forward="true" selection-start-line="12" selection-start-column="23" selection-end-line="12" selection-end-column="23" />
+          <folding>
+            <element signature="e#1519#1520#0" expanded="false" />
+            <element signature="e#1548#1549#0" expanded="false" />
+            <element signature="e#1578#1579#0" expanded="false" />
+            <element signature="e#1604#1605#0" expanded="false" />
+            <element signature="e#1637#1638#0" expanded="false" />
+            <element signature="e#1664#1665#0" expanded="false" />
+            <element signature="e#1698#1699#0" expanded="false" />
+            <element signature="e#1726#1727#0" expanded="false" />
+            <element signature="e#1758#1759#0" expanded="false" />
+            <element signature="e#1784#1785#0" expanded="false" />
+            <element signature="e#1817#1818#0" expanded="false" />
+            <element signature="e#1844#1845#0" expanded="false" />
+            <element signature="e#1877#1878#0" expanded="false" />
+            <element signature="e#1904#1905#0" expanded="false" />
+            <element signature="e#1937#1938#0" expanded="false" />
+            <element signature="e#1964#1965#0" expanded="false" />
+            <element signature="e#2019#2020#0" expanded="false" />
+            <element signature="e#2049#2050#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/by/bledemo/Gesture/BasicGesture.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1449">
-          <caret line="63" column="1" lean-forward="false" selection-start-line="63" selection-start-column="1" selection-end-line="63" selection-end-column="1" />
+        <state relative-caret-position="299">
+          <caret line="13" column="39" lean-forward="false" selection-start-line="13" selection-start-column="39" selection-end-line="13" selection-end-column="41" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/by/bledemo/Controller/Controller.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-7958">
+          <caret line="19" column="13" lean-forward="false" selection-start-line="332" selection-start-column="20" selection-end-line="332" selection-end-column="35" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/by/bledemo/Controller/ConnectedActivity.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="23">
-          <caret line="145" column="41" lean-forward="false" selection-start-line="145" selection-start-column="41" selection-end-line="145" selection-end-column="41" />
+        <state relative-caret-position="679">
+          <caret line="74" column="18" lean-forward="true" selection-start-line="74" selection-start-column="18" selection-end-line="74" selection-end-column="18" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="e#4892#5088#0" expanded="true" />
+            <element signature="e#5087#5088#0" expanded="true" />
+            <element signature="e#6862#7059#0" expanded="true" />
+            <element signature="e#7058#7059#0" expanded="true" />
           </folding>
         </state>
       </provider>
