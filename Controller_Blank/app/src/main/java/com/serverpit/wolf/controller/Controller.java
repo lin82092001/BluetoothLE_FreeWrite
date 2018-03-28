@@ -1,14 +1,11 @@
 package com.serverpit.wolf.controller;
-//import android.support.v7.app.AppCompatActivity;
+
 import android.app.Activity;
 import android.bluetooth.BluetoothAdapter;
 import android.bluetooth.BluetoothManager;
-//import android.content.Context;
 import android.util.Log;
-//import android.widget.Button;
 import android.widget.Toast;
 
-//import java.io.UnsupportedEncodingException;
 import java.nio.ByteBuffer;
 import java.nio.ByteOrder;
 import java.util.UUID;
