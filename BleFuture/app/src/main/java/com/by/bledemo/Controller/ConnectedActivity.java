@@ -114,6 +114,8 @@ public class ConnectedActivity extends AppCompatActivity {
         public void ControllerSignCallback(int Status, int CMD, float Roll, float Pitch, float Yaw,float AccX, float AccY, float AccZ,Controller.FingersStatus Figs,String Address)
         {
             String Data;
+            double RYaw = 0.0175 * Yaw + 0.2;
+            double ReAm = 70.5000d;
             /*
             String PalmsDirect="";
             int RollDirect_Binary[] = new int[]{00, 01, 10, 11};//上右左下
@@ -123,7 +125,7 @@ public class ConnectedActivity extends AppCompatActivity {
             if(LAddress == Address)
             {
                 //x y z Rotat Value
-                final String PosDataValue=String.format("(%d,0x%02x)\nRoll:%1.0f,\nPitch:%1.0f,\nYaw:%1.0f\n", Status, CMD, Roll, Pitch,Yaw);
+                final String PosDataValue=String.format("(%d,0x%02x)\nRoll:%1.0f,\nPitch:%1.0f,\nYaw:%1.0f\n", Status, CMD, Roll, Pitch, Yaw);
                 //not use
                 final String RecDataValue=String.format("AccX:%f,\nAccY:%f,\nAccZ:%f\n",AccX,AccY,AccZ);
 
@@ -175,7 +177,7 @@ public class ConnectedActivity extends AppCompatActivity {
                     if(Figs.Enable[i][0])
                     {
                         if(Data.length()>0)
-                            Data = String.format("%sFig[%d-1]:%3d\n", Data, i, Figs.Degree[i][0]);
+                            Data = String.format("%sFig[%d-1]:%d\n", Data, i, Figs.Degree[i][0]);
                         else
                             Data = String.format("Left Hand\n拇指[%d]:%3d\n\n", i, Figs.Degree[i][0]);
                         if(Figs.Enable[i][1])
@@ -191,12 +193,15 @@ public class ConnectedActivity extends AppCompatActivity {
                 final String RollDirection = String.format("%02d + %d\n\"%s\"\n\"%s\"\n", RollDirect_Flag, PitchDirect_Flag, RollDirect, PitchDirect);
                 //
 
+                //修正
+                final  String ReFigDiffData = String.format("RYaw %f\n RSin %f\n", RYaw, 75 - ReAm * Math.sin(RYaw));
+
                 //print out
                 runOnUiThread(new Runnable() {
                     @Override
                     public void run()
                     {
-                        LeftServices.setText(FigsDateValue + PosDataValue + RollDirection);
+                        LeftServices.setText(FigsDateValue + PosDataValue + RollDirection + ReFigDiffData);
                     }
                 });
 
