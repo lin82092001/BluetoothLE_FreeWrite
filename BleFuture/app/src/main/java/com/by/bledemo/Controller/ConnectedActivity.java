@@ -114,8 +114,12 @@ public class ConnectedActivity extends AppCompatActivity {
         public void ControllerSignCallback(int Status, int CMD, float Roll, float Pitch, float Yaw,float AccX, float AccY, float AccZ,Controller.FingersStatus Figs,String Address)
         {
             String Data;
+            double RRoll = Math.toRadians(Roll);//
+            double WeYaw = Math.abs(Math.sin(RRoll));//權重
+
             double RYaw = 0.0175 * Yaw + 0.2;
-            double ReAm = 70.5000d;
+            double ReAm = 71.5;//震幅
+            double ReFig = (73 - ReAm * Math.sin(RYaw)) * WeYaw;//手指修正值
             /*
             String PalmsDirect="";
             int RollDirect_Binary[] = new int[]{00, 01, 10, 11};//上右左下
@@ -177,7 +181,7 @@ public class ConnectedActivity extends AppCompatActivity {
                     if(Figs.Enable[i][0])
                     {
                         if(Data.length()>0)
-                            Data = String.format("%sFig[%d-1]:%d\n", Data, i, Figs.Degree[i][0]);
+                            Data = String.format("%sFig[%d-1]:%.0f\n", Data, i, Figs.Degree[i][0] - ReFig);
                         else
                             Data = String.format("Left Hand\n拇指[%d]:%3d\n\n", i, Figs.Degree[i][0]);
                         if(Figs.Enable[i][1])
@@ -194,7 +198,7 @@ public class ConnectedActivity extends AppCompatActivity {
                 //
 
                 //修正
-                final  String ReFigDiffData = String.format("RYaw %f\n RSin %f\n", RYaw, 75 - ReAm * Math.sin(RYaw));
+                final  String ReFigDiffData = String.format("RYaw %f\n RSin %f\n", RYaw, ReFig);
 
                 //print out
                 runOnUiThread(new Runnable() {
