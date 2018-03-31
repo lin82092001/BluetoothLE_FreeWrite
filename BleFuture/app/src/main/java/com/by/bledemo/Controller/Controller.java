@@ -7,6 +7,7 @@ import android.util.Log;
 import android.widget.Toast;
 
 import com.by.bledemo.BLE.*;
+import com.by.bledemo.DataProcess.SensorData;
 
 import java.nio.ByteBuffer;
 import java.nio.ByteOrder;
@@ -20,9 +21,13 @@ public class Controller {
     public interface ControllerCallback
     {
         void ControllerStatusCallback(int Status,int CMD,float Roll,float Pitch,float Yaw,float DisX,float DisY,float DisZ,String Address);
-        void ControllerOtherCallback(float SpeedX,float SpeedY,float SpeedZ,float AccX,float AccY,float AccZ,String Address);
+        void ControllerOtherCallback(float SpeedX, float SpeedY, float SpeedZ, float AccX, float AccY, float AccZ, String Address);
         void ControllerFingersCallback(FingersStatus Figs,String Address);
         void ControllerKeysCallback(int Keys,String Address);
+        void ControllerSignCallback(int Status,int CMD,
+                                   float Roll,float Pitch,float Yaw,
+                                   float AccX,float AccY,float AccZ,
+                                   FingersStatus Figs,String Address);
         void LostConnection();
         void DeviceValid();
     }
@@ -37,6 +42,7 @@ public class Controller {
     private BaseService RecService;
     private boolean FingersConnected;
     private boolean PosConnected;
+    SensorData sensorData;
 
     private static class Services
     {
@@ -87,7 +93,11 @@ public class Controller {
     public class FingersStatus
     {
         public boolean[][] Enable = {{false,false},{false,false},{false,false},{false,false},{false,false}};
-        public int[][] Degree = {{0,0},{0,0},{0,0},{0,0},{0,0}};
+        public int[][] Degree = {   {0,0},
+                                    {0,0},
+                                    {0,0},
+                                    {0,0},
+                                    {0,0}};
     }
     public enum Status  //Check device status
     {
@@ -121,6 +131,7 @@ public class Controller {
         LocalKeys = 0x00;
         Opened = true;
         FigStatus=new FingersStatus();
+        sensorData=new SensorData(0,0,0.0f,0.0f,0.0f,0.0f,0.0f,0.0f,FigStatus,"");
         FingersService=new BaseService("Fingers",Services.ServicesUUID[Services.SERV_Fig_UUID]);
         PosService=new BaseService("Position",Services.ServicesUUID[Services.SERV_Pos_UUID]);
         RecService=new BaseService("Rec",Services.ServicesUUID[Services.SERV_Rec_UUID]);
@@ -210,7 +221,6 @@ public class Controller {
             }
             if(RecordEnable)
             {
-                //deviceManager.SetCharacteristic(RecService, Services.Rec[Services.DATA], new byte[]{Services.ST_CFG_SENSOR_ENABLE});//Enable
                 deviceManager.SetCharacteristic(RecService, Services.Rec[Services.CONF], new byte[]{Services.ST_CFG_SENSOR_ENABLE});//Enable
             }
         }
@@ -236,7 +246,7 @@ public class Controller {
                 }
                 if(PosConnected)
                 {
-                    deviceManager.SetCharacteristic(PosService, Services.Pos[Services.CONF], new byte[]{Services.ST_CFG_SENSOR_DISABLE});//Enable
+                    deviceManager.SetCharacteristic(PosService, Services.Pos[Services.CONF], new byte[]{Services.ST_CFG_SENSOR_DISABLE});
                     PosConnected = false;
                 }
             }
@@ -327,6 +337,7 @@ public class Controller {
         @Override
         public void GotNotification(String Name, UUID CharUUID, byte[] data)
         {
+            //sensorData=new SensorData(0,0,0.0f,0.0f,0.0f,0.0f,0.0f,0.0f,FigStatus,"");
             if(Name.equals(PosService.Name()))
             {
                 final float De2Ra = (float)(Math.PI / 180.0);
@@ -362,6 +373,7 @@ public class Controller {
                         if(UserCB != null)
                         {
                             UserCB.ControllerStatusCallback(Status, CMD, Roll , Pitch , Yaw , DisX, DisY, DisZ,DeviceAddress);
+                            sensorData.setEuler(Status, CMD, Roll , Pitch , Yaw ,DeviceAddress);
                         }
                     }
                 });
@@ -391,6 +403,7 @@ public class Controller {
                                 UserCB.ControllerKeysCallback(KEY,DeviceAddress);
                             }
                             UserCB.ControllerFingersCallback(FigStatus,DeviceAddress);
+                            sensorData.setFigs(FigStatus,DeviceAddress);
                         }
                     }
                 });
@@ -420,10 +433,22 @@ public class Controller {
                         if(UserCB != null)
                         {
                             UserCB.ControllerOtherCallback(Speed[0], Speed[1], Speed[2], Acc[0], Acc[1], Acc[2],DeviceAddress);
+                            sensorData.setAcc(Acc[0], Acc[1], Acc[2],DeviceAddress);
                         }
                     }
                 });
             }
+
+            Parent.runOnUiThread(new Runnable() {
+                @Override
+                public void run()
+                {
+                    if (UserCB != null)
+                    {
+                        UserCB.ControllerSignCallback(sensorData.getStatus(), sensorData.getCMD(), sensorData.getRoll(), sensorData.getPitch(), sensorData.getYaw(), sensorData.getAccX(), sensorData.getAccY(), sensorData.getAccZ(), sensorData.getFingers(), DeviceAddress);
+                    }
+                }
+            });
         }
 
         @Override

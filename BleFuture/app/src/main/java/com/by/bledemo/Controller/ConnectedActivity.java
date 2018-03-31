@@ -6,16 +6,15 @@ import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
-import android.util.Log;
 import android.view.View;
-import android.widget.ArrayAdapter;
 import android.widget.Button;
-import android.widget.ListView;
 import android.widget.TextView;
 import android.widget.Toast;
 
 import com.by.bledemo.R;
-import com.by.bledemo.SensorData;
+
+import java.lang.reflect.Array;
+import java.util.Arrays;
 
 /**
  * Created by 林北94狂 on 2018/1/10.
@@ -24,30 +23,26 @@ import com.by.bledemo.SensorData;
 public class ConnectedActivity extends AppCompatActivity {
     private Activity me=this;
     private String LAddress,RAddress;
-    private String word="";
     private TextView LAdd;
     private TextView RAdd;
     private TextView LeftServices;
     private TextView RightServices;
-    private ArrayAdapter<String> LlistAdapter;
-    private ArrayAdapter<String> RlistAdapter;
     private Controller LDevice,RDevice;
     private boolean Paused,LOp,ROp;
-    SensorData sensorData;
-    ControllerThread left,right;
+
+    String RollDirect=""; //Roll TAG
+    String PitchDirect = "";//Pitch TAG
+    int RollDirect_Flag =  00;
+    int PitchDirect_Flag = 0;
 
     @Override
     protected void onCreate(Bundle saveInstanceState){
         super.onCreate(saveInstanceState);
         setContentView(R.layout.connected);
-        LAdd=(TextView)this.findViewById(R.id.LAdd);
-        RAdd=(TextView)this.findViewById(R.id.RAdd);
-        LeftServices=(TextView)this.findViewById(R.id.LeftServices);
-        RightServices=(TextView)this.findViewById(R.id.RightServices);
-        LlistAdapter=new ArrayAdapter<>(this,android.R.layout.simple_list_item_1);
-        RlistAdapter=new ArrayAdapter<>(this,android.R.layout.simple_list_item_1);
-//        LeftServices.setAdapter(LlistAdapter);
-//        RightServices.setAdapter(RlistAdapter);
+        LAdd=this.findViewById(R.id.LAdd);
+        //RAdd=this.findViewById(R.id.RAdd);
+        LeftServices=this.findViewById(R.id.LeftServices);
+        //RightServices=this.findViewById(R.id.RightServices);
         Paused=false;
 
         final BluetoothManager bluetoothManager=
@@ -55,39 +50,27 @@ public class ConnectedActivity extends AppCompatActivity {
 
         Intent inteData=this.getIntent();
         LAddress=inteData.getStringExtra("LeftAddress");    //Get device address from MainActivity
-        RAddress=inteData.getStringExtra("RightAddress");
+        //RAddress=inteData.getStringExtra("RightAddress");
 
         LDevice=new Controller(ConnectedActivity.this,LAddress,bluetoothManager);
-        RDevice=new Controller(ConnectedActivity.this,RAddress,bluetoothManager);
+        //RDevice=new Controller(ConnectedActivity.this,RAddress,bluetoothManager);
         LDevice.RegisterCallback(EventListener);
-        RDevice.RegisterCallback(EventListener);
-        sensorData=new SensorData(0,0,0,0,0,0,"");
-        left=new ControllerThread();
-        //right=new ControllerThread(RAddress);
+        //RDevice.RegisterCallback(EventListener);
     }
-
     public void Test(View view) //Start receiving data
     {
         if(LOp && ROp)
         {
-            left.start();
-            //right.start();
+
         }
     }
 
     public void Close(View view)
     {
-        if(LDevice.Connected() && RDevice.Connected())
+        if(LDevice.Connected()/* && RDevice.Connected()*/)
         {
-            LDevice.RegisterCallback(null);
-            RDevice.RegisterCallback(null);
             LDevice.Close();
-            RDevice.Close();
-
-            left.interrupt();
-            left=null;
-            //right.interrupt();
-            //right=null;
+            //RDevice.Close();
         }
         this.finish();
     }
@@ -98,297 +81,204 @@ public class ConnectedActivity extends AppCompatActivity {
         if(Paused)
         {
             LDevice.SetControllerAddress(LAddress);
-            RDevice.SetControllerAddress(RAddress);
+            //RDevice.SetControllerAddress(RAddress);
             Paused = false;
-
-            left.interrupt();
-            left=null;
-            //right.interrupt();
-            //right=null;
         }
         super.onResume();
     }
     @Override
     protected void onPause()
     {
-        if(LDevice.Connected() && RDevice.Connected())
+        if(LDevice.Connected() /*&& RDevice.Connected()*/)
         {
             LDevice.Close();
-            RDevice.Close();
+            //RDevice.Close();
             Paused=true;
-
-            left.interrupt();
-            left=null;
-            //right.interrupt();
-            //right=null;
         }
         super.onPause();
     }
     @Override
     protected void onDestroy()
     {
-        if(LDevice.Connected() && RDevice.Connected())
+        if(LDevice.Connected() /*&& RDevice.Connected()*/)
         {
             LDevice.Close();
-            RDevice.Close();
+            //RDevice.Close();
             Paused=true;
-
-            left.interrupt();
-            left=null;
-            //right.interrupt();
-            //right=null;
         }
         super.onDestroy();
     }
 
-    public class ControllerThread extends Thread
-    {
-        public ControllerThread(/*String Address*/)
-        {
-            //this.Address=Address;
-        }
-
-        @Override
-        public void run()
-        {
-            while (LOp&&ROp)
-            {
-                if (sensorData.getAddress().equals(LAddress))
-                {
-                    final String data=""+sensorData.getAccX()+"\n"+sensorData.getAccY()+"\n"+sensorData.getAccZ();
-                    runOnUiThread(new Runnable() {
-                        @Override
-                        public void run() {
-                            LeftServices.setText(data);
-                        }
-                    });
-                }
-                if(sensorData.getAddress().equals(RAddress))
-                {
-                    final String data=""+sensorData.getAccX()+"\n"+sensorData.getAccY()+"\n"+sensorData.getAccZ();
-                    runOnUiThread(new Runnable() {
-                        @Override
-                        public void run() {
-                            RightServices.setText(data);
-                        }
-                    });
-                }
-            }
-        }
-    }
-
     private Controller.ControllerCallback EventListener=new Controller.ControllerCallback() {   //資料回傳函數
+        @Override
+        public void ControllerSignCallback(int Status, int CMD, float Roll, float Pitch, float Yaw,float AccX, float AccY, float AccZ,Controller.FingersStatus Figs,String Address)
+        {
+            String Data;
+            double RRoll = Math.toRadians(Roll);//
+            double WeYaw = Math.abs(Math.sin(RRoll));//權重
+
+            double RYaw = 0.0175 * Yaw + 0.2;
+            double ReAm = 71.5;//震幅
+            double ReFig = (73 - ReAm * Math.sin(RYaw)) * WeYaw;//手指修正值
+            /*
+            String PalmsDirect="";
+            int RollDirect_Binary[] = new int[]{00, 01, 10, 11};//上右左下
+            int PalmsDirect_Flag =  00;
+            int PitchtoRoll_Flag = 0;
+            */
+            if(LAddress == Address)
+            {
+                //x y z Rotat Value
+                final String PosDataValue=String.format("(%d,0x%02x)\nRoll:%1.0f,\nPitch:%1.0f,\nYaw:%1.0f\n", Status, CMD, Roll, Pitch, Yaw);
+                //not use
+                final String RecDataValue=String.format("AccX:%f,\nAccY:%f,\nAccZ:%f\n",AccX,AccY,AccZ);
+
+
+                //面相
+                //PitchProcess
+                if(-45 < Pitch && Pitch < 45)
+                {
+                    PitchDirect_Flag = 0;
+                    PitchDirect = "水平";
+                }else if(Pitch < -45)
+                {
+                    PitchDirect_Flag = -1;
+                    PitchDirect = "下俯";
+                }else if(45 < Pitch)
+                {
+                    PitchDirect_Flag = 1;
+                    PitchDirect = "上仰";
+                }
+                //PitchProcess
+
+                //RollProcess
+                if(-45 < Roll && Roll < 45)
+                {
+                    RollDirect = "背上";
+                    RollDirect_Flag = 00;
+                }else if(-135 < Roll && Roll < -45)
+                {
+                    RollDirect = "背右";
+                    RollDirect_Flag = 01;
+                }else if(85 < Roll && Roll < 95)
+                {
+                    RollDirect = "背左";
+                    RollDirect_Flag = 10;
+                } else if(135 < Roll || Roll < -135)
+                {
+                    RollDirect = "背下";
+                    RollDirect_Flag = 11;
+                }
+                else if(95 < Roll && Roll < 135)
+                {
+                    RollDirect = "朝胸口";
+                }
+                //RollProcess
+                //面相
+
+                //FigDegreeValue
+                int i;
+
+                Data = "";
+                for(i = 0; i < 5; i++)
+                {
+                    if(Figs.Enable[i][0])
+                    {
+                        if(Data.length()>0)
+                            Data = String.format("%sFig[%d-1]:%.0f\n", Data, i, Figs.Degree[i][0] - ReFig);
+                        else
+                            Data = String.format("Left Hand\n拇指[%d]:%3d\n\n", i, Figs.Degree[i][0]);
+                        if(Figs.Enable[i][1])
+                        {
+                            Data = String.format("%sFig[%d-2]:%3d\n\n", Data, i, Figs.Degree[i][1]);
+                        }
+                    }
+                }
+                final String FigsDateValue = Data;
+                //FigDegreeValue
+
+                //面相
+                final String RollDirection = String.format("%02d + %d\n\"%s\"\n\"%s\"\n", RollDirect_Flag, PitchDirect_Flag, RollDirect, PitchDirect);
+                //
+
+                //修正
+                final  String ReFigDiffData = String.format("RYaw %f\n RSin %f\n", RYaw, ReFig);
+
+                //print out
+                runOnUiThread(new Runnable() {
+                    @Override
+                    public void run()
+                    {
+                        LeftServices.setText(FigsDateValue + PosDataValue + RollDirection + ReFigDiffData);
+                    }
+                });
+
+            }
+            /*if(RAddress==Address)
+            {
+                final String PosDataValue=String.format("(%d,0x%02x)\nRoll:%1.4f,\nPitch:%1.4f,\nYaw:%1.4f", Status, CMD, Roll, Pitch,Yaw);
+                final String RecDataValue=String.format("AccX:%f,\nAccY:%f,\nAccZ:%f",AccX,AccY,AccZ);
+                int i;
+
+                Data = "";
+
+                for(i = 0; i < 5; i++)
+                {
+                    if(Figs.Enable[i][0])
+                    {
+                        if(Data.length()>0)
+                            Data = String.format("%s\nFig[%d]:%3d", Data, i, Figs.Degree[i][0]);
+                        else
+                            Data = String.format("Right Hand\nFig[%d]:%3d", i, Figs.Degree[i][0]);
+                        if(Figs.Enable[i][1])
+                        {
+                            Data = String.format("%s\nFig[%d-1]:%3d\n", Data, i, Figs.Degree[i][1]);
+                        }
+                    }
+                }
+                final String FigsDateValue = Data;
+
+                runOnUiThread(new Runnable() {
+                    @Override
+                    public void run()
+                    {
+                        RightServices.setText(FigsDateValue + PosDataValue);
+                    }
+                });
+            }*/
+        }
+
         @Override
         public void ControllerStatusCallback(int Status, int CMD, float Roll, float Pitch, float Yaw, float DisX, float DisY, float DisZ,String Address)
         {
-            if(LAddress==Address)
-            {
-                final String ListTitle="Position :";
-                final String DataValue=String.format("(%d,0x%02x)Roll:%1.4f,\tPitch:%1.4f,\tYaw:%1.4f,\tDisX:%3.2f,\tDisY:%3.2f,\tDisZ:%3.2f", Status, CMD, Roll, Pitch,Yaw,DisX, DisY, DisZ);
-                final String data=ListTitle+DataValue;
-//                synchronized (LlistAdapter)
-//                {
-//                    int i;
-//                    for (i = 0; i < LlistAdapter.getCount(); i++)
-//                    {
-//                        if (LlistAdapter.getItem(i).startsWith(ListTitle))
-//                            break;
-//                    }
-//                    if (i < LlistAdapter.getCount())
-//                    {
-//                        LlistAdapter.remove(LlistAdapter.getItem(i));
-//                        LlistAdapter.insert(data, i);
-//                    }
-//                    else
-//                    {
-//                        LlistAdapter.add(data);
-//                    }
-//                    LlistAdapter.notifyDataSetChanged();
-//                }
-            }
-            if(RAddress==Address)
-            {
-                final String ListTitle="Position :";
-                final String DataValue=String.format("(%d,0x%02x)Roll:%1.4f,\tPitch:%1.4f,\tYaw:%1.4f,\tDisX:%3.2f,\tDisY:%3.2f,\tDisZ:%3.2f", Status, CMD, Roll, Pitch,Yaw,DisX, DisY, DisZ);
-                final String data=ListTitle+DataValue;
-//                synchronized (RlistAdapter)
-//                {
-//                    int i;
-//                    for (i = 0; i < RlistAdapter.getCount(); i++)
-//                    {
-//                        if (RlistAdapter.getItem(i).startsWith(ListTitle))
-//                            break;
-//                    }
-//                    if (i < RlistAdapter.getCount())
-//                    {
-//                        RlistAdapter.remove(RlistAdapter.getItem(i));
-//                        RlistAdapter.insert(data, i);
-//                    }
-//                    else
-//                    {
-//                        RlistAdapter.add(data);
-//                    }
-//                    RlistAdapter.notifyDataSetChanged();
-//                }
-            }
+
         }
 
         @Override
         public void ControllerOtherCallback(float SpeedX, float SpeedY, float SpeedZ, float AccX, float AccY, float AccZ,String Address)
         {
-            if(LAddress==Address)
-            {
-                final String ListTitle="Record :";
-                final String DataValue=String.format("SpeedX:%f,\tSpeedY:%f,\tSpeedZ:%f,\tAccX:%1.4f,\tAccY:%1.4f,\tAccZ:%1.4f",SpeedX,SpeedY,SpeedZ,AccX,AccY,AccZ);
-                final String data=ListTitle+DataValue;
-//                synchronized (LlistAdapter)
-//                {
-//                    int i;
-//                    for (i = 0; i < LlistAdapter.getCount(); i++)
-//                    {
-//                        if (LlistAdapter.getItem(i).startsWith(ListTitle))
-//                            break;
-//                    }
-//                    if (i < LlistAdapter.getCount())
-//                    {
-//                        LlistAdapter.remove(LlistAdapter.getItem(i));
-//                        LlistAdapter.insert(data, i);
-//                    }
-//                    else
-//                    {
-//                        LlistAdapter.add(data);
-//                    }
-//                    LlistAdapter.notifyDataSetChanged();
-//                }
-                sensorData.setAcc(AccX,AccY,AccZ,Address);
-            }
-            if(RAddress==Address)
-            {
-                final String ListTitle="Record :";
-                final String DataValue=String.format("SpeedX:%f,\tSpeedY:%f,\tSpeedZ:%f,\tAccX:%1.4f,\tAccY:%1.4f,\tAccZ:%1.4f",SpeedX,SpeedY,SpeedZ,AccX,AccY,AccZ);
-                final String data=ListTitle+DataValue;
-//                synchronized (RlistAdapter)
-//                {
-//                    int i;
-//                    for (i = 0; i < RlistAdapter.getCount(); i++)
-//                    {
-//                        if (RlistAdapter.getItem(i).startsWith(ListTitle))
-//                            break;
-//                    }
-//                    if (i < RlistAdapter.getCount())
-//                    {
-//                        RlistAdapter.remove(RlistAdapter.getItem(i));
-//                        RlistAdapter.insert(data, i);
-//                    }
-//                    else
-//                    {
-//                        RlistAdapter.add(data);
-//                    }
-//                    RlistAdapter.notifyDataSetChanged();
-//                }
-                sensorData.setAcc(AccX,AccY,AccZ,Address);
-            }
+
         }
 
         @Override
         public void ControllerFingersCallback(Controller.FingersStatus Figs,String Address)
         {
-            if(LAddress==Address)
-            {
-                int i, j;
-                final String ListTitle = "Fingers :";
-                String Data = "";
-                for(i = 0; i < 5; i++)
-                {
-                    if(Figs.Enable[i][0])
-                    {
-                        if(Data.length()>0)
-                            Data = String.format("%s,Fig[%d]:%3d ", Data, i, Figs.Degree[i][0]);
-                        else
-                            Data = String.format("Fig[%d]:%3d ", i, Figs.Degree[i][0]);
-                        if(Figs.Enable[i][1])
-                        {
-                            Data = String.format("%s,Fig[%d-1]:%3d ", Data, i, Figs.Degree[i][1]);
-                        }
-                    }
-                }
-                final String DateValue = Data;
-                final String data=ListTitle + DateValue;
-//                synchronized (LlistAdapter)
-//                {
-//                    for (i = 0; i < LlistAdapter.getCount(); i++)
-//                    {
-//                        if (LlistAdapter.getItem(i).startsWith(ListTitle))
-//                            break;
-//                    }
-//                    if (i < LlistAdapter.getCount())
-//                    {
-//                        LlistAdapter.remove(LlistAdapter.getItem(i));
-//                        LlistAdapter.insert(data, i);
-//                    }
-//                    else
-//                    {
-//                        LlistAdapter.add(data);
-//                    }
-//                    LlistAdapter.notifyDataSetChanged();
-//                }
-            }
-            if(RAddress==Address)
-            {
-                int i, j;
-                final String ListTitle = "Fingers :";
-                String Data = "";
-                for(i = 0; i < 5; i++)
-                {
-                    if(Figs.Enable[i][0])
-                    {
-                        if(Data.length()>0)
-                            Data = String.format("%s,Fig[%d]:%3d ", Data, i, Figs.Degree[i][0]);
-                        else
-                            Data = String.format("Fig[%d]:%3d ", i, Figs.Degree[i][0]);
-                        if(Figs.Enable[i][1])
-                        {
-                            Data = String.format("%s,Fig[%d-1]:%3d ", Data, i, Figs.Degree[i][1]);
-                        }
-                    }
-                }
-                final String DateValue = Data;
-                final String data=ListTitle + DateValue;
-//                synchronized (RlistAdapter)
-//                {
-//                    for (i = 0; i < RlistAdapter.getCount(); i++)
-//                    {
-//                        if (RlistAdapter.getItem(i).startsWith(ListTitle))
-//                            break;
-//                    }
-//                    if (i < RlistAdapter.getCount())
-//                    {
-//                        RlistAdapter.remove(RlistAdapter.getItem(i));
-//                        RlistAdapter.insert(data, i);
-//                    }
-//                    else
-//                    {
-//                        RlistAdapter.add(data);
-//                    }
-//                    RlistAdapter.notifyDataSetChanged();
-//                }
-            }
+
         }
 
         @Override
         public void ControllerKeysCallback(int Keys,String Address)
         {
-            final String ListTitle = "Key :";
-            final String DateValue = String.format("%d", Keys);
+
         }
 
         @Override
         public void LostConnection()
         {
             Toast.makeText(me, "Device lost connection.",Toast.LENGTH_SHORT).show();
-            Button bt = (Button)me.findViewById(R.id.Test);
+            Button bt = me.findViewById(R.id.Test);
             bt.setEnabled(false);
-            bt = (Button)me.findViewById(R.id.Close);
+            bt = me.findViewById(R.id.Close);
             bt.setEnabled(false);
         }
 
@@ -396,18 +286,18 @@ public class ConnectedActivity extends AppCompatActivity {
         public void DeviceValid()
         {
             Toast.makeText(me, "Device ready.",Toast.LENGTH_SHORT).show();
-            Button bt = (Button)me.findViewById(R.id.Test);
+            Button bt = me.findViewById(R.id.Test);
             bt.setEnabled(true);
             if(LDevice.GetCurrentStatus()==Controller.Status.DeviceConfigured)
             {
                 LAdd.setText(LDevice.DeviceName());
                 LOp=LDevice.Open(true,true);
             }
-            if(RDevice.GetCurrentStatus()==Controller.Status.DeviceConfigured)
+            /*if(RDevice.GetCurrentStatus()==Controller.Status.DeviceConfigured)
             {
                 RAdd.setText(RDevice.DeviceName());
                 ROp=RDevice.Open(true,true);
-            }
+            }*/
         }
     };
 }

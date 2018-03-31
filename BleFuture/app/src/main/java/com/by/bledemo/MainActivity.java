@@ -61,14 +61,14 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
         Connect=(Button)this.findViewById(R.id.Connect);
         LeftHand=(TextView)this.findViewById(R.id.LeftHand);
-        RightHand=(TextView)this.findViewById(R.id.RightHand);
+        //RightHand=(TextView)this.findViewById(R.id.RightHand);
         scanState=(TextView)this.findViewById(R.id.scanState);
         LeftDeviceList=(ListView)this.findViewById(R.id.LeftDeviceList);
-        RightDeviceList=(ListView)this.findViewById(R.id.RightDeviceList);
+        //RightDeviceList=(ListView)this.findViewById(R.id.RightDeviceList);
         DeviceArray=new ArrayList<>();
         listAdapter=new ArrayAdapter<>(this,android.R.layout.simple_list_item_1);
         LeftDeviceList.setAdapter(listAdapter);
-        RightDeviceList.setAdapter(listAdapter);
+        //RightDeviceList.setAdapter(listAdapter);
 
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.M) {   //提供應用程式存取定位權限
             if (this.checkSelfPermission(Manifest.permission.ACCESS_COARSE_LOCATION) != PackageManager.PERMISSION_GRANTED) {
@@ -130,7 +130,7 @@ public class MainActivity extends AppCompatActivity {
                         LeftHand.setText(LeftAddress);
                     }
                 });
-                RightDeviceList.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+                /*RightDeviceList.setOnItemClickListener(new AdapterView.OnItemClickListener() {
                     @Override
                     public void onItemClick(AdapterView<?> parent, View view, int position, long id)
                     {
@@ -138,7 +138,7 @@ public class MainActivity extends AppCompatActivity {
                         RightAddress=device.getAddress();
                         RightHand.setText(RightAddress);
                     }
-                });
+                });*/
                 Connect.setOnClickListener(new View.OnClickListener() {
                     @Override
                     public void onClick(View v) {
@@ -166,7 +166,7 @@ public class MainActivity extends AppCompatActivity {
                                 state=BluetoothState.CONNECTING;
                                 break;
                             case CONNECTING:
-                                connectToDevice(LeftAddress,RightAddress);
+                                connectToDevice(LeftAddress);
                                 state=BluetoothState.SELECT_DEVICE;
                                 break;
                         }
@@ -210,9 +210,9 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void run() {
                 LeftAddress="";
-                RightAddress="";
+                //RightAddress="";
                 LeftHand.setText(R.string.Left);
-                RightHand.setText(R.string.Right);
+                //RightHand.setText(R.string.Right);
                 state=BluetoothState.SELECT_DEVICE;
                 listAdapter.clear();
                 listAdapter.notifyDataSetChanged();
@@ -287,13 +287,13 @@ public class MainActivity extends AppCompatActivity {
         }
     };
 
-    public void connectToDevice(String LAddress,String RAddress)
+    public void connectToDevice(String LAddress/*,String RAddress*/)
     {
         //建立一個Intent，將從此Activity進到ConnectedActivity中在ConnectedActivity中將與BLE Device連線，並互相溝通
         Intent intent=new Intent(MainActivity.this, ConnectedActivity.class);
         //將兩個device address存到ConnectedActivity，以供ConnectedActivity使用
         intent.putExtra("LeftAddress",LAddress);
-        intent.putExtra("RightAddress",RAddress);
+        //intent.putExtra("RightAddress",RAddress);
         scanLeDevice(false);// will stop after first device detection
         startActivity(intent);
     }
