@@ -30,11 +30,6 @@ public class ConnectedActivity extends AppCompatActivity {
     private Controller LDevice,RDevice;
     private boolean Paused,LOp,ROp;
 
-    String RollDirect=""; //Roll TAG
-    String PitchDirect = "";//Pitch TAG
-    int RollDirect_Flag =  00;
-    int PitchDirect_Flag = 0;
-
     @Override
     protected void onCreate(Bundle saveInstanceState){
         super.onCreate(saveInstanceState);
@@ -109,6 +104,14 @@ public class ConnectedActivity extends AppCompatActivity {
         super.onDestroy();
     }
 
+    String RollDirect=""; //Roll TAG
+    String PitchDirect = "";//Pitch TAG
+    public int RollDirect_Flag =  00;
+    public int PitchDirect_Flag = 0;
+
+    public String FigCode[] = {"00", "00", "00", "00", "0"};
+    public String FigCodeTotal;
+
     private Controller.ControllerCallback EventListener=new Controller.ControllerCallback() {   //資料回傳函數
         @Override
         public void ControllerSignCallback(int Status, int CMD, float Roll, float Pitch, float Yaw,float AccX, float AccY, float AccZ,Controller.FingersStatus Figs,String Address)
@@ -118,14 +121,9 @@ public class ConnectedActivity extends AppCompatActivity {
             double WeYaw = Math.abs(Math.sin(RRoll));//權重
 
             double RYaw = 0.0175 * Yaw + 0.2;
-            double ReAm = 71.5;//震幅
+            double ReAm = 72;//震幅
             double ReFig = (73 - ReAm * Math.sin(RYaw)) * WeYaw;//手指修正值
-            /*
-            String PalmsDirect="";
-            int RollDirect_Binary[] = new int[]{00, 01, 10, 11};//上右左下
-            int PalmsDirect_Flag =  00;
-            int PitchtoRoll_Flag = 0;
-            */
+
             if(LAddress == Address)
             {
                 //x y z Rotat Value
@@ -139,34 +137,34 @@ public class ConnectedActivity extends AppCompatActivity {
                 if(-45 < Pitch && Pitch < 45)
                 {
                     PitchDirect_Flag = 0;
-                    PitchDirect = "水平";
+                    PitchDirect = "OnChest";
                 }else if(Pitch < -45)
                 {
                     PitchDirect_Flag = -1;
-                    PitchDirect = "下俯";
+                    PitchDirect = "Drop";
                 }else if(45 < Pitch)
                 {
                     PitchDirect_Flag = 1;
-                    PitchDirect = "上仰";
+                    PitchDirect = "Raise";
                 }
                 //PitchProcess
 
                 //RollProcess
                 if(-45 < Roll && Roll < 45)
                 {
-                    RollDirect = "背上";
+                    RollDirect = "Downward";
                     RollDirect_Flag = 00;
                 }else if(-135 < Roll && Roll < -45)
                 {
-                    RollDirect = "背右";
+                    RollDirect = "Outward";
                     RollDirect_Flag = 01;
                 }else if(45 < Roll && Roll < 135)
                 {
-                    RollDirect = "背左";
+                    RollDirect = "Inward";
                     RollDirect_Flag = 10;
                 } else if(135 < Roll || Roll < -135)
                 {
-                    RollDirect = "背下";
+                    RollDirect = "Upward";
                     RollDirect_Flag = 11;
                 }
                 //RollProcess
@@ -180,8 +178,8 @@ public class ConnectedActivity extends AppCompatActivity {
                 {
                     if(Figs.Enable[i][0])
                     {
-                        if(Data.length()>0)
-                            Data = String.format("%sFig[%d-1]:%.0f\n", Data, i, Figs.Degree[i][0] - ReFig);
+                        if(Data.length() > 0)
+                            Data = String.format("%sFig[%d-1]:%.0f\n", Data, i, Figs.Degree[i][0]);// - ReFig);
                         else
                             Data = String.format("Left Hand\n拇指[%d]:%3d\n\n", i, Figs.Degree[i][0]);
                         if(Figs.Enable[i][1])
@@ -193,19 +191,46 @@ public class ConnectedActivity extends AppCompatActivity {
                 final String FigsDateValue = Data;
                 //FigDegreeValue
 
+                for(i = 0; i < 5; i++)
+                {
+                    if(Figs.Enable[i][0] && !Figs.Enable[i][1])
+                    {
+                        if(Figs.Degree[i][0] > 45){
+                            FigCode[i] = "1";
+                        }else{
+                            FigCode[i] = "0";
+                        }
+                    }else
+                    {
+                        if(Figs.Degree[i][0] > 45 && Figs.Degree[i][1] > 45){
+                            FigCode[i] = "11";
+                        }else if(Figs.Degree[i][0] < 45 && Figs.Degree[i][1] > 45){
+                            FigCode[i] = "10";
+                        }else if(Figs.Degree[i][0] > 45 && Figs.Degree[i][1] < 45){
+                            FigCode[i] = "01";
+                        }else{
+                            FigCode[i] = "00";
+                        }
+                    }
+                }
+                for(i = 0; i < 5; i++){
+                    FigCodeTotal = String.format("%s%s", FigCodeTotal, FigCode[i]);
+                }
+
+
                 //面相
                 final String RollDirection = String.format("%02d + %d\n\"%s\"\n\"%s\"\n", RollDirect_Flag, PitchDirect_Flag, RollDirect, PitchDirect);
                 //
 
                 //修正
-                final  String ReFigDiffData = String.format("RYaw %f\n RSin %f\n", RYaw, ReFig);
+                //final  String ReFigDiffData = String.format("RYaw %f\n RSin %f\n", RYaw, ReFig);
 
                 //print out
                 runOnUiThread(new Runnable() {
                     @Override
                     public void run()
                     {
-                        LeftServices.setText(FigsDateValue + PosDataValue + RollDirection + ReFigDiffData);
+                        LeftServices.setText(FigsDateValue + PosDataValue + RollDirection);
                     }
                 });
 
