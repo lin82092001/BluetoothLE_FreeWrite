@@ -11,6 +11,7 @@ import android.widget.Button;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.by.bledemo.DataProcess.RecognitionWorker;
 import com.by.bledemo.R;
 
 import java.lang.reflect.Array;
@@ -29,6 +30,18 @@ public class ConnectedActivity extends AppCompatActivity {
     private TextView RightServices;
     private Controller LDevice,RDevice;
     private boolean Paused,LOp,ROp;
+
+    private String LeftDirect="";
+    private int LeftDirectCode =  00;
+    private String LeftFigCode[] = {"00", "00", "00", "00", "0"};
+    private String LeftFigCodeTotal;
+
+    private String RightDirect="";
+    private int RightDirectCode =  00;
+    private String RightFigCode[] = {"00", "00", "00", "00", "0"};
+    private String RightFigCodeTotal;
+
+    RecognitionWorker RecognitionWorker;
 
     @Override
     protected void onCreate(Bundle saveInstanceState){
@@ -104,169 +117,185 @@ public class ConnectedActivity extends AppCompatActivity {
         super.onDestroy();
     }
 
-    String RollDirect=""; //Roll TAG
-    String PitchDirect = "";//Pitch TAG
-    public int RollDirect_Flag =  00;
-    public int PitchDirect_Flag = 0;
-
-    public String FigCode[] = {"00", "00", "00", "00", "0"};
-    public String FigCodeTotal;
-
     private Controller.ControllerCallback EventListener=new Controller.ControllerCallback() {   //資料回傳函數
         @Override
         public void ControllerSignCallback(int Status, int CMD, float Roll, float Pitch, float Yaw,float AccX, float AccY, float AccZ,Controller.FingersStatus Figs,String Address)
         {
-            String Data;
-            double RRoll = Math.toRadians(Roll);//
-            double WeYaw = Math.abs(Math.sin(RRoll));//權重
-
-            double RYaw = 0.0175 * Yaw + 0.2;
-            double ReAm = 72;//震幅
-            double ReFig = (73 - ReAm * Math.sin(RYaw)) * WeYaw;//手指修正值
-
             if(LAddress == Address)
             {
                 //x y z Rotat Value
-                final String PosDataValue=String.format("(%d,0x%02x)\nRoll:%1.0f,\nPitch:%1.0f,\nYaw:%1.0f\n", Status, CMD, Roll, Pitch, Yaw);
+                final String LeftPosDataValue = String.format("(%d,0x%02x)\nRoll:%1.0f,\nPitch:%1.0f,\nYaw:%1.0f\n", Status, CMD, Roll, Pitch, Yaw);
                 //not use
-                final String RecDataValue=String.format("AccX:%f,\nAccY:%f,\nAccZ:%f\n",AccX,AccY,AccZ);
+                final String RecDataValue = String.format("AccX:%f,\nAccY:%f,\nAccZ:%f\n",AccX,AccY,AccZ);
 
 
                 //面相
                 //PitchProcess
                 if(-45 < Pitch && Pitch < 45)
                 {
-                    PitchDirect_Flag = 0;
-                    PitchDirect = "OnChest";
+                    if(-45 < Roll && Roll < 45)
+                    {
+                        LeftDirect = "Downward";
+                        LeftDirectCode = 00;
+                    }else if(-135 < Roll && Roll < -45)
+                    {
+                        LeftDirect = "Outward";
+                        LeftDirectCode = 01;
+                    }else if(45 < Roll && Roll < 135)
+                    {
+                        LeftDirect = "Inward";
+                        LeftDirectCode = 10;
+                    } else if(135 < Roll || Roll < -135)
+                    {
+                        LeftDirect = "Upward";
+                        LeftDirectCode = 11;
+                    }
+                    //RollProcess
                 }else if(Pitch < -45)
                 {
-                    PitchDirect_Flag = -1;
-                    PitchDirect = "Drop";
+                    LeftDirect = "DontCare";
+                    LeftDirectCode = -1;
                 }else if(45 < Pitch)
                 {
-                    PitchDirect_Flag = 1;
-                    PitchDirect = "Raise";
+                    LeftDirect = "Raise";
+                    LeftDirectCode = 90;
                 }
-                //PitchProcess
+                //面向
 
-                //RollProcess
-                if(-45 < Roll && Roll < 45)
-                {
-                    RollDirect = "Downward";
-                    RollDirect_Flag = 00;
-                }else if(-135 < Roll && Roll < -45)
-                {
-                    RollDirect = "Outward";
-                    RollDirect_Flag = 01;
-                }else if(45 < Roll && Roll < 135)
-                {
-                    RollDirect = "Inward";
-                    RollDirect_Flag = 10;
-                } else if(135 < Roll || Roll < -135)
-                {
-                    RollDirect = "Upward";
-                    RollDirect_Flag = 11;
-                }
-                //RollProcess
-                //面相
-
-                //FigDegreeValue
-                int i;
-
-                Data = "";
-                for(i = 0; i < 5; i++)
-                {
-                    if(Figs.Enable[i][0])
-                    {
-                        if(Data.length() > 0)
-                            Data = String.format("%sFig[%d-1]:%.0f\n", Data, i, Figs.Degree[i][0]);// - ReFig);
-                        else
-                            Data = String.format("Left Hand\n拇指[%d]:%3d\n\n", i, Figs.Degree[i][0]);
-                        if(Figs.Enable[i][1])
-                        {
-                            Data = String.format("%sFig[%d-2]:%3d\n\n", Data, i, Figs.Degree[i][1]);
-                        }
-                    }
-                }
-                final String FigsDateValue = Data;
-                //FigDegreeValue
-
-                for(i = 0; i < 5; i++)
+                //FigCode
+                for(int i = 0; i < 5; i++)
                 {
                     if(Figs.Enable[i][0] && !Figs.Enable[i][1])
                     {
                         if(Figs.Degree[i][0] > 45){
-                            FigCode[i] = "1";
+                            LeftFigCode[i] = "1";
                         }else{
-                            FigCode[i] = "0";
+                            LeftFigCode[i] = "0";
                         }
                     }else
                     {
                         if(Figs.Degree[i][0] > 45 && Figs.Degree[i][1] > 45){
-                            FigCode[i] = "11";
+                            LeftFigCode[i] = "11";
                         }else if(Figs.Degree[i][0] < 45 && Figs.Degree[i][1] > 45){
-                            FigCode[i] = "10";
+                            LeftFigCode[i] = "10";
                         }else if(Figs.Degree[i][0] > 45 && Figs.Degree[i][1] < 45){
-                            FigCode[i] = "01";
+                            LeftFigCode[i] = "01";
                         }else{
-                            FigCode[i] = "00";
+                            LeftFigCode[i] = "00";
                         }
                     }
                 }
-                for(i = 0; i < 5; i++){
-                    FigCodeTotal = String.format("%s%s", FigCodeTotal, FigCode[i]);
+                LeftFigCodeTotal = String.format("%s%s", LeftFigCodeTotal, LeftFigCode[0]);
+                for(int i = 3; i > 0; i--){
+                    LeftFigCodeTotal = String.format("%s%s", LeftFigCodeTotal, LeftFigCode[i]);
                 }
-
+                LeftFigCodeTotal = String.format("%s%s", LeftFigCodeTotal, LeftFigCode[4]);
+                //FigCode
 
                 //面相
-                final String RollDirection = String.format("%02d + %d\n\"%s\"\n\"%s\"\n", RollDirect_Flag, PitchDirect_Flag, RollDirect, PitchDirect);
+                final String LeftDirection = String.format("%02d\n\"%s\"\n", LeftDirectCode, LeftDirect);
                 //
 
-                //修正
-                //final  String ReFigDiffData = String.format("RYaw %f\n RSin %f\n", RYaw, ReFig);
-
-                //print out
                 runOnUiThread(new Runnable() {
                     @Override
                     public void run()
                     {
-                        LeftServices.setText(FigsDateValue + PosDataValue + RollDirection);
+                        LeftServices.setText(LeftFigCodeTotal + LeftDirection);
                     }
                 });
 
             }
-            /*if(RAddress==Address)
+
+            //Right
+            if(RAddress == Address)
             {
                 final String PosDataValue=String.format("(%d,0x%02x)\nRoll:%1.4f,\nPitch:%1.4f,\nYaw:%1.4f", Status, CMD, Roll, Pitch,Yaw);
-                final String RecDataValue=String.format("AccX:%f,\nAccY:%f,\nAccZ:%f",AccX,AccY,AccZ);
-                int i;
+                final String RecDataValue = String.format("AccX:%f,\nAccY:%f,\nAccZ:%f",AccX,AccY,AccZ);
 
-                Data = "";
-
-                for(i = 0; i < 5; i++)
+                //面向
+                //PitchProcess
+                if(-45 < Pitch && Pitch < 45)
                 {
-                    if(Figs.Enable[i][0])
+                    //PitchDirect_Flag = 0;
+                    //PitchDirect = "OnChest";
+                    //RollProcess
+                    if(-45 < Roll && Roll < 45)
                     {
-                        if(Data.length()>0)
-                            Data = String.format("%s\nFig[%d]:%3d", Data, i, Figs.Degree[i][0]);
-                        else
-                            Data = String.format("Right Hand\nFig[%d]:%3d", i, Figs.Degree[i][0]);
-                        if(Figs.Enable[i][1])
-                        {
-                            Data = String.format("%s\nFig[%d-1]:%3d\n", Data, i, Figs.Degree[i][1]);
+                        RightDirect = "Downward";
+                        RightDirectCode = 00;
+                    }else if(-135 < Roll && Roll < -45)
+                    {
+                        RightDirect = "Inward";
+                        RightDirectCode = 01;
+                    }else if(45 < Roll && Roll < 135)
+                    {
+                        RightDirect = "Outward";
+                        RightDirectCode = 10;
+                    } else if(135 < Roll || Roll < -135)
+                    {
+                        RightDirect = "Upward";
+                        RightDirectCode = 11;
+                    }
+                    //RollProcess
+                }else if(Pitch < -45)
+                {
+                    RightDirect = "DontCare";
+                    RightDirectCode = -1;
+                }else if(45 < Pitch)
+                {
+                    RightDirect = "Raise";
+                    RightDirectCode = 90;
+                }
+                //面向
+
+                //FigCode
+                for(int i = 0; i < 5; i++)
+                {
+                    if(Figs.Enable[i][0] && !Figs.Enable[i][1])
+                    {
+                        if(Figs.Degree[i][0] > 45){
+                            RightFigCode[i] = "1";
+                        }else{
+                            RightFigCode[i] = "0";
+                        }
+                    }else
+                    {
+                        if(Figs.Degree[i][0] > 45 && Figs.Degree[i][1] > 45){
+                            RightFigCode[i] = "11";
+                        }else if(Figs.Degree[i][0] < 45 && Figs.Degree[i][1] > 45){
+                            RightFigCode[i] = "10";
+                        }else if(Figs.Degree[i][0] > 45 && Figs.Degree[i][1] < 45){
+                            RightFigCode[i] = "01";
+                        }else{
+                            RightFigCode[i] = "00";
                         }
                     }
                 }
-                final String FigsDateValue = Data;
+                for(int i = 0; i < 5; i++){
+                    RightFigCodeTotal = String.format("%s%s", RightFigCodeTotal, RightFigCode[i]);
+                }
+                //FigCode
+
+                //面相
+                final String RightDirection = String.format("%02d\n\"%s\"\n", LeftDirectCode, LeftDirect);
 
                 runOnUiThread(new Runnable() {
                     @Override
                     public void run()
                     {
-                        RightServices.setText(FigsDateValue + PosDataValue);
+                        RightServices.setText(RightFigCodeTotal + RightDirection);
+
                     }
                 });
-            }*/
+            }
+
+            for (int Loop1 = 0; Loop1 < RecognitionWorker.handRecognitions.size(); Loop1++) {
+                /*
+                if(RecognitionWorker.handRecognitions.get(Loop1).MultiMatcher() == true) {
+
+                }
+                */
+            }
         }
 
         @Override

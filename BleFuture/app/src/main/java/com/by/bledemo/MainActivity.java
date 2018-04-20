@@ -172,6 +172,7 @@ public class MainActivity extends AppCompatActivity {
                         }
                     }
                 });
+
             }
         });
     }
@@ -297,5 +298,4 @@ public class MainActivity extends AppCompatActivity {
         scanLeDevice(false);// will stop after first device detection
         startActivity(intent);
     }
-
 }

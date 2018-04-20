@@ -9,12 +9,8 @@ public class BasicGesture {
     * 0-直
     * 1-彎
     * */
-    //兩段的手指
-    public static final String F11 = "11";
-    public static final String F10 = "10";
-    public static final String F01 = "01";
-    public static final String F00 = "00";
-    //大拇指
-    public static final String T1 = "1";
-    public static final String T0 = "0";
+    public static final String DontCare = "xxxxxxxxx";
+    public static final String hand = "000000000";
+    public static final String one= "100111111";
+    public static final String zero = "111111111";
 }
