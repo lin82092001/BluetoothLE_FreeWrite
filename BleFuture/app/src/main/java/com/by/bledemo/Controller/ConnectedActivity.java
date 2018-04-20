@@ -32,12 +32,12 @@ public class ConnectedActivity extends AppCompatActivity {
     private boolean Paused,LOp,ROp;
 
     private String LeftDirect="";
-    private int LeftDirectCode =  00;
+    private String LeftDirectCode =  "00";
     private String LeftFigCode[] = {"00", "00", "00", "00", "0"};
     private String LeftFigCodeTotal;
 
     private String RightDirect="";
-    private int RightDirectCode =  00;
+    private String RightDirectCode =  "00";
     private String RightFigCode[] = {"00", "00", "00", "00", "0"};
     private String RightFigCodeTotal;
 
@@ -121,6 +121,7 @@ public class ConnectedActivity extends AppCompatActivity {
         @Override
         public void ControllerSignCallback(int Status, int CMD, float Roll, float Pitch, float Yaw,float AccX, float AccY, float AccZ,Controller.FingersStatus Figs,String Address)
         {
+            int MatchingTime = 0;
             if(LAddress == Address)
             {
                 //x y z Rotat Value
@@ -136,29 +137,29 @@ public class ConnectedActivity extends AppCompatActivity {
                     if(-45 < Roll && Roll < 45)
                     {
                         LeftDirect = "Downward";
-                        LeftDirectCode = 00;
+                        LeftDirectCode = "00";
                     }else if(-135 < Roll && Roll < -45)
                     {
                         LeftDirect = "Outward";
-                        LeftDirectCode = 01;
+                        LeftDirectCode = "01";
                     }else if(45 < Roll && Roll < 135)
                     {
                         LeftDirect = "Inward";
-                        LeftDirectCode = 10;
+                        LeftDirectCode = "10";
                     } else if(135 < Roll || Roll < -135)
                     {
                         LeftDirect = "Upward";
-                        LeftDirectCode = 11;
+                        LeftDirectCode = "11";
                     }
                     //RollProcess
                 }else if(Pitch < -45)
                 {
                     LeftDirect = "DontCare";
-                    LeftDirectCode = -1;
+                    LeftDirectCode = "-1";
                 }else if(45 < Pitch)
                 {
                     LeftDirect = "Raise";
-                    LeftDirectCode = 90;
+                    LeftDirectCode = "90";
                 }
                 //面向
 
@@ -193,7 +194,7 @@ public class ConnectedActivity extends AppCompatActivity {
                 //FigCode
 
                 //面相
-                final String LeftDirection = String.format("%02d\n\"%s\"\n", LeftDirectCode, LeftDirect);
+                final String LeftDirection = String.format("%s\n\"%s\"\n", LeftDirectCode, LeftDirect);
                 //
 
                 runOnUiThread(new Runnable() {
@@ -222,29 +223,29 @@ public class ConnectedActivity extends AppCompatActivity {
                     if(-45 < Roll && Roll < 45)
                     {
                         RightDirect = "Downward";
-                        RightDirectCode = 00;
+                        RightDirectCode = "00";
                     }else if(-135 < Roll && Roll < -45)
                     {
                         RightDirect = "Inward";
-                        RightDirectCode = 01;
+                        RightDirectCode = "01";
                     }else if(45 < Roll && Roll < 135)
                     {
                         RightDirect = "Outward";
-                        RightDirectCode = 10;
+                        RightDirectCode = "10";
                     } else if(135 < Roll || Roll < -135)
                     {
                         RightDirect = "Upward";
-                        RightDirectCode = 11;
+                        RightDirectCode = "11";
                     }
                     //RollProcess
                 }else if(Pitch < -45)
                 {
                     RightDirect = "DontCare";
-                    RightDirectCode = -1;
+                    RightDirectCode = "-1";
                 }else if(45 < Pitch)
                 {
                     RightDirect = "Raise";
-                    RightDirectCode = 90;
+                    RightDirectCode = "90";
                 }
                 //面向
 
@@ -277,7 +278,7 @@ public class ConnectedActivity extends AppCompatActivity {
                 //FigCode
 
                 //面相
-                final String RightDirection = String.format("%02d\n\"%s\"\n", LeftDirectCode, LeftDirect);
+                final String RightDirection = String.format("%s\n\"%s\"\n", RightDirectCode, RightDirect);
 
                 runOnUiThread(new Runnable() {
                     @Override
@@ -290,11 +291,16 @@ public class ConnectedActivity extends AppCompatActivity {
             }
 
             for (int Loop1 = 0; Loop1 < RecognitionWorker.handRecognitions.size(); Loop1++) {
-                /*
-                if(RecognitionWorker.handRecognitions.get(Loop1).MultiMatcher() == true) {
+
+                if(RecognitionWorker.handRecognitions.get(Loop1).MultiMatcher(LeftDirectCode, RightDirectCode, LeftFigCodeTotal, RightFigCodeTotal) == true) {
+                    MatchingTime = MatchingTime + 1;
+                    if(MatchingTime == 2){
+                        MatchingTime = 0;
+
+                    }
 
                 }
-                */
+
             }
         }
 
