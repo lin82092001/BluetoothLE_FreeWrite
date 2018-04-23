@@ -5,6 +5,7 @@ import android.bluetooth.BluetoothManager;
 import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
+import android.os.Message;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.Button;
@@ -13,7 +14,6 @@ import android.widget.Toast;
 
 import com.by.bledemo.DataProcess.RecognitionWorker;
 import com.by.bledemo.R;
-
 import java.lang.reflect.Array;
 import java.util.Arrays;
 
@@ -42,6 +42,18 @@ public class ConnectedActivity extends AppCompatActivity {
     private String RightFigCodeTotal;
 
     RecognitionWorker RecognitionWorker;
+
+    private static Toast toast;
+    private static void NotLineToast(final Context context, final String text, final int ShowTime){
+
+        if(toast == null){
+            toast = android.widget.Toast.makeText(context, text, ShowTime);
+        }else{
+            toast.setText(text);
+            toast.setDuration(ShowTime);
+        }
+        toast.show();
+    }
 
     @Override
     protected void onCreate(Bundle saveInstanceState){
@@ -159,7 +171,7 @@ public class ConnectedActivity extends AppCompatActivity {
                 }else if(45 < Pitch)
                 {
                     LeftDirect = "Raise";
-                    LeftDirectCode = "90";
+                    LeftDirectCode = "99";
                 }
                 //面向
 
@@ -186,15 +198,15 @@ public class ConnectedActivity extends AppCompatActivity {
                         }
                     }
                 }
-                LeftFigCodeTotal = String.format("%s%s", LeftFigCodeTotal, LeftFigCode[0]);
+                LeftFigCodeTotal = LeftFigCode[0];
                 for(int i = 3; i > 0; i--){
-                    LeftFigCodeTotal = String.format("%s%s", LeftFigCodeTotal, LeftFigCode[i]);
+                    LeftFigCodeTotal = LeftFigCodeTotal + LeftFigCode[i];
                 }
-                LeftFigCodeTotal = String.format("%s%s", LeftFigCodeTotal, LeftFigCode[4]);
+                LeftFigCodeTotal = LeftFigCodeTotal + LeftFigCode[4];
                 //FigCode
 
                 //面相
-                final String LeftDirection = String.format("%s\n\"%s\"\n", LeftDirectCode, LeftDirect);
+                final String LeftDirection = String.format("\n%s\n\"%s\"\n", LeftDirectCode, LeftDirect);
                 //
 
                 runOnUiThread(new Runnable() {
@@ -245,7 +257,7 @@ public class ConnectedActivity extends AppCompatActivity {
                 }else if(45 < Pitch)
                 {
                     RightDirect = "Raise";
-                    RightDirectCode = "90";
+                    RightDirectCode = "99";
                 }
                 //面向
 
@@ -272,8 +284,9 @@ public class ConnectedActivity extends AppCompatActivity {
                         }
                     }
                 }
-                for(int i = 0; i < 5; i++){
-                    RightFigCodeTotal = String.format("%s%s", RightFigCodeTotal, RightFigCode[i]);
+                RightFigCodeTotal = RightFigCode[0];
+                for(int i = 1; i < 5; i++){
+                    RightFigCodeTotal = RightFigCodeTotal + RightFigCode[i];
                 }
                 //FigCode
 
@@ -289,7 +302,7 @@ public class ConnectedActivity extends AppCompatActivity {
                     }
                 });
             }
-
+            /*
             for (int Loop1 = 0; Loop1 < RecognitionWorker.handRecognitions.size(); Loop1++) {
 
                 if(RecognitionWorker.handRecognitions.get(Loop1).MultiMatcher(LeftDirectCode, RightDirectCode, LeftFigCodeTotal, RightFigCodeTotal) == true) {
@@ -297,11 +310,13 @@ public class ConnectedActivity extends AppCompatActivity {
                     if(MatchingTime == 2){
                         MatchingTime = 0;
 
+                        final String OutputWord = RecognitionWorker.handRecognitions.get(Loop1).ChineseWord.toString();
+                        NotLineToast(ConnectedActivity.this, OutputWord, 1);
                     }
 
                 }
 
-            }
+            }*/
         }
 
         @Override
