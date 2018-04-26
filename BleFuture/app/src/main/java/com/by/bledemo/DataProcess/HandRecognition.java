@@ -80,12 +80,12 @@ public class HandRecognition {
         IsLeftFigPostureMatched = LeftFigPostureMatcher(LeftFigPosture);
         IsRightFigPostureMatched = RightFigPostureMatcher(RightFigPosture);
 
-        if (LeftHandPosture == "-1")
+        if (LeftHandPosture == "DontCare")
         {
-            return IsRightHandPostureMatched && IsLeftFigPostureMatched && IsRightFigPostureMatched;
-        }else if(RightHandPosture == "-1")
+            return IsRightHandPostureMatched && IsRightFigPostureMatched;
+        }else if(RightHandPosture == "DontCare")
         {
-            return IsLeftHandPostureMatched && IsLeftFigPostureMatched && IsRightFigPostureMatched;
+            return IsLeftHandPostureMatched && IsLeftFigPostureMatched;
         }else
         {
             return IsLeftHandPostureMatched && IsRightHandPostureMatched && IsLeftFigPostureMatched && IsRightFigPostureMatched;

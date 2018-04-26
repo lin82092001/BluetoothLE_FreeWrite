@@ -8,11 +8,13 @@ import android.os.Bundle;
 import android.os.Message;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
+import android.view.ViewDebug;
 import android.widget.Button;
 import android.widget.TextView;
 import android.widget.Toast;
 
 import com.by.bledemo.DataProcess.RecognitionWorker;
+import com.by.bledemo.DataProcess.VoiceData;
 import com.by.bledemo.R;
 import java.lang.reflect.Array;
 import java.util.Arrays;
@@ -32,16 +34,18 @@ public class ConnectedActivity extends AppCompatActivity {
     private boolean Paused,LOp,ROp;
 
     private String LeftDirect="";
-    private String LeftDirectCode =  "00";
-    private String LeftFigCode[] = {"00", "00", "00", "00", "0"};
+    //private String LeftDirectCode =  "00";
+    private String LeftFigCode[] = {"0", "00", "00", "00", "00"};
     private String LeftFigCodeTotal;
 
     private String RightDirect="";
-    private String RightDirectCode =  "00";
-    private String RightFigCode[] = {"00", "00", "00", "00", "0"};
+    //private String RightDirectCode =  "00";
+    private String RightFigCode[] = {"0", "00", "00", "00", "00"};
     private String RightFigCodeTotal;
 
-    RecognitionWorker RecognitionWorker;
+    RecognitionWorker RecognitionWorker = new RecognitionWorker("TW");
+
+    int MatchingTime = 0;
 
     private static Toast toast;
     private static void NotLineToast(final Context context, final String text, final int ShowTime){
@@ -133,7 +137,7 @@ public class ConnectedActivity extends AppCompatActivity {
         @Override
         public void ControllerSignCallback(int Status, int CMD, float Roll, float Pitch, float Yaw,float AccX, float AccY, float AccZ,Controller.FingersStatus Figs,String Address)
         {
-            int MatchingTime = 0;
+
             if(LAddress == Address)
             {
                 //x y z Rotat Value
@@ -149,32 +153,32 @@ public class ConnectedActivity extends AppCompatActivity {
                     if(-45 < Roll && Roll < 45)
                     {
                         LeftDirect = "Downward";
-                        LeftDirectCode = "00";
+
                     }else if(-135 < Roll && Roll < -45)
                     {
                         LeftDirect = "Outward";
-                        LeftDirectCode = "01";
+
                     }else if(45 < Roll && Roll < 135)
                     {
                         LeftDirect = "Inward";
-                        LeftDirectCode = "10";
+
                     } else if(135 < Roll || Roll < -135)
                     {
                         LeftDirect = "Upward";
-                        LeftDirectCode = "11";
+
                     }
                     //RollProcess
                 }else if(Pitch < -45)
                 {
                     LeftDirect = "DontCare";
-                    LeftDirectCode = "-1";
+
                 }else if(45 < Pitch)
                 {
                     LeftDirect = "Raise";
-                    LeftDirectCode = "99";
+
                 }
                 //面向
-
+                final String A = "";
                 //FigCode
                 for(int i = 0; i < 5; i++)
                 {
@@ -190,9 +194,9 @@ public class ConnectedActivity extends AppCompatActivity {
                         if(Figs.Degree[i][0] > 45 && Figs.Degree[i][1] > 45){
                             LeftFigCode[i] = "11";
                         }else if(Figs.Degree[i][0] < 45 && Figs.Degree[i][1] > 45){
-                            LeftFigCode[i] = "10";
-                        }else if(Figs.Degree[i][0] > 45 && Figs.Degree[i][1] < 45){
                             LeftFigCode[i] = "01";
+                        }else if(Figs.Degree[i][0] > 45 && Figs.Degree[i][1] < 45){
+                            LeftFigCode[i] = "10";
                         }else{
                             LeftFigCode[i] = "00";
                         }
@@ -206,7 +210,7 @@ public class ConnectedActivity extends AppCompatActivity {
                 //FigCode
 
                 //面相
-                final String LeftDirection = String.format("\n%s\n\"%s\"\n", LeftDirectCode, LeftDirect);
+                final String LeftDirection = String.format("\n\"%s\"\n", LeftDirect);
                 //
 
                 runOnUiThread(new Runnable() {
@@ -235,29 +239,29 @@ public class ConnectedActivity extends AppCompatActivity {
                     if(-45 < Roll && Roll < 45)
                     {
                         RightDirect = "Downward";
-                        RightDirectCode = "00";
+
                     }else if(-135 < Roll && Roll < -45)
                     {
                         RightDirect = "Inward";
-                        RightDirectCode = "01";
+
                     }else if(45 < Roll && Roll < 135)
                     {
                         RightDirect = "Outward";
-                        RightDirectCode = "10";
+
                     } else if(135 < Roll || Roll < -135)
                     {
                         RightDirect = "Upward";
-                        RightDirectCode = "11";
+
                     }
                     //RollProcess
                 }else if(Pitch < -45)
                 {
                     RightDirect = "DontCare";
-                    RightDirectCode = "-1";
+
                 }else if(45 < Pitch)
                 {
                     RightDirect = "Raise";
-                    RightDirectCode = "99";
+
                 }
                 //面向
 
@@ -276,9 +280,9 @@ public class ConnectedActivity extends AppCompatActivity {
                         if(Figs.Degree[i][0] > 45 && Figs.Degree[i][1] > 45){
                             RightFigCode[i] = "11";
                         }else if(Figs.Degree[i][0] < 45 && Figs.Degree[i][1] > 45){
-                            RightFigCode[i] = "10";
-                        }else if(Figs.Degree[i][0] > 45 && Figs.Degree[i][1] < 45){
                             RightFigCode[i] = "01";
+                        }else if(Figs.Degree[i][0] > 45 && Figs.Degree[i][1] < 45){
+                            RightFigCode[i] = "10";
                         }else{
                             RightFigCode[i] = "00";
                         }
@@ -291,7 +295,7 @@ public class ConnectedActivity extends AppCompatActivity {
                 //FigCode
 
                 //面相
-                final String RightDirection = String.format("%s\n\"%s\"\n", RightDirectCode, RightDirect);
+                final String RightDirection = String.format("\n\"%s\"\n", RightDirect);
 
                 runOnUiThread(new Runnable() {
                     @Override
@@ -302,21 +306,30 @@ public class ConnectedActivity extends AppCompatActivity {
                     }
                 });
             }
-            /*
-            for (int Loop1 = 0; Loop1 < RecognitionWorker.handRecognitions.size(); Loop1++) {
+            //test
+            RightDirect = "DontCare";
+            LeftFigCodeTotal = "111111111";
+            RightFigCodeTotal = "000000000";
+            //test
 
-                if(RecognitionWorker.handRecognitions.get(Loop1).MultiMatcher(LeftDirectCode, RightDirectCode, LeftFigCodeTotal, RightFigCodeTotal) == true) {
+            //NotLineToast(ConnectedActivity.this, String.valueOf(RecognitionWorker.handRecognitions.size()), 1);
+
+
+            for (int Loop1 = 0; Loop1 < RecognitionWorker.handRecognitions.size(); Loop1++) {
+                //NotLineToast(ConnectedActivity.this, "1", 1);
+                if(RecognitionWorker.handRecognitions.get(Loop1).MultiMatcher(LeftDirect, RightDirect, LeftFigCodeTotal, RightFigCodeTotal) == true) {
                     MatchingTime = MatchingTime + 1;
-                    if(MatchingTime == 2){
+                    //NotLineToast(ConnectedActivity.this, String.valueOf(MatchingTime), 1);
+                    if(MatchingTime >= 130){
                         MatchingTime = 0;
 
                         final String OutputWord = RecognitionWorker.handRecognitions.get(Loop1).ChineseWord.toString();
                         NotLineToast(ConnectedActivity.this, OutputWord, 1);
+                        RecognitionWorker.VoiceData.Speaker(ConnectedActivity.this, RecognitionWorker.handRecognitions.get(Loop1).mp3ID);
                     }
-
+                    break;
                 }
-
-            }*/
+            }
         }
 
         @Override
