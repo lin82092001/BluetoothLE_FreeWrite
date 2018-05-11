@@ -18,7 +18,6 @@ import java.util.Queue;
 import java.util.UUID;
 
 import java.util.concurrent.ConcurrentLinkedDeque;
-//import java.util.logging.LogRecord;
 
 /**
  * Created by Wolf on 2016/2/28.
