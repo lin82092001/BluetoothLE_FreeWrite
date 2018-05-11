@@ -1,0 +1,7 @@
+#Internal package file, do not edit.
+#Thu Apr 26 22:17:21 CST 2018
+0.baseType=DIRECTORY
+0.base=D\:\\GoogleDrive\\handtalker\\BluetoothLE_FreeWrite-2018-04-26-1\\BleFuture\\app\\build\\intermediates\\transforms\\dexMerger\\debug\\0
+0.path=classes.dex
+0.set=DEX
+count=1
