@@ -1,4 +1,4 @@
-#Fri May 11 14:07:10 CST 2018
-base.0=D\:\\GoogleDrive\\handtalker\\BluetoothLE_FreeWrite-2018-04-26-1\\BleFuture\\app\\build\\intermediates\\transforms\\dexMerger\\debug\\0
+#Thu May 17 14:25:14 CST 2018
+base.0=D\:\\GoogleDrive\\handtalker\\BluetoothLE_FreeWrite-2018-0511\\BleFuture\\app\\build\\intermediates\\transforms\\dexMerger\\debug\\0
 path.0=classes.dex
 renamed.0=classes.dex

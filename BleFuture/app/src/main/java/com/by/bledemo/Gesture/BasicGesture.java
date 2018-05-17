@@ -9,9 +9,6 @@ public class BasicGesture {
     * 0-直
     * 1-彎
     * */
-    //test
-    public static final String you = "123456789";
-    //test
 
     //一到十
     public static final String DontCare = "XXXXXXXXX";
@@ -33,5 +30,10 @@ public class BasicGesture {
     public static final String twenty = "101010000";
     public static final String thirthty = "101010100";
     public static final String fourty = "101010101";
+
+    //test
+    public static final String you = "100111111";
+    public static final String hello = zero;//"111111111"
+    //test
 
 }

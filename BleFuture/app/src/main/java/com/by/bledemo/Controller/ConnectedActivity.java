@@ -8,14 +8,19 @@ import android.os.Bundle;
 import android.os.Message;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
+import android.widget.AdapterView;
 import android.view.ViewDebug;
+import android.widget.ArrayAdapter;
 import android.widget.Button;
+import android.widget.Spinner;
 import android.widget.TextView;
 import android.widget.Toast;
+import android.view.View;
 
 import com.by.bledemo.DataProcess.CombinationWordRecognition;
 import com.by.bledemo.DataProcess.RecognitionWorker;
 import com.by.bledemo.DataProcess.VoiceData;
+import com.by.bledemo.MainActivity;
 import com.by.bledemo.R;
 import java.lang.reflect.Array;
 import java.util.Arrays;
@@ -48,7 +53,8 @@ public class ConnectedActivity extends AppCompatActivity {
     private String RightFigCodeTotal;
 
     private int ExchangWord = -1;
-    private RecognitionWorker RecognitionWorker = new RecognitionWorker("TW");
+    private RecognitionWorker RecognitionWorker;// = new RecognitionWorker("TW");
+    //private String LQ = "TW";
 
     private int MatchingTime = 0;
     private String CombinationWordTemp = "";
@@ -88,6 +94,32 @@ public class ConnectedActivity extends AppCompatActivity {
         //RDevice=new Controller(ConnectedActivity.this,RAddress,bluetoothManager);
         LDevice.RegisterCallback(EventListener);
         //RDevice.RegisterCallback(EventListener);
+
+        Spinner spinner = (Spinner)findViewById(R.id.Selector);
+        final String[] Lanquage = {"TW", "EN"};
+        ArrayAdapter<String> LanquageList = new ArrayAdapter<>(ConnectedActivity.this, android.R.layout.simple_spinner_dropdown_item, Lanquage);
+        spinner.setAdapter(LanquageList);
+        spinner.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
+            @Override
+            public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
+                RecognitionWorker = new RecognitionWorker(Lanquage[position]);
+                RecognitionWorker.StaticVocabulary();
+                RecognitionWorker.MotionVocabulary();
+                RecognitionWorker.CombinationVocabulary();
+            }
+
+            @Override
+            public void onNothingSelected(AdapterView<?> parent) {
+                RecognitionWorker = new RecognitionWorker("TW");
+                RecognitionWorker.StaticVocabulary();
+                RecognitionWorker.MotionVocabulary();
+                RecognitionWorker.CombinationVocabulary();
+            }
+        });
+
+
+
+
     }
     public void Test(View view) //Start receiving data
     {
@@ -145,7 +177,6 @@ public class ConnectedActivity extends AppCompatActivity {
         @Override
         public void ControllerSignCallback(int Status, int CMD, float Roll, float Pitch, float Yaw,float AccX, float AccY, float AccZ, Controller.FingersStatus Figs, String Address)
         {
-
             if(LAddress == Address)
             {
                 //x y z Rotat Value
@@ -334,11 +365,13 @@ public class ConnectedActivity extends AppCompatActivity {
                     }
                 });
             }
+
             //test
             RightDirect = "DontCare";
-            LeftFigCodeTotal = "123456789";
+            LeftFigCodeTotal = "100111111";
             RightFigCodeTotal = "000000000";
             //test
+
 
             //NotLineToast(ConnectedActivity.this, String.valueOf(RecognitionWorker.handRecognitions.size()), 1);
             //Recognize
@@ -366,7 +399,7 @@ public class ConnectedActivity extends AppCompatActivity {
                         if(CombinationWordTemp.length() == 0)//第一次配對紀錄
                         {
                             CombinationWordTemp = RecognitionWorker.handRecognitions.get(Loop1).ChineseWord.toString();
-                            final String OutputWord = RecognitionWorker.handRecognitions.get(Loop1).ChineseWord.toString();
+                            final String OutputWord = "!";
                             NotLineToast(ConnectedActivity.this, OutputWord, 1);
                             RecognitionWorker.VoiceData.Speaker(ConnectedActivity.this, R.raw.prompt);
 

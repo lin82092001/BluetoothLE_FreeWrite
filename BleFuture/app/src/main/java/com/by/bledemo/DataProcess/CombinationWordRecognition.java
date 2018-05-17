@@ -26,7 +26,7 @@ public class CombinationWordRecognition {
     {
         boolean IsInputWord1Matched, IsInputWord2Matched;
         IsInputWord1Matched = this.Word1.matcher(InputWord1).matches();
-        IsInputWord2Matched = this.Word1.matcher(InputWord2).matches();
+        IsInputWord2Matched = this.Word2.matcher(InputWord2).matches();
 
         return IsInputWord1Matched && IsInputWord2Matched;
     }

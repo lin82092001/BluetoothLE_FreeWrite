@@ -1,6 +1,11 @@
 package com.by.bledemo.DataProcess;
 
+import android.app.Application;
+import android.content.Context;
 import android.gesture.Gesture;
+import android.speech.tts.Voice;
+import android.widget.Toast;
+
 import com.by.bledemo.Gesture.BasicGesture;
 import com.by.bledemo.R;
 import java.lang.reflect.Array;
@@ -22,10 +27,8 @@ public class RecognitionWorker {
     public VoiceData VoiceData = new VoiceData();
 
     public RecognitionWorker(String State){
+
         if(State.equals("TW")){
-            //test
-            VoiceData.you = R.raw.you;
-            //test
             VoiceData.zero = R.raw.zero;
             VoiceData.one = R.raw.one;
             VoiceData.two = R.raw.two;
@@ -37,6 +40,10 @@ public class RecognitionWorker {
             VoiceData.eight = R.raw.eight;
             VoiceData.nine = R.raw.nine;
             VoiceData.ten = R.raw.ten;
+
+            VoiceData.you = R.raw.you;
+            VoiceData.hello = R.raw.hello;
+            VoiceData.good = R.raw.good;
         }else if(State.equals("EN")){
             VoiceData.zero = R.raw.zeroen;
             VoiceData.one = R.raw.oneen;
@@ -49,58 +56,66 @@ public class RecognitionWorker {
             VoiceData.eight = R.raw.eighten;
             VoiceData.nine = R.raw.nineen;
             VoiceData.ten = R.raw.tenen;
+
+            VoiceData.you = R.raw.youen;
+            VoiceData.hello = R.raw.helloen;
+            //VoiceData.good = R.raw.gooden;
         }
     }
     //靜態手勢
-    public ArrayList<HandRecognition> handRecognitions = new ArrayList<HandRecognition>() {{
+    public ArrayList<HandRecognition> handRecognitions = new ArrayList<HandRecognition>();
+    public void StaticVocabulary(){
         //參考
-        //add(new HandRecognition("中文", "英文", mp3id, 左手面相, 右手面向, "左手手勢", "右手手勢"));
+        //handRecognitions.add(new HandRecognition("中文", "英文", mp3id, 左手面相, 右手面向, "左手手勢", "右手手勢"));
         //test
-        add(new HandRecognition("你", "you", R.raw.you, Inward, DontCare, BasicGesture.you, BasicGesture.DontCare));
-        add(new HandRecognition("你好", "hello", R.raw.good, Raise, DontCare, BasicGesture.you, BasicGesture.DontCare));
-        add(new HandRecognition("我想上廁所", "toilet", R.raw.toilet, Downward, DontCare, BasicGesture.you, BasicGesture.DontCare));
+        handRecognitions.add(new HandRecognition("你", "you", VoiceData.you, Inward, DontCare, BasicGesture.you, BasicGesture.DontCare));
+        handRecognitions.add(new HandRecognition("_你好", "hello", R.raw.nulll, Raise, DontCare, BasicGesture.hello, BasicGesture.DontCare));
+        //add(new HandRecognition("我想上廁所", "toilet", VoiceData.toilet, Downward, DontCare, BasicGesture.you, BasicGesture.DontCare));
         //test
         //一到十(左手
-        add(new HandRecognition("零", "zero", R.raw.zero, Raise, DontCare, BasicGesture.zero, BasicGesture.DontCare));
-        add(new HandRecognition("一", "one", R.raw.one, Raise, DontCare, BasicGesture.one, BasicGesture.DontCare));
-        add(new HandRecognition("二", "two", R.raw.two, Raise, DontCare, BasicGesture.two, BasicGesture.DontCare));
-        add(new HandRecognition("三", "three", R.raw.three, Raise, DontCare, BasicGesture.three, BasicGesture.DontCare));
-        add(new HandRecognition("四", "four", R.raw.four, Raise, DontCare, BasicGesture.four, BasicGesture.DontCare));
-        add(new HandRecognition("五", "five", R.raw.five, Raise, DontCare, BasicGesture.five_A, BasicGesture.DontCare));
-        add(new HandRecognition("五", "five", R.raw.five, Raise, DontCare, BasicGesture.five_B, BasicGesture.DontCare));
-        add(new HandRecognition("六", "six", R.raw.six, Inward, DontCare, BasicGesture.six, BasicGesture.DontCare));
-        add(new HandRecognition("七", "seven", R.raw.seven, Inward, DontCare, BasicGesture.seven, BasicGesture.DontCare));
-        add(new HandRecognition("八", "eight", R.raw.eight, Inward, DontCare, BasicGesture.eight, BasicGesture.DontCare));
-        add(new HandRecognition("九", "nine", R.raw.nine, Inward, DontCare, BasicGesture.nine, BasicGesture.DontCare));
-        add(new HandRecognition("十", "ten", R.raw.ten, Raise, DontCare, BasicGesture.ten_N, BasicGesture.DontCare));
-        add(new HandRecognition("十", "ten", R.raw.ten, Raise, DontCare, BasicGesture.ten_S, BasicGesture.DontCare));
+        handRecognitions.add(new HandRecognition("零", "zero", VoiceData.zero, Raise, DontCare, BasicGesture.zero, BasicGesture.DontCare));
+        handRecognitions.add(new HandRecognition("一", "one", VoiceData.one, Raise, DontCare, BasicGesture.one, BasicGesture.DontCare));
+        handRecognitions.add(new HandRecognition("二", "two", VoiceData.two, Raise, DontCare, BasicGesture.two, BasicGesture.DontCare));
+        handRecognitions.add(new HandRecognition("三", "three", VoiceData.three, Raise, DontCare, BasicGesture.three, BasicGesture.DontCare));
+        handRecognitions.add(new HandRecognition("四", "four", VoiceData.four, Raise, DontCare, BasicGesture.four, BasicGesture.DontCare));
+        handRecognitions.add(new HandRecognition("五", "five", VoiceData.five, Raise, DontCare, BasicGesture.five_A, BasicGesture.DontCare));
+        handRecognitions.add(new HandRecognition("五", "five", VoiceData.five, Raise, DontCare, BasicGesture.five_B, BasicGesture.DontCare));
+        handRecognitions.add(new HandRecognition("六", "six", VoiceData.six, Inward, DontCare, BasicGesture.six, BasicGesture.DontCare));
+        handRecognitions.add(new HandRecognition("七", "seven", VoiceData.seven, Inward, DontCare, BasicGesture.seven, BasicGesture.DontCare));
+        handRecognitions.add(new HandRecognition("八", "eight", VoiceData.eight, Inward, DontCare, BasicGesture.eight, BasicGesture.DontCare));
+        handRecognitions.add(new HandRecognition("九", "nine", VoiceData.nine, Inward, DontCare, BasicGesture.nine, BasicGesture.DontCare));
+        handRecognitions.add(new HandRecognition("十", "ten", VoiceData.ten, Raise, DontCare, BasicGesture.ten_N, BasicGesture.DontCare));
+        handRecognitions.add(new HandRecognition("十", "ten", VoiceData.ten, Raise, DontCare, BasicGesture.ten_S, BasicGesture.DontCare));
         //一到十(右手
-        add(new HandRecognition("零", "zero", R.raw.zero, DontCare, Raise, BasicGesture.DontCare, BasicGesture.zero));
-        add(new HandRecognition("一", "one", R.raw.one, DontCare, Raise, BasicGesture.DontCare, BasicGesture.one));
-        add(new HandRecognition("二", "two", R.raw.two, DontCare, Raise, BasicGesture.DontCare, BasicGesture.two));
-        add(new HandRecognition("三", "three", R.raw.three, DontCare, Raise, BasicGesture.DontCare, BasicGesture.three));
-        add(new HandRecognition("四", "four", R.raw.four, DontCare, Raise, BasicGesture.DontCare, BasicGesture.four));
-        add(new HandRecognition("五", "five", R.raw.five, DontCare, Raise, BasicGesture.DontCare, BasicGesture.five_A));
-        add(new HandRecognition("五", "five", R.raw.five, DontCare, Raise, BasicGesture.DontCare, BasicGesture.five_B));
-        add(new HandRecognition("六", "six", R.raw.six, DontCare, Inward, BasicGesture.DontCare, BasicGesture.six));
-        add(new HandRecognition("七", "seven", R.raw.seven, DontCare, Inward, BasicGesture.DontCare, BasicGesture.seven));
-        add(new HandRecognition("八", "eight", R.raw.eight, DontCare, Inward, BasicGesture.DontCare, BasicGesture.eight));
-        add(new HandRecognition("九", "nine", R.raw.nine, DontCare, Inward, BasicGesture.DontCare, BasicGesture.nine));
-        add(new HandRecognition("十", "ten", R.raw.ten, DontCare, Raise, BasicGesture.DontCare, BasicGesture.ten_N));
-        add(new HandRecognition("十", "ten", R.raw.ten, DontCare, Raise, BasicGesture.DontCare, BasicGesture.ten_S));
+        handRecognitions.add(new HandRecognition("零", "zero", VoiceData.zero, DontCare, Raise, BasicGesture.DontCare, BasicGesture.zero));
+        handRecognitions.add(new HandRecognition("一", "one", VoiceData.one, DontCare, Raise, BasicGesture.DontCare, BasicGesture.one));
+        handRecognitions.add(new HandRecognition("二", "two", VoiceData.two, DontCare, Raise, BasicGesture.DontCare, BasicGesture.two));
+        handRecognitions.add(new HandRecognition("三", "three", VoiceData.three, DontCare, Raise, BasicGesture.DontCare, BasicGesture.three));
+        handRecognitions.add(new HandRecognition("四", "four", VoiceData.four, DontCare, Raise, BasicGesture.DontCare, BasicGesture.four));
+        handRecognitions.add(new HandRecognition("五", "five", VoiceData.five, DontCare, Raise, BasicGesture.DontCare, BasicGesture.five_A));
+        handRecognitions.add(new HandRecognition("五", "five", VoiceData.five, DontCare, Raise, BasicGesture.DontCare, BasicGesture.five_B));
+        handRecognitions.add(new HandRecognition("六", "six", VoiceData.six, DontCare, Inward, BasicGesture.DontCare, BasicGesture.six));
+        handRecognitions.add(new HandRecognition("七", "seven", VoiceData.seven, DontCare, Inward, BasicGesture.DontCare, BasicGesture.seven));
+        handRecognitions.add(new HandRecognition("八", "eight", VoiceData.eight, DontCare, Inward, BasicGesture.DontCare, BasicGesture.eight));
+        handRecognitions.add(new HandRecognition("九", "nine", VoiceData.nine, DontCare, Inward, BasicGesture.DontCare, BasicGesture.nine));
+        handRecognitions.add(new HandRecognition("十", "ten", VoiceData.ten, DontCare, Raise, BasicGesture.DontCare, BasicGesture.ten_N));
+        handRecognitions.add(new HandRecognition("十", "ten", VoiceData.ten, DontCare, Raise, BasicGesture.DontCare, BasicGesture.ten_S));
         //一到十
-    }};
+    }
 
     //動態手勢
-    public ArrayList<MotionRecognition> motionRecognitions = new ArrayList<MotionRecognition>(){{
+    public ArrayList<MotionRecognition> motionRecognitions = new ArrayList<MotionRecognition>();
+    public void MotionVocabulary(){
         //參考
-        //add(new MotionRecognition("中文", "英文", mp3id, "左手面相", "右手面向", "左手手勢", "右手手勢", acc, acc, acc, acc, acc, acc));
+        //motionRecognitions.add(new MotionRecognition("中文", "英文", mp3id, "左手面相", "右手面向", "左手手勢", "右手手勢", LAx~z, RAx~z, LAF0~LAF4, RAF0~RAF4));
+    }
 
-    }};
-
-    public ArrayList<CombinationWordRecognition> combinationWordRecognitions = new ArrayList<CombinationWordRecognition>(){{
+    //組合手勢
+    public ArrayList<CombinationWordRecognition> combinationWordRecognitions = new ArrayList<CombinationWordRecognition>();
+    public void CombinationVocabulary(){
         //參考
-        //add(new CombinationWordRecognition("中文", "英文", mp3D, "第一階段", "第二階段"));
-    }};
+        //combinationWordRecognitions.add(new CombinationWordRecognition("中文", "英文", mp3D, "第一階段", "第二階段"));
+        combinationWordRecognitions.add(new CombinationWordRecognition("你好", "Hello", VoiceData.hello, "你", "_你好"));
+    }
 
 }

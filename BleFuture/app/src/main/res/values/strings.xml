@@ -16,4 +16,5 @@
     <string name="Left">Left</string>
     <string name="Right">Right</string>
     <string name="NOGPS">The app needs to be turned on GPS location.</string>
+    <string name="Selector">Choose your language.</string>
 </resources>

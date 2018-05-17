@@ -26,14 +26,28 @@ public class MotionRecognition {
     private Pattern LeftFigPosture;
     private Pattern RightFigPosture;
 
-    //手加速度
+    //掌加速度
     private int LAx, LAy, LAz;
     private int RAx, RAy, RAz;
+
+    //指加速度
+    private int LAF0;
+    private int LAF1;
+    private int LAF2;
+    private int LAF3;
+    private int LAF4;
+    private int RAF0;
+    private int RAF1;
+    private int RAF2;
+    private int RAF3;
+    private int RAF4;
 
     public MotionRecognition(String ChineseWord, String EnglishWord, int mp3ID,
                              String LeftHandPosture, String RightHandPosture, String LeftFigPosture,  String RightFigPosture,
                              int LAx, int LAy, int LAz,
-                             int RAx, int RAy, int RAz){
+                             int RAx, int RAy, int RAz,
+                             int LAF0, int LAF1, int LAF2, int LAF3, int LAF4,
+                             int RAF0, int RAF1, int RAF2, int RAF3, int RAF4){
         this.ChineseWord = ChineseWord;
         this.EnglishWord = EnglishWord;
         this.mp3ID = mp3ID;
@@ -47,10 +61,24 @@ public class MotionRecognition {
         this.RAx = RAx;
         this.RAy = RAy;
         this.RAz = RAz;
+
+        this.LAF0 = LAF0;
+        this.LAF0 = LAF1;
+        this.LAF0 = LAF2;
+        this.LAF0 = LAF3;
+        this.LAF0 = LAF4;
+
+        this.RAF0 = RAF0;
+        this.RAF0 = RAF1;
+        this.RAF0 = RAF2;
+        this.RAF0 = RAF3;
+        this.RAF0 = RAF4;
     }
     public boolean TotalMatcher(String LeftHandPosture, String RightHandPosture, String LeftFigPosture, String RightFigPosture,
                                 int LAx, int LAy, int LAz,
-                                int RAx, int RAy, int RAz){
+                                int RAx, int RAy, int RAz,
+                                int LAF0, int LAF1, int LAF2, int LAF3, int LAF4,
+                                int RAF0, int RAF1, int RAF2, int RAF3, int RAF4){
 
         boolean IsLeftHandPostureMatched, IsRightHandPostureMatched;
         IsLeftHandPostureMatched = LeftHandPostureMatcher(LeftHandPosture);
@@ -60,26 +88,45 @@ public class MotionRecognition {
         IsLeftFigPostureMatched = LeftFigPostureMatcher(LeftFigPosture);
         IsRightFigPostureMatched = RightFigPostureMatcher(RightFigPosture);
 
-        boolean IsLAxMatched, IsLAyMatched, IsLAzMatched, IsRAxMatched, IsRAyMatched, IsRAzMatched;
+        boolean IsLAxMatched, IsLAyMatched, IsLAzMatched, IsRAxMatched, IsRAyMatched, IsRAzMatched,
+                IsLAF0Matched, IsLAF1Matched, IsLAF2Matched, IsLAF3Matched, IsLAF4Matched,
+                IsRAF0Matched, IsRAF1Matched, IsRAF2Matched, IsRAF3Matched, IsRAF4Matched;
         IsLAxMatched = AccMatcher(LAx, this.LAx);
         IsLAyMatched = AccMatcher(LAy, this.LAy);
         IsLAzMatched = AccMatcher(LAz, this.LAz);
+
+        IsLAF0Matched = AccMatcher(LAF0, this.LAF0);
+        IsLAF1Matched = AccMatcher(LAF1, this.LAF1);
+        IsLAF2Matched = AccMatcher(LAF2, this.LAF2);
+        IsLAF3Matched = AccMatcher(LAF3, this.LAF3);
+        IsLAF4Matched = AccMatcher(LAF4, this.LAF4);
+
         IsRAxMatched = AccMatcher(RAx, this.RAx);
         IsRAyMatched = AccMatcher(RAy, this.RAy);
         IsRAzMatched = AccMatcher(RAz, this.RAz);
 
-        if (LeftHandPosture == "DontCare")
-        {
-            return IsRightHandPostureMatched && IsRightFigPostureMatched &&
-                    IsRAxMatched && IsRAyMatched && IsRAzMatched;
-        }else if(RightHandPosture == "DontCare")
+        IsRAF0Matched = AccMatcher(RAF0, this.RAF0);
+        IsRAF1Matched = AccMatcher(RAF1, this.RAF1);
+        IsRAF2Matched = AccMatcher(RAF2, this.RAF2);
+        IsRAF3Matched = AccMatcher(RAF3, this.RAF3);
+        IsRAF4Matched = AccMatcher(RAF4, this.RAF4);
+
+        if(RightHandPosture == "DontCare")
         {
             return IsLeftHandPostureMatched && IsLeftFigPostureMatched &&
-                    IsLAxMatched && IsLAyMatched && IsLAzMatched;
+                    IsLAxMatched && IsLAyMatched && IsLAzMatched &&
+                    IsLAF0Matched && IsLAF1Matched && IsLAF2Matched && IsLAF3Matched && IsLAF4Matched;
+        }else if (LeftHandPosture == "DontCare")
+        {
+            return IsRightHandPostureMatched && IsRightFigPostureMatched &&
+                    IsRAxMatched && IsRAyMatched && IsRAzMatched &&
+                    IsRAF0Matched && IsRAF1Matched && IsRAF2Matched && IsRAF3Matched && IsRAF4Matched;
         }else
         {
             return IsLeftHandPostureMatched && IsRightHandPostureMatched && IsLeftFigPostureMatched && IsRightFigPostureMatched &&
-                    IsRAxMatched && IsRAyMatched && IsRAzMatched && IsLAxMatched && IsLAyMatched && IsLAzMatched;
+                    IsLAxMatched && IsLAyMatched && IsLAzMatched && IsRAxMatched && IsRAyMatched && IsRAzMatched &&
+                    IsLAF0Matched && IsLAF1Matched && IsLAF2Matched && IsLAF3Matched && IsLAF4Matched &&
+                    IsRAF0Matched && IsRAF1Matched && IsRAF2Matched && IsRAF3Matched && IsRAF4Matched;
         }
     }
 
@@ -122,6 +169,5 @@ public class MotionRecognition {
         }else{
             return false;
         }
-
     }
 }

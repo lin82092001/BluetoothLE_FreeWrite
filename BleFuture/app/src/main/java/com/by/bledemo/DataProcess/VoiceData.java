@@ -26,6 +26,9 @@ public class VoiceData {
     public int nine;
     public int ten;
 
+    public int hello;
+    public int good;
+
     public VoiceData(){
 
     }
