@@ -272,31 +272,26 @@ public class ConnectedActivity extends AppCompatActivity {
                 //FigCode
                 for(int i = 0; i < 5; i++)
                 {
-                    if(Figs.Enable[i][0] && !Figs.Enable[i][1])
-                    {
+                    if(Figs.Enable[i][0] && i == 4) {
                         if(Figs.Degree[i][0] > 45){
                             LeftFigCode[i] = "0";
                         }else{
                             LeftFigCode[i] = "1";
                         }
-                    }else
-                    {
-                        if(Figs.Degree[i][0] > 45 && Figs.Degree[i][1] > 45){
-                            LeftFigCode[i] = "11";
-                        }else if(Figs.Degree[i][0] < 45 && Figs.Degree[i][1] > 45){
-                            LeftFigCode[i] = "01";
-                        }else if(Figs.Degree[i][0] > 45 && Figs.Degree[i][1] < 45){
-                            LeftFigCode[i] = "10";
-                        }else{
+                    }else {
+                        if(Figs.Degree[i][0] <= 30) {
                             LeftFigCode[i] = "00";
+                        }else if(30 < Figs.Degree[i][0] && Figs.Degree[i][0] <= 60){
+                            LeftFigCode[i] = "01";
+                        }else{
+                            LeftFigCode[i] = "11";
                         }
                     }
                 }
-                LeftFigCodeTotal = LeftFigCode[0];
-                for(int i = 3; i > 0; i--){
+                LeftFigCodeTotal = LeftFigCode[4];
+                for(int i = 3; i >= 0; i--){
                     LeftFigCodeTotal = LeftFigCodeTotal + LeftFigCode[i];
                 }
-                LeftFigCodeTotal = LeftFigCodeTotal + LeftFigCode[4];
                 //FigCode
 
                 //面相
@@ -364,23 +359,19 @@ public class ConnectedActivity extends AppCompatActivity {
                 //FigCode
                 for(int i = 0; i < 5; i++)
                 {
-                    if(Figs.Enable[i][0] && !Figs.Enable[i][1])
-                    {
+                    if(Figs.Enable[i][0] && i == 0) {
                         if(Figs.Degree[i][0] > 45){
                             RightFigCode[i] = "1";
                         }else{
                             RightFigCode[i] = "0";
                         }
-                    }else
-                    {
-                        if(Figs.Degree[i][0] > 45 && Figs.Degree[i][1] > 45){
-                            RightFigCode[i] = "11";
-                        }else if(Figs.Degree[i][0] < 45 && Figs.Degree[i][1] > 45){
-                            RightFigCode[i] = "01";
-                        }else if(Figs.Degree[i][0] > 45 && Figs.Degree[i][1] < 45){
-                            RightFigCode[i] = "10";
-                        }else{
+                    }else {
+                        if(Figs.Degree[i][0] <= 30){
                             RightFigCode[i] = "00";
+                        }else if(30 < Figs.Degree[i][0] && Figs.Degree[i][0] <= 60){
+                            LeftFigCode[i] = "01";
+                        }else{
+                            LeftFigCode[i] = "11";
                         }
                     }
                 }
@@ -411,9 +402,11 @@ public class ConnectedActivity extends AppCompatActivity {
             }
 
             //test
+            /*
             RightDirect = "DontCare";
             LeftFigCodeTotal = "100111111";
             RightFigCodeTotal = "000000000";
+            */
             //test
 
 
