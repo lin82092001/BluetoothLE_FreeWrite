@@ -102,7 +102,7 @@ public class MainActivity extends AppCompatActivity {
             Intent enableBtIntent = new Intent(BluetoothAdapter.ACTION_REQUEST_ENABLE);
             startActivityForResult(enableBtIntent, REQUEST_ENABLE_BT); //再利用startActivityForResult啟動該Intent
         }
-
+/*
         //若沒開啟定位，請求使用者開啟
         final LocationManager locationManager=
                 (LocationManager)this.getSystemService(Context.LOCATION_SERVICE);
@@ -116,7 +116,7 @@ public class MainActivity extends AppCompatActivity {
                 }
             }).show();
         }
-
+*/
         runOnUiThread(new Runnable() {
             @Override
             public void run()
@@ -172,6 +172,7 @@ public class MainActivity extends AppCompatActivity {
                         }
                     }
                 });
+
             }
         });
     }
@@ -183,7 +184,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     /*這個Override Function是因為在onResume中使用了ActivityForResult，當使用者按了取消或確定鍵時，結果會
-    返回到此onActivvityResult中，在判別requestCode判別是否==RESULT_CANCELED，如果是則finish()程式*/
+    返回到此onActivvityResult中，在判別requestCode是否==RESULT_CANCELED，如果是則finish()程式*/
     @Override
     protected void onActivityResult(int requestCode, int resultCode, Intent data)
     {
@@ -297,5 +298,4 @@ public class MainActivity extends AppCompatActivity {
         scanLeDevice(false);// will stop after first device detection
         startActivity(intent);
     }
-
 }

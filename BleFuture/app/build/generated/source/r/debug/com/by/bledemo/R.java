@@ -2698,144 +2698,149 @@ public final class R {
     public static final int ClearButton=0x7f070002;
     public static final int Close=0x7f070003;
     public static final int Connect=0x7f070004;
-    public static final int FUNCTION=0x7f070005;
-    public static final int LAdd=0x7f070006;
-    public static final int LeftDeviceList=0x7f070007;
-    public static final int LeftHand=0x7f070008;
-    public static final int LeftServices=0x7f070009;
-    public static final int META=0x7f07000a;
-    public static final int RAdd=0x7f07000b;
-    public static final int RightDeviceList=0x7f07000c;
-    public static final int RightHand=0x7f07000d;
-    public static final int RightServices=0x7f07000e;
-    public static final int SHIFT=0x7f07000f;
-    public static final int SYM=0x7f070010;
-    public static final int ScanButton=0x7f070011;
-    public static final int Test=0x7f070012;
-    public static final int action0=0x7f070013;
-    public static final int action_bar=0x7f070014;
-    public static final int action_bar_activity_content=0x7f070015;
-    public static final int action_bar_container=0x7f070016;
-    public static final int action_bar_root=0x7f070017;
-    public static final int action_bar_spinner=0x7f070018;
-    public static final int action_bar_subtitle=0x7f070019;
-    public static final int action_bar_title=0x7f07001a;
-    public static final int action_container=0x7f07001b;
-    public static final int action_context_bar=0x7f07001c;
-    public static final int action_divider=0x7f07001d;
-    public static final int action_image=0x7f07001e;
-    public static final int action_menu_divider=0x7f07001f;
-    public static final int action_menu_presenter=0x7f070020;
-    public static final int action_mode_bar=0x7f070021;
-    public static final int action_mode_bar_stub=0x7f070022;
-    public static final int action_mode_close_button=0x7f070023;
-    public static final int action_text=0x7f070024;
-    public static final int actions=0x7f070025;
-    public static final int activity_chooser_view_content=0x7f070026;
-    public static final int add=0x7f070027;
-    public static final int alertTitle=0x7f070028;
-    public static final int all=0x7f070029;
-    public static final int always=0x7f07002a;
-    public static final int async=0x7f07002b;
-    public static final int basic=0x7f07002c;
-    public static final int beginning=0x7f07002d;
-    public static final int blocking=0x7f07002e;
-    public static final int bottom=0x7f07002f;
-    public static final int buttonPanel=0x7f070030;
-    public static final int cancel_action=0x7f070031;
-    public static final int chains=0x7f070032;
-    public static final int checkbox=0x7f070033;
-    public static final int chronometer=0x7f070034;
-    public static final int collapseActionView=0x7f070035;
-    public static final int contentPanel=0x7f070036;
-    public static final int custom=0x7f070037;
-    public static final int customPanel=0x7f070038;
-    public static final int decor_content_parent=0x7f070039;
-    public static final int default_activity_button=0x7f07003a;
-    public static final int disableHome=0x7f07003b;
-    public static final int edit_query=0x7f07003c;
-    public static final int end=0x7f07003d;
-    public static final int end_padder=0x7f07003e;
-    public static final int expand_activities_button=0x7f07003f;
-    public static final int expanded_menu=0x7f070040;
-    public static final int forever=0x7f070041;
-    public static final int home=0x7f070042;
-    public static final int homeAsUp=0x7f070043;
-    public static final int icon=0x7f070044;
-    public static final int icon_group=0x7f070045;
-    public static final int ifRoom=0x7f070046;
-    public static final int image=0x7f070047;
-    public static final int info=0x7f070048;
-    public static final int italic=0x7f070049;
-    public static final int line1=0x7f07004a;
-    public static final int line3=0x7f07004b;
-    public static final int listMode=0x7f07004c;
-    public static final int list_item=0x7f07004d;
-    public static final int media_actions=0x7f07004e;
-    public static final int message=0x7f07004f;
-    public static final int middle=0x7f070050;
-    public static final int multiply=0x7f070051;
-    public static final int never=0x7f070052;
-    public static final int none=0x7f070053;
-    public static final int normal=0x7f070054;
-    public static final int notification_background=0x7f070055;
-    public static final int notification_main_column=0x7f070056;
-    public static final int notification_main_column_container=0x7f070057;
-    public static final int packed=0x7f070058;
-    public static final int parent=0x7f070059;
-    public static final int parentPanel=0x7f07005a;
-    public static final int progress_circular=0x7f07005b;
-    public static final int progress_horizontal=0x7f07005c;
-    public static final int radio=0x7f07005d;
-    public static final int right_icon=0x7f07005e;
-    public static final int right_side=0x7f07005f;
-    public static final int scanState=0x7f070060;
-    public static final int screen=0x7f070061;
-    public static final int scrollIndicatorDown=0x7f070062;
-    public static final int scrollIndicatorUp=0x7f070063;
-    public static final int scrollView=0x7f070064;
-    public static final int search_badge=0x7f070065;
-    public static final int search_bar=0x7f070066;
-    public static final int search_button=0x7f070067;
-    public static final int search_close_btn=0x7f070068;
-    public static final int search_edit_frame=0x7f070069;
-    public static final int search_go_btn=0x7f07006a;
-    public static final int search_mag_icon=0x7f07006b;
-    public static final int search_plate=0x7f07006c;
-    public static final int search_src_text=0x7f07006d;
-    public static final int search_voice_btn=0x7f07006e;
-    public static final int select_dialog_listview=0x7f07006f;
-    public static final int shortcut=0x7f070070;
-    public static final int showCustom=0x7f070071;
-    public static final int showHome=0x7f070072;
-    public static final int showTitle=0x7f070073;
-    public static final int spacer=0x7f070074;
-    public static final int split_action_bar=0x7f070075;
-    public static final int spread=0x7f070076;
-    public static final int spread_inside=0x7f070077;
-    public static final int src_atop=0x7f070078;
-    public static final int src_in=0x7f070079;
-    public static final int src_over=0x7f07007a;
-    public static final int status_bar_latest_event_content=0x7f07007b;
-    public static final int submenuarrow=0x7f07007c;
-    public static final int submit_area=0x7f07007d;
-    public static final int tabMode=0x7f07007e;
-    public static final int text=0x7f07007f;
-    public static final int text2=0x7f070080;
-    public static final int textSpacerNoButtons=0x7f070081;
-    public static final int textSpacerNoTitle=0x7f070082;
-    public static final int time=0x7f070083;
-    public static final int title=0x7f070084;
-    public static final int titleDividerNoCustom=0x7f070085;
-    public static final int title_template=0x7f070086;
-    public static final int top=0x7f070087;
-    public static final int topPanel=0x7f070088;
-    public static final int uniform=0x7f070089;
-    public static final int up=0x7f07008a;
-    public static final int useLogo=0x7f07008b;
-    public static final int withText=0x7f07008c;
-    public static final int wrap=0x7f07008d;
-    public static final int wrap_content=0x7f07008e;
+    public static final int DelayTime=0x7f070005;
+    public static final int FUNCTION=0x7f070006;
+    public static final int LAdd=0x7f070007;
+    public static final int LanquageSelector=0x7f070008;
+    public static final int LeftDeviceList=0x7f070009;
+    public static final int LeftHand=0x7f07000a;
+    public static final int LeftServices=0x7f07000b;
+    public static final int META=0x7f07000c;
+    public static final int RAdd=0x7f07000d;
+    public static final int RightDeviceList=0x7f07000e;
+    public static final int RightHand=0x7f07000f;
+    public static final int RightServices=0x7f070010;
+    public static final int SHIFT=0x7f070011;
+    public static final int SYM=0x7f070012;
+    public static final int ScanButton=0x7f070013;
+    public static final int Test=0x7f070014;
+    public static final int action0=0x7f070015;
+    public static final int action_bar=0x7f070016;
+    public static final int action_bar_activity_content=0x7f070017;
+    public static final int action_bar_container=0x7f070018;
+    public static final int action_bar_root=0x7f070019;
+    public static final int action_bar_spinner=0x7f07001a;
+    public static final int action_bar_subtitle=0x7f07001b;
+    public static final int action_bar_title=0x7f07001c;
+    public static final int action_container=0x7f07001d;
+    public static final int action_context_bar=0x7f07001e;
+    public static final int action_divider=0x7f07001f;
+    public static final int action_image=0x7f070020;
+    public static final int action_menu_divider=0x7f070021;
+    public static final int action_menu_presenter=0x7f070022;
+    public static final int action_mode_bar=0x7f070023;
+    public static final int action_mode_bar_stub=0x7f070024;
+    public static final int action_mode_close_button=0x7f070025;
+    public static final int action_text=0x7f070026;
+    public static final int actions=0x7f070027;
+    public static final int activity_chooser_view_content=0x7f070028;
+    public static final int add=0x7f070029;
+    public static final int alertTitle=0x7f07002a;
+    public static final int all=0x7f07002b;
+    public static final int always=0x7f07002c;
+    public static final int async=0x7f07002d;
+    public static final int basic=0x7f07002e;
+    public static final int beginning=0x7f07002f;
+    public static final int blocking=0x7f070030;
+    public static final int bottom=0x7f070031;
+    public static final int buttonPanel=0x7f070032;
+    public static final int cancel_action=0x7f070033;
+    public static final int chains=0x7f070034;
+    public static final int checkbox=0x7f070035;
+    public static final int chronometer=0x7f070036;
+    public static final int collapseActionView=0x7f070037;
+    public static final int contentPanel=0x7f070038;
+    public static final int custom=0x7f070039;
+    public static final int customPanel=0x7f07003a;
+    public static final int decor_content_parent=0x7f07003b;
+    public static final int default_activity_button=0x7f07003c;
+    public static final int disableHome=0x7f07003d;
+    public static final int edit_query=0x7f07003e;
+    public static final int end=0x7f07003f;
+    public static final int end_padder=0x7f070040;
+    public static final int expand_activities_button=0x7f070041;
+    public static final int expanded_menu=0x7f070042;
+    public static final int forever=0x7f070043;
+    public static final int home=0x7f070044;
+    public static final int homeAsUp=0x7f070045;
+    public static final int icon=0x7f070046;
+    public static final int icon_group=0x7f070047;
+    public static final int ifRoom=0x7f070048;
+    public static final int image=0x7f070049;
+    public static final int info=0x7f07004a;
+    public static final int italic=0x7f07004b;
+    public static final int line1=0x7f07004c;
+    public static final int line3=0x7f07004d;
+    public static final int linearLayout=0x7f07004e;
+    public static final int listMode=0x7f07004f;
+    public static final int list_item=0x7f070050;
+    public static final int media_actions=0x7f070051;
+    public static final int message=0x7f070052;
+    public static final int middle=0x7f070053;
+    public static final int multiply=0x7f070054;
+    public static final int never=0x7f070055;
+    public static final int none=0x7f070056;
+    public static final int normal=0x7f070057;
+    public static final int notification_background=0x7f070058;
+    public static final int notification_main_column=0x7f070059;
+    public static final int notification_main_column_container=0x7f07005a;
+    public static final int packed=0x7f07005b;
+    public static final int parent=0x7f07005c;
+    public static final int parentPanel=0x7f07005d;
+    public static final int progress_circular=0x7f07005e;
+    public static final int progress_horizontal=0x7f07005f;
+    public static final int radio=0x7f070060;
+    public static final int right_icon=0x7f070061;
+    public static final int right_side=0x7f070062;
+    public static final int scanState=0x7f070063;
+    public static final int screen=0x7f070064;
+    public static final int scrollIndicatorDown=0x7f070065;
+    public static final int scrollIndicatorUp=0x7f070066;
+    public static final int scrollView=0x7f070067;
+    public static final int search_badge=0x7f070068;
+    public static final int search_bar=0x7f070069;
+    public static final int search_button=0x7f07006a;
+    public static final int search_close_btn=0x7f07006b;
+    public static final int search_edit_frame=0x7f07006c;
+    public static final int search_go_btn=0x7f07006d;
+    public static final int search_mag_icon=0x7f07006e;
+    public static final int search_plate=0x7f07006f;
+    public static final int search_src_text=0x7f070070;
+    public static final int search_voice_btn=0x7f070071;
+    public static final int select_dialog_listview=0x7f070072;
+    public static final int shortcut=0x7f070073;
+    public static final int showCustom=0x7f070074;
+    public static final int showHome=0x7f070075;
+    public static final int showTitle=0x7f070076;
+    public static final int spacer=0x7f070077;
+    public static final int split_action_bar=0x7f070078;
+    public static final int spread=0x7f070079;
+    public static final int spread_inside=0x7f07007a;
+    public static final int src_atop=0x7f07007b;
+    public static final int src_in=0x7f07007c;
+    public static final int src_over=0x7f07007d;
+    public static final int status_bar_latest_event_content=0x7f07007e;
+    public static final int submenuarrow=0x7f07007f;
+    public static final int submit_area=0x7f070080;
+    public static final int tabMode=0x7f070081;
+    public static final int text=0x7f070082;
+    public static final int text2=0x7f070083;
+    public static final int textSpacerNoButtons=0x7f070084;
+    public static final int textSpacerNoTitle=0x7f070085;
+    public static final int textView=0x7f070086;
+    public static final int textView2=0x7f070087;
+    public static final int time=0x7f070088;
+    public static final int title=0x7f070089;
+    public static final int titleDividerNoCustom=0x7f07008a;
+    public static final int title_template=0x7f07008b;
+    public static final int top=0x7f07008c;
+    public static final int topPanel=0x7f07008d;
+    public static final int uniform=0x7f07008e;
+    public static final int up=0x7f07008f;
+    public static final int useLogo=0x7f070090;
+    public static final int withText=0x7f070091;
+    public static final int wrap=0x7f070092;
+    public static final int wrap_content=0x7f070093;
   }
   public static final class integer {
     public static final int abc_config_activityDefaultDur=0x7f080000;
@@ -2899,424 +2904,639 @@ public final class R {
     public static final int ic_launcher=0x7f0a0000;
     public static final int ic_launcher_round=0x7f0a0001;
   }
+  public static final class raw {
+    public static final int admin=0x7f0b0000;
+    public static final int adminen=0x7f0b0001;
+    public static final int afternoon=0x7f0b0002;
+    public static final int airplane=0x7f0b0003;
+    public static final int arm=0x7f0b0004;
+    public static final int bank=0x7f0b0005;
+    public static final int because=0x7f0b0006;
+    public static final int born=0x7f0b0007;
+    public static final int borrow=0x7f0b0008;
+    public static final int boy=0x7f0b0009;
+    public static final int boyscouts=0x7f0b000a;
+    public static final int brother=0x7f0b000b;
+    public static final int brown=0x7f0b000c;
+    public static final int bug=0x7f0b000d;
+    public static final int chih=0x7f0b000e;
+    public static final int coffee=0x7f0b000f;
+    public static final int coffeeen=0x7f0b0010;
+    public static final int come=0x7f0b0011;
+    public static final int come2=0x7f0b0012;
+    public static final int comeen=0x7f0b0013;
+    public static final int daughter=0x7f0b0014;
+    public static final int day=0x7f0b0015;
+    public static final int difficult=0x7f0b0016;
+    public static final int disvorce=0x7f0b0017;
+    public static final int donotknow=0x7f0b0018;
+    public static final int door=0x7f0b0019;
+    public static final int dragon=0x7f0b001a;
+    public static final int duck=0x7f0b001b;
+    public static final int eight=0x7f0b001c;
+    public static final int eighten=0x7f0b001d;
+    public static final int eighty=0x7f0b001e;
+    public static final int eightyen=0x7f0b001f;
+    public static final int enroll=0x7f0b0020;
+    public static final int familiar=0x7f0b0021;
+    public static final int father=0x7f0b0022;
+    public static final int fifty=0x7f0b0023;
+    public static final int fiftyen=0x7f0b0024;
+    public static final int first=0x7f0b0025;
+    public static final int fist=0x7f0b0026;
+    public static final int five=0x7f0b0027;
+    public static final int fiveen=0x7f0b0028;
+    public static final int forty=0x7f0b0029;
+    public static final int fortyen=0x7f0b002a;
+    public static final int fortyy=0x7f0b002b;
+    public static final int four=0x7f0b002c;
+    public static final int fouren=0x7f0b002d;
+    public static final int friday=0x7f0b002e;
+    public static final int friend=0x7f0b002f;
+    public static final int fruit=0x7f0b0030;
+    public static final int g=0x7f0b0031;
+    public static final int gentle=0x7f0b0032;
+    public static final int girl=0x7f0b0033;
+    public static final int girl1=0x7f0b0034;
+    public static final int good=0x7f0b0035;
+    public static final int guava=0x7f0b0036;
+    public static final int hand=0x7f0b0037;
+    public static final int happy=0x7f0b0038;
+    public static final int he=0x7f0b0039;
+    public static final int hear=0x7f0b003a;
+    public static final int hello=0x7f0b003b;
+    public static final int helloen=0x7f0b003c;
+    public static final int help=0x7f0b003d;
+    public static final int helpen=0x7f0b003e;
+    public static final int helpyou=0x7f0b003f;
+    public static final int house=0x7f0b0040;
+    public static final int howmuch=0x7f0b0041;
+    public static final int howmuchen=0x7f0b0042;
+    public static final int hundred=0x7f0b0043;
+    public static final int hundreden=0x7f0b0044;
+    public static final int i=0x7f0b0045;
+    public static final int idonnotknow=0x7f0b0046;
+    public static final int ien=0x7f0b0047;
+    public static final int iloveyou=0x7f0b0048;
+    public static final int is=0x7f0b0049;
+    public static final int keep=0x7f0b004a;
+    public static final int know=0x7f0b004b;
+    public static final int land=0x7f0b004c;
+    public static final int left=0x7f0b004d;
+    public static final int letter=0x7f0b004e;
+    public static final int letteren=0x7f0b004f;
+    public static final int little=0x7f0b0050;
+    public static final int lonely=0x7f0b0051;
+    public static final int lonelyen=0x7f0b0052;
+    public static final int love=0x7f0b0053;
+    public static final int loveen=0x7f0b0054;
+    public static final int lululu=0x7f0b0055;
+    public static final int male=0x7f0b0056;
+    public static final int marry=0x7f0b0057;
+    public static final int monday=0x7f0b0058;
+    public static final int money1=0x7f0b0059;
+    public static final int mother=0x7f0b005a;
+    public static final int name=0x7f0b005b;
+    public static final int need=0x7f0b005c;
+    public static final int need1=0x7f0b005d;
+    public static final int needen=0x7f0b005e;
+    public static final int newtaipeicity=0x7f0b005f;
+    public static final int nine=0x7f0b0060;
+    public static final int nineen=0x7f0b0061;
+    public static final int ninety=0x7f0b0062;
+    public static final int ninetyen=0x7f0b0063;
+    public static final int no=0x7f0b0064;
+    public static final int nology=0x7f0b0065;
+    public static final int nonsense=0x7f0b0066;
+    public static final int noon=0x7f0b0067;
+    public static final int nulll=0x7f0b0068;
+    public static final int one=0x7f0b0069;
+    public static final int oneen=0x7f0b006a;
+    public static final int onehundred=0x7f0b006b;
+    public static final int onethousand=0x7f0b006c;
+    public static final int ours=0x7f0b006d;
+    public static final int pay=0x7f0b006e;
+    public static final int payen=0x7f0b006f;
+    public static final int pen=0x7f0b0070;
+    public static final int people=0x7f0b0071;
+    public static final int place=0x7f0b0072;
+    public static final int president=0x7f0b0073;
+    public static final int price=0x7f0b0074;
+    public static final int priceen=0x7f0b0075;
+    public static final int prompt=0x7f0b0076;
+    public static final int protect=0x7f0b0077;
+    public static final int protecten=0x7f0b0078;
+    public static final int q=0x7f0b0079;
+    public static final int recletter=0x7f0b007a;
+    public static final int recletteren=0x7f0b007b;
+    public static final int rectangle=0x7f0b007c;
+    public static final int right=0x7f0b007d;
+    public static final int sand=0x7f0b007e;
+    public static final int sandwich=0x7f0b007f;
+    public static final int sandwichen=0x7f0b0080;
+    public static final int saturday=0x7f0b0081;
+    public static final int second=0x7f0b0082;
+    public static final int sentence=0x7f0b0083;
+    public static final int seven=0x7f0b0084;
+    public static final int sevenen=0x7f0b0085;
+    public static final int seventy=0x7f0b0086;
+    public static final int seventyen=0x7f0b0087;
+    public static final int she=0x7f0b0088;
+    public static final int signlanguage=0x7f0b0089;
+    public static final int similar=0x7f0b008a;
+    public static final int sister=0x7f0b008b;
+    public static final int sit=0x7f0b008c;
+    public static final int six=0x7f0b008d;
+    public static final int sixen=0x7f0b008e;
+    public static final int sixty=0x7f0b008f;
+    public static final int sixtyen=0x7f0b0090;
+    public static final int sleep=0x7f0b0091;
+    public static final int son=0x7f0b0092;
+    public static final int stamp=0x7f0b0093;
+    public static final int stampen=0x7f0b0094;
+    public static final int stand=0x7f0b0095;
+    public static final int stir=0x7f0b0096;
+    public static final int study=0x7f0b0097;
+    public static final int studyen=0x7f0b0098;
+    public static final int subordinate=0x7f0b0099;
+    public static final int sunday=0x7f0b009a;
+    public static final int sy=0x7f0b009b;
+    public static final int system=0x7f0b009c;
+    public static final int taipei=0x7f0b009d;
+    public static final int taipeien=0x7f0b009e;
+    public static final int taiwan=0x7f0b009f;
+    public static final int taiwanen=0x7f0b00a0;
+    public static final int tech=0x7f0b00a1;
+    public static final int technology=0x7f0b00a2;
+    public static final int technologyen=0x7f0b00a3;
+    public static final int ten=0x7f0b00a4;
+    public static final int tenen=0x7f0b00a5;
+    public static final int tenthousandd=0x7f0b00a6;
+    public static final int thanks=0x7f0b00a7;
+    public static final int thanksen=0x7f0b00a8;
+    public static final int that=0x7f0b00a9;
+    public static final int thirty=0x7f0b00aa;
+    public static final int thirtyen=0x7f0b00ab;
+    public static final int thiss=0x7f0b00ac;
+    public static final int thousand=0x7f0b00ad;
+    public static final int thousanden=0x7f0b00ae;
+    public static final int three=0x7f0b00af;
+    public static final int threeen=0x7f0b00b0;
+    public static final int thursday=0x7f0b00b1;
+    public static final int tiger=0x7f0b00b2;
+    public static final int together=0x7f0b00b3;
+    public static final int toilet=0x7f0b00b4;
+    public static final int translation=0x7f0b00b5;
+    public static final int tuesday=0x7f0b00b6;
+    public static final int twenty=0x7f0b00b7;
+    public static final int twentyen=0x7f0b00b8;
+    public static final int two=0x7f0b00b9;
+    public static final int twoen=0x7f0b00ba;
+    public static final int university=0x7f0b00bb;
+    public static final int universityen=0x7f0b00bc;
+    public static final int v_need=0x7f0b00bd;
+    public static final int v_work=0x7f0b00be;
+    public static final int vegetable=0x7f0b00bf;
+    public static final int very=0x7f0b00c0;
+    public static final int voice=0x7f0b00c1;
+    public static final int wang=0x7f0b00c2;
+    public static final int watch=0x7f0b00c3;
+    public static final int wc=0x7f0b00c4;
+    public static final int wednesday=0x7f0b00c5;
+    public static final int welcome=0x7f0b00c6;
+    public static final int welcomeen=0x7f0b00c7;
+    public static final int what=0x7f0b00c8;
+    public static final int which=0x7f0b00c9;
+    public static final int who=0x7f0b00ca;
+    public static final int worm=0x7f0b00cb;
+    public static final int wu=0x7f0b00cc;
+    public static final int yes=0x7f0b00cd;
+    public static final int you=0x7f0b00ce;
+    public static final int youen=0x7f0b00cf;
+    public static final int yours=0x7f0b00d0;
+    public static final int zero=0x7f0b00d1;
+    public static final int zeroen=0x7f0b00d2;
+  }
   public static final class string {
-    public static final int Close=0x7f0b0000;
-    public static final int Disc=0x7f0b0001;
-    public static final int Left=0x7f0b0002;
-    public static final int NOGPS=0x7f0b0003;
-    public static final int NOTsame=0x7f0b0004;
-    public static final int NOTsup=0x7f0b0005;
-    public static final int NOdevice=0x7f0b0006;
-    public static final int OK=0x7f0b0007;
-    public static final int Right=0x7f0b0008;
-    public static final int Test=0x7f0b0009;
-    public static final int abc_action_bar_home_description=0x7f0b000a;
-    public static final int abc_action_bar_home_description_format=0x7f0b000b;
-    public static final int abc_action_bar_home_subtitle_description_format=0x7f0b000c;
-    public static final int abc_action_bar_up_description=0x7f0b000d;
-    public static final int abc_action_menu_overflow_description=0x7f0b000e;
-    public static final int abc_action_mode_done=0x7f0b000f;
-    public static final int abc_activity_chooser_view_see_all=0x7f0b0010;
-    public static final int abc_activitychooserview_choose_application=0x7f0b0011;
-    public static final int abc_capital_off=0x7f0b0012;
-    public static final int abc_capital_on=0x7f0b0013;
-    public static final int abc_font_family_body_1_material=0x7f0b0014;
-    public static final int abc_font_family_body_2_material=0x7f0b0015;
-    public static final int abc_font_family_button_material=0x7f0b0016;
-    public static final int abc_font_family_caption_material=0x7f0b0017;
-    public static final int abc_font_family_display_1_material=0x7f0b0018;
-    public static final int abc_font_family_display_2_material=0x7f0b0019;
-    public static final int abc_font_family_display_3_material=0x7f0b001a;
-    public static final int abc_font_family_display_4_material=0x7f0b001b;
-    public static final int abc_font_family_headline_material=0x7f0b001c;
-    public static final int abc_font_family_menu_material=0x7f0b001d;
-    public static final int abc_font_family_subhead_material=0x7f0b001e;
-    public static final int abc_font_family_title_material=0x7f0b001f;
-    public static final int abc_search_hint=0x7f0b0020;
-    public static final int abc_searchview_description_clear=0x7f0b0021;
-    public static final int abc_searchview_description_query=0x7f0b0022;
-    public static final int abc_searchview_description_search=0x7f0b0023;
-    public static final int abc_searchview_description_submit=0x7f0b0024;
-    public static final int abc_searchview_description_voice=0x7f0b0025;
-    public static final int abc_shareactionprovider_share_with=0x7f0b0026;
-    public static final int abc_shareactionprovider_share_with_application=0x7f0b0027;
-    public static final int abc_toolbar_collapse_description=0x7f0b0028;
-    public static final int app_name=0x7f0b0029;
-    public static final int clear=0x7f0b002a;
-    public static final int connect=0x7f0b002b;
-    public static final int scan=0x7f0b002c;
-    public static final int search_menu_title=0x7f0b002d;
-    public static final int startScan=0x7f0b002e;
-    public static final int status_bar_notification_info_overflow=0x7f0b002f;
-    public static final int stop=0x7f0b0030;
-    public static final int warning=0x7f0b0031;
+    public static final int Close=0x7f0c0000;
+    public static final int DelayTime=0x7f0c0001;
+    public static final int Disc=0x7f0c0002;
+    public static final int LanquageSelector=0x7f0c0003;
+    public static final int Left=0x7f0c0004;
+    public static final int NOGPS=0x7f0c0005;
+    public static final int NOTsame=0x7f0c0006;
+    public static final int NOTsup=0x7f0c0007;
+    public static final int NOdevice=0x7f0c0008;
+    public static final int OK=0x7f0c0009;
+    public static final int Right=0x7f0c000a;
+    public static final int Test=0x7f0c000b;
+    public static final int abc_action_bar_home_description=0x7f0c000c;
+    public static final int abc_action_bar_home_description_format=0x7f0c000d;
+    public static final int abc_action_bar_home_subtitle_description_format=0x7f0c000e;
+    public static final int abc_action_bar_up_description=0x7f0c000f;
+    public static final int abc_action_menu_overflow_description=0x7f0c0010;
+    public static final int abc_action_mode_done=0x7f0c0011;
+    public static final int abc_activity_chooser_view_see_all=0x7f0c0012;
+    public static final int abc_activitychooserview_choose_application=0x7f0c0013;
+    public static final int abc_capital_off=0x7f0c0014;
+    public static final int abc_capital_on=0x7f0c0015;
+    public static final int abc_font_family_body_1_material=0x7f0c0016;
+    public static final int abc_font_family_body_2_material=0x7f0c0017;
+    public static final int abc_font_family_button_material=0x7f0c0018;
+    public static final int abc_font_family_caption_material=0x7f0c0019;
+    public static final int abc_font_family_display_1_material=0x7f0c001a;
+    public static final int abc_font_family_display_2_material=0x7f0c001b;
+    public static final int abc_font_family_display_3_material=0x7f0c001c;
+    public static final int abc_font_family_display_4_material=0x7f0c001d;
+    public static final int abc_font_family_headline_material=0x7f0c001e;
+    public static final int abc_font_family_menu_material=0x7f0c001f;
+    public static final int abc_font_family_subhead_material=0x7f0c0020;
+    public static final int abc_font_family_title_material=0x7f0c0021;
+    public static final int abc_search_hint=0x7f0c0022;
+    public static final int abc_searchview_description_clear=0x7f0c0023;
+    public static final int abc_searchview_description_query=0x7f0c0024;
+    public static final int abc_searchview_description_search=0x7f0c0025;
+    public static final int abc_searchview_description_submit=0x7f0c0026;
+    public static final int abc_searchview_description_voice=0x7f0c0027;
+    public static final int abc_shareactionprovider_share_with=0x7f0c0028;
+    public static final int abc_shareactionprovider_share_with_application=0x7f0c0029;
+    public static final int abc_toolbar_collapse_description=0x7f0c002a;
+    public static final int app_name=0x7f0c002b;
+    public static final int clear=0x7f0c002c;
+    public static final int connect=0x7f0c002d;
+    public static final int scan=0x7f0c002e;
+    public static final int search_menu_title=0x7f0c002f;
+    public static final int startScan=0x7f0c0030;
+    public static final int status_bar_notification_info_overflow=0x7f0c0031;
+    public static final int stop=0x7f0c0032;
+    public static final int warning=0x7f0c0033;
   }
   public static final class style {
-    public static final int AlertDialog_AppCompat=0x7f0c0000;
-    public static final int AlertDialog_AppCompat_Light=0x7f0c0001;
-    public static final int Animation_AppCompat_Dialog=0x7f0c0002;
-    public static final int Animation_AppCompat_DropDownUp=0x7f0c0003;
-    public static final int Animation_AppCompat_Tooltip=0x7f0c0004;
-    public static final int AppTheme=0x7f0c0005;
-    public static final int Base_AlertDialog_AppCompat=0x7f0c0006;
-    public static final int Base_AlertDialog_AppCompat_Light=0x7f0c0007;
-    public static final int Base_Animation_AppCompat_Dialog=0x7f0c0008;
-    public static final int Base_Animation_AppCompat_DropDownUp=0x7f0c0009;
-    public static final int Base_Animation_AppCompat_Tooltip=0x7f0c000a;
-    public static final int Base_DialogWindowTitleBackground_AppCompat=0x7f0c000c;
-    public static final int Base_DialogWindowTitle_AppCompat=0x7f0c000b;
-    public static final int Base_TextAppearance_AppCompat=0x7f0c000d;
-    public static final int Base_TextAppearance_AppCompat_Body1=0x7f0c000e;
-    public static final int Base_TextAppearance_AppCompat_Body2=0x7f0c000f;
-    public static final int Base_TextAppearance_AppCompat_Button=0x7f0c0010;
-    public static final int Base_TextAppearance_AppCompat_Caption=0x7f0c0011;
-    public static final int Base_TextAppearance_AppCompat_Display1=0x7f0c0012;
-    public static final int Base_TextAppearance_AppCompat_Display2=0x7f0c0013;
-    public static final int Base_TextAppearance_AppCompat_Display3=0x7f0c0014;
-    public static final int Base_TextAppearance_AppCompat_Display4=0x7f0c0015;
-    public static final int Base_TextAppearance_AppCompat_Headline=0x7f0c0016;
-    public static final int Base_TextAppearance_AppCompat_Inverse=0x7f0c0017;
-    public static final int Base_TextAppearance_AppCompat_Large=0x7f0c0018;
-    public static final int Base_TextAppearance_AppCompat_Large_Inverse=0x7f0c0019;
-    public static final int Base_TextAppearance_AppCompat_Light_Widget_PopupMenu_Large=0x7f0c001a;
-    public static final int Base_TextAppearance_AppCompat_Light_Widget_PopupMenu_Small=0x7f0c001b;
-    public static final int Base_TextAppearance_AppCompat_Medium=0x7f0c001c;
-    public static final int Base_TextAppearance_AppCompat_Medium_Inverse=0x7f0c001d;
-    public static final int Base_TextAppearance_AppCompat_Menu=0x7f0c001e;
-    public static final int Base_TextAppearance_AppCompat_SearchResult=0x7f0c001f;
-    public static final int Base_TextAppearance_AppCompat_SearchResult_Subtitle=0x7f0c0020;
-    public static final int Base_TextAppearance_AppCompat_SearchResult_Title=0x7f0c0021;
-    public static final int Base_TextAppearance_AppCompat_Small=0x7f0c0022;
-    public static final int Base_TextAppearance_AppCompat_Small_Inverse=0x7f0c0023;
-    public static final int Base_TextAppearance_AppCompat_Subhead=0x7f0c0024;
-    public static final int Base_TextAppearance_AppCompat_Subhead_Inverse=0x7f0c0025;
-    public static final int Base_TextAppearance_AppCompat_Title=0x7f0c0026;
-    public static final int Base_TextAppearance_AppCompat_Title_Inverse=0x7f0c0027;
-    public static final int Base_TextAppearance_AppCompat_Tooltip=0x7f0c0028;
-    public static final int Base_TextAppearance_AppCompat_Widget_ActionBar_Menu=0x7f0c0029;
-    public static final int Base_TextAppearance_AppCompat_Widget_ActionBar_Subtitle=0x7f0c002a;
-    public static final int Base_TextAppearance_AppCompat_Widget_ActionBar_Subtitle_Inverse=0x7f0c002b;
-    public static final int Base_TextAppearance_AppCompat_Widget_ActionBar_Title=0x7f0c002c;
-    public static final int Base_TextAppearance_AppCompat_Widget_ActionBar_Title_Inverse=0x7f0c002d;
-    public static final int Base_TextAppearance_AppCompat_Widget_ActionMode_Subtitle=0x7f0c002e;
-    public static final int Base_TextAppearance_AppCompat_Widget_ActionMode_Title=0x7f0c002f;
-    public static final int Base_TextAppearance_AppCompat_Widget_Button=0x7f0c0030;
-    public static final int Base_TextAppearance_AppCompat_Widget_Button_Borderless_Colored=0x7f0c0031;
-    public static final int Base_TextAppearance_AppCompat_Widget_Button_Colored=0x7f0c0032;
-    public static final int Base_TextAppearance_AppCompat_Widget_Button_Inverse=0x7f0c0033;
-    public static final int Base_TextAppearance_AppCompat_Widget_DropDownItem=0x7f0c0034;
-    public static final int Base_TextAppearance_AppCompat_Widget_PopupMenu_Header=0x7f0c0035;
-    public static final int Base_TextAppearance_AppCompat_Widget_PopupMenu_Large=0x7f0c0036;
-    public static final int Base_TextAppearance_AppCompat_Widget_PopupMenu_Small=0x7f0c0037;
-    public static final int Base_TextAppearance_AppCompat_Widget_Switch=0x7f0c0038;
-    public static final int Base_TextAppearance_AppCompat_Widget_TextView_SpinnerItem=0x7f0c0039;
-    public static final int Base_TextAppearance_Widget_AppCompat_ExpandedMenu_Item=0x7f0c003a;
-    public static final int Base_TextAppearance_Widget_AppCompat_Toolbar_Subtitle=0x7f0c003b;
-    public static final int Base_TextAppearance_Widget_AppCompat_Toolbar_Title=0x7f0c003c;
-    public static final int Base_ThemeOverlay_AppCompat=0x7f0c004b;
-    public static final int Base_ThemeOverlay_AppCompat_ActionBar=0x7f0c004c;
-    public static final int Base_ThemeOverlay_AppCompat_Dark=0x7f0c004d;
-    public static final int Base_ThemeOverlay_AppCompat_Dark_ActionBar=0x7f0c004e;
-    public static final int Base_ThemeOverlay_AppCompat_Dialog=0x7f0c004f;
-    public static final int Base_ThemeOverlay_AppCompat_Dialog_Alert=0x7f0c0050;
-    public static final int Base_ThemeOverlay_AppCompat_Light=0x7f0c0051;
-    public static final int Base_Theme_AppCompat=0x7f0c003d;
-    public static final int Base_Theme_AppCompat_CompactMenu=0x7f0c003e;
-    public static final int Base_Theme_AppCompat_Dialog=0x7f0c003f;
-    public static final int Base_Theme_AppCompat_DialogWhenLarge=0x7f0c0043;
-    public static final int Base_Theme_AppCompat_Dialog_Alert=0x7f0c0040;
-    public static final int Base_Theme_AppCompat_Dialog_FixedSize=0x7f0c0041;
-    public static final int Base_Theme_AppCompat_Dialog_MinWidth=0x7f0c0042;
-    public static final int Base_Theme_AppCompat_Light=0x7f0c0044;
-    public static final int Base_Theme_AppCompat_Light_DarkActionBar=0x7f0c0045;
-    public static final int Base_Theme_AppCompat_Light_Dialog=0x7f0c0046;
-    public static final int Base_Theme_AppCompat_Light_DialogWhenLarge=0x7f0c004a;
-    public static final int Base_Theme_AppCompat_Light_Dialog_Alert=0x7f0c0047;
-    public static final int Base_Theme_AppCompat_Light_Dialog_FixedSize=0x7f0c0048;
-    public static final int Base_Theme_AppCompat_Light_Dialog_MinWidth=0x7f0c0049;
-    public static final int Base_V11_ThemeOverlay_AppCompat_Dialog=0x7f0c0054;
-    public static final int Base_V11_Theme_AppCompat_Dialog=0x7f0c0052;
-    public static final int Base_V11_Theme_AppCompat_Light_Dialog=0x7f0c0053;
-    public static final int Base_V12_Widget_AppCompat_AutoCompleteTextView=0x7f0c0055;
-    public static final int Base_V12_Widget_AppCompat_EditText=0x7f0c0056;
-    public static final int Base_V21_ThemeOverlay_AppCompat_Dialog=0x7f0c005b;
-    public static final int Base_V21_Theme_AppCompat=0x7f0c0057;
-    public static final int Base_V21_Theme_AppCompat_Dialog=0x7f0c0058;
-    public static final int Base_V21_Theme_AppCompat_Light=0x7f0c0059;
-    public static final int Base_V21_Theme_AppCompat_Light_Dialog=0x7f0c005a;
-    public static final int Base_V22_Theme_AppCompat=0x7f0c005c;
-    public static final int Base_V22_Theme_AppCompat_Light=0x7f0c005d;
-    public static final int Base_V23_Theme_AppCompat=0x7f0c005e;
-    public static final int Base_V23_Theme_AppCompat_Light=0x7f0c005f;
-    public static final int Base_V26_Theme_AppCompat=0x7f0c0060;
-    public static final int Base_V26_Theme_AppCompat_Light=0x7f0c0061;
-    public static final int Base_V26_Widget_AppCompat_Toolbar=0x7f0c0062;
-    public static final int Base_V7_ThemeOverlay_AppCompat_Dialog=0x7f0c0067;
-    public static final int Base_V7_Theme_AppCompat=0x7f0c0063;
-    public static final int Base_V7_Theme_AppCompat_Dialog=0x7f0c0064;
-    public static final int Base_V7_Theme_AppCompat_Light=0x7f0c0065;
-    public static final int Base_V7_Theme_AppCompat_Light_Dialog=0x7f0c0066;
-    public static final int Base_V7_Widget_AppCompat_AutoCompleteTextView=0x7f0c0068;
-    public static final int Base_V7_Widget_AppCompat_EditText=0x7f0c0069;
-    public static final int Base_V7_Widget_AppCompat_Toolbar=0x7f0c006a;
-    public static final int Base_Widget_AppCompat_ActionBar=0x7f0c006b;
-    public static final int Base_Widget_AppCompat_ActionBar_Solid=0x7f0c006c;
-    public static final int Base_Widget_AppCompat_ActionBar_TabBar=0x7f0c006d;
-    public static final int Base_Widget_AppCompat_ActionBar_TabText=0x7f0c006e;
-    public static final int Base_Widget_AppCompat_ActionBar_TabView=0x7f0c006f;
-    public static final int Base_Widget_AppCompat_ActionButton=0x7f0c0070;
-    public static final int Base_Widget_AppCompat_ActionButton_CloseMode=0x7f0c0071;
-    public static final int Base_Widget_AppCompat_ActionButton_Overflow=0x7f0c0072;
-    public static final int Base_Widget_AppCompat_ActionMode=0x7f0c0073;
-    public static final int Base_Widget_AppCompat_ActivityChooserView=0x7f0c0074;
-    public static final int Base_Widget_AppCompat_AutoCompleteTextView=0x7f0c0075;
-    public static final int Base_Widget_AppCompat_Button=0x7f0c0076;
-    public static final int Base_Widget_AppCompat_ButtonBar=0x7f0c007c;
-    public static final int Base_Widget_AppCompat_ButtonBar_AlertDialog=0x7f0c007d;
-    public static final int Base_Widget_AppCompat_Button_Borderless=0x7f0c0077;
-    public static final int Base_Widget_AppCompat_Button_Borderless_Colored=0x7f0c0078;
-    public static final int Base_Widget_AppCompat_Button_ButtonBar_AlertDialog=0x7f0c0079;
-    public static final int Base_Widget_AppCompat_Button_Colored=0x7f0c007a;
-    public static final int Base_Widget_AppCompat_Button_Small=0x7f0c007b;
-    public static final int Base_Widget_AppCompat_CompoundButton_CheckBox=0x7f0c007e;
-    public static final int Base_Widget_AppCompat_CompoundButton_RadioButton=0x7f0c007f;
-    public static final int Base_Widget_AppCompat_CompoundButton_Switch=0x7f0c0080;
-    public static final int Base_Widget_AppCompat_DrawerArrowToggle=0x7f0c0081;
-    public static final int Base_Widget_AppCompat_DrawerArrowToggle_Common=0x7f0c0082;
-    public static final int Base_Widget_AppCompat_DropDownItem_Spinner=0x7f0c0083;
-    public static final int Base_Widget_AppCompat_EditText=0x7f0c0084;
-    public static final int Base_Widget_AppCompat_ImageButton=0x7f0c0085;
-    public static final int Base_Widget_AppCompat_Light_ActionBar=0x7f0c0086;
-    public static final int Base_Widget_AppCompat_Light_ActionBar_Solid=0x7f0c0087;
-    public static final int Base_Widget_AppCompat_Light_ActionBar_TabBar=0x7f0c0088;
-    public static final int Base_Widget_AppCompat_Light_ActionBar_TabText=0x7f0c0089;
-    public static final int Base_Widget_AppCompat_Light_ActionBar_TabText_Inverse=0x7f0c008a;
-    public static final int Base_Widget_AppCompat_Light_ActionBar_TabView=0x7f0c008b;
-    public static final int Base_Widget_AppCompat_Light_PopupMenu=0x7f0c008c;
-    public static final int Base_Widget_AppCompat_Light_PopupMenu_Overflow=0x7f0c008d;
-    public static final int Base_Widget_AppCompat_ListMenuView=0x7f0c008e;
-    public static final int Base_Widget_AppCompat_ListPopupWindow=0x7f0c008f;
-    public static final int Base_Widget_AppCompat_ListView=0x7f0c0090;
-    public static final int Base_Widget_AppCompat_ListView_DropDown=0x7f0c0091;
-    public static final int Base_Widget_AppCompat_ListView_Menu=0x7f0c0092;
-    public static final int Base_Widget_AppCompat_PopupMenu=0x7f0c0093;
-    public static final int Base_Widget_AppCompat_PopupMenu_Overflow=0x7f0c0094;
-    public static final int Base_Widget_AppCompat_PopupWindow=0x7f0c0095;
-    public static final int Base_Widget_AppCompat_ProgressBar=0x7f0c0096;
-    public static final int Base_Widget_AppCompat_ProgressBar_Horizontal=0x7f0c0097;
-    public static final int Base_Widget_AppCompat_RatingBar=0x7f0c0098;
-    public static final int Base_Widget_AppCompat_RatingBar_Indicator=0x7f0c0099;
-    public static final int Base_Widget_AppCompat_RatingBar_Small=0x7f0c009a;
-    public static final int Base_Widget_AppCompat_SearchView=0x7f0c009b;
-    public static final int Base_Widget_AppCompat_SearchView_ActionBar=0x7f0c009c;
-    public static final int Base_Widget_AppCompat_SeekBar=0x7f0c009d;
-    public static final int Base_Widget_AppCompat_SeekBar_Discrete=0x7f0c009e;
-    public static final int Base_Widget_AppCompat_Spinner=0x7f0c009f;
-    public static final int Base_Widget_AppCompat_Spinner_Underlined=0x7f0c00a0;
-    public static final int Base_Widget_AppCompat_TextView_SpinnerItem=0x7f0c00a1;
-    public static final int Base_Widget_AppCompat_Toolbar=0x7f0c00a2;
-    public static final int Base_Widget_AppCompat_Toolbar_Button_Navigation=0x7f0c00a3;
-    public static final int Platform_AppCompat=0x7f0c00a4;
-    public static final int Platform_AppCompat_Light=0x7f0c00a5;
-    public static final int Platform_ThemeOverlay_AppCompat=0x7f0c00a6;
-    public static final int Platform_ThemeOverlay_AppCompat_Dark=0x7f0c00a7;
-    public static final int Platform_ThemeOverlay_AppCompat_Light=0x7f0c00a8;
-    public static final int Platform_V11_AppCompat=0x7f0c00a9;
-    public static final int Platform_V11_AppCompat_Light=0x7f0c00aa;
-    public static final int Platform_V14_AppCompat=0x7f0c00ab;
-    public static final int Platform_V14_AppCompat_Light=0x7f0c00ac;
-    public static final int Platform_V21_AppCompat=0x7f0c00ad;
-    public static final int Platform_V21_AppCompat_Light=0x7f0c00ae;
-    public static final int Platform_V25_AppCompat=0x7f0c00af;
-    public static final int Platform_V25_AppCompat_Light=0x7f0c00b0;
-    public static final int Platform_Widget_AppCompat_Spinner=0x7f0c00b1;
-    public static final int RtlOverlay_DialogWindowTitle_AppCompat=0x7f0c00b2;
-    public static final int RtlOverlay_Widget_AppCompat_ActionBar_TitleItem=0x7f0c00b3;
-    public static final int RtlOverlay_Widget_AppCompat_DialogTitle_Icon=0x7f0c00b4;
-    public static final int RtlOverlay_Widget_AppCompat_PopupMenuItem=0x7f0c00b5;
-    public static final int RtlOverlay_Widget_AppCompat_PopupMenuItem_InternalGroup=0x7f0c00b6;
-    public static final int RtlOverlay_Widget_AppCompat_PopupMenuItem_Text=0x7f0c00b7;
-    public static final int RtlOverlay_Widget_AppCompat_SearchView_MagIcon=0x7f0c00bd;
-    public static final int RtlOverlay_Widget_AppCompat_Search_DropDown=0x7f0c00b8;
-    public static final int RtlOverlay_Widget_AppCompat_Search_DropDown_Icon1=0x7f0c00b9;
-    public static final int RtlOverlay_Widget_AppCompat_Search_DropDown_Icon2=0x7f0c00ba;
-    public static final int RtlOverlay_Widget_AppCompat_Search_DropDown_Query=0x7f0c00bb;
-    public static final int RtlOverlay_Widget_AppCompat_Search_DropDown_Text=0x7f0c00bc;
-    public static final int RtlUnderlay_Widget_AppCompat_ActionButton=0x7f0c00be;
-    public static final int RtlUnderlay_Widget_AppCompat_ActionButton_Overflow=0x7f0c00bf;
-    public static final int TextAppearance_AppCompat=0x7f0c00c0;
-    public static final int TextAppearance_AppCompat_Body1=0x7f0c00c1;
-    public static final int TextAppearance_AppCompat_Body2=0x7f0c00c2;
-    public static final int TextAppearance_AppCompat_Button=0x7f0c00c3;
-    public static final int TextAppearance_AppCompat_Caption=0x7f0c00c4;
-    public static final int TextAppearance_AppCompat_Display1=0x7f0c00c5;
-    public static final int TextAppearance_AppCompat_Display2=0x7f0c00c6;
-    public static final int TextAppearance_AppCompat_Display3=0x7f0c00c7;
-    public static final int TextAppearance_AppCompat_Display4=0x7f0c00c8;
-    public static final int TextAppearance_AppCompat_Headline=0x7f0c00c9;
-    public static final int TextAppearance_AppCompat_Inverse=0x7f0c00ca;
-    public static final int TextAppearance_AppCompat_Large=0x7f0c00cb;
-    public static final int TextAppearance_AppCompat_Large_Inverse=0x7f0c00cc;
-    public static final int TextAppearance_AppCompat_Light_SearchResult_Subtitle=0x7f0c00cd;
-    public static final int TextAppearance_AppCompat_Light_SearchResult_Title=0x7f0c00ce;
-    public static final int TextAppearance_AppCompat_Light_Widget_PopupMenu_Large=0x7f0c00cf;
-    public static final int TextAppearance_AppCompat_Light_Widget_PopupMenu_Small=0x7f0c00d0;
-    public static final int TextAppearance_AppCompat_Medium=0x7f0c00d1;
-    public static final int TextAppearance_AppCompat_Medium_Inverse=0x7f0c00d2;
-    public static final int TextAppearance_AppCompat_Menu=0x7f0c00d3;
-    public static final int TextAppearance_AppCompat_Notification=0x7f0c00d4;
-    public static final int TextAppearance_AppCompat_Notification_Info=0x7f0c00d5;
-    public static final int TextAppearance_AppCompat_Notification_Info_Media=0x7f0c00d6;
-    public static final int TextAppearance_AppCompat_Notification_Line2=0x7f0c00d7;
-    public static final int TextAppearance_AppCompat_Notification_Line2_Media=0x7f0c00d8;
-    public static final int TextAppearance_AppCompat_Notification_Media=0x7f0c00d9;
-    public static final int TextAppearance_AppCompat_Notification_Time=0x7f0c00da;
-    public static final int TextAppearance_AppCompat_Notification_Time_Media=0x7f0c00db;
-    public static final int TextAppearance_AppCompat_Notification_Title=0x7f0c00dc;
-    public static final int TextAppearance_AppCompat_Notification_Title_Media=0x7f0c00dd;
-    public static final int TextAppearance_AppCompat_SearchResult_Subtitle=0x7f0c00de;
-    public static final int TextAppearance_AppCompat_SearchResult_Title=0x7f0c00df;
-    public static final int TextAppearance_AppCompat_Small=0x7f0c00e0;
-    public static final int TextAppearance_AppCompat_Small_Inverse=0x7f0c00e1;
-    public static final int TextAppearance_AppCompat_Subhead=0x7f0c00e2;
-    public static final int TextAppearance_AppCompat_Subhead_Inverse=0x7f0c00e3;
-    public static final int TextAppearance_AppCompat_Title=0x7f0c00e4;
-    public static final int TextAppearance_AppCompat_Title_Inverse=0x7f0c00e5;
-    public static final int TextAppearance_AppCompat_Tooltip=0x7f0c00e6;
-    public static final int TextAppearance_AppCompat_Widget_ActionBar_Menu=0x7f0c00e7;
-    public static final int TextAppearance_AppCompat_Widget_ActionBar_Subtitle=0x7f0c00e8;
-    public static final int TextAppearance_AppCompat_Widget_ActionBar_Subtitle_Inverse=0x7f0c00e9;
-    public static final int TextAppearance_AppCompat_Widget_ActionBar_Title=0x7f0c00ea;
-    public static final int TextAppearance_AppCompat_Widget_ActionBar_Title_Inverse=0x7f0c00eb;
-    public static final int TextAppearance_AppCompat_Widget_ActionMode_Subtitle=0x7f0c00ec;
-    public static final int TextAppearance_AppCompat_Widget_ActionMode_Subtitle_Inverse=0x7f0c00ed;
-    public static final int TextAppearance_AppCompat_Widget_ActionMode_Title=0x7f0c00ee;
-    public static final int TextAppearance_AppCompat_Widget_ActionMode_Title_Inverse=0x7f0c00ef;
-    public static final int TextAppearance_AppCompat_Widget_Button=0x7f0c00f0;
-    public static final int TextAppearance_AppCompat_Widget_Button_Borderless_Colored=0x7f0c00f1;
-    public static final int TextAppearance_AppCompat_Widget_Button_Colored=0x7f0c00f2;
-    public static final int TextAppearance_AppCompat_Widget_Button_Inverse=0x7f0c00f3;
-    public static final int TextAppearance_AppCompat_Widget_DropDownItem=0x7f0c00f4;
-    public static final int TextAppearance_AppCompat_Widget_PopupMenu_Header=0x7f0c00f5;
-    public static final int TextAppearance_AppCompat_Widget_PopupMenu_Large=0x7f0c00f6;
-    public static final int TextAppearance_AppCompat_Widget_PopupMenu_Small=0x7f0c00f7;
-    public static final int TextAppearance_AppCompat_Widget_Switch=0x7f0c00f8;
-    public static final int TextAppearance_AppCompat_Widget_TextView_SpinnerItem=0x7f0c00f9;
-    public static final int TextAppearance_Compat_Notification=0x7f0c00fa;
-    public static final int TextAppearance_Compat_Notification_Info=0x7f0c00fb;
-    public static final int TextAppearance_Compat_Notification_Info_Media=0x7f0c00fc;
-    public static final int TextAppearance_Compat_Notification_Line2=0x7f0c00fd;
-    public static final int TextAppearance_Compat_Notification_Line2_Media=0x7f0c00fe;
-    public static final int TextAppearance_Compat_Notification_Media=0x7f0c00ff;
-    public static final int TextAppearance_Compat_Notification_Time=0x7f0c0100;
-    public static final int TextAppearance_Compat_Notification_Time_Media=0x7f0c0101;
-    public static final int TextAppearance_Compat_Notification_Title=0x7f0c0102;
-    public static final int TextAppearance_Compat_Notification_Title_Media=0x7f0c0103;
-    public static final int TextAppearance_Widget_AppCompat_ExpandedMenu_Item=0x7f0c0104;
-    public static final int TextAppearance_Widget_AppCompat_Toolbar_Subtitle=0x7f0c0105;
-    public static final int TextAppearance_Widget_AppCompat_Toolbar_Title=0x7f0c0106;
-    public static final int ThemeOverlay_AppCompat=0x7f0c011c;
-    public static final int ThemeOverlay_AppCompat_ActionBar=0x7f0c011d;
-    public static final int ThemeOverlay_AppCompat_Dark=0x7f0c011e;
-    public static final int ThemeOverlay_AppCompat_Dark_ActionBar=0x7f0c011f;
-    public static final int ThemeOverlay_AppCompat_Dialog=0x7f0c0120;
-    public static final int ThemeOverlay_AppCompat_Dialog_Alert=0x7f0c0121;
-    public static final int ThemeOverlay_AppCompat_Light=0x7f0c0122;
-    public static final int Theme_AppCompat=0x7f0c0107;
-    public static final int Theme_AppCompat_CompactMenu=0x7f0c0108;
-    public static final int Theme_AppCompat_DayNight=0x7f0c0109;
-    public static final int Theme_AppCompat_DayNight_DarkActionBar=0x7f0c010a;
-    public static final int Theme_AppCompat_DayNight_Dialog=0x7f0c010b;
-    public static final int Theme_AppCompat_DayNight_DialogWhenLarge=0x7f0c010e;
-    public static final int Theme_AppCompat_DayNight_Dialog_Alert=0x7f0c010c;
-    public static final int Theme_AppCompat_DayNight_Dialog_MinWidth=0x7f0c010d;
-    public static final int Theme_AppCompat_DayNight_NoActionBar=0x7f0c010f;
-    public static final int Theme_AppCompat_Dialog=0x7f0c0110;
-    public static final int Theme_AppCompat_DialogWhenLarge=0x7f0c0113;
-    public static final int Theme_AppCompat_Dialog_Alert=0x7f0c0111;
-    public static final int Theme_AppCompat_Dialog_MinWidth=0x7f0c0112;
-    public static final int Theme_AppCompat_Light=0x7f0c0114;
-    public static final int Theme_AppCompat_Light_DarkActionBar=0x7f0c0115;
-    public static final int Theme_AppCompat_Light_Dialog=0x7f0c0116;
-    public static final int Theme_AppCompat_Light_DialogWhenLarge=0x7f0c0119;
-    public static final int Theme_AppCompat_Light_Dialog_Alert=0x7f0c0117;
-    public static final int Theme_AppCompat_Light_Dialog_MinWidth=0x7f0c0118;
-    public static final int Theme_AppCompat_Light_NoActionBar=0x7f0c011a;
-    public static final int Theme_AppCompat_NoActionBar=0x7f0c011b;
-    public static final int Widget_AppCompat_ActionBar=0x7f0c0123;
-    public static final int Widget_AppCompat_ActionBar_Solid=0x7f0c0124;
-    public static final int Widget_AppCompat_ActionBar_TabBar=0x7f0c0125;
-    public static final int Widget_AppCompat_ActionBar_TabText=0x7f0c0126;
-    public static final int Widget_AppCompat_ActionBar_TabView=0x7f0c0127;
-    public static final int Widget_AppCompat_ActionButton=0x7f0c0128;
-    public static final int Widget_AppCompat_ActionButton_CloseMode=0x7f0c0129;
-    public static final int Widget_AppCompat_ActionButton_Overflow=0x7f0c012a;
-    public static final int Widget_AppCompat_ActionMode=0x7f0c012b;
-    public static final int Widget_AppCompat_ActivityChooserView=0x7f0c012c;
-    public static final int Widget_AppCompat_AutoCompleteTextView=0x7f0c012d;
-    public static final int Widget_AppCompat_Button=0x7f0c012e;
-    public static final int Widget_AppCompat_ButtonBar=0x7f0c0134;
-    public static final int Widget_AppCompat_ButtonBar_AlertDialog=0x7f0c0135;
-    public static final int Widget_AppCompat_Button_Borderless=0x7f0c012f;
-    public static final int Widget_AppCompat_Button_Borderless_Colored=0x7f0c0130;
-    public static final int Widget_AppCompat_Button_ButtonBar_AlertDialog=0x7f0c0131;
-    public static final int Widget_AppCompat_Button_Colored=0x7f0c0132;
-    public static final int Widget_AppCompat_Button_Small=0x7f0c0133;
-    public static final int Widget_AppCompat_CompoundButton_CheckBox=0x7f0c0136;
-    public static final int Widget_AppCompat_CompoundButton_RadioButton=0x7f0c0137;
-    public static final int Widget_AppCompat_CompoundButton_Switch=0x7f0c0138;
-    public static final int Widget_AppCompat_DrawerArrowToggle=0x7f0c0139;
-    public static final int Widget_AppCompat_DropDownItem_Spinner=0x7f0c013a;
-    public static final int Widget_AppCompat_EditText=0x7f0c013b;
-    public static final int Widget_AppCompat_ImageButton=0x7f0c013c;
-    public static final int Widget_AppCompat_Light_ActionBar=0x7f0c013d;
-    public static final int Widget_AppCompat_Light_ActionBar_Solid=0x7f0c013e;
-    public static final int Widget_AppCompat_Light_ActionBar_Solid_Inverse=0x7f0c013f;
-    public static final int Widget_AppCompat_Light_ActionBar_TabBar=0x7f0c0140;
-    public static final int Widget_AppCompat_Light_ActionBar_TabBar_Inverse=0x7f0c0141;
-    public static final int Widget_AppCompat_Light_ActionBar_TabText=0x7f0c0142;
-    public static final int Widget_AppCompat_Light_ActionBar_TabText_Inverse=0x7f0c0143;
-    public static final int Widget_AppCompat_Light_ActionBar_TabView=0x7f0c0144;
-    public static final int Widget_AppCompat_Light_ActionBar_TabView_Inverse=0x7f0c0145;
-    public static final int Widget_AppCompat_Light_ActionButton=0x7f0c0146;
-    public static final int Widget_AppCompat_Light_ActionButton_CloseMode=0x7f0c0147;
-    public static final int Widget_AppCompat_Light_ActionButton_Overflow=0x7f0c0148;
-    public static final int Widget_AppCompat_Light_ActionMode_Inverse=0x7f0c0149;
-    public static final int Widget_AppCompat_Light_ActivityChooserView=0x7f0c014a;
-    public static final int Widget_AppCompat_Light_AutoCompleteTextView=0x7f0c014b;
-    public static final int Widget_AppCompat_Light_DropDownItem_Spinner=0x7f0c014c;
-    public static final int Widget_AppCompat_Light_ListPopupWindow=0x7f0c014d;
-    public static final int Widget_AppCompat_Light_ListView_DropDown=0x7f0c014e;
-    public static final int Widget_AppCompat_Light_PopupMenu=0x7f0c014f;
-    public static final int Widget_AppCompat_Light_PopupMenu_Overflow=0x7f0c0150;
-    public static final int Widget_AppCompat_Light_SearchView=0x7f0c0151;
-    public static final int Widget_AppCompat_Light_Spinner_DropDown_ActionBar=0x7f0c0152;
-    public static final int Widget_AppCompat_ListMenuView=0x7f0c0153;
-    public static final int Widget_AppCompat_ListPopupWindow=0x7f0c0154;
-    public static final int Widget_AppCompat_ListView=0x7f0c0155;
-    public static final int Widget_AppCompat_ListView_DropDown=0x7f0c0156;
-    public static final int Widget_AppCompat_ListView_Menu=0x7f0c0157;
-    public static final int Widget_AppCompat_PopupMenu=0x7f0c0158;
-    public static final int Widget_AppCompat_PopupMenu_Overflow=0x7f0c0159;
-    public static final int Widget_AppCompat_PopupWindow=0x7f0c015a;
-    public static final int Widget_AppCompat_ProgressBar=0x7f0c015b;
-    public static final int Widget_AppCompat_ProgressBar_Horizontal=0x7f0c015c;
-    public static final int Widget_AppCompat_RatingBar=0x7f0c015d;
-    public static final int Widget_AppCompat_RatingBar_Indicator=0x7f0c015e;
-    public static final int Widget_AppCompat_RatingBar_Small=0x7f0c015f;
-    public static final int Widget_AppCompat_SearchView=0x7f0c0160;
-    public static final int Widget_AppCompat_SearchView_ActionBar=0x7f0c0161;
-    public static final int Widget_AppCompat_SeekBar=0x7f0c0162;
-    public static final int Widget_AppCompat_SeekBar_Discrete=0x7f0c0163;
-    public static final int Widget_AppCompat_Spinner=0x7f0c0164;
-    public static final int Widget_AppCompat_Spinner_DropDown=0x7f0c0165;
-    public static final int Widget_AppCompat_Spinner_DropDown_ActionBar=0x7f0c0166;
-    public static final int Widget_AppCompat_Spinner_Underlined=0x7f0c0167;
-    public static final int Widget_AppCompat_TextView_SpinnerItem=0x7f0c0168;
-    public static final int Widget_AppCompat_Toolbar=0x7f0c0169;
-    public static final int Widget_AppCompat_Toolbar_Button_Navigation=0x7f0c016a;
-    public static final int Widget_Compat_NotificationActionContainer=0x7f0c016b;
-    public static final int Widget_Compat_NotificationActionText=0x7f0c016c;
+    public static final int AlertDialog_AppCompat=0x7f0d0000;
+    public static final int AlertDialog_AppCompat_Light=0x7f0d0001;
+    public static final int Animation_AppCompat_Dialog=0x7f0d0002;
+    public static final int Animation_AppCompat_DropDownUp=0x7f0d0003;
+    public static final int Animation_AppCompat_Tooltip=0x7f0d0004;
+    public static final int AppTheme=0x7f0d0005;
+    public static final int Base_AlertDialog_AppCompat=0x7f0d0006;
+    public static final int Base_AlertDialog_AppCompat_Light=0x7f0d0007;
+    public static final int Base_Animation_AppCompat_Dialog=0x7f0d0008;
+    public static final int Base_Animation_AppCompat_DropDownUp=0x7f0d0009;
+    public static final int Base_Animation_AppCompat_Tooltip=0x7f0d000a;
+    public static final int Base_DialogWindowTitleBackground_AppCompat=0x7f0d000c;
+    public static final int Base_DialogWindowTitle_AppCompat=0x7f0d000b;
+    public static final int Base_TextAppearance_AppCompat=0x7f0d000d;
+    public static final int Base_TextAppearance_AppCompat_Body1=0x7f0d000e;
+    public static final int Base_TextAppearance_AppCompat_Body2=0x7f0d000f;
+    public static final int Base_TextAppearance_AppCompat_Button=0x7f0d0010;
+    public static final int Base_TextAppearance_AppCompat_Caption=0x7f0d0011;
+    public static final int Base_TextAppearance_AppCompat_Display1=0x7f0d0012;
+    public static final int Base_TextAppearance_AppCompat_Display2=0x7f0d0013;
+    public static final int Base_TextAppearance_AppCompat_Display3=0x7f0d0014;
+    public static final int Base_TextAppearance_AppCompat_Display4=0x7f0d0015;
+    public static final int Base_TextAppearance_AppCompat_Headline=0x7f0d0016;
+    public static final int Base_TextAppearance_AppCompat_Inverse=0x7f0d0017;
+    public static final int Base_TextAppearance_AppCompat_Large=0x7f0d0018;
+    public static final int Base_TextAppearance_AppCompat_Large_Inverse=0x7f0d0019;
+    public static final int Base_TextAppearance_AppCompat_Light_Widget_PopupMenu_Large=0x7f0d001a;
+    public static final int Base_TextAppearance_AppCompat_Light_Widget_PopupMenu_Small=0x7f0d001b;
+    public static final int Base_TextAppearance_AppCompat_Medium=0x7f0d001c;
+    public static final int Base_TextAppearance_AppCompat_Medium_Inverse=0x7f0d001d;
+    public static final int Base_TextAppearance_AppCompat_Menu=0x7f0d001e;
+    public static final int Base_TextAppearance_AppCompat_SearchResult=0x7f0d001f;
+    public static final int Base_TextAppearance_AppCompat_SearchResult_Subtitle=0x7f0d0020;
+    public static final int Base_TextAppearance_AppCompat_SearchResult_Title=0x7f0d0021;
+    public static final int Base_TextAppearance_AppCompat_Small=0x7f0d0022;
+    public static final int Base_TextAppearance_AppCompat_Small_Inverse=0x7f0d0023;
+    public static final int Base_TextAppearance_AppCompat_Subhead=0x7f0d0024;
+    public static final int Base_TextAppearance_AppCompat_Subhead_Inverse=0x7f0d0025;
+    public static final int Base_TextAppearance_AppCompat_Title=0x7f0d0026;
+    public static final int Base_TextAppearance_AppCompat_Title_Inverse=0x7f0d0027;
+    public static final int Base_TextAppearance_AppCompat_Tooltip=0x7f0d0028;
+    public static final int Base_TextAppearance_AppCompat_Widget_ActionBar_Menu=0x7f0d0029;
+    public static final int Base_TextAppearance_AppCompat_Widget_ActionBar_Subtitle=0x7f0d002a;
+    public static final int Base_TextAppearance_AppCompat_Widget_ActionBar_Subtitle_Inverse=0x7f0d002b;
+    public static final int Base_TextAppearance_AppCompat_Widget_ActionBar_Title=0x7f0d002c;
+    public static final int Base_TextAppearance_AppCompat_Widget_ActionBar_Title_Inverse=0x7f0d002d;
+    public static final int Base_TextAppearance_AppCompat_Widget_ActionMode_Subtitle=0x7f0d002e;
+    public static final int Base_TextAppearance_AppCompat_Widget_ActionMode_Title=0x7f0d002f;
+    public static final int Base_TextAppearance_AppCompat_Widget_Button=0x7f0d0030;
+    public static final int Base_TextAppearance_AppCompat_Widget_Button_Borderless_Colored=0x7f0d0031;
+    public static final int Base_TextAppearance_AppCompat_Widget_Button_Colored=0x7f0d0032;
+    public static final int Base_TextAppearance_AppCompat_Widget_Button_Inverse=0x7f0d0033;
+    public static final int Base_TextAppearance_AppCompat_Widget_DropDownItem=0x7f0d0034;
+    public static final int Base_TextAppearance_AppCompat_Widget_PopupMenu_Header=0x7f0d0035;
+    public static final int Base_TextAppearance_AppCompat_Widget_PopupMenu_Large=0x7f0d0036;
+    public static final int Base_TextAppearance_AppCompat_Widget_PopupMenu_Small=0x7f0d0037;
+    public static final int Base_TextAppearance_AppCompat_Widget_Switch=0x7f0d0038;
+    public static final int Base_TextAppearance_AppCompat_Widget_TextView_SpinnerItem=0x7f0d0039;
+    public static final int Base_TextAppearance_Widget_AppCompat_ExpandedMenu_Item=0x7f0d003a;
+    public static final int Base_TextAppearance_Widget_AppCompat_Toolbar_Subtitle=0x7f0d003b;
+    public static final int Base_TextAppearance_Widget_AppCompat_Toolbar_Title=0x7f0d003c;
+    public static final int Base_ThemeOverlay_AppCompat=0x7f0d004b;
+    public static final int Base_ThemeOverlay_AppCompat_ActionBar=0x7f0d004c;
+    public static final int Base_ThemeOverlay_AppCompat_Dark=0x7f0d004d;
+    public static final int Base_ThemeOverlay_AppCompat_Dark_ActionBar=0x7f0d004e;
+    public static final int Base_ThemeOverlay_AppCompat_Dialog=0x7f0d004f;
+    public static final int Base_ThemeOverlay_AppCompat_Dialog_Alert=0x7f0d0050;
+    public static final int Base_ThemeOverlay_AppCompat_Light=0x7f0d0051;
+    public static final int Base_Theme_AppCompat=0x7f0d003d;
+    public static final int Base_Theme_AppCompat_CompactMenu=0x7f0d003e;
+    public static final int Base_Theme_AppCompat_Dialog=0x7f0d003f;
+    public static final int Base_Theme_AppCompat_DialogWhenLarge=0x7f0d0043;
+    public static final int Base_Theme_AppCompat_Dialog_Alert=0x7f0d0040;
+    public static final int Base_Theme_AppCompat_Dialog_FixedSize=0x7f0d0041;
+    public static final int Base_Theme_AppCompat_Dialog_MinWidth=0x7f0d0042;
+    public static final int Base_Theme_AppCompat_Light=0x7f0d0044;
+    public static final int Base_Theme_AppCompat_Light_DarkActionBar=0x7f0d0045;
+    public static final int Base_Theme_AppCompat_Light_Dialog=0x7f0d0046;
+    public static final int Base_Theme_AppCompat_Light_DialogWhenLarge=0x7f0d004a;
+    public static final int Base_Theme_AppCompat_Light_Dialog_Alert=0x7f0d0047;
+    public static final int Base_Theme_AppCompat_Light_Dialog_FixedSize=0x7f0d0048;
+    public static final int Base_Theme_AppCompat_Light_Dialog_MinWidth=0x7f0d0049;
+    public static final int Base_V11_ThemeOverlay_AppCompat_Dialog=0x7f0d0054;
+    public static final int Base_V11_Theme_AppCompat_Dialog=0x7f0d0052;
+    public static final int Base_V11_Theme_AppCompat_Light_Dialog=0x7f0d0053;
+    public static final int Base_V12_Widget_AppCompat_AutoCompleteTextView=0x7f0d0055;
+    public static final int Base_V12_Widget_AppCompat_EditText=0x7f0d0056;
+    public static final int Base_V21_ThemeOverlay_AppCompat_Dialog=0x7f0d005b;
+    public static final int Base_V21_Theme_AppCompat=0x7f0d0057;
+    public static final int Base_V21_Theme_AppCompat_Dialog=0x7f0d0058;
+    public static final int Base_V21_Theme_AppCompat_Light=0x7f0d0059;
+    public static final int Base_V21_Theme_AppCompat_Light_Dialog=0x7f0d005a;
+    public static final int Base_V22_Theme_AppCompat=0x7f0d005c;
+    public static final int Base_V22_Theme_AppCompat_Light=0x7f0d005d;
+    public static final int Base_V23_Theme_AppCompat=0x7f0d005e;
+    public static final int Base_V23_Theme_AppCompat_Light=0x7f0d005f;
+    public static final int Base_V26_Theme_AppCompat=0x7f0d0060;
+    public static final int Base_V26_Theme_AppCompat_Light=0x7f0d0061;
+    public static final int Base_V26_Widget_AppCompat_Toolbar=0x7f0d0062;
+    public static final int Base_V7_ThemeOverlay_AppCompat_Dialog=0x7f0d0067;
+    public static final int Base_V7_Theme_AppCompat=0x7f0d0063;
+    public static final int Base_V7_Theme_AppCompat_Dialog=0x7f0d0064;
+    public static final int Base_V7_Theme_AppCompat_Light=0x7f0d0065;
+    public static final int Base_V7_Theme_AppCompat_Light_Dialog=0x7f0d0066;
+    public static final int Base_V7_Widget_AppCompat_AutoCompleteTextView=0x7f0d0068;
+    public static final int Base_V7_Widget_AppCompat_EditText=0x7f0d0069;
+    public static final int Base_V7_Widget_AppCompat_Toolbar=0x7f0d006a;
+    public static final int Base_Widget_AppCompat_ActionBar=0x7f0d006b;
+    public static final int Base_Widget_AppCompat_ActionBar_Solid=0x7f0d006c;
+    public static final int Base_Widget_AppCompat_ActionBar_TabBar=0x7f0d006d;
+    public static final int Base_Widget_AppCompat_ActionBar_TabText=0x7f0d006e;
+    public static final int Base_Widget_AppCompat_ActionBar_TabView=0x7f0d006f;
+    public static final int Base_Widget_AppCompat_ActionButton=0x7f0d0070;
+    public static final int Base_Widget_AppCompat_ActionButton_CloseMode=0x7f0d0071;
+    public static final int Base_Widget_AppCompat_ActionButton_Overflow=0x7f0d0072;
+    public static final int Base_Widget_AppCompat_ActionMode=0x7f0d0073;
+    public static final int Base_Widget_AppCompat_ActivityChooserView=0x7f0d0074;
+    public static final int Base_Widget_AppCompat_AutoCompleteTextView=0x7f0d0075;
+    public static final int Base_Widget_AppCompat_Button=0x7f0d0076;
+    public static final int Base_Widget_AppCompat_ButtonBar=0x7f0d007c;
+    public static final int Base_Widget_AppCompat_ButtonBar_AlertDialog=0x7f0d007d;
+    public static final int Base_Widget_AppCompat_Button_Borderless=0x7f0d0077;
+    public static final int Base_Widget_AppCompat_Button_Borderless_Colored=0x7f0d0078;
+    public static final int Base_Widget_AppCompat_Button_ButtonBar_AlertDialog=0x7f0d0079;
+    public static final int Base_Widget_AppCompat_Button_Colored=0x7f0d007a;
+    public static final int Base_Widget_AppCompat_Button_Small=0x7f0d007b;
+    public static final int Base_Widget_AppCompat_CompoundButton_CheckBox=0x7f0d007e;
+    public static final int Base_Widget_AppCompat_CompoundButton_RadioButton=0x7f0d007f;
+    public static final int Base_Widget_AppCompat_CompoundButton_Switch=0x7f0d0080;
+    public static final int Base_Widget_AppCompat_DrawerArrowToggle=0x7f0d0081;
+    public static final int Base_Widget_AppCompat_DrawerArrowToggle_Common=0x7f0d0082;
+    public static final int Base_Widget_AppCompat_DropDownItem_Spinner=0x7f0d0083;
+    public static final int Base_Widget_AppCompat_EditText=0x7f0d0084;
+    public static final int Base_Widget_AppCompat_ImageButton=0x7f0d0085;
+    public static final int Base_Widget_AppCompat_Light_ActionBar=0x7f0d0086;
+    public static final int Base_Widget_AppCompat_Light_ActionBar_Solid=0x7f0d0087;
+    public static final int Base_Widget_AppCompat_Light_ActionBar_TabBar=0x7f0d0088;
+    public static final int Base_Widget_AppCompat_Light_ActionBar_TabText=0x7f0d0089;
+    public static final int Base_Widget_AppCompat_Light_ActionBar_TabText_Inverse=0x7f0d008a;
+    public static final int Base_Widget_AppCompat_Light_ActionBar_TabView=0x7f0d008b;
+    public static final int Base_Widget_AppCompat_Light_PopupMenu=0x7f0d008c;
+    public static final int Base_Widget_AppCompat_Light_PopupMenu_Overflow=0x7f0d008d;
+    public static final int Base_Widget_AppCompat_ListMenuView=0x7f0d008e;
+    public static final int Base_Widget_AppCompat_ListPopupWindow=0x7f0d008f;
+    public static final int Base_Widget_AppCompat_ListView=0x7f0d0090;
+    public static final int Base_Widget_AppCompat_ListView_DropDown=0x7f0d0091;
+    public static final int Base_Widget_AppCompat_ListView_Menu=0x7f0d0092;
+    public static final int Base_Widget_AppCompat_PopupMenu=0x7f0d0093;
+    public static final int Base_Widget_AppCompat_PopupMenu_Overflow=0x7f0d0094;
+    public static final int Base_Widget_AppCompat_PopupWindow=0x7f0d0095;
+    public static final int Base_Widget_AppCompat_ProgressBar=0x7f0d0096;
+    public static final int Base_Widget_AppCompat_ProgressBar_Horizontal=0x7f0d0097;
+    public static final int Base_Widget_AppCompat_RatingBar=0x7f0d0098;
+    public static final int Base_Widget_AppCompat_RatingBar_Indicator=0x7f0d0099;
+    public static final int Base_Widget_AppCompat_RatingBar_Small=0x7f0d009a;
+    public static final int Base_Widget_AppCompat_SearchView=0x7f0d009b;
+    public static final int Base_Widget_AppCompat_SearchView_ActionBar=0x7f0d009c;
+    public static final int Base_Widget_AppCompat_SeekBar=0x7f0d009d;
+    public static final int Base_Widget_AppCompat_SeekBar_Discrete=0x7f0d009e;
+    public static final int Base_Widget_AppCompat_Spinner=0x7f0d009f;
+    public static final int Base_Widget_AppCompat_Spinner_Underlined=0x7f0d00a0;
+    public static final int Base_Widget_AppCompat_TextView_SpinnerItem=0x7f0d00a1;
+    public static final int Base_Widget_AppCompat_Toolbar=0x7f0d00a2;
+    public static final int Base_Widget_AppCompat_Toolbar_Button_Navigation=0x7f0d00a3;
+    public static final int Platform_AppCompat=0x7f0d00a4;
+    public static final int Platform_AppCompat_Light=0x7f0d00a5;
+    public static final int Platform_ThemeOverlay_AppCompat=0x7f0d00a6;
+    public static final int Platform_ThemeOverlay_AppCompat_Dark=0x7f0d00a7;
+    public static final int Platform_ThemeOverlay_AppCompat_Light=0x7f0d00a8;
+    public static final int Platform_V11_AppCompat=0x7f0d00a9;
+    public static final int Platform_V11_AppCompat_Light=0x7f0d00aa;
+    public static final int Platform_V14_AppCompat=0x7f0d00ab;
+    public static final int Platform_V14_AppCompat_Light=0x7f0d00ac;
+    public static final int Platform_V21_AppCompat=0x7f0d00ad;
+    public static final int Platform_V21_AppCompat_Light=0x7f0d00ae;
+    public static final int Platform_V25_AppCompat=0x7f0d00af;
+    public static final int Platform_V25_AppCompat_Light=0x7f0d00b0;
+    public static final int Platform_Widget_AppCompat_Spinner=0x7f0d00b1;
+    public static final int RtlOverlay_DialogWindowTitle_AppCompat=0x7f0d00b2;
+    public static final int RtlOverlay_Widget_AppCompat_ActionBar_TitleItem=0x7f0d00b3;
+    public static final int RtlOverlay_Widget_AppCompat_DialogTitle_Icon=0x7f0d00b4;
+    public static final int RtlOverlay_Widget_AppCompat_PopupMenuItem=0x7f0d00b5;
+    public static final int RtlOverlay_Widget_AppCompat_PopupMenuItem_InternalGroup=0x7f0d00b6;
+    public static final int RtlOverlay_Widget_AppCompat_PopupMenuItem_Text=0x7f0d00b7;
+    public static final int RtlOverlay_Widget_AppCompat_SearchView_MagIcon=0x7f0d00bd;
+    public static final int RtlOverlay_Widget_AppCompat_Search_DropDown=0x7f0d00b8;
+    public static final int RtlOverlay_Widget_AppCompat_Search_DropDown_Icon1=0x7f0d00b9;
+    public static final int RtlOverlay_Widget_AppCompat_Search_DropDown_Icon2=0x7f0d00ba;
+    public static final int RtlOverlay_Widget_AppCompat_Search_DropDown_Query=0x7f0d00bb;
+    public static final int RtlOverlay_Widget_AppCompat_Search_DropDown_Text=0x7f0d00bc;
+    public static final int RtlUnderlay_Widget_AppCompat_ActionButton=0x7f0d00be;
+    public static final int RtlUnderlay_Widget_AppCompat_ActionButton_Overflow=0x7f0d00bf;
+    public static final int TextAppearance_AppCompat=0x7f0d00c0;
+    public static final int TextAppearance_AppCompat_Body1=0x7f0d00c1;
+    public static final int TextAppearance_AppCompat_Body2=0x7f0d00c2;
+    public static final int TextAppearance_AppCompat_Button=0x7f0d00c3;
+    public static final int TextAppearance_AppCompat_Caption=0x7f0d00c4;
+    public static final int TextAppearance_AppCompat_Display1=0x7f0d00c5;
+    public static final int TextAppearance_AppCompat_Display2=0x7f0d00c6;
+    public static final int TextAppearance_AppCompat_Display3=0x7f0d00c7;
+    public static final int TextAppearance_AppCompat_Display4=0x7f0d00c8;
+    public static final int TextAppearance_AppCompat_Headline=0x7f0d00c9;
+    public static final int TextAppearance_AppCompat_Inverse=0x7f0d00ca;
+    public static final int TextAppearance_AppCompat_Large=0x7f0d00cb;
+    public static final int TextAppearance_AppCompat_Large_Inverse=0x7f0d00cc;
+    public static final int TextAppearance_AppCompat_Light_SearchResult_Subtitle=0x7f0d00cd;
+    public static final int TextAppearance_AppCompat_Light_SearchResult_Title=0x7f0d00ce;
+    public static final int TextAppearance_AppCompat_Light_Widget_PopupMenu_Large=0x7f0d00cf;
+    public static final int TextAppearance_AppCompat_Light_Widget_PopupMenu_Small=0x7f0d00d0;
+    public static final int TextAppearance_AppCompat_Medium=0x7f0d00d1;
+    public static final int TextAppearance_AppCompat_Medium_Inverse=0x7f0d00d2;
+    public static final int TextAppearance_AppCompat_Menu=0x7f0d00d3;
+    public static final int TextAppearance_AppCompat_Notification=0x7f0d00d4;
+    public static final int TextAppearance_AppCompat_Notification_Info=0x7f0d00d5;
+    public static final int TextAppearance_AppCompat_Notification_Info_Media=0x7f0d00d6;
+    public static final int TextAppearance_AppCompat_Notification_Line2=0x7f0d00d7;
+    public static final int TextAppearance_AppCompat_Notification_Line2_Media=0x7f0d00d8;
+    public static final int TextAppearance_AppCompat_Notification_Media=0x7f0d00d9;
+    public static final int TextAppearance_AppCompat_Notification_Time=0x7f0d00da;
+    public static final int TextAppearance_AppCompat_Notification_Time_Media=0x7f0d00db;
+    public static final int TextAppearance_AppCompat_Notification_Title=0x7f0d00dc;
+    public static final int TextAppearance_AppCompat_Notification_Title_Media=0x7f0d00dd;
+    public static final int TextAppearance_AppCompat_SearchResult_Subtitle=0x7f0d00de;
+    public static final int TextAppearance_AppCompat_SearchResult_Title=0x7f0d00df;
+    public static final int TextAppearance_AppCompat_Small=0x7f0d00e0;
+    public static final int TextAppearance_AppCompat_Small_Inverse=0x7f0d00e1;
+    public static final int TextAppearance_AppCompat_Subhead=0x7f0d00e2;
+    public static final int TextAppearance_AppCompat_Subhead_Inverse=0x7f0d00e3;
+    public static final int TextAppearance_AppCompat_Title=0x7f0d00e4;
+    public static final int TextAppearance_AppCompat_Title_Inverse=0x7f0d00e5;
+    public static final int TextAppearance_AppCompat_Tooltip=0x7f0d00e6;
+    public static final int TextAppearance_AppCompat_Widget_ActionBar_Menu=0x7f0d00e7;
+    public static final int TextAppearance_AppCompat_Widget_ActionBar_Subtitle=0x7f0d00e8;
+    public static final int TextAppearance_AppCompat_Widget_ActionBar_Subtitle_Inverse=0x7f0d00e9;
+    public static final int TextAppearance_AppCompat_Widget_ActionBar_Title=0x7f0d00ea;
+    public static final int TextAppearance_AppCompat_Widget_ActionBar_Title_Inverse=0x7f0d00eb;
+    public static final int TextAppearance_AppCompat_Widget_ActionMode_Subtitle=0x7f0d00ec;
+    public static final int TextAppearance_AppCompat_Widget_ActionMode_Subtitle_Inverse=0x7f0d00ed;
+    public static final int TextAppearance_AppCompat_Widget_ActionMode_Title=0x7f0d00ee;
+    public static final int TextAppearance_AppCompat_Widget_ActionMode_Title_Inverse=0x7f0d00ef;
+    public static final int TextAppearance_AppCompat_Widget_Button=0x7f0d00f0;
+    public static final int TextAppearance_AppCompat_Widget_Button_Borderless_Colored=0x7f0d00f1;
+    public static final int TextAppearance_AppCompat_Widget_Button_Colored=0x7f0d00f2;
+    public static final int TextAppearance_AppCompat_Widget_Button_Inverse=0x7f0d00f3;
+    public static final int TextAppearance_AppCompat_Widget_DropDownItem=0x7f0d00f4;
+    public static final int TextAppearance_AppCompat_Widget_PopupMenu_Header=0x7f0d00f5;
+    public static final int TextAppearance_AppCompat_Widget_PopupMenu_Large=0x7f0d00f6;
+    public static final int TextAppearance_AppCompat_Widget_PopupMenu_Small=0x7f0d00f7;
+    public static final int TextAppearance_AppCompat_Widget_Switch=0x7f0d00f8;
+    public static final int TextAppearance_AppCompat_Widget_TextView_SpinnerItem=0x7f0d00f9;
+    public static final int TextAppearance_Compat_Notification=0x7f0d00fa;
+    public static final int TextAppearance_Compat_Notification_Info=0x7f0d00fb;
+    public static final int TextAppearance_Compat_Notification_Info_Media=0x7f0d00fc;
+    public static final int TextAppearance_Compat_Notification_Line2=0x7f0d00fd;
+    public static final int TextAppearance_Compat_Notification_Line2_Media=0x7f0d00fe;
+    public static final int TextAppearance_Compat_Notification_Media=0x7f0d00ff;
+    public static final int TextAppearance_Compat_Notification_Time=0x7f0d0100;
+    public static final int TextAppearance_Compat_Notification_Time_Media=0x7f0d0101;
+    public static final int TextAppearance_Compat_Notification_Title=0x7f0d0102;
+    public static final int TextAppearance_Compat_Notification_Title_Media=0x7f0d0103;
+    public static final int TextAppearance_Widget_AppCompat_ExpandedMenu_Item=0x7f0d0104;
+    public static final int TextAppearance_Widget_AppCompat_Toolbar_Subtitle=0x7f0d0105;
+    public static final int TextAppearance_Widget_AppCompat_Toolbar_Title=0x7f0d0106;
+    public static final int ThemeOverlay_AppCompat=0x7f0d011c;
+    public static final int ThemeOverlay_AppCompat_ActionBar=0x7f0d011d;
+    public static final int ThemeOverlay_AppCompat_Dark=0x7f0d011e;
+    public static final int ThemeOverlay_AppCompat_Dark_ActionBar=0x7f0d011f;
+    public static final int ThemeOverlay_AppCompat_Dialog=0x7f0d0120;
+    public static final int ThemeOverlay_AppCompat_Dialog_Alert=0x7f0d0121;
+    public static final int ThemeOverlay_AppCompat_Light=0x7f0d0122;
+    public static final int Theme_AppCompat=0x7f0d0107;
+    public static final int Theme_AppCompat_CompactMenu=0x7f0d0108;
+    public static final int Theme_AppCompat_DayNight=0x7f0d0109;
+    public static final int Theme_AppCompat_DayNight_DarkActionBar=0x7f0d010a;
+    public static final int Theme_AppCompat_DayNight_Dialog=0x7f0d010b;
+    public static final int Theme_AppCompat_DayNight_DialogWhenLarge=0x7f0d010e;
+    public static final int Theme_AppCompat_DayNight_Dialog_Alert=0x7f0d010c;
+    public static final int Theme_AppCompat_DayNight_Dialog_MinWidth=0x7f0d010d;
+    public static final int Theme_AppCompat_DayNight_NoActionBar=0x7f0d010f;
+    public static final int Theme_AppCompat_Dialog=0x7f0d0110;
+    public static final int Theme_AppCompat_DialogWhenLarge=0x7f0d0113;
+    public static final int Theme_AppCompat_Dialog_Alert=0x7f0d0111;
+    public static final int Theme_AppCompat_Dialog_MinWidth=0x7f0d0112;
+    public static final int Theme_AppCompat_Light=0x7f0d0114;
+    public static final int Theme_AppCompat_Light_DarkActionBar=0x7f0d0115;
+    public static final int Theme_AppCompat_Light_Dialog=0x7f0d0116;
+    public static final int Theme_AppCompat_Light_DialogWhenLarge=0x7f0d0119;
+    public static final int Theme_AppCompat_Light_Dialog_Alert=0x7f0d0117;
+    public static final int Theme_AppCompat_Light_Dialog_MinWidth=0x7f0d0118;
+    public static final int Theme_AppCompat_Light_NoActionBar=0x7f0d011a;
+    public static final int Theme_AppCompat_NoActionBar=0x7f0d011b;
+    public static final int Widget_AppCompat_ActionBar=0x7f0d0123;
+    public static final int Widget_AppCompat_ActionBar_Solid=0x7f0d0124;
+    public static final int Widget_AppCompat_ActionBar_TabBar=0x7f0d0125;
+    public static final int Widget_AppCompat_ActionBar_TabText=0x7f0d0126;
+    public static final int Widget_AppCompat_ActionBar_TabView=0x7f0d0127;
+    public static final int Widget_AppCompat_ActionButton=0x7f0d0128;
+    public static final int Widget_AppCompat_ActionButton_CloseMode=0x7f0d0129;
+    public static final int Widget_AppCompat_ActionButton_Overflow=0x7f0d012a;
+    public static final int Widget_AppCompat_ActionMode=0x7f0d012b;
+    public static final int Widget_AppCompat_ActivityChooserView=0x7f0d012c;
+    public static final int Widget_AppCompat_AutoCompleteTextView=0x7f0d012d;
+    public static final int Widget_AppCompat_Button=0x7f0d012e;
+    public static final int Widget_AppCompat_ButtonBar=0x7f0d0134;
+    public static final int Widget_AppCompat_ButtonBar_AlertDialog=0x7f0d0135;
+    public static final int Widget_AppCompat_Button_Borderless=0x7f0d012f;
+    public static final int Widget_AppCompat_Button_Borderless_Colored=0x7f0d0130;
+    public static final int Widget_AppCompat_Button_ButtonBar_AlertDialog=0x7f0d0131;
+    public static final int Widget_AppCompat_Button_Colored=0x7f0d0132;
+    public static final int Widget_AppCompat_Button_Small=0x7f0d0133;
+    public static final int Widget_AppCompat_CompoundButton_CheckBox=0x7f0d0136;
+    public static final int Widget_AppCompat_CompoundButton_RadioButton=0x7f0d0137;
+    public static final int Widget_AppCompat_CompoundButton_Switch=0x7f0d0138;
+    public static final int Widget_AppCompat_DrawerArrowToggle=0x7f0d0139;
+    public static final int Widget_AppCompat_DropDownItem_Spinner=0x7f0d013a;
+    public static final int Widget_AppCompat_EditText=0x7f0d013b;
+    public static final int Widget_AppCompat_ImageButton=0x7f0d013c;
+    public static final int Widget_AppCompat_Light_ActionBar=0x7f0d013d;
+    public static final int Widget_AppCompat_Light_ActionBar_Solid=0x7f0d013e;
+    public static final int Widget_AppCompat_Light_ActionBar_Solid_Inverse=0x7f0d013f;
+    public static final int Widget_AppCompat_Light_ActionBar_TabBar=0x7f0d0140;
+    public static final int Widget_AppCompat_Light_ActionBar_TabBar_Inverse=0x7f0d0141;
+    public static final int Widget_AppCompat_Light_ActionBar_TabText=0x7f0d0142;
+    public static final int Widget_AppCompat_Light_ActionBar_TabText_Inverse=0x7f0d0143;
+    public static final int Widget_AppCompat_Light_ActionBar_TabView=0x7f0d0144;
+    public static final int Widget_AppCompat_Light_ActionBar_TabView_Inverse=0x7f0d0145;
+    public static final int Widget_AppCompat_Light_ActionButton=0x7f0d0146;
+    public static final int Widget_AppCompat_Light_ActionButton_CloseMode=0x7f0d0147;
+    public static final int Widget_AppCompat_Light_ActionButton_Overflow=0x7f0d0148;
+    public static final int Widget_AppCompat_Light_ActionMode_Inverse=0x7f0d0149;
+    public static final int Widget_AppCompat_Light_ActivityChooserView=0x7f0d014a;
+    public static final int Widget_AppCompat_Light_AutoCompleteTextView=0x7f0d014b;
+    public static final int Widget_AppCompat_Light_DropDownItem_Spinner=0x7f0d014c;
+    public static final int Widget_AppCompat_Light_ListPopupWindow=0x7f0d014d;
+    public static final int Widget_AppCompat_Light_ListView_DropDown=0x7f0d014e;
+    public static final int Widget_AppCompat_Light_PopupMenu=0x7f0d014f;
+    public static final int Widget_AppCompat_Light_PopupMenu_Overflow=0x7f0d0150;
+    public static final int Widget_AppCompat_Light_SearchView=0x7f0d0151;
+    public static final int Widget_AppCompat_Light_Spinner_DropDown_ActionBar=0x7f0d0152;
+    public static final int Widget_AppCompat_ListMenuView=0x7f0d0153;
+    public static final int Widget_AppCompat_ListPopupWindow=0x7f0d0154;
+    public static final int Widget_AppCompat_ListView=0x7f0d0155;
+    public static final int Widget_AppCompat_ListView_DropDown=0x7f0d0156;
+    public static final int Widget_AppCompat_ListView_Menu=0x7f0d0157;
+    public static final int Widget_AppCompat_PopupMenu=0x7f0d0158;
+    public static final int Widget_AppCompat_PopupMenu_Overflow=0x7f0d0159;
+    public static final int Widget_AppCompat_PopupWindow=0x7f0d015a;
+    public static final int Widget_AppCompat_ProgressBar=0x7f0d015b;
+    public static final int Widget_AppCompat_ProgressBar_Horizontal=0x7f0d015c;
+    public static final int Widget_AppCompat_RatingBar=0x7f0d015d;
+    public static final int Widget_AppCompat_RatingBar_Indicator=0x7f0d015e;
+    public static final int Widget_AppCompat_RatingBar_Small=0x7f0d015f;
+    public static final int Widget_AppCompat_SearchView=0x7f0d0160;
+    public static final int Widget_AppCompat_SearchView_ActionBar=0x7f0d0161;
+    public static final int Widget_AppCompat_SeekBar=0x7f0d0162;
+    public static final int Widget_AppCompat_SeekBar_Discrete=0x7f0d0163;
+    public static final int Widget_AppCompat_Spinner=0x7f0d0164;
+    public static final int Widget_AppCompat_Spinner_DropDown=0x7f0d0165;
+    public static final int Widget_AppCompat_Spinner_DropDown_ActionBar=0x7f0d0166;
+    public static final int Widget_AppCompat_Spinner_Underlined=0x7f0d0167;
+    public static final int Widget_AppCompat_TextView_SpinnerItem=0x7f0d0168;
+    public static final int Widget_AppCompat_Toolbar=0x7f0d0169;
+    public static final int Widget_AppCompat_Toolbar_Button_Navigation=0x7f0d016a;
+    public static final int Widget_Compat_NotificationActionContainer=0x7f0d016b;
+    public static final int Widget_Compat_NotificationActionText=0x7f0d016c;
   }
   public static final class styleable {
     /**
@@ -3326,35 +3546,35 @@ public final class R {
      * <colgroup align="left" />
      * <colgroup align="left" />
      * <tr><th>Attribute</th><th>Description</th></tr>
-     * <tr><td><code>{@link #ActionBar_background com.by.bledemo:background}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ActionBar_backgroundSplit com.by.bledemo:backgroundSplit}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ActionBar_backgroundStacked com.by.bledemo:backgroundStacked}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ActionBar_contentInsetEnd com.by.bledemo:contentInsetEnd}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ActionBar_contentInsetEndWithActions com.by.bledemo:contentInsetEndWithActions}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ActionBar_contentInsetLeft com.by.bledemo:contentInsetLeft}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ActionBar_contentInsetRight com.by.bledemo:contentInsetRight}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ActionBar_contentInsetStart com.by.bledemo:contentInsetStart}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ActionBar_contentInsetStartWithNavigation com.by.bledemo:contentInsetStartWithNavigation}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ActionBar_customNavigationLayout com.by.bledemo:customNavigationLayout}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ActionBar_displayOptions com.by.bledemo:displayOptions}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ActionBar_divider com.by.bledemo:divider}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ActionBar_elevation com.by.bledemo:elevation}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ActionBar_height com.by.bledemo:height}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ActionBar_hideOnContentScroll com.by.bledemo:hideOnContentScroll}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ActionBar_homeAsUpIndicator com.by.bledemo:homeAsUpIndicator}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ActionBar_homeLayout com.by.bledemo:homeLayout}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ActionBar_icon com.by.bledemo:icon}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ActionBar_indeterminateProgressStyle com.by.bledemo:indeterminateProgressStyle}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ActionBar_itemPadding com.by.bledemo:itemPadding}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ActionBar_logo com.by.bledemo:logo}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ActionBar_navigationMode com.by.bledemo:navigationMode}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ActionBar_popupTheme com.by.bledemo:popupTheme}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ActionBar_progressBarPadding com.by.bledemo:progressBarPadding}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ActionBar_progressBarStyle com.by.bledemo:progressBarStyle}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ActionBar_subtitle com.by.bledemo:subtitle}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ActionBar_subtitleTextStyle com.by.bledemo:subtitleTextStyle}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ActionBar_title com.by.bledemo:title}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ActionBar_titleTextStyle com.by.bledemo:titleTextStyle}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ActionBar_background com.by.ble:background}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ActionBar_backgroundSplit com.by.ble:backgroundSplit}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ActionBar_backgroundStacked com.by.ble:backgroundStacked}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ActionBar_contentInsetEnd com.by.ble:contentInsetEnd}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ActionBar_contentInsetEndWithActions com.by.ble:contentInsetEndWithActions}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ActionBar_contentInsetLeft com.by.ble:contentInsetLeft}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ActionBar_contentInsetRight com.by.ble:contentInsetRight}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ActionBar_contentInsetStart com.by.ble:contentInsetStart}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ActionBar_contentInsetStartWithNavigation com.by.ble:contentInsetStartWithNavigation}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ActionBar_customNavigationLayout com.by.ble:customNavigationLayout}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ActionBar_displayOptions com.by.ble:displayOptions}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ActionBar_divider com.by.ble:divider}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ActionBar_elevation com.by.ble:elevation}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ActionBar_height com.by.ble:height}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ActionBar_hideOnContentScroll com.by.ble:hideOnContentScroll}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ActionBar_homeAsUpIndicator com.by.ble:homeAsUpIndicator}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ActionBar_homeLayout com.by.ble:homeLayout}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ActionBar_icon com.by.ble:icon}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ActionBar_indeterminateProgressStyle com.by.ble:indeterminateProgressStyle}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ActionBar_itemPadding com.by.ble:itemPadding}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ActionBar_logo com.by.ble:logo}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ActionBar_navigationMode com.by.ble:navigationMode}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ActionBar_popupTheme com.by.ble:popupTheme}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ActionBar_progressBarPadding com.by.ble:progressBarPadding}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ActionBar_progressBarStyle com.by.ble:progressBarStyle}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ActionBar_subtitle com.by.ble:subtitle}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ActionBar_subtitleTextStyle com.by.ble:subtitleTextStyle}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ActionBar_title com.by.ble:title}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ActionBar_titleTextStyle com.by.ble:titleTextStyle}</code></td><td></td></tr>
      * </table>
      * @see #ActionBar_background
      * @see #ActionBar_backgroundSplit
@@ -3440,7 +3660,7 @@ public final class R {
      */
     public static final int ActionBarLayout_android_layout_gravity=0;
     /**
-     * <p>This symbol is the offset where the {@link com.by.bledemo.R.attr#background}
+     * <p>This symbol is the offset where the {@link com.by.ble.R.attr#background}
      * attribute's value can be found in the {@link #ActionBar} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -3448,11 +3668,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.by.bledemo:background
+     * @attr name com.by.ble:background
      */
     public static final int ActionBar_background=0;
     /**
-     * <p>This symbol is the offset where the {@link com.by.bledemo.R.attr#backgroundSplit}
+     * <p>This symbol is the offset where the {@link com.by.ble.R.attr#backgroundSplit}
      * attribute's value can be found in the {@link #ActionBar} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -3463,11 +3683,11 @@ public final class R {
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
      * "<code>#<i>aarrggbb</i></code>".
      *
-     * @attr name com.by.bledemo:backgroundSplit
+     * @attr name com.by.ble:backgroundSplit
      */
     public static final int ActionBar_backgroundSplit=1;
     /**
-     * <p>This symbol is the offset where the {@link com.by.bledemo.R.attr#backgroundStacked}
+     * <p>This symbol is the offset where the {@link com.by.ble.R.attr#backgroundStacked}
      * attribute's value can be found in the {@link #ActionBar} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -3478,11 +3698,11 @@ public final class R {
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
      * "<code>#<i>aarrggbb</i></code>".
      *
-     * @attr name com.by.bledemo:backgroundStacked
+     * @attr name com.by.ble:backgroundStacked
      */
     public static final int ActionBar_backgroundStacked=2;
     /**
-     * <p>This symbol is the offset where the {@link com.by.bledemo.R.attr#contentInsetEnd}
+     * <p>This symbol is the offset where the {@link com.by.ble.R.attr#contentInsetEnd}
      * attribute's value can be found in the {@link #ActionBar} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -3491,11 +3711,11 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.by.bledemo:contentInsetEnd
+     * @attr name com.by.ble:contentInsetEnd
      */
     public static final int ActionBar_contentInsetEnd=3;
     /**
-     * <p>This symbol is the offset where the {@link com.by.bledemo.R.attr#contentInsetEndWithActions}
+     * <p>This symbol is the offset where the {@link com.by.ble.R.attr#contentInsetEndWithActions}
      * attribute's value can be found in the {@link #ActionBar} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -3504,11 +3724,11 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.by.bledemo:contentInsetEndWithActions
+     * @attr name com.by.ble:contentInsetEndWithActions
      */
     public static final int ActionBar_contentInsetEndWithActions=4;
     /**
-     * <p>This symbol is the offset where the {@link com.by.bledemo.R.attr#contentInsetLeft}
+     * <p>This symbol is the offset where the {@link com.by.ble.R.attr#contentInsetLeft}
      * attribute's value can be found in the {@link #ActionBar} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -3517,11 +3737,11 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.by.bledemo:contentInsetLeft
+     * @attr name com.by.ble:contentInsetLeft
      */
     public static final int ActionBar_contentInsetLeft=5;
     /**
-     * <p>This symbol is the offset where the {@link com.by.bledemo.R.attr#contentInsetRight}
+     * <p>This symbol is the offset where the {@link com.by.ble.R.attr#contentInsetRight}
      * attribute's value can be found in the {@link #ActionBar} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -3530,11 +3750,11 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.by.bledemo:contentInsetRight
+     * @attr name com.by.ble:contentInsetRight
      */
     public static final int ActionBar_contentInsetRight=6;
     /**
-     * <p>This symbol is the offset where the {@link com.by.bledemo.R.attr#contentInsetStart}
+     * <p>This symbol is the offset where the {@link com.by.ble.R.attr#contentInsetStart}
      * attribute's value can be found in the {@link #ActionBar} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -3543,11 +3763,11 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.by.bledemo:contentInsetStart
+     * @attr name com.by.ble:contentInsetStart
      */
     public static final int ActionBar_contentInsetStart=7;
     /**
-     * <p>This symbol is the offset where the {@link com.by.bledemo.R.attr#contentInsetStartWithNavigation}
+     * <p>This symbol is the offset where the {@link com.by.ble.R.attr#contentInsetStartWithNavigation}
      * attribute's value can be found in the {@link #ActionBar} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -3556,11 +3776,11 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.by.bledemo:contentInsetStartWithNavigation
+     * @attr name com.by.ble:contentInsetStartWithNavigation
      */
     public static final int ActionBar_contentInsetStartWithNavigation=8;
     /**
-     * <p>This symbol is the offset where the {@link com.by.bledemo.R.attr#customNavigationLayout}
+     * <p>This symbol is the offset where the {@link com.by.ble.R.attr#customNavigationLayout}
      * attribute's value can be found in the {@link #ActionBar} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -3568,11 +3788,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.by.bledemo:customNavigationLayout
+     * @attr name com.by.ble:customNavigationLayout
      */
     public static final int ActionBar_customNavigationLayout=9;
     /**
-     * <p>This symbol is the offset where the {@link com.by.bledemo.R.attr#displayOptions}
+     * <p>This symbol is the offset where the {@link com.by.ble.R.attr#displayOptions}
      * attribute's value can be found in the {@link #ActionBar} array.
      *
      * <p>Must be one or more (separated by '|') of the following constant values.</p>
@@ -3590,11 +3810,11 @@ public final class R {
      * <tr><td>useLogo</td><td>1</td><td></td></tr>
      * </table>
      *
-     * @attr name com.by.bledemo:displayOptions
+     * @attr name com.by.ble:displayOptions
      */
     public static final int ActionBar_displayOptions=10;
     /**
-     * <p>This symbol is the offset where the {@link com.by.bledemo.R.attr#divider}
+     * <p>This symbol is the offset where the {@link com.by.ble.R.attr#divider}
      * attribute's value can be found in the {@link #ActionBar} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -3602,11 +3822,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.by.bledemo:divider
+     * @attr name com.by.ble:divider
      */
     public static final int ActionBar_divider=11;
     /**
-     * <p>This symbol is the offset where the {@link com.by.bledemo.R.attr#elevation}
+     * <p>This symbol is the offset where the {@link com.by.ble.R.attr#elevation}
      * attribute's value can be found in the {@link #ActionBar} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -3615,11 +3835,11 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.by.bledemo:elevation
+     * @attr name com.by.ble:elevation
      */
     public static final int ActionBar_elevation=12;
     /**
-     * <p>This symbol is the offset where the {@link com.by.bledemo.R.attr#height}
+     * <p>This symbol is the offset where the {@link com.by.ble.R.attr#height}
      * attribute's value can be found in the {@link #ActionBar} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -3628,21 +3848,21 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.by.bledemo:height
+     * @attr name com.by.ble:height
      */
     public static final int ActionBar_height=13;
     /**
-     * <p>This symbol is the offset where the {@link com.by.bledemo.R.attr#hideOnContentScroll}
+     * <p>This symbol is the offset where the {@link com.by.ble.R.attr#hideOnContentScroll}
      * attribute's value can be found in the {@link #ActionBar} array.
      *
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
      *
-     * @attr name com.by.bledemo:hideOnContentScroll
+     * @attr name com.by.ble:hideOnContentScroll
      */
     public static final int ActionBar_hideOnContentScroll=14;
     /**
-     * <p>This symbol is the offset where the {@link com.by.bledemo.R.attr#homeAsUpIndicator}
+     * <p>This symbol is the offset where the {@link com.by.ble.R.attr#homeAsUpIndicator}
      * attribute's value can be found in the {@link #ActionBar} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -3650,11 +3870,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.by.bledemo:homeAsUpIndicator
+     * @attr name com.by.ble:homeAsUpIndicator
      */
     public static final int ActionBar_homeAsUpIndicator=15;
     /**
-     * <p>This symbol is the offset where the {@link com.by.bledemo.R.attr#homeLayout}
+     * <p>This symbol is the offset where the {@link com.by.ble.R.attr#homeLayout}
      * attribute's value can be found in the {@link #ActionBar} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -3662,11 +3882,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.by.bledemo:homeLayout
+     * @attr name com.by.ble:homeLayout
      */
     public static final int ActionBar_homeLayout=16;
     /**
-     * <p>This symbol is the offset where the {@link com.by.bledemo.R.attr#icon}
+     * <p>This symbol is the offset where the {@link com.by.ble.R.attr#icon}
      * attribute's value can be found in the {@link #ActionBar} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -3674,11 +3894,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.by.bledemo:icon
+     * @attr name com.by.ble:icon
      */
     public static final int ActionBar_icon=17;
     /**
-     * <p>This symbol is the offset where the {@link com.by.bledemo.R.attr#indeterminateProgressStyle}
+     * <p>This symbol is the offset where the {@link com.by.ble.R.attr#indeterminateProgressStyle}
      * attribute's value can be found in the {@link #ActionBar} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -3686,11 +3906,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.by.bledemo:indeterminateProgressStyle
+     * @attr name com.by.ble:indeterminateProgressStyle
      */
     public static final int ActionBar_indeterminateProgressStyle=18;
     /**
-     * <p>This symbol is the offset where the {@link com.by.bledemo.R.attr#itemPadding}
+     * <p>This symbol is the offset where the {@link com.by.ble.R.attr#itemPadding}
      * attribute's value can be found in the {@link #ActionBar} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -3699,11 +3919,11 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.by.bledemo:itemPadding
+     * @attr name com.by.ble:itemPadding
      */
     public static final int ActionBar_itemPadding=19;
     /**
-     * <p>This symbol is the offset where the {@link com.by.bledemo.R.attr#logo}
+     * <p>This symbol is the offset where the {@link com.by.ble.R.attr#logo}
      * attribute's value can be found in the {@link #ActionBar} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -3711,11 +3931,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.by.bledemo:logo
+     * @attr name com.by.ble:logo
      */
     public static final int ActionBar_logo=20;
     /**
-     * <p>This symbol is the offset where the {@link com.by.bledemo.R.attr#navigationMode}
+     * <p>This symbol is the offset where the {@link com.by.ble.R.attr#navigationMode}
      * attribute's value can be found in the {@link #ActionBar} array.
      *
      * <p>Must be one of the following constant values.</p>
@@ -3729,11 +3949,11 @@ public final class R {
      * <tr><td>tabMode</td><td>2</td><td></td></tr>
      * </table>
      *
-     * @attr name com.by.bledemo:navigationMode
+     * @attr name com.by.ble:navigationMode
      */
     public static final int ActionBar_navigationMode=21;
     /**
-     * <p>This symbol is the offset where the {@link com.by.bledemo.R.attr#popupTheme}
+     * <p>This symbol is the offset where the {@link com.by.ble.R.attr#popupTheme}
      * attribute's value can be found in the {@link #ActionBar} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -3741,11 +3961,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.by.bledemo:popupTheme
+     * @attr name com.by.ble:popupTheme
      */
     public static final int ActionBar_popupTheme=22;
     /**
-     * <p>This symbol is the offset where the {@link com.by.bledemo.R.attr#progressBarPadding}
+     * <p>This symbol is the offset where the {@link com.by.ble.R.attr#progressBarPadding}
      * attribute's value can be found in the {@link #ActionBar} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -3754,11 +3974,11 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.by.bledemo:progressBarPadding
+     * @attr name com.by.ble:progressBarPadding
      */
     public static final int ActionBar_progressBarPadding=23;
     /**
-     * <p>This symbol is the offset where the {@link com.by.bledemo.R.attr#progressBarStyle}
+     * <p>This symbol is the offset where the {@link com.by.ble.R.attr#progressBarStyle}
      * attribute's value can be found in the {@link #ActionBar} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -3766,21 +3986,21 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.by.bledemo:progressBarStyle
+     * @attr name com.by.ble:progressBarStyle
      */
     public static final int ActionBar_progressBarStyle=24;
     /**
-     * <p>This symbol is the offset where the {@link com.by.bledemo.R.attr#subtitle}
+     * <p>This symbol is the offset where the {@link com.by.ble.R.attr#subtitle}
      * attribute's value can be found in the {@link #ActionBar} array.
      *
      * <p>May be a string value, using '\\;' to escape characters such as
      * '\\n' or '\\uxxxx' for a unicode character;
      *
-     * @attr name com.by.bledemo:subtitle
+     * @attr name com.by.ble:subtitle
      */
     public static final int ActionBar_subtitle=25;
     /**
-     * <p>This symbol is the offset where the {@link com.by.bledemo.R.attr#subtitleTextStyle}
+     * <p>This symbol is the offset where the {@link com.by.ble.R.attr#subtitleTextStyle}
      * attribute's value can be found in the {@link #ActionBar} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -3788,21 +4008,21 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.by.bledemo:subtitleTextStyle
+     * @attr name com.by.ble:subtitleTextStyle
      */
     public static final int ActionBar_subtitleTextStyle=26;
     /**
-     * <p>This symbol is the offset where the {@link com.by.bledemo.R.attr#title}
+     * <p>This symbol is the offset where the {@link com.by.ble.R.attr#title}
      * attribute's value can be found in the {@link #ActionBar} array.
      *
      * <p>May be a string value, using '\\;' to escape characters such as
      * '\\n' or '\\uxxxx' for a unicode character;
      *
-     * @attr name com.by.bledemo:title
+     * @attr name com.by.ble:title
      */
     public static final int ActionBar_title=27;
     /**
-     * <p>This symbol is the offset where the {@link com.by.bledemo.R.attr#titleTextStyle}
+     * <p>This symbol is the offset where the {@link com.by.ble.R.attr#titleTextStyle}
      * attribute's value can be found in the {@link #ActionBar} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -3810,7 +4030,7 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.by.bledemo:titleTextStyle
+     * @attr name com.by.ble:titleTextStyle
      */
     public static final int ActionBar_titleTextStyle=28;
     /**
@@ -3849,12 +4069,12 @@ public final class R {
      * <colgroup align="left" />
      * <colgroup align="left" />
      * <tr><th>Attribute</th><th>Description</th></tr>
-     * <tr><td><code>{@link #ActionMode_background com.by.bledemo:background}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ActionMode_backgroundSplit com.by.bledemo:backgroundSplit}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ActionMode_closeItemLayout com.by.bledemo:closeItemLayout}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ActionMode_height com.by.bledemo:height}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ActionMode_subtitleTextStyle com.by.bledemo:subtitleTextStyle}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ActionMode_titleTextStyle com.by.bledemo:titleTextStyle}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ActionMode_background com.by.ble:background}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ActionMode_backgroundSplit com.by.ble:backgroundSplit}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ActionMode_closeItemLayout com.by.ble:closeItemLayout}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ActionMode_height com.by.ble:height}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ActionMode_subtitleTextStyle com.by.ble:subtitleTextStyle}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ActionMode_titleTextStyle com.by.ble:titleTextStyle}</code></td><td></td></tr>
      * </table>
      * @see #ActionMode_background
      * @see #ActionMode_backgroundSplit
@@ -3868,7 +4088,7 @@ public final class R {
         0x7f0200f3, 0x7f020117
       };
     /**
-     * <p>This symbol is the offset where the {@link com.by.bledemo.R.attr#background}
+     * <p>This symbol is the offset where the {@link com.by.ble.R.attr#background}
      * attribute's value can be found in the {@link #ActionMode} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -3876,11 +4096,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.by.bledemo:background
+     * @attr name com.by.ble:background
      */
     public static final int ActionMode_background=0;
     /**
-     * <p>This symbol is the offset where the {@link com.by.bledemo.R.attr#backgroundSplit}
+     * <p>This symbol is the offset where the {@link com.by.ble.R.attr#backgroundSplit}
      * attribute's value can be found in the {@link #ActionMode} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -3891,11 +4111,11 @@ public final class R {
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
      * "<code>#<i>aarrggbb</i></code>".
      *
-     * @attr name com.by.bledemo:backgroundSplit
+     * @attr name com.by.ble:backgroundSplit
      */
     public static final int ActionMode_backgroundSplit=1;
     /**
-     * <p>This symbol is the offset where the {@link com.by.bledemo.R.attr#closeItemLayout}
+     * <p>This symbol is the offset where the {@link com.by.ble.R.attr#closeItemLayout}
      * attribute's value can be found in the {@link #ActionMode} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -3903,11 +4123,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.by.bledemo:closeItemLayout
+     * @attr name com.by.ble:closeItemLayout
      */
     public static final int ActionMode_closeItemLayout=2;
     /**
-     * <p>This symbol is the offset where the {@link com.by.bledemo.R.attr#height}
+     * <p>This symbol is the offset where the {@link com.by.ble.R.attr#height}
      * attribute's value can be found in the {@link #ActionMode} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -3916,11 +4136,11 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.by.bledemo:height
+     * @attr name com.by.ble:height
      */
     public static final int ActionMode_height=3;
     /**
-     * <p>This symbol is the offset where the {@link com.by.bledemo.R.attr#subtitleTextStyle}
+     * <p>This symbol is the offset where the {@link com.by.ble.R.attr#subtitleTextStyle}
      * attribute's value can be found in the {@link #ActionMode} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -3928,11 +4148,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.by.bledemo:subtitleTextStyle
+     * @attr name com.by.ble:subtitleTextStyle
      */
     public static final int ActionMode_subtitleTextStyle=4;
     /**
-     * <p>This symbol is the offset where the {@link com.by.bledemo.R.attr#titleTextStyle}
+     * <p>This symbol is the offset where the {@link com.by.ble.R.attr#titleTextStyle}
      * attribute's value can be found in the {@link #ActionMode} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -3940,7 +4160,7 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.by.bledemo:titleTextStyle
+     * @attr name com.by.ble:titleTextStyle
      */
     public static final int ActionMode_titleTextStyle=5;
     /**
@@ -3950,8 +4170,8 @@ public final class R {
      * <colgroup align="left" />
      * <colgroup align="left" />
      * <tr><th>Attribute</th><th>Description</th></tr>
-     * <tr><td><code>{@link #ActivityChooserView_expandActivityOverflowButtonDrawable com.by.bledemo:expandActivityOverflowButtonDrawable}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ActivityChooserView_initialActivityCount com.by.bledemo:initialActivityCount}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ActivityChooserView_expandActivityOverflowButtonDrawable com.by.ble:expandActivityOverflowButtonDrawable}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ActivityChooserView_initialActivityCount com.by.ble:initialActivityCount}</code></td><td></td></tr>
      * </table>
      * @see #ActivityChooserView_expandActivityOverflowButtonDrawable
      * @see #ActivityChooserView_initialActivityCount
@@ -3960,7 +4180,7 @@ public final class R {
         0x7f02006f, 0x7f020086
       };
     /**
-     * <p>This symbol is the offset where the {@link com.by.bledemo.R.attr#expandActivityOverflowButtonDrawable}
+     * <p>This symbol is the offset where the {@link com.by.ble.R.attr#expandActivityOverflowButtonDrawable}
      * attribute's value can be found in the {@link #ActivityChooserView} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -3968,17 +4188,17 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.by.bledemo:expandActivityOverflowButtonDrawable
+     * @attr name com.by.ble:expandActivityOverflowButtonDrawable
      */
     public static final int ActivityChooserView_expandActivityOverflowButtonDrawable=0;
     /**
-     * <p>This symbol is the offset where the {@link com.by.bledemo.R.attr#initialActivityCount}
+     * <p>This symbol is the offset where the {@link com.by.ble.R.attr#initialActivityCount}
      * attribute's value can be found in the {@link #ActivityChooserView} array.
      *
      * <p>May be a string value, using '\\;' to escape characters such as
      * '\\n' or '\\uxxxx' for a unicode character;
      *
-     * @attr name com.by.bledemo:initialActivityCount
+     * @attr name com.by.ble:initialActivityCount
      */
     public static final int ActivityChooserView_initialActivityCount=1;
     /**
@@ -3989,12 +4209,12 @@ public final class R {
      * <colgroup align="left" />
      * <tr><th>Attribute</th><th>Description</th></tr>
      * <tr><td><code>{@link #AlertDialog_android_layout android:layout}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AlertDialog_buttonPanelSideLayout com.by.bledemo:buttonPanelSideLayout}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AlertDialog_listItemLayout com.by.bledemo:listItemLayout}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AlertDialog_listLayout com.by.bledemo:listLayout}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AlertDialog_multiChoiceItemLayout com.by.bledemo:multiChoiceItemLayout}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AlertDialog_showTitle com.by.bledemo:showTitle}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AlertDialog_singleChoiceItemLayout com.by.bledemo:singleChoiceItemLayout}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AlertDialog_buttonPanelSideLayout com.by.ble:buttonPanelSideLayout}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AlertDialog_listItemLayout com.by.ble:listItemLayout}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AlertDialog_listLayout com.by.ble:listLayout}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AlertDialog_multiChoiceItemLayout com.by.ble:multiChoiceItemLayout}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AlertDialog_showTitle com.by.ble:showTitle}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AlertDialog_singleChoiceItemLayout com.by.ble:singleChoiceItemLayout}</code></td><td></td></tr>
      * </table>
      * @see #AlertDialog_android_layout
      * @see #AlertDialog_buttonPanelSideLayout
@@ -4021,7 +4241,7 @@ public final class R {
      */
     public static final int AlertDialog_android_layout=0;
     /**
-     * <p>This symbol is the offset where the {@link com.by.bledemo.R.attr#buttonPanelSideLayout}
+     * <p>This symbol is the offset where the {@link com.by.ble.R.attr#buttonPanelSideLayout}
      * attribute's value can be found in the {@link #AlertDialog} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -4029,11 +4249,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.by.bledemo:buttonPanelSideLayout
+     * @attr name com.by.ble:buttonPanelSideLayout
      */
     public static final int AlertDialog_buttonPanelSideLayout=1;
     /**
-     * <p>This symbol is the offset where the {@link com.by.bledemo.R.attr#listItemLayout}
+     * <p>This symbol is the offset where the {@link com.by.ble.R.attr#listItemLayout}
      * attribute's value can be found in the {@link #AlertDialog} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -4041,11 +4261,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.by.bledemo:listItemLayout
+     * @attr name com.by.ble:listItemLayout
      */
     public static final int AlertDialog_listItemLayout=2;
     /**
-     * <p>This symbol is the offset where the {@link com.by.bledemo.R.attr#listLayout}
+     * <p>This symbol is the offset where the {@link com.by.ble.R.attr#listLayout}
      * attribute's value can be found in the {@link #AlertDialog} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -4053,11 +4273,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.by.bledemo:listLayout
+     * @attr name com.by.ble:listLayout
      */
     public static final int AlertDialog_listLayout=3;
     /**
-     * <p>This symbol is the offset where the {@link com.by.bledemo.R.attr#multiChoiceItemLayout}
+     * <p>This symbol is the offset where the {@link com.by.ble.R.attr#multiChoiceItemLayout}
      * attribute's value can be found in the {@link #AlertDialog} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -4065,21 +4285,21 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.by.bledemo:multiChoiceItemLayout
+     * @attr name com.by.ble:multiChoiceItemLayout
      */
     public static final int AlertDialog_multiChoiceItemLayout=4;
     /**
-     * <p>This symbol is the offset where the {@link com.by.bledemo.R.attr#showTitle}
+     * <p>This symbol is the offset where the {@link com.by.ble.R.attr#showTitle}
      * attribute's value can be found in the {@link #AlertDialog} array.
      *
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
      *
-     * @attr name com.by.bledemo:showTitle
+     * @attr name com.by.ble:showTitle
      */
     public static final int AlertDialog_showTitle=5;
     /**
-     * <p>This symbol is the offset where the {@link com.by.bledemo.R.attr#singleChoiceItemLayout}
+     * <p>This symbol is the offset where the {@link com.by.ble.R.attr#singleChoiceItemLayout}
      * attribute's value can be found in the {@link #AlertDialog} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -4087,7 +4307,7 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.by.bledemo:singleChoiceItemLayout
+     * @attr name com.by.ble:singleChoiceItemLayout
      */
     public static final int AlertDialog_singleChoiceItemLayout=6;
     /**
@@ -4098,9 +4318,9 @@ public final class R {
      * <colgroup align="left" />
      * <tr><th>Attribute</th><th>Description</th></tr>
      * <tr><td><code>{@link #AppCompatImageView_android_src android:src}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatImageView_srcCompat com.by.bledemo:srcCompat}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatImageView_tint com.by.bledemo:tint}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatImageView_tintMode com.by.bledemo:tintMode}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatImageView_srcCompat com.by.ble:srcCompat}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatImageView_tint com.by.ble:tint}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatImageView_tintMode com.by.ble:tintMode}</code></td><td></td></tr>
      * </table>
      * @see #AppCompatImageView_android_src
      * @see #AppCompatImageView_srcCompat
@@ -4126,7 +4346,7 @@ public final class R {
      */
     public static final int AppCompatImageView_android_src=0;
     /**
-     * <p>This symbol is the offset where the {@link com.by.bledemo.R.attr#srcCompat}
+     * <p>This symbol is the offset where the {@link com.by.ble.R.attr#srcCompat}
      * attribute's value can be found in the {@link #AppCompatImageView} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -4134,22 +4354,22 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.by.bledemo:srcCompat
+     * @attr name com.by.ble:srcCompat
      */
     public static final int AppCompatImageView_srcCompat=1;
     /**
-     * <p>This symbol is the offset where the {@link com.by.bledemo.R.attr#tint}
+     * <p>This symbol is the offset where the {@link com.by.ble.R.attr#tint}
      * attribute's value can be found in the {@link #AppCompatImageView} array.
      *
      * <p>May be a color value, in the form of "<code>#<i>rgb</i></code>",
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
      * "<code>#<i>aarrggbb</i></code>".
      *
-     * @attr name com.by.bledemo:tint
+     * @attr name com.by.ble:tint
      */
     public static final int AppCompatImageView_tint=2;
     /**
-     * <p>This symbol is the offset where the {@link com.by.bledemo.R.attr#tintMode}
+     * <p>This symbol is the offset where the {@link com.by.ble.R.attr#tintMode}
      * attribute's value can be found in the {@link #AppCompatImageView} array.
      *
      * <p>Must be one of the following constant values.</p>
@@ -4165,7 +4385,7 @@ public final class R {
      * <tr><td>src_over</td><td>3</td><td></td></tr>
      * </table>
      *
-     * @attr name com.by.bledemo:tintMode
+     * @attr name com.by.ble:tintMode
      */
     public static final int AppCompatImageView_tintMode=3;
     /**
@@ -4176,9 +4396,9 @@ public final class R {
      * <colgroup align="left" />
      * <tr><th>Attribute</th><th>Description</th></tr>
      * <tr><td><code>{@link #AppCompatSeekBar_android_thumb android:thumb}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatSeekBar_tickMark com.by.bledemo:tickMark}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatSeekBar_tickMarkTint com.by.bledemo:tickMarkTint}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatSeekBar_tickMarkTintMode com.by.bledemo:tickMarkTintMode}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatSeekBar_tickMark com.by.ble:tickMark}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatSeekBar_tickMarkTint com.by.ble:tickMarkTint}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatSeekBar_tickMarkTintMode com.by.ble:tickMarkTintMode}</code></td><td></td></tr>
      * </table>
      * @see #AppCompatSeekBar_android_thumb
      * @see #AppCompatSeekBar_tickMark
@@ -4201,7 +4421,7 @@ public final class R {
      */
     public static final int AppCompatSeekBar_android_thumb=0;
     /**
-     * <p>This symbol is the offset where the {@link com.by.bledemo.R.attr#tickMark}
+     * <p>This symbol is the offset where the {@link com.by.ble.R.attr#tickMark}
      * attribute's value can be found in the {@link #AppCompatSeekBar} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -4209,22 +4429,22 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.by.bledemo:tickMark
+     * @attr name com.by.ble:tickMark
      */
     public static final int AppCompatSeekBar_tickMark=1;
     /**
-     * <p>This symbol is the offset where the {@link com.by.bledemo.R.attr#tickMarkTint}
+     * <p>This symbol is the offset where the {@link com.by.ble.R.attr#tickMarkTint}
      * attribute's value can be found in the {@link #AppCompatSeekBar} array.
      *
      * <p>May be a color value, in the form of "<code>#<i>rgb</i></code>",
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
      * "<code>#<i>aarrggbb</i></code>".
      *
-     * @attr name com.by.bledemo:tickMarkTint
+     * @attr name com.by.ble:tickMarkTint
      */
     public static final int AppCompatSeekBar_tickMarkTint=2;
     /**
-     * <p>This symbol is the offset where the {@link com.by.bledemo.R.attr#tickMarkTintMode}
+     * <p>This symbol is the offset where the {@link com.by.ble.R.attr#tickMarkTintMode}
      * attribute's value can be found in the {@link #AppCompatSeekBar} array.
      *
      * <p>Must be one of the following constant values.</p>
@@ -4241,7 +4461,7 @@ public final class R {
      * <tr><td>src_over</td><td>3</td><td></td></tr>
      * </table>
      *
-     * @attr name com.by.bledemo:tickMarkTintMode
+     * @attr name com.by.ble:tickMarkTintMode
      */
     public static final int AppCompatSeekBar_tickMarkTintMode=3;
     /**
@@ -4381,13 +4601,13 @@ public final class R {
      * <colgroup align="left" />
      * <tr><th>Attribute</th><th>Description</th></tr>
      * <tr><td><code>{@link #AppCompatTextView_android_textAppearance android:textAppearance}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTextView_autoSizeMaxTextSize com.by.bledemo:autoSizeMaxTextSize}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTextView_autoSizeMinTextSize com.by.bledemo:autoSizeMinTextSize}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTextView_autoSizePresetSizes com.by.bledemo:autoSizePresetSizes}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTextView_autoSizeStepGranularity com.by.bledemo:autoSizeStepGranularity}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTextView_autoSizeTextType com.by.bledemo:autoSizeTextType}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTextView_fontFamily com.by.bledemo:fontFamily}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTextView_textAllCaps com.by.bledemo:textAllCaps}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTextView_autoSizeMaxTextSize com.by.ble:autoSizeMaxTextSize}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTextView_autoSizeMinTextSize com.by.ble:autoSizeMinTextSize}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTextView_autoSizePresetSizes com.by.ble:autoSizePresetSizes}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTextView_autoSizeStepGranularity com.by.ble:autoSizeStepGranularity}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTextView_autoSizeTextType com.by.ble:autoSizeTextType}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTextView_fontFamily com.by.ble:fontFamily}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTextView_textAllCaps com.by.ble:textAllCaps}</code></td><td></td></tr>
      * </table>
      * @see #AppCompatTextView_android_textAppearance
      * @see #AppCompatTextView_autoSizeMaxTextSize
@@ -4415,7 +4635,7 @@ public final class R {
      */
     public static final int AppCompatTextView_android_textAppearance=0;
     /**
-     * <p>This symbol is the offset where the {@link com.by.bledemo.R.attr#autoSizeMaxTextSize}
+     * <p>This symbol is the offset where the {@link com.by.ble.R.attr#autoSizeMaxTextSize}
      * attribute's value can be found in the {@link #AppCompatTextView} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -4424,11 +4644,11 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.by.bledemo:autoSizeMaxTextSize
+     * @attr name com.by.ble:autoSizeMaxTextSize
      */
     public static final int AppCompatTextView_autoSizeMaxTextSize=1;
     /**
-     * <p>This symbol is the offset where the {@link com.by.bledemo.R.attr#autoSizeMinTextSize}
+     * <p>This symbol is the offset where the {@link com.by.ble.R.attr#autoSizeMinTextSize}
      * attribute's value can be found in the {@link #AppCompatTextView} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -4437,11 +4657,11 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.by.bledemo:autoSizeMinTextSize
+     * @attr name com.by.ble:autoSizeMinTextSize
      */
     public static final int AppCompatTextView_autoSizeMinTextSize=2;
     /**
-     * <p>This symbol is the offset where the {@link com.by.bledemo.R.attr#autoSizePresetSizes}
+     * <p>This symbol is the offset where the {@link com.by.ble.R.attr#autoSizePresetSizes}
      * attribute's value can be found in the {@link #AppCompatTextView} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -4449,11 +4669,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.by.bledemo:autoSizePresetSizes
+     * @attr name com.by.ble:autoSizePresetSizes
      */
     public static final int AppCompatTextView_autoSizePresetSizes=3;
     /**
-     * <p>This symbol is the offset where the {@link com.by.bledemo.R.attr#autoSizeStepGranularity}
+     * <p>This symbol is the offset where the {@link com.by.ble.R.attr#autoSizeStepGranularity}
      * attribute's value can be found in the {@link #AppCompatTextView} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -4462,11 +4682,11 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.by.bledemo:autoSizeStepGranularity
+     * @attr name com.by.ble:autoSizeStepGranularity
      */
     public static final int AppCompatTextView_autoSizeStepGranularity=4;
     /**
-     * <p>This symbol is the offset where the {@link com.by.bledemo.R.attr#autoSizeTextType}
+     * <p>This symbol is the offset where the {@link com.by.ble.R.attr#autoSizeTextType}
      * attribute's value can be found in the {@link #AppCompatTextView} array.
      *
      * <p>Must be one of the following constant values.</p>
@@ -4479,21 +4699,21 @@ public final class R {
      * <tr><td>uniform</td><td>1</td><td></td></tr>
      * </table>
      *
-     * @attr name com.by.bledemo:autoSizeTextType
+     * @attr name com.by.ble:autoSizeTextType
      */
     public static final int AppCompatTextView_autoSizeTextType=5;
     /**
-     * <p>This symbol is the offset where the {@link com.by.bledemo.R.attr#fontFamily}
+     * <p>This symbol is the offset where the {@link com.by.ble.R.attr#fontFamily}
      * attribute's value can be found in the {@link #AppCompatTextView} array.
      *
      * <p>May be a string value, using '\\;' to escape characters such as
      * '\\n' or '\\uxxxx' for a unicode character;
      *
-     * @attr name com.by.bledemo:fontFamily
+     * @attr name com.by.ble:fontFamily
      */
     public static final int AppCompatTextView_fontFamily=6;
     /**
-     * <p>This symbol is the offset where the {@link com.by.bledemo.R.attr#textAllCaps}
+     * <p>This symbol is the offset where the {@link com.by.ble.R.attr#textAllCaps}
      * attribute's value can be found in the {@link #AppCompatTextView} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -4503,7 +4723,7 @@ public final class R {
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
      *
-     * @attr name com.by.bledemo:textAllCaps
+     * @attr name com.by.ble:textAllCaps
      */
     public static final int AppCompatTextView_textAllCaps=7;
     /**
@@ -4515,123 +4735,123 @@ public final class R {
      * <tr><th>Attribute</th><th>Description</th></tr>
      * <tr><td><code>{@link #AppCompatTheme_android_windowIsFloating android:windowIsFloating}</code></td><td></td></tr>
      * <tr><td><code>{@link #AppCompatTheme_android_windowAnimationStyle android:windowAnimationStyle}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_actionBarDivider com.by.bledemo:actionBarDivider}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_actionBarItemBackground com.by.bledemo:actionBarItemBackground}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_actionBarPopupTheme com.by.bledemo:actionBarPopupTheme}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_actionBarSize com.by.bledemo:actionBarSize}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_actionBarSplitStyle com.by.bledemo:actionBarSplitStyle}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_actionBarStyle com.by.bledemo:actionBarStyle}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_actionBarTabBarStyle com.by.bledemo:actionBarTabBarStyle}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_actionBarTabStyle com.by.bledemo:actionBarTabStyle}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_actionBarTabTextStyle com.by.bledemo:actionBarTabTextStyle}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_actionBarTheme com.by.bledemo:actionBarTheme}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_actionBarWidgetTheme com.by.bledemo:actionBarWidgetTheme}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_actionButtonStyle com.by.bledemo:actionButtonStyle}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_actionDropDownStyle com.by.bledemo:actionDropDownStyle}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_actionMenuTextAppearance com.by.bledemo:actionMenuTextAppearance}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_actionMenuTextColor com.by.bledemo:actionMenuTextColor}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_actionModeBackground com.by.bledemo:actionModeBackground}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_actionModeCloseButtonStyle com.by.bledemo:actionModeCloseButtonStyle}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_actionModeCloseDrawable com.by.bledemo:actionModeCloseDrawable}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_actionModeCopyDrawable com.by.bledemo:actionModeCopyDrawable}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_actionModeCutDrawable com.by.bledemo:actionModeCutDrawable}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_actionModeFindDrawable com.by.bledemo:actionModeFindDrawable}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_actionModePasteDrawable com.by.bledemo:actionModePasteDrawable}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_actionModePopupWindowStyle com.by.bledemo:actionModePopupWindowStyle}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_actionModeSelectAllDrawable com.by.bledemo:actionModeSelectAllDrawable}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_actionModeShareDrawable com.by.bledemo:actionModeShareDrawable}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_actionModeSplitBackground com.by.bledemo:actionModeSplitBackground}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_actionModeStyle com.by.bledemo:actionModeStyle}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_actionModeWebSearchDrawable com.by.bledemo:actionModeWebSearchDrawable}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_actionOverflowButtonStyle com.by.bledemo:actionOverflowButtonStyle}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_actionOverflowMenuStyle com.by.bledemo:actionOverflowMenuStyle}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_activityChooserViewStyle com.by.bledemo:activityChooserViewStyle}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_alertDialogButtonGroupStyle com.by.bledemo:alertDialogButtonGroupStyle}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_alertDialogCenterButtons com.by.bledemo:alertDialogCenterButtons}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_alertDialogStyle com.by.bledemo:alertDialogStyle}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_alertDialogTheme com.by.bledemo:alertDialogTheme}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_autoCompleteTextViewStyle com.by.bledemo:autoCompleteTextViewStyle}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_borderlessButtonStyle com.by.bledemo:borderlessButtonStyle}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_buttonBarButtonStyle com.by.bledemo:buttonBarButtonStyle}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_buttonBarNegativeButtonStyle com.by.bledemo:buttonBarNegativeButtonStyle}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_buttonBarNeutralButtonStyle com.by.bledemo:buttonBarNeutralButtonStyle}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_buttonBarPositiveButtonStyle com.by.bledemo:buttonBarPositiveButtonStyle}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_buttonBarStyle com.by.bledemo:buttonBarStyle}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_buttonStyle com.by.bledemo:buttonStyle}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_buttonStyleSmall com.by.bledemo:buttonStyleSmall}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_checkboxStyle com.by.bledemo:checkboxStyle}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_checkedTextViewStyle com.by.bledemo:checkedTextViewStyle}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_colorAccent com.by.bledemo:colorAccent}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_colorBackgroundFloating com.by.bledemo:colorBackgroundFloating}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_colorButtonNormal com.by.bledemo:colorButtonNormal}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_colorControlActivated com.by.bledemo:colorControlActivated}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_colorControlHighlight com.by.bledemo:colorControlHighlight}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_colorControlNormal com.by.bledemo:colorControlNormal}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_colorError com.by.bledemo:colorError}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_colorPrimary com.by.bledemo:colorPrimary}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_colorPrimaryDark com.by.bledemo:colorPrimaryDark}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_colorSwitchThumbNormal com.by.bledemo:colorSwitchThumbNormal}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_controlBackground com.by.bledemo:controlBackground}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_dialogPreferredPadding com.by.bledemo:dialogPreferredPadding}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_dialogTheme com.by.bledemo:dialogTheme}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_dividerHorizontal com.by.bledemo:dividerHorizontal}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_dividerVertical com.by.bledemo:dividerVertical}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_dropDownListViewStyle com.by.bledemo:dropDownListViewStyle}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_dropdownListPreferredItemHeight com.by.bledemo:dropdownListPreferredItemHeight}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_editTextBackground com.by.bledemo:editTextBackground}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_editTextColor com.by.bledemo:editTextColor}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_editTextStyle com.by.bledemo:editTextStyle}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_homeAsUpIndicator com.by.bledemo:homeAsUpIndicator}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_imageButtonStyle com.by.bledemo:imageButtonStyle}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_listChoiceBackgroundIndicator com.by.bledemo:listChoiceBackgroundIndicator}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_listDividerAlertDialog com.by.bledemo:listDividerAlertDialog}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_listMenuViewStyle com.by.bledemo:listMenuViewStyle}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_listPopupWindowStyle com.by.bledemo:listPopupWindowStyle}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_listPreferredItemHeight com.by.bledemo:listPreferredItemHeight}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_listPreferredItemHeightLarge com.by.bledemo:listPreferredItemHeightLarge}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_listPreferredItemHeightSmall com.by.bledemo:listPreferredItemHeightSmall}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_listPreferredItemPaddingLeft com.by.bledemo:listPreferredItemPaddingLeft}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_listPreferredItemPaddingRight com.by.bledemo:listPreferredItemPaddingRight}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_panelBackground com.by.bledemo:panelBackground}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_panelMenuListTheme com.by.bledemo:panelMenuListTheme}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_panelMenuListWidth com.by.bledemo:panelMenuListWidth}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_popupMenuStyle com.by.bledemo:popupMenuStyle}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_popupWindowStyle com.by.bledemo:popupWindowStyle}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_radioButtonStyle com.by.bledemo:radioButtonStyle}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_ratingBarStyle com.by.bledemo:ratingBarStyle}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_ratingBarStyleIndicator com.by.bledemo:ratingBarStyleIndicator}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_ratingBarStyleSmall com.by.bledemo:ratingBarStyleSmall}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_searchViewStyle com.by.bledemo:searchViewStyle}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_seekBarStyle com.by.bledemo:seekBarStyle}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_selectableItemBackground com.by.bledemo:selectableItemBackground}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_selectableItemBackgroundBorderless com.by.bledemo:selectableItemBackgroundBorderless}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_spinnerDropDownItemStyle com.by.bledemo:spinnerDropDownItemStyle}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_spinnerStyle com.by.bledemo:spinnerStyle}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_switchStyle com.by.bledemo:switchStyle}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_textAppearanceLargePopupMenu com.by.bledemo:textAppearanceLargePopupMenu}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_textAppearanceListItem com.by.bledemo:textAppearanceListItem}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_textAppearanceListItemSecondary com.by.bledemo:textAppearanceListItemSecondary}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_textAppearanceListItemSmall com.by.bledemo:textAppearanceListItemSmall}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_textAppearancePopupMenuHeader com.by.bledemo:textAppearancePopupMenuHeader}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_textAppearanceSearchResultSubtitle com.by.bledemo:textAppearanceSearchResultSubtitle}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_textAppearanceSearchResultTitle com.by.bledemo:textAppearanceSearchResultTitle}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_textAppearanceSmallPopupMenu com.by.bledemo:textAppearanceSmallPopupMenu}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_textColorAlertDialogListItem com.by.bledemo:textColorAlertDialogListItem}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_textColorSearchUrl com.by.bledemo:textColorSearchUrl}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_toolbarNavigationButtonStyle com.by.bledemo:toolbarNavigationButtonStyle}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_toolbarStyle com.by.bledemo:toolbarStyle}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_tooltipForegroundColor com.by.bledemo:tooltipForegroundColor}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_tooltipFrameBackground com.by.bledemo:tooltipFrameBackground}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_windowActionBar com.by.bledemo:windowActionBar}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_windowActionBarOverlay com.by.bledemo:windowActionBarOverlay}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_windowActionModeOverlay com.by.bledemo:windowActionModeOverlay}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_windowFixedHeightMajor com.by.bledemo:windowFixedHeightMajor}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_windowFixedHeightMinor com.by.bledemo:windowFixedHeightMinor}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_windowFixedWidthMajor com.by.bledemo:windowFixedWidthMajor}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_windowFixedWidthMinor com.by.bledemo:windowFixedWidthMinor}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_windowMinWidthMajor com.by.bledemo:windowMinWidthMajor}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_windowMinWidthMinor com.by.bledemo:windowMinWidthMinor}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_windowNoTitle com.by.bledemo:windowNoTitle}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_actionBarDivider com.by.ble:actionBarDivider}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_actionBarItemBackground com.by.ble:actionBarItemBackground}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_actionBarPopupTheme com.by.ble:actionBarPopupTheme}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_actionBarSize com.by.ble:actionBarSize}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_actionBarSplitStyle com.by.ble:actionBarSplitStyle}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_actionBarStyle com.by.ble:actionBarStyle}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_actionBarTabBarStyle com.by.ble:actionBarTabBarStyle}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_actionBarTabStyle com.by.ble:actionBarTabStyle}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_actionBarTabTextStyle com.by.ble:actionBarTabTextStyle}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_actionBarTheme com.by.ble:actionBarTheme}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_actionBarWidgetTheme com.by.ble:actionBarWidgetTheme}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_actionButtonStyle com.by.ble:actionButtonStyle}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_actionDropDownStyle com.by.ble:actionDropDownStyle}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_actionMenuTextAppearance com.by.ble:actionMenuTextAppearance}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_actionMenuTextColor com.by.ble:actionMenuTextColor}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_actionModeBackground com.by.ble:actionModeBackground}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_actionModeCloseButtonStyle com.by.ble:actionModeCloseButtonStyle}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_actionModeCloseDrawable com.by.ble:actionModeCloseDrawable}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_actionModeCopyDrawable com.by.ble:actionModeCopyDrawable}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_actionModeCutDrawable com.by.ble:actionModeCutDrawable}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_actionModeFindDrawable com.by.ble:actionModeFindDrawable}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_actionModePasteDrawable com.by.ble:actionModePasteDrawable}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_actionModePopupWindowStyle com.by.ble:actionModePopupWindowStyle}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_actionModeSelectAllDrawable com.by.ble:actionModeSelectAllDrawable}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_actionModeShareDrawable com.by.ble:actionModeShareDrawable}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_actionModeSplitBackground com.by.ble:actionModeSplitBackground}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_actionModeStyle com.by.ble:actionModeStyle}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_actionModeWebSearchDrawable com.by.ble:actionModeWebSearchDrawable}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_actionOverflowButtonStyle com.by.ble:actionOverflowButtonStyle}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_actionOverflowMenuStyle com.by.ble:actionOverflowMenuStyle}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_activityChooserViewStyle com.by.ble:activityChooserViewStyle}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_alertDialogButtonGroupStyle com.by.ble:alertDialogButtonGroupStyle}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_alertDialogCenterButtons com.by.ble:alertDialogCenterButtons}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_alertDialogStyle com.by.ble:alertDialogStyle}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_alertDialogTheme com.by.ble:alertDialogTheme}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_autoCompleteTextViewStyle com.by.ble:autoCompleteTextViewStyle}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_borderlessButtonStyle com.by.ble:borderlessButtonStyle}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_buttonBarButtonStyle com.by.ble:buttonBarButtonStyle}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_buttonBarNegativeButtonStyle com.by.ble:buttonBarNegativeButtonStyle}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_buttonBarNeutralButtonStyle com.by.ble:buttonBarNeutralButtonStyle}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_buttonBarPositiveButtonStyle com.by.ble:buttonBarPositiveButtonStyle}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_buttonBarStyle com.by.ble:buttonBarStyle}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_buttonStyle com.by.ble:buttonStyle}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_buttonStyleSmall com.by.ble:buttonStyleSmall}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_checkboxStyle com.by.ble:checkboxStyle}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_checkedTextViewStyle com.by.ble:checkedTextViewStyle}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_colorAccent com.by.ble:colorAccent}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_colorBackgroundFloating com.by.ble:colorBackgroundFloating}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_colorButtonNormal com.by.ble:colorButtonNormal}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_colorControlActivated com.by.ble:colorControlActivated}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_colorControlHighlight com.by.ble:colorControlHighlight}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_colorControlNormal com.by.ble:colorControlNormal}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_colorError com.by.ble:colorError}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_colorPrimary com.by.ble:colorPrimary}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_colorPrimaryDark com.by.ble:colorPrimaryDark}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_colorSwitchThumbNormal com.by.ble:colorSwitchThumbNormal}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_controlBackground com.by.ble:controlBackground}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_dialogPreferredPadding com.by.ble:dialogPreferredPadding}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_dialogTheme com.by.ble:dialogTheme}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_dividerHorizontal com.by.ble:dividerHorizontal}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_dividerVertical com.by.ble:dividerVertical}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_dropDownListViewStyle com.by.ble:dropDownListViewStyle}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_dropdownListPreferredItemHeight com.by.ble:dropdownListPreferredItemHeight}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_editTextBackground com.by.ble:editTextBackground}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_editTextColor com.by.ble:editTextColor}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_editTextStyle com.by.ble:editTextStyle}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_homeAsUpIndicator com.by.ble:homeAsUpIndicator}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_imageButtonStyle com.by.ble:imageButtonStyle}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_listChoiceBackgroundIndicator com.by.ble:listChoiceBackgroundIndicator}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_listDividerAlertDialog com.by.ble:listDividerAlertDialog}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_listMenuViewStyle com.by.ble:listMenuViewStyle}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_listPopupWindowStyle com.by.ble:listPopupWindowStyle}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_listPreferredItemHeight com.by.ble:listPreferredItemHeight}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_listPreferredItemHeightLarge com.by.ble:listPreferredItemHeightLarge}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_listPreferredItemHeightSmall com.by.ble:listPreferredItemHeightSmall}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_listPreferredItemPaddingLeft com.by.ble:listPreferredItemPaddingLeft}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_listPreferredItemPaddingRight com.by.ble:listPreferredItemPaddingRight}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_panelBackground com.by.ble:panelBackground}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_panelMenuListTheme com.by.ble:panelMenuListTheme}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_panelMenuListWidth com.by.ble:panelMenuListWidth}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_popupMenuStyle com.by.ble:popupMenuStyle}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_popupWindowStyle com.by.ble:popupWindowStyle}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_radioButtonStyle com.by.ble:radioButtonStyle}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_ratingBarStyle com.by.ble:ratingBarStyle}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_ratingBarStyleIndicator com.by.ble:ratingBarStyleIndicator}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_ratingBarStyleSmall com.by.ble:ratingBarStyleSmall}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_searchViewStyle com.by.ble:searchViewStyle}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_seekBarStyle com.by.ble:seekBarStyle}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_selectableItemBackground com.by.ble:selectableItemBackground}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_selectableItemBackgroundBorderless com.by.ble:selectableItemBackgroundBorderless}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_spinnerDropDownItemStyle com.by.ble:spinnerDropDownItemStyle}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_spinnerStyle com.by.ble:spinnerStyle}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_switchStyle com.by.ble:switchStyle}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_textAppearanceLargePopupMenu com.by.ble:textAppearanceLargePopupMenu}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_textAppearanceListItem com.by.ble:textAppearanceListItem}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_textAppearanceListItemSecondary com.by.ble:textAppearanceListItemSecondary}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_textAppearanceListItemSmall com.by.ble:textAppearanceListItemSmall}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_textAppearancePopupMenuHeader com.by.ble:textAppearancePopupMenuHeader}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_textAppearanceSearchResultSubtitle com.by.ble:textAppearanceSearchResultSubtitle}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_textAppearanceSearchResultTitle com.by.ble:textAppearanceSearchResultTitle}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_textAppearanceSmallPopupMenu com.by.ble:textAppearanceSmallPopupMenu}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_textColorAlertDialogListItem com.by.ble:textColorAlertDialogListItem}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_textColorSearchUrl com.by.ble:textColorSearchUrl}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_toolbarNavigationButtonStyle com.by.ble:toolbarNavigationButtonStyle}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_toolbarStyle com.by.ble:toolbarStyle}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_tooltipForegroundColor com.by.ble:tooltipForegroundColor}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_tooltipFrameBackground com.by.ble:tooltipFrameBackground}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_windowActionBar com.by.ble:windowActionBar}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_windowActionBarOverlay com.by.ble:windowActionBarOverlay}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_windowActionModeOverlay com.by.ble:windowActionModeOverlay}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_windowFixedHeightMajor com.by.ble:windowFixedHeightMajor}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_windowFixedHeightMinor com.by.ble:windowFixedHeightMinor}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_windowFixedWidthMajor com.by.ble:windowFixedWidthMajor}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_windowFixedWidthMinor com.by.ble:windowFixedWidthMinor}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_windowMinWidthMajor com.by.ble:windowMinWidthMajor}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_windowMinWidthMinor com.by.ble:windowMinWidthMinor}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_windowNoTitle com.by.ble:windowNoTitle}</code></td><td></td></tr>
      * </table>
      * @see #AppCompatTheme_android_windowIsFloating
      * @see #AppCompatTheme_android_windowAnimationStyle
@@ -4786,7 +5006,7 @@ public final class R {
         0x7f020128, 0x7f020129, 0x7f02012a
       };
     /**
-     * <p>This symbol is the offset where the {@link com.by.bledemo.R.attr#actionBarDivider}
+     * <p>This symbol is the offset where the {@link com.by.ble.R.attr#actionBarDivider}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -4794,11 +5014,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.by.bledemo:actionBarDivider
+     * @attr name com.by.ble:actionBarDivider
      */
     public static final int AppCompatTheme_actionBarDivider=2;
     /**
-     * <p>This symbol is the offset where the {@link com.by.bledemo.R.attr#actionBarItemBackground}
+     * <p>This symbol is the offset where the {@link com.by.ble.R.attr#actionBarItemBackground}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -4806,11 +5026,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.by.bledemo:actionBarItemBackground
+     * @attr name com.by.ble:actionBarItemBackground
      */
     public static final int AppCompatTheme_actionBarItemBackground=3;
     /**
-     * <p>This symbol is the offset where the {@link com.by.bledemo.R.attr#actionBarPopupTheme}
+     * <p>This symbol is the offset where the {@link com.by.ble.R.attr#actionBarPopupTheme}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -4818,11 +5038,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.by.bledemo:actionBarPopupTheme
+     * @attr name com.by.ble:actionBarPopupTheme
      */
     public static final int AppCompatTheme_actionBarPopupTheme=4;
     /**
-     * <p>This symbol is the offset where the {@link com.by.bledemo.R.attr#actionBarSize}
+     * <p>This symbol is the offset where the {@link com.by.ble.R.attr#actionBarSize}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -4839,11 +5059,11 @@ public final class R {
      * <tr><td>wrap_content</td><td>0</td><td></td></tr>
      * </table>
      *
-     * @attr name com.by.bledemo:actionBarSize
+     * @attr name com.by.ble:actionBarSize
      */
     public static final int AppCompatTheme_actionBarSize=5;
     /**
-     * <p>This symbol is the offset where the {@link com.by.bledemo.R.attr#actionBarSplitStyle}
+     * <p>This symbol is the offset where the {@link com.by.ble.R.attr#actionBarSplitStyle}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -4851,11 +5071,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.by.bledemo:actionBarSplitStyle
+     * @attr name com.by.ble:actionBarSplitStyle
      */
     public static final int AppCompatTheme_actionBarSplitStyle=6;
     /**
-     * <p>This symbol is the offset where the {@link com.by.bledemo.R.attr#actionBarStyle}
+     * <p>This symbol is the offset where the {@link com.by.ble.R.attr#actionBarStyle}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -4863,11 +5083,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.by.bledemo:actionBarStyle
+     * @attr name com.by.ble:actionBarStyle
      */
     public static final int AppCompatTheme_actionBarStyle=7;
     /**
-     * <p>This symbol is the offset where the {@link com.by.bledemo.R.attr#actionBarTabBarStyle}
+     * <p>This symbol is the offset where the {@link com.by.ble.R.attr#actionBarTabBarStyle}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -4875,11 +5095,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.by.bledemo:actionBarTabBarStyle
+     * @attr name com.by.ble:actionBarTabBarStyle
      */
     public static final int AppCompatTheme_actionBarTabBarStyle=8;
     /**
-     * <p>This symbol is the offset where the {@link com.by.bledemo.R.attr#actionBarTabStyle}
+     * <p>This symbol is the offset where the {@link com.by.ble.R.attr#actionBarTabStyle}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -4887,11 +5107,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.by.bledemo:actionBarTabStyle
+     * @attr name com.by.ble:actionBarTabStyle
      */
     public static final int AppCompatTheme_actionBarTabStyle=9;
     /**
-     * <p>This symbol is the offset where the {@link com.by.bledemo.R.attr#actionBarTabTextStyle}
+     * <p>This symbol is the offset where the {@link com.by.ble.R.attr#actionBarTabTextStyle}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -4899,11 +5119,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.by.bledemo:actionBarTabTextStyle
+     * @attr name com.by.ble:actionBarTabTextStyle
      */
     public static final int AppCompatTheme_actionBarTabTextStyle=10;
     /**
-     * <p>This symbol is the offset where the {@link com.by.bledemo.R.attr#actionBarTheme}
+     * <p>This symbol is the offset where the {@link com.by.ble.R.attr#actionBarTheme}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -4911,11 +5131,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.by.bledemo:actionBarTheme
+     * @attr name com.by.ble:actionBarTheme
      */
     public static final int AppCompatTheme_actionBarTheme=11;
     /**
-     * <p>This symbol is the offset where the {@link com.by.bledemo.R.attr#actionBarWidgetTheme}
+     * <p>This symbol is the offset where the {@link com.by.ble.R.attr#actionBarWidgetTheme}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -4923,11 +5143,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.by.bledemo:actionBarWidgetTheme
+     * @attr name com.by.ble:actionBarWidgetTheme
      */
     public static final int AppCompatTheme_actionBarWidgetTheme=12;
     /**
-     * <p>This symbol is the offset where the {@link com.by.bledemo.R.attr#actionButtonStyle}
+     * <p>This symbol is the offset where the {@link com.by.ble.R.attr#actionButtonStyle}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -4935,11 +5155,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.by.bledemo:actionButtonStyle
+     * @attr name com.by.ble:actionButtonStyle
      */
     public static final int AppCompatTheme_actionButtonStyle=13;
     /**
-     * <p>This symbol is the offset where the {@link com.by.bledemo.R.attr#actionDropDownStyle}
+     * <p>This symbol is the offset where the {@link com.by.ble.R.attr#actionDropDownStyle}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -4947,11 +5167,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.by.bledemo:actionDropDownStyle
+     * @attr name com.by.ble:actionDropDownStyle
      */
     public static final int AppCompatTheme_actionDropDownStyle=14;
     /**
-     * <p>This symbol is the offset where the {@link com.by.bledemo.R.attr#actionMenuTextAppearance}
+     * <p>This symbol is the offset where the {@link com.by.ble.R.attr#actionMenuTextAppearance}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -4959,11 +5179,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.by.bledemo:actionMenuTextAppearance
+     * @attr name com.by.ble:actionMenuTextAppearance
      */
     public static final int AppCompatTheme_actionMenuTextAppearance=15;
     /**
-     * <p>This symbol is the offset where the {@link com.by.bledemo.R.attr#actionMenuTextColor}
+     * <p>This symbol is the offset where the {@link com.by.ble.R.attr#actionMenuTextColor}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -4974,11 +5194,11 @@ public final class R {
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
      * "<code>#<i>aarrggbb</i></code>".
      *
-     * @attr name com.by.bledemo:actionMenuTextColor
+     * @attr name com.by.ble:actionMenuTextColor
      */
     public static final int AppCompatTheme_actionMenuTextColor=16;
     /**
-     * <p>This symbol is the offset where the {@link com.by.bledemo.R.attr#actionModeBackground}
+     * <p>This symbol is the offset where the {@link com.by.ble.R.attr#actionModeBackground}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -4986,11 +5206,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.by.bledemo:actionModeBackground
+     * @attr name com.by.ble:actionModeBackground
      */
     public static final int AppCompatTheme_actionModeBackground=17;
     /**
-     * <p>This symbol is the offset where the {@link com.by.bledemo.R.attr#actionModeCloseButtonStyle}
+     * <p>This symbol is the offset where the {@link com.by.ble.R.attr#actionModeCloseButtonStyle}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -4998,11 +5218,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.by.bledemo:actionModeCloseButtonStyle
+     * @attr name com.by.ble:actionModeCloseButtonStyle
      */
     public static final int AppCompatTheme_actionModeCloseButtonStyle=18;
     /**
-     * <p>This symbol is the offset where the {@link com.by.bledemo.R.attr#actionModeCloseDrawable}
+     * <p>This symbol is the offset where the {@link com.by.ble.R.attr#actionModeCloseDrawable}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -5010,11 +5230,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.by.bledemo:actionModeCloseDrawable
+     * @attr name com.by.ble:actionModeCloseDrawable
      */
     public static final int AppCompatTheme_actionModeCloseDrawable=19;
     /**
-     * <p>This symbol is the offset where the {@link com.by.bledemo.R.attr#actionModeCopyDrawable}
+     * <p>This symbol is the offset where the {@link com.by.ble.R.attr#actionModeCopyDrawable}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -5022,11 +5242,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.by.bledemo:actionModeCopyDrawable
+     * @attr name com.by.ble:actionModeCopyDrawable
      */
     public static final int AppCompatTheme_actionModeCopyDrawable=20;
     /**
-     * <p>This symbol is the offset where the {@link com.by.bledemo.R.attr#actionModeCutDrawable}
+     * <p>This symbol is the offset where the {@link com.by.ble.R.attr#actionModeCutDrawable}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -5034,11 +5254,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.by.bledemo:actionModeCutDrawable
+     * @attr name com.by.ble:actionModeCutDrawable
      */
     public static final int AppCompatTheme_actionModeCutDrawable=21;
     /**
-     * <p>This symbol is the offset where the {@link com.by.bledemo.R.attr#actionModeFindDrawable}
+     * <p>This symbol is the offset where the {@link com.by.ble.R.attr#actionModeFindDrawable}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -5046,11 +5266,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.by.bledemo:actionModeFindDrawable
+     * @attr name com.by.ble:actionModeFindDrawable
      */
     public static final int AppCompatTheme_actionModeFindDrawable=22;
     /**
-     * <p>This symbol is the offset where the {@link com.by.bledemo.R.attr#actionModePasteDrawable}
+     * <p>This symbol is the offset where the {@link com.by.ble.R.attr#actionModePasteDrawable}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -5058,11 +5278,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.by.bledemo:actionModePasteDrawable
+     * @attr name com.by.ble:actionModePasteDrawable
      */
     public static final int AppCompatTheme_actionModePasteDrawable=23;
     /**
-     * <p>This symbol is the offset where the {@link com.by.bledemo.R.attr#actionModePopupWindowStyle}
+     * <p>This symbol is the offset where the {@link com.by.ble.R.attr#actionModePopupWindowStyle}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -5070,11 +5290,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.by.bledemo:actionModePopupWindowStyle
+     * @attr name com.by.ble:actionModePopupWindowStyle
      */
     public static final int AppCompatTheme_actionModePopupWindowStyle=24;
     /**
-     * <p>This symbol is the offset where the {@link com.by.bledemo.R.attr#actionModeSelectAllDrawable}
+     * <p>This symbol is the offset where the {@link com.by.ble.R.attr#actionModeSelectAllDrawable}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -5082,11 +5302,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.by.bledemo:actionModeSelectAllDrawable
+     * @attr name com.by.ble:actionModeSelectAllDrawable
      */
     public static final int AppCompatTheme_actionModeSelectAllDrawable=25;
     /**
-     * <p>This symbol is the offset where the {@link com.by.bledemo.R.attr#actionModeShareDrawable}
+     * <p>This symbol is the offset where the {@link com.by.ble.R.attr#actionModeShareDrawable}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -5094,11 +5314,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.by.bledemo:actionModeShareDrawable
+     * @attr name com.by.ble:actionModeShareDrawable
      */
     public static final int AppCompatTheme_actionModeShareDrawable=26;
     /**
-     * <p>This symbol is the offset where the {@link com.by.bledemo.R.attr#actionModeSplitBackground}
+     * <p>This symbol is the offset where the {@link com.by.ble.R.attr#actionModeSplitBackground}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -5106,11 +5326,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.by.bledemo:actionModeSplitBackground
+     * @attr name com.by.ble:actionModeSplitBackground
      */
     public static final int AppCompatTheme_actionModeSplitBackground=27;
     /**
-     * <p>This symbol is the offset where the {@link com.by.bledemo.R.attr#actionModeStyle}
+     * <p>This symbol is the offset where the {@link com.by.ble.R.attr#actionModeStyle}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -5118,11 +5338,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.by.bledemo:actionModeStyle
+     * @attr name com.by.ble:actionModeStyle
      */
     public static final int AppCompatTheme_actionModeStyle=28;
     /**
-     * <p>This symbol is the offset where the {@link com.by.bledemo.R.attr#actionModeWebSearchDrawable}
+     * <p>This symbol is the offset where the {@link com.by.ble.R.attr#actionModeWebSearchDrawable}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -5130,11 +5350,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.by.bledemo:actionModeWebSearchDrawable
+     * @attr name com.by.ble:actionModeWebSearchDrawable
      */
     public static final int AppCompatTheme_actionModeWebSearchDrawable=29;
     /**
-     * <p>This symbol is the offset where the {@link com.by.bledemo.R.attr#actionOverflowButtonStyle}
+     * <p>This symbol is the offset where the {@link com.by.ble.R.attr#actionOverflowButtonStyle}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -5142,11 +5362,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.by.bledemo:actionOverflowButtonStyle
+     * @attr name com.by.ble:actionOverflowButtonStyle
      */
     public static final int AppCompatTheme_actionOverflowButtonStyle=30;
     /**
-     * <p>This symbol is the offset where the {@link com.by.bledemo.R.attr#actionOverflowMenuStyle}
+     * <p>This symbol is the offset where the {@link com.by.ble.R.attr#actionOverflowMenuStyle}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -5154,11 +5374,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.by.bledemo:actionOverflowMenuStyle
+     * @attr name com.by.ble:actionOverflowMenuStyle
      */
     public static final int AppCompatTheme_actionOverflowMenuStyle=31;
     /**
-     * <p>This symbol is the offset where the {@link com.by.bledemo.R.attr#activityChooserViewStyle}
+     * <p>This symbol is the offset where the {@link com.by.ble.R.attr#activityChooserViewStyle}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -5166,11 +5386,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.by.bledemo:activityChooserViewStyle
+     * @attr name com.by.ble:activityChooserViewStyle
      */
     public static final int AppCompatTheme_activityChooserViewStyle=32;
     /**
-     * <p>This symbol is the offset where the {@link com.by.bledemo.R.attr#alertDialogButtonGroupStyle}
+     * <p>This symbol is the offset where the {@link com.by.ble.R.attr#alertDialogButtonGroupStyle}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -5178,21 +5398,21 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.by.bledemo:alertDialogButtonGroupStyle
+     * @attr name com.by.ble:alertDialogButtonGroupStyle
      */
     public static final int AppCompatTheme_alertDialogButtonGroupStyle=33;
     /**
-     * <p>This symbol is the offset where the {@link com.by.bledemo.R.attr#alertDialogCenterButtons}
+     * <p>This symbol is the offset where the {@link com.by.ble.R.attr#alertDialogCenterButtons}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
      *
-     * @attr name com.by.bledemo:alertDialogCenterButtons
+     * @attr name com.by.ble:alertDialogCenterButtons
      */
     public static final int AppCompatTheme_alertDialogCenterButtons=34;
     /**
-     * <p>This symbol is the offset where the {@link com.by.bledemo.R.attr#alertDialogStyle}
+     * <p>This symbol is the offset where the {@link com.by.ble.R.attr#alertDialogStyle}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -5200,11 +5420,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.by.bledemo:alertDialogStyle
+     * @attr name com.by.ble:alertDialogStyle
      */
     public static final int AppCompatTheme_alertDialogStyle=35;
     /**
-     * <p>This symbol is the offset where the {@link com.by.bledemo.R.attr#alertDialogTheme}
+     * <p>This symbol is the offset where the {@link com.by.ble.R.attr#alertDialogTheme}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -5212,7 +5432,7 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.by.bledemo:alertDialogTheme
+     * @attr name com.by.ble:alertDialogTheme
      */
     public static final int AppCompatTheme_alertDialogTheme=36;
     /**
@@ -5238,7 +5458,7 @@ public final class R {
      */
     public static final int AppCompatTheme_android_windowIsFloating=0;
     /**
-     * <p>This symbol is the offset where the {@link com.by.bledemo.R.attr#autoCompleteTextViewStyle}
+     * <p>This symbol is the offset where the {@link com.by.ble.R.attr#autoCompleteTextViewStyle}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -5246,11 +5466,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.by.bledemo:autoCompleteTextViewStyle
+     * @attr name com.by.ble:autoCompleteTextViewStyle
      */
     public static final int AppCompatTheme_autoCompleteTextViewStyle=37;
     /**
-     * <p>This symbol is the offset where the {@link com.by.bledemo.R.attr#borderlessButtonStyle}
+     * <p>This symbol is the offset where the {@link com.by.ble.R.attr#borderlessButtonStyle}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -5258,11 +5478,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.by.bledemo:borderlessButtonStyle
+     * @attr name com.by.ble:borderlessButtonStyle
      */
     public static final int AppCompatTheme_borderlessButtonStyle=38;
     /**
-     * <p>This symbol is the offset where the {@link com.by.bledemo.R.attr#buttonBarButtonStyle}
+     * <p>This symbol is the offset where the {@link com.by.ble.R.attr#buttonBarButtonStyle}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -5270,11 +5490,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.by.bledemo:buttonBarButtonStyle
+     * @attr name com.by.ble:buttonBarButtonStyle
      */
     public static final int AppCompatTheme_buttonBarButtonStyle=39;
     /**
-     * <p>This symbol is the offset where the {@link com.by.bledemo.R.attr#buttonBarNegativeButtonStyle}
+     * <p>This symbol is the offset where the {@link com.by.ble.R.attr#buttonBarNegativeButtonStyle}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -5282,11 +5502,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.by.bledemo:buttonBarNegativeButtonStyle
+     * @attr name com.by.ble:buttonBarNegativeButtonStyle
      */
     public static final int AppCompatTheme_buttonBarNegativeButtonStyle=40;
     /**
-     * <p>This symbol is the offset where the {@link com.by.bledemo.R.attr#buttonBarNeutralButtonStyle}
+     * <p>This symbol is the offset where the {@link com.by.ble.R.attr#buttonBarNeutralButtonStyle}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -5294,11 +5514,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.by.bledemo:buttonBarNeutralButtonStyle
+     * @attr name com.by.ble:buttonBarNeutralButtonStyle
      */
     public static final int AppCompatTheme_buttonBarNeutralButtonStyle=41;
     /**
-     * <p>This symbol is the offset where the {@link com.by.bledemo.R.attr#buttonBarPositiveButtonStyle}
+     * <p>This symbol is the offset where the {@link com.by.ble.R.attr#buttonBarPositiveButtonStyle}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -5306,11 +5526,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.by.bledemo:buttonBarPositiveButtonStyle
+     * @attr name com.by.ble:buttonBarPositiveButtonStyle
      */
     public static final int AppCompatTheme_buttonBarPositiveButtonStyle=42;
     /**
-     * <p>This symbol is the offset where the {@link com.by.bledemo.R.attr#buttonBarStyle}
+     * <p>This symbol is the offset where the {@link com.by.ble.R.attr#buttonBarStyle}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -5318,11 +5538,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.by.bledemo:buttonBarStyle
+     * @attr name com.by.ble:buttonBarStyle
      */
     public static final int AppCompatTheme_buttonBarStyle=43;
     /**
-     * <p>This symbol is the offset where the {@link com.by.bledemo.R.attr#buttonStyle}
+     * <p>This symbol is the offset where the {@link com.by.ble.R.attr#buttonStyle}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -5330,11 +5550,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.by.bledemo:buttonStyle
+     * @attr name com.by.ble:buttonStyle
      */
     public static final int AppCompatTheme_buttonStyle=44;
     /**
-     * <p>This symbol is the offset where the {@link com.by.bledemo.R.attr#buttonStyleSmall}
+     * <p>This symbol is the offset where the {@link com.by.ble.R.attr#buttonStyleSmall}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -5342,11 +5562,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.by.bledemo:buttonStyleSmall
+     * @attr name com.by.ble:buttonStyleSmall
      */
     public static final int AppCompatTheme_buttonStyleSmall=45;
     /**
-     * <p>This symbol is the offset where the {@link com.by.bledemo.R.attr#checkboxStyle}
+     * <p>This symbol is the offset where the {@link com.by.ble.R.attr#checkboxStyle}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -5354,11 +5574,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.by.bledemo:checkboxStyle
+     * @attr name com.by.ble:checkboxStyle
      */
     public static final int AppCompatTheme_checkboxStyle=46;
     /**
-     * <p>This symbol is the offset where the {@link com.by.bledemo.R.attr#checkedTextViewStyle}
+     * <p>This symbol is the offset where the {@link com.by.ble.R.attr#checkedTextViewStyle}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -5366,77 +5586,77 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.by.bledemo:checkedTextViewStyle
+     * @attr name com.by.ble:checkedTextViewStyle
      */
     public static final int AppCompatTheme_checkedTextViewStyle=47;
     /**
-     * <p>This symbol is the offset where the {@link com.by.bledemo.R.attr#colorAccent}
+     * <p>This symbol is the offset where the {@link com.by.ble.R.attr#colorAccent}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a color value, in the form of "<code>#<i>rgb</i></code>",
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
      * "<code>#<i>aarrggbb</i></code>".
      *
-     * @attr name com.by.bledemo:colorAccent
+     * @attr name com.by.ble:colorAccent
      */
     public static final int AppCompatTheme_colorAccent=48;
     /**
-     * <p>This symbol is the offset where the {@link com.by.bledemo.R.attr#colorBackgroundFloating}
+     * <p>This symbol is the offset where the {@link com.by.ble.R.attr#colorBackgroundFloating}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a color value, in the form of "<code>#<i>rgb</i></code>",
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
      * "<code>#<i>aarrggbb</i></code>".
      *
-     * @attr name com.by.bledemo:colorBackgroundFloating
+     * @attr name com.by.ble:colorBackgroundFloating
      */
     public static final int AppCompatTheme_colorBackgroundFloating=49;
     /**
-     * <p>This symbol is the offset where the {@link com.by.bledemo.R.attr#colorButtonNormal}
+     * <p>This symbol is the offset where the {@link com.by.ble.R.attr#colorButtonNormal}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a color value, in the form of "<code>#<i>rgb</i></code>",
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
      * "<code>#<i>aarrggbb</i></code>".
      *
-     * @attr name com.by.bledemo:colorButtonNormal
+     * @attr name com.by.ble:colorButtonNormal
      */
     public static final int AppCompatTheme_colorButtonNormal=50;
     /**
-     * <p>This symbol is the offset where the {@link com.by.bledemo.R.attr#colorControlActivated}
+     * <p>This symbol is the offset where the {@link com.by.ble.R.attr#colorControlActivated}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a color value, in the form of "<code>#<i>rgb</i></code>",
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
      * "<code>#<i>aarrggbb</i></code>".
      *
-     * @attr name com.by.bledemo:colorControlActivated
+     * @attr name com.by.ble:colorControlActivated
      */
     public static final int AppCompatTheme_colorControlActivated=51;
     /**
-     * <p>This symbol is the offset where the {@link com.by.bledemo.R.attr#colorControlHighlight}
+     * <p>This symbol is the offset where the {@link com.by.ble.R.attr#colorControlHighlight}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a color value, in the form of "<code>#<i>rgb</i></code>",
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
      * "<code>#<i>aarrggbb</i></code>".
      *
-     * @attr name com.by.bledemo:colorControlHighlight
+     * @attr name com.by.ble:colorControlHighlight
      */
     public static final int AppCompatTheme_colorControlHighlight=52;
     /**
-     * <p>This symbol is the offset where the {@link com.by.bledemo.R.attr#colorControlNormal}
+     * <p>This symbol is the offset where the {@link com.by.ble.R.attr#colorControlNormal}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a color value, in the form of "<code>#<i>rgb</i></code>",
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
      * "<code>#<i>aarrggbb</i></code>".
      *
-     * @attr name com.by.bledemo:colorControlNormal
+     * @attr name com.by.ble:colorControlNormal
      */
     public static final int AppCompatTheme_colorControlNormal=53;
     /**
-     * <p>This symbol is the offset where the {@link com.by.bledemo.R.attr#colorError}
+     * <p>This symbol is the offset where the {@link com.by.ble.R.attr#colorError}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -5447,44 +5667,44 @@ public final class R {
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
      * "<code>#<i>aarrggbb</i></code>".
      *
-     * @attr name com.by.bledemo:colorError
+     * @attr name com.by.ble:colorError
      */
     public static final int AppCompatTheme_colorError=54;
     /**
-     * <p>This symbol is the offset where the {@link com.by.bledemo.R.attr#colorPrimary}
+     * <p>This symbol is the offset where the {@link com.by.ble.R.attr#colorPrimary}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a color value, in the form of "<code>#<i>rgb</i></code>",
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
      * "<code>#<i>aarrggbb</i></code>".
      *
-     * @attr name com.by.bledemo:colorPrimary
+     * @attr name com.by.ble:colorPrimary
      */
     public static final int AppCompatTheme_colorPrimary=55;
     /**
-     * <p>This symbol is the offset where the {@link com.by.bledemo.R.attr#colorPrimaryDark}
+     * <p>This symbol is the offset where the {@link com.by.ble.R.attr#colorPrimaryDark}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a color value, in the form of "<code>#<i>rgb</i></code>",
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
      * "<code>#<i>aarrggbb</i></code>".
      *
-     * @attr name com.by.bledemo:colorPrimaryDark
+     * @attr name com.by.ble:colorPrimaryDark
      */
     public static final int AppCompatTheme_colorPrimaryDark=56;
     /**
-     * <p>This symbol is the offset where the {@link com.by.bledemo.R.attr#colorSwitchThumbNormal}
+     * <p>This symbol is the offset where the {@link com.by.ble.R.attr#colorSwitchThumbNormal}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a color value, in the form of "<code>#<i>rgb</i></code>",
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
      * "<code>#<i>aarrggbb</i></code>".
      *
-     * @attr name com.by.bledemo:colorSwitchThumbNormal
+     * @attr name com.by.ble:colorSwitchThumbNormal
      */
     public static final int AppCompatTheme_colorSwitchThumbNormal=57;
     /**
-     * <p>This symbol is the offset where the {@link com.by.bledemo.R.attr#controlBackground}
+     * <p>This symbol is the offset where the {@link com.by.ble.R.attr#controlBackground}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -5492,11 +5712,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.by.bledemo:controlBackground
+     * @attr name com.by.ble:controlBackground
      */
     public static final int AppCompatTheme_controlBackground=58;
     /**
-     * <p>This symbol is the offset where the {@link com.by.bledemo.R.attr#dialogPreferredPadding}
+     * <p>This symbol is the offset where the {@link com.by.ble.R.attr#dialogPreferredPadding}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -5505,11 +5725,11 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.by.bledemo:dialogPreferredPadding
+     * @attr name com.by.ble:dialogPreferredPadding
      */
     public static final int AppCompatTheme_dialogPreferredPadding=59;
     /**
-     * <p>This symbol is the offset where the {@link com.by.bledemo.R.attr#dialogTheme}
+     * <p>This symbol is the offset where the {@link com.by.ble.R.attr#dialogTheme}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -5517,11 +5737,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.by.bledemo:dialogTheme
+     * @attr name com.by.ble:dialogTheme
      */
     public static final int AppCompatTheme_dialogTheme=60;
     /**
-     * <p>This symbol is the offset where the {@link com.by.bledemo.R.attr#dividerHorizontal}
+     * <p>This symbol is the offset where the {@link com.by.ble.R.attr#dividerHorizontal}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -5529,11 +5749,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.by.bledemo:dividerHorizontal
+     * @attr name com.by.ble:dividerHorizontal
      */
     public static final int AppCompatTheme_dividerHorizontal=61;
     /**
-     * <p>This symbol is the offset where the {@link com.by.bledemo.R.attr#dividerVertical}
+     * <p>This symbol is the offset where the {@link com.by.ble.R.attr#dividerVertical}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -5541,11 +5761,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.by.bledemo:dividerVertical
+     * @attr name com.by.ble:dividerVertical
      */
     public static final int AppCompatTheme_dividerVertical=62;
     /**
-     * <p>This symbol is the offset where the {@link com.by.bledemo.R.attr#dropDownListViewStyle}
+     * <p>This symbol is the offset where the {@link com.by.ble.R.attr#dropDownListViewStyle}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -5553,11 +5773,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.by.bledemo:dropDownListViewStyle
+     * @attr name com.by.ble:dropDownListViewStyle
      */
     public static final int AppCompatTheme_dropDownListViewStyle=63;
     /**
-     * <p>This symbol is the offset where the {@link com.by.bledemo.R.attr#dropdownListPreferredItemHeight}
+     * <p>This symbol is the offset where the {@link com.by.ble.R.attr#dropdownListPreferredItemHeight}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -5566,11 +5786,11 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.by.bledemo:dropdownListPreferredItemHeight
+     * @attr name com.by.ble:dropdownListPreferredItemHeight
      */
     public static final int AppCompatTheme_dropdownListPreferredItemHeight=64;
     /**
-     * <p>This symbol is the offset where the {@link com.by.bledemo.R.attr#editTextBackground}
+     * <p>This symbol is the offset where the {@link com.by.ble.R.attr#editTextBackground}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -5578,11 +5798,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.by.bledemo:editTextBackground
+     * @attr name com.by.ble:editTextBackground
      */
     public static final int AppCompatTheme_editTextBackground=65;
     /**
-     * <p>This symbol is the offset where the {@link com.by.bledemo.R.attr#editTextColor}
+     * <p>This symbol is the offset where the {@link com.by.ble.R.attr#editTextColor}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -5593,11 +5813,11 @@ public final class R {
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
      * "<code>#<i>aarrggbb</i></code>".
      *
-     * @attr name com.by.bledemo:editTextColor
+     * @attr name com.by.ble:editTextColor
      */
     public static final int AppCompatTheme_editTextColor=66;
     /**
-     * <p>This symbol is the offset where the {@link com.by.bledemo.R.attr#editTextStyle}
+     * <p>This symbol is the offset where the {@link com.by.ble.R.attr#editTextStyle}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -5605,11 +5825,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.by.bledemo:editTextStyle
+     * @attr name com.by.ble:editTextStyle
      */
     public static final int AppCompatTheme_editTextStyle=67;
     /**
-     * <p>This symbol is the offset where the {@link com.by.bledemo.R.attr#homeAsUpIndicator}
+     * <p>This symbol is the offset where the {@link com.by.ble.R.attr#homeAsUpIndicator}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -5617,11 +5837,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.by.bledemo:homeAsUpIndicator
+     * @attr name com.by.ble:homeAsUpIndicator
      */
     public static final int AppCompatTheme_homeAsUpIndicator=68;
     /**
-     * <p>This symbol is the offset where the {@link com.by.bledemo.R.attr#imageButtonStyle}
+     * <p>This symbol is the offset where the {@link com.by.ble.R.attr#imageButtonStyle}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -5629,11 +5849,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.by.bledemo:imageButtonStyle
+     * @attr name com.by.ble:imageButtonStyle
      */
     public static final int AppCompatTheme_imageButtonStyle=69;
     /**
-     * <p>This symbol is the offset where the {@link com.by.bledemo.R.attr#listChoiceBackgroundIndicator}
+     * <p>This symbol is the offset where the {@link com.by.ble.R.attr#listChoiceBackgroundIndicator}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -5641,11 +5861,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.by.bledemo:listChoiceBackgroundIndicator
+     * @attr name com.by.ble:listChoiceBackgroundIndicator
      */
     public static final int AppCompatTheme_listChoiceBackgroundIndicator=70;
     /**
-     * <p>This symbol is the offset where the {@link com.by.bledemo.R.attr#listDividerAlertDialog}
+     * <p>This symbol is the offset where the {@link com.by.ble.R.attr#listDividerAlertDialog}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -5653,11 +5873,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.by.bledemo:listDividerAlertDialog
+     * @attr name com.by.ble:listDividerAlertDialog
      */
     public static final int AppCompatTheme_listDividerAlertDialog=71;
     /**
-     * <p>This symbol is the offset where the {@link com.by.bledemo.R.attr#listMenuViewStyle}
+     * <p>This symbol is the offset where the {@link com.by.ble.R.attr#listMenuViewStyle}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -5665,11 +5885,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.by.bledemo:listMenuViewStyle
+     * @attr name com.by.ble:listMenuViewStyle
      */
     public static final int AppCompatTheme_listMenuViewStyle=72;
     /**
-     * <p>This symbol is the offset where the {@link com.by.bledemo.R.attr#listPopupWindowStyle}
+     * <p>This symbol is the offset where the {@link com.by.ble.R.attr#listPopupWindowStyle}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -5677,11 +5897,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.by.bledemo:listPopupWindowStyle
+     * @attr name com.by.ble:listPopupWindowStyle
      */
     public static final int AppCompatTheme_listPopupWindowStyle=73;
     /**
-     * <p>This symbol is the offset where the {@link com.by.bledemo.R.attr#listPreferredItemHeight}
+     * <p>This symbol is the offset where the {@link com.by.ble.R.attr#listPreferredItemHeight}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -5690,11 +5910,11 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.by.bledemo:listPreferredItemHeight
+     * @attr name com.by.ble:listPreferredItemHeight
      */
     public static final int AppCompatTheme_listPreferredItemHeight=74;
     /**
-     * <p>This symbol is the offset where the {@link com.by.bledemo.R.attr#listPreferredItemHeightLarge}
+     * <p>This symbol is the offset where the {@link com.by.ble.R.attr#listPreferredItemHeightLarge}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -5703,11 +5923,11 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.by.bledemo:listPreferredItemHeightLarge
+     * @attr name com.by.ble:listPreferredItemHeightLarge
      */
     public static final int AppCompatTheme_listPreferredItemHeightLarge=75;
     /**
-     * <p>This symbol is the offset where the {@link com.by.bledemo.R.attr#listPreferredItemHeightSmall}
+     * <p>This symbol is the offset where the {@link com.by.ble.R.attr#listPreferredItemHeightSmall}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -5716,11 +5936,11 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.by.bledemo:listPreferredItemHeightSmall
+     * @attr name com.by.ble:listPreferredItemHeightSmall
      */
     public static final int AppCompatTheme_listPreferredItemHeightSmall=76;
     /**
-     * <p>This symbol is the offset where the {@link com.by.bledemo.R.attr#listPreferredItemPaddingLeft}
+     * <p>This symbol is the offset where the {@link com.by.ble.R.attr#listPreferredItemPaddingLeft}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -5729,11 +5949,11 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.by.bledemo:listPreferredItemPaddingLeft
+     * @attr name com.by.ble:listPreferredItemPaddingLeft
      */
     public static final int AppCompatTheme_listPreferredItemPaddingLeft=77;
     /**
-     * <p>This symbol is the offset where the {@link com.by.bledemo.R.attr#listPreferredItemPaddingRight}
+     * <p>This symbol is the offset where the {@link com.by.ble.R.attr#listPreferredItemPaddingRight}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -5742,11 +5962,11 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.by.bledemo:listPreferredItemPaddingRight
+     * @attr name com.by.ble:listPreferredItemPaddingRight
      */
     public static final int AppCompatTheme_listPreferredItemPaddingRight=78;
     /**
-     * <p>This symbol is the offset where the {@link com.by.bledemo.R.attr#panelBackground}
+     * <p>This symbol is the offset where the {@link com.by.ble.R.attr#panelBackground}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -5754,11 +5974,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.by.bledemo:panelBackground
+     * @attr name com.by.ble:panelBackground
      */
     public static final int AppCompatTheme_panelBackground=79;
     /**
-     * <p>This symbol is the offset where the {@link com.by.bledemo.R.attr#panelMenuListTheme}
+     * <p>This symbol is the offset where the {@link com.by.ble.R.attr#panelMenuListTheme}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -5766,11 +5986,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.by.bledemo:panelMenuListTheme
+     * @attr name com.by.ble:panelMenuListTheme
      */
     public static final int AppCompatTheme_panelMenuListTheme=80;
     /**
-     * <p>This symbol is the offset where the {@link com.by.bledemo.R.attr#panelMenuListWidth}
+     * <p>This symbol is the offset where the {@link com.by.ble.R.attr#panelMenuListWidth}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -5779,11 +5999,11 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.by.bledemo:panelMenuListWidth
+     * @attr name com.by.ble:panelMenuListWidth
      */
     public static final int AppCompatTheme_panelMenuListWidth=81;
     /**
-     * <p>This symbol is the offset where the {@link com.by.bledemo.R.attr#popupMenuStyle}
+     * <p>This symbol is the offset where the {@link com.by.ble.R.attr#popupMenuStyle}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -5791,11 +6011,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.by.bledemo:popupMenuStyle
+     * @attr name com.by.ble:popupMenuStyle
      */
     public static final int AppCompatTheme_popupMenuStyle=82;
     /**
-     * <p>This symbol is the offset where the {@link com.by.bledemo.R.attr#popupWindowStyle}
+     * <p>This symbol is the offset where the {@link com.by.ble.R.attr#popupWindowStyle}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -5803,11 +6023,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.by.bledemo:popupWindowStyle
+     * @attr name com.by.ble:popupWindowStyle
      */
     public static final int AppCompatTheme_popupWindowStyle=83;
     /**
-     * <p>This symbol is the offset where the {@link com.by.bledemo.R.attr#radioButtonStyle}
+     * <p>This symbol is the offset where the {@link com.by.ble.R.attr#radioButtonStyle}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -5815,11 +6035,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.by.bledemo:radioButtonStyle
+     * @attr name com.by.ble:radioButtonStyle
      */
     public static final int AppCompatTheme_radioButtonStyle=84;
     /**
-     * <p>This symbol is the offset where the {@link com.by.bledemo.R.attr#ratingBarStyle}
+     * <p>This symbol is the offset where the {@link com.by.ble.R.attr#ratingBarStyle}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -5827,11 +6047,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.by.bledemo:ratingBarStyle
+     * @attr name com.by.ble:ratingBarStyle
      */
     public static final int AppCompatTheme_ratingBarStyle=85;
     /**
-     * <p>This symbol is the offset where the {@link com.by.bledemo.R.attr#ratingBarStyleIndicator}
+     * <p>This symbol is the offset where the {@link com.by.ble.R.attr#ratingBarStyleIndicator}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -5839,11 +6059,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.by.bledemo:ratingBarStyleIndicator
+     * @attr name com.by.ble:ratingBarStyleIndicator
      */
     public static final int AppCompatTheme_ratingBarStyleIndicator=86;
     /**
-     * <p>This symbol is the offset where the {@link com.by.bledemo.R.attr#ratingBarStyleSmall}
+     * <p>This symbol is the offset where the {@link com.by.ble.R.attr#ratingBarStyleSmall}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -5851,11 +6071,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.by.bledemo:ratingBarStyleSmall
+     * @attr name com.by.ble:ratingBarStyleSmall
      */
     public static final int AppCompatTheme_ratingBarStyleSmall=87;
     /**
-     * <p>This symbol is the offset where the {@link com.by.bledemo.R.attr#searchViewStyle}
+     * <p>This symbol is the offset where the {@link com.by.ble.R.attr#searchViewStyle}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -5863,11 +6083,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.by.bledemo:searchViewStyle
+     * @attr name com.by.ble:searchViewStyle
      */
     public static final int AppCompatTheme_searchViewStyle=88;
     /**
-     * <p>This symbol is the offset where the {@link com.by.bledemo.R.attr#seekBarStyle}
+     * <p>This symbol is the offset where the {@link com.by.ble.R.attr#seekBarStyle}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -5875,11 +6095,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.by.bledemo:seekBarStyle
+     * @attr name com.by.ble:seekBarStyle
      */
     public static final int AppCompatTheme_seekBarStyle=89;
     /**
-     * <p>This symbol is the offset where the {@link com.by.bledemo.R.attr#selectableItemBackground}
+     * <p>This symbol is the offset where the {@link com.by.ble.R.attr#selectableItemBackground}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -5887,11 +6107,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.by.bledemo:selectableItemBackground
+     * @attr name com.by.ble:selectableItemBackground
      */
     public static final int AppCompatTheme_selectableItemBackground=90;
     /**
-     * <p>This symbol is the offset where the {@link com.by.bledemo.R.attr#selectableItemBackgroundBorderless}
+     * <p>This symbol is the offset where the {@link com.by.ble.R.attr#selectableItemBackgroundBorderless}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -5899,11 +6119,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.by.bledemo:selectableItemBackgroundBorderless
+     * @attr name com.by.ble:selectableItemBackgroundBorderless
      */
     public static final int AppCompatTheme_selectableItemBackgroundBorderless=91;
     /**
-     * <p>This symbol is the offset where the {@link com.by.bledemo.R.attr#spinnerDropDownItemStyle}
+     * <p>This symbol is the offset where the {@link com.by.ble.R.attr#spinnerDropDownItemStyle}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -5911,11 +6131,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.by.bledemo:spinnerDropDownItemStyle
+     * @attr name com.by.ble:spinnerDropDownItemStyle
      */
     public static final int AppCompatTheme_spinnerDropDownItemStyle=92;
     /**
-     * <p>This symbol is the offset where the {@link com.by.bledemo.R.attr#spinnerStyle}
+     * <p>This symbol is the offset where the {@link com.by.ble.R.attr#spinnerStyle}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -5923,11 +6143,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.by.bledemo:spinnerStyle
+     * @attr name com.by.ble:spinnerStyle
      */
     public static final int AppCompatTheme_spinnerStyle=93;
     /**
-     * <p>This symbol is the offset where the {@link com.by.bledemo.R.attr#switchStyle}
+     * <p>This symbol is the offset where the {@link com.by.ble.R.attr#switchStyle}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -5935,11 +6155,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.by.bledemo:switchStyle
+     * @attr name com.by.ble:switchStyle
      */
     public static final int AppCompatTheme_switchStyle=94;
     /**
-     * <p>This symbol is the offset where the {@link com.by.bledemo.R.attr#textAppearanceLargePopupMenu}
+     * <p>This symbol is the offset where the {@link com.by.ble.R.attr#textAppearanceLargePopupMenu}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -5947,11 +6167,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.by.bledemo:textAppearanceLargePopupMenu
+     * @attr name com.by.ble:textAppearanceLargePopupMenu
      */
     public static final int AppCompatTheme_textAppearanceLargePopupMenu=95;
     /**
-     * <p>This symbol is the offset where the {@link com.by.bledemo.R.attr#textAppearanceListItem}
+     * <p>This symbol is the offset where the {@link com.by.ble.R.attr#textAppearanceListItem}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -5959,11 +6179,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.by.bledemo:textAppearanceListItem
+     * @attr name com.by.ble:textAppearanceListItem
      */
     public static final int AppCompatTheme_textAppearanceListItem=96;
     /**
-     * <p>This symbol is the offset where the {@link com.by.bledemo.R.attr#textAppearanceListItemSecondary}
+     * <p>This symbol is the offset where the {@link com.by.ble.R.attr#textAppearanceListItemSecondary}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -5971,11 +6191,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.by.bledemo:textAppearanceListItemSecondary
+     * @attr name com.by.ble:textAppearanceListItemSecondary
      */
     public static final int AppCompatTheme_textAppearanceListItemSecondary=97;
     /**
-     * <p>This symbol is the offset where the {@link com.by.bledemo.R.attr#textAppearanceListItemSmall}
+     * <p>This symbol is the offset where the {@link com.by.ble.R.attr#textAppearanceListItemSmall}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -5983,11 +6203,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.by.bledemo:textAppearanceListItemSmall
+     * @attr name com.by.ble:textAppearanceListItemSmall
      */
     public static final int AppCompatTheme_textAppearanceListItemSmall=98;
     /**
-     * <p>This symbol is the offset where the {@link com.by.bledemo.R.attr#textAppearancePopupMenuHeader}
+     * <p>This symbol is the offset where the {@link com.by.ble.R.attr#textAppearancePopupMenuHeader}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -5995,11 +6215,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.by.bledemo:textAppearancePopupMenuHeader
+     * @attr name com.by.ble:textAppearancePopupMenuHeader
      */
     public static final int AppCompatTheme_textAppearancePopupMenuHeader=99;
     /**
-     * <p>This symbol is the offset where the {@link com.by.bledemo.R.attr#textAppearanceSearchResultSubtitle}
+     * <p>This symbol is the offset where the {@link com.by.ble.R.attr#textAppearanceSearchResultSubtitle}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -6007,11 +6227,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.by.bledemo:textAppearanceSearchResultSubtitle
+     * @attr name com.by.ble:textAppearanceSearchResultSubtitle
      */
     public static final int AppCompatTheme_textAppearanceSearchResultSubtitle=100;
     /**
-     * <p>This symbol is the offset where the {@link com.by.bledemo.R.attr#textAppearanceSearchResultTitle}
+     * <p>This symbol is the offset where the {@link com.by.ble.R.attr#textAppearanceSearchResultTitle}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -6019,11 +6239,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.by.bledemo:textAppearanceSearchResultTitle
+     * @attr name com.by.ble:textAppearanceSearchResultTitle
      */
     public static final int AppCompatTheme_textAppearanceSearchResultTitle=101;
     /**
-     * <p>This symbol is the offset where the {@link com.by.bledemo.R.attr#textAppearanceSmallPopupMenu}
+     * <p>This symbol is the offset where the {@link com.by.ble.R.attr#textAppearanceSmallPopupMenu}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -6031,11 +6251,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.by.bledemo:textAppearanceSmallPopupMenu
+     * @attr name com.by.ble:textAppearanceSmallPopupMenu
      */
     public static final int AppCompatTheme_textAppearanceSmallPopupMenu=102;
     /**
-     * <p>This symbol is the offset where the {@link com.by.bledemo.R.attr#textColorAlertDialogListItem}
+     * <p>This symbol is the offset where the {@link com.by.ble.R.attr#textColorAlertDialogListItem}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -6046,11 +6266,11 @@ public final class R {
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
      * "<code>#<i>aarrggbb</i></code>".
      *
-     * @attr name com.by.bledemo:textColorAlertDialogListItem
+     * @attr name com.by.ble:textColorAlertDialogListItem
      */
     public static final int AppCompatTheme_textColorAlertDialogListItem=103;
     /**
-     * <p>This symbol is the offset where the {@link com.by.bledemo.R.attr#textColorSearchUrl}
+     * <p>This symbol is the offset where the {@link com.by.ble.R.attr#textColorSearchUrl}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -6061,11 +6281,11 @@ public final class R {
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
      * "<code>#<i>aarrggbb</i></code>".
      *
-     * @attr name com.by.bledemo:textColorSearchUrl
+     * @attr name com.by.ble:textColorSearchUrl
      */
     public static final int AppCompatTheme_textColorSearchUrl=104;
     /**
-     * <p>This symbol is the offset where the {@link com.by.bledemo.R.attr#toolbarNavigationButtonStyle}
+     * <p>This symbol is the offset where the {@link com.by.ble.R.attr#toolbarNavigationButtonStyle}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -6073,11 +6293,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.by.bledemo:toolbarNavigationButtonStyle
+     * @attr name com.by.ble:toolbarNavigationButtonStyle
      */
     public static final int AppCompatTheme_toolbarNavigationButtonStyle=105;
     /**
-     * <p>This symbol is the offset where the {@link com.by.bledemo.R.attr#toolbarStyle}
+     * <p>This symbol is the offset where the {@link com.by.ble.R.attr#toolbarStyle}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -6085,11 +6305,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.by.bledemo:toolbarStyle
+     * @attr name com.by.ble:toolbarStyle
      */
     public static final int AppCompatTheme_toolbarStyle=106;
     /**
-     * <p>This symbol is the offset where the {@link com.by.bledemo.R.attr#tooltipForegroundColor}
+     * <p>This symbol is the offset where the {@link com.by.ble.R.attr#tooltipForegroundColor}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -6100,11 +6320,11 @@ public final class R {
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
      * "<code>#<i>aarrggbb</i></code>".
      *
-     * @attr name com.by.bledemo:tooltipForegroundColor
+     * @attr name com.by.ble:tooltipForegroundColor
      */
     public static final int AppCompatTheme_tooltipForegroundColor=107;
     /**
-     * <p>This symbol is the offset where the {@link com.by.bledemo.R.attr#tooltipFrameBackground}
+     * <p>This symbol is the offset where the {@link com.by.ble.R.attr#tooltipFrameBackground}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -6112,41 +6332,41 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.by.bledemo:tooltipFrameBackground
+     * @attr name com.by.ble:tooltipFrameBackground
      */
     public static final int AppCompatTheme_tooltipFrameBackground=108;
     /**
-     * <p>This symbol is the offset where the {@link com.by.bledemo.R.attr#windowActionBar}
+     * <p>This symbol is the offset where the {@link com.by.ble.R.attr#windowActionBar}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
      *
-     * @attr name com.by.bledemo:windowActionBar
+     * @attr name com.by.ble:windowActionBar
      */
     public static final int AppCompatTheme_windowActionBar=109;
     /**
-     * <p>This symbol is the offset where the {@link com.by.bledemo.R.attr#windowActionBarOverlay}
+     * <p>This symbol is the offset where the {@link com.by.ble.R.attr#windowActionBarOverlay}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
      *
-     * @attr name com.by.bledemo:windowActionBarOverlay
+     * @attr name com.by.ble:windowActionBarOverlay
      */
     public static final int AppCompatTheme_windowActionBarOverlay=110;
     /**
-     * <p>This symbol is the offset where the {@link com.by.bledemo.R.attr#windowActionModeOverlay}
+     * <p>This symbol is the offset where the {@link com.by.ble.R.attr#windowActionModeOverlay}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
      *
-     * @attr name com.by.bledemo:windowActionModeOverlay
+     * @attr name com.by.ble:windowActionModeOverlay
      */
     public static final int AppCompatTheme_windowActionModeOverlay=111;
     /**
-     * <p>This symbol is the offset where the {@link com.by.bledemo.R.attr#windowFixedHeightMajor}
+     * <p>This symbol is the offset where the {@link com.by.ble.R.attr#windowFixedHeightMajor}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -6159,11 +6379,11 @@ public final class R {
      * The % suffix always means a percentage of the base size;
      * the optional %p suffix provides a size relative to some parent container.
      *
-     * @attr name com.by.bledemo:windowFixedHeightMajor
+     * @attr name com.by.ble:windowFixedHeightMajor
      */
     public static final int AppCompatTheme_windowFixedHeightMajor=112;
     /**
-     * <p>This symbol is the offset where the {@link com.by.bledemo.R.attr#windowFixedHeightMinor}
+     * <p>This symbol is the offset where the {@link com.by.ble.R.attr#windowFixedHeightMinor}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -6176,11 +6396,11 @@ public final class R {
      * The % suffix always means a percentage of the base size;
      * the optional %p suffix provides a size relative to some parent container.
      *
-     * @attr name com.by.bledemo:windowFixedHeightMinor
+     * @attr name com.by.ble:windowFixedHeightMinor
      */
     public static final int AppCompatTheme_windowFixedHeightMinor=113;
     /**
-     * <p>This symbol is the offset where the {@link com.by.bledemo.R.attr#windowFixedWidthMajor}
+     * <p>This symbol is the offset where the {@link com.by.ble.R.attr#windowFixedWidthMajor}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -6193,11 +6413,11 @@ public final class R {
      * The % suffix always means a percentage of the base size;
      * the optional %p suffix provides a size relative to some parent container.
      *
-     * @attr name com.by.bledemo:windowFixedWidthMajor
+     * @attr name com.by.ble:windowFixedWidthMajor
      */
     public static final int AppCompatTheme_windowFixedWidthMajor=114;
     /**
-     * <p>This symbol is the offset where the {@link com.by.bledemo.R.attr#windowFixedWidthMinor}
+     * <p>This symbol is the offset where the {@link com.by.ble.R.attr#windowFixedWidthMinor}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -6210,11 +6430,11 @@ public final class R {
      * The % suffix always means a percentage of the base size;
      * the optional %p suffix provides a size relative to some parent container.
      *
-     * @attr name com.by.bledemo:windowFixedWidthMinor
+     * @attr name com.by.ble:windowFixedWidthMinor
      */
     public static final int AppCompatTheme_windowFixedWidthMinor=115;
     /**
-     * <p>This symbol is the offset where the {@link com.by.bledemo.R.attr#windowMinWidthMajor}
+     * <p>This symbol is the offset where the {@link com.by.ble.R.attr#windowMinWidthMajor}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -6227,11 +6447,11 @@ public final class R {
      * The % suffix always means a percentage of the base size;
      * the optional %p suffix provides a size relative to some parent container.
      *
-     * @attr name com.by.bledemo:windowMinWidthMajor
+     * @attr name com.by.ble:windowMinWidthMajor
      */
     public static final int AppCompatTheme_windowMinWidthMajor=116;
     /**
-     * <p>This symbol is the offset where the {@link com.by.bledemo.R.attr#windowMinWidthMinor}
+     * <p>This symbol is the offset where the {@link com.by.ble.R.attr#windowMinWidthMinor}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -6244,17 +6464,17 @@ public final class R {
      * The % suffix always means a percentage of the base size;
      * the optional %p suffix provides a size relative to some parent container.
      *
-     * @attr name com.by.bledemo:windowMinWidthMinor
+     * @attr name com.by.ble:windowMinWidthMinor
      */
     public static final int AppCompatTheme_windowMinWidthMinor=117;
     /**
-     * <p>This symbol is the offset where the {@link com.by.bledemo.R.attr#windowNoTitle}
+     * <p>This symbol is the offset where the {@link com.by.ble.R.attr#windowNoTitle}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
      *
-     * @attr name com.by.bledemo:windowNoTitle
+     * @attr name com.by.ble:windowNoTitle
      */
     public static final int AppCompatTheme_windowNoTitle=118;
     /**
@@ -6264,7 +6484,7 @@ public final class R {
      * <colgroup align="left" />
      * <colgroup align="left" />
      * <tr><th>Attribute</th><th>Description</th></tr>
-     * <tr><td><code>{@link #ButtonBarLayout_allowStacking com.by.bledemo:allowStacking}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ButtonBarLayout_allowStacking com.by.ble:allowStacking}</code></td><td></td></tr>
      * </table>
      * @see #ButtonBarLayout_allowStacking
      */
@@ -6272,13 +6492,13 @@ public final class R {
         0x7f020026
       };
     /**
-     * <p>This symbol is the offset where the {@link com.by.bledemo.R.attr#allowStacking}
+     * <p>This symbol is the offset where the {@link com.by.ble.R.attr#allowStacking}
      * attribute's value can be found in the {@link #ButtonBarLayout} array.
      *
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
      *
-     * @attr name com.by.bledemo:allowStacking
+     * @attr name com.by.ble:allowStacking
      */
     public static final int ButtonBarLayout_allowStacking=0;
     /**
@@ -6290,7 +6510,7 @@ public final class R {
      * <tr><th>Attribute</th><th>Description</th></tr>
      * <tr><td><code>{@link #ColorStateListItem_android_color android:color}</code></td><td></td></tr>
      * <tr><td><code>{@link #ColorStateListItem_android_alpha android:alpha}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ColorStateListItem_alpha com.by.bledemo:alpha}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ColorStateListItem_alpha com.by.ble:alpha}</code></td><td></td></tr>
      * </table>
      * @see #ColorStateListItem_android_color
      * @see #ColorStateListItem_android_alpha
@@ -6300,12 +6520,12 @@ public final class R {
         0x010101a5, 0x0101031f, 0x7f020027
       };
     /**
-     * <p>This symbol is the offset where the {@link com.by.bledemo.R.attr#alpha}
+     * <p>This symbol is the offset where the {@link com.by.ble.R.attr#alpha}
      * attribute's value can be found in the {@link #ColorStateListItem} array.
      *
      * <p>May be a floating point value, such as "<code>1.2</code>".
      *
-     * @attr name com.by.bledemo:alpha
+     * @attr name com.by.ble:alpha
      */
     public static final int ColorStateListItem_alpha=2;
     /**
@@ -6336,8 +6556,8 @@ public final class R {
      * <colgroup align="left" />
      * <tr><th>Attribute</th><th>Description</th></tr>
      * <tr><td><code>{@link #CompoundButton_android_button android:button}</code></td><td></td></tr>
-     * <tr><td><code>{@link #CompoundButton_buttonTint com.by.bledemo:buttonTint}</code></td><td></td></tr>
-     * <tr><td><code>{@link #CompoundButton_buttonTintMode com.by.bledemo:buttonTintMode}</code></td><td></td></tr>
+     * <tr><td><code>{@link #CompoundButton_buttonTint com.by.ble:buttonTint}</code></td><td></td></tr>
+     * <tr><td><code>{@link #CompoundButton_buttonTintMode com.by.ble:buttonTintMode}</code></td><td></td></tr>
      * </table>
      * @see #CompoundButton_android_button
      * @see #CompoundButton_buttonTint
@@ -6359,18 +6579,18 @@ public final class R {
      */
     public static final int CompoundButton_android_button=0;
     /**
-     * <p>This symbol is the offset where the {@link com.by.bledemo.R.attr#buttonTint}
+     * <p>This symbol is the offset where the {@link com.by.ble.R.attr#buttonTint}
      * attribute's value can be found in the {@link #CompoundButton} array.
      *
      * <p>May be a color value, in the form of "<code>#<i>rgb</i></code>",
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
      * "<code>#<i>aarrggbb</i></code>".
      *
-     * @attr name com.by.bledemo:buttonTint
+     * @attr name com.by.ble:buttonTint
      */
     public static final int CompoundButton_buttonTint=1;
     /**
-     * <p>This symbol is the offset where the {@link com.by.bledemo.R.attr#buttonTintMode}
+     * <p>This symbol is the offset where the {@link com.by.ble.R.attr#buttonTintMode}
      * attribute's value can be found in the {@link #CompoundButton} array.
      *
      * <p>Must be one of the following constant values.</p>
@@ -6386,7 +6606,7 @@ public final class R {
      * <tr><td>src_over</td><td>3</td><td></td></tr>
      * </table>
      *
-     * @attr name com.by.bledemo:buttonTintMode
+     * @attr name com.by.ble:buttonTintMode
      */
     public static final int CompoundButton_buttonTintMode=2;
     /**
@@ -6401,50 +6621,50 @@ public final class R {
      * <tr><td><code>{@link #ConstraintLayout_Layout_android_maxHeight android:maxHeight}</code></td><td></td></tr>
      * <tr><td><code>{@link #ConstraintLayout_Layout_android_minWidth android:minWidth}</code></td><td></td></tr>
      * <tr><td><code>{@link #ConstraintLayout_Layout_android_minHeight android:minHeight}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ConstraintLayout_Layout_constraintSet com.by.bledemo:constraintSet}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ConstraintLayout_Layout_layout_constraintBaseline_creator com.by.bledemo:layout_constraintBaseline_creator}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ConstraintLayout_Layout_layout_constraintBaseline_toBaselineOf com.by.bledemo:layout_constraintBaseline_toBaselineOf}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ConstraintLayout_Layout_layout_constraintBottom_creator com.by.bledemo:layout_constraintBottom_creator}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ConstraintLayout_Layout_layout_constraintBottom_toBottomOf com.by.bledemo:layout_constraintBottom_toBottomOf}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ConstraintLayout_Layout_layout_constraintBottom_toTopOf com.by.bledemo:layout_constraintBottom_toTopOf}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ConstraintLayout_Layout_layout_constraintDimensionRatio com.by.bledemo:layout_constraintDimensionRatio}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ConstraintLayout_Layout_layout_constraintEnd_toEndOf com.by.bledemo:layout_constraintEnd_toEndOf}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ConstraintLayout_Layout_layout_constraintEnd_toStartOf com.by.bledemo:layout_constraintEnd_toStartOf}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ConstraintLayout_Layout_layout_constraintGuide_begin com.by.bledemo:layout_constraintGuide_begin}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ConstraintLayout_Layout_layout_constraintGuide_end com.by.bledemo:layout_constraintGuide_end}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ConstraintLayout_Layout_layout_constraintGuide_percent com.by.bledemo:layout_constraintGuide_percent}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ConstraintLayout_Layout_layout_constraintHeight_default com.by.bledemo:layout_constraintHeight_default}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ConstraintLayout_Layout_layout_constraintHeight_max com.by.bledemo:layout_constraintHeight_max}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ConstraintLayout_Layout_layout_constraintHeight_min com.by.bledemo:layout_constraintHeight_min}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ConstraintLayout_Layout_layout_constraintHorizontal_bias com.by.bledemo:layout_constraintHorizontal_bias}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ConstraintLayout_Layout_layout_constraintHorizontal_chainStyle com.by.bledemo:layout_constraintHorizontal_chainStyle}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ConstraintLayout_Layout_layout_constraintHorizontal_weight com.by.bledemo:layout_constraintHorizontal_weight}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ConstraintLayout_Layout_layout_constraintLeft_creator com.by.bledemo:layout_constraintLeft_creator}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ConstraintLayout_Layout_layout_constraintLeft_toLeftOf com.by.bledemo:layout_constraintLeft_toLeftOf}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ConstraintLayout_Layout_layout_constraintLeft_toRightOf com.by.bledemo:layout_constraintLeft_toRightOf}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ConstraintLayout_Layout_layout_constraintRight_creator com.by.bledemo:layout_constraintRight_creator}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ConstraintLayout_Layout_layout_constraintRight_toLeftOf com.by.bledemo:layout_constraintRight_toLeftOf}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ConstraintLayout_Layout_layout_constraintRight_toRightOf com.by.bledemo:layout_constraintRight_toRightOf}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ConstraintLayout_Layout_layout_constraintStart_toEndOf com.by.bledemo:layout_constraintStart_toEndOf}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ConstraintLayout_Layout_layout_constraintStart_toStartOf com.by.bledemo:layout_constraintStart_toStartOf}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ConstraintLayout_Layout_layout_constraintTop_creator com.by.bledemo:layout_constraintTop_creator}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ConstraintLayout_Layout_layout_constraintTop_toBottomOf com.by.bledemo:layout_constraintTop_toBottomOf}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ConstraintLayout_Layout_layout_constraintTop_toTopOf com.by.bledemo:layout_constraintTop_toTopOf}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ConstraintLayout_Layout_layout_constraintVertical_bias com.by.bledemo:layout_constraintVertical_bias}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ConstraintLayout_Layout_layout_constraintVertical_chainStyle com.by.bledemo:layout_constraintVertical_chainStyle}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ConstraintLayout_Layout_layout_constraintVertical_weight com.by.bledemo:layout_constraintVertical_weight}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ConstraintLayout_Layout_layout_constraintWidth_default com.by.bledemo:layout_constraintWidth_default}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ConstraintLayout_Layout_layout_constraintWidth_max com.by.bledemo:layout_constraintWidth_max}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ConstraintLayout_Layout_layout_constraintWidth_min com.by.bledemo:layout_constraintWidth_min}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ConstraintLayout_Layout_layout_editor_absoluteX com.by.bledemo:layout_editor_absoluteX}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ConstraintLayout_Layout_layout_editor_absoluteY com.by.bledemo:layout_editor_absoluteY}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ConstraintLayout_Layout_layout_goneMarginBottom com.by.bledemo:layout_goneMarginBottom}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ConstraintLayout_Layout_layout_goneMarginEnd com.by.bledemo:layout_goneMarginEnd}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ConstraintLayout_Layout_layout_goneMarginLeft com.by.bledemo:layout_goneMarginLeft}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ConstraintLayout_Layout_layout_goneMarginRight com.by.bledemo:layout_goneMarginRight}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ConstraintLayout_Layout_layout_goneMarginStart com.by.bledemo:layout_goneMarginStart}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ConstraintLayout_Layout_layout_goneMarginTop com.by.bledemo:layout_goneMarginTop}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ConstraintLayout_Layout_layout_optimizationLevel com.by.bledemo:layout_optimizationLevel}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintLayout_Layout_constraintSet com.by.ble:constraintSet}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintLayout_Layout_layout_constraintBaseline_creator com.by.ble:layout_constraintBaseline_creator}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintLayout_Layout_layout_constraintBaseline_toBaselineOf com.by.ble:layout_constraintBaseline_toBaselineOf}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintLayout_Layout_layout_constraintBottom_creator com.by.ble:layout_constraintBottom_creator}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintLayout_Layout_layout_constraintBottom_toBottomOf com.by.ble:layout_constraintBottom_toBottomOf}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintLayout_Layout_layout_constraintBottom_toTopOf com.by.ble:layout_constraintBottom_toTopOf}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintLayout_Layout_layout_constraintDimensionRatio com.by.ble:layout_constraintDimensionRatio}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintLayout_Layout_layout_constraintEnd_toEndOf com.by.ble:layout_constraintEnd_toEndOf}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintLayout_Layout_layout_constraintEnd_toStartOf com.by.ble:layout_constraintEnd_toStartOf}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintLayout_Layout_layout_constraintGuide_begin com.by.ble:layout_constraintGuide_begin}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintLayout_Layout_layout_constraintGuide_end com.by.ble:layout_constraintGuide_end}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintLayout_Layout_layout_constraintGuide_percent com.by.ble:layout_constraintGuide_percent}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintLayout_Layout_layout_constraintHeight_default com.by.ble:layout_constraintHeight_default}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintLayout_Layout_layout_constraintHeight_max com.by.ble:layout_constraintHeight_max}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintLayout_Layout_layout_constraintHeight_min com.by.ble:layout_constraintHeight_min}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintLayout_Layout_layout_constraintHorizontal_bias com.by.ble:layout_constraintHorizontal_bias}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintLayout_Layout_layout_constraintHorizontal_chainStyle com.by.ble:layout_constraintHorizontal_chainStyle}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintLayout_Layout_layout_constraintHorizontal_weight com.by.ble:layout_constraintHorizontal_weight}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintLayout_Layout_layout_constraintLeft_creator com.by.ble:layout_constraintLeft_creator}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintLayout_Layout_layout_constraintLeft_toLeftOf com.by.ble:layout_constraintLeft_toLeftOf}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintLayout_Layout_layout_constraintLeft_toRightOf com.by.ble:layout_constraintLeft_toRightOf}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintLayout_Layout_layout_constraintRight_creator com.by.ble:layout_constraintRight_creator}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintLayout_Layout_layout_constraintRight_toLeftOf com.by.ble:layout_constraintRight_toLeftOf}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintLayout_Layout_layout_constraintRight_toRightOf com.by.ble:layout_constraintRight_toRightOf}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintLayout_Layout_layout_constraintStart_toEndOf com.by.ble:layout_constraintStart_toEndOf}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintLayout_Layout_layout_constraintStart_toStartOf com.by.ble:layout_constraintStart_toStartOf}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintLayout_Layout_layout_constraintTop_creator com.by.ble:layout_constraintTop_creator}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintLayout_Layout_layout_constraintTop_toBottomOf com.by.ble:layout_constraintTop_toBottomOf}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintLayout_Layout_layout_constraintTop_toTopOf com.by.ble:layout_constraintTop_toTopOf}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintLayout_Layout_layout_constraintVertical_bias com.by.ble:layout_constraintVertical_bias}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintLayout_Layout_layout_constraintVertical_chainStyle com.by.ble:layout_constraintVertical_chainStyle}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintLayout_Layout_layout_constraintVertical_weight com.by.ble:layout_constraintVertical_weight}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintLayout_Layout_layout_constraintWidth_default com.by.ble:layout_constraintWidth_default}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintLayout_Layout_layout_constraintWidth_max com.by.ble:layout_constraintWidth_max}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintLayout_Layout_layout_constraintWidth_min com.by.ble:layout_constraintWidth_min}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintLayout_Layout_layout_editor_absoluteX com.by.ble:layout_editor_absoluteX}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintLayout_Layout_layout_editor_absoluteY com.by.ble:layout_editor_absoluteY}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintLayout_Layout_layout_goneMarginBottom com.by.ble:layout_goneMarginBottom}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintLayout_Layout_layout_goneMarginEnd com.by.ble:layout_goneMarginEnd}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintLayout_Layout_layout_goneMarginLeft com.by.ble:layout_goneMarginLeft}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintLayout_Layout_layout_goneMarginRight com.by.ble:layout_goneMarginRight}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintLayout_Layout_layout_goneMarginStart com.by.ble:layout_goneMarginStart}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintLayout_Layout_layout_goneMarginTop com.by.ble:layout_goneMarginTop}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintLayout_Layout_layout_optimizationLevel com.by.ble:layout_optimizationLevel}</code></td><td></td></tr>
      * </table>
      * @see #ConstraintLayout_Layout_android_orientation
      * @see #ConstraintLayout_Layout_android_maxWidth
@@ -6581,7 +6801,7 @@ public final class R {
      */
     public static final int ConstraintLayout_Layout_android_orientation=0;
     /**
-     * <p>This symbol is the offset where the {@link com.by.bledemo.R.attr#constraintSet}
+     * <p>This symbol is the offset where the {@link com.by.ble.R.attr#constraintSet}
      * attribute's value can be found in the {@link #ConstraintLayout_Layout} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -6589,20 +6809,20 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.by.bledemo:constraintSet
+     * @attr name com.by.ble:constraintSet
      */
     public static final int ConstraintLayout_Layout_constraintSet=5;
     /**
-     * <p>This symbol is the offset where the {@link com.by.bledemo.R.attr#layout_constraintBaseline_creator}
+     * <p>This symbol is the offset where the {@link com.by.ble.R.attr#layout_constraintBaseline_creator}
      * attribute's value can be found in the {@link #ConstraintLayout_Layout} array.
      *
      * <p>May be an integer value, such as "<code>100</code>".
      *
-     * @attr name com.by.bledemo:layout_constraintBaseline_creator
+     * @attr name com.by.ble:layout_constraintBaseline_creator
      */
     public static final int ConstraintLayout_Layout_layout_constraintBaseline_creator=6;
     /**
-     * <p>This symbol is the offset where the {@link com.by.bledemo.R.attr#layout_constraintBaseline_toBaselineOf}
+     * <p>This symbol is the offset where the {@link com.by.ble.R.attr#layout_constraintBaseline_toBaselineOf}
      * attribute's value can be found in the {@link #ConstraintLayout_Layout} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -6618,20 +6838,20 @@ public final class R {
      * <tr><td>parent</td><td>0</td><td></td></tr>
      * </table>
      *
-     * @attr name com.by.bledemo:layout_constraintBaseline_toBaselineOf
+     * @attr name com.by.ble:layout_constraintBaseline_toBaselineOf
      */
     public static final int ConstraintLayout_Layout_layout_constraintBaseline_toBaselineOf=7;
     /**
-     * <p>This symbol is the offset where the {@link com.by.bledemo.R.attr#layout_constraintBottom_creator}
+     * <p>This symbol is the offset where the {@link com.by.ble.R.attr#layout_constraintBottom_creator}
      * attribute's value can be found in the {@link #ConstraintLayout_Layout} array.
      *
      * <p>May be an integer value, such as "<code>100</code>".
      *
-     * @attr name com.by.bledemo:layout_constraintBottom_creator
+     * @attr name com.by.ble:layout_constraintBottom_creator
      */
     public static final int ConstraintLayout_Layout_layout_constraintBottom_creator=8;
     /**
-     * <p>This symbol is the offset where the {@link com.by.bledemo.R.attr#layout_constraintBottom_toBottomOf}
+     * <p>This symbol is the offset where the {@link com.by.ble.R.attr#layout_constraintBottom_toBottomOf}
      * attribute's value can be found in the {@link #ConstraintLayout_Layout} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -6647,11 +6867,11 @@ public final class R {
      * <tr><td>parent</td><td>0</td><td></td></tr>
      * </table>
      *
-     * @attr name com.by.bledemo:layout_constraintBottom_toBottomOf
+     * @attr name com.by.ble:layout_constraintBottom_toBottomOf
      */
     public static final int ConstraintLayout_Layout_layout_constraintBottom_toBottomOf=9;
     /**
-     * <p>This symbol is the offset where the {@link com.by.bledemo.R.attr#layout_constraintBottom_toTopOf}
+     * <p>This symbol is the offset where the {@link com.by.ble.R.attr#layout_constraintBottom_toTopOf}
      * attribute's value can be found in the {@link #ConstraintLayout_Layout} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -6667,21 +6887,21 @@ public final class R {
      * <tr><td>parent</td><td>0</td><td></td></tr>
      * </table>
      *
-     * @attr name com.by.bledemo:layout_constraintBottom_toTopOf
+     * @attr name com.by.ble:layout_constraintBottom_toTopOf
      */
     public static final int ConstraintLayout_Layout_layout_constraintBottom_toTopOf=10;
     /**
-     * <p>This symbol is the offset where the {@link com.by.bledemo.R.attr#layout_constraintDimensionRatio}
+     * <p>This symbol is the offset where the {@link com.by.ble.R.attr#layout_constraintDimensionRatio}
      * attribute's value can be found in the {@link #ConstraintLayout_Layout} array.
      *
      * <p>May be a string value, using '\\;' to escape characters such as
      * '\\n' or '\\uxxxx' for a unicode character;
      *
-     * @attr name com.by.bledemo:layout_constraintDimensionRatio
+     * @attr name com.by.ble:layout_constraintDimensionRatio
      */
     public static final int ConstraintLayout_Layout_layout_constraintDimensionRatio=11;
     /**
-     * <p>This symbol is the offset where the {@link com.by.bledemo.R.attr#layout_constraintEnd_toEndOf}
+     * <p>This symbol is the offset where the {@link com.by.ble.R.attr#layout_constraintEnd_toEndOf}
      * attribute's value can be found in the {@link #ConstraintLayout_Layout} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -6697,11 +6917,11 @@ public final class R {
      * <tr><td>parent</td><td>0</td><td></td></tr>
      * </table>
      *
-     * @attr name com.by.bledemo:layout_constraintEnd_toEndOf
+     * @attr name com.by.ble:layout_constraintEnd_toEndOf
      */
     public static final int ConstraintLayout_Layout_layout_constraintEnd_toEndOf=12;
     /**
-     * <p>This symbol is the offset where the {@link com.by.bledemo.R.attr#layout_constraintEnd_toStartOf}
+     * <p>This symbol is the offset where the {@link com.by.ble.R.attr#layout_constraintEnd_toStartOf}
      * attribute's value can be found in the {@link #ConstraintLayout_Layout} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -6717,11 +6937,11 @@ public final class R {
      * <tr><td>parent</td><td>0</td><td></td></tr>
      * </table>
      *
-     * @attr name com.by.bledemo:layout_constraintEnd_toStartOf
+     * @attr name com.by.ble:layout_constraintEnd_toStartOf
      */
     public static final int ConstraintLayout_Layout_layout_constraintEnd_toStartOf=13;
     /**
-     * <p>This symbol is the offset where the {@link com.by.bledemo.R.attr#layout_constraintGuide_begin}
+     * <p>This symbol is the offset where the {@link com.by.ble.R.attr#layout_constraintGuide_begin}
      * attribute's value can be found in the {@link #ConstraintLayout_Layout} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -6730,11 +6950,11 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.by.bledemo:layout_constraintGuide_begin
+     * @attr name com.by.ble:layout_constraintGuide_begin
      */
     public static final int ConstraintLayout_Layout_layout_constraintGuide_begin=14;
     /**
-     * <p>This symbol is the offset where the {@link com.by.bledemo.R.attr#layout_constraintGuide_end}
+     * <p>This symbol is the offset where the {@link com.by.ble.R.attr#layout_constraintGuide_end}
      * attribute's value can be found in the {@link #ConstraintLayout_Layout} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -6743,20 +6963,20 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.by.bledemo:layout_constraintGuide_end
+     * @attr name com.by.ble:layout_constraintGuide_end
      */
     public static final int ConstraintLayout_Layout_layout_constraintGuide_end=15;
     /**
-     * <p>This symbol is the offset where the {@link com.by.bledemo.R.attr#layout_constraintGuide_percent}
+     * <p>This symbol is the offset where the {@link com.by.ble.R.attr#layout_constraintGuide_percent}
      * attribute's value can be found in the {@link #ConstraintLayout_Layout} array.
      *
      * <p>May be a floating point value, such as "<code>1.2</code>".
      *
-     * @attr name com.by.bledemo:layout_constraintGuide_percent
+     * @attr name com.by.ble:layout_constraintGuide_percent
      */
     public static final int ConstraintLayout_Layout_layout_constraintGuide_percent=16;
     /**
-     * <p>This symbol is the offset where the {@link com.by.bledemo.R.attr#layout_constraintHeight_default}
+     * <p>This symbol is the offset where the {@link com.by.ble.R.attr#layout_constraintHeight_default}
      * attribute's value can be found in the {@link #ConstraintLayout_Layout} array.
      *
      * <p>Must be one of the following constant values.</p>
@@ -6769,11 +6989,11 @@ public final class R {
      * <tr><td>wrap</td><td>1</td><td></td></tr>
      * </table>
      *
-     * @attr name com.by.bledemo:layout_constraintHeight_default
+     * @attr name com.by.ble:layout_constraintHeight_default
      */
     public static final int ConstraintLayout_Layout_layout_constraintHeight_default=17;
     /**
-     * <p>This symbol is the offset where the {@link com.by.bledemo.R.attr#layout_constraintHeight_max}
+     * <p>This symbol is the offset where the {@link com.by.ble.R.attr#layout_constraintHeight_max}
      * attribute's value can be found in the {@link #ConstraintLayout_Layout} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -6782,11 +7002,11 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.by.bledemo:layout_constraintHeight_max
+     * @attr name com.by.ble:layout_constraintHeight_max
      */
     public static final int ConstraintLayout_Layout_layout_constraintHeight_max=18;
     /**
-     * <p>This symbol is the offset where the {@link com.by.bledemo.R.attr#layout_constraintHeight_min}
+     * <p>This symbol is the offset where the {@link com.by.ble.R.attr#layout_constraintHeight_min}
      * attribute's value can be found in the {@link #ConstraintLayout_Layout} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -6795,20 +7015,20 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.by.bledemo:layout_constraintHeight_min
+     * @attr name com.by.ble:layout_constraintHeight_min
      */
     public static final int ConstraintLayout_Layout_layout_constraintHeight_min=19;
     /**
-     * <p>This symbol is the offset where the {@link com.by.bledemo.R.attr#layout_constraintHorizontal_bias}
+     * <p>This symbol is the offset where the {@link com.by.ble.R.attr#layout_constraintHorizontal_bias}
      * attribute's value can be found in the {@link #ConstraintLayout_Layout} array.
      *
      * <p>May be a floating point value, such as "<code>1.2</code>".
      *
-     * @attr name com.by.bledemo:layout_constraintHorizontal_bias
+     * @attr name com.by.ble:layout_constraintHorizontal_bias
      */
     public static final int ConstraintLayout_Layout_layout_constraintHorizontal_bias=20;
     /**
-     * <p>This symbol is the offset where the {@link com.by.bledemo.R.attr#layout_constraintHorizontal_chainStyle}
+     * <p>This symbol is the offset where the {@link com.by.ble.R.attr#layout_constraintHorizontal_chainStyle}
      * attribute's value can be found in the {@link #ConstraintLayout_Layout} array.
      *
      * <p>Must be one of the following constant values.</p>
@@ -6822,29 +7042,29 @@ public final class R {
      * <tr><td>spread_inside</td><td>1</td><td></td></tr>
      * </table>
      *
-     * @attr name com.by.bledemo:layout_constraintHorizontal_chainStyle
+     * @attr name com.by.ble:layout_constraintHorizontal_chainStyle
      */
     public static final int ConstraintLayout_Layout_layout_constraintHorizontal_chainStyle=21;
     /**
-     * <p>This symbol is the offset where the {@link com.by.bledemo.R.attr#layout_constraintHorizontal_weight}
+     * <p>This symbol is the offset where the {@link com.by.ble.R.attr#layout_constraintHorizontal_weight}
      * attribute's value can be found in the {@link #ConstraintLayout_Layout} array.
      *
      * <p>May be a floating point value, such as "<code>1.2</code>".
      *
-     * @attr name com.by.bledemo:layout_constraintHorizontal_weight
+     * @attr name com.by.ble:layout_constraintHorizontal_weight
      */
     public static final int ConstraintLayout_Layout_layout_constraintHorizontal_weight=22;
     /**
-     * <p>This symbol is the offset where the {@link com.by.bledemo.R.attr#layout_constraintLeft_creator}
+     * <p>This symbol is the offset where the {@link com.by.ble.R.attr#layout_constraintLeft_creator}
      * attribute's value can be found in the {@link #ConstraintLayout_Layout} array.
      *
      * <p>May be an integer value, such as "<code>100</code>".
      *
-     * @attr name com.by.bledemo:layout_constraintLeft_creator
+     * @attr name com.by.ble:layout_constraintLeft_creator
      */
     public static final int ConstraintLayout_Layout_layout_constraintLeft_creator=23;
     /**
-     * <p>This symbol is the offset where the {@link com.by.bledemo.R.attr#layout_constraintLeft_toLeftOf}
+     * <p>This symbol is the offset where the {@link com.by.ble.R.attr#layout_constraintLeft_toLeftOf}
      * attribute's value can be found in the {@link #ConstraintLayout_Layout} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -6860,11 +7080,11 @@ public final class R {
      * <tr><td>parent</td><td>0</td><td></td></tr>
      * </table>
      *
-     * @attr name com.by.bledemo:layout_constraintLeft_toLeftOf
+     * @attr name com.by.ble:layout_constraintLeft_toLeftOf
      */
     public static final int ConstraintLayout_Layout_layout_constraintLeft_toLeftOf=24;
     /**
-     * <p>This symbol is the offset where the {@link com.by.bledemo.R.attr#layout_constraintLeft_toRightOf}
+     * <p>This symbol is the offset where the {@link com.by.ble.R.attr#layout_constraintLeft_toRightOf}
      * attribute's value can be found in the {@link #ConstraintLayout_Layout} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -6880,20 +7100,20 @@ public final class R {
      * <tr><td>parent</td><td>0</td><td></td></tr>
      * </table>
      *
-     * @attr name com.by.bledemo:layout_constraintLeft_toRightOf
+     * @attr name com.by.ble:layout_constraintLeft_toRightOf
      */
     public static final int ConstraintLayout_Layout_layout_constraintLeft_toRightOf=25;
     /**
-     * <p>This symbol is the offset where the {@link com.by.bledemo.R.attr#layout_constraintRight_creator}
+     * <p>This symbol is the offset where the {@link com.by.ble.R.attr#layout_constraintRight_creator}
      * attribute's value can be found in the {@link #ConstraintLayout_Layout} array.
      *
      * <p>May be an integer value, such as "<code>100</code>".
      *
-     * @attr name com.by.bledemo:layout_constraintRight_creator
+     * @attr name com.by.ble:layout_constraintRight_creator
      */
     public static final int ConstraintLayout_Layout_layout_constraintRight_creator=26;
     /**
-     * <p>This symbol is the offset where the {@link com.by.bledemo.R.attr#layout_constraintRight_toLeftOf}
+     * <p>This symbol is the offset where the {@link com.by.ble.R.attr#layout_constraintRight_toLeftOf}
      * attribute's value can be found in the {@link #ConstraintLayout_Layout} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -6909,11 +7129,11 @@ public final class R {
      * <tr><td>parent</td><td>0</td><td></td></tr>
      * </table>
      *
-     * @attr name com.by.bledemo:layout_constraintRight_toLeftOf
+     * @attr name com.by.ble:layout_constraintRight_toLeftOf
      */
     public static final int ConstraintLayout_Layout_layout_constraintRight_toLeftOf=27;
     /**
-     * <p>This symbol is the offset where the {@link com.by.bledemo.R.attr#layout_constraintRight_toRightOf}
+     * <p>This symbol is the offset where the {@link com.by.ble.R.attr#layout_constraintRight_toRightOf}
      * attribute's value can be found in the {@link #ConstraintLayout_Layout} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -6929,11 +7149,11 @@ public final class R {
      * <tr><td>parent</td><td>0</td><td></td></tr>
      * </table>
      *
-     * @attr name com.by.bledemo:layout_constraintRight_toRightOf
+     * @attr name com.by.ble:layout_constraintRight_toRightOf
      */
     public static final int ConstraintLayout_Layout_layout_constraintRight_toRightOf=28;
     /**
-     * <p>This symbol is the offset where the {@link com.by.bledemo.R.attr#layout_constraintStart_toEndOf}
+     * <p>This symbol is the offset where the {@link com.by.ble.R.attr#layout_constraintStart_toEndOf}
      * attribute's value can be found in the {@link #ConstraintLayout_Layout} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -6949,11 +7169,11 @@ public final class R {
      * <tr><td>parent</td><td>0</td><td></td></tr>
      * </table>
      *
-     * @attr name com.by.bledemo:layout_constraintStart_toEndOf
+     * @attr name com.by.ble:layout_constraintStart_toEndOf
      */
     public static final int ConstraintLayout_Layout_layout_constraintStart_toEndOf=29;
     /**
-     * <p>This symbol is the offset where the {@link com.by.bledemo.R.attr#layout_constraintStart_toStartOf}
+     * <p>This symbol is the offset where the {@link com.by.ble.R.attr#layout_constraintStart_toStartOf}
      * attribute's value can be found in the {@link #ConstraintLayout_Layout} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -6969,20 +7189,20 @@ public final class R {
      * <tr><td>parent</td><td>0</td><td></td></tr>
      * </table>
      *
-     * @attr name com.by.bledemo:layout_constraintStart_toStartOf
+     * @attr name com.by.ble:layout_constraintStart_toStartOf
      */
     public static final int ConstraintLayout_Layout_layout_constraintStart_toStartOf=30;
     /**
-     * <p>This symbol is the offset where the {@link com.by.bledemo.R.attr#layout_constraintTop_creator}
+     * <p>This symbol is the offset where the {@link com.by.ble.R.attr#layout_constraintTop_creator}
      * attribute's value can be found in the {@link #ConstraintLayout_Layout} array.
      *
      * <p>May be an integer value, such as "<code>100</code>".
      *
-     * @attr name com.by.bledemo:layout_constraintTop_creator
+     * @attr name com.by.ble:layout_constraintTop_creator
      */
     public static final int ConstraintLayout_Layout_layout_constraintTop_creator=31;
     /**
-     * <p>This symbol is the offset where the {@link com.by.bledemo.R.attr#layout_constraintTop_toBottomOf}
+     * <p>This symbol is the offset where the {@link com.by.ble.R.attr#layout_constraintTop_toBottomOf}
      * attribute's value can be found in the {@link #ConstraintLayout_Layout} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -6998,11 +7218,11 @@ public final class R {
      * <tr><td>parent</td><td>0</td><td></td></tr>
      * </table>
      *
-     * @attr name com.by.bledemo:layout_constraintTop_toBottomOf
+     * @attr name com.by.ble:layout_constraintTop_toBottomOf
      */
     public static final int ConstraintLayout_Layout_layout_constraintTop_toBottomOf=32;
     /**
-     * <p>This symbol is the offset where the {@link com.by.bledemo.R.attr#layout_constraintTop_toTopOf}
+     * <p>This symbol is the offset where the {@link com.by.ble.R.attr#layout_constraintTop_toTopOf}
      * attribute's value can be found in the {@link #ConstraintLayout_Layout} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -7018,20 +7238,20 @@ public final class R {
      * <tr><td>parent</td><td>0</td><td></td></tr>
      * </table>
      *
-     * @attr name com.by.bledemo:layout_constraintTop_toTopOf
+     * @attr name com.by.ble:layout_constraintTop_toTopOf
      */
     public static final int ConstraintLayout_Layout_layout_constraintTop_toTopOf=33;
     /**
-     * <p>This symbol is the offset where the {@link com.by.bledemo.R.attr#layout_constraintVertical_bias}
+     * <p>This symbol is the offset where the {@link com.by.ble.R.attr#layout_constraintVertical_bias}
      * attribute's value can be found in the {@link #ConstraintLayout_Layout} array.
      *
      * <p>May be a floating point value, such as "<code>1.2</code>".
      *
-     * @attr name com.by.bledemo:layout_constraintVertical_bias
+     * @attr name com.by.ble:layout_constraintVertical_bias
      */
     public static final int ConstraintLayout_Layout_layout_constraintVertical_bias=34;
     /**
-     * <p>This symbol is the offset where the {@link com.by.bledemo.R.attr#layout_constraintVertical_chainStyle}
+     * <p>This symbol is the offset where the {@link com.by.ble.R.attr#layout_constraintVertical_chainStyle}
      * attribute's value can be found in the {@link #ConstraintLayout_Layout} array.
      *
      * <p>Must be one of the following constant values.</p>
@@ -7045,20 +7265,20 @@ public final class R {
      * <tr><td>spread_inside</td><td>1</td><td></td></tr>
      * </table>
      *
-     * @attr name com.by.bledemo:layout_constraintVertical_chainStyle
+     * @attr name com.by.ble:layout_constraintVertical_chainStyle
      */
     public static final int ConstraintLayout_Layout_layout_constraintVertical_chainStyle=35;
     /**
-     * <p>This symbol is the offset where the {@link com.by.bledemo.R.attr#layout_constraintVertical_weight}
+     * <p>This symbol is the offset where the {@link com.by.ble.R.attr#layout_constraintVertical_weight}
      * attribute's value can be found in the {@link #ConstraintLayout_Layout} array.
      *
      * <p>May be a floating point value, such as "<code>1.2</code>".
      *
-     * @attr name com.by.bledemo:layout_constraintVertical_weight
+     * @attr name com.by.ble:layout_constraintVertical_weight
      */
     public static final int ConstraintLayout_Layout_layout_constraintVertical_weight=36;
     /**
-     * <p>This symbol is the offset where the {@link com.by.bledemo.R.attr#layout_constraintWidth_default}
+     * <p>This symbol is the offset where the {@link com.by.ble.R.attr#layout_constraintWidth_default}
      * attribute's value can be found in the {@link #ConstraintLayout_Layout} array.
      *
      * <p>Must be one of the following constant values.</p>
@@ -7071,11 +7291,11 @@ public final class R {
      * <tr><td>wrap</td><td>1</td><td></td></tr>
      * </table>
      *
-     * @attr name com.by.bledemo:layout_constraintWidth_default
+     * @attr name com.by.ble:layout_constraintWidth_default
      */
     public static final int ConstraintLayout_Layout_layout_constraintWidth_default=37;
     /**
-     * <p>This symbol is the offset where the {@link com.by.bledemo.R.attr#layout_constraintWidth_max}
+     * <p>This symbol is the offset where the {@link com.by.ble.R.attr#layout_constraintWidth_max}
      * attribute's value can be found in the {@link #ConstraintLayout_Layout} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -7084,11 +7304,11 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.by.bledemo:layout_constraintWidth_max
+     * @attr name com.by.ble:layout_constraintWidth_max
      */
     public static final int ConstraintLayout_Layout_layout_constraintWidth_max=38;
     /**
-     * <p>This symbol is the offset where the {@link com.by.bledemo.R.attr#layout_constraintWidth_min}
+     * <p>This symbol is the offset where the {@link com.by.ble.R.attr#layout_constraintWidth_min}
      * attribute's value can be found in the {@link #ConstraintLayout_Layout} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -7097,11 +7317,11 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.by.bledemo:layout_constraintWidth_min
+     * @attr name com.by.ble:layout_constraintWidth_min
      */
     public static final int ConstraintLayout_Layout_layout_constraintWidth_min=39;
     /**
-     * <p>This symbol is the offset where the {@link com.by.bledemo.R.attr#layout_editor_absoluteX}
+     * <p>This symbol is the offset where the {@link com.by.ble.R.attr#layout_editor_absoluteX}
      * attribute's value can be found in the {@link #ConstraintLayout_Layout} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -7110,11 +7330,11 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.by.bledemo:layout_editor_absoluteX
+     * @attr name com.by.ble:layout_editor_absoluteX
      */
     public static final int ConstraintLayout_Layout_layout_editor_absoluteX=40;
     /**
-     * <p>This symbol is the offset where the {@link com.by.bledemo.R.attr#layout_editor_absoluteY}
+     * <p>This symbol is the offset where the {@link com.by.ble.R.attr#layout_editor_absoluteY}
      * attribute's value can be found in the {@link #ConstraintLayout_Layout} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -7123,11 +7343,11 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.by.bledemo:layout_editor_absoluteY
+     * @attr name com.by.ble:layout_editor_absoluteY
      */
     public static final int ConstraintLayout_Layout_layout_editor_absoluteY=41;
     /**
-     * <p>This symbol is the offset where the {@link com.by.bledemo.R.attr#layout_goneMarginBottom}
+     * <p>This symbol is the offset where the {@link com.by.ble.R.attr#layout_goneMarginBottom}
      * attribute's value can be found in the {@link #ConstraintLayout_Layout} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -7136,11 +7356,11 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.by.bledemo:layout_goneMarginBottom
+     * @attr name com.by.ble:layout_goneMarginBottom
      */
     public static final int ConstraintLayout_Layout_layout_goneMarginBottom=42;
     /**
-     * <p>This symbol is the offset where the {@link com.by.bledemo.R.attr#layout_goneMarginEnd}
+     * <p>This symbol is the offset where the {@link com.by.ble.R.attr#layout_goneMarginEnd}
      * attribute's value can be found in the {@link #ConstraintLayout_Layout} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -7149,11 +7369,11 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.by.bledemo:layout_goneMarginEnd
+     * @attr name com.by.ble:layout_goneMarginEnd
      */
     public static final int ConstraintLayout_Layout_layout_goneMarginEnd=43;
     /**
-     * <p>This symbol is the offset where the {@link com.by.bledemo.R.attr#layout_goneMarginLeft}
+     * <p>This symbol is the offset where the {@link com.by.ble.R.attr#layout_goneMarginLeft}
      * attribute's value can be found in the {@link #ConstraintLayout_Layout} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -7162,11 +7382,11 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.by.bledemo:layout_goneMarginLeft
+     * @attr name com.by.ble:layout_goneMarginLeft
      */
     public static final int ConstraintLayout_Layout_layout_goneMarginLeft=44;
     /**
-     * <p>This symbol is the offset where the {@link com.by.bledemo.R.attr#layout_goneMarginRight}
+     * <p>This symbol is the offset where the {@link com.by.ble.R.attr#layout_goneMarginRight}
      * attribute's value can be found in the {@link #ConstraintLayout_Layout} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -7175,11 +7395,11 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.by.bledemo:layout_goneMarginRight
+     * @attr name com.by.ble:layout_goneMarginRight
      */
     public static final int ConstraintLayout_Layout_layout_goneMarginRight=45;
     /**
-     * <p>This symbol is the offset where the {@link com.by.bledemo.R.attr#layout_goneMarginStart}
+     * <p>This symbol is the offset where the {@link com.by.ble.R.attr#layout_goneMarginStart}
      * attribute's value can be found in the {@link #ConstraintLayout_Layout} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -7188,11 +7408,11 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.by.bledemo:layout_goneMarginStart
+     * @attr name com.by.ble:layout_goneMarginStart
      */
     public static final int ConstraintLayout_Layout_layout_goneMarginStart=46;
     /**
-     * <p>This symbol is the offset where the {@link com.by.bledemo.R.attr#layout_goneMarginTop}
+     * <p>This symbol is the offset where the {@link com.by.ble.R.attr#layout_goneMarginTop}
      * attribute's value can be found in the {@link #ConstraintLayout_Layout} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -7201,11 +7421,11 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.by.bledemo:layout_goneMarginTop
+     * @attr name com.by.ble:layout_goneMarginTop
      */
     public static final int ConstraintLayout_Layout_layout_goneMarginTop=47;
     /**
-     * <p>This symbol is the offset where the {@link com.by.bledemo.R.attr#layout_optimizationLevel}
+     * <p>This symbol is the offset where the {@link com.by.ble.R.attr#layout_optimizationLevel}
      * attribute's value can be found in the {@link #ConstraintLayout_Layout} array.
      *
      * <p>Must be one or more (separated by '|') of the following constant values.</p>
@@ -7220,7 +7440,7 @@ public final class R {
      * <tr><td>none</td><td>1</td><td></td></tr>
      * </table>
      *
-     * @attr name com.by.bledemo:layout_optimizationLevel
+     * @attr name com.by.ble:layout_optimizationLevel
      */
     public static final int ConstraintLayout_Layout_layout_optimizationLevel=48;
     /**
@@ -7252,48 +7472,48 @@ public final class R {
      * <tr><td><code>{@link #ConstraintSet_android_layout_marginEnd android:layout_marginEnd}</code></td><td></td></tr>
      * <tr><td><code>{@link #ConstraintSet_android_translationZ android:translationZ}</code></td><td></td></tr>
      * <tr><td><code>{@link #ConstraintSet_android_elevation android:elevation}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ConstraintSet_layout_constraintBaseline_creator com.by.bledemo:layout_constraintBaseline_creator}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ConstraintSet_layout_constraintBaseline_toBaselineOf com.by.bledemo:layout_constraintBaseline_toBaselineOf}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ConstraintSet_layout_constraintBottom_creator com.by.bledemo:layout_constraintBottom_creator}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ConstraintSet_layout_constraintBottom_toBottomOf com.by.bledemo:layout_constraintBottom_toBottomOf}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ConstraintSet_layout_constraintBottom_toTopOf com.by.bledemo:layout_constraintBottom_toTopOf}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ConstraintSet_layout_constraintDimensionRatio com.by.bledemo:layout_constraintDimensionRatio}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ConstraintSet_layout_constraintEnd_toEndOf com.by.bledemo:layout_constraintEnd_toEndOf}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ConstraintSet_layout_constraintEnd_toStartOf com.by.bledemo:layout_constraintEnd_toStartOf}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ConstraintSet_layout_constraintGuide_begin com.by.bledemo:layout_constraintGuide_begin}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ConstraintSet_layout_constraintGuide_end com.by.bledemo:layout_constraintGuide_end}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ConstraintSet_layout_constraintGuide_percent com.by.bledemo:layout_constraintGuide_percent}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ConstraintSet_layout_constraintHeight_default com.by.bledemo:layout_constraintHeight_default}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ConstraintSet_layout_constraintHeight_max com.by.bledemo:layout_constraintHeight_max}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ConstraintSet_layout_constraintHeight_min com.by.bledemo:layout_constraintHeight_min}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ConstraintSet_layout_constraintHorizontal_bias com.by.bledemo:layout_constraintHorizontal_bias}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ConstraintSet_layout_constraintHorizontal_chainStyle com.by.bledemo:layout_constraintHorizontal_chainStyle}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ConstraintSet_layout_constraintHorizontal_weight com.by.bledemo:layout_constraintHorizontal_weight}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ConstraintSet_layout_constraintLeft_creator com.by.bledemo:layout_constraintLeft_creator}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ConstraintSet_layout_constraintLeft_toLeftOf com.by.bledemo:layout_constraintLeft_toLeftOf}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ConstraintSet_layout_constraintLeft_toRightOf com.by.bledemo:layout_constraintLeft_toRightOf}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ConstraintSet_layout_constraintRight_creator com.by.bledemo:layout_constraintRight_creator}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ConstraintSet_layout_constraintRight_toLeftOf com.by.bledemo:layout_constraintRight_toLeftOf}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ConstraintSet_layout_constraintRight_toRightOf com.by.bledemo:layout_constraintRight_toRightOf}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ConstraintSet_layout_constraintStart_toEndOf com.by.bledemo:layout_constraintStart_toEndOf}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ConstraintSet_layout_constraintStart_toStartOf com.by.bledemo:layout_constraintStart_toStartOf}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ConstraintSet_layout_constraintTop_creator com.by.bledemo:layout_constraintTop_creator}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ConstraintSet_layout_constraintTop_toBottomOf com.by.bledemo:layout_constraintTop_toBottomOf}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ConstraintSet_layout_constraintTop_toTopOf com.by.bledemo:layout_constraintTop_toTopOf}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ConstraintSet_layout_constraintVertical_bias com.by.bledemo:layout_constraintVertical_bias}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ConstraintSet_layout_constraintVertical_chainStyle com.by.bledemo:layout_constraintVertical_chainStyle}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ConstraintSet_layout_constraintVertical_weight com.by.bledemo:layout_constraintVertical_weight}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ConstraintSet_layout_constraintWidth_default com.by.bledemo:layout_constraintWidth_default}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ConstraintSet_layout_constraintWidth_max com.by.bledemo:layout_constraintWidth_max}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ConstraintSet_layout_constraintWidth_min com.by.bledemo:layout_constraintWidth_min}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ConstraintSet_layout_editor_absoluteX com.by.bledemo:layout_editor_absoluteX}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ConstraintSet_layout_editor_absoluteY com.by.bledemo:layout_editor_absoluteY}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ConstraintSet_layout_goneMarginBottom com.by.bledemo:layout_goneMarginBottom}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ConstraintSet_layout_goneMarginEnd com.by.bledemo:layout_goneMarginEnd}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ConstraintSet_layout_goneMarginLeft com.by.bledemo:layout_goneMarginLeft}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ConstraintSet_layout_goneMarginRight com.by.bledemo:layout_goneMarginRight}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ConstraintSet_layout_goneMarginStart com.by.bledemo:layout_goneMarginStart}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ConstraintSet_layout_goneMarginTop com.by.bledemo:layout_goneMarginTop}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintSet_layout_constraintBaseline_creator com.by.ble:layout_constraintBaseline_creator}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintSet_layout_constraintBaseline_toBaselineOf com.by.ble:layout_constraintBaseline_toBaselineOf}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintSet_layout_constraintBottom_creator com.by.ble:layout_constraintBottom_creator}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintSet_layout_constraintBottom_toBottomOf com.by.ble:layout_constraintBottom_toBottomOf}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintSet_layout_constraintBottom_toTopOf com.by.ble:layout_constraintBottom_toTopOf}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintSet_layout_constraintDimensionRatio com.by.ble:layout_constraintDimensionRatio}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintSet_layout_constraintEnd_toEndOf com.by.ble:layout_constraintEnd_toEndOf}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintSet_layout_constraintEnd_toStartOf com.by.ble:layout_constraintEnd_toStartOf}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintSet_layout_constraintGuide_begin com.by.ble:layout_constraintGuide_begin}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintSet_layout_constraintGuide_end com.by.ble:layout_constraintGuide_end}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintSet_layout_constraintGuide_percent com.by.ble:layout_constraintGuide_percent}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintSet_layout_constraintHeight_default com.by.ble:layout_constraintHeight_default}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintSet_layout_constraintHeight_max com.by.ble:layout_constraintHeight_max}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintSet_layout_constraintHeight_min com.by.ble:layout_constraintHeight_min}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintSet_layout_constraintHorizontal_bias com.by.ble:layout_constraintHorizontal_bias}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintSet_layout_constraintHorizontal_chainStyle com.by.ble:layout_constraintHorizontal_chainStyle}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintSet_layout_constraintHorizontal_weight com.by.ble:layout_constraintHorizontal_weight}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintSet_layout_constraintLeft_creator com.by.ble:layout_constraintLeft_creator}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintSet_layout_constraintLeft_toLeftOf com.by.ble:layout_constraintLeft_toLeftOf}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintSet_layout_constraintLeft_toRightOf com.by.ble:layout_constraintLeft_toRightOf}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintSet_layout_constraintRight_creator com.by.ble:layout_constraintRight_creator}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintSet_layout_constraintRight_toLeftOf com.by.ble:layout_constraintRight_toLeftOf}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintSet_layout_constraintRight_toRightOf com.by.ble:layout_constraintRight_toRightOf}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintSet_layout_constraintStart_toEndOf com.by.ble:layout_constraintStart_toEndOf}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintSet_layout_constraintStart_toStartOf com.by.ble:layout_constraintStart_toStartOf}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintSet_layout_constraintTop_creator com.by.ble:layout_constraintTop_creator}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintSet_layout_constraintTop_toBottomOf com.by.ble:layout_constraintTop_toBottomOf}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintSet_layout_constraintTop_toTopOf com.by.ble:layout_constraintTop_toTopOf}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintSet_layout_constraintVertical_bias com.by.ble:layout_constraintVertical_bias}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintSet_layout_constraintVertical_chainStyle com.by.ble:layout_constraintVertical_chainStyle}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintSet_layout_constraintVertical_weight com.by.ble:layout_constraintVertical_weight}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintSet_layout_constraintWidth_default com.by.ble:layout_constraintWidth_default}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintSet_layout_constraintWidth_max com.by.ble:layout_constraintWidth_max}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintSet_layout_constraintWidth_min com.by.ble:layout_constraintWidth_min}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintSet_layout_editor_absoluteX com.by.ble:layout_editor_absoluteX}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintSet_layout_editor_absoluteY com.by.ble:layout_editor_absoluteY}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintSet_layout_goneMarginBottom com.by.ble:layout_goneMarginBottom}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintSet_layout_goneMarginEnd com.by.ble:layout_goneMarginEnd}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintSet_layout_goneMarginLeft com.by.ble:layout_goneMarginLeft}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintSet_layout_goneMarginRight com.by.ble:layout_goneMarginRight}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintSet_layout_goneMarginStart com.by.ble:layout_goneMarginStart}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintSet_layout_goneMarginTop com.by.ble:layout_goneMarginTop}</code></td><td></td></tr>
      * </table>
      * @see #ConstraintSet_android_orientation
      * @see #ConstraintSet_android_id
@@ -7673,16 +7893,16 @@ public final class R {
      */
     public static final int ConstraintSet_android_visibility=2;
     /**
-     * <p>This symbol is the offset where the {@link com.by.bledemo.R.attr#layout_constraintBaseline_creator}
+     * <p>This symbol is the offset where the {@link com.by.ble.R.attr#layout_constraintBaseline_creator}
      * attribute's value can be found in the {@link #ConstraintSet} array.
      *
      * <p>May be an integer value, such as "<code>100</code>".
      *
-     * @attr name com.by.bledemo:layout_constraintBaseline_creator
+     * @attr name com.by.ble:layout_constraintBaseline_creator
      */
     public static final int ConstraintSet_layout_constraintBaseline_creator=22;
     /**
-     * <p>This symbol is the offset where the {@link com.by.bledemo.R.attr#layout_constraintBaseline_toBaselineOf}
+     * <p>This symbol is the offset where the {@link com.by.ble.R.attr#layout_constraintBaseline_toBaselineOf}
      * attribute's value can be found in the {@link #ConstraintSet} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -7698,20 +7918,20 @@ public final class R {
      * <tr><td>parent</td><td>0</td><td></td></tr>
      * </table>
      *
-     * @attr name com.by.bledemo:layout_constraintBaseline_toBaselineOf
+     * @attr name com.by.ble:layout_constraintBaseline_toBaselineOf
      */
     public static final int ConstraintSet_layout_constraintBaseline_toBaselineOf=23;
     /**
-     * <p>This symbol is the offset where the {@link com.by.bledemo.R.attr#layout_constraintBottom_creator}
+     * <p>This symbol is the offset where the {@link com.by.ble.R.attr#layout_constraintBottom_creator}
      * attribute's value can be found in the {@link #ConstraintSet} array.
      *
      * <p>May be an integer value, such as "<code>100</code>".
      *
-     * @attr name com.by.bledemo:layout_constraintBottom_creator
+     * @attr name com.by.ble:layout_constraintBottom_creator
      */
     public static final int ConstraintSet_layout_constraintBottom_creator=24;
     /**
-     * <p>This symbol is the offset where the {@link com.by.bledemo.R.attr#layout_constraintBottom_toBottomOf}
+     * <p>This symbol is the offset where the {@link com.by.ble.R.attr#layout_constraintBottom_toBottomOf}
      * attribute's value can be found in the {@link #ConstraintSet} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -7727,11 +7947,11 @@ public final class R {
      * <tr><td>parent</td><td>0</td><td></td></tr>
      * </table>
      *
-     * @attr name com.by.bledemo:layout_constraintBottom_toBottomOf
+     * @attr name com.by.ble:layout_constraintBottom_toBottomOf
      */
     public static final int ConstraintSet_layout_constraintBottom_toBottomOf=25;
     /**
-     * <p>This symbol is the offset where the {@link com.by.bledemo.R.attr#layout_constraintBottom_toTopOf}
+     * <p>This symbol is the offset where the {@link com.by.ble.R.attr#layout_constraintBottom_toTopOf}
      * attribute's value can be found in the {@link #ConstraintSet} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -7747,21 +7967,21 @@ public final class R {
      * <tr><td>parent</td><td>0</td><td></td></tr>
      * </table>
      *
-     * @attr name com.by.bledemo:layout_constraintBottom_toTopOf
+     * @attr name com.by.ble:layout_constraintBottom_toTopOf
      */
     public static final int ConstraintSet_layout_constraintBottom_toTopOf=26;
     /**
-     * <p>This symbol is the offset where the {@link com.by.bledemo.R.attr#layout_constraintDimensionRatio}
+     * <p>This symbol is the offset where the {@link com.by.ble.R.attr#layout_constraintDimensionRatio}
      * attribute's value can be found in the {@link #ConstraintSet} array.
      *
      * <p>May be a string value, using '\\;' to escape characters such as
      * '\\n' or '\\uxxxx' for a unicode character;
      *
-     * @attr name com.by.bledemo:layout_constraintDimensionRatio
+     * @attr name com.by.ble:layout_constraintDimensionRatio
      */
     public static final int ConstraintSet_layout_constraintDimensionRatio=27;
     /**
-     * <p>This symbol is the offset where the {@link com.by.bledemo.R.attr#layout_constraintEnd_toEndOf}
+     * <p>This symbol is the offset where the {@link com.by.ble.R.attr#layout_constraintEnd_toEndOf}
      * attribute's value can be found in the {@link #ConstraintSet} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -7777,11 +7997,11 @@ public final class R {
      * <tr><td>parent</td><td>0</td><td></td></tr>
      * </table>
      *
-     * @attr name com.by.bledemo:layout_constraintEnd_toEndOf
+     * @attr name com.by.ble:layout_constraintEnd_toEndOf
      */
     public static final int ConstraintSet_layout_constraintEnd_toEndOf=28;
     /**
-     * <p>This symbol is the offset where the {@link com.by.bledemo.R.attr#layout_constraintEnd_toStartOf}
+     * <p>This symbol is the offset where the {@link com.by.ble.R.attr#layout_constraintEnd_toStartOf}
      * attribute's value can be found in the {@link #ConstraintSet} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -7797,11 +8017,11 @@ public final class R {
      * <tr><td>parent</td><td>0</td><td></td></tr>
      * </table>
      *
-     * @attr name com.by.bledemo:layout_constraintEnd_toStartOf
+     * @attr name com.by.ble:layout_constraintEnd_toStartOf
      */
     public static final int ConstraintSet_layout_constraintEnd_toStartOf=29;
     /**
-     * <p>This symbol is the offset where the {@link com.by.bledemo.R.attr#layout_constraintGuide_begin}
+     * <p>This symbol is the offset where the {@link com.by.ble.R.attr#layout_constraintGuide_begin}
      * attribute's value can be found in the {@link #ConstraintSet} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -7810,11 +8030,11 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.by.bledemo:layout_constraintGuide_begin
+     * @attr name com.by.ble:layout_constraintGuide_begin
      */
     public static final int ConstraintSet_layout_constraintGuide_begin=30;
     /**
-     * <p>This symbol is the offset where the {@link com.by.bledemo.R.attr#layout_constraintGuide_end}
+     * <p>This symbol is the offset where the {@link com.by.ble.R.attr#layout_constraintGuide_end}
      * attribute's value can be found in the {@link #ConstraintSet} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -7823,20 +8043,20 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.by.bledemo:layout_constraintGuide_end
+     * @attr name com.by.ble:layout_constraintGuide_end
      */
     public static final int ConstraintSet_layout_constraintGuide_end=31;
     /**
-     * <p>This symbol is the offset where the {@link com.by.bledemo.R.attr#layout_constraintGuide_percent}
+     * <p>This symbol is the offset where the {@link com.by.ble.R.attr#layout_constraintGuide_percent}
      * attribute's value can be found in the {@link #ConstraintSet} array.
      *
      * <p>May be a floating point value, such as "<code>1.2</code>".
      *
-     * @attr name com.by.bledemo:layout_constraintGuide_percent
+     * @attr name com.by.ble:layout_constraintGuide_percent
      */
     public static final int ConstraintSet_layout_constraintGuide_percent=32;
     /**
-     * <p>This symbol is the offset where the {@link com.by.bledemo.R.attr#layout_constraintHeight_default}
+     * <p>This symbol is the offset where the {@link com.by.ble.R.attr#layout_constraintHeight_default}
      * attribute's value can be found in the {@link #ConstraintSet} array.
      *
      * <p>Must be one of the following constant values.</p>
@@ -7849,11 +8069,11 @@ public final class R {
      * <tr><td>wrap</td><td>1</td><td></td></tr>
      * </table>
      *
-     * @attr name com.by.bledemo:layout_constraintHeight_default
+     * @attr name com.by.ble:layout_constraintHeight_default
      */
     public static final int ConstraintSet_layout_constraintHeight_default=33;
     /**
-     * <p>This symbol is the offset where the {@link com.by.bledemo.R.attr#layout_constraintHeight_max}
+     * <p>This symbol is the offset where the {@link com.by.ble.R.attr#layout_constraintHeight_max}
      * attribute's value can be found in the {@link #ConstraintSet} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -7862,11 +8082,11 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.by.bledemo:layout_constraintHeight_max
+     * @attr name com.by.ble:layout_constraintHeight_max
      */
     public static final int ConstraintSet_layout_constraintHeight_max=34;
     /**
-     * <p>This symbol is the offset where the {@link com.by.bledemo.R.attr#layout_constraintHeight_min}
+     * <p>This symbol is the offset where the {@link com.by.ble.R.attr#layout_constraintHeight_min}
      * attribute's value can be found in the {@link #ConstraintSet} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -7875,20 +8095,20 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.by.bledemo:layout_constraintHeight_min
+     * @attr name com.by.ble:layout_constraintHeight_min
      */
     public static final int ConstraintSet_layout_constraintHeight_min=35;
     /**
-     * <p>This symbol is the offset where the {@link com.by.bledemo.R.attr#layout_constraintHorizontal_bias}
+     * <p>This symbol is the offset where the {@link com.by.ble.R.attr#layout_constraintHorizontal_bias}
      * attribute's value can be found in the {@link #ConstraintSet} array.
      *
      * <p>May be a floating point value, such as "<code>1.2</code>".
      *
-     * @attr name com.by.bledemo:layout_constraintHorizontal_bias
+     * @attr name com.by.ble:layout_constraintHorizontal_bias
      */
     public static final int ConstraintSet_layout_constraintHorizontal_bias=36;
     /**
-     * <p>This symbol is the offset where the {@link com.by.bledemo.R.attr#layout_constraintHorizontal_chainStyle}
+     * <p>This symbol is the offset where the {@link com.by.ble.R.attr#layout_constraintHorizontal_chainStyle}
      * attribute's value can be found in the {@link #ConstraintSet} array.
      *
      * <p>Must be one of the following constant values.</p>
@@ -7902,29 +8122,29 @@ public final class R {
      * <tr><td>spread_inside</td><td>1</td><td></td></tr>
      * </table>
      *
-     * @attr name com.by.bledemo:layout_constraintHorizontal_chainStyle
+     * @attr name com.by.ble:layout_constraintHorizontal_chainStyle
      */
     public static final int ConstraintSet_layout_constraintHorizontal_chainStyle=37;
     /**
-     * <p>This symbol is the offset where the {@link com.by.bledemo.R.attr#layout_constraintHorizontal_weight}
+     * <p>This symbol is the offset where the {@link com.by.ble.R.attr#layout_constraintHorizontal_weight}
      * attribute's value can be found in the {@link #ConstraintSet} array.
      *
      * <p>May be a floating point value, such as "<code>1.2</code>".
      *
-     * @attr name com.by.bledemo:layout_constraintHorizontal_weight
+     * @attr name com.by.ble:layout_constraintHorizontal_weight
      */
     public static final int ConstraintSet_layout_constraintHorizontal_weight=38;
     /**
-     * <p>This symbol is the offset where the {@link com.by.bledemo.R.attr#layout_constraintLeft_creator}
+     * <p>This symbol is the offset where the {@link com.by.ble.R.attr#layout_constraintLeft_creator}
      * attribute's value can be found in the {@link #ConstraintSet} array.
      *
      * <p>May be an integer value, such as "<code>100</code>".
      *
-     * @attr name com.by.bledemo:layout_constraintLeft_creator
+     * @attr name com.by.ble:layout_constraintLeft_creator
      */
     public static final int ConstraintSet_layout_constraintLeft_creator=39;
     /**
-     * <p>This symbol is the offset where the {@link com.by.bledemo.R.attr#layout_constraintLeft_toLeftOf}
+     * <p>This symbol is the offset where the {@link com.by.ble.R.attr#layout_constraintLeft_toLeftOf}
      * attribute's value can be found in the {@link #ConstraintSet} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -7940,11 +8160,11 @@ public final class R {
      * <tr><td>parent</td><td>0</td><td></td></tr>
      * </table>
      *
-     * @attr name com.by.bledemo:layout_constraintLeft_toLeftOf
+     * @attr name com.by.ble:layout_constraintLeft_toLeftOf
      */
     public static final int ConstraintSet_layout_constraintLeft_toLeftOf=40;
     /**
-     * <p>This symbol is the offset where the {@link com.by.bledemo.R.attr#layout_constraintLeft_toRightOf}
+     * <p>This symbol is the offset where the {@link com.by.ble.R.attr#layout_constraintLeft_toRightOf}
      * attribute's value can be found in the {@link #ConstraintSet} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -7960,20 +8180,20 @@ public final class R {
      * <tr><td>parent</td><td>0</td><td></td></tr>
      * </table>
      *
-     * @attr name com.by.bledemo:layout_constraintLeft_toRightOf
+     * @attr name com.by.ble:layout_constraintLeft_toRightOf
      */
     public static final int ConstraintSet_layout_constraintLeft_toRightOf=41;
     /**
-     * <p>This symbol is the offset where the {@link com.by.bledemo.R.attr#layout_constraintRight_creator}
+     * <p>This symbol is the offset where the {@link com.by.ble.R.attr#layout_constraintRight_creator}
      * attribute's value can be found in the {@link #ConstraintSet} array.
      *
      * <p>May be an integer value, such as "<code>100</code>".
      *
-     * @attr name com.by.bledemo:layout_constraintRight_creator
+     * @attr name com.by.ble:layout_constraintRight_creator
      */
     public static final int ConstraintSet_layout_constraintRight_creator=42;
     /**
-     * <p>This symbol is the offset where the {@link com.by.bledemo.R.attr#layout_constraintRight_toLeftOf}
+     * <p>This symbol is the offset where the {@link com.by.ble.R.attr#layout_constraintRight_toLeftOf}
      * attribute's value can be found in the {@link #ConstraintSet} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -7989,11 +8209,11 @@ public final class R {
      * <tr><td>parent</td><td>0</td><td></td></tr>
      * </table>
      *
-     * @attr name com.by.bledemo:layout_constraintRight_toLeftOf
+     * @attr name com.by.ble:layout_constraintRight_toLeftOf
      */
     public static final int ConstraintSet_layout_constraintRight_toLeftOf=43;
     /**
-     * <p>This symbol is the offset where the {@link com.by.bledemo.R.attr#layout_constraintRight_toRightOf}
+     * <p>This symbol is the offset where the {@link com.by.ble.R.attr#layout_constraintRight_toRightOf}
      * attribute's value can be found in the {@link #ConstraintSet} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -8009,11 +8229,11 @@ public final class R {
      * <tr><td>parent</td><td>0</td><td></td></tr>
      * </table>
      *
-     * @attr name com.by.bledemo:layout_constraintRight_toRightOf
+     * @attr name com.by.ble:layout_constraintRight_toRightOf
      */
     public static final int ConstraintSet_layout_constraintRight_toRightOf=44;
     /**
-     * <p>This symbol is the offset where the {@link com.by.bledemo.R.attr#layout_constraintStart_toEndOf}
+     * <p>This symbol is the offset where the {@link com.by.ble.R.attr#layout_constraintStart_toEndOf}
      * attribute's value can be found in the {@link #ConstraintSet} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -8029,11 +8249,11 @@ public final class R {
      * <tr><td>parent</td><td>0</td><td></td></tr>
      * </table>
      *
-     * @attr name com.by.bledemo:layout_constraintStart_toEndOf
+     * @attr name com.by.ble:layout_constraintStart_toEndOf
      */
     public static final int ConstraintSet_layout_constraintStart_toEndOf=45;
     /**
-     * <p>This symbol is the offset where the {@link com.by.bledemo.R.attr#layout_constraintStart_toStartOf}
+     * <p>This symbol is the offset where the {@link com.by.ble.R.attr#layout_constraintStart_toStartOf}
      * attribute's value can be found in the {@link #ConstraintSet} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -8049,20 +8269,20 @@ public final class R {
      * <tr><td>parent</td><td>0</td><td></td></tr>
      * </table>
      *
-     * @attr name com.by.bledemo:layout_constraintStart_toStartOf
+     * @attr name com.by.ble:layout_constraintStart_toStartOf
      */
     public static final int ConstraintSet_layout_constraintStart_toStartOf=46;
     /**
-     * <p>This symbol is the offset where the {@link com.by.bledemo.R.attr#layout_constraintTop_creator}
+     * <p>This symbol is the offset where the {@link com.by.ble.R.attr#layout_constraintTop_creator}
      * attribute's value can be found in the {@link #ConstraintSet} array.
      *
      * <p>May be an integer value, such as "<code>100</code>".
      *
-     * @attr name com.by.bledemo:layout_constraintTop_creator
+     * @attr name com.by.ble:layout_constraintTop_creator
      */
     public static final int ConstraintSet_layout_constraintTop_creator=47;
     /**
-     * <p>This symbol is the offset where the {@link com.by.bledemo.R.attr#layout_constraintTop_toBottomOf}
+     * <p>This symbol is the offset where the {@link com.by.ble.R.attr#layout_constraintTop_toBottomOf}
      * attribute's value can be found in the {@link #ConstraintSet} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -8078,11 +8298,11 @@ public final class R {
      * <tr><td>parent</td><td>0</td><td></td></tr>
      * </table>
      *
-     * @attr name com.by.bledemo:layout_constraintTop_toBottomOf
+     * @attr name com.by.ble:layout_constraintTop_toBottomOf
      */
     public static final int ConstraintSet_layout_constraintTop_toBottomOf=48;
     /**
-     * <p>This symbol is the offset where the {@link com.by.bledemo.R.attr#layout_constraintTop_toTopOf}
+     * <p>This symbol is the offset where the {@link com.by.ble.R.attr#layout_constraintTop_toTopOf}
      * attribute's value can be found in the {@link #ConstraintSet} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -8098,20 +8318,20 @@ public final class R {
      * <tr><td>parent</td><td>0</td><td></td></tr>
      * </table>
      *
-     * @attr name com.by.bledemo:layout_constraintTop_toTopOf
+     * @attr name com.by.ble:layout_constraintTop_toTopOf
      */
     public static final int ConstraintSet_layout_constraintTop_toTopOf=49;
     /**
-     * <p>This symbol is the offset where the {@link com.by.bledemo.R.attr#layout_constraintVertical_bias}
+     * <p>This symbol is the offset where the {@link com.by.ble.R.attr#layout_constraintVertical_bias}
      * attribute's value can be found in the {@link #ConstraintSet} array.
      *
      * <p>May be a floating point value, such as "<code>1.2</code>".
      *
-     * @attr name com.by.bledemo:layout_constraintVertical_bias
+     * @attr name com.by.ble:layout_constraintVertical_bias
      */
     public static final int ConstraintSet_layout_constraintVertical_bias=50;
     /**
-     * <p>This symbol is the offset where the {@link com.by.bledemo.R.attr#layout_constraintVertical_chainStyle}
+     * <p>This symbol is the offset where the {@link com.by.ble.R.attr#layout_constraintVertical_chainStyle}
      * attribute's value can be found in the {@link #ConstraintSet} array.
      *
      * <p>Must be one of the following constant values.</p>
@@ -8125,20 +8345,20 @@ public final class R {
      * <tr><td>spread_inside</td><td>1</td><td></td></tr>
      * </table>
      *
-     * @attr name com.by.bledemo:layout_constraintVertical_chainStyle
+     * @attr name com.by.ble:layout_constraintVertical_chainStyle
      */
     public static final int ConstraintSet_layout_constraintVertical_chainStyle=51;
     /**
-     * <p>This symbol is the offset where the {@link com.by.bledemo.R.attr#layout_constraintVertical_weight}
+     * <p>This symbol is the offset where the {@link com.by.ble.R.attr#layout_constraintVertical_weight}
      * attribute's value can be found in the {@link #ConstraintSet} array.
      *
      * <p>May be a floating point value, such as "<code>1.2</code>".
      *
-     * @attr name com.by.bledemo:layout_constraintVertical_weight
+     * @attr name com.by.ble:layout_constraintVertical_weight
      */
     public static final int ConstraintSet_layout_constraintVertical_weight=52;
     /**
-     * <p>This symbol is the offset where the {@link com.by.bledemo.R.attr#layout_constraintWidth_default}
+     * <p>This symbol is the offset where the {@link com.by.ble.R.attr#layout_constraintWidth_default}
      * attribute's value can be found in the {@link #ConstraintSet} array.
      *
      * <p>Must be one of the following constant values.</p>
@@ -8151,11 +8371,11 @@ public final class R {
      * <tr><td>wrap</td><td>1</td><td></td></tr>
      * </table>
      *
-     * @attr name com.by.bledemo:layout_constraintWidth_default
+     * @attr name com.by.ble:layout_constraintWidth_default
      */
     public static final int ConstraintSet_layout_constraintWidth_default=53;
     /**
-     * <p>This symbol is the offset where the {@link com.by.bledemo.R.attr#layout_constraintWidth_max}
+     * <p>This symbol is the offset where the {@link com.by.ble.R.attr#layout_constraintWidth_max}
      * attribute's value can be found in the {@link #ConstraintSet} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -8164,11 +8384,11 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.by.bledemo:layout_constraintWidth_max
+     * @attr name com.by.ble:layout_constraintWidth_max
      */
     public static final int ConstraintSet_layout_constraintWidth_max=54;
     /**
-     * <p>This symbol is the offset where the {@link com.by.bledemo.R.attr#layout_constraintWidth_min}
+     * <p>This symbol is the offset where the {@link com.by.ble.R.attr#layout_constraintWidth_min}
      * attribute's value can be found in the {@link #ConstraintSet} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -8177,11 +8397,11 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.by.bledemo:layout_constraintWidth_min
+     * @attr name com.by.ble:layout_constraintWidth_min
      */
     public static final int ConstraintSet_layout_constraintWidth_min=55;
     /**
-     * <p>This symbol is the offset where the {@link com.by.bledemo.R.attr#layout_editor_absoluteX}
+     * <p>This symbol is the offset where the {@link com.by.ble.R.attr#layout_editor_absoluteX}
      * attribute's value can be found in the {@link #ConstraintSet} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -8190,11 +8410,11 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.by.bledemo:layout_editor_absoluteX
+     * @attr name com.by.ble:layout_editor_absoluteX
      */
     public static final int ConstraintSet_layout_editor_absoluteX=56;
     /**
-     * <p>This symbol is the offset where the {@link com.by.bledemo.R.attr#layout_editor_absoluteY}
+     * <p>This symbol is the offset where the {@link com.by.ble.R.attr#layout_editor_absoluteY}
      * attribute's value can be found in the {@link #ConstraintSet} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -8203,11 +8423,11 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.by.bledemo:layout_editor_absoluteY
+     * @attr name com.by.ble:layout_editor_absoluteY
      */
     public static final int ConstraintSet_layout_editor_absoluteY=57;
     /**
-     * <p>This symbol is the offset where the {@link com.by.bledemo.R.attr#layout_goneMarginBottom}
+     * <p>This symbol is the offset where the {@link com.by.ble.R.attr#layout_goneMarginBottom}
      * attribute's value can be found in the {@link #ConstraintSet} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -8216,11 +8436,11 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.by.bledemo:layout_goneMarginBottom
+     * @attr name com.by.ble:layout_goneMarginBottom
      */
     public static final int ConstraintSet_layout_goneMarginBottom=58;
     /**
-     * <p>This symbol is the offset where the {@link com.by.bledemo.R.attr#layout_goneMarginEnd}
+     * <p>This symbol is the offset where the {@link com.by.ble.R.attr#layout_goneMarginEnd}
      * attribute's value can be found in the {@link #ConstraintSet} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -8229,11 +8449,11 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.by.bledemo:layout_goneMarginEnd
+     * @attr name com.by.ble:layout_goneMarginEnd
      */
     public static final int ConstraintSet_layout_goneMarginEnd=59;
     /**
-     * <p>This symbol is the offset where the {@link com.by.bledemo.R.attr#layout_goneMarginLeft}
+     * <p>This symbol is the offset where the {@link com.by.ble.R.attr#layout_goneMarginLeft}
      * attribute's value can be found in the {@link #ConstraintSet} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -8242,11 +8462,11 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.by.bledemo:layout_goneMarginLeft
+     * @attr name com.by.ble:layout_goneMarginLeft
      */
     public static final int ConstraintSet_layout_goneMarginLeft=60;
     /**
-     * <p>This symbol is the offset where the {@link com.by.bledemo.R.attr#layout_goneMarginRight}
+     * <p>This symbol is the offset where the {@link com.by.ble.R.attr#layout_goneMarginRight}
      * attribute's value can be found in the {@link #ConstraintSet} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -8255,11 +8475,11 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.by.bledemo:layout_goneMarginRight
+     * @attr name com.by.ble:layout_goneMarginRight
      */
     public static final int ConstraintSet_layout_goneMarginRight=61;
     /**
-     * <p>This symbol is the offset where the {@link com.by.bledemo.R.attr#layout_goneMarginStart}
+     * <p>This symbol is the offset where the {@link com.by.ble.R.attr#layout_goneMarginStart}
      * attribute's value can be found in the {@link #ConstraintSet} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -8268,11 +8488,11 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.by.bledemo:layout_goneMarginStart
+     * @attr name com.by.ble:layout_goneMarginStart
      */
     public static final int ConstraintSet_layout_goneMarginStart=62;
     /**
-     * <p>This symbol is the offset where the {@link com.by.bledemo.R.attr#layout_goneMarginTop}
+     * <p>This symbol is the offset where the {@link com.by.ble.R.attr#layout_goneMarginTop}
      * attribute's value can be found in the {@link #ConstraintSet} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -8281,7 +8501,7 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.by.bledemo:layout_goneMarginTop
+     * @attr name com.by.ble:layout_goneMarginTop
      */
     public static final int ConstraintSet_layout_goneMarginTop=63;
     /**
@@ -8291,14 +8511,14 @@ public final class R {
      * <colgroup align="left" />
      * <colgroup align="left" />
      * <tr><th>Attribute</th><th>Description</th></tr>
-     * <tr><td><code>{@link #DrawerArrowToggle_arrowHeadLength com.by.bledemo:arrowHeadLength}</code></td><td></td></tr>
-     * <tr><td><code>{@link #DrawerArrowToggle_arrowShaftLength com.by.bledemo:arrowShaftLength}</code></td><td></td></tr>
-     * <tr><td><code>{@link #DrawerArrowToggle_barLength com.by.bledemo:barLength}</code></td><td></td></tr>
-     * <tr><td><code>{@link #DrawerArrowToggle_color com.by.bledemo:color}</code></td><td></td></tr>
-     * <tr><td><code>{@link #DrawerArrowToggle_drawableSize com.by.bledemo:drawableSize}</code></td><td></td></tr>
-     * <tr><td><code>{@link #DrawerArrowToggle_gapBetweenBars com.by.bledemo:gapBetweenBars}</code></td><td></td></tr>
-     * <tr><td><code>{@link #DrawerArrowToggle_spinBars com.by.bledemo:spinBars}</code></td><td></td></tr>
-     * <tr><td><code>{@link #DrawerArrowToggle_thickness com.by.bledemo:thickness}</code></td><td></td></tr>
+     * <tr><td><code>{@link #DrawerArrowToggle_arrowHeadLength com.by.ble:arrowHeadLength}</code></td><td></td></tr>
+     * <tr><td><code>{@link #DrawerArrowToggle_arrowShaftLength com.by.ble:arrowShaftLength}</code></td><td></td></tr>
+     * <tr><td><code>{@link #DrawerArrowToggle_barLength com.by.ble:barLength}</code></td><td></td></tr>
+     * <tr><td><code>{@link #DrawerArrowToggle_color com.by.ble:color}</code></td><td></td></tr>
+     * <tr><td><code>{@link #DrawerArrowToggle_drawableSize com.by.ble:drawableSize}</code></td><td></td></tr>
+     * <tr><td><code>{@link #DrawerArrowToggle_gapBetweenBars com.by.ble:gapBetweenBars}</code></td><td></td></tr>
+     * <tr><td><code>{@link #DrawerArrowToggle_spinBars com.by.ble:spinBars}</code></td><td></td></tr>
+     * <tr><td><code>{@link #DrawerArrowToggle_thickness com.by.ble:thickness}</code></td><td></td></tr>
      * </table>
      * @see #DrawerArrowToggle_arrowHeadLength
      * @see #DrawerArrowToggle_arrowShaftLength
@@ -8314,7 +8534,7 @@ public final class R {
         0x7f020067, 0x7f02007a, 0x7f0200e8, 0x7f020105
       };
     /**
-     * <p>This symbol is the offset where the {@link com.by.bledemo.R.attr#arrowHeadLength}
+     * <p>This symbol is the offset where the {@link com.by.ble.R.attr#arrowHeadLength}
      * attribute's value can be found in the {@link #DrawerArrowToggle} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -8323,11 +8543,11 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.by.bledemo:arrowHeadLength
+     * @attr name com.by.ble:arrowHeadLength
      */
     public static final int DrawerArrowToggle_arrowHeadLength=0;
     /**
-     * <p>This symbol is the offset where the {@link com.by.bledemo.R.attr#arrowShaftLength}
+     * <p>This symbol is the offset where the {@link com.by.ble.R.attr#arrowShaftLength}
      * attribute's value can be found in the {@link #DrawerArrowToggle} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -8336,11 +8556,11 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.by.bledemo:arrowShaftLength
+     * @attr name com.by.ble:arrowShaftLength
      */
     public static final int DrawerArrowToggle_arrowShaftLength=1;
     /**
-     * <p>This symbol is the offset where the {@link com.by.bledemo.R.attr#barLength}
+     * <p>This symbol is the offset where the {@link com.by.ble.R.attr#barLength}
      * attribute's value can be found in the {@link #DrawerArrowToggle} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -8349,22 +8569,22 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.by.bledemo:barLength
+     * @attr name com.by.ble:barLength
      */
     public static final int DrawerArrowToggle_barLength=2;
     /**
-     * <p>This symbol is the offset where the {@link com.by.bledemo.R.attr#color}
+     * <p>This symbol is the offset where the {@link com.by.ble.R.attr#color}
      * attribute's value can be found in the {@link #DrawerArrowToggle} array.
      *
      * <p>May be a color value, in the form of "<code>#<i>rgb</i></code>",
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
      * "<code>#<i>aarrggbb</i></code>".
      *
-     * @attr name com.by.bledemo:color
+     * @attr name com.by.ble:color
      */
     public static final int DrawerArrowToggle_color=3;
     /**
-     * <p>This symbol is the offset where the {@link com.by.bledemo.R.attr#drawableSize}
+     * <p>This symbol is the offset where the {@link com.by.ble.R.attr#drawableSize}
      * attribute's value can be found in the {@link #DrawerArrowToggle} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -8373,11 +8593,11 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.by.bledemo:drawableSize
+     * @attr name com.by.ble:drawableSize
      */
     public static final int DrawerArrowToggle_drawableSize=4;
     /**
-     * <p>This symbol is the offset where the {@link com.by.bledemo.R.attr#gapBetweenBars}
+     * <p>This symbol is the offset where the {@link com.by.ble.R.attr#gapBetweenBars}
      * attribute's value can be found in the {@link #DrawerArrowToggle} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -8386,21 +8606,21 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.by.bledemo:gapBetweenBars
+     * @attr name com.by.ble:gapBetweenBars
      */
     public static final int DrawerArrowToggle_gapBetweenBars=5;
     /**
-     * <p>This symbol is the offset where the {@link com.by.bledemo.R.attr#spinBars}
+     * <p>This symbol is the offset where the {@link com.by.ble.R.attr#spinBars}
      * attribute's value can be found in the {@link #DrawerArrowToggle} array.
      *
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
      *
-     * @attr name com.by.bledemo:spinBars
+     * @attr name com.by.ble:spinBars
      */
     public static final int DrawerArrowToggle_spinBars=6;
     /**
-     * <p>This symbol is the offset where the {@link com.by.bledemo.R.attr#thickness}
+     * <p>This symbol is the offset where the {@link com.by.ble.R.attr#thickness}
      * attribute's value can be found in the {@link #DrawerArrowToggle} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -8409,7 +8629,7 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.by.bledemo:thickness
+     * @attr name com.by.ble:thickness
      */
     public static final int DrawerArrowToggle_thickness=7;
     /**
@@ -8419,12 +8639,12 @@ public final class R {
      * <colgroup align="left" />
      * <colgroup align="left" />
      * <tr><th>Attribute</th><th>Description</th></tr>
-     * <tr><td><code>{@link #FontFamily_fontProviderAuthority com.by.bledemo:fontProviderAuthority}</code></td><td></td></tr>
-     * <tr><td><code>{@link #FontFamily_fontProviderCerts com.by.bledemo:fontProviderCerts}</code></td><td></td></tr>
-     * <tr><td><code>{@link #FontFamily_fontProviderFetchStrategy com.by.bledemo:fontProviderFetchStrategy}</code></td><td></td></tr>
-     * <tr><td><code>{@link #FontFamily_fontProviderFetchTimeout com.by.bledemo:fontProviderFetchTimeout}</code></td><td></td></tr>
-     * <tr><td><code>{@link #FontFamily_fontProviderPackage com.by.bledemo:fontProviderPackage}</code></td><td></td></tr>
-     * <tr><td><code>{@link #FontFamily_fontProviderQuery com.by.bledemo:fontProviderQuery}</code></td><td></td></tr>
+     * <tr><td><code>{@link #FontFamily_fontProviderAuthority com.by.ble:fontProviderAuthority}</code></td><td></td></tr>
+     * <tr><td><code>{@link #FontFamily_fontProviderCerts com.by.ble:fontProviderCerts}</code></td><td></td></tr>
+     * <tr><td><code>{@link #FontFamily_fontProviderFetchStrategy com.by.ble:fontProviderFetchStrategy}</code></td><td></td></tr>
+     * <tr><td><code>{@link #FontFamily_fontProviderFetchTimeout com.by.ble:fontProviderFetchTimeout}</code></td><td></td></tr>
+     * <tr><td><code>{@link #FontFamily_fontProviderPackage com.by.ble:fontProviderPackage}</code></td><td></td></tr>
+     * <tr><td><code>{@link #FontFamily_fontProviderQuery com.by.ble:fontProviderQuery}</code></td><td></td></tr>
      * </table>
      * @see #FontFamily_fontProviderAuthority
      * @see #FontFamily_fontProviderCerts
@@ -8444,9 +8664,9 @@ public final class R {
      * <colgroup align="left" />
      * <colgroup align="left" />
      * <tr><th>Attribute</th><th>Description</th></tr>
-     * <tr><td><code>{@link #FontFamilyFont_font com.by.bledemo:font}</code></td><td></td></tr>
-     * <tr><td><code>{@link #FontFamilyFont_fontStyle com.by.bledemo:fontStyle}</code></td><td></td></tr>
-     * <tr><td><code>{@link #FontFamilyFont_fontWeight com.by.bledemo:fontWeight}</code></td><td></td></tr>
+     * <tr><td><code>{@link #FontFamilyFont_font com.by.ble:font}</code></td><td></td></tr>
+     * <tr><td><code>{@link #FontFamilyFont_fontStyle com.by.ble:fontStyle}</code></td><td></td></tr>
+     * <tr><td><code>{@link #FontFamilyFont_fontWeight com.by.ble:fontWeight}</code></td><td></td></tr>
      * </table>
      * @see #FontFamilyFont_font
      * @see #FontFamilyFont_fontStyle
@@ -8456,7 +8676,7 @@ public final class R {
         0x7f020070, 0x7f020078, 0x7f020079
       };
     /**
-     * <p>This symbol is the offset where the {@link com.by.bledemo.R.attr#font}
+     * <p>This symbol is the offset where the {@link com.by.ble.R.attr#font}
      * attribute's value can be found in the {@link #FontFamilyFont} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -8464,11 +8684,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.by.bledemo:font
+     * @attr name com.by.ble:font
      */
     public static final int FontFamilyFont_font=0;
     /**
-     * <p>This symbol is the offset where the {@link com.by.bledemo.R.attr#fontStyle}
+     * <p>This symbol is the offset where the {@link com.by.ble.R.attr#fontStyle}
      * attribute's value can be found in the {@link #FontFamilyFont} array.
      *
      * <p>Must be one of the following constant values.</p>
@@ -8481,30 +8701,30 @@ public final class R {
      * <tr><td>normal</td><td>0</td><td></td></tr>
      * </table>
      *
-     * @attr name com.by.bledemo:fontStyle
+     * @attr name com.by.ble:fontStyle
      */
     public static final int FontFamilyFont_fontStyle=1;
     /**
-     * <p>This symbol is the offset where the {@link com.by.bledemo.R.attr#fontWeight}
+     * <p>This symbol is the offset where the {@link com.by.ble.R.attr#fontWeight}
      * attribute's value can be found in the {@link #FontFamilyFont} array.
      *
      * <p>May be an integer value, such as "<code>100</code>".
      *
-     * @attr name com.by.bledemo:fontWeight
+     * @attr name com.by.ble:fontWeight
      */
     public static final int FontFamilyFont_fontWeight=2;
     /**
-     * <p>This symbol is the offset where the {@link com.by.bledemo.R.attr#fontProviderAuthority}
+     * <p>This symbol is the offset where the {@link com.by.ble.R.attr#fontProviderAuthority}
      * attribute's value can be found in the {@link #FontFamily} array.
      *
      * <p>May be a string value, using '\\;' to escape characters such as
      * '\\n' or '\\uxxxx' for a unicode character;
      *
-     * @attr name com.by.bledemo:fontProviderAuthority
+     * @attr name com.by.ble:fontProviderAuthority
      */
     public static final int FontFamily_fontProviderAuthority=0;
     /**
-     * <p>This symbol is the offset where the {@link com.by.bledemo.R.attr#fontProviderCerts}
+     * <p>This symbol is the offset where the {@link com.by.ble.R.attr#fontProviderCerts}
      * attribute's value can be found in the {@link #FontFamily} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -8512,11 +8732,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.by.bledemo:fontProviderCerts
+     * @attr name com.by.ble:fontProviderCerts
      */
     public static final int FontFamily_fontProviderCerts=1;
     /**
-     * <p>This symbol is the offset where the {@link com.by.bledemo.R.attr#fontProviderFetchStrategy}
+     * <p>This symbol is the offset where the {@link com.by.ble.R.attr#fontProviderFetchStrategy}
      * attribute's value can be found in the {@link #FontFamily} array.
      *
      * <p>Must be one of the following constant values.</p>
@@ -8529,11 +8749,11 @@ public final class R {
      * <tr><td>blocking</td><td>0</td><td></td></tr>
      * </table>
      *
-     * @attr name com.by.bledemo:fontProviderFetchStrategy
+     * @attr name com.by.ble:fontProviderFetchStrategy
      */
     public static final int FontFamily_fontProviderFetchStrategy=2;
     /**
-     * <p>This symbol is the offset where the {@link com.by.bledemo.R.attr#fontProviderFetchTimeout}
+     * <p>This symbol is the offset where the {@link com.by.ble.R.attr#fontProviderFetchTimeout}
      * attribute's value can be found in the {@link #FontFamily} array.
      *
      * <p>May be an integer value, such as "<code>100</code>".
@@ -8546,27 +8766,27 @@ public final class R {
      * <tr><td>forever</td><td>ffffffff</td><td></td></tr>
      * </table>
      *
-     * @attr name com.by.bledemo:fontProviderFetchTimeout
+     * @attr name com.by.ble:fontProviderFetchTimeout
      */
     public static final int FontFamily_fontProviderFetchTimeout=3;
     /**
-     * <p>This symbol is the offset where the {@link com.by.bledemo.R.attr#fontProviderPackage}
+     * <p>This symbol is the offset where the {@link com.by.ble.R.attr#fontProviderPackage}
      * attribute's value can be found in the {@link #FontFamily} array.
      *
      * <p>May be a string value, using '\\;' to escape characters such as
      * '\\n' or '\\uxxxx' for a unicode character;
      *
-     * @attr name com.by.bledemo:fontProviderPackage
+     * @attr name com.by.ble:fontProviderPackage
      */
     public static final int FontFamily_fontProviderPackage=4;
     /**
-     * <p>This symbol is the offset where the {@link com.by.bledemo.R.attr#fontProviderQuery}
+     * <p>This symbol is the offset where the {@link com.by.ble.R.attr#fontProviderQuery}
      * attribute's value can be found in the {@link #FontFamily} array.
      *
      * <p>May be a string value, using '\\;' to escape characters such as
      * '\\n' or '\\uxxxx' for a unicode character;
      *
-     * @attr name com.by.bledemo:fontProviderQuery
+     * @attr name com.by.ble:fontProviderQuery
      */
     public static final int FontFamily_fontProviderQuery=5;
     /**
@@ -8612,10 +8832,10 @@ public final class R {
      * <tr><td><code>{@link #LinearLayoutCompat_android_baselineAligned android:baselineAligned}</code></td><td></td></tr>
      * <tr><td><code>{@link #LinearLayoutCompat_android_baselineAlignedChildIndex android:baselineAlignedChildIndex}</code></td><td></td></tr>
      * <tr><td><code>{@link #LinearLayoutCompat_android_weightSum android:weightSum}</code></td><td></td></tr>
-     * <tr><td><code>{@link #LinearLayoutCompat_divider com.by.bledemo:divider}</code></td><td></td></tr>
-     * <tr><td><code>{@link #LinearLayoutCompat_dividerPadding com.by.bledemo:dividerPadding}</code></td><td></td></tr>
-     * <tr><td><code>{@link #LinearLayoutCompat_measureWithLargestChild com.by.bledemo:measureWithLargestChild}</code></td><td></td></tr>
-     * <tr><td><code>{@link #LinearLayoutCompat_showDividers com.by.bledemo:showDividers}</code></td><td></td></tr>
+     * <tr><td><code>{@link #LinearLayoutCompat_divider com.by.ble:divider}</code></td><td></td></tr>
+     * <tr><td><code>{@link #LinearLayoutCompat_dividerPadding com.by.ble:dividerPadding}</code></td><td></td></tr>
+     * <tr><td><code>{@link #LinearLayoutCompat_measureWithLargestChild com.by.ble:measureWithLargestChild}</code></td><td></td></tr>
+     * <tr><td><code>{@link #LinearLayoutCompat_showDividers com.by.ble:showDividers}</code></td><td></td></tr>
      * </table>
      * @see #LinearLayoutCompat_android_gravity
      * @see #LinearLayoutCompat_android_orientation
@@ -8811,7 +9031,7 @@ public final class R {
      */
     public static final int LinearLayoutCompat_android_weightSum=4;
     /**
-     * <p>This symbol is the offset where the {@link com.by.bledemo.R.attr#divider}
+     * <p>This symbol is the offset where the {@link com.by.ble.R.attr#divider}
      * attribute's value can be found in the {@link #LinearLayoutCompat} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -8819,11 +9039,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.by.bledemo:divider
+     * @attr name com.by.ble:divider
      */
     public static final int LinearLayoutCompat_divider=5;
     /**
-     * <p>This symbol is the offset where the {@link com.by.bledemo.R.attr#dividerPadding}
+     * <p>This symbol is the offset where the {@link com.by.ble.R.attr#dividerPadding}
      * attribute's value can be found in the {@link #LinearLayoutCompat} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -8832,21 +9052,21 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.by.bledemo:dividerPadding
+     * @attr name com.by.ble:dividerPadding
      */
     public static final int LinearLayoutCompat_dividerPadding=6;
     /**
-     * <p>This symbol is the offset where the {@link com.by.bledemo.R.attr#measureWithLargestChild}
+     * <p>This symbol is the offset where the {@link com.by.ble.R.attr#measureWithLargestChild}
      * attribute's value can be found in the {@link #LinearLayoutCompat} array.
      *
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
      *
-     * @attr name com.by.bledemo:measureWithLargestChild
+     * @attr name com.by.ble:measureWithLargestChild
      */
     public static final int LinearLayoutCompat_measureWithLargestChild=7;
     /**
-     * <p>This symbol is the offset where the {@link com.by.bledemo.R.attr#showDividers}
+     * <p>This symbol is the offset where the {@link com.by.ble.R.attr#showDividers}
      * attribute's value can be found in the {@link #LinearLayoutCompat} array.
      *
      * <p>Must be one or more (separated by '|') of the following constant values.</p>
@@ -8861,7 +9081,7 @@ public final class R {
      * <tr><td>none</td><td>0</td><td></td></tr>
      * </table>
      *
-     * @attr name com.by.bledemo:showDividers
+     * @attr name com.by.ble:showDividers
      */
     public static final int LinearLayoutCompat_showDividers=8;
     /**
@@ -9029,16 +9249,16 @@ public final class R {
      * <tr><td><code>{@link #MenuItem_android_numericShortcut android:numericShortcut}</code></td><td></td></tr>
      * <tr><td><code>{@link #MenuItem_android_checkable android:checkable}</code></td><td></td></tr>
      * <tr><td><code>{@link #MenuItem_android_onClick android:onClick}</code></td><td></td></tr>
-     * <tr><td><code>{@link #MenuItem_actionLayout com.by.bledemo:actionLayout}</code></td><td></td></tr>
-     * <tr><td><code>{@link #MenuItem_actionProviderClass com.by.bledemo:actionProviderClass}</code></td><td></td></tr>
-     * <tr><td><code>{@link #MenuItem_actionViewClass com.by.bledemo:actionViewClass}</code></td><td></td></tr>
-     * <tr><td><code>{@link #MenuItem_alphabeticModifiers com.by.bledemo:alphabeticModifiers}</code></td><td></td></tr>
-     * <tr><td><code>{@link #MenuItem_contentDescription com.by.bledemo:contentDescription}</code></td><td></td></tr>
-     * <tr><td><code>{@link #MenuItem_iconTint com.by.bledemo:iconTint}</code></td><td></td></tr>
-     * <tr><td><code>{@link #MenuItem_iconTintMode com.by.bledemo:iconTintMode}</code></td><td></td></tr>
-     * <tr><td><code>{@link #MenuItem_numericModifiers com.by.bledemo:numericModifiers}</code></td><td></td></tr>
-     * <tr><td><code>{@link #MenuItem_showAsAction com.by.bledemo:showAsAction}</code></td><td></td></tr>
-     * <tr><td><code>{@link #MenuItem_tooltipText com.by.bledemo:tooltipText}</code></td><td></td></tr>
+     * <tr><td><code>{@link #MenuItem_actionLayout com.by.ble:actionLayout}</code></td><td></td></tr>
+     * <tr><td><code>{@link #MenuItem_actionProviderClass com.by.ble:actionProviderClass}</code></td><td></td></tr>
+     * <tr><td><code>{@link #MenuItem_actionViewClass com.by.ble:actionViewClass}</code></td><td></td></tr>
+     * <tr><td><code>{@link #MenuItem_alphabeticModifiers com.by.ble:alphabeticModifiers}</code></td><td></td></tr>
+     * <tr><td><code>{@link #MenuItem_contentDescription com.by.ble:contentDescription}</code></td><td></td></tr>
+     * <tr><td><code>{@link #MenuItem_iconTint com.by.ble:iconTint}</code></td><td></td></tr>
+     * <tr><td><code>{@link #MenuItem_iconTintMode com.by.ble:iconTintMode}</code></td><td></td></tr>
+     * <tr><td><code>{@link #MenuItem_numericModifiers com.by.ble:numericModifiers}</code></td><td></td></tr>
+     * <tr><td><code>{@link #MenuItem_showAsAction com.by.ble:showAsAction}</code></td><td></td></tr>
+     * <tr><td><code>{@link #MenuItem_tooltipText com.by.ble:tooltipText}</code></td><td></td></tr>
      * </table>
      * @see #MenuItem_android_icon
      * @see #MenuItem_android_enabled
@@ -9073,7 +9293,7 @@ public final class R {
         0x7f0200c8, 0x7f0200e3, 0x7f02011c
       };
     /**
-     * <p>This symbol is the offset where the {@link com.by.bledemo.R.attr#actionLayout}
+     * <p>This symbol is the offset where the {@link com.by.ble.R.attr#actionLayout}
      * attribute's value can be found in the {@link #MenuItem} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -9081,31 +9301,31 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.by.bledemo:actionLayout
+     * @attr name com.by.ble:actionLayout
      */
     public static final int MenuItem_actionLayout=13;
     /**
-     * <p>This symbol is the offset where the {@link com.by.bledemo.R.attr#actionProviderClass}
+     * <p>This symbol is the offset where the {@link com.by.ble.R.attr#actionProviderClass}
      * attribute's value can be found in the {@link #MenuItem} array.
      *
      * <p>May be a string value, using '\\;' to escape characters such as
      * '\\n' or '\\uxxxx' for a unicode character;
      *
-     * @attr name com.by.bledemo:actionProviderClass
+     * @attr name com.by.ble:actionProviderClass
      */
     public static final int MenuItem_actionProviderClass=14;
     /**
-     * <p>This symbol is the offset where the {@link com.by.bledemo.R.attr#actionViewClass}
+     * <p>This symbol is the offset where the {@link com.by.ble.R.attr#actionViewClass}
      * attribute's value can be found in the {@link #MenuItem} array.
      *
      * <p>May be a string value, using '\\;' to escape characters such as
      * '\\n' or '\\uxxxx' for a unicode character;
      *
-     * @attr name com.by.bledemo:actionViewClass
+     * @attr name com.by.ble:actionViewClass
      */
     public static final int MenuItem_actionViewClass=15;
     /**
-     * <p>This symbol is the offset where the {@link com.by.bledemo.R.attr#alphabeticModifiers}
+     * <p>This symbol is the offset where the {@link com.by.ble.R.attr#alphabeticModifiers}
      * attribute's value can be found in the {@link #MenuItem} array.
      *
      * <p>Must be one or more (separated by '|') of the following constant values.</p>
@@ -9122,7 +9342,7 @@ public final class R {
      * <tr><td>SYM</td><td>4</td><td></td></tr>
      * </table>
      *
-     * @attr name com.by.bledemo:alphabeticModifiers
+     * @attr name com.by.ble:alphabeticModifiers
      */
     public static final int MenuItem_alphabeticModifiers=16;
     /**
@@ -9268,28 +9488,28 @@ public final class R {
      */
     public static final int MenuItem_android_visible=4;
     /**
-     * <p>This symbol is the offset where the {@link com.by.bledemo.R.attr#contentDescription}
+     * <p>This symbol is the offset where the {@link com.by.ble.R.attr#contentDescription}
      * attribute's value can be found in the {@link #MenuItem} array.
      *
      * <p>May be a string value, using '\\;' to escape characters such as
      * '\\n' or '\\uxxxx' for a unicode character;
      *
-     * @attr name com.by.bledemo:contentDescription
+     * @attr name com.by.ble:contentDescription
      */
     public static final int MenuItem_contentDescription=17;
     /**
-     * <p>This symbol is the offset where the {@link com.by.bledemo.R.attr#iconTint}
+     * <p>This symbol is the offset where the {@link com.by.ble.R.attr#iconTint}
      * attribute's value can be found in the {@link #MenuItem} array.
      *
      * <p>May be a color value, in the form of "<code>#<i>rgb</i></code>",
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
      * "<code>#<i>aarrggbb</i></code>".
      *
-     * @attr name com.by.bledemo:iconTint
+     * @attr name com.by.ble:iconTint
      */
     public static final int MenuItem_iconTint=18;
     /**
-     * <p>This symbol is the offset where the {@link com.by.bledemo.R.attr#iconTintMode}
+     * <p>This symbol is the offset where the {@link com.by.ble.R.attr#iconTintMode}
      * attribute's value can be found in the {@link #MenuItem} array.
      *
      * <p>Must be one of the following constant values.</p>
@@ -9306,11 +9526,11 @@ public final class R {
      * <tr><td>src_over</td><td>3</td><td></td></tr>
      * </table>
      *
-     * @attr name com.by.bledemo:iconTintMode
+     * @attr name com.by.ble:iconTintMode
      */
     public static final int MenuItem_iconTintMode=19;
     /**
-     * <p>This symbol is the offset where the {@link com.by.bledemo.R.attr#numericModifiers}
+     * <p>This symbol is the offset where the {@link com.by.ble.R.attr#numericModifiers}
      * attribute's value can be found in the {@link #MenuItem} array.
      *
      * <p>Must be one or more (separated by '|') of the following constant values.</p>
@@ -9327,11 +9547,11 @@ public final class R {
      * <tr><td>SYM</td><td>4</td><td></td></tr>
      * </table>
      *
-     * @attr name com.by.bledemo:numericModifiers
+     * @attr name com.by.ble:numericModifiers
      */
     public static final int MenuItem_numericModifiers=20;
     /**
-     * <p>This symbol is the offset where the {@link com.by.bledemo.R.attr#showAsAction}
+     * <p>This symbol is the offset where the {@link com.by.ble.R.attr#showAsAction}
      * attribute's value can be found in the {@link #MenuItem} array.
      *
      * <p>Must be one or more (separated by '|') of the following constant values.</p>
@@ -9347,17 +9567,17 @@ public final class R {
      * <tr><td>withText</td><td>4</td><td></td></tr>
      * </table>
      *
-     * @attr name com.by.bledemo:showAsAction
+     * @attr name com.by.ble:showAsAction
      */
     public static final int MenuItem_showAsAction=21;
     /**
-     * <p>This symbol is the offset where the {@link com.by.bledemo.R.attr#tooltipText}
+     * <p>This symbol is the offset where the {@link com.by.ble.R.attr#tooltipText}
      * attribute's value can be found in the {@link #MenuItem} array.
      *
      * <p>May be a string value, using '\\;' to escape characters such as
      * '\\n' or '\\uxxxx' for a unicode character;
      *
-     * @attr name com.by.bledemo:tooltipText
+     * @attr name com.by.ble:tooltipText
      */
     public static final int MenuItem_tooltipText=22;
     /**
@@ -9374,8 +9594,8 @@ public final class R {
      * <tr><td><code>{@link #MenuView_android_headerBackground android:headerBackground}</code></td><td></td></tr>
      * <tr><td><code>{@link #MenuView_android_itemBackground android:itemBackground}</code></td><td></td></tr>
      * <tr><td><code>{@link #MenuView_android_itemIconDisabledAlpha android:itemIconDisabledAlpha}</code></td><td></td></tr>
-     * <tr><td><code>{@link #MenuView_preserveIconSpacing com.by.bledemo:preserveIconSpacing}</code></td><td></td></tr>
-     * <tr><td><code>{@link #MenuView_subMenuArrow com.by.bledemo:subMenuArrow}</code></td><td></td></tr>
+     * <tr><td><code>{@link #MenuView_preserveIconSpacing com.by.ble:preserveIconSpacing}</code></td><td></td></tr>
+     * <tr><td><code>{@link #MenuView_subMenuArrow com.by.ble:subMenuArrow}</code></td><td></td></tr>
      * </table>
      * @see #MenuView_android_windowAnimationStyle
      * @see #MenuView_android_itemTextAppearance
@@ -9480,17 +9700,17 @@ public final class R {
      */
     public static final int MenuView_android_windowAnimationStyle=0;
     /**
-     * <p>This symbol is the offset where the {@link com.by.bledemo.R.attr#preserveIconSpacing}
+     * <p>This symbol is the offset where the {@link com.by.ble.R.attr#preserveIconSpacing}
      * attribute's value can be found in the {@link #MenuView} array.
      *
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
      *
-     * @attr name com.by.bledemo:preserveIconSpacing
+     * @attr name com.by.ble:preserveIconSpacing
      */
     public static final int MenuView_preserveIconSpacing=7;
     /**
-     * <p>This symbol is the offset where the {@link com.by.bledemo.R.attr#subMenuArrow}
+     * <p>This symbol is the offset where the {@link com.by.ble.R.attr#subMenuArrow}
      * attribute's value can be found in the {@link #MenuView} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -9498,7 +9718,7 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.by.bledemo:subMenuArrow
+     * @attr name com.by.ble:subMenuArrow
      */
     public static final int MenuView_subMenuArrow=8;
     /**
@@ -9510,7 +9730,7 @@ public final class R {
      * <tr><th>Attribute</th><th>Description</th></tr>
      * <tr><td><code>{@link #PopupWindow_android_popupBackground android:popupBackground}</code></td><td></td></tr>
      * <tr><td><code>{@link #PopupWindow_android_popupAnimationStyle android:popupAnimationStyle}</code></td><td></td></tr>
-     * <tr><td><code>{@link #PopupWindow_overlapAnchor com.by.bledemo:overlapAnchor}</code></td><td></td></tr>
+     * <tr><td><code>{@link #PopupWindow_overlapAnchor com.by.ble:overlapAnchor}</code></td><td></td></tr>
      * </table>
      * @see #PopupWindow_android_popupBackground
      * @see #PopupWindow_android_popupAnimationStyle
@@ -9526,7 +9746,7 @@ public final class R {
      * <colgroup align="left" />
      * <colgroup align="left" />
      * <tr><th>Attribute</th><th>Description</th></tr>
-     * <tr><td><code>{@link #PopupWindowBackgroundState_state_above_anchor com.by.bledemo:state_above_anchor}</code></td><td></td></tr>
+     * <tr><td><code>{@link #PopupWindowBackgroundState_state_above_anchor com.by.ble:state_above_anchor}</code></td><td></td></tr>
      * </table>
      * @see #PopupWindowBackgroundState_state_above_anchor
      */
@@ -9534,13 +9754,13 @@ public final class R {
         0x7f0200ed
       };
     /**
-     * <p>This symbol is the offset where the {@link com.by.bledemo.R.attr#state_above_anchor}
+     * <p>This symbol is the offset where the {@link com.by.ble.R.attr#state_above_anchor}
      * attribute's value can be found in the {@link #PopupWindowBackgroundState} array.
      *
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
      *
-     * @attr name com.by.bledemo:state_above_anchor
+     * @attr name com.by.ble:state_above_anchor
      */
     public static final int PopupWindowBackgroundState_state_above_anchor=0;
     /**
@@ -9571,13 +9791,13 @@ public final class R {
      */
     public static final int PopupWindow_android_popupBackground=0;
     /**
-     * <p>This symbol is the offset where the {@link com.by.bledemo.R.attr#overlapAnchor}
+     * <p>This symbol is the offset where the {@link com.by.ble.R.attr#overlapAnchor}
      * attribute's value can be found in the {@link #PopupWindow} array.
      *
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
      *
-     * @attr name com.by.bledemo:overlapAnchor
+     * @attr name com.by.ble:overlapAnchor
      */
     public static final int PopupWindow_overlapAnchor=2;
     /**
@@ -9587,8 +9807,8 @@ public final class R {
      * <colgroup align="left" />
      * <colgroup align="left" />
      * <tr><th>Attribute</th><th>Description</th></tr>
-     * <tr><td><code>{@link #RecycleListView_paddingBottomNoButtons com.by.bledemo:paddingBottomNoButtons}</code></td><td></td></tr>
-     * <tr><td><code>{@link #RecycleListView_paddingTopNoTitle com.by.bledemo:paddingTopNoTitle}</code></td><td></td></tr>
+     * <tr><td><code>{@link #RecycleListView_paddingBottomNoButtons com.by.ble:paddingBottomNoButtons}</code></td><td></td></tr>
+     * <tr><td><code>{@link #RecycleListView_paddingTopNoTitle com.by.ble:paddingTopNoTitle}</code></td><td></td></tr>
      * </table>
      * @see #RecycleListView_paddingBottomNoButtons
      * @see #RecycleListView_paddingTopNoTitle
@@ -9597,7 +9817,7 @@ public final class R {
         0x7f0200ca, 0x7f0200cd
       };
     /**
-     * <p>This symbol is the offset where the {@link com.by.bledemo.R.attr#paddingBottomNoButtons}
+     * <p>This symbol is the offset where the {@link com.by.ble.R.attr#paddingBottomNoButtons}
      * attribute's value can be found in the {@link #RecycleListView} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -9606,11 +9826,11 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.by.bledemo:paddingBottomNoButtons
+     * @attr name com.by.ble:paddingBottomNoButtons
      */
     public static final int RecycleListView_paddingBottomNoButtons=0;
     /**
-     * <p>This symbol is the offset where the {@link com.by.bledemo.R.attr#paddingTopNoTitle}
+     * <p>This symbol is the offset where the {@link com.by.ble.R.attr#paddingTopNoTitle}
      * attribute's value can be found in the {@link #RecycleListView} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -9619,7 +9839,7 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.by.bledemo:paddingTopNoTitle
+     * @attr name com.by.ble:paddingTopNoTitle
      */
     public static final int RecycleListView_paddingTopNoTitle=1;
     /**
@@ -9633,19 +9853,19 @@ public final class R {
      * <tr><td><code>{@link #SearchView_android_maxWidth android:maxWidth}</code></td><td></td></tr>
      * <tr><td><code>{@link #SearchView_android_inputType android:inputType}</code></td><td></td></tr>
      * <tr><td><code>{@link #SearchView_android_imeOptions android:imeOptions}</code></td><td></td></tr>
-     * <tr><td><code>{@link #SearchView_closeIcon com.by.bledemo:closeIcon}</code></td><td></td></tr>
-     * <tr><td><code>{@link #SearchView_commitIcon com.by.bledemo:commitIcon}</code></td><td></td></tr>
-     * <tr><td><code>{@link #SearchView_defaultQueryHint com.by.bledemo:defaultQueryHint}</code></td><td></td></tr>
-     * <tr><td><code>{@link #SearchView_goIcon com.by.bledemo:goIcon}</code></td><td></td></tr>
-     * <tr><td><code>{@link #SearchView_iconifiedByDefault com.by.bledemo:iconifiedByDefault}</code></td><td></td></tr>
-     * <tr><td><code>{@link #SearchView_layout com.by.bledemo:layout}</code></td><td></td></tr>
-     * <tr><td><code>{@link #SearchView_queryBackground com.by.bledemo:queryBackground}</code></td><td></td></tr>
-     * <tr><td><code>{@link #SearchView_queryHint com.by.bledemo:queryHint}</code></td><td></td></tr>
-     * <tr><td><code>{@link #SearchView_searchHintIcon com.by.bledemo:searchHintIcon}</code></td><td></td></tr>
-     * <tr><td><code>{@link #SearchView_searchIcon com.by.bledemo:searchIcon}</code></td><td></td></tr>
-     * <tr><td><code>{@link #SearchView_submitBackground com.by.bledemo:submitBackground}</code></td><td></td></tr>
-     * <tr><td><code>{@link #SearchView_suggestionRowLayout com.by.bledemo:suggestionRowLayout}</code></td><td></td></tr>
-     * <tr><td><code>{@link #SearchView_voiceIcon com.by.bledemo:voiceIcon}</code></td><td></td></tr>
+     * <tr><td><code>{@link #SearchView_closeIcon com.by.ble:closeIcon}</code></td><td></td></tr>
+     * <tr><td><code>{@link #SearchView_commitIcon com.by.ble:commitIcon}</code></td><td></td></tr>
+     * <tr><td><code>{@link #SearchView_defaultQueryHint com.by.ble:defaultQueryHint}</code></td><td></td></tr>
+     * <tr><td><code>{@link #SearchView_goIcon com.by.ble:goIcon}</code></td><td></td></tr>
+     * <tr><td><code>{@link #SearchView_iconifiedByDefault com.by.ble:iconifiedByDefault}</code></td><td></td></tr>
+     * <tr><td><code>{@link #SearchView_layout com.by.ble:layout}</code></td><td></td></tr>
+     * <tr><td><code>{@link #SearchView_queryBackground com.by.ble:queryBackground}</code></td><td></td></tr>
+     * <tr><td><code>{@link #SearchView_queryHint com.by.ble:queryHint}</code></td><td></td></tr>
+     * <tr><td><code>{@link #SearchView_searchHintIcon com.by.ble:searchHintIcon}</code></td><td></td></tr>
+     * <tr><td><code>{@link #SearchView_searchIcon com.by.ble:searchIcon}</code></td><td></td></tr>
+     * <tr><td><code>{@link #SearchView_submitBackground com.by.ble:submitBackground}</code></td><td></td></tr>
+     * <tr><td><code>{@link #SearchView_suggestionRowLayout com.by.ble:suggestionRowLayout}</code></td><td></td></tr>
+     * <tr><td><code>{@link #SearchView_voiceIcon com.by.ble:voiceIcon}</code></td><td></td></tr>
      * </table>
      * @see #SearchView_android_focusable
      * @see #SearchView_android_maxWidth
@@ -9783,7 +10003,7 @@ public final class R {
      */
     public static final int SearchView_android_maxWidth=1;
     /**
-     * <p>This symbol is the offset where the {@link com.by.bledemo.R.attr#closeIcon}
+     * <p>This symbol is the offset where the {@link com.by.ble.R.attr#closeIcon}
      * attribute's value can be found in the {@link #SearchView} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -9791,11 +10011,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.by.bledemo:closeIcon
+     * @attr name com.by.ble:closeIcon
      */
     public static final int SearchView_closeIcon=4;
     /**
-     * <p>This symbol is the offset where the {@link com.by.bledemo.R.attr#commitIcon}
+     * <p>This symbol is the offset where the {@link com.by.ble.R.attr#commitIcon}
      * attribute's value can be found in the {@link #SearchView} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -9803,21 +10023,21 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.by.bledemo:commitIcon
+     * @attr name com.by.ble:commitIcon
      */
     public static final int SearchView_commitIcon=5;
     /**
-     * <p>This symbol is the offset where the {@link com.by.bledemo.R.attr#defaultQueryHint}
+     * <p>This symbol is the offset where the {@link com.by.ble.R.attr#defaultQueryHint}
      * attribute's value can be found in the {@link #SearchView} array.
      *
      * <p>May be a string value, using '\\;' to escape characters such as
      * '\\n' or '\\uxxxx' for a unicode character;
      *
-     * @attr name com.by.bledemo:defaultQueryHint
+     * @attr name com.by.ble:defaultQueryHint
      */
     public static final int SearchView_defaultQueryHint=6;
     /**
-     * <p>This symbol is the offset where the {@link com.by.bledemo.R.attr#goIcon}
+     * <p>This symbol is the offset where the {@link com.by.ble.R.attr#goIcon}
      * attribute's value can be found in the {@link #SearchView} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -9825,21 +10045,21 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.by.bledemo:goIcon
+     * @attr name com.by.ble:goIcon
      */
     public static final int SearchView_goIcon=7;
     /**
-     * <p>This symbol is the offset where the {@link com.by.bledemo.R.attr#iconifiedByDefault}
+     * <p>This symbol is the offset where the {@link com.by.ble.R.attr#iconifiedByDefault}
      * attribute's value can be found in the {@link #SearchView} array.
      *
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
      *
-     * @attr name com.by.bledemo:iconifiedByDefault
+     * @attr name com.by.ble:iconifiedByDefault
      */
     public static final int SearchView_iconifiedByDefault=8;
     /**
-     * <p>This symbol is the offset where the {@link com.by.bledemo.R.attr#layout}
+     * <p>This symbol is the offset where the {@link com.by.ble.R.attr#layout}
      * attribute's value can be found in the {@link #SearchView} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -9847,11 +10067,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.by.bledemo:layout
+     * @attr name com.by.ble:layout
      */
     public static final int SearchView_layout=9;
     /**
-     * <p>This symbol is the offset where the {@link com.by.bledemo.R.attr#queryBackground}
+     * <p>This symbol is the offset where the {@link com.by.ble.R.attr#queryBackground}
      * attribute's value can be found in the {@link #SearchView} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -9859,21 +10079,21 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.by.bledemo:queryBackground
+     * @attr name com.by.ble:queryBackground
      */
     public static final int SearchView_queryBackground=10;
     /**
-     * <p>This symbol is the offset where the {@link com.by.bledemo.R.attr#queryHint}
+     * <p>This symbol is the offset where the {@link com.by.ble.R.attr#queryHint}
      * attribute's value can be found in the {@link #SearchView} array.
      *
      * <p>May be a string value, using '\\;' to escape characters such as
      * '\\n' or '\\uxxxx' for a unicode character;
      *
-     * @attr name com.by.bledemo:queryHint
+     * @attr name com.by.ble:queryHint
      */
     public static final int SearchView_queryHint=11;
     /**
-     * <p>This symbol is the offset where the {@link com.by.bledemo.R.attr#searchHintIcon}
+     * <p>This symbol is the offset where the {@link com.by.ble.R.attr#searchHintIcon}
      * attribute's value can be found in the {@link #SearchView} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -9881,11 +10101,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.by.bledemo:searchHintIcon
+     * @attr name com.by.ble:searchHintIcon
      */
     public static final int SearchView_searchHintIcon=12;
     /**
-     * <p>This symbol is the offset where the {@link com.by.bledemo.R.attr#searchIcon}
+     * <p>This symbol is the offset where the {@link com.by.ble.R.attr#searchIcon}
      * attribute's value can be found in the {@link #SearchView} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -9893,11 +10113,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.by.bledemo:searchIcon
+     * @attr name com.by.ble:searchIcon
      */
     public static final int SearchView_searchIcon=13;
     /**
-     * <p>This symbol is the offset where the {@link com.by.bledemo.R.attr#submitBackground}
+     * <p>This symbol is the offset where the {@link com.by.ble.R.attr#submitBackground}
      * attribute's value can be found in the {@link #SearchView} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -9905,11 +10125,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.by.bledemo:submitBackground
+     * @attr name com.by.ble:submitBackground
      */
     public static final int SearchView_submitBackground=14;
     /**
-     * <p>This symbol is the offset where the {@link com.by.bledemo.R.attr#suggestionRowLayout}
+     * <p>This symbol is the offset where the {@link com.by.ble.R.attr#suggestionRowLayout}
      * attribute's value can be found in the {@link #SearchView} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -9917,11 +10137,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.by.bledemo:suggestionRowLayout
+     * @attr name com.by.ble:suggestionRowLayout
      */
     public static final int SearchView_suggestionRowLayout=15;
     /**
-     * <p>This symbol is the offset where the {@link com.by.bledemo.R.attr#voiceIcon}
+     * <p>This symbol is the offset where the {@link com.by.ble.R.attr#voiceIcon}
      * attribute's value can be found in the {@link #SearchView} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -9929,7 +10149,7 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.by.bledemo:voiceIcon
+     * @attr name com.by.ble:voiceIcon
      */
     public static final int SearchView_voiceIcon=16;
     /**
@@ -9943,7 +10163,7 @@ public final class R {
      * <tr><td><code>{@link #Spinner_android_popupBackground android:popupBackground}</code></td><td></td></tr>
      * <tr><td><code>{@link #Spinner_android_prompt android:prompt}</code></td><td></td></tr>
      * <tr><td><code>{@link #Spinner_android_dropDownWidth android:dropDownWidth}</code></td><td></td></tr>
-     * <tr><td><code>{@link #Spinner_popupTheme com.by.bledemo:popupTheme}</code></td><td></td></tr>
+     * <tr><td><code>{@link #Spinner_popupTheme com.by.ble:popupTheme}</code></td><td></td></tr>
      * </table>
      * @see #Spinner_android_entries
      * @see #Spinner_android_popupBackground
@@ -10018,7 +10238,7 @@ public final class R {
      */
     public static final int Spinner_android_prompt=2;
     /**
-     * <p>This symbol is the offset where the {@link com.by.bledemo.R.attr#popupTheme}
+     * <p>This symbol is the offset where the {@link com.by.ble.R.attr#popupTheme}
      * attribute's value can be found in the {@link #Spinner} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -10026,7 +10246,7 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.by.bledemo:popupTheme
+     * @attr name com.by.ble:popupTheme
      */
     public static final int Spinner_popupTheme=4;
     /**
@@ -10039,17 +10259,17 @@ public final class R {
      * <tr><td><code>{@link #SwitchCompat_android_textOn android:textOn}</code></td><td></td></tr>
      * <tr><td><code>{@link #SwitchCompat_android_textOff android:textOff}</code></td><td></td></tr>
      * <tr><td><code>{@link #SwitchCompat_android_thumb android:thumb}</code></td><td></td></tr>
-     * <tr><td><code>{@link #SwitchCompat_showText com.by.bledemo:showText}</code></td><td></td></tr>
-     * <tr><td><code>{@link #SwitchCompat_splitTrack com.by.bledemo:splitTrack}</code></td><td></td></tr>
-     * <tr><td><code>{@link #SwitchCompat_switchMinWidth com.by.bledemo:switchMinWidth}</code></td><td></td></tr>
-     * <tr><td><code>{@link #SwitchCompat_switchPadding com.by.bledemo:switchPadding}</code></td><td></td></tr>
-     * <tr><td><code>{@link #SwitchCompat_switchTextAppearance com.by.bledemo:switchTextAppearance}</code></td><td></td></tr>
-     * <tr><td><code>{@link #SwitchCompat_thumbTextPadding com.by.bledemo:thumbTextPadding}</code></td><td></td></tr>
-     * <tr><td><code>{@link #SwitchCompat_thumbTint com.by.bledemo:thumbTint}</code></td><td></td></tr>
-     * <tr><td><code>{@link #SwitchCompat_thumbTintMode com.by.bledemo:thumbTintMode}</code></td><td></td></tr>
-     * <tr><td><code>{@link #SwitchCompat_track com.by.bledemo:track}</code></td><td></td></tr>
-     * <tr><td><code>{@link #SwitchCompat_trackTint com.by.bledemo:trackTint}</code></td><td></td></tr>
-     * <tr><td><code>{@link #SwitchCompat_trackTintMode com.by.bledemo:trackTintMode}</code></td><td></td></tr>
+     * <tr><td><code>{@link #SwitchCompat_showText com.by.ble:showText}</code></td><td></td></tr>
+     * <tr><td><code>{@link #SwitchCompat_splitTrack com.by.ble:splitTrack}</code></td><td></td></tr>
+     * <tr><td><code>{@link #SwitchCompat_switchMinWidth com.by.ble:switchMinWidth}</code></td><td></td></tr>
+     * <tr><td><code>{@link #SwitchCompat_switchPadding com.by.ble:switchPadding}</code></td><td></td></tr>
+     * <tr><td><code>{@link #SwitchCompat_switchTextAppearance com.by.ble:switchTextAppearance}</code></td><td></td></tr>
+     * <tr><td><code>{@link #SwitchCompat_thumbTextPadding com.by.ble:thumbTextPadding}</code></td><td></td></tr>
+     * <tr><td><code>{@link #SwitchCompat_thumbTint com.by.ble:thumbTint}</code></td><td></td></tr>
+     * <tr><td><code>{@link #SwitchCompat_thumbTintMode com.by.ble:thumbTintMode}</code></td><td></td></tr>
+     * <tr><td><code>{@link #SwitchCompat_track com.by.ble:track}</code></td><td></td></tr>
+     * <tr><td><code>{@link #SwitchCompat_trackTint com.by.ble:trackTint}</code></td><td></td></tr>
+     * <tr><td><code>{@link #SwitchCompat_trackTintMode com.by.ble:trackTintMode}</code></td><td></td></tr>
      * </table>
      * @see #SwitchCompat_android_textOn
      * @see #SwitchCompat_android_textOff
@@ -10105,27 +10325,27 @@ public final class R {
      */
     public static final int SwitchCompat_android_thumb=2;
     /**
-     * <p>This symbol is the offset where the {@link com.by.bledemo.R.attr#showText}
+     * <p>This symbol is the offset where the {@link com.by.ble.R.attr#showText}
      * attribute's value can be found in the {@link #SwitchCompat} array.
      *
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
      *
-     * @attr name com.by.bledemo:showText
+     * @attr name com.by.ble:showText
      */
     public static final int SwitchCompat_showText=3;
     /**
-     * <p>This symbol is the offset where the {@link com.by.bledemo.R.attr#splitTrack}
+     * <p>This symbol is the offset where the {@link com.by.ble.R.attr#splitTrack}
      * attribute's value can be found in the {@link #SwitchCompat} array.
      *
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
      *
-     * @attr name com.by.bledemo:splitTrack
+     * @attr name com.by.ble:splitTrack
      */
     public static final int SwitchCompat_splitTrack=4;
     /**
-     * <p>This symbol is the offset where the {@link com.by.bledemo.R.attr#switchMinWidth}
+     * <p>This symbol is the offset where the {@link com.by.ble.R.attr#switchMinWidth}
      * attribute's value can be found in the {@link #SwitchCompat} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -10134,11 +10354,11 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.by.bledemo:switchMinWidth
+     * @attr name com.by.ble:switchMinWidth
      */
     public static final int SwitchCompat_switchMinWidth=5;
     /**
-     * <p>This symbol is the offset where the {@link com.by.bledemo.R.attr#switchPadding}
+     * <p>This symbol is the offset where the {@link com.by.ble.R.attr#switchPadding}
      * attribute's value can be found in the {@link #SwitchCompat} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -10147,11 +10367,11 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.by.bledemo:switchPadding
+     * @attr name com.by.ble:switchPadding
      */
     public static final int SwitchCompat_switchPadding=6;
     /**
-     * <p>This symbol is the offset where the {@link com.by.bledemo.R.attr#switchTextAppearance}
+     * <p>This symbol is the offset where the {@link com.by.ble.R.attr#switchTextAppearance}
      * attribute's value can be found in the {@link #SwitchCompat} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -10159,11 +10379,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.by.bledemo:switchTextAppearance
+     * @attr name com.by.ble:switchTextAppearance
      */
     public static final int SwitchCompat_switchTextAppearance=7;
     /**
-     * <p>This symbol is the offset where the {@link com.by.bledemo.R.attr#thumbTextPadding}
+     * <p>This symbol is the offset where the {@link com.by.ble.R.attr#thumbTextPadding}
      * attribute's value can be found in the {@link #SwitchCompat} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -10172,22 +10392,22 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.by.bledemo:thumbTextPadding
+     * @attr name com.by.ble:thumbTextPadding
      */
     public static final int SwitchCompat_thumbTextPadding=8;
     /**
-     * <p>This symbol is the offset where the {@link com.by.bledemo.R.attr#thumbTint}
+     * <p>This symbol is the offset where the {@link com.by.ble.R.attr#thumbTint}
      * attribute's value can be found in the {@link #SwitchCompat} array.
      *
      * <p>May be a color value, in the form of "<code>#<i>rgb</i></code>",
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
      * "<code>#<i>aarrggbb</i></code>".
      *
-     * @attr name com.by.bledemo:thumbTint
+     * @attr name com.by.ble:thumbTint
      */
     public static final int SwitchCompat_thumbTint=9;
     /**
-     * <p>This symbol is the offset where the {@link com.by.bledemo.R.attr#thumbTintMode}
+     * <p>This symbol is the offset where the {@link com.by.ble.R.attr#thumbTintMode}
      * attribute's value can be found in the {@link #SwitchCompat} array.
      *
      * <p>Must be one of the following constant values.</p>
@@ -10204,11 +10424,11 @@ public final class R {
      * <tr><td>src_over</td><td>3</td><td></td></tr>
      * </table>
      *
-     * @attr name com.by.bledemo:thumbTintMode
+     * @attr name com.by.ble:thumbTintMode
      */
     public static final int SwitchCompat_thumbTintMode=10;
     /**
-     * <p>This symbol is the offset where the {@link com.by.bledemo.R.attr#track}
+     * <p>This symbol is the offset where the {@link com.by.ble.R.attr#track}
      * attribute's value can be found in the {@link #SwitchCompat} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -10216,22 +10436,22 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.by.bledemo:track
+     * @attr name com.by.ble:track
      */
     public static final int SwitchCompat_track=11;
     /**
-     * <p>This symbol is the offset where the {@link com.by.bledemo.R.attr#trackTint}
+     * <p>This symbol is the offset where the {@link com.by.ble.R.attr#trackTint}
      * attribute's value can be found in the {@link #SwitchCompat} array.
      *
      * <p>May be a color value, in the form of "<code>#<i>rgb</i></code>",
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
      * "<code>#<i>aarrggbb</i></code>".
      *
-     * @attr name com.by.bledemo:trackTint
+     * @attr name com.by.ble:trackTint
      */
     public static final int SwitchCompat_trackTint=12;
     /**
-     * <p>This symbol is the offset where the {@link com.by.bledemo.R.attr#trackTintMode}
+     * <p>This symbol is the offset where the {@link com.by.ble.R.attr#trackTintMode}
      * attribute's value can be found in the {@link #SwitchCompat} array.
      *
      * <p>Must be one of the following constant values.</p>
@@ -10248,7 +10468,7 @@ public final class R {
      * <tr><td>src_over</td><td>3</td><td></td></tr>
      * </table>
      *
-     * @attr name com.by.bledemo:trackTintMode
+     * @attr name com.by.ble:trackTintMode
      */
     public static final int SwitchCompat_trackTintMode=13;
     /**
@@ -10269,8 +10489,8 @@ public final class R {
      * <tr><td><code>{@link #TextAppearance_android_shadowDy android:shadowDy}</code></td><td></td></tr>
      * <tr><td><code>{@link #TextAppearance_android_shadowRadius android:shadowRadius}</code></td><td></td></tr>
      * <tr><td><code>{@link #TextAppearance_android_fontFamily android:fontFamily}</code></td><td></td></tr>
-     * <tr><td><code>{@link #TextAppearance_fontFamily com.by.bledemo:fontFamily}</code></td><td></td></tr>
-     * <tr><td><code>{@link #TextAppearance_textAllCaps com.by.bledemo:textAllCaps}</code></td><td></td></tr>
+     * <tr><td><code>{@link #TextAppearance_fontFamily com.by.ble:fontFamily}</code></td><td></td></tr>
+     * <tr><td><code>{@link #TextAppearance_textAllCaps com.by.ble:textAllCaps}</code></td><td></td></tr>
      * </table>
      * @see #TextAppearance_android_textSize
      * @see #TextAppearance_android_typeface
@@ -10436,17 +10656,17 @@ public final class R {
      */
     public static final int TextAppearance_android_typeface=1;
     /**
-     * <p>This symbol is the offset where the {@link com.by.bledemo.R.attr#fontFamily}
+     * <p>This symbol is the offset where the {@link com.by.ble.R.attr#fontFamily}
      * attribute's value can be found in the {@link #TextAppearance} array.
      *
      * <p>May be a string value, using '\\;' to escape characters such as
      * '\\n' or '\\uxxxx' for a unicode character;
      *
-     * @attr name com.by.bledemo:fontFamily
+     * @attr name com.by.ble:fontFamily
      */
     public static final int TextAppearance_fontFamily=11;
     /**
-     * <p>This symbol is the offset where the {@link com.by.bledemo.R.attr#textAllCaps}
+     * <p>This symbol is the offset where the {@link com.by.ble.R.attr#textAllCaps}
      * attribute's value can be found in the {@link #TextAppearance} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -10456,7 +10676,7 @@ public final class R {
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
      *
-     * @attr name com.by.bledemo:textAllCaps
+     * @attr name com.by.ble:textAllCaps
      */
     public static final int TextAppearance_textAllCaps=12;
     /**
@@ -10468,33 +10688,33 @@ public final class R {
      * <tr><th>Attribute</th><th>Description</th></tr>
      * <tr><td><code>{@link #Toolbar_android_gravity android:gravity}</code></td><td></td></tr>
      * <tr><td><code>{@link #Toolbar_android_minHeight android:minHeight}</code></td><td></td></tr>
-     * <tr><td><code>{@link #Toolbar_buttonGravity com.by.bledemo:buttonGravity}</code></td><td></td></tr>
-     * <tr><td><code>{@link #Toolbar_collapseContentDescription com.by.bledemo:collapseContentDescription}</code></td><td></td></tr>
-     * <tr><td><code>{@link #Toolbar_collapseIcon com.by.bledemo:collapseIcon}</code></td><td></td></tr>
-     * <tr><td><code>{@link #Toolbar_contentInsetEnd com.by.bledemo:contentInsetEnd}</code></td><td></td></tr>
-     * <tr><td><code>{@link #Toolbar_contentInsetEndWithActions com.by.bledemo:contentInsetEndWithActions}</code></td><td></td></tr>
-     * <tr><td><code>{@link #Toolbar_contentInsetLeft com.by.bledemo:contentInsetLeft}</code></td><td></td></tr>
-     * <tr><td><code>{@link #Toolbar_contentInsetRight com.by.bledemo:contentInsetRight}</code></td><td></td></tr>
-     * <tr><td><code>{@link #Toolbar_contentInsetStart com.by.bledemo:contentInsetStart}</code></td><td></td></tr>
-     * <tr><td><code>{@link #Toolbar_contentInsetStartWithNavigation com.by.bledemo:contentInsetStartWithNavigation}</code></td><td></td></tr>
-     * <tr><td><code>{@link #Toolbar_logo com.by.bledemo:logo}</code></td><td></td></tr>
-     * <tr><td><code>{@link #Toolbar_logoDescription com.by.bledemo:logoDescription}</code></td><td></td></tr>
-     * <tr><td><code>{@link #Toolbar_maxButtonHeight com.by.bledemo:maxButtonHeight}</code></td><td></td></tr>
-     * <tr><td><code>{@link #Toolbar_navigationContentDescription com.by.bledemo:navigationContentDescription}</code></td><td></td></tr>
-     * <tr><td><code>{@link #Toolbar_navigationIcon com.by.bledemo:navigationIcon}</code></td><td></td></tr>
-     * <tr><td><code>{@link #Toolbar_popupTheme com.by.bledemo:popupTheme}</code></td><td></td></tr>
-     * <tr><td><code>{@link #Toolbar_subtitle com.by.bledemo:subtitle}</code></td><td></td></tr>
-     * <tr><td><code>{@link #Toolbar_subtitleTextAppearance com.by.bledemo:subtitleTextAppearance}</code></td><td></td></tr>
-     * <tr><td><code>{@link #Toolbar_subtitleTextColor com.by.bledemo:subtitleTextColor}</code></td><td></td></tr>
-     * <tr><td><code>{@link #Toolbar_title com.by.bledemo:title}</code></td><td></td></tr>
-     * <tr><td><code>{@link #Toolbar_titleMargin com.by.bledemo:titleMargin}</code></td><td></td></tr>
-     * <tr><td><code>{@link #Toolbar_titleMarginBottom com.by.bledemo:titleMarginBottom}</code></td><td></td></tr>
-     * <tr><td><code>{@link #Toolbar_titleMarginEnd com.by.bledemo:titleMarginEnd}</code></td><td></td></tr>
-     * <tr><td><code>{@link #Toolbar_titleMarginStart com.by.bledemo:titleMarginStart}</code></td><td></td></tr>
-     * <tr><td><code>{@link #Toolbar_titleMarginTop com.by.bledemo:titleMarginTop}</code></td><td></td></tr>
-     * <tr><td><code>{@link #Toolbar_titleMargins com.by.bledemo:titleMargins}</code></td><td></td></tr>
-     * <tr><td><code>{@link #Toolbar_titleTextAppearance com.by.bledemo:titleTextAppearance}</code></td><td></td></tr>
-     * <tr><td><code>{@link #Toolbar_titleTextColor com.by.bledemo:titleTextColor}</code></td><td></td></tr>
+     * <tr><td><code>{@link #Toolbar_buttonGravity com.by.ble:buttonGravity}</code></td><td></td></tr>
+     * <tr><td><code>{@link #Toolbar_collapseContentDescription com.by.ble:collapseContentDescription}</code></td><td></td></tr>
+     * <tr><td><code>{@link #Toolbar_collapseIcon com.by.ble:collapseIcon}</code></td><td></td></tr>
+     * <tr><td><code>{@link #Toolbar_contentInsetEnd com.by.ble:contentInsetEnd}</code></td><td></td></tr>
+     * <tr><td><code>{@link #Toolbar_contentInsetEndWithActions com.by.ble:contentInsetEndWithActions}</code></td><td></td></tr>
+     * <tr><td><code>{@link #Toolbar_contentInsetLeft com.by.ble:contentInsetLeft}</code></td><td></td></tr>
+     * <tr><td><code>{@link #Toolbar_contentInsetRight com.by.ble:contentInsetRight}</code></td><td></td></tr>
+     * <tr><td><code>{@link #Toolbar_contentInsetStart com.by.ble:contentInsetStart}</code></td><td></td></tr>
+     * <tr><td><code>{@link #Toolbar_contentInsetStartWithNavigation com.by.ble:contentInsetStartWithNavigation}</code></td><td></td></tr>
+     * <tr><td><code>{@link #Toolbar_logo com.by.ble:logo}</code></td><td></td></tr>
+     * <tr><td><code>{@link #Toolbar_logoDescription com.by.ble:logoDescription}</code></td><td></td></tr>
+     * <tr><td><code>{@link #Toolbar_maxButtonHeight com.by.ble:maxButtonHeight}</code></td><td></td></tr>
+     * <tr><td><code>{@link #Toolbar_navigationContentDescription com.by.ble:navigationContentDescription}</code></td><td></td></tr>
+     * <tr><td><code>{@link #Toolbar_navigationIcon com.by.ble:navigationIcon}</code></td><td></td></tr>
+     * <tr><td><code>{@link #Toolbar_popupTheme com.by.ble:popupTheme}</code></td><td></td></tr>
+     * <tr><td><code>{@link #Toolbar_subtitle com.by.ble:subtitle}</code></td><td></td></tr>
+     * <tr><td><code>{@link #Toolbar_subtitleTextAppearance com.by.ble:subtitleTextAppearance}</code></td><td></td></tr>
+     * <tr><td><code>{@link #Toolbar_subtitleTextColor com.by.ble:subtitleTextColor}</code></td><td></td></tr>
+     * <tr><td><code>{@link #Toolbar_title com.by.ble:title}</code></td><td></td></tr>
+     * <tr><td><code>{@link #Toolbar_titleMargin com.by.ble:titleMargin}</code></td><td></td></tr>
+     * <tr><td><code>{@link #Toolbar_titleMarginBottom com.by.ble:titleMarginBottom}</code></td><td></td></tr>
+     * <tr><td><code>{@link #Toolbar_titleMarginEnd com.by.ble:titleMarginEnd}</code></td><td></td></tr>
+     * <tr><td><code>{@link #Toolbar_titleMarginStart com.by.ble:titleMarginStart}</code></td><td></td></tr>
+     * <tr><td><code>{@link #Toolbar_titleMarginTop com.by.ble:titleMarginTop}</code></td><td></td></tr>
+     * <tr><td><code>{@link #Toolbar_titleMargins com.by.ble:titleMargins}</code></td><td></td></tr>
+     * <tr><td><code>{@link #Toolbar_titleTextAppearance com.by.ble:titleTextAppearance}</code></td><td></td></tr>
+     * <tr><td><code>{@link #Toolbar_titleTextColor com.by.ble:titleTextColor}</code></td><td></td></tr>
      * </table>
      * @see #Toolbar_android_gravity
      * @see #Toolbar_android_minHeight
@@ -10579,7 +10799,7 @@ public final class R {
      */
     public static final int Toolbar_android_minHeight=1;
     /**
-     * <p>This symbol is the offset where the {@link com.by.bledemo.R.attr#buttonGravity}
+     * <p>This symbol is the offset where the {@link com.by.ble.R.attr#buttonGravity}
      * attribute's value can be found in the {@link #Toolbar} array.
      *
      * <p>Must be one or more (separated by '|') of the following constant values.</p>
@@ -10592,21 +10812,21 @@ public final class R {
      * <tr><td>top</td><td>30</td><td></td></tr>
      * </table>
      *
-     * @attr name com.by.bledemo:buttonGravity
+     * @attr name com.by.ble:buttonGravity
      */
     public static final int Toolbar_buttonGravity=2;
     /**
-     * <p>This symbol is the offset where the {@link com.by.bledemo.R.attr#collapseContentDescription}
+     * <p>This symbol is the offset where the {@link com.by.ble.R.attr#collapseContentDescription}
      * attribute's value can be found in the {@link #Toolbar} array.
      *
      * <p>May be a string value, using '\\;' to escape characters such as
      * '\\n' or '\\uxxxx' for a unicode character;
      *
-     * @attr name com.by.bledemo:collapseContentDescription
+     * @attr name com.by.ble:collapseContentDescription
      */
     public static final int Toolbar_collapseContentDescription=3;
     /**
-     * <p>This symbol is the offset where the {@link com.by.bledemo.R.attr#collapseIcon}
+     * <p>This symbol is the offset where the {@link com.by.ble.R.attr#collapseIcon}
      * attribute's value can be found in the {@link #Toolbar} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -10614,11 +10834,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.by.bledemo:collapseIcon
+     * @attr name com.by.ble:collapseIcon
      */
     public static final int Toolbar_collapseIcon=4;
     /**
-     * <p>This symbol is the offset where the {@link com.by.bledemo.R.attr#contentInsetEnd}
+     * <p>This symbol is the offset where the {@link com.by.ble.R.attr#contentInsetEnd}
      * attribute's value can be found in the {@link #Toolbar} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -10627,11 +10847,11 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.by.bledemo:contentInsetEnd
+     * @attr name com.by.ble:contentInsetEnd
      */
     public static final int Toolbar_contentInsetEnd=5;
     /**
-     * <p>This symbol is the offset where the {@link com.by.bledemo.R.attr#contentInsetEndWithActions}
+     * <p>This symbol is the offset where the {@link com.by.ble.R.attr#contentInsetEndWithActions}
      * attribute's value can be found in the {@link #Toolbar} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -10640,11 +10860,11 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.by.bledemo:contentInsetEndWithActions
+     * @attr name com.by.ble:contentInsetEndWithActions
      */
     public static final int Toolbar_contentInsetEndWithActions=6;
     /**
-     * <p>This symbol is the offset where the {@link com.by.bledemo.R.attr#contentInsetLeft}
+     * <p>This symbol is the offset where the {@link com.by.ble.R.attr#contentInsetLeft}
      * attribute's value can be found in the {@link #Toolbar} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -10653,11 +10873,11 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.by.bledemo:contentInsetLeft
+     * @attr name com.by.ble:contentInsetLeft
      */
     public static final int Toolbar_contentInsetLeft=7;
     /**
-     * <p>This symbol is the offset where the {@link com.by.bledemo.R.attr#contentInsetRight}
+     * <p>This symbol is the offset where the {@link com.by.ble.R.attr#contentInsetRight}
      * attribute's value can be found in the {@link #Toolbar} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -10666,11 +10886,11 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.by.bledemo:contentInsetRight
+     * @attr name com.by.ble:contentInsetRight
      */
     public static final int Toolbar_contentInsetRight=8;
     /**
-     * <p>This symbol is the offset where the {@link com.by.bledemo.R.attr#contentInsetStart}
+     * <p>This symbol is the offset where the {@link com.by.ble.R.attr#contentInsetStart}
      * attribute's value can be found in the {@link #Toolbar} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -10679,11 +10899,11 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.by.bledemo:contentInsetStart
+     * @attr name com.by.ble:contentInsetStart
      */
     public static final int Toolbar_contentInsetStart=9;
     /**
-     * <p>This symbol is the offset where the {@link com.by.bledemo.R.attr#contentInsetStartWithNavigation}
+     * <p>This symbol is the offset where the {@link com.by.ble.R.attr#contentInsetStartWithNavigation}
      * attribute's value can be found in the {@link #Toolbar} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -10692,11 +10912,11 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.by.bledemo:contentInsetStartWithNavigation
+     * @attr name com.by.ble:contentInsetStartWithNavigation
      */
     public static final int Toolbar_contentInsetStartWithNavigation=10;
     /**
-     * <p>This symbol is the offset where the {@link com.by.bledemo.R.attr#logo}
+     * <p>This symbol is the offset where the {@link com.by.ble.R.attr#logo}
      * attribute's value can be found in the {@link #Toolbar} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -10704,21 +10924,21 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.by.bledemo:logo
+     * @attr name com.by.ble:logo
      */
     public static final int Toolbar_logo=11;
     /**
-     * <p>This symbol is the offset where the {@link com.by.bledemo.R.attr#logoDescription}
+     * <p>This symbol is the offset where the {@link com.by.ble.R.attr#logoDescription}
      * attribute's value can be found in the {@link #Toolbar} array.
      *
      * <p>May be a string value, using '\\;' to escape characters such as
      * '\\n' or '\\uxxxx' for a unicode character;
      *
-     * @attr name com.by.bledemo:logoDescription
+     * @attr name com.by.ble:logoDescription
      */
     public static final int Toolbar_logoDescription=12;
     /**
-     * <p>This symbol is the offset where the {@link com.by.bledemo.R.attr#maxButtonHeight}
+     * <p>This symbol is the offset where the {@link com.by.ble.R.attr#maxButtonHeight}
      * attribute's value can be found in the {@link #Toolbar} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -10727,21 +10947,21 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.by.bledemo:maxButtonHeight
+     * @attr name com.by.ble:maxButtonHeight
      */
     public static final int Toolbar_maxButtonHeight=13;
     /**
-     * <p>This symbol is the offset where the {@link com.by.bledemo.R.attr#navigationContentDescription}
+     * <p>This symbol is the offset where the {@link com.by.ble.R.attr#navigationContentDescription}
      * attribute's value can be found in the {@link #Toolbar} array.
      *
      * <p>May be a string value, using '\\;' to escape characters such as
      * '\\n' or '\\uxxxx' for a unicode character;
      *
-     * @attr name com.by.bledemo:navigationContentDescription
+     * @attr name com.by.ble:navigationContentDescription
      */
     public static final int Toolbar_navigationContentDescription=14;
     /**
-     * <p>This symbol is the offset where the {@link com.by.bledemo.R.attr#navigationIcon}
+     * <p>This symbol is the offset where the {@link com.by.ble.R.attr#navigationIcon}
      * attribute's value can be found in the {@link #Toolbar} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -10749,11 +10969,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.by.bledemo:navigationIcon
+     * @attr name com.by.ble:navigationIcon
      */
     public static final int Toolbar_navigationIcon=15;
     /**
-     * <p>This symbol is the offset where the {@link com.by.bledemo.R.attr#popupTheme}
+     * <p>This symbol is the offset where the {@link com.by.ble.R.attr#popupTheme}
      * attribute's value can be found in the {@link #Toolbar} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -10761,21 +10981,21 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.by.bledemo:popupTheme
+     * @attr name com.by.ble:popupTheme
      */
     public static final int Toolbar_popupTheme=16;
     /**
-     * <p>This symbol is the offset where the {@link com.by.bledemo.R.attr#subtitle}
+     * <p>This symbol is the offset where the {@link com.by.ble.R.attr#subtitle}
      * attribute's value can be found in the {@link #Toolbar} array.
      *
      * <p>May be a string value, using '\\;' to escape characters such as
      * '\\n' or '\\uxxxx' for a unicode character;
      *
-     * @attr name com.by.bledemo:subtitle
+     * @attr name com.by.ble:subtitle
      */
     public static final int Toolbar_subtitle=17;
     /**
-     * <p>This symbol is the offset where the {@link com.by.bledemo.R.attr#subtitleTextAppearance}
+     * <p>This symbol is the offset where the {@link com.by.ble.R.attr#subtitleTextAppearance}
      * attribute's value can be found in the {@link #Toolbar} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -10783,32 +11003,32 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.by.bledemo:subtitleTextAppearance
+     * @attr name com.by.ble:subtitleTextAppearance
      */
     public static final int Toolbar_subtitleTextAppearance=18;
     /**
-     * <p>This symbol is the offset where the {@link com.by.bledemo.R.attr#subtitleTextColor}
+     * <p>This symbol is the offset where the {@link com.by.ble.R.attr#subtitleTextColor}
      * attribute's value can be found in the {@link #Toolbar} array.
      *
      * <p>May be a color value, in the form of "<code>#<i>rgb</i></code>",
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
      * "<code>#<i>aarrggbb</i></code>".
      *
-     * @attr name com.by.bledemo:subtitleTextColor
+     * @attr name com.by.ble:subtitleTextColor
      */
     public static final int Toolbar_subtitleTextColor=19;
     /**
-     * <p>This symbol is the offset where the {@link com.by.bledemo.R.attr#title}
+     * <p>This symbol is the offset where the {@link com.by.ble.R.attr#title}
      * attribute's value can be found in the {@link #Toolbar} array.
      *
      * <p>May be a string value, using '\\;' to escape characters such as
      * '\\n' or '\\uxxxx' for a unicode character;
      *
-     * @attr name com.by.bledemo:title
+     * @attr name com.by.ble:title
      */
     public static final int Toolbar_title=20;
     /**
-     * <p>This symbol is the offset where the {@link com.by.bledemo.R.attr#titleMargin}
+     * <p>This symbol is the offset where the {@link com.by.ble.R.attr#titleMargin}
      * attribute's value can be found in the {@link #Toolbar} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -10817,11 +11037,11 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.by.bledemo:titleMargin
+     * @attr name com.by.ble:titleMargin
      */
     public static final int Toolbar_titleMargin=21;
     /**
-     * <p>This symbol is the offset where the {@link com.by.bledemo.R.attr#titleMarginBottom}
+     * <p>This symbol is the offset where the {@link com.by.ble.R.attr#titleMarginBottom}
      * attribute's value can be found in the {@link #Toolbar} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -10830,11 +11050,11 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.by.bledemo:titleMarginBottom
+     * @attr name com.by.ble:titleMarginBottom
      */
     public static final int Toolbar_titleMarginBottom=22;
     /**
-     * <p>This symbol is the offset where the {@link com.by.bledemo.R.attr#titleMarginEnd}
+     * <p>This symbol is the offset where the {@link com.by.ble.R.attr#titleMarginEnd}
      * attribute's value can be found in the {@link #Toolbar} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -10843,11 +11063,11 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.by.bledemo:titleMarginEnd
+     * @attr name com.by.ble:titleMarginEnd
      */
     public static final int Toolbar_titleMarginEnd=23;
     /**
-     * <p>This symbol is the offset where the {@link com.by.bledemo.R.attr#titleMarginStart}
+     * <p>This symbol is the offset where the {@link com.by.ble.R.attr#titleMarginStart}
      * attribute's value can be found in the {@link #Toolbar} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -10856,11 +11076,11 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.by.bledemo:titleMarginStart
+     * @attr name com.by.ble:titleMarginStart
      */
     public static final int Toolbar_titleMarginStart=24;
     /**
-     * <p>This symbol is the offset where the {@link com.by.bledemo.R.attr#titleMarginTop}
+     * <p>This symbol is the offset where the {@link com.by.ble.R.attr#titleMarginTop}
      * attribute's value can be found in the {@link #Toolbar} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -10869,11 +11089,11 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.by.bledemo:titleMarginTop
+     * @attr name com.by.ble:titleMarginTop
      */
     public static final int Toolbar_titleMarginTop=25;
     /**
-     * <p>This symbol is the offset where the {@link com.by.bledemo.R.attr#titleMargins}
+     * <p>This symbol is the offset where the {@link com.by.ble.R.attr#titleMargins}
      * attribute's value can be found in the {@link #Toolbar} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -10882,11 +11102,11 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.by.bledemo:titleMargins
+     * @attr name com.by.ble:titleMargins
      */
     public static final int Toolbar_titleMargins=26;
     /**
-     * <p>This symbol is the offset where the {@link com.by.bledemo.R.attr#titleTextAppearance}
+     * <p>This symbol is the offset where the {@link com.by.ble.R.attr#titleTextAppearance}
      * attribute's value can be found in the {@link #Toolbar} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -10894,18 +11114,18 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.by.bledemo:titleTextAppearance
+     * @attr name com.by.ble:titleTextAppearance
      */
     public static final int Toolbar_titleTextAppearance=27;
     /**
-     * <p>This symbol is the offset where the {@link com.by.bledemo.R.attr#titleTextColor}
+     * <p>This symbol is the offset where the {@link com.by.ble.R.attr#titleTextColor}
      * attribute's value can be found in the {@link #Toolbar} array.
      *
      * <p>May be a color value, in the form of "<code>#<i>rgb</i></code>",
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
      * "<code>#<i>aarrggbb</i></code>".
      *
-     * @attr name com.by.bledemo:titleTextColor
+     * @attr name com.by.ble:titleTextColor
      */
     public static final int Toolbar_titleTextColor=28;
     /**
@@ -10917,9 +11137,9 @@ public final class R {
      * <tr><th>Attribute</th><th>Description</th></tr>
      * <tr><td><code>{@link #View_android_theme android:theme}</code></td><td></td></tr>
      * <tr><td><code>{@link #View_android_focusable android:focusable}</code></td><td></td></tr>
-     * <tr><td><code>{@link #View_paddingEnd com.by.bledemo:paddingEnd}</code></td><td></td></tr>
-     * <tr><td><code>{@link #View_paddingStart com.by.bledemo:paddingStart}</code></td><td></td></tr>
-     * <tr><td><code>{@link #View_theme com.by.bledemo:theme}</code></td><td></td></tr>
+     * <tr><td><code>{@link #View_paddingEnd com.by.ble:paddingEnd}</code></td><td></td></tr>
+     * <tr><td><code>{@link #View_paddingStart com.by.ble:paddingStart}</code></td><td></td></tr>
+     * <tr><td><code>{@link #View_theme com.by.ble:theme}</code></td><td></td></tr>
      * </table>
      * @see #View_android_theme
      * @see #View_android_focusable
@@ -10939,8 +11159,8 @@ public final class R {
      * <colgroup align="left" />
      * <tr><th>Attribute</th><th>Description</th></tr>
      * <tr><td><code>{@link #ViewBackgroundHelper_android_background android:background}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ViewBackgroundHelper_backgroundTint com.by.bledemo:backgroundTint}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ViewBackgroundHelper_backgroundTintMode com.by.bledemo:backgroundTintMode}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ViewBackgroundHelper_backgroundTint com.by.ble:backgroundTint}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ViewBackgroundHelper_backgroundTintMode com.by.ble:backgroundTintMode}</code></td><td></td></tr>
      * </table>
      * @see #ViewBackgroundHelper_android_background
      * @see #ViewBackgroundHelper_backgroundTint
@@ -10965,18 +11185,18 @@ public final class R {
      */
     public static final int ViewBackgroundHelper_android_background=0;
     /**
-     * <p>This symbol is the offset where the {@link com.by.bledemo.R.attr#backgroundTint}
+     * <p>This symbol is the offset where the {@link com.by.ble.R.attr#backgroundTint}
      * attribute's value can be found in the {@link #ViewBackgroundHelper} array.
      *
      * <p>May be a color value, in the form of "<code>#<i>rgb</i></code>",
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
      * "<code>#<i>aarrggbb</i></code>".
      *
-     * @attr name com.by.bledemo:backgroundTint
+     * @attr name com.by.ble:backgroundTint
      */
     public static final int ViewBackgroundHelper_backgroundTint=1;
     /**
-     * <p>This symbol is the offset where the {@link com.by.bledemo.R.attr#backgroundTintMode}
+     * <p>This symbol is the offset where the {@link com.by.ble.R.attr#backgroundTintMode}
      * attribute's value can be found in the {@link #ViewBackgroundHelper} array.
      *
      * <p>Must be one of the following constant values.</p>
@@ -10992,7 +11212,7 @@ public final class R {
      * <tr><td>src_over</td><td>3</td><td></td></tr>
      * </table>
      *
-     * @attr name com.by.bledemo:backgroundTintMode
+     * @attr name com.by.ble:backgroundTintMode
      */
     public static final int ViewBackgroundHelper_backgroundTintMode=2;
     /**
@@ -11080,7 +11300,7 @@ public final class R {
      */
     public static final int View_android_theme=0;
     /**
-     * <p>This symbol is the offset where the {@link com.by.bledemo.R.attr#paddingEnd}
+     * <p>This symbol is the offset where the {@link com.by.ble.R.attr#paddingEnd}
      * attribute's value can be found in the {@link #View} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -11089,11 +11309,11 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.by.bledemo:paddingEnd
+     * @attr name com.by.ble:paddingEnd
      */
     public static final int View_paddingEnd=2;
     /**
-     * <p>This symbol is the offset where the {@link com.by.bledemo.R.attr#paddingStart}
+     * <p>This symbol is the offset where the {@link com.by.ble.R.attr#paddingStart}
      * attribute's value can be found in the {@link #View} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -11102,11 +11322,11 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.by.bledemo:paddingStart
+     * @attr name com.by.ble:paddingStart
      */
     public static final int View_paddingStart=3;
     /**
-     * <p>This symbol is the offset where the {@link com.by.bledemo.R.attr#theme}
+     * <p>This symbol is the offset where the {@link com.by.ble.R.attr#theme}
      * attribute's value can be found in the {@link #View} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -11114,7 +11334,7 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.by.bledemo:theme
+     * @attr name com.by.ble:theme
      */
     public static final int View_theme=4;
   }

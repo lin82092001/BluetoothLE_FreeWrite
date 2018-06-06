@@ -7,81 +7,134 @@
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        android:scrollbars="vertical"
-        android:layout_marginTop="50dp">
-        <LinearLayout
-            android:layout_width="180dp"
-            android:layout_height="wrap_content"
-            android:orientation="vertical">
-            <TextView
-                android:id="@+id/LAdd"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text=""
-                android:textSize="10pt"/>
-            <TextView
-                android:id="@+id/LeftServices"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text=""
-                android:textSize="10pt"/>
-            <!--<ListView-->
-                <!--android:id="@+id/LeftServices"-->
-                <!--android:layout_width="wrap_content"-->
-                <!--android:layout_height="wrap_content">-->
-            <!--</ListView>-->
-        </LinearLayout>
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="vertical">
-            <TextView
-                android:id="@+id/RAdd"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text=""
-                android:textSize="10pt"/>
-            <TextView
-                android:id="@+id/RightServices"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text=""
-                android:textSize="10pt"/>
-            <!--<ListView-->
-                <!--android:id="@+id/RightServices"-->
-                <!--android:layout_width="wrap_content"-->
-                <!--android:layout_height="wrap_content">-->
-            <!--</ListView>-->
-        </LinearLayout>
-    </LinearLayout>
+            android:orientation="horizontal">
 
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal">
-        <Button
-            android:id="@+id/Test"
-            android:text="@string/Test"
-            android:layout_width="wrap_content"
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="179dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="語言"
+                android:textAlignment="textEnd"
+                android:textStyle="bold" />
+
+            <Spinner
+                android:id="@+id/LanquageSelector"
+                android:layout_width="265dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1" />
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="167dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="敏感度"
+                android:textAlignment="textEnd"
+                android:textAllCaps="false"
+                android:textStyle="bold" />
+
+            <Spinner
+                android:id="@+id/DelayTime"
+                android:layout_width="231dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:enabled="false"
-            android:onClick="Test"/>
-        <!--<Button-->
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/Test"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:enabled="false"
+                android:onClick="Test"
+                android:text="@string/Test" />
+            <!--<Button-->
             <!--android:id="@+id/Disconnect"-->
             <!--android:text="@string/Disc"-->
             <!--android:onClick="Disconnect"-->
             <!--android:layout_width="wrap_content"-->
             <!--android:layout_height="wrap_content"-->
             <!--android:layout_marginLeft="80dp"/>-->
-        <Button
-            android:id="@+id/Close"
-            android:text="@string/Close"
-            android:onClick="Close"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="180dp"/>
+            <Button
+                android:id="@+id/Close"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="180dp"
+                android:onClick="Close"
+                android:text="@string/Close" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linearLayout"
+            android:layout_width="match_parent"
+            android:layout_height="334dp"
+            android:layout_marginTop="50dp"
+            android:orientation="horizontal"
+            android:scrollbars="vertical">
+
+            <LinearLayout
+                android:layout_width="180dp"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/LAdd"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:textSize="10pt" />
+
+                <TextView
+                    android:id="@+id/LeftServices"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:textSize="10pt" />
+                <!--<ListView-->
+                <!--android:id="@+id/LeftServices"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content">-->
+                <!--</ListView>-->
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/RAdd"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:textSize="10pt" />
+
+                <TextView
+                    android:id="@+id/RightServices"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:textSize="10pt" />
+                <!--<ListView-->
+                <!--android:id="@+id/RightServices"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content">-->
+                <!--</ListView>-->
+            </LinearLayout>
+        </LinearLayout>
     </LinearLayout>
 
 

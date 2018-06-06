@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.by.bledemo.test" >
+    package="com.by.ble.test" >
 
     <uses-sdk
         android:minSdkVersion="23"
@@ -10,8 +10,8 @@
         android:name="android.support.test.runner.AndroidJUnitRunner"
         android:functionalTest="false"
         android:handleProfiling="false"
-        android:label="Tests for com.by.bledemo"
-        android:targetPackage="com.by.bledemo" />
+        android:label="Tests for com.by.ble"
+        android:targetPackage="com.by.ble" />
 
     <application android:debuggable="true" >
         <uses-library android:name="android.test.runner" />

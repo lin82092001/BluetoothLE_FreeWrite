@@ -5,17 +5,27 @@ import android.bluetooth.BluetoothManager;
 import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
+import android.os.Message;
 import android.support.v7.app.AppCompatActivity;
-import android.util.Log;
 import android.view.View;
+import android.widget.AdapterView;
+import android.view.ViewDebug;
+import android.widget.ArrayAdapter;
 import android.widget.Button;
+import android.widget.Spinner;
 import android.widget.TextView;
 import android.widget.Toast;
-
+import android.view.View;
+import java.util.stream.*;
+import com.by.bledemo.DataProcess.CombinationWordRecognition;
+import com.by.bledemo.DataProcess.RecognitionWorker;
+import com.by.bledemo.DataProcess.VoiceData;
+import com.by.bledemo.MainActivity;
 import com.by.bledemo.R;
+import java.util.stream.IntStream;
 
 /**
- * Created by 林北94狂 on 2018/1/10.
+ * Created by zxcv1 on 2018/5/10
  */
 
 public class ConnectedActivity extends AppCompatActivity {
@@ -27,6 +37,49 @@ public class ConnectedActivity extends AppCompatActivity {
     private TextView RightServices;
     private Controller LDevice,RDevice;
     private boolean Paused,LOp,ROp;
+
+
+    //int MotherBoardEuler;
+
+    private String LeftDirect="";
+    //private String LeftDirectCode =  "00";
+    private String LeftFigCode[] = {"0", "00", "00", "00", "00"};
+    private String LeftFigCodeTotal="000000000";
+
+    private int[] LAcc = {0, 0, 0, 0};
+
+    private String RightDirect="";
+    //private String RightDirectCode =  "00";
+    private String RightFigCode[] = {"0", "00", "00", "00", "00"};
+    private String RightFigCodeTotal="000000000";
+
+    private int[] RAcc = {0, 0, 0, 0};
+
+    private int ExchangWord = -1;
+    private RecognitionWorker RecognitionWorker;
+
+    private int MatchingTime = 0;
+    private int MatchedTime = 100;
+    private String CombinationWordTemp = "";
+
+    private float MotionSetValue = 30;
+
+    private float[] LFDegReg = {00, 00, 00, 00};
+    private float[] RFDegReg = {00, 00, 00, 00};
+
+    //new Toast
+    private static Toast toast;
+    private static void NotLineToast(final Context context, final String text, final int ShowTime){
+
+        if(toast == null){
+            toast = android.widget.Toast.makeText(context, text, ShowTime);
+        }else{
+            toast.setText(text);
+            toast.setDuration(ShowTime);
+        }
+        toast.show();
+    }
+    //new Toast
 
     @Override
     protected void onCreate(Bundle saveInstanceState){
@@ -49,8 +102,77 @@ public class ConnectedActivity extends AppCompatActivity {
         RDevice=new Controller(ConnectedActivity.this,RAddress,bluetoothManager);
         LDevice.RegisterCallback(EventListener);
         RDevice.RegisterCallback(EventListener);
-    }
 
+        Spinner spinner = (Spinner)findViewById(R.id.LanquageSelector);
+        final String[] Lanquage = {"Chinese", "English"};
+        ArrayAdapter<String> LanquageList = new ArrayAdapter<>(ConnectedActivity.this, android.R.layout.simple_spinner_dropdown_item, Lanquage);
+        //int Spinner1i = LanquageList.getPosition("Chinese");
+        spinner.setAdapter(LanquageList);
+        //spinner.setSelection(Spinner1i, true);
+        spinner.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
+            @Override
+            public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
+                RecognitionWorker = new RecognitionWorker(Lanquage[position]);
+                RecognitionWorker.StaticVocabulary();
+                RecognitionWorker.MotionVocabulary();
+                RecognitionWorker.CombinationVocabulary();
+            }
+
+            @Override
+            public void onNothingSelected(AdapterView<?> parent) {
+                RecognitionWorker = new RecognitionWorker(Lanquage[0]);
+                RecognitionWorker.StaticVocabulary();
+                RecognitionWorker.MotionVocabulary();
+                RecognitionWorker.CombinationVocabulary();
+            }
+        });
+
+        Spinner spinner2 = (Spinner)findViewById(R.id.DelayTime);
+        final String[] DelayTime = {"40", "60", "80", "100", "120", "140", "160"};
+        ArrayAdapter<String> DelayTimeList = new ArrayAdapter<String>(ConnectedActivity.this, android.R.layout.simple_spinner_dropdown_item, DelayTime);
+        int Spinner2i = DelayTimeList.getPosition("100");
+        spinner2.setAdapter(DelayTimeList);
+        spinner2.setSelection(Spinner2i, true);
+        spinner2.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
+            @Override
+            public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
+                MatchedTime = Integer.valueOf(DelayTime[position]);
+            }
+
+            @Override
+            public void onNothingSelected(AdapterView<?> parent) {
+                MatchedTime = 100;
+            }
+        });
+/*
+        Button SetButton00 = findViewById(R.id.Set00);
+        SetButton00.setOnClickListener(new View.OnClickListener(){
+            public void onClick(View v){
+
+            }
+        });
+
+        Button SetButton01 = findViewById(R.id.Set01);
+        SetButton01.setOnClickListener(new View.OnClickListener(){
+            public void onClick(View v){
+
+            }
+        });
+
+        Button SetButton10 = findViewById(R.id.Set10);
+        SetButton10.setOnClickListener(new View.OnClickListener(){
+            public void onClick(View v){
+
+            }
+        });
+
+        Button SetButton11 = findViewById(R.id.Set11);
+        SetButton11.setOnClickListener(new View.OnClickListener(){
+            public void onClick(View v){
+
+            }
+        });*/
+    }
     public void Test(View view) //Start receiving data
     {
         if(LOp && ROp)
@@ -74,8 +196,8 @@ public class ConnectedActivity extends AppCompatActivity {
     {
         if(Paused)
         {
-            //LDevice.SetControllerAddress(LAddress);
-            //RDevice.SetControllerAddress(RAddress);
+            LDevice.SetControllerAddress(LAddress);
+            RDevice.SetControllerAddress(RAddress);
             Paused = false;
         }
         super.onResume();
@@ -105,100 +227,284 @@ public class ConnectedActivity extends AppCompatActivity {
 
     private Controller.ControllerCallback EventListener=new Controller.ControllerCallback() {   //資料回傳函數
         @Override
-        public void ControllerSignCallback(int Status, int CMD, float Roll, float Pitch, float Yaw,float AccX, float AccY, float AccZ,Controller.FingersStatus Figs,String Address)
+        public void ControllerSignCallback(int Status, int CMD, float Roll, float Pitch, float Yaw,float AccX, float AccY, float AccZ, Controller.FingersStatus Figs, String Address)
         {
-            if(LAddress==Address)
+            if(LAddress == Address)
             {
-                final String PosDataValue=String.format("(%d,0x%02x)\nRoll:%1.4f,\nPitch:%1.4f,\nYaw:%1.4f", Status, CMD, Roll, Pitch,Yaw);
-                final String RecDataValue=String.format("AccX:%f,\nAccY:%f,\nAccZ:%f",AccX,AccY,AccZ);
-                int i,j;
-                int[] De0={0,0,0,0,0},De1={0,0,0,0,0};
-                String Data = "";
-                String Data2 = "";
-                for(i = 0; i < 5; i++)
+                //x y z Rotat Value
+                final String LeftPosDataValue = String.format("(%d,0x%02x)\nRoll:%1.0f,\nPitch:%1.0f,\nYaw:%1.0f\n", Status, CMD, Roll, Pitch, Yaw);
+                //acc
+                final String RecDataValue = String.format("AccX:%f,\nAccY:%f,\nAccZ:%f\n",AccX,AccY,AccZ);
+
+                //面相
+                //PitchProcess
+                if(-25 < Pitch && Pitch < 35)
                 {
-                    if(Figs.Enable[i][0])
+                    if(-45 < Roll && Roll < 45)
                     {
-                        if(Data.length()>0)
+                        LeftDirect = "Downward";
+
+                    }else if(-135 < Roll && Roll < -45)
+                    {
+                        LeftDirect = "Outward";
+
+                    }else if(45 < Roll && Roll < 135)
+                    {
+                        LeftDirect = "Inward";
+
+                    } else if(135 < Roll || Roll < -135)
+                    {
+                        LeftDirect = "Upward";
+
+                    }
+                    //RollProcess
+                }else if(Pitch < -45)
+                {
+                    LeftDirect = "DontCare";
+
+                }else if(50 < Pitch)
+                {
+                    LeftDirect = "Raise";
+
+                }
+                //面向
+
+                //FigCode
+                for(int i = 0; i < 5; i++)
+                {
+                    if(Figs.Enable[i][0]){
+                        if(i == 4)
                         {
-                            Data = String.format("%s\nFig[%d]:%3d", Data, i, Figs.Degree[i][0]);
-                            De0[i]=Figs.Degree[i][0];
+                            if (Figs.Degree[i][0] < 30)
+                            {
+                                LeftFigCode[i] = "0";
+                            }
+                            else
+                            {
+                                LeftFigCode[i] = "1";
+                            }
                         }
                         else
                         {
-                            Data = String.format("Fig[%d]:%3d", i, Figs.Degree[i][0]);
-                            De0[i]=Figs.Degree[i][0];
-                        }
-                        if(Figs.Enable[i][1])
-                        {
-                            Data = String.format("%s\nFig[%d-1]:%3d\n", Data, i, Figs.Degree[i][1]);
-                            De1[i]=Figs.Degree[i][1];
+                            if(Figs.Degree[i][0] <= 35)
+                            {
+                                LeftFigCode[i] = "00";
+                            }
+                            else if(36 <= Figs.Degree[i][0] && Figs.Degree[i][0] <= 60)
+                            {
+                                LeftFigCode[i] = "01";
+                            }
+                            else if(61 <= Figs.Degree[i][0] && Figs.Degree[i][0] <= 85)
+                            {
+                                LeftFigCode[i] = "10";
+                            }
+                            else
+                            {
+                                LeftFigCode[i] = "11";
+                            }
                         }
                     }
                 }
-                for(j=0;j<5;j++)
-                {
-                    if(Data2.length()>0)
-                        Data2=String.format("\n%sDiff[%d]:%3d\n",Data2,j,De0[j]-De1[j]);
-                    else
-                        Data2=String.format("\nDiff[%d]:%3d\n",j,De0[j]-De1[j]);
+                LeftFigCodeTotal = LeftFigCode[4];
+                for(int i = 3; i >= 0; i--){
+                    LeftFigCodeTotal = LeftFigCodeTotal + LeftFigCode[i];
                 }
-                final String FigsDateValue = Data;
-                final String FigsDiff = Data2;
+                //FigCode
+
+                //面相
+                final String LeftDirection = String.format("\n\"%s\"\n", LeftDirect);
+                //
+
+                //加速度
+                LAcc[0] = (int)AccX;
+                LAcc[1] = (int)AccY;
+                LAcc[2] = (int)AccZ;
+                LAcc[3] = LAcc[0] + LAcc[1] + LAcc[2];
+                //加速度
 
                 runOnUiThread(new Runnable() {
                     @Override
-                    public void run() {
-                        LeftServices.setText(FigsDateValue+FigsDiff);
+                    public void run()
+                    {
+                        LeftServices.setText(LeftFigCodeTotal + LeftDirection  + LeftPosDataValue);
                     }
                 });
             }
-            if(RAddress==Address)
+
+            //Right
+            if(RAddress == Address)
             {
                 final String PosDataValue=String.format("(%d,0x%02x)\nRoll:%1.4f,\nPitch:%1.4f,\nYaw:%1.4f", Status, CMD, Roll, Pitch,Yaw);
-                final String RecDataValue=String.format("AccX:%f,\nAccY:%f,\nAccZ:%f",AccX,AccY,AccZ);
-                int i,j;
-                int[] De0={0,0,0,0,0},De1={0,0,0,0,0};
-                String Data = "";
-                String Data2 = "";
-                for(i = 0; i < 5; i++)
+                final String RecDataValue = String.format("AccX:%f,\nAccY:%f,\nAccZ:%f",AccX,AccY,AccZ);
+
+                //面向
+                //PitchProcess
+                if(-45 < Pitch && Pitch < 45)
                 {
-                    if(Figs.Enable[i][0])
+                    //PitchDirect_Flag = 0;
+                    //PitchDirect = "OnChest";
+                    //RollProcess
+                    if(-45 < Roll && Roll < 45)
                     {
-                        if(Data.length()>0)
+                        RightDirect = "Downward";
+
+                    }else if(-135 < Roll && Roll < -45)
+                    {
+                        RightDirect = "Inward";
+
+                    }else if(45 < Roll && Roll < 135)
+                    {
+                        RightDirect = "Outward";
+
+                    } else if(135 < Roll || Roll < -135)
+                    {
+                        RightDirect = "Upward";
+
+                    }
+                    //RollProcess
+                }else if(Pitch < -45)
+                {
+                    RightDirect = "DontCare";
+
+                }else if(45 < Pitch)
+                {
+                    RightDirect = "Raise";
+
+                }
+                //面向
+
+                //FigCode
+                for(int i = 0; i < 5; i++)
+                {
+                    if(Figs.Enable[i][0]){
+                        if(i == 0)
                         {
-                            Data = String.format("%s\nFig[%d]:%3d", Data, i, Figs.Degree[i][0]);
-                            De0[i]=Figs.Degree[i][0];
+                            if (Figs.Degree[i][0] < 30)
+                            {
+                                RightFigCode[i] = "0";
+                            }
+                            else
+                            {
+                                RightFigCode[i] = "1";
+                            }
                         }
                         else
                         {
-                            Data = String.format("Fig[%d]:%3d", i, Figs.Degree[i][0]);
-                            De0[i]=Figs.Degree[i][0];
-                        }
-                        if(Figs.Enable[i][1])
-                        {
-                            Data = String.format("%s\nFig[%d-1]:%3d\n", Data, i, Figs.Degree[i][1]);
-                            De1[i]=Figs.Degree[i][1];
+                            if(Figs.Degree[i][0] <= 35)
+                            {
+                                RightFigCode[i] = "00";
+                            }
+                            else if(36 <= Figs.Degree[i][0] && Figs.Degree[i][0] <= 60)
+                            {
+                                RightFigCode[i] = "01";
+                            }
+                            else if(61 <= Figs.Degree[i][0] && Figs.Degree[i][0] <= 85)
+                            {
+                                RightFigCode[i] = "10";
+                            }
+                            else
+                            {
+                                RightFigCode[i] = "11";
+                            }
                         }
                     }
                 }
-                for(j=0;j<5;j++)
-                {
-                    if(Data2.length()>0)
-                        Data2=String.format("\n%sDiff[%d]:%3d\n",Data2,j,De0[j]-De1[j]);
-                    else
-                        Data2=String.format("\nDiff[%d]:%3d\n",j,De0[j]-De1[j]);
+                RightFigCodeTotal = RightFigCode[0];
+                for(int i = 1; i < 5; i++){
+                    RightFigCodeTotal = RightFigCodeTotal + RightFigCode[i];
                 }
-                final String FigsDateValue = Data;
-                final String FigsDiff = Data2;
+                //FigCode
+
+                //面相
+                final String RightDirection = String.format("\n\"%s\"\n", RightDirect);
+
+                //加速度
+                RAcc[0] = (int)AccX;
+                RAcc[1] = (int)AccY;
+                RAcc[2] = (int)AccZ;
+                RAcc[3] = RAcc[0] + RAcc[1] + RAcc[2];
+                //加速度
 
                 runOnUiThread(new Runnable() {
                     @Override
-                    public void run() {
-                        RightServices.setText(FigsDateValue+FigsDiff);
+                    public void run()
+                    {
+                        RightServices.setText(RightFigCodeTotal + RightDirection + PosDataValue);
+
                     }
                 });
             }
+
+            //test
+            //RightDirect = "DontCare";
+            //RightFigCodeTotal = "000000000";
+            //LeftFigCodeTotal = "000000000";
+            //LeftDirect = "DontCare";
+            //test
+
+            //NotLineToast(ConnectedActivity.this, String.valueOf(RecognitionWorker.handRecognitions.size()), 1);
+            //Recognize
+            if(Math.abs(LAcc[3] + RAcc[3]) <= MotionSetValue)
+            {
+                for (int Loop1 = 0; Loop1 < RecognitionWorker.handRecognitions.size(); Loop1++) {
+                    //NotLineToast(ConnectedActivity.this, "1", 1);
+
+                    //Match
+                    if(RecognitionWorker.handRecognitions.get(Loop1).MultiMatcher(LeftDirect, RightDirect, LeftFigCodeTotal, RightFigCodeTotal) == true)
+                    {
+                        //Match times process
+                        MatchingTime = MatchingTime + 1;
+                        if(ExchangWord == -1)
+                        {
+                            ExchangWord = Loop1;
+                        }else if(ExchangWord != Loop1)
+                        {
+                            MatchingTime = 0;
+                            ExchangWord = -1;
+                        }
+
+                        if(MatchingTime >= MatchedTime)//第一次配對成功
+                        {
+                            MatchingTime = 0;
+
+                            if(CombinationWordTemp.length() == 0)//第一次配對紀錄
+                            {
+                                CombinationWordTemp = RecognitionWorker.handRecognitions.get(Loop1).ChineseWord.toString();
+                                final String OutputWord = CombinationWordTemp;
+                                NotLineToast(ConnectedActivity.this, OutputWord, 1);
+                                RecognitionWorker.VoiceData.Speaker(ConnectedActivity.this, RecognitionWorker.handRecognitions.get(Loop1).mp3ID);
+
+                            }else if(RecognitionWorker.handRecognitions.get(Loop1).ChineseWord.toString() == CombinationWordTemp)//兩次配對相同，靜態手勢
+                            {
+                                final String OutputWord = RecognitionWorker.handRecognitions.get(Loop1).ChineseWord.toString();
+                                NotLineToast(ConnectedActivity.this, OutputWord, 1);
+                                RecognitionWorker.VoiceData.Speaker(ConnectedActivity.this, RecognitionWorker.handRecognitions.get(Loop1).mp3ID);
+                                CombinationWordTemp = "";
+
+                            }else//不是第一次配對，且兩次配對不同，可能為組合字
+                            {
+                                for(int Loop2 = 0; Loop2 < RecognitionWorker.combinationWordRecognitions.size(); Loop2++)//查找組合字庫
+                                {
+                                    if(RecognitionWorker.combinationWordRecognitions.get(Loop2).MultiMatcher(CombinationWordTemp, RecognitionWorker.handRecognitions.get(Loop1).ChineseWord.toString()) == true)
+                                    {
+                                        final String OutputWord = RecognitionWorker.combinationWordRecognitions.get(Loop2).ChineseWord.toString();
+                                        NotLineToast(ConnectedActivity.this, OutputWord, 1);
+                                        RecognitionWorker.VoiceData.Speaker(ConnectedActivity.this, RecognitionWorker.combinationWordRecognitions.get(Loop2).mp3ID);
+                                    }
+                                    break;
+                                }
+                                CombinationWordTemp = "";
+                            }
+                        }
+                        break;
+                    }
+                }
+            }
+            else
+            {
+
+            }
+            //Recognize
         }
 
         @Override

@@ -21,7 +21,7 @@ public class Controller {
     public interface ControllerCallback
     {
         void ControllerStatusCallback(int Status,int CMD,float Roll,float Pitch,float Yaw,float DisX,float DisY,float DisZ,String Address);
-        void ControllerOtherCallback(float SpeedX,float SpeedY,float SpeedZ,float AccX,float AccY,float AccZ,String Address);
+        void ControllerOtherCallback(float SpeedX, float SpeedY, float SpeedZ, float AccX, float AccY, float AccZ, String Address);
         void ControllerFingersCallback(FingersStatus Figs,String Address);
         void ControllerKeysCallback(int Keys,String Address);
         void ControllerSignCallback(int Status,int CMD,
@@ -93,7 +93,11 @@ public class Controller {
     public class FingersStatus
     {
         public boolean[][] Enable = {{false,false},{false,false},{false,false},{false,false},{false,false}};
-        public int[][] Degree = {{0,0},{0,0},{0,0},{0,0},{0,0}};
+        public int[][] Degree = {   {0,0},
+                                    {0,0},
+                                    {0,0},
+                                    {0,0},
+                                    {0,0}};
     }
     public enum Status  //Check device status
     {
@@ -127,6 +131,7 @@ public class Controller {
         LocalKeys = 0x00;
         Opened = true;
         FigStatus=new FingersStatus();
+        sensorData=new SensorData(0,0,0.0f,0.0f,0.0f,0.0f,0.0f,0.0f,FigStatus,"");
         FingersService=new BaseService("Fingers",Services.ServicesUUID[Services.SERV_Fig_UUID]);
         PosService=new BaseService("Position",Services.ServicesUUID[Services.SERV_Pos_UUID]);
         RecService=new BaseService("Rec",Services.ServicesUUID[Services.SERV_Rec_UUID]);
@@ -332,7 +337,7 @@ public class Controller {
         @Override
         public void GotNotification(String Name, UUID CharUUID, byte[] data)
         {
-            sensorData=new SensorData(0,0,0.0f,0.0f,0.0f,0.0f,0.0f,0.0f,FigStatus,"");
+            //sensorData=new SensorData(0,0,0.0f,0.0f,0.0f,0.0f,0.0f,0.0f,FigStatus,"");
             if(Name.equals(PosService.Name()))
             {
                 final float De2Ra = (float)(Math.PI / 180.0);

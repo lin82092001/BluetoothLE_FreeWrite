@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">FreeTalk</string>
+    <string name="app_name">模擬手指PALY</string>
     <string name="scan">Scan</string>
     <string name="stop">Stop</string>
     <string name="clear">Clear</string>
@@ -16,4 +16,6 @@
     <string name="Left">Left</string>
     <string name="Right">Right</string>
     <string name="NOGPS">The app needs to be turned on GPS location.</string>
+    <string name="LanquageSelector">Choose your language.</string>
+    <string name="DelayTime">DelayTime</string>
 </resources>
