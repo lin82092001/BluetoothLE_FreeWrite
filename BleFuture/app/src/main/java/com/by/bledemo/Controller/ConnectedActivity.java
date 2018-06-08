@@ -112,6 +112,7 @@ public class ConnectedActivity extends AppCompatActivity {
         spinner.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
             @Override
             public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
+                RecognitionWorker = null;
                 RecognitionWorker = new RecognitionWorker(Lanquage[position]);
                 RecognitionWorker.StaticVocabulary();
                 RecognitionWorker.MotionVocabulary();
@@ -120,6 +121,7 @@ public class ConnectedActivity extends AppCompatActivity {
 
             @Override
             public void onNothingSelected(AdapterView<?> parent) {
+                RecognitionWorker = null;
                 RecognitionWorker = new RecognitionWorker(Lanquage[0]);
                 RecognitionWorker.StaticVocabulary();
                 RecognitionWorker.MotionVocabulary();
@@ -232,9 +234,9 @@ public class ConnectedActivity extends AppCompatActivity {
             if(LAddress == Address)
             {
                 //x y z Rotat Value
-                final String LeftPosDataValue = String.format("(%d,0x%02x)\nRoll:%1.0f,\nPitch:%1.0f,\nYaw:%1.0f\n", Status, CMD, Roll, Pitch, Yaw);
+                final String LeftPosDataValue = String.format("\nRoll:%1.0f,\nPitch:%1.0f,\nYaw:%1.0f\n", Roll, Pitch, Yaw);
                 //acc
-                final String RecDataValue = String.format("AccX:%f,\nAccY:%f,\nAccZ:%f\n",AccX,AccY,AccZ);
+                //final String RecDataValue = String.format("AccX:%f,\nAccY:%f,\nAccZ:%f\n",AccX,AccY,AccZ);
 
                 //面相
                 //PitchProcess
@@ -316,17 +318,18 @@ public class ConnectedActivity extends AppCompatActivity {
                 //
 
                 //加速度
-                LAcc[0] = (int)AccX;
-                LAcc[1] = (int)AccY;
-                LAcc[2] = (int)AccZ;
+                LAcc[0] = (int)AccX*10;
+                LAcc[1] = (int)AccY*10;
+                LAcc[2] = (int)AccZ*10;
                 LAcc[3] = LAcc[0] + LAcc[1] + LAcc[2];
+                final String Acc = String.format("AccX:%d\nAccY:%d\nAccZ:%d\n",LAcc[0],LAcc[1],LAcc[2]);
                 //加速度
 
                 runOnUiThread(new Runnable() {
                     @Override
                     public void run()
                     {
-                        LeftServices.setText(LeftFigCodeTotal + LeftDirection  + LeftPosDataValue);
+                        LeftServices.setText(LeftFigCodeTotal + LeftDirection + Acc + LeftPosDataValue);
                     }
                 });
             }
@@ -334,8 +337,8 @@ public class ConnectedActivity extends AppCompatActivity {
             //Right
             if(RAddress == Address)
             {
-                final String PosDataValue=String.format("(%d,0x%02x)\nRoll:%1.4f,\nPitch:%1.4f,\nYaw:%1.4f", Status, CMD, Roll, Pitch,Yaw);
-                final String RecDataValue = String.format("AccX:%f,\nAccY:%f,\nAccZ:%f",AccX,AccY,AccZ);
+                final String PosDataValue=String.format("\nRoll:%1.4f,\nPitch:%1.4f,\nYaw:%1.4f", Roll, Pitch,Yaw);
+                //final String RecDataValue = String.format("AccX:%f,\nAccY:%f,\nAccZ:%f",AccX,AccY,AccZ);
 
                 //面向
                 //PitchProcess
@@ -419,17 +422,18 @@ public class ConnectedActivity extends AppCompatActivity {
                 final String RightDirection = String.format("\n\"%s\"\n", RightDirect);
 
                 //加速度
-                RAcc[0] = (int)AccX;
-                RAcc[1] = (int)AccY;
-                RAcc[2] = (int)AccZ;
+                RAcc[0] = (int)AccX*10;
+                RAcc[1] = (int)AccY*10;
+                RAcc[2] = (int)AccZ*10;
                 RAcc[3] = RAcc[0] + RAcc[1] + RAcc[2];
+                final String Acc = String.format("AccX:%d\nAccY:%d\nAccZ:%d\n",RAcc[0],RAcc[1],RAcc[2]);
                 //加速度
 
                 runOnUiThread(new Runnable() {
                     @Override
                     public void run()
                     {
-                        RightServices.setText(RightFigCodeTotal + RightDirection + PosDataValue);
+                        RightServices.setText(RightFigCodeTotal + RightDirection + Acc + PosDataValue);
 
                     }
                 });
@@ -444,65 +448,60 @@ public class ConnectedActivity extends AppCompatActivity {
 
             //NotLineToast(ConnectedActivity.this, String.valueOf(RecognitionWorker.handRecognitions.size()), 1);
             //Recognize
-            if(Math.abs(LAcc[3] + RAcc[3]) <= MotionSetValue)
+            for (int Loop1 = 0; Loop1 < RecognitionWorker.handRecognitions.size(); Loop1++)
             {
-                for (int Loop1 = 0; Loop1 < RecognitionWorker.handRecognitions.size(); Loop1++) {
-                    //NotLineToast(ConnectedActivity.this, "1", 1);
+                //NotLineToast(ConnectedActivity.this, "1", 1);
 
-                    //Match
-                    if(RecognitionWorker.handRecognitions.get(Loop1).MultiMatcher(LeftDirect, RightDirect, LeftFigCodeTotal, RightFigCodeTotal) == true)
+                //Match
+                if(RecognitionWorker.handRecognitions.get(Loop1).MultiMatcher(LeftDirect, RightDirect, LeftFigCodeTotal, RightFigCodeTotal) == true)
+                {
+                    //Match times process
+
+                    MatchingTime = MatchingTime + 1;
+                    /*if(ExchangWord == -1)
                     {
-                        //Match times process
-                        MatchingTime = MatchingTime + 1;
-                        if(ExchangWord == -1)
+                        ExchangWord = Loop1;
+                    }else if(ExchangWord != Loop1)
+                    {
+                        MatchingTime = 0;
+                        ExchangWord = -1;
+                    }*/
+
+                    if(MatchingTime >= MatchedTime)//第一次配對成功
+                    {
+                        MatchingTime = 0;
+
+                        if(CombinationWordTemp.length() == 0)//第一次配對紀錄
                         {
-                            ExchangWord = Loop1;
-                        }else if(ExchangWord != Loop1)
+                            CombinationWordTemp = RecognitionWorker.handRecognitions.get(Loop1).ChineseWord.toString();
+                            final String OutputWord = CombinationWordTemp;
+                            NotLineToast(ConnectedActivity.this, OutputWord, 1);
+                            RecognitionWorker.VoiceData.Speaker(ConnectedActivity.this, R.raw.prompt);
+
+                        }else if(RecognitionWorker.handRecognitions.get(Loop1).ChineseWord.toString() == CombinationWordTemp)//兩次配對相同，靜態手勢
                         {
-                            MatchingTime = 0;
-                            ExchangWord = -1;
-                        }
+                            final String OutputWord = RecognitionWorker.handRecognitions.get(Loop1).ChineseWord.toString();
+                            NotLineToast(ConnectedActivity.this, OutputWord, 1);
+                            RecognitionWorker.VoiceData.Speaker(ConnectedActivity.this, RecognitionWorker.handRecognitions.get(Loop1).mp3ID);
+                            CombinationWordTemp = "";
 
-                        if(MatchingTime >= MatchedTime)//第一次配對成功
+                        }else//不是第一次配對，且兩次配對不同，可能為組合字
                         {
-                            MatchingTime = 0;
-
-                            if(CombinationWordTemp.length() == 0)//第一次配對紀錄
+                            for(int Loop2 = 0; Loop2 < RecognitionWorker.combinationWordRecognitions.size(); Loop2++)//查找組合字庫
                             {
-                                CombinationWordTemp = RecognitionWorker.handRecognitions.get(Loop1).ChineseWord.toString();
-                                final String OutputWord = CombinationWordTemp;
-                                NotLineToast(ConnectedActivity.this, OutputWord, 1);
-                                RecognitionWorker.VoiceData.Speaker(ConnectedActivity.this, RecognitionWorker.handRecognitions.get(Loop1).mp3ID);
-
-                            }else if(RecognitionWorker.handRecognitions.get(Loop1).ChineseWord.toString() == CombinationWordTemp)//兩次配對相同，靜態手勢
-                            {
-                                final String OutputWord = RecognitionWorker.handRecognitions.get(Loop1).ChineseWord.toString();
-                                NotLineToast(ConnectedActivity.this, OutputWord, 1);
-                                RecognitionWorker.VoiceData.Speaker(ConnectedActivity.this, RecognitionWorker.handRecognitions.get(Loop1).mp3ID);
-                                CombinationWordTemp = "";
-
-                            }else//不是第一次配對，且兩次配對不同，可能為組合字
-                            {
-                                for(int Loop2 = 0; Loop2 < RecognitionWorker.combinationWordRecognitions.size(); Loop2++)//查找組合字庫
+                                if(RecognitionWorker.combinationWordRecognitions.get(Loop2).MultiMatcher(CombinationWordTemp, RecognitionWorker.handRecognitions.get(Loop1).ChineseWord.toString()) == true)
                                 {
-                                    if(RecognitionWorker.combinationWordRecognitions.get(Loop2).MultiMatcher(CombinationWordTemp, RecognitionWorker.handRecognitions.get(Loop1).ChineseWord.toString()) == true)
-                                    {
-                                        final String OutputWord = RecognitionWorker.combinationWordRecognitions.get(Loop2).ChineseWord.toString();
-                                        NotLineToast(ConnectedActivity.this, OutputWord, 1);
-                                        RecognitionWorker.VoiceData.Speaker(ConnectedActivity.this, RecognitionWorker.combinationWordRecognitions.get(Loop2).mp3ID);
-                                    }
-                                    break;
+                                    final String OutputWord = RecognitionWorker.combinationWordRecognitions.get(Loop2).ChineseWord.toString();
+                                    NotLineToast(ConnectedActivity.this, OutputWord, 1);
+                                    RecognitionWorker.VoiceData.Speaker(ConnectedActivity.this, RecognitionWorker.combinationWordRecognitions.get(Loop2).mp3ID);
                                 }
-                                CombinationWordTemp = "";
+                                break;
                             }
+                            CombinationWordTemp = "";
                         }
-                        break;
                     }
+                    break;
                 }
-            }
-            else
-            {
-
             }
             //Recognize
         }

@@ -35,6 +35,15 @@ public class VoiceData {
     public int ninety;
     public int hundred;
     public int thousand;
+    public int male;
+    public int female;
+    public int brother;
+    public int sister;
+    public int money;
+    public int thanks;
+    public int taipei;
+    public int technology;
+    public int university;
 
     public int hello;
     public int good;

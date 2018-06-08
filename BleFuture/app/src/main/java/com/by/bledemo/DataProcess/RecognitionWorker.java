@@ -48,6 +48,16 @@ public class RecognitionWorker {
     private int[] ninety = {R.raw.ninety, R.raw.ninetyen};
     private int[] hundred = {R.raw.hundred, R.raw.hundreden};
     private int[] thousand = {R.raw.thousand, R.raw.thousanden};
+    private int[] male = {R.raw.male, R.raw.maleen};
+    private int[] female = {R.raw.female, R.raw.femaleen};
+    private int[] brother = {R.raw.brother, R.raw.brotheren};
+    private int[] sister = {R.raw.sister, R.raw.sisteren};
+    private int[] money = {R.raw.money, R.raw.moneyen};
+    private int[] toilet = {R.raw.toilet, R.raw.toileten};
+    private int[] thanks = {R.raw.thanks,R.raw.thanksen};
+    private int[] taipei = {R.raw.taipei,R.raw.taipeien};
+    private int[] technology = {R.raw.technology,R.raw.technologyen};
+    private int[] university = {R.raw.university,R.raw.universityen};
 
     private int[] you = {R.raw.you, R.raw.youen};
     private int[] hello = {R.raw.hello, R.raw.helloen};
@@ -81,6 +91,16 @@ public class RecognitionWorker {
         VoiceData.ninety = ninety[LanquageSelector];
         VoiceData.hundred = hundred[LanquageSelector];
         VoiceData.thousand = thousand[LanquageSelector];
+        VoiceData.male = male[LanquageSelector];
+        VoiceData.female = female[LanquageSelector];
+        VoiceData.brother = brother[LanquageSelector];
+        VoiceData.sister = sister[LanquageSelector];
+        VoiceData.money = money[LanquageSelector];
+        VoiceData.toilet = toilet[LanquageSelector];
+        VoiceData.thanks = thanks[LanquageSelector];
+        VoiceData.taipei = taipei[LanquageSelector];
+        VoiceData.technology = technology[LanquageSelector];
+        VoiceData.university = university[LanquageSelector];
 
         VoiceData.you = you[LanquageSelector];
         VoiceData.hello = hello[LanquageSelector];
@@ -91,39 +111,39 @@ public class RecognitionWorker {
         //參考
         //handRecognitions.add(new HandRecognition("中文", "英文", mp3id, 左手面相, 右手面向, "左手手勢", "右手手勢"));
 
-        handRecognitions.add(new HandRecognition("你", "you", VoiceData.you, Inward, DontCare, BasicGesture.you, BasicGesture.DontCare));
-        handRecognitions.add(new HandRecognition("_你好", "hello", R.raw.nulll, Raise, DontCare, BasicGesture.hello, BasicGesture.DontCare));
-        //test
-        //handRecognitions.add(new HandRecognition("你", "you", VoiceData.you, DontCare, Inward, BasicGesture.DontCare, BasicGesture.you));
-        //handRecognitions.add(new HandRecognition("_你好", "hello", R.raw.nulll, DontCare, Raise, BasicGesture.DontCare, BasicGesture.hello));
-        //test
         //左手
         handRecognitions.add(new HandRecognition("零", "zero", VoiceData.zero, Raise, DontCare, BasicGesture.zero, BasicGesture.DontCare));
         handRecognitions.add(new HandRecognition("一", "one", VoiceData.one, Raise, DontCare, BasicGesture.one, BasicGesture.DontCare));
         handRecognitions.add(new HandRecognition("二", "two", VoiceData.two, Raise, DontCare, BasicGesture.two, BasicGesture.DontCare));
         handRecognitions.add(new HandRecognition("三", "three", VoiceData.three, Raise, DontCare, BasicGesture.three, BasicGesture.DontCare));
         handRecognitions.add(new HandRecognition("四", "four", VoiceData.four, Raise, DontCare, BasicGesture.four, BasicGesture.DontCare));
-        handRecognitions.add(new HandRecognition("五", "five", VoiceData.five, Raise, DontCare, BasicGesture.five_A, BasicGesture.DontCare));
-        handRecognitions.add(new HandRecognition("五", "five", VoiceData.five, Raise, DontCare, BasicGesture.five_B, BasicGesture.DontCare));
+        handRecognitions.add(new HandRecognition("五", "five", VoiceData.five, Raise, DontCare, BasicGesture.five, BasicGesture.DontCare));
         handRecognitions.add(new HandRecognition("六", "six", VoiceData.six, Inward, DontCare, BasicGesture.six, BasicGesture.DontCare));
         handRecognitions.add(new HandRecognition("七", "seven", VoiceData.seven, Inward, DontCare, BasicGesture.seven, BasicGesture.DontCare));
         handRecognitions.add(new HandRecognition("八", "eight", VoiceData.eight, Inward, DontCare, BasicGesture.eight, BasicGesture.DontCare));
         handRecognitions.add(new HandRecognition("九", "nine", VoiceData.nine, Inward, DontCare, BasicGesture.nine, BasicGesture.DontCare));
-        handRecognitions.add(new HandRecognition("十", "ten", VoiceData.ten, Inward, DontCare, BasicGesture.ten_N, BasicGesture.DontCare));
-        handRecognitions.add(new HandRecognition("十", "ten", VoiceData.ten, Raise, DontCare, BasicGesture.ten_S, BasicGesture.DontCare));
-        handRecognitions.add(new HandRecognition("二十", "twenty", VoiceData.twenty, Raise, DontCare, BasicGesture.twenty, BasicGesture.DontCare));
+        handRecognitions.add(new HandRecognition("十", "ten", VoiceData.ten, Inward, DontCare, BasicGesture.ten, BasicGesture.DontCare));
+        /*handRecognitions.add(new HandRecognition("二十", "twenty", VoiceData.twenty, Raise, DontCare, BasicGesture.twenty, BasicGesture.DontCare));
         handRecognitions.add(new HandRecognition("三十", "thirty", VoiceData.thirty, Raise, DontCare, BasicGesture.thirty, BasicGesture.DontCare));
         handRecognitions.add(new HandRecognition("四十", "forty", VoiceData.forty, Raise, DontCare, BasicGesture.forty, BasicGesture.DontCare));
         handRecognitions.add(new HandRecognition("五十", "fifty", VoiceData.fifty, Raise, DontCare, BasicGesture.fifty, BasicGesture.DontCare));
         handRecognitions.add(new HandRecognition("六十", "sixty", VoiceData.sixty, Raise, DontCare, BasicGesture.sixty, BasicGesture.DontCare));
         handRecognitions.add(new HandRecognition("七十", "seventy", VoiceData.seventy, Raise, DontCare, BasicGesture.seventy, BasicGesture.DontCare));
         handRecognitions.add(new HandRecognition("八十", "eighty", VoiceData.eighty, Raise, DontCare, BasicGesture.eighty, BasicGesture.DontCare));
-        handRecognitions.add(new HandRecognition("九十", "ninety", VoiceData.ninety, Raise, DontCare, BasicGesture.ninety, BasicGesture.DontCare));
+        handRecognitions.add(new HandRecognition("九十", "ninety", VoiceData.ninety, Raise, DontCare, BasicGesture.ninety, BasicGesture.DontCare));*/
         handRecognitions.add(new HandRecognition("百", "hundred", VoiceData.hundred, Raise, DontCare, BasicGesture.hundred, BasicGesture.DontCare));
         handRecognitions.add(new HandRecognition("千", "thousand", VoiceData.thousand, Raise, DontCare, BasicGesture.thousand, BasicGesture.DontCare));
+        handRecognitions.add(new HandRecognition("男", "male", VoiceData.male, Inward, DontCare, BasicGesture.male, BasicGesture.DontCare));
+        handRecognitions.add(new HandRecognition("女", "female", VoiceData.female, Raise, DontCare, BasicGesture.female, BasicGesture.DontCare));
+        handRecognitions.add(new HandRecognition("哥哥", "brother", VoiceData.brother, Raise, DontCare, BasicGesture.brother, BasicGesture.DontCare));
+        handRecognitions.add(new HandRecognition("姊姊", "sister", VoiceData.sister, Raise, DontCare, BasicGesture.sister, BasicGesture.DontCare));
+        handRecognitions.add(new HandRecognition("錢", "money", VoiceData.money, Inward, DontCare, BasicGesture.money, BasicGesture.DontCare));
+        handRecognitions.add(new HandRecognition("廁所", "toilet", VoiceData.toilet, Raise, DontCare, BasicGesture.WC, BasicGesture.DontCare));
+        handRecognitions.add(new HandRecognition("你", "you", VoiceData.you, Inward, DontCare, BasicGesture.one, BasicGesture.DontCare));
+        handRecognitions.add(new HandRecognition("_你好", "hello", R.raw.nulll, Raise, DontCare, BasicGesture.fist, BasicGesture.DontCare));
 
         //右手
-        handRecognitions.add(new HandRecognition("零", "zero", VoiceData.zero, DontCare, Raise, BasicGesture.DontCare, BasicGesture.zero));
+        /*handRecognitions.add(new HandRecognition("零", "zero", VoiceData.zero, DontCare, Raise, BasicGesture.DontCare, BasicGesture.zero));
         handRecognitions.add(new HandRecognition("一", "one", VoiceData.one, DontCare, Raise, BasicGesture.DontCare, BasicGesture.one));
         handRecognitions.add(new HandRecognition("二", "two", VoiceData.two, DontCare, Raise, BasicGesture.DontCare, BasicGesture.two));
         handRecognitions.add(new HandRecognition("三", "three", VoiceData.three, DontCare, Raise, BasicGesture.DontCare, BasicGesture.three));
@@ -135,7 +155,14 @@ public class RecognitionWorker {
         handRecognitions.add(new HandRecognition("八", "eight", VoiceData.eight, DontCare, Inward, BasicGesture.DontCare, BasicGesture.eight));
         handRecognitions.add(new HandRecognition("九", "nine", VoiceData.nine, DontCare, Inward, BasicGesture.DontCare, BasicGesture.nine));
         handRecognitions.add(new HandRecognition("十", "ten", VoiceData.ten, DontCare, Raise, BasicGesture.DontCare, BasicGesture.ten_N));
-        handRecognitions.add(new HandRecognition("十", "ten", VoiceData.ten, DontCare, Raise, BasicGesture.DontCare, BasicGesture.ten_S));
+        handRecognitions.add(new HandRecognition("十", "ten", VoiceData.ten, DontCare, Raise, BasicGesture.DontCare, BasicGesture.ten_S));*/
+
+        //雙手
+        handRecognitions.add(new HandRecognition("謝謝", "thanks", VoiceData.thanks, Inward, Inward, BasicGesture.male, BasicGesture.male));
+        handRecognitions.add(new HandRecognition("臺北", "taipei", VoiceData.taipei, Inward, Inward, BasicGesture.six, BasicGesture.six));
+        handRecognitions.add(new HandRecognition("科", "tech", R.raw.nulll, Inward, Downward, BasicGesture.seven, BasicGesture.fist));
+        handRecognitions.add(new HandRecognition("技", "nology", R.raw.nulll, Inward, Downward, BasicGesture.six, BasicGesture.fist));
+        handRecognitions.add(new HandRecognition("大學", "university", VoiceData.university, Inward, Inward, BasicGesture.one, BasicGesture.one));
     }
 
     //動態手勢
@@ -151,6 +178,7 @@ public class RecognitionWorker {
         //參考
         //combinationWordRecognitions.add(new CombinationWordRecognition("中文", "英文", mp3D, "第一階段", "第二階段"));
         combinationWordRecognitions.add(new CombinationWordRecognition("你好", "Hello", VoiceData.hello, "你", "_你好"));
+        combinationWordRecognitions.add(new CombinationWordRecognition("科技", "technology", VoiceData.technology, "科", "技"));
     }
 
 }
