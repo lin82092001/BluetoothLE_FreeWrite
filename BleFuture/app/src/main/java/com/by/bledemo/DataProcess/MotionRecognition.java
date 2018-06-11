@@ -94,7 +94,7 @@ public class MotionRecognition {
                 IsRAF0Matched, IsRAF1Matched, IsRAF2Matched, IsRAF3Matched, IsRAF4Matched;
 
         //首掌
-        IsLAxMatched = AccMatcher(LAx, this.LAx);
+        IsLAxMatched = AccMatcher(LAx, this.LAx);//外部輸入與詞彙庫定的門檻值比較,外部輸入>詞彙庫門檻值
         IsLAyMatched = AccMatcher(LAy, this.LAy);
         IsLAzMatched = AccMatcher(LAz, this.LAz);
         //手指

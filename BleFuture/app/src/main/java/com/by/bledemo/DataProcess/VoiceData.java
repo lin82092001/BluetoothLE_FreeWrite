@@ -9,11 +9,11 @@ import android.media.MediaPlayer;
 
 public class VoiceData {
     //test
-    public int you;
-    public int toilet;
     //test
 
     //mp3ID
+    public int you;
+    public int toilet;
     public int zero;
     public int one;
     public int two;
@@ -44,9 +44,10 @@ public class VoiceData {
     public int taipei;
     public int technology;
     public int university;
-
     public int hello;
-    public int good;
+    public int love;
+    public int protect;
+    public int coffee;
 
     public VoiceData(){
 

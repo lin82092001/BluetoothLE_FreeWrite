@@ -39,7 +39,7 @@ public class ConnectedActivity extends AppCompatActivity {
     private boolean Paused,LOp,ROp;
 
 
-    //int MotherBoardEuler;
+    private String Word="";
 
     private String LeftDirect="";
     //private String LeftDirectCode =  "00";
@@ -62,7 +62,7 @@ public class ConnectedActivity extends AppCompatActivity {
     private int MatchedTime = 100;
     private String CombinationWordTemp = "";
 
-    private float MotionSetValue = 30;
+    private float MotionSetValue = 5;
 
     private float[] LFDegReg = {00, 00, 00, 00};
     private float[] RFDegReg = {00, 00, 00, 00};
@@ -114,6 +114,7 @@ public class ConnectedActivity extends AppCompatActivity {
             public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
                 RecognitionWorker = null;
                 RecognitionWorker = new RecognitionWorker(Lanquage[position]);
+                Word = Lanquage[position];
                 RecognitionWorker.StaticVocabulary();
                 RecognitionWorker.MotionVocabulary();
                 RecognitionWorker.CombinationVocabulary();
@@ -123,6 +124,7 @@ public class ConnectedActivity extends AppCompatActivity {
             public void onNothingSelected(AdapterView<?> parent) {
                 RecognitionWorker = null;
                 RecognitionWorker = new RecognitionWorker(Lanquage[0]);
+                Word = Lanquage[0];
                 RecognitionWorker.StaticVocabulary();
                 RecognitionWorker.MotionVocabulary();
                 RecognitionWorker.CombinationVocabulary();
@@ -231,6 +233,8 @@ public class ConnectedActivity extends AppCompatActivity {
         @Override
         public void ControllerSignCallback(int Status, int CMD, float Roll, float Pitch, float Yaw,float AccX, float AccY, float AccZ, Controller.FingersStatus Figs, String Address)
         {
+            int[] LFig = {0,0,0,0,0};
+            int[] RFig = {0,0,0,0,0};
             if(LAddress == Address)
             {
                 //x y z Rotat Value
@@ -277,6 +281,7 @@ public class ConnectedActivity extends AppCompatActivity {
                     if(Figs.Enable[i][0]){
                         if(i == 4)
                         {
+                            LFig[i] = Figs.Degree[i][0];
                             if (Figs.Degree[i][0] < 30)
                             {
                                 LeftFigCode[i] = "0";
@@ -288,6 +293,7 @@ public class ConnectedActivity extends AppCompatActivity {
                         }
                         else
                         {
+                            LFig[i] = Figs.Degree[i][0];
                             if(Figs.Degree[i][0] <= 35)
                             {
                                 LeftFigCode[i] = "00";
@@ -382,6 +388,7 @@ public class ConnectedActivity extends AppCompatActivity {
                     if(Figs.Enable[i][0]){
                         if(i == 0)
                         {
+                            RFig[i] = Figs.Degree[i][0];
                             if (Figs.Degree[i][0] < 30)
                             {
                                 RightFigCode[i] = "0";
@@ -393,6 +400,7 @@ public class ConnectedActivity extends AppCompatActivity {
                         }
                         else
                         {
+                            RFig[i] = Figs.Degree[i][0];
                             if(Figs.Degree[i][0] <= 35)
                             {
                                 RightFigCode[i] = "00";
@@ -445,19 +453,22 @@ public class ConnectedActivity extends AppCompatActivity {
             //LeftFigCodeTotal = "000000000";
             //LeftDirect = "DontCare";
             //test
-
+            String changeWord = "";
+            int totalAcc = Math.abs(LAcc[3]+RAcc[3]);
             //NotLineToast(ConnectedActivity.this, String.valueOf(RecognitionWorker.handRecognitions.size()), 1);
             //Recognize
-            for (int Loop1 = 0; Loop1 < RecognitionWorker.handRecognitions.size(); Loop1++)
+            if(totalAcc < MotionSetValue)//如果加速度計超過動作門檻值則為動態手勢
             {
-                //NotLineToast(ConnectedActivity.this, "1", 1);
-
-                //Match
-                if(RecognitionWorker.handRecognitions.get(Loop1).MultiMatcher(LeftDirect, RightDirect, LeftFigCodeTotal, RightFigCodeTotal) == true)
+                for (int Loop1 = 0; Loop1 < RecognitionWorker.handRecognitions.size(); Loop1++)
                 {
-                    //Match times process
+                    //NotLineToast(ConnectedActivity.this, "1", 1);
 
-                    MatchingTime = MatchingTime + 1;
+                    //Match
+                    if (RecognitionWorker.handRecognitions.get(Loop1).MultiMatcher(LeftDirect, RightDirect, LeftFigCodeTotal, RightFigCodeTotal) == true)
+                    {
+                        //Match times process
+
+                        MatchingTime = MatchingTime + 1;
                     /*if(ExchangWord == -1)
                     {
                         ExchangWord = Loop1;
@@ -467,40 +478,129 @@ public class ConnectedActivity extends AppCompatActivity {
                         ExchangWord = -1;
                     }*/
 
-                    if(MatchingTime >= MatchedTime)//第一次配對成功
-                    {
-                        MatchingTime = 0;
-
-                        if(CombinationWordTemp.length() == 0)//第一次配對紀錄
+                        if (MatchingTime >= MatchedTime)//第一次配對成功
                         {
-                            CombinationWordTemp = RecognitionWorker.handRecognitions.get(Loop1).ChineseWord.toString();
-                            final String OutputWord = CombinationWordTemp;
-                            NotLineToast(ConnectedActivity.this, OutputWord, 1);
-                            RecognitionWorker.VoiceData.Speaker(ConnectedActivity.this, R.raw.prompt);
+                            MatchingTime = 0;
 
-                        }else if(RecognitionWorker.handRecognitions.get(Loop1).ChineseWord.toString() == CombinationWordTemp)//兩次配對相同，靜態手勢
-                        {
-                            final String OutputWord = RecognitionWorker.handRecognitions.get(Loop1).ChineseWord.toString();
-                            NotLineToast(ConnectedActivity.this, OutputWord, 1);
-                            RecognitionWorker.VoiceData.Speaker(ConnectedActivity.this, RecognitionWorker.handRecognitions.get(Loop1).mp3ID);
-                            CombinationWordTemp = "";
-
-                        }else//不是第一次配對，且兩次配對不同，可能為組合字
-                        {
-                            for(int Loop2 = 0; Loop2 < RecognitionWorker.combinationWordRecognitions.size(); Loop2++)//查找組合字庫
+                            if (CombinationWordTemp.length() == 0)//第一次配對紀錄
                             {
-                                if(RecognitionWorker.combinationWordRecognitions.get(Loop2).MultiMatcher(CombinationWordTemp, RecognitionWorker.handRecognitions.get(Loop1).ChineseWord.toString()) == true)
+                                if (Word.equals("Chinese"))//切換語系顯示
+                                    changeWord = RecognitionWorker.handRecognitions.get(Loop1).ChineseWord.toString();
+                                else
+                                    changeWord = RecognitionWorker.handRecognitions.get(Loop1).EnglishWord.toString();
+
+                                CombinationWordTemp = changeWord;
+                                final String OutputWord = CombinationWordTemp;
+                                NotLineToast(ConnectedActivity.this, OutputWord, 1);
+                                RecognitionWorker.VoiceData.Speaker(ConnectedActivity.this, R.raw.prompt);
+
+                            } else if (RecognitionWorker.handRecognitions.get(Loop1).ChineseWord.toString() == CombinationWordTemp ||
+                                    RecognitionWorker.handRecognitions.get(Loop1).EnglishWord.toString() == CombinationWordTemp)//兩次配對相同，靜態手勢
+                            {
+                                if (Word.equals("Chinese"))
+                                    changeWord = RecognitionWorker.handRecognitions.get(Loop1).ChineseWord.toString();
+                                else
+                                    changeWord = RecognitionWorker.handRecognitions.get(Loop1).EnglishWord.toString();
+
+                                final String OutputWord = changeWord;
+                                NotLineToast(ConnectedActivity.this, OutputWord, 1);
+                                RecognitionWorker.VoiceData.Speaker(ConnectedActivity.this, RecognitionWorker.handRecognitions.get(Loop1).mp3ID);
+                                CombinationWordTemp = "";
+
+                            } else//不是第一次配對，且兩次配對不同，可能為組合字
+                            {
+                                for (int Loop2 = 0; Loop2 < RecognitionWorker.combinationWordRecognitions.size(); Loop2++)//查找組合字庫
                                 {
-                                    final String OutputWord = RecognitionWorker.combinationWordRecognitions.get(Loop2).ChineseWord.toString();
-                                    NotLineToast(ConnectedActivity.this, OutputWord, 1);
-                                    RecognitionWorker.VoiceData.Speaker(ConnectedActivity.this, RecognitionWorker.combinationWordRecognitions.get(Loop2).mp3ID);
+                                    if (RecognitionWorker.combinationWordRecognitions.get(Loop2).MultiMatcher(CombinationWordTemp, RecognitionWorker.handRecognitions.get(Loop1).ChineseWord.toString()) == true ||
+                                            RecognitionWorker.combinationWordRecognitions.get(Loop2).MultiMatcher(CombinationWordTemp, RecognitionWorker.handRecognitions.get(Loop1).EnglishWord.toString()) == true)
+                                    {
+                                        if (Word.equals("Chinese"))
+                                            changeWord = RecognitionWorker.combinationWordRecognitions.get(Loop2).ChineseWord.toString();
+                                        else
+                                            changeWord = RecognitionWorker.combinationWordRecognitions.get(Loop2).EnglishWord.toString();
+
+                                        final String OutputWord = changeWord;
+                                        NotLineToast(ConnectedActivity.this, OutputWord, 1);
+                                        RecognitionWorker.VoiceData.Speaker(ConnectedActivity.this, RecognitionWorker.combinationWordRecognitions.get(Loop2).mp3ID);
+                                        break;
+                                    }
                                 }
-                                break;
+                                CombinationWordTemp = "";
                             }
-                            CombinationWordTemp = "";
                         }
+                        break;
                     }
-                    break;
+                }
+            }
+            else
+            {
+                for (int Loop1 = 0; Loop1 < RecognitionWorker.motionRecognitions.size(); Loop1++)
+                {
+                    //NotLineToast(ConnectedActivity.this, "1", 1);
+
+                    //Match
+                    if (RecognitionWorker.motionRecognitions.get(Loop1).TotalMatcher(LeftDirect, RightDirect, LeftFigCodeTotal, RightFigCodeTotal,
+                            LAcc[0], LAcc[1], LAcc[2],
+                            RAcc[0], RAcc[1], RAcc[2],
+                            LFig[0], LFig[1], LFig[2], LFig[3], LFig[4],
+                            RFig[0], RFig[1], RFig[2], RFig[3], RFig[4]) == true)
+                    {
+                        //Match times process
+
+                        MatchingTime = MatchingTime + 1;
+
+                        if (MatchingTime >= MatchedTime)//第一次配對成功
+                        {
+                            MatchingTime = 0;
+
+                            if (CombinationWordTemp.length() == 0)//第一次配對紀錄
+                            {
+                                if (Word.equals("Chinese"))//切換語系顯示
+                                    changeWord = RecognitionWorker.motionRecognitions.get(Loop1).ChineseWord.toString();
+                                else
+                                    changeWord = RecognitionWorker.motionRecognitions.get(Loop1).EnglishWord.toString();
+
+                                CombinationWordTemp = changeWord;
+                                final String OutputWord = CombinationWordTemp;
+                                NotLineToast(ConnectedActivity.this, OutputWord, 1);
+                                RecognitionWorker.VoiceData.Speaker(ConnectedActivity.this, R.raw.prompt);
+
+                            } else if (RecognitionWorker.motionRecognitions.get(Loop1).ChineseWord.toString() == CombinationWordTemp ||
+                                    RecognitionWorker.motionRecognitions.get(Loop1).EnglishWord.toString() == CombinationWordTemp)//兩次配對相同，靜態手勢
+                            {
+                                if (Word.equals("Chinese"))
+                                    changeWord = RecognitionWorker.motionRecognitions.get(Loop1).ChineseWord.toString();
+                                else
+                                    changeWord = RecognitionWorker.motionRecognitions.get(Loop1).EnglishWord.toString();
+
+                                final String OutputWord = changeWord;
+                                NotLineToast(ConnectedActivity.this, OutputWord, 1);
+                                RecognitionWorker.VoiceData.Speaker(ConnectedActivity.this, RecognitionWorker.motionRecognitions.get(Loop1).mp3ID);
+                                CombinationWordTemp = "";
+
+                            } else//不是第一次配對，且兩次配對不同，可能為組合字
+                            {
+                                for (int Loop2 = 0; Loop2 < RecognitionWorker.combinationWordRecognitions.size(); Loop2++)//查找組合字庫
+                                {
+                                    if (RecognitionWorker.combinationWordRecognitions.get(Loop2).MultiMatcher(CombinationWordTemp, RecognitionWorker.motionRecognitions.get(Loop1).ChineseWord.toString()) == true ||
+                                            RecognitionWorker.combinationWordRecognitions.get(Loop2).MultiMatcher(CombinationWordTemp, RecognitionWorker.motionRecognitions.get(Loop1).EnglishWord.toString()) == true)
+                                    {
+                                        if (Word.equals("Chinese"))
+                                            changeWord = RecognitionWorker.combinationWordRecognitions.get(Loop2).ChineseWord.toString();
+                                        else
+                                            changeWord = RecognitionWorker.combinationWordRecognitions.get(Loop2).EnglishWord.toString();
+
+                                        final String OutputWord = changeWord;
+                                        NotLineToast(ConnectedActivity.this, OutputWord, 1);
+                                        RecognitionWorker.VoiceData.Speaker(ConnectedActivity.this, RecognitionWorker.combinationWordRecognitions.get(Loop2).mp3ID);
+                                        break;
+                                    }
+                                }
+                                CombinationWordTemp = "";
+                            }
+                        }
+                        break;
+                    }
                 }
             }
             //Recognize

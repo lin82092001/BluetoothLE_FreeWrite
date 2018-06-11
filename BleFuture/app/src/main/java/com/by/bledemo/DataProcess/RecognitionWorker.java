@@ -58,9 +58,11 @@ public class RecognitionWorker {
     private int[] taipei = {R.raw.taipei,R.raw.taipeien};
     private int[] technology = {R.raw.technology,R.raw.technologyen};
     private int[] university = {R.raw.university,R.raw.universityen};
-
     private int[] you = {R.raw.you, R.raw.youen};
     private int[] hello = {R.raw.hello, R.raw.helloen};
+    private int[] love = {R.raw.love,R.raw.loveen};
+    private int[] protect = {R.raw.protect,R.raw.protecten};
+    private int[] coffee = {R.raw.coffee,R.raw.coffeeen};
 
 
     public RecognitionWorker(String State){
@@ -101,11 +103,13 @@ public class RecognitionWorker {
         VoiceData.taipei = taipei[LanquageSelector];
         VoiceData.technology = technology[LanquageSelector];
         VoiceData.university = university[LanquageSelector];
-
         VoiceData.you = you[LanquageSelector];
         VoiceData.hello = hello[LanquageSelector];
+        VoiceData.love = love[LanquageSelector];
+        VoiceData.protect = protect[LanquageSelector];
+        VoiceData.coffee = coffee[LanquageSelector];
     }
-    //靜態手勢
+    //靜態手勢26
     public ArrayList<HandRecognition> handRecognitions = new ArrayList<HandRecognition>();
     public void StaticVocabulary(){
         //參考
@@ -159,10 +163,11 @@ public class RecognitionWorker {
 
         //雙手
         handRecognitions.add(new HandRecognition("謝謝", "thanks", VoiceData.thanks, Inward, Inward, BasicGesture.male, BasicGesture.male));
-        handRecognitions.add(new HandRecognition("臺北", "taipei", VoiceData.taipei, Inward, Inward, BasicGesture.six, BasicGesture.six));
+        handRecognitions.add(new HandRecognition("臺北", "taipei", VoiceData.taipei, Raise, Raise, BasicGesture.six, BasicGesture.six));
         handRecognitions.add(new HandRecognition("科", "tech", R.raw.nulll, Inward, Downward, BasicGesture.seven, BasicGesture.fist));
         handRecognitions.add(new HandRecognition("技", "nology", R.raw.nulll, Inward, Downward, BasicGesture.six, BasicGesture.fist));
-        handRecognitions.add(new HandRecognition("大學", "university", VoiceData.university, Inward, Inward, BasicGesture.one, BasicGesture.one));
+        handRecognitions.add(new HandRecognition("大學", "university", VoiceData.university, Raise, Raise, BasicGesture.one, BasicGesture.one));
+        handRecognitions.add(new HandRecognition("棕", "brown", R.raw.nulll, Inward, Outward, BasicGesture.fist, BasicGesture.two));
     }
 
     //動態手勢
@@ -170,15 +175,31 @@ public class RecognitionWorker {
     public void MotionVocabulary(){
         //參考
         //motionRecognitions.add(new MotionRecognition("中文", "英文", mp3id, "左手面相", "右手面向", "左手手勢", "右手手勢", LAx~z, RAx~z, LAF0~LAF4, RAF0~RAF4));
+        motionRecognitions.add(new MotionRecognition("愛","love",VoiceData.love,Downward,Inward,BasicGesture.hand,BasicGesture.male,
+                -15,-10000,-10000,
+                -10000,-10000,-10000,
+                -10000,-10000,-10000,-10000,-10000,
+                -10000,-10000,-10000,-10000,-10000));
+        motionRecognitions.add(new MotionRecognition("保護","protect",VoiceData.protect,Inward,Inward,BasicGesture.hand,BasicGesture.male,
+                -10000,-10000,-15,
+                -10000,-10000,-10000,
+                -10000,-10000,-10000,-10000,-10000,
+                -10000,-10000,-10000,-10000,-10000));
+        motionRecognitions.add(new MotionRecognition("攪拌","stir",R.raw.nulll,Inward,Downward,BasicGesture.fist,BasicGesture.two,
+                -10000,-10000,-10000,
+                -10000,-10000,-100,
+                -10000,-10000,-10000,-10000,-10000,
+                -10000,-10000,-10000,-10000,-10000));
     }
 
-    //組合手勢
+    //組合手勢2
     public ArrayList<CombinationWordRecognition> combinationWordRecognitions = new ArrayList<CombinationWordRecognition>();
     public void CombinationVocabulary(){
         //參考
         //combinationWordRecognitions.add(new CombinationWordRecognition("中文", "英文", mp3D, "第一階段", "第二階段"));
-        combinationWordRecognitions.add(new CombinationWordRecognition("你好", "Hello", VoiceData.hello, "你", "_你好"));
-        combinationWordRecognitions.add(new CombinationWordRecognition("科技", "technology", VoiceData.technology, "科", "技"));
+        combinationWordRecognitions.add(new CombinationWordRecognition("科技", "Technology", VoiceData.technology, "科", "技", "tech","nology"));
+        combinationWordRecognitions.add(new CombinationWordRecognition("你好", "Hello", VoiceData.hello, "你", "_你好", "you", "hello"));
+        combinationWordRecognitions.add(new CombinationWordRecognition("咖啡", "Coffee", VoiceData.coffee, "棕", "攪拌", "brown", "stir"));
     }
 
 }

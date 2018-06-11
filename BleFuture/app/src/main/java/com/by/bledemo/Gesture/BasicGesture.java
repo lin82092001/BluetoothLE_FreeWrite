@@ -25,8 +25,8 @@ public class BasicGesture {
     public static String eight = "000000010";
     public static String nine = hand;//"000000000"
     public static String ten = "101111111";
-    //public static String ten_S = "111000000";
-    /*public static String twenty = "101011111";
+    /*public static String ten_S = "111000000";
+    public static String twenty = "101011111";
     public static String thirty = "101010111";
     public static String forty = "101010101";
     public static String fifty = zero;//"111111111"
