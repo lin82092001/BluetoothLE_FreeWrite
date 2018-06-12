@@ -48,6 +48,15 @@ public class VoiceData {
     public int love;
     public int protect;
     public int coffee;
+    public int admit;
+    public int help;
+    public int lonely;
+    public int I;
+    public int letter;
+    public int recletter;
+    public int stamp;
+    public int sandwich;
+    public int welcome;
 
     public VoiceData(){
 

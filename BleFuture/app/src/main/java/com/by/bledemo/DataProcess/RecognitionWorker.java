@@ -52,7 +52,7 @@ public class RecognitionWorker {
     private int[] female = {R.raw.female, R.raw.femaleen};
     private int[] brother = {R.raw.brother, R.raw.brotheren};
     private int[] sister = {R.raw.sister, R.raw.sisteren};
-    private int[] money = {R.raw.money, R.raw.moneyen};
+    private int[] money = {R.raw.pay, R.raw.payen};
     private int[] toilet = {R.raw.toilet, R.raw.toileten};
     private int[] thanks = {R.raw.thanks,R.raw.thanksen};
     private int[] taipei = {R.raw.taipei,R.raw.taipeien};
@@ -63,7 +63,15 @@ public class RecognitionWorker {
     private int[] love = {R.raw.love,R.raw.loveen};
     private int[] protect = {R.raw.protect,R.raw.protecten};
     private int[] coffee = {R.raw.coffee,R.raw.coffeeen};
-
+    private int[] admit = {R.raw.admin,R.raw.adminen};
+    private int[] help = {R.raw.help,R.raw.helpen};
+    private int[] lonely = {R.raw.lonely,R.raw.lonelyen};
+    private int[] I = {R.raw.i,R.raw.ien};
+    private int[] letter = {R.raw.letter,R.raw.letter};
+    private int[] recletter = {R.raw.recletter,R.raw.recletteren};
+    private int[] stamp = {R.raw.stamp,R.raw.stampen};
+    private int[] sandwich = {R.raw.sandwich,R.raw.sandwichen};
+    private int[] welcome = {R.raw.welcome,R.raw.welcomeen};
 
     public RecognitionWorker(String State){
 
@@ -108,8 +116,17 @@ public class RecognitionWorker {
         VoiceData.love = love[LanquageSelector];
         VoiceData.protect = protect[LanquageSelector];
         VoiceData.coffee = coffee[LanquageSelector];
+        VoiceData.admit = admit[LanquageSelector];
+        VoiceData.help = help[LanquageSelector];
+        VoiceData.lonely = lonely[LanquageSelector];
+        VoiceData.I = I[LanquageSelector];
+        VoiceData.letter = letter[LanquageSelector];
+        VoiceData.recletter = recletter[LanquageSelector];
+        VoiceData.stamp = stamp[LanquageSelector];
+        VoiceData.sandwich = sandwich[LanquageSelector];
+        VoiceData.welcome = welcome[LanquageSelector];
     }
-    //靜態手勢26
+    //靜態手勢33
     public ArrayList<HandRecognition> handRecognitions = new ArrayList<HandRecognition>();
     public void StaticVocabulary(){
         //參考
@@ -141,10 +158,12 @@ public class RecognitionWorker {
         handRecognitions.add(new HandRecognition("女", "female", VoiceData.female, Raise, DontCare, BasicGesture.female, BasicGesture.DontCare));
         handRecognitions.add(new HandRecognition("哥哥", "brother", VoiceData.brother, Raise, DontCare, BasicGesture.brother, BasicGesture.DontCare));
         handRecognitions.add(new HandRecognition("姊姊", "sister", VoiceData.sister, Raise, DontCare, BasicGesture.sister, BasicGesture.DontCare));
-        handRecognitions.add(new HandRecognition("錢", "money", VoiceData.money, Inward, DontCare, BasicGesture.money, BasicGesture.DontCare));
+        handRecognitions.add(new HandRecognition("繳錢", "pay", VoiceData.money, Inward, DontCare, BasicGesture.money, BasicGesture.DontCare));
         handRecognitions.add(new HandRecognition("廁所", "toilet", VoiceData.toilet, Raise, DontCare, BasicGesture.WC, BasicGesture.DontCare));
         handRecognitions.add(new HandRecognition("你", "you", VoiceData.you, Inward, DontCare, BasicGesture.one, BasicGesture.DontCare));
         handRecognitions.add(new HandRecognition("_你好", "hello", R.raw.nulll, Raise, DontCare, BasicGesture.fist, BasicGesture.DontCare));
+        handRecognitions.add(new HandRecognition("我", "I", VoiceData.I, Inward, DontCare, BasicGesture.one, BasicGesture.DontCare));
+
 
         //右手
         /*handRecognitions.add(new HandRecognition("零", "zero", VoiceData.zero, DontCare, Raise, BasicGesture.DontCare, BasicGesture.zero));
@@ -160,6 +179,7 @@ public class RecognitionWorker {
         handRecognitions.add(new HandRecognition("九", "nine", VoiceData.nine, DontCare, Inward, BasicGesture.DontCare, BasicGesture.nine));
         handRecognitions.add(new HandRecognition("十", "ten", VoiceData.ten, DontCare, Raise, BasicGesture.DontCare, BasicGesture.ten_N));
         handRecognitions.add(new HandRecognition("十", "ten", VoiceData.ten, DontCare, Raise, BasicGesture.DontCare, BasicGesture.ten_S));*/
+        handRecognitions.add(new HandRecognition("孤單", "lonely", VoiceData.lonely, DontCare, Inward, BasicGesture.DontCare, BasicGesture.male));
 
         //雙手
         handRecognitions.add(new HandRecognition("謝謝", "thanks", VoiceData.thanks, Inward, Inward, BasicGesture.male, BasicGesture.male));
@@ -167,10 +187,14 @@ public class RecognitionWorker {
         handRecognitions.add(new HandRecognition("科", "tech", R.raw.nulll, Inward, Downward, BasicGesture.seven, BasicGesture.fist));
         handRecognitions.add(new HandRecognition("技", "nology", R.raw.nulll, Inward, Downward, BasicGesture.six, BasicGesture.fist));
         handRecognitions.add(new HandRecognition("大學", "university", VoiceData.university, Raise, Raise, BasicGesture.one, BasicGesture.one));
-        handRecognitions.add(new HandRecognition("棕", "brown", R.raw.nulll, Inward, Outward, BasicGesture.fist, BasicGesture.two));
+        handRecognitions.add(new HandRecognition("棕", "brown", R.raw.nulll, Inward, Outward, BasicGesture.fist, BasicGesture.brown));
+        handRecognitions.add(new HandRecognition("寄信", "Send Letter", VoiceData.letter, Inward, Upward, BasicGesture.two, BasicGesture.two));
+        handRecognitions.add(new HandRecognition("收信", "Receive Letter", VoiceData.recletter, Inward, Inward, BasicGesture.two, BasicGesture.two));
+        handRecognitions.add(new HandRecognition("郵", "stamp1", R.raw.nulll, Upward, Inward, BasicGesture.two, BasicGesture.two));
+        handRecognitions.add(new HandRecognition("票", "stamp2", R.raw.nulll, Upward, Downward, BasicGesture.two, BasicGesture.two));
     }
 
-    //動態手勢
+    //動態手勢6
     public ArrayList<MotionRecognition> motionRecognitions = new ArrayList<MotionRecognition>();
     public void MotionVocabulary(){
         //參考
@@ -185,14 +209,34 @@ public class RecognitionWorker {
                 -10000,-10000,-10000,
                 -10000,-10000,-10000,-10000,-10000,
                 -10000,-10000,-10000,-10000,-10000));
+        motionRecognitions.add(new MotionRecognition("錄取","admit",VoiceData.admit,Upward,Inward,BasicGesture.hand,BasicGesture.male,
+                -10000,-10000,-15,
+                -10000,-10000,-10000,
+                -10000,-10000,-10000,-10000,-10000,
+                -10000,-10000,-10000,-10000,-10000));
+        motionRecognitions.add(new MotionRecognition("幫忙","help",VoiceData.help,Outward,Inward,BasicGesture.hand,BasicGesture.male,
+                -10000,-15,-10000,
+                -10000,-10000,-10000,
+                -10000,-10000,-10000,-10000,-10000,
+                -10000,-10000,-10000,-10000,-10000));
         motionRecognitions.add(new MotionRecognition("攪拌","stir",R.raw.nulll,Inward,Downward,BasicGesture.fist,BasicGesture.two,
                 -10000,-10000,-10000,
                 -10000,-10000,-100,
                 -10000,-10000,-10000,-10000,-10000,
                 -10000,-10000,-10000,-10000,-10000));
+        motionRecognitions.add(new MotionRecognition("三明治","sandwich",VoiceData.sandwich,Raise,Inward,BasicGesture.three,BasicGesture.hand,
+                -10000,-10000,-15,
+                -10000,-10000,-10000,
+                -10000,-10000,-10000,-10000,-10000,
+                -10000,-10000,-10000,-10000,-10000));
+        motionRecognitions.add(new MotionRecognition("歡迎","welcome",VoiceData.welcome,Upward,Upward,BasicGesture.hand,BasicGesture.hand,
+                -15,-10000,-10000,
+                -15,-10000,-10000,
+                -10000,-10000,-10000,-10000,-10000,
+                -10000,-10000,-10000,-10000,-10000));
     }
 
-    //組合手勢2
+    //組合手勢4
     public ArrayList<CombinationWordRecognition> combinationWordRecognitions = new ArrayList<CombinationWordRecognition>();
     public void CombinationVocabulary(){
         //參考
@@ -200,6 +244,7 @@ public class RecognitionWorker {
         combinationWordRecognitions.add(new CombinationWordRecognition("科技", "Technology", VoiceData.technology, "科", "技", "tech","nology"));
         combinationWordRecognitions.add(new CombinationWordRecognition("你好", "Hello", VoiceData.hello, "你", "_你好", "you", "hello"));
         combinationWordRecognitions.add(new CombinationWordRecognition("咖啡", "Coffee", VoiceData.coffee, "棕", "攪拌", "brown", "stir"));
+        combinationWordRecognitions.add(new CombinationWordRecognition("郵票", "Stamp", VoiceData.stamp, "郵", "票", "stamp1", "stamp2"));
     }
 
 }
