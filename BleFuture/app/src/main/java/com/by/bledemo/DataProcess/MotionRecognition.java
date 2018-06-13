@@ -118,12 +118,16 @@ public class MotionRecognition {
         {
             return IsLeftHandPostureMatched && IsLeftFigPostureMatched &&
                     IsLAxMatched && IsLAyMatched && IsLAzMatched &&
-                    IsLAF0Matched && IsLAF1Matched && IsLAF2Matched && IsLAF3Matched && IsLAF4Matched;
+                    IsLAF0Matched && IsLAF1Matched && IsLAF2Matched && IsLAF3Matched && IsLAF4Matched &&
+                    IsRAxMatched && IsRAyMatched && IsRAzMatched &&
+                    IsRAF0Matched && IsRAF1Matched && IsRAF2Matched && IsRAF3Matched && IsRAF4Matched;
         }else if (LeftHandPosture == "DontCare")
         {
             return IsRightHandPostureMatched && IsRightFigPostureMatched &&
                     IsRAxMatched && IsRAyMatched && IsRAzMatched &&
-                    IsRAF0Matched && IsRAF1Matched && IsRAF2Matched && IsRAF3Matched && IsRAF4Matched;
+                    IsRAF0Matched && IsRAF1Matched && IsRAF2Matched && IsRAF3Matched && IsRAF4Matched &&
+                    IsLAxMatched && IsLAyMatched && IsLAzMatched &&
+                    IsLAF0Matched && IsLAF1Matched && IsLAF2Matched && IsLAF3Matched && IsLAF4Matched;
         }else
         {
             return IsLeftHandPostureMatched && IsRightHandPostureMatched && IsLeftFigPostureMatched && IsRightFigPostureMatched &&

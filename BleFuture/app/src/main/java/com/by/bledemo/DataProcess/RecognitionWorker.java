@@ -1,6 +1,7 @@
 package com.by.bledemo.DataProcess;
 
 import android.app.Application;
+import android.app.ListActivity;
 import android.content.Context;
 import android.gesture.Gesture;
 import android.speech.tts.Voice;
@@ -67,11 +68,13 @@ public class RecognitionWorker {
     private int[] help = {R.raw.help,R.raw.helpen};
     private int[] lonely = {R.raw.lonely,R.raw.lonelyen};
     private int[] I = {R.raw.i,R.raw.ien};
-    private int[] letter = {R.raw.letter,R.raw.letter};
+    private int[] letter = {R.raw.letter,R.raw.letteren};
     private int[] recletter = {R.raw.recletter,R.raw.recletteren};
     private int[] stamp = {R.raw.stamp,R.raw.stampen};
     private int[] sandwich = {R.raw.sandwich,R.raw.sandwichen};
     private int[] welcome = {R.raw.welcome,R.raw.welcomeen};
+    private int[] graduation = {R.raw.graduation,R.raw.graduationen};
+    private int[] teacher = {R.raw.teacher,R.raw.teacheren};
 
     public RecognitionWorker(String State){
 
@@ -125,6 +128,8 @@ public class RecognitionWorker {
         VoiceData.stamp = stamp[LanquageSelector];
         VoiceData.sandwich = sandwich[LanquageSelector];
         VoiceData.welcome = welcome[LanquageSelector];
+        VoiceData.graduation = graduation[LanquageSelector];
+        VoiceData.teacher = teacher[LanquageSelector];
     }
     //靜態手勢33
     public ArrayList<HandRecognition> handRecognitions = new ArrayList<HandRecognition>();
@@ -162,7 +167,7 @@ public class RecognitionWorker {
         handRecognitions.add(new HandRecognition("廁所", "toilet", VoiceData.toilet, Raise, DontCare, BasicGesture.WC, BasicGesture.DontCare));
         handRecognitions.add(new HandRecognition("你", "you", VoiceData.you, Inward, DontCare, BasicGesture.one, BasicGesture.DontCare));
         handRecognitions.add(new HandRecognition("_你好", "hello", R.raw.nulll, Raise, DontCare, BasicGesture.fist, BasicGesture.DontCare));
-        handRecognitions.add(new HandRecognition("我", "I", VoiceData.I, Inward, DontCare, BasicGesture.one, BasicGesture.DontCare));
+        handRecognitions.add(new HandRecognition("我", "I", VoiceData.I, Downward, DontCare, BasicGesture.six, BasicGesture.DontCare));
 
 
         //右手
@@ -179,7 +184,6 @@ public class RecognitionWorker {
         handRecognitions.add(new HandRecognition("九", "nine", VoiceData.nine, DontCare, Inward, BasicGesture.DontCare, BasicGesture.nine));
         handRecognitions.add(new HandRecognition("十", "ten", VoiceData.ten, DontCare, Raise, BasicGesture.DontCare, BasicGesture.ten_N));
         handRecognitions.add(new HandRecognition("十", "ten", VoiceData.ten, DontCare, Raise, BasicGesture.DontCare, BasicGesture.ten_S));*/
-        handRecognitions.add(new HandRecognition("孤單", "lonely", VoiceData.lonely, DontCare, Inward, BasicGesture.DontCare, BasicGesture.male));
 
         //雙手
         handRecognitions.add(new HandRecognition("謝謝", "thanks", VoiceData.thanks, Inward, Inward, BasicGesture.male, BasicGesture.male));
@@ -190,8 +194,9 @@ public class RecognitionWorker {
         handRecognitions.add(new HandRecognition("棕", "brown", R.raw.nulll, Inward, Outward, BasicGesture.fist, BasicGesture.brown));
         handRecognitions.add(new HandRecognition("寄信", "Send Letter", VoiceData.letter, Inward, Upward, BasicGesture.two, BasicGesture.two));
         handRecognitions.add(new HandRecognition("收信", "Receive Letter", VoiceData.recletter, Inward, Inward, BasicGesture.two, BasicGesture.two));
-        handRecognitions.add(new HandRecognition("郵", "stamp1", R.raw.nulll, Upward, Inward, BasicGesture.two, BasicGesture.two));
-        handRecognitions.add(new HandRecognition("票", "stamp2", R.raw.nulll, Upward, Downward, BasicGesture.two, BasicGesture.two));
+        handRecognitions.add(new HandRecognition("郵", "stamp1", R.raw.nulll, Downward, Inward, BasicGesture.two, BasicGesture.two));
+        handRecognitions.add(new HandRecognition("票", "stamp2", R.raw.nulll, Downward, Downward, BasicGesture.two, BasicGesture.two));
+        handRecognitions.add(new HandRecognition("畢業", "graduation", VoiceData.graduation, Raise, Raise, BasicGesture.fist, BasicGesture.fist));
     }
 
     //動態手勢6
@@ -210,12 +215,17 @@ public class RecognitionWorker {
                 -10000,-10000,-10000,-10000,-10000,
                 -10000,-10000,-10000,-10000,-10000));
         motionRecognitions.add(new MotionRecognition("錄取","admit",VoiceData.admit,Upward,Inward,BasicGesture.hand,BasicGesture.male,
-                -10000,-10000,-15,
+                -10000,-10000,-45,
                 -10000,-10000,-10000,
                 -10000,-10000,-10000,-10000,-10000,
                 -10000,-10000,-10000,-10000,-10000));
-        motionRecognitions.add(new MotionRecognition("幫忙","help",VoiceData.help,Outward,Inward,BasicGesture.hand,BasicGesture.male,
+        motionRecognitions.add(new MotionRecognition("幫忙","help",VoiceData.help,Raise,Inward,BasicGesture.hand,BasicGesture.male,
                 -10000,-15,-10000,
+                -10000,-10000,-10000,
+                -10000,-10000,-10000,-10000,-10000,
+                -10000,-10000,-10000,-10000,-10000));
+        motionRecognitions.add(new MotionRecognition("孤單","lonely",VoiceData.lonely,DontCare,Inward,BasicGesture.DontCare,BasicGesture.male,
+                -15,-10000,-10000,
                 -10000,-10000,-10000,
                 -10000,-10000,-10000,-10000,-10000,
                 -10000,-10000,-10000,-10000,-10000));
@@ -224,7 +234,7 @@ public class RecognitionWorker {
                 -10000,-10000,-100,
                 -10000,-10000,-10000,-10000,-10000,
                 -10000,-10000,-10000,-10000,-10000));
-        motionRecognitions.add(new MotionRecognition("三明治","sandwich",VoiceData.sandwich,Raise,Inward,BasicGesture.three,BasicGesture.hand,
+        motionRecognitions.add(new MotionRecognition("三明治","sandwich",VoiceData.sandwich,Inward,Inward,BasicGesture.three,BasicGesture.hand,
                 -10000,-10000,-15,
                 -10000,-10000,-10000,
                 -10000,-10000,-10000,-10000,-10000,
@@ -232,6 +242,11 @@ public class RecognitionWorker {
         motionRecognitions.add(new MotionRecognition("歡迎","welcome",VoiceData.welcome,Upward,Upward,BasicGesture.hand,BasicGesture.hand,
                 -15,-10000,-10000,
                 -15,-10000,-10000,
+                -10000,-10000,-10000,-10000,-10000,
+                -10000,-10000,-10000,-10000,-10000));
+        motionRecognitions.add(new MotionRecognition("老師","teacher",VoiceData.teacher,Downward,DontCare,BasicGesture.four,BasicGesture.DontCare,
+                -10000,-10000,-15,
+                -10000,-10000,-10000,
                 -10000,-10000,-10000,-10000,-10000,
                 -10000,-10000,-10000,-10000,-10000));
     }

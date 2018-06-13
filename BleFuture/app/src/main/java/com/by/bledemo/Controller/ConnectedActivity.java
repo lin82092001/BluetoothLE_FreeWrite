@@ -62,7 +62,7 @@ public class ConnectedActivity extends AppCompatActivity {
     private int MatchedTime = 100;
     private String CombinationWordTemp = "";
 
-    private float MotionSetValue = 5;
+    private float MotionSetValue = 10;
 
     private float[] LFDegReg = {00, 00, 00, 00};
     private float[] RFDegReg = {00, 00, 00, 00};

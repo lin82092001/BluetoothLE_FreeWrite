@@ -57,6 +57,8 @@ public class VoiceData {
     public int stamp;
     public int sandwich;
     public int welcome;
+    public int graduation;
+    public int teacher;
 
     public VoiceData(){
 
