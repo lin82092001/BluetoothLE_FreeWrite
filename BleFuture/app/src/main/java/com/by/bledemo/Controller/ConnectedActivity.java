@@ -5,24 +5,33 @@ import android.bluetooth.BluetoothManager;
 import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
-import android.os.Message;
+//import android.os.Message;
+import android.os.Environment;
 import android.support.v7.app.AppCompatActivity;
+import android.util.Log;
 import android.view.View;
 import android.widget.AdapterView;
-import android.view.ViewDebug;
+//import android.view.ViewDebug;
 import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.Spinner;
 import android.widget.TextView;
 import android.widget.Toast;
-import android.view.View;
-import java.util.stream.*;
-import com.by.bledemo.DataProcess.CombinationWordRecognition;
+//import android.view.View;
+//import java.util.stream.*;
+//import com.by.bledemo.DataProcess.CombinationWordRecognition;
 import com.by.bledemo.DataProcess.RecognitionWorker;
-import com.by.bledemo.DataProcess.VoiceData;
-import com.by.bledemo.MainActivity;
+//import com.by.bledemo.DataProcess.VoiceData;
+//import com.by.bledemo.MainActivity;
 import com.by.bledemo.R;
-import java.util.stream.IntStream;
+//import java.util.stream.IntStream;
+import java.io.File;
+import java.io.FileNotFoundException;
+import java.io.FileOutputStream;
+import java.io.IOException;
+import java.io.OutputStream;
+import java.text.SimpleDateFormat;
+import java.util.Date;
 
 /**
  * Created by zxcv1 on 2018/5/10
@@ -35,6 +44,7 @@ public class ConnectedActivity extends AppCompatActivity {
     private TextView RAdd;
     private TextView LeftServices;
     private TextView RightServices;
+    private TextView Record;
     private Controller LDevice,RDevice;
     private boolean Paused,LOp,ROp;
 
@@ -66,6 +76,8 @@ public class ConnectedActivity extends AppCompatActivity {
 
     private float[] LFDegReg = {00, 00, 00, 00};
     private float[] RFDegReg = {00, 00, 00, 00};
+    int tp = 0;
+    //int tn = 0;
 
     //new Toast
     private static Toast toast;
@@ -89,6 +101,7 @@ public class ConnectedActivity extends AppCompatActivity {
         RAdd=this.findViewById(R.id.RAdd);
         LeftServices=this.findViewById(R.id.LeftServices);
         RightServices=this.findViewById(R.id.RightServices);
+        Record=this.findViewById(R.id.Record);
         Paused=false;
 
         final BluetoothManager bluetoothManager=
@@ -327,10 +340,10 @@ public class ConnectedActivity extends AppCompatActivity {
                 LAcc[0] = (int)AccX*10;
                 LAcc[1] = (int)AccY*10;
                 LAcc[2] = (int)AccZ*10;
-                LAcc[3] = LAcc[0] + LAcc[1] + LAcc[2];
+                LAcc[3] = LAcc[0] + LAcc[1];
                 final String Acc = String.format("AccX:%d\nAccY:%d\nAccZ:%d\n",LAcc[0],LAcc[1],LAcc[2]);
                 //加速度
-
+                //saveTXT();
                 runOnUiThread(new Runnable() {
                     @Override
                     public void run()
@@ -436,13 +449,12 @@ public class ConnectedActivity extends AppCompatActivity {
                 RAcc[3] = RAcc[0] + RAcc[1] + RAcc[2];
                 final String Acc = String.format("AccX:%d\nAccY:%d\nAccZ:%d\n",RAcc[0],RAcc[1],RAcc[2]);
                 //加速度
-
+                //saveTXT();
                 runOnUiThread(new Runnable() {
                     @Override
                     public void run()
                     {
                         RightServices.setText(RightFigCodeTotal + RightDirection + Acc + PosDataValue);
-
                     }
                 });
             }
@@ -455,6 +467,7 @@ public class ConnectedActivity extends AppCompatActivity {
             //test
             String changeWord = "";
             int totalAcc = Math.abs(LAcc[3]+RAcc[3]);
+
             //NotLineToast(ConnectedActivity.this, String.valueOf(RecognitionWorker.handRecognitions.size()), 1);
             //Recognize
             if(totalAcc < MotionSetValue)//如果加速度計超過動作門檻值則為動態手勢
@@ -522,6 +535,7 @@ public class ConnectedActivity extends AppCompatActivity {
                                         final String OutputWord = changeWord;
                                         NotLineToast(ConnectedActivity.this, OutputWord, 1);
                                         RecognitionWorker.VoiceData.Speaker(ConnectedActivity.this, RecognitionWorker.combinationWordRecognitions.get(Loop2).mp3ID);
+                                        //tp++;
                                         break;
                                     }
                                 }
@@ -530,6 +544,7 @@ public class ConnectedActivity extends AppCompatActivity {
                         }
                         break;
                     }
+                    //tn++;
                 }
             }
             else
@@ -577,6 +592,7 @@ public class ConnectedActivity extends AppCompatActivity {
                                 NotLineToast(ConnectedActivity.this, OutputWord, 1);
                                 RecognitionWorker.VoiceData.Speaker(ConnectedActivity.this, RecognitionWorker.motionRecognitions.get(Loop1).mp3ID);
                                 CombinationWordTemp = "";
+                                tp++;
 
                             } else//不是第一次配對，且兩次配對不同，可能為組合字
                             {
@@ -604,6 +620,9 @@ public class ConnectedActivity extends AppCompatActivity {
                 }
             }
             //Recognize
+            if(tp>100)
+                tp = 0;
+            Record.setText("Cnt = "+tp);
         }
 
         @Override
@@ -658,4 +677,36 @@ public class ConnectedActivity extends AppCompatActivity {
             }
         }
     };
+
+    /*private void saveTXT()
+    {
+        // 目前日期
+        String dateformat = "yyyyMMdd";
+        SimpleDateFormat df = new SimpleDateFormat(dateformat);
+        String filename = "tracelog.txt";
+        File path = Environment.getExternalStoragePublicDirectory(Environment.DIRECTORY_MUSIC);
+        File file = new File("/MicroSD/Music/", filename);
+        Log.d("", "filename == " + filename);
+
+        try
+        {
+            //path.mkdirs();
+            // 老灰鴨的模擬器是 Genymotion
+            // 以 Android Device Monitor 觀察
+            // 存放檔案位置在 /mnt/shell/emulated/0/Download/
+            OutputStream os = new FileOutputStream(file, true);    // 第二個參數為是否 append
+            // 若為 true，則新加入的文字會接續寫在文字檔的最後
+            dateformat = "yyyyMMdd kk:mm:ss";
+            df.applyPattern(dateformat);
+            String string = "Hello world! " + df.format(new Date()) + "\n";
+            os.write(string.getBytes());
+            os.close();
+        }
+        catch (IOException e)
+        {
+            // Unable to create file, likely because external storage is
+            // not currently mounted.
+            Log.e("ExternalStorage", "Error writing " + file, e);
+        }
+    }*/
 }

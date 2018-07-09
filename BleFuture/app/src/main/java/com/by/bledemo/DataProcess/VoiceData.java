@@ -12,6 +12,7 @@ public class VoiceData {
     //test
 
     //mp3ID
+    public int Null;
     public int you;
     public int toilet;
     public int zero;

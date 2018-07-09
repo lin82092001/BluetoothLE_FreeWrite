@@ -83,6 +83,7 @@ public class RecognitionWorker {
         }else if(State.equals("English")){
             LanquageSelector = 1;
         }
+        VoiceData.Null = 0;
         VoiceData.zero = zero[LanquageSelector];
         VoiceData.one = one[LanquageSelector];
         VoiceData.two = two[LanquageSelector];
@@ -184,6 +185,7 @@ public class RecognitionWorker {
         handRecognitions.add(new HandRecognition("九", "nine", VoiceData.nine, DontCare, Inward, BasicGesture.DontCare, BasicGesture.nine));
         handRecognitions.add(new HandRecognition("十", "ten", VoiceData.ten, DontCare, Raise, BasicGesture.DontCare, BasicGesture.ten_N));
         handRecognitions.add(new HandRecognition("十", "ten", VoiceData.ten, DontCare, Raise, BasicGesture.DontCare, BasicGesture.ten_S));*/
+        handRecognitions.add(new HandRecognition("孤單", "lonely", VoiceData.lonely, DontCare, Inward, BasicGesture.DontCare, BasicGesture.male));
 
         //雙手
         handRecognitions.add(new HandRecognition("謝謝", "thanks", VoiceData.thanks, Inward, Inward, BasicGesture.male, BasicGesture.male));
@@ -199,7 +201,7 @@ public class RecognitionWorker {
         handRecognitions.add(new HandRecognition("畢業", "graduation", VoiceData.graduation, Raise, Raise, BasicGesture.fist, BasicGesture.fist));
     }
 
-    //動態手勢6
+    //動態手勢9
     public ArrayList<MotionRecognition> motionRecognitions = new ArrayList<MotionRecognition>();
     public void MotionVocabulary(){
         //參考
@@ -215,7 +217,7 @@ public class RecognitionWorker {
                 -10000,-10000,-10000,-10000,-10000,
                 -10000,-10000,-10000,-10000,-10000));
         motionRecognitions.add(new MotionRecognition("錄取","admit",VoiceData.admit,Upward,Inward,BasicGesture.hand,BasicGesture.male,
-                -10000,-10000,-45,
+                -10000,-10000,-60,
                 -10000,-10000,-10000,
                 -10000,-10000,-10000,-10000,-10000,
                 -10000,-10000,-10000,-10000,-10000));
@@ -224,18 +226,18 @@ public class RecognitionWorker {
                 -10000,-10000,-10000,
                 -10000,-10000,-10000,-10000,-10000,
                 -10000,-10000,-10000,-10000,-10000));
-        motionRecognitions.add(new MotionRecognition("孤單","lonely",VoiceData.lonely,DontCare,Inward,BasicGesture.DontCare,BasicGesture.male,
+        /*motionRecognitions.add(new MotionRecognition("孤單","lonely",VoiceData.lonely,DontCare,Inward,BasicGesture.hand,BasicGesture.male,
                 -15,-10000,-10000,
                 -10000,-10000,-10000,
                 -10000,-10000,-10000,-10000,-10000,
-                -10000,-10000,-10000,-10000,-10000));
+                -10000,-10000,-10000,-10000,-10000));*/
         motionRecognitions.add(new MotionRecognition("攪拌","stir",R.raw.nulll,Inward,Downward,BasicGesture.fist,BasicGesture.two,
                 -10000,-10000,-10000,
                 -10000,-10000,-100,
                 -10000,-10000,-10000,-10000,-10000,
                 -10000,-10000,-10000,-10000,-10000));
         motionRecognitions.add(new MotionRecognition("三明治","sandwich",VoiceData.sandwich,Inward,Inward,BasicGesture.three,BasicGesture.hand,
-                -10000,-10000,-15,
+                -10000,-10000,-25,
                 -10000,-10000,-10000,
                 -10000,-10000,-10000,-10000,-10000,
                 -10000,-10000,-10000,-10000,-10000));
@@ -245,10 +247,43 @@ public class RecognitionWorker {
                 -10000,-10000,-10000,-10000,-10000,
                 -10000,-10000,-10000,-10000,-10000));
         motionRecognitions.add(new MotionRecognition("老師","teacher",VoiceData.teacher,Downward,DontCare,BasicGesture.four,BasicGesture.DontCare,
-                -10000,-10000,-15,
+                -10000,-10000,-25,
                 -10000,-10000,-10000,
                 -10000,-10000,-10000,-10000,-10000,
                 -10000,-10000,-10000,-10000,-10000));
+
+        //另外6個移動特徵
+        motionRecognitions.add(new MotionRecognition("U-like movement","U-like movement",VoiceData.Null,Downward,Downward,BasicGesture.one,BasicGesture.hand,
+                -20,-10000,-10000,
+                -10000,-10000,-10000,
+                -10000,-10000,-10000,-10000,-10000,
+                -10000,-10000,-10000,-10000,-10000));
+        motionRecognitions.add(new MotionRecognition("L-like movement","L-like movement",VoiceData.Null,Downward,Downward,BasicGesture.two,BasicGesture.hand,
+                -10000,-20,-10000,
+                -10000,-10000,-10000,
+                -10000,-10000,-10000,-10000,-10000,
+                -10000,-10000,-10000,-10000,-10000));
+        motionRecognitions.add(new MotionRecognition("J-like movement","J-like movement",VoiceData.Null,Downward,Downward,BasicGesture.three,BasicGesture.hand,
+                -10000,-20,-10000,
+                -10000,-10000,-10000,
+                -10000,-10000,-10000,-10000,-10000,
+                -10000,-10000,-10000,-10000,-10000));
+        motionRecognitions.add(new MotionRecognition("arm waving","arm waving",VoiceData.Null,Downward,Downward,BasicGesture.four,BasicGesture.hand,
+                -10000,-60,-10000,
+                -10000,-10000,-10000,
+                -10000,-10000,-10000,-10000,-10000,
+                -10000,-10000,-10000,-10000,-10000));
+        motionRecognitions.add(new MotionRecognition("wrist waving","wrist waving",VoiceData.Null,Downward,Downward,BasicGesture.hand,BasicGesture.hand,
+                -10000,-15,-10000,
+                -10000,-10000,-10000,
+                -10000,-10000,-10000,-10000,-10000,
+                -10000,-10000,-10000,-10000,-10000));
+        motionRecognitions.add(new MotionRecognition("wrist rotation","wrist rotation",VoiceData.Null,Upward,Downward,BasicGesture.hand,BasicGesture.hand,
+                -10000,-15,-10000,
+                -10000,-10000,-10000,
+                -10000,-10000,-10000,-10000,-10000,
+                -10000,-10000,-10000,-10000,-10000));
+
     }
 
     //組合手勢4
