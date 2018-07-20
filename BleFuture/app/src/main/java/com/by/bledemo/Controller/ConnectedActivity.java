@@ -311,15 +311,15 @@ public class ConnectedActivity extends AppCompatActivity {
                             {
                                 LeftFigCode[i] = "00";
                             }
-                            else if(36 <= Figs.Degree[i][0] && Figs.Degree[i][0] <= 60)
+                            else if(36 <= Figs.Degree[i][0] && Figs.Degree[i][0] <= 46)
                             {
                                 LeftFigCode[i] = "01";
                             }
-                            else if(61 <= Figs.Degree[i][0] && Figs.Degree[i][0] <= 85)
+                            else if(47 <= Figs.Degree[i][0] && Figs.Degree[i][0] <= 57)
                             {
                                 LeftFigCode[i] = "10";
                             }
-                            else
+                            else if(58 <= Figs.Degree[i][0] && Figs.Degree[i][0] <= 200)
                             {
                                 LeftFigCode[i] = "11";
                             }
@@ -418,15 +418,15 @@ public class ConnectedActivity extends AppCompatActivity {
                             {
                                 RightFigCode[i] = "00";
                             }
-                            else if(36 <= Figs.Degree[i][0] && Figs.Degree[i][0] <= 60)
+                            else if(36 <= Figs.Degree[i][0] && Figs.Degree[i][0] <= 46)
                             {
                                 RightFigCode[i] = "01";
                             }
-                            else if(61 <= Figs.Degree[i][0] && Figs.Degree[i][0] <= 85)
+                            else if(47 <= Figs.Degree[i][0] && Figs.Degree[i][0] <= 57)
                             {
                                 RightFigCode[i] = "10";
                             }
-                            else
+                            else if(58 <= Figs.Degree[i][0] && Figs.Degree[i][0] <= 200)
                             {
                                 RightFigCode[i] = "11";
                             }

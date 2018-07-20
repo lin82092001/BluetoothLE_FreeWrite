@@ -28,6 +28,12 @@ public class RecognitionWorker {
     public VoiceData VoiceData = new VoiceData();
 
     private int LanquageSelector = 0;
+    private int[] U_like = {R.raw.ulike,R.raw.ulikeen};
+    private int[] L_like = {R.raw.llike,R.raw.llikeen};
+    private int[] J_like = {R.raw.jlike,R.raw.jlikeen};
+    private int[] arm_waving = {R.raw.armwaving,R.raw.armwavingen};
+    private int[] wrist_waving = {R.raw.wristwaving,R.raw.wristwavingen};
+    private int[] wrist_rotation = {R.raw.wristrotation,R.raw.wristrotationen};
     private int[] zero = {R.raw.zero, R.raw.zeroen};
     private int[] one = {R.raw.one, R.raw.oneen};
     private int[] two = {R.raw.two, R.raw.twoen};
@@ -84,6 +90,12 @@ public class RecognitionWorker {
             LanquageSelector = 1;
         }
         VoiceData.Null = 0;
+        VoiceData.U_like = U_like[LanquageSelector];
+        VoiceData.L_like = L_like[LanquageSelector];
+        VoiceData.J_like = J_like[LanquageSelector];
+        VoiceData.arm_waving = arm_waving[LanquageSelector];
+        VoiceData.wrist_waving = wrist_waving[LanquageSelector];
+        VoiceData.wrist_rotation = wrist_rotation[LanquageSelector];
         VoiceData.zero = zero[LanquageSelector];
         VoiceData.one = one[LanquageSelector];
         VoiceData.two = two[LanquageSelector];
@@ -253,36 +265,36 @@ public class RecognitionWorker {
                 -10000,-10000,-10000,-10000,-10000));
 
         //另外6個移動特徵
-        motionRecognitions.add(new MotionRecognition("U-like movement","U-like movement",VoiceData.Null,Downward,Downward,BasicGesture.one,BasicGesture.hand,
+        /*motionRecognitions.add(new MotionRecognition("U-like movement","U-like movement",VoiceData.U_like,Downward,Downward,BasicGesture.one,BasicGesture.hand,
                 -20,-10000,-10000,
                 -10000,-10000,-10000,
                 -10000,-10000,-10000,-10000,-10000,
                 -10000,-10000,-10000,-10000,-10000));
-        motionRecognitions.add(new MotionRecognition("L-like movement","L-like movement",VoiceData.Null,Downward,Downward,BasicGesture.two,BasicGesture.hand,
+        motionRecognitions.add(new MotionRecognition("L-like movement","L-like movement",VoiceData.L_like,Downward,Downward,BasicGesture.two,BasicGesture.hand,
                 -10000,-20,-10000,
                 -10000,-10000,-10000,
                 -10000,-10000,-10000,-10000,-10000,
                 -10000,-10000,-10000,-10000,-10000));
-        motionRecognitions.add(new MotionRecognition("J-like movement","J-like movement",VoiceData.Null,Downward,Downward,BasicGesture.three,BasicGesture.hand,
+        motionRecognitions.add(new MotionRecognition("J-like movement","J-like movement",VoiceData.J_like,Downward,Downward,BasicGesture.three,BasicGesture.hand,
                 -10000,-20,-10000,
                 -10000,-10000,-10000,
                 -10000,-10000,-10000,-10000,-10000,
                 -10000,-10000,-10000,-10000,-10000));
-        motionRecognitions.add(new MotionRecognition("arm waving","arm waving",VoiceData.Null,Downward,Downward,BasicGesture.four,BasicGesture.hand,
+        motionRecognitions.add(new MotionRecognition("arm waving","arm waving",VoiceData.arm_waving,Downward,Downward,BasicGesture.four,BasicGesture.hand,
                 -10000,-60,-10000,
                 -10000,-10000,-10000,
                 -10000,-10000,-10000,-10000,-10000,
                 -10000,-10000,-10000,-10000,-10000));
-        motionRecognitions.add(new MotionRecognition("wrist waving","wrist waving",VoiceData.Null,Downward,Downward,BasicGesture.hand,BasicGesture.hand,
+        motionRecognitions.add(new MotionRecognition("wrist waving","wrist waving",VoiceData.wrist_waving,Downward,Downward,BasicGesture.hand,BasicGesture.hand,
                 -10000,-15,-10000,
                 -10000,-10000,-10000,
                 -10000,-10000,-10000,-10000,-10000,
                 -10000,-10000,-10000,-10000,-10000));
-        motionRecognitions.add(new MotionRecognition("wrist rotation","wrist rotation",VoiceData.Null,Upward,Downward,BasicGesture.hand,BasicGesture.hand,
+        motionRecognitions.add(new MotionRecognition("wrist rotation","wrist rotation",VoiceData.wrist_rotation,Upward,Downward,BasicGesture.hand,BasicGesture.hand,
                 -10000,-15,-10000,
                 -10000,-10000,-10000,
                 -10000,-10000,-10000,-10000,-10000,
-                -10000,-10000,-10000,-10000,-10000));
+                -10000,-10000,-10000,-10000,-10000));*/
 
     }
 

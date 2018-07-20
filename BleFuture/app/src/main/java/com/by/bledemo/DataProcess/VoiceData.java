@@ -12,6 +12,12 @@ public class VoiceData {
     //test
 
     //mp3ID
+    public int U_like;
+    public int L_like;
+    public int J_like;
+    public int arm_waving;
+    public int wrist_waving;
+    public int wrist_rotation;
     public int Null;
     public int you;
     public int toilet;
