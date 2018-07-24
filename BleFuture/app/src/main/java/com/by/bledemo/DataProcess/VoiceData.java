@@ -66,6 +66,8 @@ public class VoiceData {
     public int welcome;
     public int graduation;
     public int teacher;
+    public int father;
+    public int uncle;
 
     public VoiceData(){
 

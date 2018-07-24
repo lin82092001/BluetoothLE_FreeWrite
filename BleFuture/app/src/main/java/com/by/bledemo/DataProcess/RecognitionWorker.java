@@ -81,6 +81,8 @@ public class RecognitionWorker {
     private int[] welcome = {R.raw.welcome,R.raw.welcomeen};
     private int[] graduation = {R.raw.graduation,R.raw.graduationen};
     private int[] teacher = {R.raw.teacher,R.raw.teacheren};
+    private int[] father = {R.raw.father,R.raw.fatheren};
+    private int[] uncle = {R.raw.uncle,R.raw.uncleen};
 
     public RecognitionWorker(String State){
 
@@ -143,6 +145,8 @@ public class RecognitionWorker {
         VoiceData.welcome = welcome[LanquageSelector];
         VoiceData.graduation = graduation[LanquageSelector];
         VoiceData.teacher = teacher[LanquageSelector];
+        VoiceData.father = father[LanquageSelector];
+        VoiceData.uncle = uncle[LanquageSelector];
     }
     //靜態手勢33
     public ArrayList<HandRecognition> handRecognitions = new ArrayList<HandRecognition>();
@@ -172,9 +176,10 @@ public class RecognitionWorker {
         handRecognitions.add(new HandRecognition("九十", "ninety", VoiceData.ninety, Raise, DontCare, BasicGesture.ninety, BasicGesture.DontCare));*/
         handRecognitions.add(new HandRecognition("百", "hundred", VoiceData.hundred, Raise, DontCare, BasicGesture.hundred, BasicGesture.DontCare));
         handRecognitions.add(new HandRecognition("千", "thousand", VoiceData.thousand, Raise, DontCare, BasicGesture.thousand, BasicGesture.DontCare));
-        handRecognitions.add(new HandRecognition("男", "male", VoiceData.male, Inward, DontCare, BasicGesture.male, BasicGesture.DontCare));
+        handRecognitions.add(new HandRecognition("男", "male", VoiceData.male, Raise, DontCare, BasicGesture.male, BasicGesture.DontCare));
+        handRecognitions.add(new HandRecognition("爸爸", "father", VoiceData.father, Inward, DontCare, BasicGesture.male, BasicGesture.DontCare));
         handRecognitions.add(new HandRecognition("女", "female", VoiceData.female, Raise, DontCare, BasicGesture.female, BasicGesture.DontCare));
-        handRecognitions.add(new HandRecognition("哥哥", "brother", VoiceData.brother, Raise, DontCare, BasicGesture.brother, BasicGesture.DontCare));
+        //handRecognitions.add(new HandRecognition("哥哥", "brother", VoiceData.brother, Raise, DontCare, BasicGesture.brother, BasicGesture.DontCare));
         handRecognitions.add(new HandRecognition("姊姊", "sister", VoiceData.sister, Raise, DontCare, BasicGesture.sister, BasicGesture.DontCare));
         handRecognitions.add(new HandRecognition("繳錢", "pay", VoiceData.money, Inward, DontCare, BasicGesture.money, BasicGesture.DontCare));
         handRecognitions.add(new HandRecognition("廁所", "toilet", VoiceData.toilet, Raise, DontCare, BasicGesture.WC, BasicGesture.DontCare));
@@ -263,6 +268,11 @@ public class RecognitionWorker {
                 -10000,-10000,-10000,
                 -10000,-10000,-10000,-10000,-10000,
                 -10000,-10000,-10000,-10000,-10000));
+        motionRecognitions.add(new MotionRecognition("哥哥","brother",VoiceData.brother,Raise,DontCare,BasicGesture.brother,BasicGesture.DontCare,
+                -10000,-10000,-25,
+                -10000,-10000,-10000,
+                -10000,-10000,-10000,-10000,-10000,
+                -10000,-10000,-10000,-10000,-10000));
 
         //另外6個移動特徵
         /*motionRecognitions.add(new MotionRecognition("U-like movement","U-like movement",VoiceData.U_like,Downward,Downward,BasicGesture.one,BasicGesture.hand,
@@ -307,6 +317,7 @@ public class RecognitionWorker {
         combinationWordRecognitions.add(new CombinationWordRecognition("你好", "Hello", VoiceData.hello, "你", "_你好", "you", "hello"));
         combinationWordRecognitions.add(new CombinationWordRecognition("咖啡", "Coffee", VoiceData.coffee, "棕", "攪拌", "brown", "stir"));
         combinationWordRecognitions.add(new CombinationWordRecognition("郵票", "Stamp", VoiceData.stamp, "郵", "票", "stamp1", "stamp2"));
+        combinationWordRecognitions.add(new CombinationWordRecognition("伯伯", "Uncle", VoiceData.uncle, "爸爸", "哥哥", "father", "brother"));
     }
 
 }

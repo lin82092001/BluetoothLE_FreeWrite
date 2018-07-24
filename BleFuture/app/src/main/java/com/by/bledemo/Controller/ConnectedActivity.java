@@ -505,7 +505,7 @@ public class ConnectedActivity extends AppCompatActivity {
                                 CombinationWordTemp = changeWord;
                                 final String OutputWord = CombinationWordTemp;
                                 NotLineToast(ConnectedActivity.this, OutputWord, 1);
-                                RecognitionWorker.VoiceData.Speaker(ConnectedActivity.this, R.raw.prompt);
+                                RecognitionWorker.VoiceData.Speaker(ConnectedActivity.this, RecognitionWorker.handRecognitions.get(Loop1).mp3ID);
 
                             } else if (RecognitionWorker.handRecognitions.get(Loop1).ChineseWord.toString() == CombinationWordTemp ||
                                     RecognitionWorker.handRecognitions.get(Loop1).EnglishWord.toString() == CombinationWordTemp)//兩次配對相同，靜態手勢
@@ -517,7 +517,7 @@ public class ConnectedActivity extends AppCompatActivity {
 
                                 final String OutputWord = changeWord;
                                 NotLineToast(ConnectedActivity.this, OutputWord, 1);
-                                RecognitionWorker.VoiceData.Speaker(ConnectedActivity.this, RecognitionWorker.handRecognitions.get(Loop1).mp3ID);
+                                RecognitionWorker.VoiceData.Speaker(ConnectedActivity.this, R.raw.prompt);
                                 CombinationWordTemp = "";
 
                             } else//不是第一次配對，且兩次配對不同，可能為組合字
@@ -578,7 +578,7 @@ public class ConnectedActivity extends AppCompatActivity {
                                 CombinationWordTemp = changeWord;
                                 final String OutputWord = CombinationWordTemp;
                                 NotLineToast(ConnectedActivity.this, OutputWord, 1);
-                                RecognitionWorker.VoiceData.Speaker(ConnectedActivity.this, R.raw.prompt);
+                                RecognitionWorker.VoiceData.Speaker(ConnectedActivity.this, RecognitionWorker.motionRecognitions.get(Loop1).mp3ID);
 
                             } else if (RecognitionWorker.motionRecognitions.get(Loop1).ChineseWord.toString() == CombinationWordTemp ||
                                     RecognitionWorker.motionRecognitions.get(Loop1).EnglishWord.toString() == CombinationWordTemp)//兩次配對相同，靜態手勢
@@ -590,9 +590,9 @@ public class ConnectedActivity extends AppCompatActivity {
 
                                 final String OutputWord = changeWord;
                                 NotLineToast(ConnectedActivity.this, OutputWord, 1);
-                                RecognitionWorker.VoiceData.Speaker(ConnectedActivity.this, RecognitionWorker.motionRecognitions.get(Loop1).mp3ID);
+                                RecognitionWorker.VoiceData.Speaker(ConnectedActivity.this, R.raw.prompt);
                                 CombinationWordTemp = "";
-                                tp++;
+                                //tp++;
 
                             } else//不是第一次配對，且兩次配對不同，可能為組合字
                             {
@@ -620,9 +620,9 @@ public class ConnectedActivity extends AppCompatActivity {
                 }
             }
             //Recognize
-            if(tp>100)
+            /*if(tp>100)
                 tp = 0;
-            Record.setText("Cnt = "+tp);
+            Record.setText("Cnt = "+tp);*/
         }
 
         @Override
